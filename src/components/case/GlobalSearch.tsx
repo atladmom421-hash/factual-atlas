@@ -8,6 +8,7 @@ import {
   events,
   exhibits,
   comparators,
+  exhibitFullText,
   CATEGORY_LABELS,
 } from "@/data";
 
