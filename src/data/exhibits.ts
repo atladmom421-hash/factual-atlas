@@ -894,6 +894,131 @@ Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pa
     filePath: "/exhibits/EX-048-midshift-waitlist-version-history-narrative.pdf",
     fileKind: "pdf",
   },
+  {
+    id: "EX-049",
+    exhibitNumber: "EX-049",
+    fileName: "Nov 6, 2025 HR Investigation Close-Out Call — Transcript (Harbin / Sean, HR)",
+    date: "November 6, 2025",
+    category: "Internal investigation / HR close-out",
+    peopleIds: ["harbin", "allan", "reyes", "samuel", "adkins", "faulkner", "millisock", "christensen", "markus", "rosanna"],
+    summary:
+      "Cleaned-up transcript of the Nov 6, 2025 phone call in which HR (Sean) closed out the internal investigation. Key admissions captured on the call: (1) Verint — HR confirmed a real technical issue gave Harbin more visibility than she should have had, that the issue was NOT limited to her team, and that it had been escalated to the vendor / BT team and was actively being worked. (2) Edward Reyes — HR stated no policy was violated but confirmed feedback was given to Reyes about how his conduct came across. (3) Schedule / Waitlist — HR relayed Allan's account that two requests were submitted (July 2024 and July 2025) and that Harbin was removed in May 2025 for declining an offered shift; Harbin disputed this in real time, stating she was never offered a shift, never declined one, had been requesting a midshift for ~2 years, and asked to see the actual ticket. HR could not produce the ticket on the call and committed to follow up with Edina Markus. (4) Comparators — HR was told Hunter Samuel, Kandace Adkins, and Josh Faulkner were 'already on day shift'; Harbin disputed this on the call (Hunter moved from PM/midshift to AM; Cody Christensen also moved to AM). HR's only stated explanation for lower-ranked movers was an 'onsite Ohio' requirement. (5) Allan removing himself from the team chat — confirmed by HR; Allan admitted doing it but claimed it was accidental. (6) Performance — Allan repeatedly described Harbin to HR as 'the best team lead he's got,' unprompted. Harbin closed the call by stating she would pursue legal resources.",
+    linkedEventIds: [
+      "e-2025-11-06-hr-call",
+      "e-2025-10-verint",
+      "e-2025-10-21-verint-email",
+      "e-2024-04-26-not-on-waitlist",
+      "e-2025-02-22-jen-deleted",
+      "e-2025-07-14-screenshot",
+      "e-2025-09-19-complaint",
+    ],
+    reliability: "confirmed-transcript",
+    fileKind: "transcript",
+    transcriptText: `NOVEMBER 6, 2025 — HR INVESTIGATION CLOSE-OUT CALL
+Participants: Shawnna Harbin; Sean (HR Representative)
+
+— Opening —
+
+Shawnna: Hello?
+Sean: Hello. Hey, Shawnna, how are you?
+Shawnna: Hey, I'm doing well. How are you?
+Sean: Good. I'm sorry, I'm barely able to use my voice.
+Shawnna: No, the same thing happened to me. I never lost my voice before, and I lost it. I was sounding crazy. Everybody in my house is coming down with something, and I've been on meetings all morning with no issue.
+Sean: Hopefully the tea that I'm already drinking helps.
+Shawnna: Yes, yeah.
+
+— Investigation Wrap-Up / Verint Issue —
+
+Sean: Well, a couple of things I want to make sure I follow up with you on. My investigation is all done. I wanted to touch base with you to tell you where I landed on everything.
+Shawnna: Okay.
+Sean: First off, the Verint issue — thank you so much for escalating that. There is a technical problem where you have more visibility than you should. But nothing has changed as far as hearing. Nobody can hear you when you're offline or locked in. The only time anybody can hear anything in Verint is when you are active in a customer call. I confirmed with the product owners, and they said that is the only time audio is available. So if you were on a Teams call and I could see your screen, I couldn't hear anything.
+Shawnna: Right.
+Sean: So that has not changed. But Verint did actually reach out to the vendor. They turned this over to our BT team. They're handling it. I don't know if there will be a fix by the end of the year. Whatever the issue is, they have actively been working on it. This is week two. I just wanted to let you know I handed that over, and I appreciate you letting us know because it's not just impacting your team. It's impacting others too, which we didn't know about yet.
+Shawnna: Hmm.
+Sean: So it's not just your team. We don't know who all it applies to. When I got ahold of the Verint product owners for Discover, they said something changed. They don't know what happened, who did it, or why. It's on the vendor side. They have confirmed this is not anything anyone here has done. I'm really glad you brought it forward so we can get the vendor on top of it. I did confirm everything about the privacy issues you brought forward. They assured me that Jabber calls, Teams calls, none of that can be listened to. You can only hear the customer interaction.
+Shawnna: Oh, yeah.
+
+— Edward Reyes —
+
+Sean: Let's see. I'm just going down a list of all the things you brought forward to make sure I didn't miss anything.
+Shawnna: Oh, yeah. Let me wipe off my camera. It's all weird. Sorry.
+Sean: So, Edward. I did speak to Edward, and no policies were violated, but I did provide feedback to him about how things came across. So he and I did have a conversation about that.
+
+— Schedule / Waitlist —
+
+Sean: Regarding your schedule, I know this was previously investigated. I think you talked to Myron in the past, but I did go ahead and do research of my own. So I did look at the case independently. Allan did submit two schedule change requests on your behalf — one in July of last year and one in July of this year. He said in May of this year, a day shift was offered and you declined. Due to anything, if they're offered something and they decline it, that's why you were pulled off of that waitlist. But you were put back on as soon as you requested it in July, and you're still number five as of when I talked to him. This matches what Myron discovered in his case. They said they offered a different shift, but you couldn't take it.
+Shawnna: So, Myron, as far as I know, I never spoke with him regarding this ever. Also, I was never even added for a midshift ever. This may have been a day shift. The shift that he confirmed with me that I was on the waitlist for — the shift that I've been asking for for two years — is a midshift.
+Sean: Right, and I think they were offering you the next shift available.
+Shawnna: So if I'm on the waitlist for PM, and someone offers me an AM and I go, "No," they can just take me off? That's not how it works.
+Sean: So that's how it works.
+Shawnna: And the second thing is, I was never offered that position. Ever. Never was offered. Not only that, Allan has lied to me this whole time.
+Sean: What did he lie to you about?
+Shawnna: That I was on the waitlist for midshift. If he submitted me for a midshift, which HR confirmed with me that's what he should have done in May 2024, then their procedure says there's a ticket, right? He filled out a ticket. Where is the ticket for my waitlist request? All I know is that when I asked Rosanna about being put on a waitlist, that did not happen. So now I'm number five after waiting for two years. What sense does that make? Nobody's moving, right?
+Sean: Everyone has?
+Shawnna: Everyone has. Tyler has moved. Did you check on that?
+Sean: I did, and let me pull up my notes. So the three names you gave me transferred over to your team or another team, and they were already on day shift. I'm looking up the notes.
+Shawnna: That's a lie. That's blatantly not true. Whoever told you that is bold-faced lying to you.
+Sean: I'm looking for my notes.
+Shawnna: Okay.
+Sean: The names you gave me were Hunter Samuel, Candice Atkins, and Joshua Faulkner.
+Shawnna: Yep. Tyler Millisock.
+Sean: Tyler wasn't the name you gave me. You gave me Hunter, Candice, and Joshua. So I asked about those three.
+Shawnna: Hunter was not on day shift when she came over here. She went from PM to day shift. That is not true. Whoever told you that is not true. I just talked to her, and she personally told me she went from PM. My coach reached out to her and was like, "Hey, you should come here." She was on PM or a midshift, and she went from midshift to AM.
+Sean: Was she training when she was on the other shift?
+Shawnna: No. She was not. Also, Cody Christensen moved to an AM shift. Everyone has been moving. That's what I'm telling you.
+Sean: If they're moving over, it has nothing to do with being on a waitlist. That may have to do with leadership. I don't know. But all I know is anybody on a waitlist above you is not moving.
+Shawnna: Well, now they're not, but that's because I'm back on the list. When I was on the list, everyone was moving — May through July of this year.
+Sean: You were on it in July last year when Allan put you on it initially, when you guys started working together.
+Shawnna: Right. You said I was added in July of last year for my midshift, which was what the ticket was submitted for, right? Is there a ticket? Can we get the ticket? Because I would like to see the ticket.
+Sean: Who has the ticket?
+Shawnna: Edina Markus. She said she has the tickets.
+Sean: Oh yeah, I don't think so. But as far as I can tell, if they offered another shift, regardless of what it was, and you declined it—
+Shawnna: But I wasn't offered the shift. That is the problem. I never was offered the shift. You think I would be doing this for no reason? You think I would be away from my kid for fun? No. This is dead serious.
+Sean: I believe you. I believe how serious this is for you. I'm not saying this is not happening. I'm telling you this is the information that I have.
+Shawnna: I understand.
+Sean: I'll ask her for all the information and see what she has available.
+Sean: The only other thing I was told that made the impact was that some people lower on the waitlist than you were moved because it was required to be onsite in Ohio. That was the only reason they got moved to those other shifts, because it was physically in the building. I don't know if that impacts any of the other folks or not, but I will dig into it. I'll reach out to Edina Markus and find out what tangible information they have — evidence I can review.
+
+— Allan Removing Himself From Team Chat —
+
+Sean: I did talk to Allan about removing himself from your team chat. He said he had no idea that it happened initially. He was removing himself from a different chat. He said Teams is not great with technology, and someone else brought it to his attention. He said it was like two days later or so, and they helped him get re-added to your chat. So him removing himself, he said he did do it, but he didn't realize that it happened. He said he does want to participate in all your chats. He spoke very highly of you. He said you're the best team lead he's got. He kept saying that repeatedly, and this was not anything I asked him to tell me.
+Shawnna: Yeah, yeah. Okay.
+
+— Intermittent Leave / FMLA —
+
+Sean: I did see that you have an intermittent leave of absence. Is that three days a week that you can take per week if you need to?
+Shawnna: I'll have to double check. I can't remember.
+Sean: I just looked at it briefly this morning to see that you were good to go. It looks like it was approved. My notes say it was potentially three days a week. As long as you call in FMLA and report it to The Hartford, The Hartford will let Allan know it's approved, and he'll code your time card appropriately. I asked him to mark it FMLA if The Hartford approves those dates so you can track that too.
+Shawnna: Okay.
+
+— Closing the Case —
+
+Sean: So I still need to follow up with you about the schedule piece after I circle back with Edina. Other than that, I think—
+Shawnna: I'm not even worried about the schedule at this point.
+Sean: I still want to get you an answer, though.
+Shawnna: The answer — I already know the answer. So, yeah.
+Sean: Do you want me to circle back with Edina?
+Shawnna: No, no. I'm fine. Well, I'm not fine, but yeah, I'm just going to have to handle this legally, apparently.
+Sean: What do you mean by handling it legally?
+Shawnna: Definitely looking at every resource available to me, for sure.
+Sean: That works for me. I will go ahead and get this case wrapped up. If you have anything else, feel free to open another case for me. I'm still here if you've got questions or concerns.
+Shawnna: Alrighty.
+Sean: All right. Well, thank you, Shawnna. I hope you get to feeling better.
+Shawnna: All right. Well, thanks.
+Sean: Thanks. Have a good one.
+
+— END OF CALL —
+
+KEY ADMISSIONS / DISPUTES (summary for the record)
+
+1. Verint — HR confirmed a real technical issue (Harbin had more visibility than she should have), confirmed it was NOT limited to her team, and confirmed escalation to vendor / BT.
+2. Edward Reyes — HR confirmed feedback was provided to Reyes about how his conduct came across, even though HR did not classify it as a policy violation.
+3. Schedule / Waitlist — HR relayed that Allan submitted two requests (July 2024, July 2025) and that Harbin was removed in May 2025 for declining a shift. Harbin disputed in real time: never offered a shift, never declined one, has been requesting midshift ~2 years. HR could not produce the ticket; committed to follow up with Edina Markus.
+4. Comparators — HR was told Hunter Samuel, Kandace Adkins, and Josh Faulkner were "already on day shift." Harbin disputed: Hunter moved from PM/midshift to AM; Cody Christensen also moved to AM. HR's only stated explanation for lower-ranked movers was an "onsite Ohio" requirement.
+5. Allan team-chat removal — HR confirmed it happened; Allan admitted it but claimed it was accidental.
+6. Performance — Allan, unprompted, repeatedly told HR that Harbin is "the best team lead he's got."
+7. Harbin closed by stating she will pursue legal resources.`,
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);

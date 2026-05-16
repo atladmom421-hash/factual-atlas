@@ -613,7 +613,7 @@ export const events: TimelineEvent[] = [
     category: "internal-investigation",
     description: "HR follow-up: HR stated Allan submitted two schedule change requests on Lashawnna's behalf (July last year and July this year), and that in May a day shift was offered and declined. Lashawnna stated she was never offered the shift, was never on the waitlist for mid-shift, and asked for the underlying ticket — no ticket was produced.",
     peopleIds: ["harbin", "allan"],
-    evidenceIds: ["EX-HR-CALL"],
+    evidenceIds: ["EX-HR-CALL", "EX-049"],
     whyItMatters: "Direct conflict: HR's account turns on an offer-and-decline that Lashawnna disputes, and no waitlist ticket has been produced.",
     status: "confirmed-transcript",
     chapterId: "ch4",
