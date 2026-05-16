@@ -817,6 +817,16 @@ function TimelineScrubber() {
         )}
       </div>
 
+      {/* Macro overview — one stacked bar per year, click to jump */}
+      <YearOverview
+        cats={cats}
+        catColor={catColor}
+        hiddenCats={hiddenCats}
+        months={months}
+        activeMonth={activeMonth}
+        onJump={(m) => { const i = months.indexOf(m); if (i >= 0) { setIdx(i); setPlaying(false); } }}
+      />
+
       <div className="mt-3 overflow-x-auto">
         <svg
           viewBox={`0 0 ${W} ${H}`}
