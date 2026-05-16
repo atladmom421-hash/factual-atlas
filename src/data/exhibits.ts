@@ -881,6 +881,19 @@ Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pa
     ],
     fileKind: "image",
   },
+  {
+    id: "EX-048",
+    exhibitNumber: "EX-048",
+    fileName: "Mid-Shift Waitlist / Shift Request — Version History Evidence (Harbin narrative, 31 pp.)",
+    date: "Late 2023 → November 2025",
+    category: "HR complaint / formal notice",
+    peopleIds: ["harbin", "rosanna", "carfagna", "hedrick", "anita", "allan", "jen-roy", "markus", "millisock", "samuel", "adkins", "faulkner", "reyes", "marcinko"],
+    summary: "Harbin-authored 31-page evidence narrative compiling the full Mid-Shift / Waitlist record: (a) Late 2023 temporary PM assignment later recharacterized as permanent after protected complaints; (b) April 26, 2024 — Ryan Tafoya confirms Harbin not on waitlist; (c) May 29, 2024 formal complaint email (full text, addressees: Carfagna, Capozzi, Palmer, Marcinko, Hedrick, McNerney, Breisch) including Rosanna racial-slur allegation and EEOC notice; (d) June 2024 ER assurance she would be added; (e) Sept 24, 2024 — Team Ratios 2024 file modified, LVAR mid-shift staffing formula altered; (f) Oct 10, 2024 credit removal; (g) Oct 14, 2024 — TL Shift & Waitlist doc created showing Harbin as PM/Temporary waiting for AM (mid-shift request not reflected); (h) Jan–Feb 2025 'solid' rating; (i) Feb 18, 2025 records still PM/Temporary; (j) Feb 22, 2025 Jen Roy deletion; (k) June 2025 request expanded to AM; (l) July 2025 position request → Allan/Jen Roy chat; (m) July 16–17, 2025 re-added with new request date as Permanent PM; (n) Sept 19, 2025 sixth complaint to EthicalConcernsOversight + Allan training-bay transcript; (o) Nov 6, 2025 HR Investigation follow-up call transcript; (p) Allan removing himself from team chat; (q) Shift Changes SOW revision history. Includes embedded screenshots of waitlist version history and SharePoint metadata.",
+    linkedEventIds: ["e-2024-04-26-not-on-waitlist", "e-2024-05-29-formal-complaint", "e-2024-09-24-ratios", "e-2024-10-10-credit", "e-2024-10-14-shift-doc", "e-2025-02-22-jen-deleted", "e-2025-02-25-jen-removes-harbin", "e-2025-07-14-screenshot", "e-2025-07-14-jen-allan-waitlist", "e-2025-09-19-complaint", "e-2025-09-19-allan", "e-2025-11-06-hr-call"],
+    reliability: "confirmed-email",
+    filePath: "/exhibits/EX-048-midshift-waitlist-version-history-narrative.pdf",
+    fileKind: "pdf",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
