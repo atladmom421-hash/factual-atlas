@@ -30,6 +30,114 @@ const STEP_IDS = [
   "e-2025-12-05-hardship-received",
 ] as const;
 
+const HARM_CHAIN: { title: string; body: string; eventIds: string[]; exhibitIds: string[] }[] = [
+  {
+    title: "Workplace conditions reduce income (intermittent FMLA, unpaid hours)",
+    body: "Salaried but unpaid for partial-day intermittent-FMLA hours used for a condition the doctor connected to workplace environmental/interpersonal issues. Income was already dropping before the hardship request was even filed.",
+    eventIds: ["e-2025-11-24-std-filed"],
+    exhibitIds: ["EX-003", "EX-021", "EX-007"],
+  },
+  {
+    title: "Hardship request submitted within policy — same-day notice to HR + Recovery leadership",
+    body: "$4,950 request (below the $5,000 exception-only tier) with attestation completed Nov 13. The same morning, an 'SH Hardship' meeting appeared on Allan Glover's calendar with Marchinko and Carfagna; Cameron Hadley emailed the same day. There is no question Respondent knew.",
+    eventIds: ["e-2025-11-13-hardship-submitted", "e-2025-11-13-sh-hardship-meeting", "e-2025-11-13-hadley-contact"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Additional documentation required — submitted same day",
+    body: "Nov 17, Cameron Hadley required late-rent / bills / >$2,000 treatment receipt / police report before he would submit the request for approval consideration. The documentation was provided the same day. Under policy, complete documentation triggers a twice-weekly funding cadence.",
+    eventIds: ["e-2025-11-17-hadley-meeting", "e-2025-11-17-docs-submitted"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Approval stalls — written notice of imminent housing loss ignored",
+    body: "Nov 26 email to Lindsay Beck warning that Lashawnna and her child could be 'permanently without housing.' Beck confirms still no approval, blaming post-merger Capital One review. Follow-up Nov 28 reiterates rent/medical urgency. No funds released.",
+    eventIds: ["e-2025-11-26-beck-housing-email", "e-2025-11-26-beck-reply", "e-2025-11-28-beck-followup"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Family sleeps in a car for ~one week pre-eviction",
+    body: "Between the failed approval and the court date, Lashawnna and her minor son were sleeping in her car. This was disclosed in writing to HR and leadership the morning of the eviction hearing.",
+    eventIds: ["e-2025-12-01-eviction-escalation"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Eviction hearing — judge requests employer status — no decision provided",
+    body: "Dec 1 escalation to Beck, Glover, Palmer, Marchinko, and Hedrick noting the 11:00 a.m. MT hearing and the judge's specific request for an employer update on whether the hardship would be approved. No written status was provided in time.",
+    eventIds: ["e-2025-12-01-eviction-escalation"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Eviction / housing loss",
+    body: "Eviction occurred Dec 1, 2025 — after Respondent had actual written notice of the emergency and after documentation had been with HR for roughly two weeks.",
+    eventIds: ["e-2025-12-01-eviction"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Hardship funds finally released — at or just after the harm",
+    body: "Funds received on/about Dec 5, 2025 — ~22 days after the initial request and ~18 days after documentation was submitted, contrary to the policy's twice-weekly cadence. Too late to prevent the eviction-related harm.",
+    eventIds: ["e-2025-12-05-hardship-received"],
+    exhibitIds: ["EX-003", "EX-021"],
+  },
+  {
+    title: "Compounding leave / pay collapse → loss of health insurance",
+    body: "Same window: STD still under Hartford review (Dec 3 letter); no pay since early November; eventual loss of health insurance for Lashawnna and her son; forced to end STD earlier than medically appropriate because she could not afford follow-up visits.",
+    eventIds: ["e-2025-12-15-correction-warning", "e-2025-12-22-to-jan-2-nopay", "e-2026-01-insurance-loss"],
+    exhibitIds: ["EX-003", "EX-007"],
+  },
+];
+
+const DAMAGES: { category: string; basis: string; low: number; high: number }[] = [
+  {
+    category: "Eviction-related housing costs",
+    basis: "Court costs, late fees, lockout/storage fees, deposits/move-in costs for replacement housing, higher post-eviction rent premium.",
+    low: 6000,
+    high: 18000,
+  },
+  {
+    category: "Temporary lodging / car-living period",
+    basis: "Approx. one week of pre-eviction car-living plus any short-term lodging until stable housing was re-secured.",
+    low: 1500,
+    high: 5000,
+  },
+  {
+    category: "Lost wages — unpaid intermittent-FMLA hours",
+    basis: "Partial-day FMLA hours not paid despite salaried status, during the months leading up to and surrounding the hardship request.",
+    low: 4000,
+    high: 12000,
+  },
+  {
+    category: "Lost wages — unpaid period awaiting STD approval",
+    basis: "No pay from early November 2025 through Jan 2026 STD extension; delayed approval despite submitted paperwork.",
+    low: 12000,
+    high: 30000,
+  },
+  {
+    category: "Out-of-pocket medical / treatment costs",
+    basis: "Includes the >$2,000 treatment receipt and additional costs incurred after loss of insurance coverage.",
+    low: 3000,
+    high: 10000,
+  },
+  {
+    category: "Loss of health insurance / coverage gap",
+    basis: "Value of lost employer coverage for Lashawnna and her son during the coverage gap, including COBRA-equivalent or replacement-coverage cost.",
+    low: 3000,
+    high: 9000,
+  },
+  {
+    category: "Property loss tied to the vehicle break-in / housing instability period",
+    basis: "Stolen property (credit cards, watches, etc.) and items lost or damaged during the displacement period (per police report referenced in Cameron Hadley call).",
+    low: 2000,
+    high: 8000,
+  },
+  {
+    category: "Childcare / school disruption costs for minor child",
+    basis: "Additional childcare, transportation, and school-related costs caused by the displacement and unstable housing.",
+    low: 1000,
+    high: 4000,
+  },
+];
+
 function HardshipThreadPage() {
   const { open } = useExhibit();
   const steps = STEP_IDS.map(id => eventById(id)).filter(Boolean) as NonNullable<ReturnType<typeof eventById>>[];
