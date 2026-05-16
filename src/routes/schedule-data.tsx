@@ -5,6 +5,7 @@ import { clsx } from "clsx";
 import { scheduleRows, SCHEDULE_TYPES, SCHEDULE_COLOR, type ScheduleType } from "@/data/schedule-data";
 import { exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
+import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
@@ -76,8 +77,13 @@ function ScheduleDataPage() {
         </button>
       )}
 
+      {/* Investigator matrix — the headline visual */}
+      <div className="mt-10">
+        <LeaderShiftMatrix />
+      </div>
+
       {/* Summary chips */}
-      <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
         {SCHEDULE_TYPES.map(t => (
           <div key={t} className={clsx("rounded-md p-3 ring-1", SCHEDULE_COLOR[t])}>
             <div className="text-[10px] uppercase tracking-wider opacity-80">{t}</div>
