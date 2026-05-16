@@ -206,6 +206,124 @@ Speaker 1: I did talk to Allan about removing himself from your team chat. He sa
 
 Speaker 2: Yeah, okay.`,
   },
+  {
+    id: "EX-CYNDY-FOLLOWUP",
+    exhibitNumber: "EX-012",
+    fileName: "April 22, 2026 — Follow-up conversation with Cyndy Smith (transcript)",
+    date: "April 22, 2026",
+    category: "Transcript",
+    peopleIds: ["harbin", "cyndy-smith", "mclaughlin", "lesure"],
+    summary: "Follow-up conversation with Cyndy Smith after the leadership calibration meeting where Lashawnna's Direct Pay / customer disclosure practices were publicly questioned. Cyndy confirms concerns about whether customers were fully educated, and states she reached out to Shawn McLaughlin for a call example. Lashawnna states the disclosures were still being read, the practice had been used for over three years without compliance defects, and that the public framing made her feel her integrity as a manager was being questioned. She also raises unequal treatment in the group and asks that future concerns be addressed privately.",
+    linkedEventIds: ["e-2026-04-22-calibration", "e-2026-04-23-cyndy-followup", "e-2025-02-cyndy-prior"],
+    reliability: "confirmed-transcript",
+    fileKind: "transcript",
+    transcriptText: `Follow-up Conversation with Cyndy Smith — April 22, 2026
+Re: Leadership calibration discussion of Direct Pay / customer disclosure practices
+
+Lashawnna Harbin: Hello. Yeah, how's that going? Are you over on the Capital One side more now? Are you guys just moved? Is that what happened?
+
+Cyndy Smith: Our team officially moved over to the Capital One side. However, we still support a lot of the [unclear] because we haven't been through training or anything like that.
+
+Lashawnna Harbin: Okay.
+
+Cyndy Smith: Personally, I support [unclear] and DPL.
+
+Lashawnna Harbin: Oh, very cool. So, [unclear] and DPL, are they kind of linked together? Are they under the same umbrella now? Is that what it is, or no?
+
+Cyndy Smith: They're separate. Separate Director, separate DM.
+
+Lashawnna Harbin: Oh, wow.
+
+Cyndy Smith: But DPL is pretty small, so that's how they're going to do them. But still have some work to do compliance-wise.
+
+Lashawnna Harbin: Yeah, yeah. I'm still trying to get a full picture of all the changes that have taken place over the past five months. So yeah, it's been a lot.
+
+So, I know in the calibration we were talking about the Direct Pay placement, and I was a little caught off guard. Not caught off guard exactly, but I was just like, "Dang, I hope I'm not doing anything that's against policy."
+
+I definitely felt a little caught off guard because I don't want anyone to think I'm doing anything unethical or without integrity. That's really important to me. I just try to do the best I can and communicate best practices to my agents.
+
+So I was a little worried, like, "Am I doing something wrong?" What is the suggested call flow? How should we be doing this?
+
+Cyndy Smith: Well, I would say the suggested call flow is what is published, right? Policies, procedures. This process has gone through compliance. It has gone through the same as how we want our flow to be.
+
+Lashawnna Harbin: Okay.
+
+Cyndy Smith: I have concerns about how your layout is, just because I don't know that the customer is 100% educated that they're signing up for two separate things.
+
+They're signing up for a payment, and they're signing up for automatic payments. You suggested that some of the talk-off is, "Now that I've reestablished your account, let's go ahead and use that bank account."
+
+Lashawnna Harbin: So the talk-off is, "Okay, great. So we'll set up the payment for $100. That'll be paid on April 30th. Then, going forward, it looks like you have excellent payment history. Something that can help you out with that is Direct Pay. It's our form of autopay," or whatever the script is for that.
+
+So they kind of go into it from there like that. And then if they get a yes, like, "Yeah, I'd like to sign up for that," they still read the payment disclosure, right? So the customer hears the full payment disclosure and the payment information. Then they collect the payment information for Direct Pay.
+
+Cyndy Smith: Yeah, and I would just be very careful that they are using the approved talk-off, especially for Massachusetts accounts. That's completely—
+
+Lashawnna Harbin: Oh yeah. Yeah, I'm familiar with that.
+
+Cyndy Smith: And based on what you had, it wasn't in line with what is acceptable for the Massachusetts accounts, simply.
+
+Lashawnna Harbin: Right. I agree.
+
+Cyndy Smith: And I had reached out to Shawn to get a call example of where it was successful and sounded great, or even where there were some extra questions from the customer after it flowed this way, to take it to compliance and take it to process and have them listen to it and get their opinion.
+
+Lashawnna Harbin: Okay. Now, on calls where my agents have done it in the past, there's never been a compliance defect or anything like that. My agents have been doing this for over three years now.
+
+So we've never had — I mean, I've shared it with all the D-grades and the Ryans. I think they've heard it. Everyone has heard it. So that's why I was definitely a little taken aback with the verbiage. I think you said "unethical," right?
+
+Cyndy Smith: Why?
+
+Lashawnna Harbin: Or "not transparent."
+
+Cyndy Smith: Yeah, I just, you know—
+
+Lashawnna Harbin: Well, I feel like a lot of the times when me or Karena bring up something, you speak like that, or you add in that type of adjective into describing what we're doing specifically.
+
+So when you bring up things like, "You're not being transparent," well, no — when you're questioning my integrity as a manager, that's not your job. You know that, right?
+
+Cyndy Smith: I wasn't questioning your integrity.
+
+Lashawnna Harbin: But you are, and you've done that several times in several meetings.
+
+Cyndy Smith: That's not my intention.
+
+Lashawnna Harbin: Well, that's what I wanted to say, because I'm looking to you as a source of information, knowledge, and guidance on things like this. That's why you're here in the meeting.
+
+So when I feel like if I bring up something, which I have in the past, and you've addressed me in that manner in front of the group in the past, it feels like, one, I shouldn't feel comfortable bringing things up because I could be personally attacked on my integrity or how I'm coaching my team.
+
+It makes me uncomfortable. So that's why I wanted to reach out to you.
+
+And Karena has expressed the same thing to me as far as you addressing her in public as well. And yeah, the coach, so.
+
+But for me personally, I just got back from leave. I'm just bringing up something that I've done in the past and that I thought I had talked to you about in the past as well.
+
+So when you brought that up, and then obviously you felt the need to go to Shawn as well, I just felt like, wow, is that the working relationship that we have? Because if so, that doesn't feel comfortable for me. It feels like you're attacking me.
+
+And then also, you're very dismissive of my concern, so that's also very concerning.
+
+Cyndy Smith: I'm not dismissive of your concern. I apologize for the way you felt. That was not my intention.
+
+Lashawnna Harbin: Right. And I just ask that in the future — no, let me just finish what I'm saying. I'm just asking, I'm just asking—
+
+Cyndy Smith: I'm not going to communicate if I can't finish the statement.
+
+Lashawnna Harbin: I'm just asking in the future, if you do have a concern like that, pull me to the side. Or I don't know, go to Shawn and have a conversation with me and Shawn, or whatever.
+
+Yeah, I just feel like I'm not being treated equally in the group.
+
+Cyndy Smith: Have you had that conversation with everybody else that brought up the concern?
+
+Lashawnna Harbin: No, I haven't yet. I reached out to you because you're the compliance manager. You have [oversight / responsibility] over their team leads. And I'm sure we'll all converse about it in our own separate meeting.
+
+But you know, you're not a unit manager — or you are, right? But I just wanted to talk to you in your own capacity as a leader in the compliance space.
+
+Cyndy Smith: I just felt like I was questioning from a compliance standpoint of, are we doing what we should be doing for the customer? And that's all I was trying to do. I wasn't trying to test your integrity in any way.
+
+Lashawnna Harbin: Well, I just wanted to be clear on that, because I definitely — anything that I want to address, I want to feel comfortable coming to you. And also, if anything needs to be addressed, I definitely will.
+
+So I just want to be clear on that. Okay?
+
+Well, I have to run to my next meeting, but thanks for taking the time to speak with me. I appreciate it. Okay.`,
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
