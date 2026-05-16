@@ -1,7 +1,8 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Moon, Sun, Printer } from "lucide-react";
+import { Moon, Sun, Printer, Search } from "lucide-react";
 import { clsx } from "clsx";
+import { openGlobalSearch } from "./GlobalSearch";
 
 const links = [
   { to: "/", label: "Overview" },
@@ -54,6 +55,22 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-1">
+          <button
+            onClick={openGlobalSearch}
+            aria-label="Search case file"
+            className="hidden sm:flex items-center gap-2 rounded-sm border border-border bg-secondary/60 px-2.5 py-1.5 text-xs text-muted-foreground hover:bg-secondary hover:text-foreground"
+          >
+            <Search className="size-3.5" />
+            <span>Search</span>
+            <kbd className="ml-1 rounded-sm border border-border bg-background px-1 py-0.5 text-[10px] font-mono">⌘K</kbd>
+          </button>
+          <button
+            onClick={openGlobalSearch}
+            aria-label="Search case file"
+            className="sm:hidden rounded-sm p-2 text-foreground/60 hover:text-foreground hover:bg-secondary"
+          >
+            <Search className="size-4" />
+          </button>
           <button onClick={() => window.print()} aria-label="Print" className="rounded-sm p-2 text-foreground/60 hover:text-foreground hover:bg-secondary">
             <Printer className="size-4" />
           </button>
