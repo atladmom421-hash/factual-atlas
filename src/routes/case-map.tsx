@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Map as MapIcon, Scale, Users, FileText, AlertTriangle, ArrowRight, Filter, Download, ExternalLink } from "lucide-react";
+import { Map as MapIcon, Scale, Users, FileText, AlertTriangle, ArrowRight, Filter, Download, ExternalLink, Search, X } from "lucide-react";
 import { clsx } from "clsx";
 import { events, exhibits, people, CATEGORY_LABELS } from "@/data";
 import type { EventCategory, TimelineEvent } from "@/data/types";
