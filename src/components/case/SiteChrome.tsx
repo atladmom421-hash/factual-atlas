@@ -13,6 +13,7 @@ const links = [
   { to: "/evidence", label: "Evidence" },
   { to: "/preservation", label: "Preservation" },
   { to: "/greg-anita-thread", label: "Greg/Anita Thread" },
+  { to: "/hardship-thread", label: "Hardship Thread" },
   { to: "/story", label: "Story Mode" },
   { to: "/investigator", label: "Investigator Brief" },
 ] as const;
