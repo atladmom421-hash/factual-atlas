@@ -24,8 +24,8 @@ export const exhibits: Exhibit[] = [
     summary: "Documented concerns regarding deletion and preservation of waitlist and related records.",
     linkedEventIds: ["e-2025-02-22-jen-deleted", "e-2025-10-07-reyes-timeline", "e-2025-10-14-fmla-notice", "e-2025-10-23-chat-missing", "e-2025-10-23-other-chats-visible", "e-2025-10-24-chat-cleared-phone", "e-2025-10-record-pres", "e-2025-10-readonly"],
     reliability: "confirmed-screenshot",
-    filePath: "/exhibits/EX-002-record-deletion-oct-2025.pdf",
-    fileKind: "pdf",
+    filePath: "/exhibits/EX-002-record-deletion-oct-2025.docx",
+    fileKind: "docx",
   },
   {
     id: "EX-003",
