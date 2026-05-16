@@ -101,7 +101,15 @@ export function WaitlistStatusTimeline() {
               {SNAPS.map(s => (
                 <th key={s.key} className="px-2 py-2 text-left font-medium">
                   <div className="flex items-center gap-1.5">
-                    <span>{s.label}</span>
+                    <Link
+                      to="/timeline"
+                      hash={`evt-${s.eventId}`}
+                      className="inline-flex items-center gap-0.5 hover:text-foreground"
+                      title="Jump to Master Timeline event"
+                    >
+                      {s.label}
+                      <ArrowUpRight className="size-3 opacity-60" />
+                    </Link>
                     <button
                       onClick={() => open(s.exhibit)}
                       className="rounded-sm bg-secondary px-1 py-0.5 text-[9px] hover:bg-secondary/70"
