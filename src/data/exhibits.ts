@@ -756,8 +756,6 @@ Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pa
     filePath: "/exhibits/EX-022-schedule-movement-comparator-evidence.pdf",
     fileKind: "pdf",
   },
-];
-
   {
     id: "EX-040",
     exhibitNumber: "EX-040",
