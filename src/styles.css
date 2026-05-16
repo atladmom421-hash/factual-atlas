@@ -143,16 +143,76 @@
 @media print {
   .no-print { display: none !important; }
   body { background: white; color: black; }
+  .hud-panel { background: white !important; border-color: #ddd !important; }
 }
 
 .search-flash {
   animation: search-flash 2.2s ease-out;
-  outline: 2px solid var(--color-accent, #ff5124);
+  outline: 2px solid var(--color-accent, #ffb547);
   outline-offset: 4px;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 @keyframes search-flash {
-  0%   { box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-accent, #ff5124) 55%, transparent); }
+  0%   { box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-accent, #ffb547) 55%, transparent); }
   60%  { box-shadow: 0 0 0 14px transparent; }
   100% { box-shadow: 0 0 0 0 transparent; outline-color: transparent; }
+}
+
+/* HUD utility classes */
+.hud-panel {
+  background: var(--hud-panel);
+  border: 1px solid var(--border);
+  position: relative;
+}
+.hud-panel::before,
+.hud-panel::after {
+  content: "";
+  position: absolute;
+  width: 8px; height: 8px;
+  border-color: var(--hud-cyan);
+  border-style: solid;
+}
+.hud-panel::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
+.hud-panel::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
+
+.hud-grid-bg {
+  background-image:
+    linear-gradient(var(--hud-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hud-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hud-scanline {
+  background: linear-gradient(180deg,
+    transparent 0%,
+    color-mix(in oklab, var(--hud-cyan) 8%, transparent) 50%,
+    transparent 100%);
+}
+
+.font-mono, .mono { font-family: var(--font-mono); }
+
+.hud-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--hud-cyan);
+}
+
+@keyframes hud-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.hud-pulse { animation: hud-blink 2s ease-in-out infinite; }
+
+@keyframes hud-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.hud-sweep::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--hud-cyan) 25%, transparent), transparent);
+  animation: hud-sweep 3s linear infinite;
+  pointer-events: none;
 }
