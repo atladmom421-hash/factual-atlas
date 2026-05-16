@@ -21,13 +21,22 @@ function TimelinePage() {
   const [category, setCategory] = useState<string>("all");
   const [year, setYear] = useState<string>("all");
   const [personId, setPersonId] = useState<string>("all");
+  const [months, setMonths] = useState<string[]>([]);
 
-  // Honor category and date hashes set by global search
+  // Honor category, date, and month hashes set by global search / comparators
   useEffect(() => {
     const apply = () => {
       const h = window.location.hash.replace(/^#/, "");
-      if (h.startsWith("cat-")) { setCategory(h.slice(4)); setYear("all"); setPersonId("all"); }
-      else if (h.startsWith("date-")) { setYear(h.slice(5, 9)); setCategory("all"); setPersonId("all"); }
+      if (h.startsWith("cat-")) { setCategory(h.slice(4)); setYear("all"); setPersonId("all"); setMonths([]); }
+      else if (h.startsWith("months-")) {
+        const list = h.slice(7).split(",").map(s => s.trim()).filter(s => /^\d{4}-\d{2}$/.test(s));
+        setMonths(list); setCategory("all"); setYear("all"); setPersonId("all");
+        // Scroll to the top of the filtered timeline
+        requestAnimationFrame(() => {
+          document.getElementById("timeline-results")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      else if (h.startsWith("date-")) { setYear(h.slice(5, 9)); setCategory("all"); setPersonId("all"); setMonths([]); }
     };
     apply();
     window.addEventListener("hashchange", apply);
@@ -38,8 +47,9 @@ function TimelinePage() {
   const filtered = useMemo(() => eventsSorted.filter(e =>
     (category === "all" || e.category === category) &&
     (year === "all" || e.sortKey.startsWith(year)) &&
-    (personId === "all" || e.peopleIds.includes(personId))
-  ), [category, year, personId]);
+    (personId === "all" || e.peopleIds.includes(personId)) &&
+    (months.length === 0 || months.some(m => e.sortKey.startsWith(m)))
+  ), [category, year, personId, months]);
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
