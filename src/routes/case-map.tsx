@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Map as MapIcon, Scale, Users, FileText, AlertTriangle, ArrowRight, Filter, Download, ExternalLink } from "lucide-react";
+import { Map as MapIcon, Scale, Users, FileText, AlertTriangle, ArrowRight, Filter, Download, ExternalLink, Search, X } from "lucide-react";
 import { clsx } from "clsx";
 import { events, exhibits, people, CATEGORY_LABELS } from "@/data";
 import type { EventCategory, TimelineEvent } from "@/data/types";
@@ -103,12 +103,43 @@ function eventYear(e: TimelineEvent): string {
 function CaseMapPage() {
   const { open } = useExhibit();
   const [active, setActive] = useState<EventCategory | "all">("all");
+  const [query, setQuery] = useState("");
+  const [fromDate, setFromDate] = useState("");
+  const [toDate, setToDate] = useState("");
+
+  const peopleById = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const p of people) m.set(p.id, p.name);
+    return m;
+  }, []);
 
   const sorted = useMemo(() => [...events].sort((a, b) => a.sortKey.localeCompare(b.sortKey)), []);
-  const filtered = useMemo(
-    () => (active === "all" ? sorted : sorted.filter(e => e.category === active)),
-    [sorted, active],
-  );
+
+  // Apply category + search/date filters
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return sorted.filter(e => {
+      if (active !== "all" && e.category !== active) return false;
+      if (fromDate && e.sortKey < fromDate) return false;
+      if (toDate && e.sortKey > toDate) return false;
+      if (!q) return true;
+      const peopleNames = e.peopleIds.map(id => peopleById.get(id) ?? id).join(" ");
+      const haystack = [
+        e.title,
+        e.description,
+        e.date,
+        e.whyItMatters ?? "",
+        e.category,
+        e.status,
+        peopleNames,
+        e.evidenceIds.join(" "),
+      ].join(" ").toLowerCase();
+      // support multi-term AND search
+      return q.split(/\s+/).every(term => haystack.includes(term));
+    });
+  }, [sorted, active, query, fromDate, toDate, peopleById]);
+
+  const hasSearch = query.trim() !== "" || fromDate !== "" || toDate !== "";
 
   // group filtered timeline by year for the strip
   const byYear = useMemo(() => {
@@ -126,6 +157,35 @@ function CaseMapPage() {
     for (const e of events) counts[e.category] = (counts[e.category] ?? 0) + 1;
     return counts;
   }, []);
+
+  // matching exhibits (by ID or summary keyword) when searching
+  const matchingExhibits = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return exhibits.filter(ex =>
+      ex.id.toLowerCase().includes(q) ||
+      ex.exhibitNumber.toLowerCase().includes(q) ||
+      ex.fileName.toLowerCase().includes(q) ||
+      ex.summary.toLowerCase().includes(q),
+    ).slice(0, 12);
+  }, [query]);
+
+  // matching people when searching
+  const matchingPeople = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return people.filter(p =>
+      p.name.toLowerCase().includes(q) ||
+      p.role.toLowerCase().includes(q) ||
+      p.relationshipToCase.toLowerCase().includes(q),
+    ).slice(0, 12);
+  }, [query]);
+
+  const resetSearch = () => {
+    setQuery("");
+    setFromDate("");
+    setToDate("");
+  };
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-10 space-y-12">
@@ -170,6 +230,168 @@ function CaseMapPage() {
             <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mt-1">{s.label}</div>
           </div>
         ))}
+      </section>
+
+      {/* Global search */}
+      <section className="space-y-3">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+            <Search className="size-3.5" /> Search events, people, exhibits
+          </div>
+          {hasSearch && (
+            <button
+              onClick={resetSearch}
+              className="inline-flex items-center gap-1 text-[11px] text-muted-foreground hover:text-foreground"
+            >
+              <X className="size-3" /> Clear
+            </button>
+          )}
+        </div>
+        <div className="rounded-sm border border-border bg-card p-3 grid gap-3 md:grid-cols-[1fr_auto_auto] md:items-end">
+          <label className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">Keyword / name / exhibit ID</span>
+            <div className="relative">
+              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 size-3.5 text-muted-foreground" />
+              <input
+                type="text"
+                value={query}
+                onChange={e => setQuery(e.target.value)}
+                placeholder='e.g. "Greg", "hardship", "EX-021", "Marcinko"'
+                className="w-full rounded-sm border border-border bg-background pl-8 pr-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/40"
+              />
+            </div>
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">From</span>
+            <input
+              type="date"
+              value={fromDate}
+              onChange={e => setFromDate(e.target.value)}
+              className="rounded-sm border border-border bg-background px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/40"
+            />
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">To</span>
+            <input
+              type="date"
+              value={toDate}
+              onChange={e => setToDate(e.target.value)}
+              className="rounded-sm border border-border bg-background px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/40"
+            />
+          </label>
+        </div>
+
+        {hasSearch && (
+          <div className="rounded-sm border border-border bg-secondary/20 p-4 space-y-4">
+            <div className="flex items-baseline justify-between gap-3">
+              <div className="text-sm">
+                <span className="font-medium">{filtered.length}</span>{" "}
+                <span className="text-muted-foreground">matching event{filtered.length === 1 ? "" : "s"}</span>
+                {matchingPeople.length > 0 && (
+                  <>
+                    {" · "}
+                    <span className="font-medium">{matchingPeople.length}</span>{" "}
+                    <span className="text-muted-foreground">people</span>
+                  </>
+                )}
+                {matchingExhibits.length > 0 && (
+                  <>
+                    {" · "}
+                    <span className="font-medium">{matchingExhibits.length}</span>{" "}
+                    <span className="text-muted-foreground">exhibits</span>
+                  </>
+                )}
+              </div>
+              <span className="text-[11px] text-muted-foreground">Click any result to jump to its record.</span>
+            </div>
+
+            {filtered.length > 0 && (
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-2">Events</div>
+                <ul className="max-h-72 overflow-y-auto divide-y divide-border/60">
+                  {filtered.slice(0, 30).map(e => (
+                    <li key={e.id}>
+                      <Link
+                        to="/timeline"
+                        hash={`evt-${e.id}`}
+                        className="group flex items-start gap-3 py-2 px-2 -mx-2 rounded-sm hover:bg-secondary"
+                      >
+                        <span className={clsx("mt-2 size-2 shrink-0 rounded-full", CATEGORY_COLOR[e.category] ?? "bg-muted")} />
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="text-xs text-muted-foreground tabular-nums">{e.date}</span>
+                            <span className="text-sm font-medium truncate">{e.title}</span>
+                          </div>
+                          <div className="flex items-center gap-1.5 flex-wrap mt-1">
+                            <CategoryBadge category={e.category} />
+                            <StatusBadge status={e.status} />
+                            {e.evidenceIds.slice(0, 3).map(exId => (
+                              <button
+                                key={exId}
+                                onClick={(ev) => { ev.preventDefault(); ev.stopPropagation(); open(exId); }}
+                                className="inline-flex items-center gap-1 rounded-sm border border-border bg-background px-1.5 py-0.5 text-[10px] hover:bg-secondary"
+                              >
+                                <FileText className="size-2.5" /> {exId}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        <ExternalLink className="size-3 opacity-0 group-hover:opacity-60 mt-2 shrink-0" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                {filtered.length > 30 && (
+                  <div className="pt-2 text-xs text-muted-foreground">+ {filtered.length - 30} more — refine your search to narrow.</div>
+                )}
+              </div>
+            )}
+
+            {matchingPeople.length > 0 && (
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-2">People</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {matchingPeople.map(p => (
+                    <Link
+                      key={p.id}
+                      to="/people"
+                      hash={`person-${p.id}`}
+                      className="inline-flex items-center gap-1.5 rounded-sm border border-border bg-background px-2 py-1 text-xs hover:bg-secondary"
+                    >
+                      <Users className="size-3" />
+                      <span className="font-medium">{p.name}</span>
+                      <span className="text-muted-foreground">— {p.role}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {matchingExhibits.length > 0 && (
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-2">Exhibits</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {matchingExhibits.map(ex => (
+                    <button
+                      key={ex.id}
+                      onClick={() => open(ex.id)}
+                      className="inline-flex items-center gap-1.5 rounded-sm border border-border bg-background px-2 py-1 text-xs hover:bg-secondary"
+                      title={ex.summary}
+                    >
+                      <FileText className="size-3" />
+                      <span className="font-medium">{ex.id}</span>
+                      <span className="text-muted-foreground truncate max-w-[220px]">— {ex.fileName}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {filtered.length === 0 && matchingPeople.length === 0 && matchingExhibits.length === 0 && (
+              <div className="text-sm text-muted-foreground">No results. Try a different keyword or widen the date range.</div>
+            )}
+          </div>
+        )}
       </section>
 
       {/* Category legend / filter */}
