@@ -90,6 +90,11 @@ function ScheduleDataPage() {
         <WaitlistTimeline />
       </div>
 
+      {/* Per-TL status tracker across the three snapshots */}
+      <div className="mt-10">
+        <WaitlistStatusTimeline />
+      </div>
+
       {/* Verbatim Allan Glover chat threads */}
       <div className="mt-10">
         <AllanChatThreads />
