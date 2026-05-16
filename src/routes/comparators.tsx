@@ -152,7 +152,7 @@ function ComparatorsPage() {
                   <div className="text-[10px] uppercase tracking-wider text-accent">Why it's inconsistent</div>
                   <p className="mt-0.5 text-xs text-foreground/85">{a.inconsistency}</p>
                 </div>
-                <div className="mt-auto flex flex-col gap-1">
+                <div className="mt-auto flex flex-col gap-1.5">
                   {a.cite.map(c => (
                     <button
                       key={c.id + c.label}
@@ -164,6 +164,16 @@ function ComparatorsPage() {
                       <ExternalLink className="size-2.5 text-muted-foreground" />
                     </button>
                   ))}
+                  <Link
+                    to="/timeline"
+                    hash={`months-${a.months.join(",")}`}
+                    className="no-print inline-flex items-center gap-1.5 self-start rounded-sm border border-accent/50 bg-accent/10 px-2 py-1 text-[11px] text-accent hover:bg-accent/20"
+                    title={`Filter Master Timeline to ${a.months.length} month${a.months.length === 1 ? "" : "s"}`}
+                  >
+                    <CalendarRange className="size-3" />
+                    Jump to timeline · {monthLabel(a.months)}
+                    <ExternalLink className="size-2.5 opacity-70" />
+                  </Link>
                 </div>
               </article>
             ))}
