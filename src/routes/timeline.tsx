@@ -66,8 +66,19 @@ function TimelinePage() {
         <FilterRow label="Person" value={personId} onChange={setPersonId} options={[{ value: "all", label: "All people" }, ...people.map(p => ({ value: p.id, label: p.name }))]} />
       </div>
 
+      {/* Active month-filter chip (from comparator citation jumps) */}
+      {months.length > 0 && (
+        <div className="no-print mt-4 flex flex-wrap items-center gap-2 rounded-md border border-accent/40 bg-accent/5 px-3 py-2 text-xs">
+          <span className="text-[10px] uppercase tracking-wider text-accent">Month filter</span>
+          {months.map(m => (
+            <span key={m} className="rounded-full bg-card px-2 py-0.5 font-mono text-[11px] text-foreground/85">{m}</span>
+          ))}
+          <button onClick={() => { setMonths([]); history.replaceState(null, "", window.location.pathname); }} className="ml-auto text-[11px] text-muted-foreground hover:text-foreground">Clear</button>
+        </div>
+      )}
+
       {/* Timeline */}
-      <div className="mt-12 space-y-6">
+      <div id="timeline-results" className="mt-12 space-y-6">
         {filtered.length === 0 && (
           <div className="rounded-md border border-dashed border-border p-12 text-center text-sm text-muted-foreground">No events match the current filters.</div>
         )}
