@@ -1,135 +1,59 @@
+## Full redesign — Palantir-style intelligence dashboard
 
-# Interactive Case Evidence Application — Build Plan
+Convert the case file from its current editorial / paper aesthetic into a dark, dense, data-forward intelligence-dashboard look — and add four new interactive visualizations.
 
-A cinematic, documentary-style case presentation web app. Serious, factual, professional. Built as a multi-route TanStack Start application with rich placeholder data drawn directly from your timeline, transcripts, and uploaded exhibits.
+### Visual language
 
----
+- **Theme**: dark navy / near-black (`oklch(~0.12 0.02 250)`) background, denser grid lines, cyan + amber accents over the existing navy primary, monospace metadata, sharp 2px corners replacing rounded cards.
+- **Typography**: keep Instrument Serif for hero/section headlines (it still reads serious), demote body to Inter, introduce JetBrains Mono for IDs, dates, counters, badges.
+- **Chrome**: top bar gets a HUD-style status strip (live counters + system time + scan badge). Cards become "panels" with corner ticks and uppercase eyebrows.
+- **All edits flow through `src/styles.css` design tokens** — components stay token-based, no hardcoded colors.
 
-## Design System
+### Four new interactive features
 
-- Palette: white background, charcoal foreground, deep navy primary, warm orange `#ff5124` accent. Dark mode variant supported.
-- Typography: Instrument Serif (display/headlines) paired with Inter (body) — editorial, legal-document feel.
-- Components: cards with subtle shadows, generous spacing, accordions, tabs, filter chips, badges for status/category, modal exhibit viewer.
-- Motion: Framer Motion for chapter transitions, timeline reveals, modal fades. Restrained, cinematic.
-- Tone enforcement: a shared `<EvidenceStatusBadge>` component renders only approved labels (Confirmed by screenshot/email/transcript, Reported by witness, Reported by Lashawnna, Needs confirmation, To be verified).
+1. **Network graph of people + evidence**  
+   Force-directed SVG graph. Nodes = people, events, exhibits. Edges = participation / linkage. Click a node → side panel with details + jump links. Use `d3-force` (lightweight, no React-flow needed).
 
----
+2. **Schedule heatmap (15-month grid)**  
+   Rows = leaders, columns = Dec 2024 → May 2026. Each cell colored by schedule type (AM / Midshift / Mid-Late / PM-Closing). Lashawnna's row pinned at top and visually marked. Hover = tooltip with EX-022 page ref + jump button.
 
-## Routes / Sections
+3. **Animated timeline scrubber**  
+   Horizontal track across the new dashboard. Drag a playhead through months; events on a stacked-lane chart fade in as their month is reached. Play/pause + speed control.
 
-| Route | Section |
-|---|---|
-| `/` | Executive Overview (hero + stat cards + summary) |
-| `/timeline` | Master Timeline (filterable, vertical, all categories) |
-| `/timeline/april-2026` | April 2026 Return-from-Leave detailed timeline |
-| `/people` | People Directory (grid of person cards + detail modal) |
-| `/comparators` | Comparator Movement Matrix (sortable/filterable table) |
-| `/movement-map` | Department Movement Map (visual flow between areas) |
-| `/evidence` | Evidence Library (cards, filters, exhibit viewer) |
-| `/story` | Story Mode (10 cinematic chapters, prev/next nav, progress bar) |
-| `/investigator` | Investigator Brief (neutral agency-format summary) |
-| `/admin` | Editor Mode (add/edit timeline, evidence, comparators, people) |
+4. **Live evidence counters / stats**  
+   Animated count-up tiles at the top of the dashboard: total exhibits, confirmed-by-screenshot, protected activity events, deleted-evidence concerns, comparator inconsistencies. Auto-derived from the existing data.
 
-Shared chrome: top nav with section links, global search, dark-mode toggle, "Export PDF / Print" action (uses print stylesheet).
+### New page
 
----
+- `/command` — Intelligence Command Center. Houses the four new visualizations + status strip + quick-jump nav. Becomes the new default landing experience (Overview link points here; old `/` content kept reachable as "Brief").
+- Added to the main nav and the 5-min Tour.
 
-## Data Model (typed, seeded from your uploads)
+### Pages restyled to the new theme
 
-All data lives in `src/data/*.ts` as typed objects so it ships with the app and is editable via Admin mode (persisted to Lovable Cloud once enabled — see "Persistence" below).
+- `/` (Overview), `/timeline`, `/comparators`, `/evidence`, `/schedule-data`, `/people`, `/investigator`, `/tour`, plus `SiteHeader` / `SiteFooter`.
+- Print stylesheets preserved so PDFs still print on white paper for attorneys.
 
-- `TimelineEvent`: id, date, title, category, description, peopleIds[], evidenceIds[], whyItMatters, confidenceStatus, chapterId?
-- `Person`: id, name, role, category, relationshipToCase, eventIds[], evidenceIds[], race?, notes
-- `ComparatorRow`: person, role, race, priorArea, laterArea, monthMoved, waitlist, ticket, performance, evidenceRef, whyItMatters, confirmationStatus
-- `MovementEdge`: personId, fromArea, toArea, period, status
-- `Exhibit`: id, exhibitNumber, fileName, date, category, peopleIds[], summary, linkedEventIds[], reliabilityStatus, notes, filePath?
-- `Chapter`: id, number, title, introCopy, eventIds[], evidenceIds[], peopleIds[], keyQuestion
+### Out of scope
 
-### Seeded content (highlights — full list in implementation)
+- No backend changes; all data stays in `src/data/*`.
+- No content edits to events, exhibits, or comparators.
+- No auth, no Cloud changes.
 
-**Timeline events** seeded with every dated event from your message:
-- 2023/early-2024 temporary PM assignment
-- Apr 26, 2024 not on waitlist
-- May 7, 2024 prior EEOC
-- May 29, 2024 formal complaint email
-- May 31 / Jun 5 / Jul 19, 2024 HR transcripts
-- Jun 2024 ER assurance
-- Sep 24, 2024 Team Ratios file modified
-- Oct 10, 2024 credit removed
-- Oct 14, 2024 TL Shift & Waitlist document
-- Late Jan/Feb 2025 "solid" rating
-- Feb 18, 2025 records still show Temporary
-- Feb 22, 2025 Jen Roy deletes name from waitlist
-- Jun 2025 AM request expansion
-- Jul 14, 2025 Allan/Jen screenshot
-- Jul 16–17, 2025 re-added with new date + Permanent status
-- Sep 19, 2025 sixth complaint + meeting with Allan
-- Oct 3–4, 2025 read-only waitlist discovery
-- Nov 6, 2025 HR investigation follow-up call (full transcript attached)
-- All April–May 2026 return-from-leave events (Apr 3, 21, 22, 23, 27, 28, 29; May 1, 12)
+### Technical notes
 
-**People** all 25 named individuals from your list.
+- Add `d3-force` (graph layout) and `d3-scale` (heatmap color/scale). Keep rendering in plain SVG — no canvas, no WebGL, no Three.js (would push the bundle and clash with the Worker runtime).
+- Tokens added to `src/styles.css`: `--hud-bg`, `--hud-grid`, `--hud-cyan`, `--hud-amber`, `--panel`, `--panel-border`, `--mono` font stack.
+- Default dark; light mode kept available but no longer the default. Dark-mode toggle in the header is preserved.
+- All four visualizations are client-only components (`"use client"`-style usage via dynamic import or `useEffect`-mounted) so SSR doesn't try to size SVGs against a missing DOM.
 
-**Comparator rows** all 6 starter rows verbatim (Lashawnna, Tyler, Hunter, Marc, Julie, Marissa).
+### Delivery order
 
-**Movement edges** all 6 movement lines you specified.
+1. Theme tokens + global chrome restyle (small, reversible).
+2. `/command` page scaffold with the 4 panels in stub form.
+3. Live counters → heatmap → scrubber → network graph (heaviest last).
+4. Restyle the remaining content pages to match.
+5. QA in the preview at desktop + mobile widths; verify print stylesheet still renders on white.
 
-**Exhibits** seeded with the 8 PDFs + 1 DOCX + 1 PNG you uploaded — copied into `src/assets/exhibits/` and linked to the appropriate timeline events. Each gets an exhibit number (EX-001…) and reliability label.
+### Risk
 
-**Chapters** all 10, each pre-wired to its relevant events/evidence/people.
-
----
-
-## Key Interactive Behaviors
-
-- **Master Timeline**: filter chips for category, person, year; expandable "Why it matters" per event; "Open evidence" opens modal viewer.
-- **Exhibit Viewer Modal**: embeds PDFs via `<iframe>`, images inline, transcripts as scrollable text; shows linked events + people.
-- **Comparator Matrix**: sortable columns, status pill column, click row → side panel with full context.
-- **Movement Map**: SVG-based flow diagram (custom, not a heavy lib) showing areas as nodes and people as labeled edges with status colors.
-- **Story Mode**: full-screen chapter view, progress bar across top, keyboard arrows + buttons to navigate, Framer Motion crossfades.
-- **Search**: global fuzzy search across events, people, exhibits.
-- **Print / PDF**: dedicated print stylesheet renders the Investigator Brief + Timeline + Comparator Matrix as a clean document.
-
----
-
-## Persistence (Admin Mode)
-
-Default build ships with all data as TypeScript seed files (editable in code, no backend required). For the editor-mode "add new event / upload evidence / persist changes" requirement, I will enable **Lovable Cloud** so:
-- Timeline events, comparator rows, people, exhibits live in tables
-- Evidence files upload to Cloud storage
-- Admin route is protected by auth (single admin user)
-- Seed data is migrated in on first run
-
-If you'd rather skip the backend and keep everything as in-code seed data (faster, no login, but no upload UI), say so and I'll skip Cloud.
-
----
-
-## Build Order
-
-1. Design tokens in `src/styles.css` (palette, fonts, shadows) + install Framer Motion, Instrument Serif/Inter via Google Fonts link in `__root.tsx`.
-2. Seed data files + types.
-3. Shared layout: top nav, footer, dark-mode toggle, search.
-4. Routes built in this order: Executive Overview → Timeline → People → Comparator Matrix → Movement Map → Evidence Library → Story Mode → Investigator Brief → Admin (last, after Cloud enabled).
-5. Exhibit viewer modal + print stylesheet.
-6. Copy uploaded PDFs/DOCX/PNG into `src/assets/exhibits/` and wire to evidence cards.
-
----
-
-## Technical Notes
-
-- TanStack Start file-based routes under `src/routes/`.
-- One route file per section (no hash-anchor SPA).
-- Each route gets its own `head()` metadata (title, description, og:*).
-- Components in `src/components/case/` grouped by section.
-- All colors via semantic tokens — no hard-coded hex in components except the orange accent token definition.
-- Mobile responsive: timeline collapses to single column, matrix becomes horizontally scrollable, story mode stacks vertically.
-
----
-
-## Confirm Before I Build
-
-1. **Enable Lovable Cloud** for the Admin/editor mode + evidence uploads? (Default: yes.) If no, Admin becomes read-only and all edits happen in code.
-2. **Auth on Admin route?** If Cloud is enabled, I'll add a single-admin email/password login so the editor isn't public.
-3. Anything to **omit or rename** before I start (e.g., redact specific names, change the case title shown in the header)?
-
-If you're happy with the above, reply "go" (or with any tweaks) and I'll build it end-to-end.
+Large surface area. If anything looks worse than the current editorial style on a content-heavy page (e.g. Investigator Brief), I'll leave that page in a hybrid "dark chrome, paper content" mode rather than force the full HUD treatment.
