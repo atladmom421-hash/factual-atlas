@@ -11,11 +11,12 @@ export function TimelineEventCard({ event, index }: { event: TimelineEvent; inde
   const { open: openExhibit } = useExhibit();
   return (
     <motion.article
+      id={`evt-${event.id}`}
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.4, delay: Math.min(index * 0.02, 0.2) }}
-      className="relative pl-8 sm:pl-12"
+      className="relative pl-8 sm:pl-12 scroll-mt-24"
     >
       {/* timeline rail */}
       <div className="absolute left-3 sm:left-4 top-0 bottom-0 w-px bg-border" aria-hidden />
