@@ -31,7 +31,7 @@ Particulars:
 - After return from FMLA discovered system was being recorded via Verint without notice. After complaint they turned on recorders for other team leaders to cover up targeting.
 - November 2025 landlord threatened eviction; applied for hardship fund. They demanded doctor's notes and police reports. Another employee received funds in 2 days; mine took 3 weeks; I was evicted.
 - November 20, 2025 began short-term disability leave. Scheduled return December 20, 2025.
-- Applied for over 15 internal roles and been denied. Schedule remains fixed at 1:30 PM-10:00 PM while others freely change shifts.
+- Applied for over 15 internal roles and been denied. Schedule remains fixed at Closing shift ending 10:00 PM ET while others freely change shifts.
 `,
 
   "EX-002": `
@@ -80,7 +80,7 @@ Same July 10, 2025 meeting: raised compliance concern involving returned mail in
   "EX-005": `
 HBCU recruiting comments and "blockade" conversation - August 2025.
 Prior HBCU conversation before August 25 - Allan previously told similar story about HBCU recruiting event where company had no real intent to hire.
-August 25, 2025 conversation with Allan, approximately an hour. Discussed impact of fixed 1:30 PM-10:00 PM schedule; son Atlas had to stay with my mother during the week because shift ended around bedtime. Raised concerns about being stuck on waitlist, not receiving projects, not being selected for opportunities, not able to move despite strong performance.
+August 25, 2025 conversation with Allan, approximately an hour. Discussed impact of fixed Closing shift ending 10:00 PM ET schedule; son Atlas had to stay with my mother during the week because shift ended around bedtime. Raised concerns about being stuck on waitlist, not receiving projects, not being selected for opportunities, not able to move despite strong performance.
 Allan's "blockade" statement: I asked if barrier existed. Allan told me in substance there was a "blockade" and that he did not believe I would be able to get past it. Asked about HR - "It's up to you." Shared with coworker Alison Murphy in real time.
 HBCU recruiting comments: Allan attended HBCU recruiting event possibly in Texas. Spoke with candidates, later heard candidates had been denied shortly after the event. Believed company did not have genuine intent to hire from the event; only wanted to attend for appearances. Allan refused another HBCU recruiting event - did not want to be used as the Black front-facing representative for an event where candidates were not actually being hired.
 August 26, 2025 Allan Teams follow-up: "I really enjoyed our conversation yesterday." I responded: "I really did! I appreciate you so much! You have no idea!" Allan asked about "bravo" $5k; Allan also said "Bravo in about 10 minutes."
@@ -159,7 +159,7 @@ Records requested: April 21 communications with Amber Laye; April 22 calibration
 Comparator Movement and Flexibility Map.
 Schedule movement, department movement, waitlist and ticket treatment, performance, flexibility.
 Months reviewed: Dec 2024-Oct 2025 and Feb-May 2026. Schedule patterns: 7:45-4:30, 8:00-4:30, 8:30-4:30, 10:00-6:30, 10:30-7:00, 11:00-7:30, 11:30-8:00, 1:30-10:00.
-Strongest Comparator: Tyler Millisock. Lashawnna Harbin: start April 3, 2023, TL/UM, Black/biracial Black, PM closing 1:30 PM-10:00 PM, high performer often #1, rated 4/strong, waitlist placement disputed. Tyler Millisock: start April 3, 2023, TL/UM, White, PM-type Jan 2025 then earlier/midshift 11:30 AM-8:00 PM, lower-medium performer, worked in multiple areas later PRE-D/DBC, not on waitlist per Tyler, no ticket identified.
+Strongest Comparator: Tyler Millisock. Lashawnna Harbin: start April 3, 2023, TL/UM, Black/biracial Black, PM closing Closing shift ending 10:00 PM ET, high performer often #1, rated 4/strong, waitlist placement disputed. Tyler Millisock: start April 3, 2023, TL/UM, White, PM-type Jan 2025 then earlier/midshift 11:30 AM-8:00 PM, lower-medium performer, worked in multiple areas later PRE-D/DBC, not on waitlist per Tyler, no ticket identified.
 Primary comparator map:
 - Hunter: PM or similar shift, another department -> AM shift Lashawnna would have accepted. Waitlist issue tied to disputed placement.
 - Marc Case: Same PM shift as Lashawnna; allowed to leave about one hour early; Lashawnna covered his team. Same-shift flexibility comparator.
