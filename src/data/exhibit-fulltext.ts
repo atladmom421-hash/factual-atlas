@@ -174,6 +174,164 @@ Professional assessment: unequal access to movement, flexibility, and opportunit
 Core question: if Respondent could move leaders, place into earlier/midshift schedules, allow early-leave flexibility, and make assignment exceptions, why was Lashawnna kept fixed despite strong performance, documented schedule requests, disputed waitlist concerns, and protected complaints?
 `,
 
+  // ─────────────────────────────────────────────────────────────────────
+  // EX-023 — Follow-Up Conversation with HR Anita Breisch, July 19, 2024
+  // Source PDF: "Follow-Up Conversation with Anita - July 19, 2024" (6 pp.)
+  // Attorney-useful: HR ratification that Harbin's termination paperwork
+  // was procedurally correct; documents Greg Carfagna's misunderstanding
+  // that delayed performance terminations and degraded Harbin's scorecard.
+  // ─────────────────────────────────────────────────────────────────────
+  "EX-023": `
+Follow-Up Conversation with HR Anita Breisch — July 19, 2024 (6-page transcript).
+
+Relevance: HR ratifies that Harbin completed the performance-termination
+process correctly. Documents that Director Greg Carfagna delayed/returned
+Harbin's recommendations based on a misunderstanding ("word choice" /
+inability to navigate Workday links), forcing Harbin to retain low-performing
+employees an additional month and depressing her team scorecard.
+
+Key quotes (attorney-useful):
+
+(p. 1) HR Anita Breisch: "I just found out what … Shauna did, which is
+actually right. You just didn't know it, and I'll explain."
+
+(p. 1) HR: "Alan was just like … 'I'm so relieved. And it all makes sense
+now.'"
+
+(p. 2) HR (re Carfagna's confusion): "He's using the word coaching, which
+is not exactly what he meant. … The coaching … was more supporting
+documentation that shows the progressive steps that were taken."
+
+(p. 2) HR: "I'm telling them, she did exactly the right thing."
+
+(p. 2) HR: "Alan goes, 'yeah, Shauna's a bit more advanced when it comes
+to that kind of stuff.' … if I was a team leader, I would link it because I
+think that's faster."
+
+(p. 3) Harbin: "Especially when, like, these terms were not mine and these
+are terrible employees that are dragging down my entire team and my stats
+and everything."
+
+(p. 3) HR: "He said, 'I do this all the time, I send them back all the
+time. So Shauna's aren't the first.'"  [Documents Carfagna's pattern of
+returning TL paperwork — relevant to disparate-treatment / hostile-treatment
+inferences when paired with the eventual outcome.]
+
+(p. 4) HR: "Hopefully Greg remembers that because I don't like that. I
+hate that. Honestly, I do not like that, but that's … CAR's decision."
+
+(p. 4) HR: "He made a good compliment about you in terms of, yeah, she's a
+little bit more advanced and it does make more sense to link it versus
+attach it."
+
+(p. 4) Harbin: "So no changes. I don't have to make any changes to it."
+HR: "As long as … all the links are working … then you're good to go."
+
+(p. 5) HR (on Alan's reaction): "Alan's like, 'oh my gosh, you just took
+all this weight off of me because he was so stressed about it. … it didn't
+register for him.'"
+
+(p. 6) HR closing summary: "So all it was was just a word choice and then
+not everybody having the understanding of the linking part."
+
+Investigator notes:
+- HR confirms in real time that Harbin's process was correct; the
+  delay/return originated above her, not from her performance.
+- Direct quote establishing Harbin's reasonable understanding that
+  the retained low performers harmed her scorecard (p. 3).
+- Greg Carfagna identified by HR as the source of the rejection and
+  as someone who "does this all the time" (p. 3).
+- Anita Breisch and Allan ("Alan") Glover are named witnesses able
+  to corroborate.
+`,
+
+  // ─────────────────────────────────────────────────────────────────────
+  // EX-024 — Email "Serious issues at work — Shawnna Harbin"
+  // Source PDF: forwarded Gmail (sent May 29, 2024 3:29 PM;
+  // re-forwarded to self Oct 22, 2025 10:17 AM), 2 pp.
+  // Recipients: anitabreisch@discover.com, danielcapozzi@discover.com,
+  // deapalmer@discover.com, gregcarfagna@discover.com,
+  // susanmarcinko@discover.com, tacyhedrick@discover.com,
+  // tammiemcnerney@discover.com.
+  // Attorney-useful: contemporaneous written notice to HR, ER, and
+  // senior leadership of (a) race discrimination, (b) racial slur by
+  // direct supervisor with a named witness, (c) retaliation after
+  // protected complaint and medical leave, (d) waitlist promise
+  // not honored, and (e) intent to file EEOC charge. This is a
+  // textbook protected-activity document and starts the clock on
+  // employer knowledge.
+  // ─────────────────────────────────────────────────────────────────────
+  "EX-024": `
+Email — "Serious issues at work — Shawnna Harbin" (sent May 29, 2024
+3:29 PM ET; forwarded to self Oct 22, 2025). 2-page PDF.
+
+Recipients (employer knowledge — all on To: line):
+Anita Breisch, Daniel Capozzi, Dea Palmer, Greg Carfagna,
+Susan Marcinko, Tacy Hedrick, Tammie McNerney.
+
+Relevance: Contemporaneous written complaint to HR, Employee Relations,
+and senior leadership documenting race discrimination, a racial slur by
+direct supervisor, retaliation following protected activity and medical
+leave, and broken promise of waitlist placement. Establishes employer
+knowledge as of May 29, 2024 — the predicate date for retaliation
+claims that follow.
+
+Key quotes (attorney-useful):
+
+(p. 1) "In January 2024, I made a complaint about racial discrimination
+from one of my colleagues to my manager, Rosanna Blackson. When I made
+the complaint, Rosanna threatened me with blackmail related to an
+adjustment issue."
+
+(p. 1) "I was subsequently falsely accused by Rosanna of job abandonment
+while I was on a medical leave of absence for my disability."
+
+(p. 1) "Those days were some of the hardest I've ever experienced. I
+did not know if I was going to have a job, how I would pay my bills,
+or how I was going to survive."
+
+(p. 1) "After returning to work from a medical leave of absence due to
+my disability, I had a one-on-one meeting with Rosanna where I
+requested a transfer to another team. Rosanna responded by calling me
+'nigger.' My mother, Tina Harbin, was present with me to witness this
+racial slur."  [Named contemporaneous witness — Tina Harbin.]
+
+(p. 1) "I am racially mixed, but identify and present as African-
+American, and have a black skin complexion."
+
+(p. 2) "I have repeatedly requested to move to different roles and
+departments to escape this hostile work environment and to work under
+a supervisor who will not retaliate against me for taking medical
+leave related to my disability."
+
+(p. 2) "I was assured that I would be placed on a waitlist for a new
+schedule, but unfortunately this never happened."  [Directly ties the
+2024 waitlist promise to the unresolved 2025 schedule-disparity claim.]
+
+(p. 2) "Because the company has not taken these issues seriously, I
+have been forced to file a charge of discrimination with the Equal
+Employment Opportunity Commission against Discover Financial Services."
+[Notice of protected EEOC activity — predicate for retaliation claims
+arising after this date.]
+
+(p. 2) "I hope this situation is addressed promptly and that I will
+not be subjected to further retaliation for filing an EEOC charge,
+seeking a transfer for my mental health and disability, or for
+raising concerns about systemic racism at the company."
+
+Investigator notes:
+- This email is the protected-activity anchor for the May 2024 → 2025
+  retaliation timeline. Every adverse action documented after this
+  date (denied waitlist movement, scorecard impacts, hardship-fund
+  delay, FMLA processing irregularities, Teams chat deletion) post-
+  dates established employer knowledge.
+- Same-day recipients include the HR Manager (Marcinko), Director
+  (Carfagna), and ER (Breisch/McNerney) named elsewhere in the
+  record — defeats any "we didn't know" defense.
+- Corroborates and predates the May 7, 2024 EEOC charge (EX-001 /
+  prior charge 532-2024-02947).
+`,
+
   // EX-HR-CALL transcript is already on the exhibit's transcriptText field and
   // is included in the existing GlobalSearch haystack — no duplication needed.
 };
