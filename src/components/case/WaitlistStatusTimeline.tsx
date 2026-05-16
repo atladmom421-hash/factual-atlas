@@ -139,25 +139,42 @@ export function WaitlistStatusTimeline() {
                   {SNAPS.map(s => {
                     const cell = r[s.key];
                     const isHarbinRemoval = r.isHarbin && s.key !== "jan22";
+                    const targetEventId = r.isHarbin ? s.harbinEventId : s.eventId;
+                    const tip = r.isHarbin
+                      ? (s.key === "jan22"
+                          ? "Jump to Master Timeline — Harbin present at row 6, Qualifies = Yes"
+                          : s.key === "feb25"
+                            ? "Jump to Master Timeline — Jen Roy removes Harbin from waitlist"
+                            : "Jump to Master Timeline — Harbin still absent from waitlist")
+                      : `Jump to Master Timeline — ${s.label} waitlist snapshot`;
                     return (
                       <td key={s.key} className="px-2 py-2">
-                        {cell ? (
-                          <div className="inline-flex items-center gap-1.5 rounded-sm bg-emerald-500/15 px-1.5 py-0.5 text-[10px] text-emerald-700 ring-1 ring-emerald-500/30 dark:text-emerald-300">
-                            <Check className="size-3" />
-                            <span className="font-mono">{cell.current}/{cell.tp}</span>
-                            <span className="opacity-70">qualifies</span>
-                          </div>
-                        ) : (
-                          <div className={clsx(
-                            "inline-flex items-center gap-1.5 rounded-sm px-1.5 py-0.5 text-[10px] ring-1",
-                            isHarbinRemoval
-                              ? "bg-red-500/20 text-red-700 ring-red-500/40 dark:text-red-300"
-                              : "bg-muted text-muted-foreground ring-border",
-                          )}>
-                            <X className="size-3" />
-                            <span>{isHarbinRemoval ? "removed" : "not on list"}</span>
-                          </div>
-                        )}
+                        <Link
+                          to="/timeline"
+                          hash={`evt-${targetEventId}`}
+                          title={tip}
+                          className="group inline-block"
+                        >
+                          {cell ? (
+                            <div className="inline-flex items-center gap-1.5 rounded-sm bg-emerald-500/15 px-1.5 py-0.5 text-[10px] text-emerald-700 ring-1 ring-emerald-500/30 group-hover:ring-emerald-500/60 dark:text-emerald-300">
+                              <Check className="size-3" />
+                              <span className="font-mono">{cell.current}/{cell.tp}</span>
+                              <span className="opacity-70">qualifies</span>
+                              <ArrowUpRight className="size-3 opacity-50 group-hover:opacity-100" />
+                            </div>
+                          ) : (
+                            <div className={clsx(
+                              "inline-flex items-center gap-1.5 rounded-sm px-1.5 py-0.5 text-[10px] ring-1",
+                              isHarbinRemoval
+                                ? "bg-red-500/20 text-red-700 ring-red-500/40 group-hover:ring-red-500/70 dark:text-red-300"
+                                : "bg-muted text-muted-foreground ring-border group-hover:ring-foreground/40",
+                            )}>
+                              <X className="size-3" />
+                              <span>{isHarbinRemoval ? "removed" : "not on list"}</span>
+                              <ArrowUpRight className="size-3 opacity-50 group-hover:opacity-100" />
+                            </div>
+                          )}
+                        </Link>
                       </td>
                     );
                   })}
