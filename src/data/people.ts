@@ -42,6 +42,9 @@ export const people: Person[] = [
   { id: "beck", name: "Lindsay Beck", role: "HR / Hardship contact", category: "hr", relationshipToCase: "HR contact handling hardship-request status. Nov 26, 2025 confirmed approval was still pending and that the request had to go to Capital One under post-merger processes; received Nov 28 and Dec 1, 2025 escalation emails about imminent eviction and housing loss." },
   { id: "palmer", name: "Dea Palmer", role: "HR / Leadership", category: "hr", relationshipToCase: "Recipient of the Dec 1, 2025 pre-eviction-hearing escalation email regarding the unresolved hardship request." },
   { id: "hedrick", name: "Tracy Hedrick", role: "HR / Leadership", category: "hr", relationshipToCase: "Recipient of the May 29, 2024 formal complaint and the Dec 1, 2025 pre-eviction-hearing escalation email regarding the unresolved hardship request." },
+  { id: "cordi", name: "Brandi Cordi", role: "Agent (Lashawnna's team)", category: "comparator", relationshipToCase: "White employee Lashawnna assisted in obtaining hardship-fund assistance a few weeks before July 10, 2025 — comparator context for the disparate response when she later sought hardship-fund help for a Black employee.", race: "White" },
+  { id: "dide", name: "Araksan Dide", role: "Agent (Lashawnna's team)", category: "witness", relationshipToCase: "Black employee on Lashawnna's team who was homeless in July 2025; Lashawnna asked Allan Glover on July 10, 2025 about pursuing hardship-fund assistance for her, prompting Allan's race-related 'example.'", race: "Black" },
+  { id: "murphy", name: "Alison Murphy", role: "Coworker", category: "witness", relationshipToCase: "Same-day contemporaneous-disclosure witness — Lashawnna told her about Allan Glover's July 10, 2025 race-related 'example' immediately after the meeting." },
 ];
 
 export const personById = (id: string) => people.find(p => p.id === id);
