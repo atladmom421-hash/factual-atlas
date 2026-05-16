@@ -817,6 +817,16 @@ function TimelineScrubber() {
         )}
       </div>
 
+      {/* Macro overview — one stacked bar per year, click to jump */}
+      <YearOverview
+        cats={cats}
+        catColor={catColor}
+        hiddenCats={hiddenCats}
+        months={months}
+        activeMonth={activeMonth}
+        onJump={(m) => { const i = months.indexOf(m); if (i >= 0) { setIdx(i); setPlaying(false); } }}
+      />
+
       <div className="mt-3 overflow-x-auto">
         <svg
           viewBox={`0 0 ${W} ${H}`}
@@ -943,24 +953,173 @@ function TimelineScrubber() {
         aria-label="Timeline scrubber"
       />
 
-      <footer className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 max-h-48 overflow-auto">
-        {visibleEvents.slice(-6).reverse().map(e => (
-          <Link
-            key={e.id}
-            to="/timeline"
-            hash={`evt-${e.id}`}
-            className="group border border-border bg-background/40 px-2 py-1.5 text-[11px] hover:border-[color:var(--hud-cyan)]"
-          >
-            <div className="flex items-center gap-1.5">
-              <span className="inline-block size-1.5" style={{ background: catColor[e.category] ?? "var(--hud-cyan)" }} />
-              <div className="font-mono text-[9px] uppercase tracking-wider text-[color:var(--hud-cyan)]">{e.date}</div>
-              <ArrowUpRight className="ml-auto size-3 opacity-0 group-hover:opacity-70" />
-            </div>
-            <div className="text-foreground/90 leading-tight truncate mt-0.5" title={e.title}>{e.title}</div>
-          </Link>
-        ))}
-      </footer>
+      {/* Submenus — condense the rest into collapsibles */}
+      <div className="mt-4 space-y-2">
+        <details className="group border border-border bg-background/40" open>
+          <summary className="cursor-pointer list-none px-3 py-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-wider hover:bg-secondary/40">
+            <span>Recent events <span className="text-muted-foreground">· {visibleEvents.length}</span></span>
+            <span className="text-muted-foreground group-open:rotate-90 transition-transform">▸</span>
+          </summary>
+          <div className="grid gap-2 p-3 sm:grid-cols-2 lg:grid-cols-3 max-h-56 overflow-auto">
+            {visibleEvents.slice(-9).reverse().map(e => (
+              <Link
+                key={e.id}
+                to="/timeline"
+                hash={`evt-${e.id}`}
+                className="group/item border border-border bg-background/40 px-2 py-1.5 text-[11px] hover:border-[color:var(--hud-cyan)]"
+              >
+                <div className="flex items-center gap-1.5">
+                  <span className="inline-block size-1.5" style={{ background: catColor[e.category] ?? "var(--hud-cyan)" }} />
+                  <div className="font-mono text-[9px] uppercase tracking-wider text-[color:var(--hud-cyan)]">{e.date}</div>
+                  <ArrowUpRight className="ml-auto size-3 opacity-0 group-hover/item:opacity-70" />
+                </div>
+                <div className="text-foreground/90 leading-tight truncate mt-0.5" title={e.title}>{e.title}</div>
+              </Link>
+            ))}
+          </div>
+        </details>
+
+        <details className="group border border-border bg-background/40">
+          <summary className="cursor-pointer list-none px-3 py-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-wider hover:bg-secondary/40">
+            <span>Category lanes <span className="text-muted-foreground">· {cats.length - hiddenCats.size}/{cats.length} visible</span></span>
+            <span className="text-muted-foreground group-open:rotate-90 transition-transform">▸</span>
+          </summary>
+          <div className="grid gap-1.5 p-3 sm:grid-cols-2 lg:grid-cols-3">
+            {cats.map(c => {
+              const hidden = hiddenCats.has(c);
+              const color = catColor[c] ?? "var(--hud-grid)";
+              return (
+                <button
+                  key={c}
+                  onClick={() => toggleCat(c)}
+                  className={clsx(
+                    "flex items-center gap-2 px-2 py-1 border text-left text-[11px]",
+                    hidden ? "border-border/40 opacity-50" : "border-border hover:border-[color:var(--hud-cyan)]",
+                  )}
+                >
+                  <span className="inline-block size-2" style={{ background: color }} />
+                  <span className="font-mono text-[10px] uppercase tracking-wider flex-1 truncate">{CATEGORY_LABELS[c] ?? c}</span>
+                  <span className="font-mono text-[10px] text-muted-foreground">{catCounts[c] ?? 0}</span>
+                </button>
+              );
+            })}
+          </div>
+        </details>
+
+        <details className="group border border-border bg-background/40">
+          <summary className="cursor-pointer list-none px-3 py-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-wider hover:bg-secondary/40">
+            <span>Controls & shortcuts</span>
+            <span className="text-muted-foreground group-open:rotate-90 transition-transform">▸</span>
+          </summary>
+          <div className="px-3 py-2 text-[11px] text-foreground/75 space-y-1">
+            <div><span className="font-mono text-muted-foreground">← →</span> step one month · <span className="font-mono text-muted-foreground">space</span> play/pause</div>
+            <div><span className="font-mono text-muted-foreground">drag</span> playhead on the timeline · <span className="font-mono text-muted-foreground">click</span> any dot to open it on the Timeline page</div>
+            <div><span className="font-mono text-muted-foreground">macro bar</span> above — click any year to jump the cursor</div>
+          </div>
+        </details>
+      </div>
     </section>
   );
 }
+
+/* ─── Year Overview (zoomed-out macro band) ─────────────────────────── */
+function YearOverview({
+  cats, catColor, hiddenCats, months, activeMonth, onJump,
+}: {
+  cats: string[];
+  catColor: Record<string, string>;
+  hiddenCats: Set<string>;
+  months: string[];
+  activeMonth: string;
+  onJump: (m: string) => void;
+}) {
+  // Bucket events by year + category
+  const data = useMemo(() => {
+    const byYear: Record<string, Record<string, number>> = {};
+    const yearSet = new Set<string>();
+    for (const m of months) yearSet.add(m.slice(0, 4));
+    const years = Array.from(yearSet).sort();
+    for (const y of years) byYear[y] = {};
+    for (const e of events) {
+      const y = e.sortKey.slice(0, 4);
+      if (!byYear[y]) continue;
+      byYear[y][e.category] = (byYear[y][e.category] ?? 0) + 1;
+    }
+    // Map year → last month present in months[]
+    const lastMonth: Record<string, string> = {};
+    for (const m of months) lastMonth[m.slice(0, 4)] = m;
+    return { years, byYear, lastMonth };
+  }, [months]);
+
+  const max = Math.max(
+    1,
+    ...data.years.map(y =>
+      Object.entries(data.byYear[y]).reduce(
+        (s, [c, n]) => s + (hiddenCats.has(c) ? 0 : n),
+        0,
+      ),
+    ),
+  );
+
+  const activeYear = activeMonth.slice(0, 4);
+
+  return (
+    <div className="mt-4 border border-border bg-[color:var(--hud-bg)] p-3">
+      <div className="flex items-baseline justify-between mb-2">
+        <div className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
+          Macro overview · stacked events per year
+        </div>
+        <div className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
+          click a year to jump
+        </div>
+      </div>
+      <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${data.years.length}, minmax(0,1fr))` }}>
+        {data.years.map(y => {
+          const buckets = data.byYear[y];
+          const total = Object.entries(buckets).reduce((s, [c, n]) => s + (hiddenCats.has(c) ? 0 : n), 0);
+          const isActive = y === activeYear;
+          return (
+            <button
+              key={y}
+              onClick={() => onJump(data.lastMonth[y])}
+              className={clsx(
+                "group flex flex-col items-stretch gap-1 text-left",
+                "rounded-sm transition-colors",
+              )}
+              title={`${y} · ${total} events — jump to ${data.lastMonth[y]}`}
+            >
+              <div className="relative h-20 border border-border bg-background/40 overflow-hidden flex flex-col justify-end">
+                {cats.map(c => {
+                  if (hiddenCats.has(c)) return null;
+                  const n = buckets[c] ?? 0;
+                  if (!n) return null;
+                  const h = (n / max) * 100;
+                  return (
+                    <div
+                      key={c}
+                      style={{ height: `${h}%`, background: catColor[c] ?? "var(--hud-grid)" }}
+                      className="w-full opacity-80 group-hover:opacity-100 transition-opacity"
+                      title={`${CATEGORY_LABELS[c] ?? c}: ${n}`}
+                    />
+                  );
+                })}
+                {isActive && (
+                  <div className="absolute inset-0 ring-2 ring-[color:var(--hud-cyan)] pointer-events-none" />
+                )}
+              </div>
+              <div className={clsx(
+                "flex items-baseline justify-between px-1 font-mono text-[10px]",
+                isActive ? "text-[color:var(--hud-cyan)]" : "text-muted-foreground group-hover:text-foreground",
+              )}>
+                <span>{y}</span>
+                <span className="tabular-nums">{total}</span>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 
