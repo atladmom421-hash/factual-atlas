@@ -559,7 +559,7 @@ function TimelineScrubber() {
     const i = months.indexOf(m);
     return 40 + (i / Math.max(1, months.length - 1)) * (W - 80);
   };
-  const laneY = (c: string) => 24 + cats.indexOf(c) * 18;
+  const laneY = (c: string) => 24 + (cats as string[]).indexOf(c) * 18;
   const playheadX = x(activeMonth);
 
   return (
