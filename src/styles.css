@@ -129,3 +129,15 @@
   .no-print { display: none !important; }
   body { background: white; color: black; }
 }
+
+.search-flash {
+  animation: search-flash 2.2s ease-out;
+  outline: 2px solid var(--color-accent, #ff5124);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+@keyframes search-flash {
+  0%   { box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-accent, #ff5124) 55%, transparent); }
+  60%  { box-shadow: 0 0 0 14px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; outline-color: transparent; }
+}

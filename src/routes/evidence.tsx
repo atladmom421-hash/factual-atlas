@@ -4,6 +4,7 @@ import { exhibits } from "@/data";
 import { StatusBadge } from "@/components/case/Badges";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { FileText, Image as ImageIcon, FileType, Mic, Search } from "lucide-react";
+import { useHashFocus } from "@/components/case/useHashFocus";
 
 export const Route = createFileRoute("/evidence")({
   head: () => ({
@@ -17,6 +18,7 @@ export const Route = createFileRoute("/evidence")({
 });
 
 function EvidencePage() {
+  useHashFocus();
   const { open } = useExhibit();
   const [q, setQ] = useState("");
   const filtered = exhibits.filter(e => {
@@ -39,7 +41,7 @@ function EvidencePage() {
 
       <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {filtered.map(ex => (
-          <button key={ex.id} onClick={() => open(ex.id)} className="group text-left rounded-md border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:shadow-md">
+          <button key={ex.id} id={`exhibit-${ex.id}`} onClick={() => open(ex.id)} className="group text-left rounded-md border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:shadow-md scroll-mt-24">
             <div className="flex items-start justify-between gap-2">
               <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider">
                 <span className="rounded-sm bg-navy px-1.5 py-0.5 text-navy-foreground">{ex.exhibitNumber}</span>

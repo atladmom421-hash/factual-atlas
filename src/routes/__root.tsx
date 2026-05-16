@@ -11,6 +11,7 @@ import {
 import appCss from "../styles.css?url";
 import { SiteHeader, SiteFooter } from "@/components/case/SiteChrome";
 import { ExhibitProvider } from "@/components/case/ExhibitProvider";
+import { GlobalSearch } from "@/components/case/GlobalSearch";
 
 function NotFoundComponent() {
   return (
@@ -79,6 +80,7 @@ function RootComponent() {
       <ExhibitProvider>
         <div className="min-h-screen bg-background text-foreground">
           <SiteHeader />
+          <GlobalSearch />
           <main><Outlet /></main>
           <SiteFooter />
         </div>

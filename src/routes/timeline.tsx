@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { eventsSorted, CATEGORY_LABELS, people } from "@/data";
 import { TimelineEventCard } from "@/components/case/TimelineEventCard";
 import { clsx } from "clsx";
+import { useHashFocus } from "@/components/case/useHashFocus";
 
 export const Route = createFileRoute("/timeline")({
   head: () => ({
@@ -16,9 +17,22 @@ export const Route = createFileRoute("/timeline")({
 });
 
 function TimelinePage() {
+  useHashFocus();
   const [category, setCategory] = useState<string>("all");
   const [year, setYear] = useState<string>("all");
   const [personId, setPersonId] = useState<string>("all");
+
+  // Honor category and date hashes set by global search
+  useEffect(() => {
+    const apply = () => {
+      const h = window.location.hash.replace(/^#/, "");
+      if (h.startsWith("cat-")) { setCategory(h.slice(4)); setYear("all"); setPersonId("all"); }
+      else if (h.startsWith("date-")) { setYear(h.slice(5, 9)); setCategory("all"); setPersonId("all"); }
+    };
+    apply();
+    window.addEventListener("hashchange", apply);
+    return () => window.removeEventListener("hashchange", apply);
+  }, []);
 
   const years = useMemo(() => Array.from(new Set(eventsSorted.map(e => e.sortKey.slice(0, 4)))).sort(), []);
   const filtered = useMemo(() => eventsSorted.filter(e =>

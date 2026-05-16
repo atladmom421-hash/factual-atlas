@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import type { Person } from "@/data/types";
 import { clsx } from "clsx";
+import { useHashFocus } from "@/components/case/useHashFocus";
 
 export const Route = createFileRoute("/people")({
   head: () => ({
