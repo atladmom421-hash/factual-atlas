@@ -472,6 +472,226 @@ Shawnna: Of course. Thanks for this info.`,
     filePath: "/exhibits/EX-019-sept2025-hr-ticket-screenshot.png",
     fileKind: "image",
   },
+  {
+    id: "EX-020",
+    exhibitNumber: "EX-020",
+    fileName: "July 10–17, 2024 — Peer TL conversations re: Greg's coaching-documentation requirement (transcripts)",
+    date: "July 10–17, 2024",
+    category: "Transcript",
+    peopleIds: ["harbin", "adkins", "mata", "ascarte", "carfagna", "allan", "rosanna"],
+    summary: "Contemporaneous notes from three separate peer-TL conversations — Kandace Adkins (July 10, 2024), Elisa MataAbarca (July 2024), and Ryan Ascarte (July 17, 2024) — each independently confirming that Greg Carfagna's additional 'documented coaching' requirement for performance terminations was not standard procedure, was never communicated to team leaders, was not in the Standard of Work or People Leader Guide, and was not being required of other TLs. Peers state HR confirmed month-end documentation was sufficient, that other TLs were able to process terms without the extra documentation, and that the inconsistent demand looked like targeting. Supports the inference that an additional, undisclosed requirement was selectively applied to Lashawnna's termination recommendations after her protected complaints, causing low-performing employees to remain on her team and depress her scorecard.",
+    linkedEventIds: ["e-2024-07-07-rec-term-submitted", "e-2024-07-19-anita", "e-2024-07-19-anita-followup", "e-2024-06-late-greg-assignment"],
+    reliability: "confirmed-transcript",
+    fileKind: "transcript",
+    transcriptText: `Peer TL Conversations re: Greg Carfagna's "Documented Coaching" Requirement
+Contemporaneous notes — July 10–17, 2024
+
+==========================================================
+1) Transcript — Kandace Adkins & Shawnna Harbin — July 10, 2024
+==========================================================
+
+Kandace: Sooo they haven't met all of the criteria on the fact report. Our corrective action is: if you're not meeting the required months, that's termination. That's what the PAC report is for, to show.
+
+Shawnna: Right.
+
+Kandace: What confuses me is this: in the corrective action policy for performance term (showing CA policy on screen) it says nothing about coaching. Whether you coached or didn't, if they didn't meet, there's still a need for termination because their performance isn't where it needs to be. So what is the "extra" for?
+
+Shawnna: Exactly. I'm confused too. Elisa said she had a term as well, and she didn't have any of this information. She even asked Rosanna in their department meeting, and Rosanna basically said, "Then we're just not terming them." She didn't really know what to say, but was like, "Yeah, going forward, that's what we're doing."
+
+Kandace: See, that's the thing. When was this communicated to us as TLs? Because the expectation was always: use the pact report. If they're not meeting and you've had the conversations and corrective actions, put in the PAC report.
+
+Shawnna: Exactly.
+
+Shawnna: So I told Alan, "This is not normally something we'd need for termination." He was shocked .. said he had no idea. He told me Greg is looking for coaching documentation with dates.
+
+Kandace: Right.
+
+Shawnna: I don't know if Alan will come back to me with more, but we set a meeting. I told him I was concerned because everyone else is able to term their agents, and mine are being held up for something I had no control over. I don't even know what documentation they're talking about.
+
+Alan said he'd talk to Greg to see if you had anything, since Greg told him that's what was needed. But I only had them for a month.
+
+Kandace: Yeah. We can just wait for Alan to talk to Greg. I already let him know: "No one knows about this. It hasn't been communicated." So if we don't have that information, what's Greg going to do now?
+
+Shawnna: Exactly.
+
+Kandace: I think I only have one coaching for Adrian. But here's the thing: when Adrian came to me, Courtney had already left the company. I couldn't go back to her for documentation. I only had what she handed off.
+
+When Adrian came to me in June, she said she'd been needing a docking station for months. She and Courtney had contacted GSD, but GSD wouldn't send one until her old one completely crashed. So she'd been struggling.
+
+I called GSD myself, explained the situation, and they said they'd never heard of such a requirement. They sent her a new docking station right away. She had it within about five days.
+
+So when she showed up on util, I didn't do an in-depth audit because the issue wasn't her — it was equipment. I reset expectations: "You've got your equipment now, get it together by the end of the month."
+
+Shawnna: That makes sense. That's realistic.
+
+Kandace: Exactly. I have chats, GSD tickets, and incident dates. But I only did maybe one formal coaching, since it was a known equipment issue.
+
+For May, I thought she was term-eligible, but the handoff said May was a "free month" because her corrective was late. That blocked me from recommending termination then. So my plan was: in July, after June stats finalized, I'd do the RFT. But she got moved to you.
+
+Shawnna: Right. And if she had been yours earlier, she wouldn't have made it this far.
+
+Kandace: Exactly. He's been here a year already. Honestly, this is my first time doing a performance termination. Most TLs don't document coachings outside of month-ends. We keep chats and documentation, but not formal "coaching logs" for every little thing.
+
+And with Adrian's attendance in June alone, she called off eight times. The only week she didn't call off, I was on vacation. When I came back, she was only present two of three days. I've barely seen her. So there's hardly anything to document anyway.
+
+Shawnna: Right.
+
+Kandace: Honestly, if they expect "coaching documentation" on top of PAC reports and month-ends, then where is that communication? Because month-ends are supposed to be the documented performance conversation.
+
+Shawnna: Exactly.
+
+Shawnna: I even talked to HR. They confirmed all my documents were there. Yet Greg is holding it up.
+
+Kandace: That's unfair. If others can process terms without it, but yours are being blocked, that looks like targeting.
+
+Shawnna: Exactly my concern.
+
+Kandace: Allan seems supportive, though. He said, "Hold us accountable as leaders if we're not doing the right things." So now is the time … he needs to fight for you.
+
+Shawnna: Yes, I did push back with him. I told him these agents should never have even come to me. They should've been gone under their previous TL. But the accountability wasn't there. Now I'm stuck with the fallout.
+
+Kandace: That's unfair.
+
+Shawnna: Exactly.
+
+Kandace: Have you checked the Standard of Work?
+
+Shawnna: Yes, I went through it. There's nothing in there about needing documented coachings beyond month-ends. HR told me: if it were a requirement, it would have to be across the business, not something Greg suddenly decides.
+
+Kandace: Right.
+
+Kandace: So, HR has approved everything. If Greg wants a new process, it has to be updated in Standard of Work and communicated.
+
+Shawnna: Exactly.
+
+Shawnna: Elisa asked in her meeting whether month-ends count as coachings, and Rosanna said no. Which makes no sense — month-ends are documented TL-to-agent conversations about performance. If those don't count, then why do we do them?
+
+Kandace: Exactly! So yeah … this feels like targeting. I was even going to take today off, but when I saw all this, I knew I had to get everything lined up.
+
+Shawnna: I get it. This is exhausting.
+
+Kandace: Yeah. But I'll keep pushing. I'll give you what I do have, and we'll let Allan advocate.
+
+Shawnna: Perfect. Thanks for your insight.
+
+Kandace: Of course. You've got my support — and other TLs feel the same way.
+
+Shawnna: Good. Okay, I'll let you know what happens.
+
+==========================================================
+2) Transcript — Elisa MataAbarca & Shawnna Harbin — July 2024
+==========================================================
+
+Elisa: This is the most stupid thing ever. Like, I was mad. I just wasn't even trying to hide it anymore at that point. Because literally, I'm just avoiding risk and stuff. I was like, "Okay, so what about the people we fired in the past where documentation wasn't required?"
+
+And she goes, "We just need to cover your back … liability in case of something."
+
+I was like, "Whatever." Then I asked, "So is this going to be the expectation moving forward? Because if so, we need to have a bigger conversation about this with everybody." Because I can tell you right now, nobody knows this is an expectation.
+
+Is the expectation to document coaching? Yes. Are we the best at that? Probably not. Even Courtney said, "I'm not the best at it."
+
+And she told me, "As long as you coach it this month, that will suffice for your situation."
+
+I said, "We cover this in month-end." She replied, "Well, it would be documentation, but it wouldn't be enough — it should be done through Linked as a coaching."
+
+Well, and in Workday, when we do the final, you have to talk about it, right? I can't even administer it without the agent acknowledging it — they get a notification. Like, what?
+
+I'm just so over this. I'm annoyed. I'm already pissed. I asked her that because it's stupid. I said, "You need to make sure this is communicated to everyone, because I was not under the impression that this was the case, and it hasn't been in the past."
+
+Me: Exactly. Yeah, like today's the first day everyone is basically hearing about this new expectation —
+
+Elisa: — and that's only because you brought it up.
+
+Me: Right! If I hadn't said anything, no one would've known.
+
+Elisa: But apparently, she's like, "Greg is not going to approve it." And I'm like, "So what, we just let the agent impact our stats moving forward?"
+
+And she couldn't answer that. She doesn't know what happens if Greg declines it but HR approves it. So I'm like, "What now?" Because then HR's going to get on us for, "Hey, why didn't you term this agent when you should have?"
+
+Me: Exactly. That's what I told HR — I don't want to get held liable for anything. That's why I needed to know if this was specific to me or if it's an actual procedure.
+
+Elisa: See, I don't think it's procedure. I think it's just something they made up.
+
+Me: Exactly! But they haven't communicated it until now. I'm the first person who's even heard of this.
+
+Elisa: Exactly. We talk to them about their stats every day — utilization, DPA, all of it. Month-end is documentation. Like, how can you say it's not?
+
+Me: And these agents — honestly, they're some of the worst I've ever had. So we're just going to let them keep impacting our numbers because someone suddenly decided we need extra paperwork? That makes no sense.
+
+Elisa: Right.
+
+Me: And I talked to Allan too — he said, "Hmm, interesting…" Like even he didn't know what to say. He told me, "I'll try to figure it out, I'll take care of it."
+
+Elisa: Because yeah, if you're not going to approve it, then what happens next?
+
+Me: Exactly — so no one's getting fired anymore? Is that what's happening?
+
+Elisa: Right! Like, what?! And I know Rosanna's just mad I fought her on it. But I don't care. If it's going to impact my performance, I need to know about it.
+
+If you've got a new expectation, communicate it. Say, "Hey, moving forward, we're not going to approve terms unless you have documentation." Then fine, we'll do it moving forward.
+
+Me: But don't suddenly say, "Oh, we didn't tell you, but now we're holding you to it."
+
+Elisa: Exactly. And they're always saying it's "in the standard of work" or "in the people leader guide."
+
+Me: Right. And HR already said once something's approved, we're covered. Nancy literally shared her screen and said, "Yeah, this is all we ever need — you're good to go."
+
+Elisa: Oh wow.
+
+Me: Exactly. Poor Allan's caught in the middle. I told him, "My butt's covered — I did everything right. If the agent's still here, that's on you." And the agents in question — one has like 2% DPay and the other is chronically underutilized. They're legendary for being bad. That's insane.
+
+Elisa: Yeah, it's ridiculous. So I fought her on it, and she said she'd ask about it. I told her, "You better, because they're not going to just pull this out of nowhere."
+
+Me: Right. We need answers.
+
+==========================================================
+3) Transcript — Ryan Ascarte & Shawnna Harbin — July 17, 2024
+==========================================================
+
+Ryan: You talked about it, it was on their month end and they signed their month end. So regardless, and as long as the month end said "can result in disciplinary action" —
+
+Me: Which I put in every month end..
+
+Ryan: Then there should be no issue.
+
+Me: Right. That's exactly what I'm saying. And I know there's other people who had performance terms that didn't have to provide that information. So I'm like, okay, well, so why is this happening now? You know, like — what's up with that?
+
+Ryan: So, uh, yeah, I don't know. That's weird. From my understanding, you don't ever have to put any of that. So unless it's just Greg's exception — but at the same time, if that's how it is, then why wasn't this rolled out to everybody? Like, every team leader should instantly be able to tell you, "oh yeah, you need to include your documented link coachings." You ask every team leader, nobody's going to say that.
+
+Me: Right, right. That's what I'm saying. So I'm like, okay, so why is it just me having to provide this? You know? Like, that doesn't make sense to me.
+
+Ryan: And they're just dragging down your stats this month?
+
+Me: Right. And these are, like, really bad agents. Like, I just got them. You know? Like, I just got them. So I'm like, what?
+
+Ryan: So once you get rid of them, you're just going to sweep everybody.
+
+Me: Man, just going all in. Yeah. I was going to say, I think I'm going to be holding on to try not to get last place next month, but it's fine. Let's struggle.
+
+Ryan: I doubt you'll be in last place. You're always in like top three at least. Honestly, if I was ever last place, I'd be freaking out. I wouldn't even talk to anybody. I'd just be auditing people all day yelling at people. You and I just seem like that way — we're just competitive.
+
+Me: Yeah.
+
+Ryan: Yeah, I would keep fighting on it, bother Greg, or set a meeting with Greg and be like, "Well, you can put a survey out to all team leaders, because I've talked to X amount and not a single person has mentioned that. So like, when was this communicated?" I mean, ultimately I'd be like, "it's your department, you can do whatever you want," but at the same time, it's not necessarily fair that we're treating this agent one way when we fired other people for the same thing.
+
+Me: Right, right. Exactly. Exactly, yeah. And I mean, it just has to be across the board, you know? Like, it can't be like, "Well, Shawnna, you need to provide all these other ex." And these — it would be different if they were like my people. But I got them as like, "you have to term them when you get them," basically, you know?
+
+Ryan: Oh, well, and that's a good point, Shawnna. That's actually especially an exception. It's like, "well, this wasn't even my person, so how can I send you documentation when I wasn't in charge of this?" I shouldn't be, like, you know. I have no clue on that. That's just — that's crazy.
+
+Me: Well, I'm glad I'm not hallucinating because I was like, I could have swore this was what you needed to provide.
+
+Ryan: Yeah. I can't believe it's not approved. Yeah. Yeah, yeah. When did you do this?
+
+Me: Well, I submitted it on the 7th I think.
+
+Ryan: So it's been like a cool 10 days. Was it for Util?
+
+Me: Yeah, both for Util.
+
+Ryan: Oh, okay.
+
+Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pay. Like, just ridiculous. They're aware that they're up for termination, you know? So they're asking me, like, "What's going on? Like, am I losing my job or not or what?" And I'm like, honestly, like, I don't even have a clear answer for you right now because it's just under review, you know? So like, they're waiting to see, you know — I'm waiting to see. And it's just like a hot mess, dude.`,
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
