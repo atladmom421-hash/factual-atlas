@@ -39,12 +39,14 @@ function ComparatorsPage() {
   const ex022 = exhibitById("EX-022");
   const ex010 = exhibitById("EX-010");
 
-  const tylerAxes: { axis: string; lashawnna: string; tyler: string; inconsistency: string; cite: { id: string; label: string }[] }[] = [
+  const tylerAxes: { axis: string; lashawnna: string; tyler: string; inconsistency: string; months: string[]; monthSpanLabel: string; cite: { id: string; label: string }[] }[] = [
     {
       axis: "Waitlist",
       lashawnna: "Waitlist placement treated as a barrier to movement; status disputed and used to justify keeping her on PM closing.",
       tyler: "Stated he was NOT on the waitlist for the movement — yet was still moved to PRE-D / DBC on an earlier shift.",
       inconsistency: "If waitlist gated movement for Lashawnna, it cannot have been waived silently for Tyler. The rule was applied selectively.",
+      months: monthRange("2025-01", "2025-02"),
+      monthSpanLabel: "Jan–Feb 2025 movement window",
       cite: [
         { id: "EX-022", label: "EX-022 · §IV.A Tyler Millisock, §IX investigative questions" },
         { id: "EX-010", label: "EX-010 · waitlist context" },
@@ -55,6 +57,8 @@ function ComparatorsPage() {
       lashawnna: "Told a ticket / formal process was required before any schedule or area change could be considered.",
       tyler: "NO ticket identified for Tyler's movement based on Lashawnna's understanding — movement happened without the gating process.",
       inconsistency: "The 'ticket required' explanation given to Lashawnna is contradicted by an actual movement that occurred without one.",
+      months: monthRange("2025-01", "2025-02"),
+      monthSpanLabel: "Jan–Feb 2025 movement window",
       cite: [
         { id: "EX-022", label: "EX-022 · §IV.A, §IX Q on ticket inconsistency" },
       ],
@@ -64,6 +68,8 @@ function ComparatorsPage() {
       lashawnna: "Consistently high performer — frequently #1 in Consumer Banking, history of 4 ratings, strong employee surveys. Post-EEOC 'solid' rating drop documented.",
       tyler: "Lower-to-medium performer per Lashawnna's understanding — yet received the broader / earlier-shift placement.",
       inconsistency: "Weaker performer received the more favorable placement. Performance cannot be the neutral explanation for keeping Lashawnna fixed.",
+      months: monthRange("2024-12", "2025-10"),
+      monthSpanLabel: "Dec 2024 – Oct 2025 (post-EEOC rating window)",
       cite: [
         { id: "EX-022", label: "EX-022 · §II performance history, §IV.A" },
       ],
@@ -73,6 +79,8 @@ function ComparatorsPage() {
       lashawnna: "Remained in same general area and 1:30 PM–10:00 PM closing across the full 15-month window.",
       tyler: "Moved across areas to PRE-D / DBC on 11:30 AM–8:00 PM — visible Feb 2025 through Oct 2025 and continuing.",
       inconsistency: "Same April 3, 2023 start date and same level eliminates tenure/seniority as a neutral explanation for the difference.",
+      months: monthRange("2025-02", "2025-10"),
+      monthSpanLabel: "Feb 2025 – Oct 2025 visible movement",
       cite: [
         { id: "EX-022", label: "EX-022 · §IV.B month-by-month Jan–Oct 2025, §VIII comparator chart" },
       ],
