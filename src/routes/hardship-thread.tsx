@@ -404,6 +404,7 @@ function HardshipThreadPage() {
               <li>· Worsening mental-health symptoms supporting intermittent FMLA and later short-term disability through Hartford.</li>
               <li>· Acute stress and humiliation from sleeping in a car with a minor child for ~one week pre-eviction.</li>
               <li>· Loss of safety/stability for a minor child — heightened distress from parental responsibility.</li>
+              <li>· <strong>Forced separation from her son starting August 2025</strong> — the denied PM/closing schedule ended at the same time school let out, leaving her unable to pick him up, help with homework, or be present after school. Son had to live with maternal grandmother for the school year; father unavailable (separated, working at Wilson). Severe loss of day-to-day parenting, daily bonding, and ordinary household life with her child — directly caused by the schedule denial that comparator TLs were not subjected to.</li>
               <li>· Loss of health insurance during the same window — interruption of mental-health care, inability to afford additional doctor visits.</li>
               <li>· Reasonable fear of further retaliation after raising the race-coded "example," Verint/screen-recording, and Edward Reyes concerns.</li>
             </ul>
@@ -411,9 +412,9 @@ function HardshipThreadPage() {
           <div className="rounded-md border border-border bg-card p-5">
             <div className="font-display text-base text-foreground">Emotional-distress range (preliminary)</div>
             <p className="mt-2 text-sm text-foreground/80">
-              Conservative range for emotional distress / pain and suffering associated specifically with the hardship delay and
-              eviction-related harm. Final number depends on treatment records, provider testimony, and jury instructions in the
-              forum of suit.
+              Conservative range for emotional distress / pain and suffering associated with the schedule-denial parenting loss,
+              the hardship delay, and the eviction-related harm. Final number depends on treatment records, provider testimony,
+              and jury instructions in the forum of suit.
             </p>
             <div className="mt-4 grid grid-cols-2 gap-3">
               <div className="rounded-sm bg-secondary/60 p-3 text-center">
