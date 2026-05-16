@@ -9,8 +9,50 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TimelineRouteImport } from './routes/timeline'
+import { Route as StoryRouteImport } from './routes/story'
+import { Route as PeopleRouteImport } from './routes/people'
+import { Route as MovementMapRouteImport } from './routes/movement-map'
+import { Route as InvestigatorRouteImport } from './routes/investigator'
+import { Route as EvidenceRouteImport } from './routes/evidence'
+import { Route as ComparatorsRouteImport } from './routes/comparators'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TimelineRoute = TimelineRouteImport.update({
+  id: '/timeline',
+  path: '/timeline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoryRoute = StoryRouteImport.update({
+  id: '/story',
+  path: '/story',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PeopleRoute = PeopleRouteImport.update({
+  id: '/people',
+  path: '/people',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MovementMapRoute = MovementMapRouteImport.update({
+  id: '/movement-map',
+  path: '/movement-map',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InvestigatorRoute = InvestigatorRouteImport.update({
+  id: '/investigator',
+  path: '/investigator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EvidenceRoute = EvidenceRouteImport.update({
+  id: '/evidence',
+  path: '/evidence',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ComparatorsRoute = ComparatorsRouteImport.update({
+  id: '/comparators',
+  path: '/comparators',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +61,130 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/comparators': typeof ComparatorsRoute
+  '/evidence': typeof EvidenceRoute
+  '/investigator': typeof InvestigatorRoute
+  '/movement-map': typeof MovementMapRoute
+  '/people': typeof PeopleRoute
+  '/story': typeof StoryRoute
+  '/timeline': typeof TimelineRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/comparators': typeof ComparatorsRoute
+  '/evidence': typeof EvidenceRoute
+  '/investigator': typeof InvestigatorRoute
+  '/movement-map': typeof MovementMapRoute
+  '/people': typeof PeopleRoute
+  '/story': typeof StoryRoute
+  '/timeline': typeof TimelineRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/comparators': typeof ComparatorsRoute
+  '/evidence': typeof EvidenceRoute
+  '/investigator': typeof InvestigatorRoute
+  '/movement-map': typeof MovementMapRoute
+  '/people': typeof PeopleRoute
+  '/story': typeof StoryRoute
+  '/timeline': typeof TimelineRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/comparators'
+    | '/evidence'
+    | '/investigator'
+    | '/movement-map'
+    | '/people'
+    | '/story'
+    | '/timeline'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/comparators'
+    | '/evidence'
+    | '/investigator'
+    | '/movement-map'
+    | '/people'
+    | '/story'
+    | '/timeline'
+  id:
+    | '__root__'
+    | '/'
+    | '/comparators'
+    | '/evidence'
+    | '/investigator'
+    | '/movement-map'
+    | '/people'
+    | '/story'
+    | '/timeline'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ComparatorsRoute: typeof ComparatorsRoute
+  EvidenceRoute: typeof EvidenceRoute
+  InvestigatorRoute: typeof InvestigatorRoute
+  MovementMapRoute: typeof MovementMapRoute
+  PeopleRoute: typeof PeopleRoute
+  StoryRoute: typeof StoryRoute
+  TimelineRoute: typeof TimelineRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/timeline': {
+      id: '/timeline'
+      path: '/timeline'
+      fullPath: '/timeline'
+      preLoaderRoute: typeof TimelineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/story': {
+      id: '/story'
+      path: '/story'
+      fullPath: '/story'
+      preLoaderRoute: typeof StoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/people': {
+      id: '/people'
+      path: '/people'
+      fullPath: '/people'
+      preLoaderRoute: typeof PeopleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/movement-map': {
+      id: '/movement-map'
+      path: '/movement-map'
+      fullPath: '/movement-map'
+      preLoaderRoute: typeof MovementMapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/investigator': {
+      id: '/investigator'
+      path: '/investigator'
+      fullPath: '/investigator'
+      preLoaderRoute: typeof InvestigatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/evidence': {
+      id: '/evidence'
+      path: '/evidence'
+      fullPath: '/evidence'
+      preLoaderRoute: typeof EvidenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/comparators': {
+      id: '/comparators'
+      path: '/comparators'
+      fullPath: '/comparators'
+      preLoaderRoute: typeof ComparatorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +197,24 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ComparatorsRoute: ComparatorsRoute,
+  EvidenceRoute: EvidenceRoute,
+  InvestigatorRoute: InvestigatorRoute,
+  MovementMapRoute: MovementMapRoute,
+  PeopleRoute: PeopleRoute,
+  StoryRoute: StoryRoute,
+  TimelineRoute: TimelineRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
