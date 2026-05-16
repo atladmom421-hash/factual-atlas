@@ -6,6 +6,7 @@ import { openGlobalSearch } from "./GlobalSearch";
 
 const links = [
   { to: "/", label: "Overview" },
+  { to: "/case-map", label: "Case Map" },
   { to: "/timeline", label: "Timeline" },
   { to: "/people", label: "People" },
   { to: "/comparators", label: "Comparators" },
