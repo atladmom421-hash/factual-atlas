@@ -28,7 +28,7 @@ export const people: Person[] = [
   { id: "seevers", name: "Steve Seevers", role: "Unit Manager", category: "leadership", relationshipToCase: "Previously had Karena Lesure assigned" },
   { id: "rosanna", name: "Rosanna", role: "Former Manager", category: "leadership", relationshipToCase: "2024 waitlist placement issues; removed credit from document" },
   { id: "allan", name: "Allan", role: "DM", category: "leadership", relationshipToCase: "Submitted waitlist requests on Lashawnna's behalf; Nov 2025 schedule conversation" },
-  { id: "jen-roy", name: "Jen Roy", role: "Manager / Admin", category: "leadership", relationshipToCase: "Feb 22, 2025 deleted name from waitlist; July 14, 2025 screenshot" },
+  { id: "jen-roy", name: "Jen Roy", role: "Business Manager (to VP)", category: "leadership", relationshipToCase: "Business Manager to the CB VP (Angie Francis); sits in the reporting line directly above Greg Carfagna. Feb 22, 2025 deleted name from waitlist; July 14, 2025 screenshot." },
   { id: "anita", name: "Anita", role: "HR", category: "hr", relationshipToCase: "2024 HR conversations" },
   { id: "francis", name: "Angie Francis", role: "VP, Card Business (CB)", category: "leadership", relationshipToCase: "CB VP — top of the reporting line above Greg Carfagna (via Jen Roy). Sept 19, 2025 complaint response." },
   { id: "carfagna", name: "Greg Carfagna", role: "Director (CB)", category: "leadership", relationshipToCase: "Director — reports up through Jen Roy (Business Manager to the VP) and Angie Francis (CB VP). Op/Dept managers including Allan, Amber, Shawn McLaughlin, and Rosanna report up through Greg. Recipient of May 29, 2024 formal complaint; alleged to have blocked rec-for-terms at the director step." },
