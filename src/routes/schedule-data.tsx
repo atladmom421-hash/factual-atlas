@@ -7,6 +7,7 @@ import { exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
 import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
+import { WaitlistStatusTimeline } from "@/components/case/WaitlistStatusTimeline";
 import { AllanChatThreads } from "@/components/case/AllanChatThreads";
 
 export const Route = createFileRoute("/schedule-data")({
@@ -87,6 +88,11 @@ function ScheduleDataPage() {
       {/* Waitlist timeline — three snapshots + chats */}
       <div className="mt-10">
         <WaitlistTimeline />
+      </div>
+
+      {/* Per-TL status tracker across the three snapshots */}
+      <div className="mt-10">
+        <WaitlistStatusTimeline />
       </div>
 
       {/* Verbatim Allan Glover chat threads */}
