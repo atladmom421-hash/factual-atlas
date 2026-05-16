@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TourRouteImport } from './routes/tour'
 import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as StoryRouteImport } from './routes/story'
 import { Route as ScheduleDataRouteImport } from './routes/schedule-data'
@@ -23,6 +24,11 @@ import { Route as ComparatorsRouteImport } from './routes/comparators'
 import { Route as CaseMapRouteImport } from './routes/case-map'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TourRoute = TourRouteImport.update({
+  id: '/tour',
+  path: '/tour',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TimelineRoute = TimelineRouteImport.update({
   id: '/timeline',
   path: '/timeline',
@@ -103,6 +109,7 @@ export interface FileRoutesByFullPath {
   '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
   '/timeline': typeof TimelineRoute
+  '/tour': typeof TourRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -118,6 +125,7 @@ export interface FileRoutesByTo {
   '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
   '/timeline': typeof TimelineRoute
+  '/tour': typeof TourRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -134,6 +142,7 @@ export interface FileRoutesById {
   '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
   '/timeline': typeof TimelineRoute
+  '/tour': typeof TourRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -151,6 +160,7 @@ export interface FileRouteTypes {
     | '/schedule-data'
     | '/story'
     | '/timeline'
+    | '/tour'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -166,6 +176,7 @@ export interface FileRouteTypes {
     | '/schedule-data'
     | '/story'
     | '/timeline'
+    | '/tour'
   id:
     | '__root__'
     | '/'
@@ -181,6 +192,7 @@ export interface FileRouteTypes {
     | '/schedule-data'
     | '/story'
     | '/timeline'
+    | '/tour'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -197,10 +209,18 @@ export interface RootRouteChildren {
   ScheduleDataRoute: typeof ScheduleDataRoute
   StoryRoute: typeof StoryRoute
   TimelineRoute: typeof TimelineRoute
+  TourRoute: typeof TourRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tour': {
+      id: '/tour'
+      path: '/tour'
+      fullPath: '/tour'
+      preLoaderRoute: typeof TourRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/timeline': {
       id: '/timeline'
       path: '/timeline'
@@ -309,6 +329,7 @@ const rootRouteChildren: RootRouteChildren = {
   ScheduleDataRoute: ScheduleDataRoute,
   StoryRoute: StoryRoute,
   TimelineRoute: TimelineRoute,
+  TourRoute: TourRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
