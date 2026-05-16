@@ -381,6 +381,8 @@ export const events: TimelineEvent[] = [
     status: "reported-lashawnna",
     chapterId: "ch5",
   },
+  {
+    id: "e-2025-10-14-fmla-notice",
     date: "October 14, 2025",
     sortKey: "2025-10-14",
     title: "FMLA notice to Allan and Amber in Teams chat",
