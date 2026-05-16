@@ -1,0 +1,16 @@
+import type { Chapter } from "./types";
+
+export const chapters: Chapter[] = [
+  { id: "ch1", number: 1, title: "Protected Activity Begins", intro: "The early period: a PM assignment presented as temporary, a mid-shift request, and the prior EEOC charge that anchors the protected-activity record.", keyQuestion: "What did Respondent know — and when — about the mid-shift request and the prior protected activity?" },
+  { id: "ch2", number: 2, title: "The Waitlist Dispute", intro: "The waitlist record does not match what Lashawnna asked for. Material fields are missing; her name is later deleted and re-added with a new date.", keyQuestion: "If the waitlist process was followed, where is the ticket — and why does the record reset her request date?" },
+  { id: "ch3", number: 3, title: "The Schedule Records", intro: "Month-by-month schedule patterns from December 2024 through October 2025 — who was on what shift, who moved, who stayed.", keyQuestion: "What do the contemporaneous schedule records show about availability, movement, and equal access?" },
+  { id: "ch4", number: 4, title: "Comparator Movement", intro: "Other leaders — including Tyler Millisock — moved areas and schedules during the same period Lashawnna remained fixed on PM.", keyQuestion: "What process allowed comparators to move while Lashawnna's placement remained disputed?" },
+  { id: "ch5", number: 5, title: "April Return From Leave", intro: "Returning from leave on April 3, 2026: a calibration meeting in which Lashawnna was publicly questioned, and a sequence of movement and assignment events that followed.", keyQuestion: "Were post-leave events handled consistently with how other leaders were treated?" },
+  { id: "ch6", number: 6, title: "Movement Changes and Team Assignment", intro: "The April 28 movement was shown, then changed. Amber reportedly stated she alone made the decision.", keyQuestion: "Who changed the April 28 movement, and why did Lashawnna's team composition change after the initial movement was shown?" },
+  { id: "ch7", number: 7, title: "Assignment Exceptions", intro: "Lashawnna was told UMs could not request coaches and Todd could not move 'for business reasons.' Two weeks later, Karena Lesure was moved because Julie Cahoon specifically asked.", keyQuestion: "Why was the no-request rule applied to Lashawnna but waived for Julie?" },
+  { id: "ch8", number: 8, title: "Deleted Evidence Concerns", intro: "The Team Ratios formula change. The February 22 waitlist deletion. The July 17 reset of the request date. The Verint monitoring concern.", keyQuestion: "Were records modified or deleted in ways that affected Lashawnna's evidence?" },
+  { id: "ch9", number: 9, title: "Performance and Pretext", intro: "A 'solid' rating despite strong performance. Credit removed from a document she created.", keyQuestion: "Is the performance record consistent with the adverse actions Lashawnna experienced?" },
+  { id: "ch10", number: 10, title: "Core Investigative Questions", intro: "A focused set of open questions for an investigator, attorney, mediator, or agency reviewer.", keyQuestion: "Were similarly situated leaders treated consistently?" },
+];
+
+export const chapterById = (id: string) => chapters.find(c => c.id === id);
