@@ -419,16 +419,17 @@ function HardshipThreadPage() {
             <div className="mt-4 grid grid-cols-2 gap-3">
               <div className="rounded-sm bg-secondary/60 p-3 text-center">
                 <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Low</div>
-                <div className="mt-0.5 font-display text-2xl text-foreground">$75,000</div>
+                <div className="mt-0.5 font-display text-2xl text-foreground">$100,000</div>
               </div>
               <div className="rounded-sm bg-secondary/60 p-3 text-center">
                 <div className="text-[10px] uppercase tracking-wider text-muted-foreground">High</div>
-                <div className="mt-0.5 font-display text-2xl text-foreground">$250,000</div>
+                <div className="mt-0.5 font-display text-2xl text-foreground">$325,000</div>
               </div>
             </div>
             <p className="mt-3 text-xs text-muted-foreground">
-              Higher end reflects severity (homelessness with a child), employer notice before the harm occurred, and the
-              context of contemporaneous protected-activity reports.
+              Range reflects (1) ~10 months of forced separation from a minor child caused directly by the denied schedule, (2)
+              one week of homelessness with that child, (3) employer notice before the housing harm occurred, and (4) the context
+              of contemporaneous protected-activity reports.
             </p>
           </div>
         </div>
