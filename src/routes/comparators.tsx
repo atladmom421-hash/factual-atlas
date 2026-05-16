@@ -1,9 +1,26 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { comparators, exhibitById } from "@/data";
 import { StatusBadge } from "@/components/case/Badges";
 import { useExhibit } from "@/components/case/ExhibitProvider";
-import { AlertTriangle, FileText, ExternalLink } from "lucide-react";
+import { AlertTriangle, FileText, ExternalLink, CalendarRange } from "lucide-react";
 import { clsx } from "clsx";
+
+function monthRange(start: string, end: string): string[] {
+  // start/end in "YYYY-MM" format, inclusive
+  const out: string[] = [];
+  const [sy, sm] = start.split("-").map(Number);
+  const [ey, em] = end.split("-").map(Number);
+  let y = sy, m = sm;
+  while (y < ey || (y === ey && m <= em)) {
+    out.push(`${y}-${String(m).padStart(2, "0")}`);
+    m++; if (m > 12) { m = 1; y++; }
+  }
+  return out;
+}
+function monthLabel(months: string[]): string {
+  if (months.length === 1) return months[0];
+  return `${months[0]} → ${months[months.length - 1]}`;
+}
 
 export const Route = createFileRoute("/comparators")({
   head: () => ({
@@ -22,12 +39,14 @@ function ComparatorsPage() {
   const ex022 = exhibitById("EX-022");
   const ex010 = exhibitById("EX-010");
 
-  const tylerAxes: { axis: string; lashawnna: string; tyler: string; inconsistency: string; cite: { id: string; label: string }[] }[] = [
+  const tylerAxes: { axis: string; lashawnna: string; tyler: string; inconsistency: string; months: string[]; monthSpanLabel: string; cite: { id: string; label: string }[] }[] = [
     {
       axis: "Waitlist",
       lashawnna: "Waitlist placement treated as a barrier to movement; status disputed and used to justify keeping her on PM closing.",
       tyler: "Stated he was NOT on the waitlist for the movement — yet was still moved to PRE-D / DBC on an earlier shift.",
       inconsistency: "If waitlist gated movement for Lashawnna, it cannot have been waived silently for Tyler. The rule was applied selectively.",
+      months: monthRange("2025-01", "2025-02"),
+      monthSpanLabel: "Jan–Feb 2025 movement window",
       cite: [
         { id: "EX-022", label: "EX-022 · §IV.A Tyler Millisock, §IX investigative questions" },
         { id: "EX-010", label: "EX-010 · waitlist context" },
@@ -38,6 +57,8 @@ function ComparatorsPage() {
       lashawnna: "Told a ticket / formal process was required before any schedule or area change could be considered.",
       tyler: "NO ticket identified for Tyler's movement based on Lashawnna's understanding — movement happened without the gating process.",
       inconsistency: "The 'ticket required' explanation given to Lashawnna is contradicted by an actual movement that occurred without one.",
+      months: monthRange("2025-01", "2025-02"),
+      monthSpanLabel: "Jan–Feb 2025 movement window",
       cite: [
         { id: "EX-022", label: "EX-022 · §IV.A, §IX Q on ticket inconsistency" },
       ],
@@ -47,6 +68,8 @@ function ComparatorsPage() {
       lashawnna: "Consistently high performer — frequently #1 in Consumer Banking, history of 4 ratings, strong employee surveys. Post-EEOC 'solid' rating drop documented.",
       tyler: "Lower-to-medium performer per Lashawnna's understanding — yet received the broader / earlier-shift placement.",
       inconsistency: "Weaker performer received the more favorable placement. Performance cannot be the neutral explanation for keeping Lashawnna fixed.",
+      months: monthRange("2024-12", "2025-10"),
+      monthSpanLabel: "Dec 2024 – Oct 2025 (post-EEOC rating window)",
       cite: [
         { id: "EX-022", label: "EX-022 · §II performance history, §IV.A" },
       ],
@@ -56,6 +79,8 @@ function ComparatorsPage() {
       lashawnna: "Remained in same general area and 1:30 PM–10:00 PM closing across the full 15-month window.",
       tyler: "Moved across areas to PRE-D / DBC on 11:30 AM–8:00 PM — visible Feb 2025 through Oct 2025 and continuing.",
       inconsistency: "Same April 3, 2023 start date and same level eliminates tenure/seniority as a neutral explanation for the difference.",
+      months: monthRange("2025-02", "2025-10"),
+      monthSpanLabel: "Feb 2025 – Oct 2025 visible movement",
       cite: [
         { id: "EX-022", label: "EX-022 · §IV.B month-by-month Jan–Oct 2025, §VIII comparator chart" },
       ],
@@ -127,7 +152,7 @@ function ComparatorsPage() {
                   <div className="text-[10px] uppercase tracking-wider text-accent">Why it's inconsistent</div>
                   <p className="mt-0.5 text-xs text-foreground/85">{a.inconsistency}</p>
                 </div>
-                <div className="mt-auto flex flex-col gap-1">
+                <div className="mt-auto flex flex-col gap-1.5">
                   {a.cite.map(c => (
                     <button
                       key={c.id + c.label}
@@ -139,6 +164,16 @@ function ComparatorsPage() {
                       <ExternalLink className="size-2.5 text-muted-foreground" />
                     </button>
                   ))}
+                  <Link
+                    to="/timeline"
+                    hash={`months-${a.months.join(",")}`}
+                    className="no-print inline-flex items-center gap-1.5 self-start rounded-sm border border-accent/50 bg-accent/10 px-2 py-1 text-[11px] text-accent hover:bg-accent/20"
+                    title={`Filter Master Timeline to ${a.months.length} month${a.months.length === 1 ? "" : "s"}`}
+                  >
+                    <CalendarRange className="size-3" />
+                    Jump to timeline · {monthLabel(a.months)}
+                    <ExternalLink className="size-2.5 opacity-70" />
+                  </Link>
                 </div>
               </article>
             ))}

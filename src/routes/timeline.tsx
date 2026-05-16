@@ -21,13 +21,22 @@ function TimelinePage() {
   const [category, setCategory] = useState<string>("all");
   const [year, setYear] = useState<string>("all");
   const [personId, setPersonId] = useState<string>("all");
+  const [months, setMonths] = useState<string[]>([]);
 
-  // Honor category and date hashes set by global search
+  // Honor category, date, and month hashes set by global search / comparators
   useEffect(() => {
     const apply = () => {
       const h = window.location.hash.replace(/^#/, "");
-      if (h.startsWith("cat-")) { setCategory(h.slice(4)); setYear("all"); setPersonId("all"); }
-      else if (h.startsWith("date-")) { setYear(h.slice(5, 9)); setCategory("all"); setPersonId("all"); }
+      if (h.startsWith("cat-")) { setCategory(h.slice(4)); setYear("all"); setPersonId("all"); setMonths([]); }
+      else if (h.startsWith("months-")) {
+        const list = h.slice(7).split(",").map(s => s.trim()).filter(s => /^\d{4}-\d{2}$/.test(s));
+        setMonths(list); setCategory("all"); setYear("all"); setPersonId("all");
+        // Scroll to the top of the filtered timeline
+        requestAnimationFrame(() => {
+          document.getElementById("timeline-results")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      else if (h.startsWith("date-")) { setYear(h.slice(5, 9)); setCategory("all"); setPersonId("all"); setMonths([]); }
     };
     apply();
     window.addEventListener("hashchange", apply);
@@ -38,8 +47,9 @@ function TimelinePage() {
   const filtered = useMemo(() => eventsSorted.filter(e =>
     (category === "all" || e.category === category) &&
     (year === "all" || e.sortKey.startsWith(year)) &&
-    (personId === "all" || e.peopleIds.includes(personId))
-  ), [category, year, personId]);
+    (personId === "all" || e.peopleIds.includes(personId)) &&
+    (months.length === 0 || months.some(m => e.sortKey.startsWith(m)))
+  ), [category, year, personId, months]);
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
@@ -56,8 +66,19 @@ function TimelinePage() {
         <FilterRow label="Person" value={personId} onChange={setPersonId} options={[{ value: "all", label: "All people" }, ...people.map(p => ({ value: p.id, label: p.name }))]} />
       </div>
 
+      {/* Active month-filter chip (from comparator citation jumps) */}
+      {months.length > 0 && (
+        <div className="no-print mt-4 flex flex-wrap items-center gap-2 rounded-md border border-accent/40 bg-accent/5 px-3 py-2 text-xs">
+          <span className="text-[10px] uppercase tracking-wider text-accent">Month filter</span>
+          {months.map(m => (
+            <span key={m} className="rounded-full bg-card px-2 py-0.5 font-mono text-[11px] text-foreground/85">{m}</span>
+          ))}
+          <button onClick={() => { setMonths([]); history.replaceState(null, "", window.location.pathname); }} className="ml-auto text-[11px] text-muted-foreground hover:text-foreground">Clear</button>
+        </div>
+      )}
+
       {/* Timeline */}
-      <div className="mt-12 space-y-6">
+      <div id="timeline-results" className="mt-12 space-y-6">
         {filtered.length === 0 && (
           <div className="rounded-md border border-dashed border-border p-12 text-center text-sm text-muted-foreground">No events match the current filters.</div>
         )}
