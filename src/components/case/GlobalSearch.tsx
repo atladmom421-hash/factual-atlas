@@ -8,6 +8,7 @@ import {
   events,
   exhibits,
   comparators,
+  exhibitFullText,
   CATEGORY_LABELS,
 } from "@/data";
 
@@ -19,6 +20,8 @@ interface Result {
   title: string;
   subtitle?: string;
   haystack: string;
+  /** Long-form body text (transcripts, parsed PDF/OCR). Used for snippet preview only. */
+  body?: string;
   to: string;
   hash?: string;
 }
@@ -57,12 +60,18 @@ function buildIndex(): Result[] {
   }
 
   for (const ex of exhibits) {
+    const ocr = exhibitFullText[ex.id] ?? "";
+    const body = [ex.transcriptText, ocr].filter(Boolean).join("\n\n");
     out.push({
       kind: "exhibit",
       id: ex.id,
       title: `${ex.exhibitNumber} — ${ex.fileName}`,
       subtitle: `${ex.date} · ${ex.category}`,
-      haystack: [ex.exhibitNumber, ex.fileName, ex.summary, ex.category, ex.date, ex.transcriptText].filter(Boolean).join(" ").toLowerCase(),
+      haystack: [
+        ex.exhibitNumber, ex.fileName, ex.summary, ex.category, ex.date,
+        ex.transcriptText, ocr,
+      ].filter(Boolean).join(" ").toLowerCase(),
+      body: body || undefined,
       to: "/evidence",
       hash: `exhibit-${ex.id}`,
     });
@@ -273,6 +282,17 @@ export function GlobalSearch() {
                           <span className="min-w-0 flex-1">
                             <span className="block truncate text-[14px] font-medium text-foreground">{r.title}</span>
                             {r.subtitle && <span className="block truncate text-[11.5px] text-muted-foreground">{r.subtitle}</span>}
+                            {(() => {
+                              const term = q.trim().toLowerCase();
+                              if (!term || !r.body) return null;
+                              const lc = r.body.toLowerCase();
+                              const idx = lc.indexOf(term.split(/\s+/)[0]);
+                              if (idx < 0) return null;
+                              const start = Math.max(0, idx - 50);
+                              const end = Math.min(r.body.length, idx + term.length + 90);
+                              const snippet = (start > 0 ? "…" : "") + r.body.slice(start, end).replace(/\s+/g, " ").trim() + (end < r.body.length ? "…" : "");
+                              return <span className="mt-0.5 block truncate text-[11px] italic text-muted-foreground/80">{snippet}</span>;
+                            })()}
                           </span>
                           <span className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</span>
                         </button>
