@@ -19,6 +19,7 @@ import { Route as HardshipThreadRouteImport } from './routes/hardship-thread'
 import { Route as GregAnitaThreadRouteImport } from './routes/greg-anita-thread'
 import { Route as EvidenceRouteImport } from './routes/evidence'
 import { Route as ComparatorsRouteImport } from './routes/comparators'
+import { Route as CaseMapRouteImport } from './routes/case-map'
 import { Route as IndexRouteImport } from './routes/index'
 
 const TimelineRoute = TimelineRouteImport.update({
@@ -71,6 +72,11 @@ const ComparatorsRoute = ComparatorsRouteImport.update({
   path: '/comparators',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CaseMapRoute = CaseMapRouteImport.update({
+  id: '/case-map',
+  path: '/case-map',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -79,6 +85,7 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/case-map': typeof CaseMapRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
@@ -92,6 +99,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/case-map': typeof CaseMapRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
@@ -106,6 +114,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/case-map': typeof CaseMapRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
@@ -121,6 +130,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/case-map'
     | '/comparators'
     | '/evidence'
     | '/greg-anita-thread'
@@ -134,6 +144,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/case-map'
     | '/comparators'
     | '/evidence'
     | '/greg-anita-thread'
@@ -147,6 +158,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/case-map'
     | '/comparators'
     | '/evidence'
     | '/greg-anita-thread'
@@ -161,6 +173,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CaseMapRoute: typeof CaseMapRoute
   ComparatorsRoute: typeof ComparatorsRoute
   EvidenceRoute: typeof EvidenceRoute
   GregAnitaThreadRoute: typeof GregAnitaThreadRoute
@@ -245,6 +258,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ComparatorsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/case-map': {
+      id: '/case-map'
+      path: '/case-map'
+      fullPath: '/case-map'
+      preLoaderRoute: typeof CaseMapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -257,6 +277,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CaseMapRoute: CaseMapRoute,
   ComparatorsRoute: ComparatorsRoute,
   EvidenceRoute: EvidenceRoute,
   GregAnitaThreadRoute: GregAnitaThreadRoute,
@@ -271,3 +292,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
