@@ -103,12 +103,43 @@ function eventYear(e: TimelineEvent): string {
 function CaseMapPage() {
   const { open } = useExhibit();
   const [active, setActive] = useState<EventCategory | "all">("all");
+  const [query, setQuery] = useState("");
+  const [fromDate, setFromDate] = useState("");
+  const [toDate, setToDate] = useState("");
+
+  const peopleById = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const p of people) m.set(p.id, p.name);
+    return m;
+  }, []);
 
   const sorted = useMemo(() => [...events].sort((a, b) => a.sortKey.localeCompare(b.sortKey)), []);
-  const filtered = useMemo(
-    () => (active === "all" ? sorted : sorted.filter(e => e.category === active)),
-    [sorted, active],
-  );
+
+  // Apply category + search/date filters
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return sorted.filter(e => {
+      if (active !== "all" && e.category !== active) return false;
+      if (fromDate && e.sortKey < fromDate) return false;
+      if (toDate && e.sortKey > toDate) return false;
+      if (!q) return true;
+      const peopleNames = e.peopleIds.map(id => peopleById.get(id) ?? id).join(" ");
+      const haystack = [
+        e.title,
+        e.description,
+        e.date,
+        e.whyItMatters ?? "",
+        e.category,
+        e.status,
+        peopleNames,
+        e.evidenceIds.join(" "),
+      ].join(" ").toLowerCase();
+      // support multi-term AND search
+      return q.split(/\s+/).every(term => haystack.includes(term));
+    });
+  }, [sorted, active, query, fromDate, toDate, peopleById]);
+
+  const hasSearch = query.trim() !== "" || fromDate !== "" || toDate !== "";
 
   // group filtered timeline by year for the strip
   const byYear = useMemo(() => {
@@ -126,6 +157,35 @@ function CaseMapPage() {
     for (const e of events) counts[e.category] = (counts[e.category] ?? 0) + 1;
     return counts;
   }, []);
+
+  // matching exhibits (by ID or summary keyword) when searching
+  const matchingExhibits = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return exhibits.filter(ex =>
+      ex.id.toLowerCase().includes(q) ||
+      ex.exhibitNumber.toLowerCase().includes(q) ||
+      ex.fileName.toLowerCase().includes(q) ||
+      ex.summary.toLowerCase().includes(q),
+    ).slice(0, 12);
+  }, [query]);
+
+  // matching people when searching
+  const matchingPeople = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return people.filter(p =>
+      p.name.toLowerCase().includes(q) ||
+      p.role.toLowerCase().includes(q) ||
+      p.relationshipToCase.toLowerCase().includes(q),
+    ).slice(0, 12);
+  }, [query]);
+
+  const resetSearch = () => {
+    setQuery("");
+    setFromDate("");
+    setToDate("");
+  };
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-10 space-y-12">
