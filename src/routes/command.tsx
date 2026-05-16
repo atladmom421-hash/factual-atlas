@@ -9,9 +9,9 @@ import { clsx } from "clsx";
 export const Route = createFileRoute("/command")({
   head: () => ({
     meta: [
-      { title: "Intelligence Console — Harbin Case File" },
+      { title: "Evidence Dashboard — Harbin Case File" },
       { name: "description", content: "Interactive command center: schedule heatmap, evidence network graph, animated timeline scrubber, and live case counters." },
-      { property: "og:title", content: "Intelligence Console — Harbin Case File" },
+      { property: "og:title", content: "Evidence Dashboard — Harbin Case File" },
     ],
   }),
   component: CommandPage,
@@ -46,9 +46,9 @@ function CommandPage() {
 function Hero() {
   return (
     <section className="relative overflow-hidden border border-border bg-[color:var(--hud-panel)]/60 px-6 py-8">
-      <div className="hud-scanline absolute inset-0 pointer-events-none" />
+      <div className="hidden" />
       <div className="relative">
-        <div className="hud-eyebrow">/// Intelligence Console · Op-ID HARBIN-EEOC</div>
+        <div className="hud-eyebrow">Evidence Dashboard · Harbin v. Employer</div>
         <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">
           The case, instrumented.
         </h1>
@@ -163,7 +163,7 @@ function ScheduleHeatmap() {
     <section id="heatmap" className="hud-panel bg-[color:var(--hud-panel)] p-4">
       <header className="flex items-start justify-between gap-4 pb-3 border-b border-border">
         <div>
-          <div className="hud-eyebrow">Module 02 · Schedule Heatmap</div>
+          <div className="hud-eyebrow">Section 02 · Schedule Heatmap</div>
           <h2 className="mt-1 font-display text-2xl tracking-tight">15-month schedule grid</h2>
           <p className="mt-1 text-xs text-foreground/70 max-w-md">Each row a leader, each column a month. Lashawnna pinned at top: red = PM/closing. Peers move freely across AM (cyan), Midshift (green), Mid/Late (amber).</p>
         </div>
@@ -366,7 +366,7 @@ function NetworkGraph() {
     <section id="network" className="hud-panel bg-[color:var(--hud-panel)] p-4">
       <header className="flex items-start justify-between gap-4 pb-3 border-b border-border">
         <div>
-          <div className="hud-eyebrow">Module 03 · Evidence Network</div>
+          <div className="hud-eyebrow">Section 03 · Evidence Network</div>
           <h2 className="mt-1 font-display text-2xl tracking-tight">People · events · exhibits</h2>
           <p className="mt-1 text-xs text-foreground/70 max-w-md">Force-directed graph of who connects to what. Drag nodes, click to inspect. Harbin is the gold node.</p>
         </div>
@@ -566,7 +566,7 @@ function TimelineScrubber() {
     <section id="scrubber" className="hud-panel bg-[color:var(--hud-panel)] p-4">
       <header className="flex items-start justify-between gap-4 pb-3 border-b border-border">
         <div>
-          <div className="hud-eyebrow">Module 04 · Timeline Scrubber</div>
+          <div className="hud-eyebrow">Section 04 · Timeline</div>
           <h2 className="mt-1 font-display text-2xl tracking-tight">Scrub through {months.length} months of evidence</h2>
           <p className="mt-1 text-xs text-foreground/70 max-w-2xl">Drag the playhead or press play. Events appear as their month is reached; lanes group by category.</p>
         </div>
