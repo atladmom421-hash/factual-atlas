@@ -6,6 +6,7 @@ import { scheduleRows, SCHEDULE_TYPES, SCHEDULE_COLOR, type ScheduleType } from 
 import { exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
+import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
