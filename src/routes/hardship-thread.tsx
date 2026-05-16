@@ -131,8 +131,14 @@ const DAMAGES: { category: string; basis: string; low: number; high: number }[] 
     high: 8000,
   },
   {
+    category: "Family separation — son living with maternal grandmother (Aug 2025 →)",
+    basis: "Starting the August 2025 school year, Lashawnna's minor son had to live with his maternal grandmother because Lashawnna's denied 1:30 PM–10:00 PM closing schedule ended at the same time school let out, she lived too far from the school to reach him during her lunch period, and the child's father was unavailable (separated, working at Wilson). Grandmother handled school drop-off, pick-up, after-school care, homework help, and daily caregiving Lashawnna would otherwise have provided. Damages include reasonable value of substitute caregiving, transportation/fuel reimbursement to grandmother, and incremental household costs.",
+    low: 4000,
+    high: 14000,
+  },
+  {
     category: "Childcare / school disruption costs for minor child",
-    basis: "Additional childcare, transportation, and school-related costs caused by the displacement and unstable housing.",
+    basis: "Additional childcare, transportation, and school-related costs caused by the housing displacement and unstable living arrangements through the Nov–Dec 2025 hardship/eviction period.",
     low: 1000,
     high: 4000,
   },
