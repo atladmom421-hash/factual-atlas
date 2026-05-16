@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { comparators } from "@/data";
+import { comparators, exhibitById } from "@/data";
 import { StatusBadge } from "@/components/case/Badges";
+import { useExhibit } from "@/components/case/ExhibitProvider";
+import { AlertTriangle, FileText, ExternalLink } from "lucide-react";
 import { clsx } from "clsx";
 
 export const Route = createFileRoute("/comparators")({
