@@ -59,10 +59,10 @@ function GregAnitaThreadPage() {
             <Users className="size-3.5" /> Reporting line
           </div>
           <ul className="mt-3 space-y-1.5 text-sm text-foreground/85">
-            <li><span className="font-mono text-xs text-muted-foreground">VP·CB</span> &nbsp;Angie Francis — VP, Card Business</li>
+            <li><span className="font-mono text-xs text-muted-foreground">VP</span> &nbsp;Angie Francis — VP, Recovery</li>
             <li className="pl-4"><span className="font-mono text-xs text-muted-foreground">BM</span> &nbsp;Jen Roy — Business Manager to the VP</li>
-            <li className="pl-8"><span className="font-mono text-xs text-muted-foreground">DIR</span> &nbsp;<strong>Greg Carfagna — Director</strong></li>
-            <li className="pl-12"><span className="font-mono text-xs text-muted-foreground">OPS</span> &nbsp;Allan Glover · Amber Laye · Shawn McLaughlin · Rosanna — Dept / Op Managers</li>
+            <li className="pl-8"><span className="font-mono text-xs text-muted-foreground">DIR</span> &nbsp;<strong>Greg Carfagna — Director, Recovery</strong></li>
+            <li className="pl-12"><span className="font-mono text-xs text-muted-foreground">OPS</span> &nbsp;Allan Glover · Amber Laye · Shawn McLaughlin · Rosanna — Recovery Op Managers</li>
             <li className="pl-16"><span className="font-mono text-xs text-muted-foreground">UM/TL</span> &nbsp;<strong>Lashawnna Harbin — Unit Manager / TL</strong></li>
             <li className="pl-20"><span className="font-mono text-xs text-muted-foreground">COACH</span> &nbsp;Coaches (assistants to Unit Managers) — e.g. Karena Lesure, Todd Watson</li>
             <li className="pl-24"><span className="font-mono text-xs text-muted-foreground">AGT</span> &nbsp;Phone agents</li>
