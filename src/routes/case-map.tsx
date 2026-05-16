@@ -232,6 +232,168 @@ function CaseMapPage() {
         ))}
       </section>
 
+      {/* Global search */}
+      <section className="space-y-3">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+            <Search className="size-3.5" /> Search events, people, exhibits
+          </div>
+          {hasSearch && (
+            <button
+              onClick={resetSearch}
+              className="inline-flex items-center gap-1 text-[11px] text-muted-foreground hover:text-foreground"
+            >
+              <X className="size-3" /> Clear
+            </button>
+          )}
+        </div>
+        <div className="rounded-sm border border-border bg-card p-3 grid gap-3 md:grid-cols-[1fr_auto_auto] md:items-end">
+          <label className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">Keyword / name / exhibit ID</span>
+            <div className="relative">
+              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 size-3.5 text-muted-foreground" />
+              <input
+                type="text"
+                value={query}
+                onChange={e => setQuery(e.target.value)}
+                placeholder='e.g. "Greg", "hardship", "EX-021", "Marcinko"'
+                className="w-full rounded-sm border border-border bg-background pl-8 pr-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/40"
+              />
+            </div>
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">From</span>
+            <input
+              type="date"
+              value={fromDate}
+              onChange={e => setFromDate(e.target.value)}
+              className="rounded-sm border border-border bg-background px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/40"
+            />
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">To</span>
+            <input
+              type="date"
+              value={toDate}
+              onChange={e => setToDate(e.target.value)}
+              className="rounded-sm border border-border bg-background px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/40"
+            />
+          </label>
+        </div>
+
+        {hasSearch && (
+          <div className="rounded-sm border border-border bg-secondary/20 p-4 space-y-4">
+            <div className="flex items-baseline justify-between gap-3">
+              <div className="text-sm">
+                <span className="font-medium">{filtered.length}</span>{" "}
+                <span className="text-muted-foreground">matching event{filtered.length === 1 ? "" : "s"}</span>
+                {matchingPeople.length > 0 && (
+                  <>
+                    {" · "}
+                    <span className="font-medium">{matchingPeople.length}</span>{" "}
+                    <span className="text-muted-foreground">people</span>
+                  </>
+                )}
+                {matchingExhibits.length > 0 && (
+                  <>
+                    {" · "}
+                    <span className="font-medium">{matchingExhibits.length}</span>{" "}
+                    <span className="text-muted-foreground">exhibits</span>
+                  </>
+                )}
+              </div>
+              <span className="text-[11px] text-muted-foreground">Click any result to jump to its record.</span>
+            </div>
+
+            {filtered.length > 0 && (
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-2">Events</div>
+                <ul className="max-h-72 overflow-y-auto divide-y divide-border/60">
+                  {filtered.slice(0, 30).map(e => (
+                    <li key={e.id}>
+                      <Link
+                        to="/timeline"
+                        hash={`evt-${e.id}`}
+                        className="group flex items-start gap-3 py-2 px-2 -mx-2 rounded-sm hover:bg-secondary"
+                      >
+                        <span className={clsx("mt-2 size-2 shrink-0 rounded-full", CATEGORY_COLOR[e.category] ?? "bg-muted")} />
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="text-xs text-muted-foreground tabular-nums">{e.date}</span>
+                            <span className="text-sm font-medium truncate">{e.title}</span>
+                          </div>
+                          <div className="flex items-center gap-1.5 flex-wrap mt-1">
+                            <CategoryBadge category={e.category} />
+                            <StatusBadge status={e.status} />
+                            {e.evidenceIds.slice(0, 3).map(exId => (
+                              <button
+                                key={exId}
+                                onClick={(ev) => { ev.preventDefault(); ev.stopPropagation(); open(exId); }}
+                                className="inline-flex items-center gap-1 rounded-sm border border-border bg-background px-1.5 py-0.5 text-[10px] hover:bg-secondary"
+                              >
+                                <FileText className="size-2.5" /> {exId}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        <ExternalLink className="size-3 opacity-0 group-hover:opacity-60 mt-2 shrink-0" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                {filtered.length > 30 && (
+                  <div className="pt-2 text-xs text-muted-foreground">+ {filtered.length - 30} more — refine your search to narrow.</div>
+                )}
+              </div>
+            )}
+
+            {matchingPeople.length > 0 && (
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-2">People</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {matchingPeople.map(p => (
+                    <Link
+                      key={p.id}
+                      to="/people"
+                      hash={`person-${p.id}`}
+                      className="inline-flex items-center gap-1.5 rounded-sm border border-border bg-background px-2 py-1 text-xs hover:bg-secondary"
+                    >
+                      <Users className="size-3" />
+                      <span className="font-medium">{p.name}</span>
+                      <span className="text-muted-foreground">— {p.role}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {matchingExhibits.length > 0 && (
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-2">Exhibits</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {matchingExhibits.map(ex => (
+                    <button
+                      key={ex.id}
+                      onClick={() => open(ex.id)}
+                      className="inline-flex items-center gap-1.5 rounded-sm border border-border bg-background px-2 py-1 text-xs hover:bg-secondary"
+                      title={ex.summary}
+                    >
+                      <FileText className="size-3" />
+                      <span className="font-medium">{ex.id}</span>
+                      <span className="text-muted-foreground truncate max-w-[220px]">— {ex.fileName}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {filtered.length === 0 && matchingPeople.length === 0 && matchingExhibits.length === 0 && (
+              <div className="text-sm text-muted-foreground">No results. Try a different keyword or widen the date range.</div>
+            )}
+          </div>
+        )}
+      </section>
+
       {/* Category legend / filter */}
       <section className="space-y-3">
         <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
