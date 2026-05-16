@@ -90,5 +90,5 @@ export interface Chapter {
   title: string;
   intro: string;
   keyQuestion: string;
-  eventIds: string[];
+  eventIds?: string[];
 }
