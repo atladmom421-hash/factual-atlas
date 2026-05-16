@@ -10,10 +10,10 @@ import { useExhibit } from "@/components/case/ExhibitProvider";
 
 type SnapKey = "jan22" | "feb25" | "jul03";
 
-const SNAPS: { key: SnapKey; label: string; date: string; exhibit: string }[] = [
-  { key: "jan22", label: "Jan 22, 2025", date: "9:36 AM",  exhibit: "EX-046" },
-  { key: "feb25", label: "Feb 25, 2025", date: "12:01 PM", exhibit: "EX-045" },
-  { key: "jul03", label: "Jul 3, 2025",  date: "2:28 PM",  exhibit: "EX-044" },
+const SNAPS: { key: SnapKey; label: string; date: string; exhibit: string; eventId: string; harbinEventId: string }[] = [
+  { key: "jan22", label: "Jan 22, 2025", date: "9:36 AM",  exhibit: "EX-046", eventId: "e-2025-01-22-waitlist-harbin-row-6", harbinEventId: "e-2025-01-22-waitlist-harbin-row-6" },
+  { key: "feb25", label: "Feb 25, 2025", date: "12:01 PM", exhibit: "EX-045", eventId: "e-2025-02-25-jen-removes-harbin", harbinEventId: "e-2025-02-25-jen-removes-harbin" },
+  { key: "jul03", label: "Jul 3, 2025",  date: "2:28 PM",  exhibit: "EX-044", eventId: "e-2025-07-03-waitlist-harbin-absent", harbinEventId: "e-2025-07-03-waitlist-harbin-absent" },
 ];
 
 type Row = {
