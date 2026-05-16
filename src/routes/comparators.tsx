@@ -168,10 +168,10 @@ function ComparatorsPage() {
                     to="/timeline"
                     hash={`months-${a.months.join(",")}`}
                     className="no-print inline-flex items-center gap-1.5 self-start rounded-sm border border-accent/50 bg-accent/10 px-2 py-1 text-[11px] text-accent hover:bg-accent/20"
-                    title={`Filter Master Timeline to ${a.months.length} month${a.months.length === 1 ? "" : "s"}`}
+                    title={`Filter Master Timeline to ${a.months.length} month${a.months.length === 1 ? "" : "s"} (${monthLabel(a.months)})`}
                   >
                     <CalendarRange className="size-3" />
-                    Jump to timeline · {monthLabel(a.months)}
+                    Jump to timeline · {a.monthSpanLabel}
                     <ExternalLink className="size-2.5 opacity-70" />
                   </Link>
                 </div>
