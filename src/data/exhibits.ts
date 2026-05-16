@@ -87,7 +87,7 @@ export const exhibits: Exhibit[] = [
     category: "Leave administration",
     peopleIds: ["harbin"],
     summary: "Concerns documented around leave processing, access deactivation, and FMLA notice deletion.",
-    linkedEventIds: ["e-2025-10-leave-misclass"],
+    linkedEventIds: ["e-2025-10-leave-misclass", "e-2025-10-13-fmla-request", "e-2025-10-15-fmla-paperwork", "e-2025-10-wrong-paperwork", "e-2025-10-16-access-deactivated", "e-2025-10-23-hartford-correction", "e-2025-10-23-fmla-designation", "e-2025-10-24-allan-call", "e-2025-11-18-last-day", "e-2025-11-24-std-filed", "e-2025-12-08-doctor-std", "e-2025-12-15-correction-warning", "e-2025-12-22-corrected", "e-2026-01-02-emergency-approval", "e-2026-01-05-std-extension", "e-2026-01-insurance-loss"],
     reliability: "needs-confirmation",
     filePath: "/exhibits/EX-007-leave-misclassification.pdf",
     fileKind: "pdf",
@@ -323,6 +323,76 @@ Lashawnna Harbin: Well, I just wanted to be clear on that, because I definitely 
 So I just want to be clear on that. Okay?
 
 Well, I have to run to my next meeting, but thanks for taking the time to speak with me. I appreciate it. Okay.`,
+  },
+  {
+    id: "EX-ALLAN-OCT24",
+    exhibitNumber: "EX-013",
+    fileName: "October 24, 2025 — Call with Allan Glover re: leave misclassification (transcript)",
+    date: "October 24, 2025",
+    category: "Transcript",
+    peopleIds: ["harbin", "allan", "hartford"],
+    summary: "Call in which Allan confirms the email he received that morning indicated Lashawnna was 'going on a leave effective yesterday' and 'says short term', that he believed she would not be returning until November, and warns that 'the next thing they're going to do' would be to disable her systems again. Lashawnna explains she requested intermittent FMLA, the leave administrator coded it as continuous / short-term disability, the wrong form was sent to her doctor, and despite multiple corrective calls the records had not been updated.",
+    linkedEventIds: ["e-2025-10-24-allan-call", "e-2025-10-13-fmla-request", "e-2025-10-16-access-deactivated", "e-2025-10-23-hartford-correction"],
+    reliability: "confirmed-transcript",
+    fileKind: "transcript",
+    transcriptText: `Call with Allan Glover — October 24, 2025
+Re: Intermittent FMLA misclassified as short-term disability / continuous leave
+
+Shawnna: Other than that, there was an issue with PALS. I requested my intermittent FMLA. They put it in as short-term disability. Did they tell you about that?
+
+Allan: No, they didn't share that with me. The only thing I received was one today. I didn't think you were going to be here because I got an email first thing this morning that said you were going on a leave effective yesterday.
+
+Shawnna: Really?
+
+Allan: Yes. That's what I received from them.
+
+Shawnna: That's the same thing that happened last time.
+
+Allan: So they don't disable you again like they did last time.
+
+Shawnna: Right. They shouldn't disable me. I'm intermittent.
+
+Allan: I'll send you the email they sent me today.
+
+Shawnna: The message I sent PALS and Employee Relations basically said they coded my request for intermittent as continuous and short-term disability. They sent my doctor the wrong form and required me to have an unnecessary appointment.
+
+I called back two days later because I noticed they put in the wrong type of leave. I didn't go off, but I let them know, "Don't even play with this. This is intermittent." They told me, "We're putting it in as intermittent."
+
+I called back again later that day to make sure. They said, "We canceled it. We're putting in intermittent. We opened a ticket." I called yesterday. They never changed it. They never sent the papers to my doctor.
+
+I said I'm approaching the 15-day certification window from the 13th. Please convert this to intermittent. I want reimbursement for my expensive doctor's appointment.
+
+When I talked to Hartford, they said, "Oh my gosh, we see all the notes in here. We have no idea why this would even happen. This is crazy. We apologize."
+
+I let them know I am in a super bad position at work right now, and this is putting me in an even worse situation because I was supposed to be out on FMLA. They said they would reach out and communicate it.
+
+This has happened to me once with my agents in the past, and they were able to take care of it, but it was a little back and forth.
+
+That email is helpful because I had no idea that was even happening.
+
+Allan: The bad news is, I just sent you the email I received, which led me to believe you weren't going to be here today. It may look like they're doing it again because this email says short term.
+
+Shawnna: Are you serious?
+
+Allan: I just sent you the email. It says, "We wanted to let you know that The Hartford created a leave of absence claim for Lashawnna Harbin on 10/23."
+
+It says the projected return-to-work date is based on the date that Lashawnna provided during the claim initiation process. The date may change if new information becomes available. It says they expect to make a claim decision on or before November 10.
+
+All I have is this email, which led me to believe you were not going to be here and, at minimum, you weren't going to be returning until November.
+
+Shawnna: What? Yeah, no. That has never even been a thing. I don't know where any of that came from.
+
+Allan: You may want to follow up with them because the next thing they're going to do—
+
+Shawnna: Is disable all my systems.
+
+Allan: Right…
+
+Shawnna: Well, that's okay. They can do that. Wow. Oh my God. I'm glad I know this because I would not know that was even happening. Looks like I have to call Hartford.
+
+Allan: Yeah, I'll look into this too.
+
+Shawnna: Of course. Thanks for this info.`,
   },
 ];
 
