@@ -739,7 +739,7 @@ function TimelineScrubber() {
     const i = months.indexOf(m);
     return 110 + (i / Math.max(1, months.length - 1)) * (W - 150);
   };
-  const laneY = (c: string) => 24 + cats.indexOf(c) * 20;
+  const laneY = (c: string) => 24 + (cats as string[]).indexOf(c) * 20;
   const playheadX = x(activeMonth);
 
   const catCounts: Record<string, number> = {};
