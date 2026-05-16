@@ -210,7 +210,15 @@ export function WaitlistStatusTimeline() {
           return (
             <div key={s.key} className="rounded-md border border-border bg-card p-3">
               <div className="flex items-baseline justify-between">
-                <div className="font-medium">{s.label}</div>
+                <Link
+                  to="/timeline"
+                  hash={`evt-${s.eventId}`}
+                  className="inline-flex items-center gap-1 font-medium hover:text-accent"
+                  title="Jump to Master Timeline event"
+                >
+                  {s.label}
+                  <ArrowUpRight className="size-3 opacity-60" />
+                </Link>
                 <button
                   onClick={() => open(s.exhibit)}
                   className="rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] hover:bg-secondary/70"
