@@ -1,208 +1,268 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { movementEdges, AREAS, comparators, personById } from "@/data";
-import { StatusBadge } from "@/components/case/Badges";
-import { motion } from "framer-motion";
-import { ArrowRight, Filter, Users2 } from "lucide-react";
+import { scheduleRows, SCHEDULE_TYPES, type ScheduleType } from "@/data/schedule-data";
+import { useExhibit } from "@/components/case/ExhibitProvider";
 import { clsx } from "clsx";
+import { FileText } from "lucide-react";
 
 export const Route = createFileRoute("/movement-map")({
   head: () => ({
     meta: [
-      { title: "Department Movement Map — Harbin Case File" },
-      { name: "description", content: "Multi-step shift and area movement chains for every documented comparator TL across 18 months (Dec 2024 → May 2026), derived from EX-022." },
-      { property: "og:title", content: "Department Movement Map — Harbin Case File" },
+      { title: "Shift Movement Matrix — Harbin Case File" },
+      { name: "description", content: "One row per Team Lead, 18 months across (Dec 2024 → May 2026), colored by shift placement each month. Derived directly from EX-022." },
+      { property: "og:title", content: "Shift Movement Matrix — Harbin Case File" },
     ],
   }),
   component: MovementPage,
 });
 
-type Chain = { personId: string; personName: string; steps: typeof movementEdges; totalMoves: number };
+// Fixed shift color tokens — kept simple, semantic, consistent with schedule-data table
+const SHIFT_COLOR: Record<ScheduleType, string> = {
+  "AM": "bg-emerald-500",
+  "Midshift": "bg-sky-500",
+  "Mid/Late": "bg-amber-500",
+  "PM/Closing": "bg-rose-500",
+};
+const SHIFT_TEXT: Record<ScheduleType, string> = {
+  "AM": "text-emerald-700 dark:text-emerald-300",
+  "Midshift": "text-sky-700 dark:text-sky-300",
+  "Mid/Late": "text-amber-700 dark:text-amber-300",
+  "PM/Closing": "text-rose-700 dark:text-rose-300",
+};
+
+type Cell = { sortKey: string; month: string; shift: ScheduleType; area: string; evidencePages: string };
+type Row = { name: string; cells: Map<string, Cell>; total: number; distinctShifts: number };
+
+function normalize(name: string): string {
+  // Treat the two spellings used in EX-022 as one person
+  if (name === "Shawnna Harbin" || name === "Lashawnna Harbin") return "Lashawnna Harbin";
+  return name.trim();
+}
 
 function MovementPage() {
-  const [statusFilter, setStatusFilter] = useState<"all" | "confirmed" | "reported" | "needs-confirmation">("all");
-  const [personFilter, setPersonFilter] = useState<string>("all");
+  const { open } = useExhibit();
+  const [highlight, setHighlight] = useState<ScheduleType | "all">("all");
+  const [sort, setSort] = useState<"moves" | "name">("moves");
 
-  // Group edges into per-person chains, sorted chronologically by id index
-  const chains: Chain[] = useMemo(() => {
-    const map = new Map<string, Chain>();
-    movementEdges.forEach(e => {
-      if (statusFilter !== "all" && e.status !== statusFilter) return;
-      if (personFilter !== "all" && e.personId !== personFilter) return;
-      const existing = map.get(e.personId);
-      if (existing) {
-        existing.steps.push(e);
-        existing.totalMoves++;
-      } else {
-        map.set(e.personId, { personId: e.personId, personName: e.personName, steps: [e], totalMoves: 1 });
-      }
-    });
-    // Harbin pinned last; multi-step chains first; otherwise alphabetical
-    return Array.from(map.values()).sort((a, b) => {
-      if (a.personId === "harbin") return 1;
-      if (b.personId === "harbin") return -1;
-      if (b.totalMoves !== a.totalMoves) return b.totalMoves - a.totalMoves;
-      return a.personName.localeCompare(b.personName);
-    });
-  }, [statusFilter, personFilter]);
-
-  const totalMoves = movementEdges.filter(e => e.personId !== "harbin").length;
-  const multiStep = useMemo(() => {
-    const counts = new Map<string, number>();
-    movementEdges.forEach(e => { if (e.personId !== "harbin") counts.set(e.personId, (counts.get(e.personId) ?? 0) + 1); });
-    return Array.from(counts.values()).filter(n => n >= 2).length;
+  // Build the full month axis from the data
+  const months = useMemo(() => {
+    const set = new Set<string>();
+    scheduleRows.forEach(r => set.add(r.sortKey));
+    return Array.from(set).sort();
   }, []);
+  const monthLabel = (sortKey: string) => {
+    const [y, m] = sortKey.split("-");
+    return { y, m: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][Number(m)-1] };
+  };
+
+  // Build per-person rows from scheduleRows
+  const rows: Row[] = useMemo(() => {
+    const map = new Map<string, Row>();
+    for (const r of scheduleRows) {
+      for (const leader of r.leaders) {
+        const name = normalize(leader);
+        // Skip composite group labels
+        if (name.includes("Pay Pro") || name.includes("group") || name.length > 50) continue;
+        let row = map.get(name);
+        if (!row) { row = { name, cells: new Map(), total: 0, distinctShifts: 0 }; map.set(name, row); }
+        // Keep first cell per month (or override if Harbin highlight row)
+        if (!row.cells.has(r.sortKey)) {
+          row.cells.set(r.sortKey, { sortKey: r.sortKey, month: r.month, shift: r.scheduleType, area: r.area, evidencePages: r.evidencePages });
+        }
+      }
+    }
+    // Compute movement metric = number of shift-type transitions across the timeline
+    for (const row of map.values()) {
+      const sorted = months.map(m => row.cells.get(m)).filter(Boolean) as Cell[];
+      let transitions = 0;
+      for (let i = 1; i < sorted.length; i++) if (sorted[i].shift !== sorted[i-1].shift) transitions++;
+      row.total = transitions;
+      row.distinctShifts = new Set(sorted.map(c => c.shift)).size;
+    }
+    // Keep only TLs with at least 2 months of data so the matrix stays meaningful
+    return Array.from(map.values()).filter(r => r.cells.size >= 2);
+  }, [months]);
+
+  const sortedRows = useMemo(() => {
+    const r = [...rows];
+    if (sort === "moves") {
+      r.sort((a, b) => {
+        if (a.name === "Lashawnna Harbin") return -1; // pin Harbin to top for direct comparison
+        if (b.name === "Lashawnna Harbin") return 1;
+        if (b.total !== a.total) return b.total - a.total;
+        return a.name.localeCompare(b.name);
+      });
+    } else {
+      r.sort((a, b) => {
+        if (a.name === "Lashawnna Harbin") return -1;
+        if (b.name === "Lashawnna Harbin") return 1;
+        return a.name.localeCompare(b.name);
+      });
+    }
+    return r;
+  }, [rows, sort]);
+
+  // Aggregate stats
+  const totalTransitions = rows.filter(r => r.name !== "Lashawnna Harbin").reduce((s, r) => s + r.total, 0);
+  const peersWithMoves = rows.filter(r => r.name !== "Lashawnna Harbin" && r.total > 0).length;
+  const harbinRow = rows.find(r => r.name === "Lashawnna Harbin");
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
-      <div className="max-w-3xl">
-        <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Department + Schedule Movement</div>
-        <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">Who moved. How many times.</h1>
+      <header className="max-w-3xl">
+        <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Shift Movement Matrix · EX-022</div>
+        <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">One row. Eighteen months. Every TL.</h1>
         <p className="mt-3 text-foreground/75">
-          Every shift / area transition visible in EX-022's 18-month named-TL grids, grouped into per-person movement chains.
-          Harbin's row sits at the bottom — a single uninterrupted line through 18 months while peers cycle through AM, midshift, mid/late, and closing.
+          Each row is one Team Lead. Each column is one month from December 2024 to May 2026. The colored block is the shift that TL held that month, taken directly from the named-TL grids in EX-022. Harbin sits at the top.
         </p>
+      </header>
+
+      {/* Stats — small, factual */}
+      <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-md border border-border bg-border sm:grid-cols-4">
+        <Stat label="TLs in matrix" value={`${rows.length}`} />
+        <Stat label="Months covered" value={`${months.length}`} />
+        <Stat label="Shift transitions (peers)" value={`${totalTransitions}`} />
+        <Stat label="Harbin transitions" value={`${harbinRow?.total ?? 0}`} accent />
+      </dl>
+
+      {/* Legend + controls */}
+      <div className="mt-6 flex flex-wrap items-center gap-3 rounded-md border border-border bg-card px-3 py-2">
+        <span className="text-[11px] uppercase tracking-wider text-muted-foreground">Shift</span>
+        <button
+          onClick={() => setHighlight("all")}
+          className={clsx("rounded-sm border px-2 py-1 text-[11px]", highlight === "all" ? "border-foreground/40 bg-secondary" : "border-border")}
+        >All</button>
+        {SCHEDULE_TYPES.map(s => (
+          <button
+            key={s}
+            onClick={() => setHighlight(highlight === s ? "all" : s)}
+            className={clsx(
+              "inline-flex items-center gap-1.5 rounded-sm border px-2 py-1 text-[11px]",
+              highlight === s ? "border-foreground/40 bg-secondary" : "border-border"
+            )}
+          >
+            <span className={clsx("inline-block size-2.5 rounded-[2px]", SHIFT_COLOR[s])} />
+            <span className={SHIFT_TEXT[s]}>{s}</span>
+          </button>
+        ))}
+        <span className="ml-auto text-[11px] uppercase tracking-wider text-muted-foreground">Sort</span>
+        <select
+          value={sort}
+          onChange={e => setSort(e.target.value as "moves" | "name")}
+          className="rounded-sm border border-border bg-background px-2 py-1 text-xs"
+        >
+          <option value="moves">Most transitions first</option>
+          <option value="name">Name (A–Z)</option>
+        </select>
       </div>
 
-      {/* Headline stats */}
-      <div className="mt-8 grid gap-3 sm:grid-cols-4">
-        <Stat label="Documented moves" value={`${totalMoves}`} sublabel="across peer TLs (Dec 2024 → May 2026)" />
-        <Stat label="Peers with 2+ moves" value={`${multiStep}`} sublabel="Faulkner · McGregor · Kollar · Millisock · Cahoon" />
-        <Stat label="Cross-dept onto LVAR AM" value="3" sublabel="Samuel · Christensen · Bell" tone="accent" />
-        <Stat label="Harbin moves" value="0" sublabel="18 consecutive months on PM/closing" tone="warn" />
+      {/* Matrix */}
+      <div className="mt-4 overflow-x-auto rounded-md border border-border bg-card">
+        <table className="min-w-full border-separate border-spacing-0 text-xs">
+          <thead className="sticky top-0 z-10 bg-card">
+            <tr>
+              <th className="sticky left-0 z-20 bg-card px-3 py-2 text-left font-medium text-muted-foreground">Team Lead</th>
+              <th className="px-2 py-2 text-right font-medium text-muted-foreground">Moves</th>
+              {months.map(m => {
+                const { y, m: mm } = monthLabel(m);
+                const isYearStart = mm === "Jan" || m === months[0];
+                return (
+                  <th key={m} className={clsx("px-1 py-2 text-center font-normal text-[10px] text-muted-foreground", isYearStart && "border-l border-border")}>
+                    <div>{mm}</div>
+                    <div className="text-[9px] text-muted-foreground/60">'{y.slice(2)}</div>
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
+          <tbody>
+            {sortedRows.map(row => {
+              const isHarbin = row.name === "Lashawnna Harbin";
+              return (
+                <tr key={row.name} className={clsx("group", isHarbin && "bg-amber-500/5")}>
+                  <td className={clsx(
+                    "sticky left-0 z-10 whitespace-nowrap border-t border-border bg-card px-3 py-2 font-medium",
+                    isHarbin && "bg-amber-500/10 text-foreground"
+                  )}>
+                    {row.name}
+                    {isHarbin && <span className="ml-2 rounded-sm bg-amber-500/20 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-amber-700 dark:text-amber-300">Charging party</span>}
+                  </td>
+                  <td className={clsx("border-t border-border px-2 py-2 text-right tabular-nums", row.total === 0 ? "text-muted-foreground" : "text-foreground")}>{row.total}</td>
+                  {months.map(m => {
+                    const cell = row.cells.get(m);
+                    const { m: mm } = monthLabel(m);
+                    const isYearStart = mm === "Jan" || m === months[0];
+                    if (!cell) {
+                      return <td key={m} className={clsx("border-t border-border px-0.5 py-2", isYearStart && "border-l")}><div className="mx-auto h-5 w-5 rounded-[2px] bg-secondary/40" /></td>;
+                    }
+                    const dim = highlight !== "all" && cell.shift !== highlight;
+                    return (
+                      <td key={m} className={clsx("border-t border-border px-0.5 py-2", isYearStart && "border-l")}>
+                        <button
+                          onClick={() => open("EX-022")}
+                          title={`${cell.month} · ${cell.shift} · ${cell.area} · ${cell.evidencePages}`}
+                          className={clsx(
+                            "mx-auto block h-5 w-5 rounded-[2px] transition-opacity hover:ring-2 hover:ring-foreground/40",
+                            SHIFT_COLOR[cell.shift],
+                            dim && "opacity-25"
+                          )}
+                          aria-label={`${row.name} — ${cell.month} — ${cell.shift}`}
+                        />
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
 
-      {/* Areas grid */}
-      <div className="mt-10">
-        <div className="mb-2 text-[11px] uppercase tracking-wider text-muted-foreground">Operational areas referenced in the chains</div>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
-          {AREAS.map(a => (
-            <div key={a} className="rounded-sm border border-border bg-card px-3 py-2 text-center text-xs">{a}</div>
-          ))}
+      <p className="mt-3 text-[11px] text-muted-foreground">
+        Click any cell to open EX-022 at the underlying schedule grid. Hover for the month, shift, area, and evidence page reference.
+      </p>
+
+      {/* Reading the matrix — plain text, no decoration */}
+      <section className="mt-10 grid gap-6 sm:grid-cols-2">
+        <div className="rounded-md border border-border bg-card p-5">
+          <h2 className="font-display text-lg">How to read this matrix</h2>
+          <ul className="mt-3 space-y-2 text-sm text-foreground/80">
+            <li>One color change in a row = one shift transition. The <strong>Moves</strong> column counts those.</li>
+            <li>Harbin's row is a single uninterrupted color — <span className={clsx("inline-block size-2.5 rounded-[2px]", SHIFT_COLOR["PM/Closing"])} /> PM/Closing — across the entire 18-month window.</li>
+            <li>Empty cells mean that TL was not visible on the EX-022 grid that month (e.g. pre-transfer, LOA, or off-grid area).</li>
+            <li>Every cell is sourced directly from a named-TL screenshot in EX-022.</li>
+          </ul>
         </div>
-      </div>
-
-      {/* Filters */}
-      <div className="mt-8 flex flex-wrap items-center gap-2 rounded-md border border-border bg-card px-3 py-2">
-        <Filter className="size-3.5 text-muted-foreground" />
-        <span className="text-[11px] uppercase tracking-wider text-muted-foreground">Filter</span>
-        <select
-          value={statusFilter}
-          onChange={e => setStatusFilter(e.target.value as typeof statusFilter)}
-          className="rounded-sm border border-border bg-background px-2 py-1 text-xs"
-        >
-          <option value="all">All evidence</option>
-          <option value="confirmed">Confirmed (in EX-022 grid)</option>
-          <option value="reported">Reported</option>
-          <option value="needs-confirmation">Needs confirmation</option>
-        </select>
-        <Users2 className="ml-2 size-3.5 text-muted-foreground" />
-        <select
-          value={personFilter}
-          onChange={e => setPersonFilter(e.target.value)}
-          className="rounded-sm border border-border bg-background px-2 py-1 text-xs"
-        >
-          <option value="all">All people</option>
-          {Array.from(new Set(movementEdges.map(e => e.personId))).map(id => (
-            <option key={id} value={id}>{movementEdges.find(e => e.personId === id)?.personName}</option>
-          ))}
-        </select>
-        <span className="ml-auto text-[11px] text-muted-foreground">
-          Showing {chains.length} {chains.length === 1 ? "person" : "people"} · {chains.reduce((s, c) => s + c.steps.length, 0)} edges
-        </span>
-      </div>
-
-      {/* Movement chains */}
-      <div className="mt-6 space-y-3">
-        {chains.map((chain, i) => {
-          const person = personById(chain.personId);
-          const compRow = comparators.find(c => c.id === `c-${chain.personId}`);
-          const isHarbin = chain.personId === "harbin";
-          return (
-            <motion.div
-              key={chain.personId}
-              initial={{ opacity: 0, y: 6 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.04 }}
-              className={clsx(
-                "rounded-md border bg-card p-4",
-                isHarbin ? "border-accent/60 bg-accent/5" : "border-border"
-              )}
-            >
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-display text-lg">{chain.personName}</h3>
-                    {person?.race && <span className="rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-foreground/70">{person.race}</span>}
-                    {chain.totalMoves >= 2 && !isHarbin && (
-                      <span className="rounded-sm bg-accent/15 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-accent">{chain.totalMoves}-step chain</span>
-                    )}
-                    {isHarbin && (
-                      <span className="rounded-sm bg-amber-500/15 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-amber-700 dark:text-amber-300">No movement · 18 months</span>
-                    )}
-                  </div>
-                  {person && <div className="mt-0.5 text-xs text-muted-foreground">{person.role}</div>}
-                </div>
-                {compRow && (
-                  <Link
-                    to="/comparators"
-                    hash={compRow.id}
-                    className="text-[11px] text-accent hover:underline"
-                  >
-                    Compare to Harbin →
-                  </Link>
-                )}
-              </div>
-
-              {/* Chain visualization */}
-              <div className="mt-3 flex flex-wrap items-center gap-2">
-                {chain.steps.map((step, idx) => (
-                  <div key={step.id} className="flex items-center gap-2">
-                    {idx === 0 && (
-                      <span className="rounded-sm bg-secondary px-2 py-1 text-[11px] text-foreground/85">{step.from}</span>
-                    )}
-                    <ArrowRight className={clsx("size-4 shrink-0", isHarbin ? "text-amber-500" : "text-accent")} />
-                    <div className="flex flex-col gap-0.5">
-                      <span className={clsx(
-                        "rounded-sm px-2 py-1 text-[11px]",
-                        isHarbin ? "bg-amber-500/15 text-amber-700 dark:text-amber-300" : "bg-navy px-2.5 py-1 text-navy-foreground"
-                      )}>{step.to}</span>
-                      <span className="text-[10px] text-muted-foreground">{step.period}</span>
-                    </div>
-                  </div>
-                ))}
-                <div className="ml-auto"><StatusBadge status={chain.steps[0].status} /></div>
-              </div>
-
-              {compRow && (
-                <p className="mt-3 border-l-2 border-border pl-3 text-xs text-foreground/75">
-                  <strong className="text-foreground/90">Why it matters: </strong>{compRow.whyItMatters}
-                </p>
-              )}
-            </motion.div>
-          );
-        })}
-      </div>
-
-      <div className="mt-10 rounded-md border-l-2 border-accent bg-accent/5 px-5 py-4 text-sm text-foreground/85">
-        <strong className="text-foreground">Pattern:</strong> Across 18 months Respondent moved {multiStep} TLs more than once,
-        placed 3 cross-department transfers directly onto LVAR AM (Hunter Samuel, Cody Christensen, Jarin Bell),
-        and cycled peers through every shift envelope Harbin requested. Harbin's single-line chain — closing to closing — is the only flat line in the dataset.
-      </div>
+        <div className="rounded-md border border-accent/40 bg-accent/5 p-5">
+          <h2 className="font-display text-lg">What the matrix shows</h2>
+          <ul className="mt-3 space-y-2 text-sm text-foreground/85">
+            <li><strong>{peersWithMoves}</strong> of {rows.length - 1} peer TLs changed shifts at least once across the window.</li>
+            <li><strong>{totalTransitions}</strong> total peer transitions through AM, midshift, mid/late, and closing.</li>
+            <li><strong>Three cross-department transfers</strong> (Samuel, Christensen, Bell) landed directly on LVAR AM — the shift Harbin requested.</li>
+            <li><strong>Harbin transitions: {harbinRow?.total ?? 0}.</strong> Same shift, same area, December 2024 through May 2026.</li>
+          </ul>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <button onClick={() => open("EX-022")} className="no-print inline-flex items-center gap-1.5 rounded-sm border border-border bg-card px-2.5 py-1.5 text-[11px] hover:bg-secondary/60">
+              <FileText className="size-3" /> Open EX-022
+            </button>
+            <Link to="/comparators" className="no-print inline-flex items-center gap-1.5 rounded-sm border border-border bg-card px-2.5 py-1.5 text-[11px] hover:bg-secondary/60">
+              Comparator matrix →
+            </Link>
+            <Link to="/schedule-data" className="no-print inline-flex items-center gap-1.5 rounded-sm border border-border bg-card px-2.5 py-1.5 text-[11px] hover:bg-secondary/60">
+              Underlying schedule rows →
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
 
-function Stat({ label, value, sublabel, tone }: { label: string; value: string; sublabel?: string; tone?: "accent" | "warn" }) {
+function Stat({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className={clsx(
-      "rounded-md border bg-card p-4",
-      tone === "warn" ? "border-amber-500/40 bg-amber-500/5" : tone === "accent" ? "border-accent/40 bg-accent/5" : "border-border"
-    )}>
+    <div className={clsx("bg-card px-4 py-3", accent && "bg-amber-500/5")}>
       <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</div>
-      <div className="mt-1 font-display text-3xl tracking-tight">{value}</div>
-      {sublabel && <div className="mt-1 text-[11px] text-foreground/65">{sublabel}</div>}
+      <div className={clsx("mt-1 font-display text-2xl tracking-tight tabular-nums", accent && "text-amber-700 dark:text-amber-300")}>{value}</div>
     </div>
   );
 }
