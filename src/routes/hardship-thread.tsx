@@ -281,27 +281,41 @@ function HardshipThreadPage() {
                     <div className="font-display text-lg leading-tight tracking-tight">{link.title}</div>
                     <p className="mt-1.5 text-sm text-foreground/80">{link.body}</p>
                     {linkedEvents.length > 0 && (
-                      <div className="mt-3 flex flex-wrap gap-1.5">
-                        {linkedEvents.map(e => (
-                          <span key={e.id} className="rounded-sm bg-secondary px-2 py-0.5 text-[11px] text-foreground/75">
-                            <span className="font-mono uppercase text-foreground/55">{e.date}</span> · {e.title}
-                          </span>
-                        ))}
+                      <div className="mt-3">
+                        <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Timeline events · click to jump</div>
+                        <div className="mt-1.5 flex flex-wrap gap-1.5">
+                          {linkedEvents.map(e => (
+                            <Link
+                              key={e.id}
+                              to="/timeline"
+                              hash={`evt-${e.id}`}
+                              className="group inline-flex items-center gap-1.5 rounded-sm border border-border bg-secondary px-2 py-1 text-[11px] text-foreground/80 transition hover:border-accent/60 hover:bg-accent/10 hover:text-foreground"
+                            >
+                              <span className="font-mono uppercase text-foreground/55">{e.date}</span>
+                              <span className="opacity-40">·</span>
+                              <span className="truncate max-w-[28ch]">{e.title}</span>
+                              <ExternalLink className="size-3 opacity-50 transition group-hover:opacity-100" />
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     )}
                     {linkedExhibits.length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-2">
-                        {linkedExhibits.map(ex => ex && (
-                          <button
-                            key={ex.id}
-                            onClick={() => open(ex.id)}
-                            className="inline-flex items-center gap-2 rounded-sm border border-border bg-secondary/60 px-2.5 py-1 text-xs hover:bg-secondary"
-                          >
-                            <span className="rounded-sm bg-navy px-1.5 py-0.5 text-[10px] text-navy-foreground">{ex.exhibitNumber}</span>
-                            <FileText className="size-3.5 text-muted-foreground" />
-                            <span className="truncate">{ex.fileName}</span>
-                          </button>
-                        ))}
+                      <div className="mt-3">
+                        <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Exhibits · click to open</div>
+                        <div className="mt-1.5 flex flex-wrap gap-2">
+                          {linkedExhibits.map(ex => ex && (
+                            <button
+                              key={ex.id}
+                              onClick={() => open(ex.id)}
+                              className="group inline-flex items-center gap-2 rounded-sm border border-border bg-secondary/60 px-2.5 py-1 text-xs hover:border-accent/60 hover:bg-accent/10"
+                            >
+                              <span className="rounded-sm bg-navy px-1.5 py-0.5 text-[10px] text-navy-foreground">{ex.exhibitNumber}</span>
+                              <FileText className="size-3.5 text-muted-foreground group-hover:text-accent" />
+                              <span className="truncate max-w-[36ch]">{ex.fileName}</span>
+                            </button>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>
