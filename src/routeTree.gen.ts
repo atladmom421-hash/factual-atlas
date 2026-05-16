@@ -15,6 +15,7 @@ import { Route as PreservationRouteImport } from './routes/preservation'
 import { Route as PeopleRouteImport } from './routes/people'
 import { Route as MovementMapRouteImport } from './routes/movement-map'
 import { Route as InvestigatorRouteImport } from './routes/investigator'
+import { Route as HardshipThreadRouteImport } from './routes/hardship-thread'
 import { Route as GregAnitaThreadRouteImport } from './routes/greg-anita-thread'
 import { Route as EvidenceRouteImport } from './routes/evidence'
 import { Route as ComparatorsRouteImport } from './routes/comparators'
@@ -50,6 +51,11 @@ const InvestigatorRoute = InvestigatorRouteImport.update({
   path: '/investigator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HardshipThreadRoute = HardshipThreadRouteImport.update({
+  id: '/hardship-thread',
+  path: '/hardship-thread',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GregAnitaThreadRoute = GregAnitaThreadRouteImport.update({
   id: '/greg-anita-thread',
   path: '/greg-anita-thread',
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
+  '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
@@ -88,6 +95,7 @@ export interface FileRoutesByTo {
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
+  '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
+  '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
@@ -115,6 +124,7 @@ export interface FileRouteTypes {
     | '/comparators'
     | '/evidence'
     | '/greg-anita-thread'
+    | '/hardship-thread'
     | '/investigator'
     | '/movement-map'
     | '/people'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/comparators'
     | '/evidence'
     | '/greg-anita-thread'
+    | '/hardship-thread'
     | '/investigator'
     | '/movement-map'
     | '/people'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/comparators'
     | '/evidence'
     | '/greg-anita-thread'
+    | '/hardship-thread'
     | '/investigator'
     | '/movement-map'
     | '/people'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   ComparatorsRoute: typeof ComparatorsRoute
   EvidenceRoute: typeof EvidenceRoute
   GregAnitaThreadRoute: typeof GregAnitaThreadRoute
+  HardshipThreadRoute: typeof HardshipThreadRoute
   InvestigatorRoute: typeof InvestigatorRoute
   MovementMapRoute: typeof MovementMapRoute
   PeopleRoute: typeof PeopleRoute
@@ -204,6 +217,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestigatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hardship-thread': {
+      id: '/hardship-thread'
+      path: '/hardship-thread'
+      fullPath: '/hardship-thread'
+      preLoaderRoute: typeof HardshipThreadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/greg-anita-thread': {
       id: '/greg-anita-thread'
       path: '/greg-anita-thread'
@@ -240,6 +260,7 @@ const rootRouteChildren: RootRouteChildren = {
   ComparatorsRoute: ComparatorsRoute,
   EvidenceRoute: EvidenceRoute,
   GregAnitaThreadRoute: GregAnitaThreadRoute,
+  HardshipThreadRoute: HardshipThreadRoute,
   InvestigatorRoute: InvestigatorRoute,
   MovementMapRoute: MovementMapRoute,
   PeopleRoute: PeopleRoute,
@@ -250,3 +271,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -1,0 +1,161 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AlertTriangle, FileText, HeartPulse } from "lucide-react";
+import { eventById, exhibitById } from "@/data";
+import { useExhibit } from "@/components/case/ExhibitProvider";
+import { StatusBadge, CategoryBadge } from "@/components/case/Badges";
+
+export const Route = createFileRoute("/hardship-thread")({
+  head: () => ({
+    meta: [
+      { title: "Hardship Assistance / Financial Crisis — Harbin Case File" },
+      { name: "description", content: "Nov 13 – Dec 5, 2025 hardship-assistance delay: same-day HR/leadership notice, documentation demands, escalations, eviction, and funds received only at or after the housing loss." },
+      { property: "og:title", content: "Hardship Assistance / Financial Crisis — Harbin Case File" },
+    ],
+  }),
+  component: HardshipThreadPage,
+});
+
+const STEP_IDS = [
+  "e-2025-11-13-hardship-submitted",
+  "e-2025-11-13-sh-hardship-meeting",
+  "e-2025-11-13-hadley-contact",
+  "e-2025-11-17-hadley-meeting",
+  "e-2025-11-17-docs-submitted",
+  "e-2025-11-24-std-filed",
+  "e-2025-11-26-beck-housing-email",
+  "e-2025-11-26-beck-reply",
+  "e-2025-11-28-beck-followup",
+  "e-2025-12-01-eviction-escalation",
+  "e-2025-12-01-eviction",
+  "e-2025-12-05-hardship-received",
+] as const;
+
+function HardshipThreadPage() {
+  const { open } = useExhibit();
+  const steps = STEP_IDS.map(id => eventById(id)).filter(Boolean) as NonNullable<ReturnType<typeof eventById>>[];
+
+  return (
+    <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+      <div className="max-w-3xl">
+        <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+          <HeartPulse className="size-3.5" /> Hardship Assistance / Financial Crisis
+        </div>
+        <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">
+          Approved too late to keep the home.
+        </h1>
+        <p className="mt-3 text-foreground/75">
+          A neutral, dated thread of the November 13 – December 5, 2025 hardship-assistance request: same-day HR and
+          Recovery-leadership notice, documentation demands, repeated written escalations about imminent housing loss,
+          a December 1 eviction, and funds received only on or about December 5 — at or just after the eviction-related harm.
+        </p>
+      </div>
+
+      {/* Pre-context */}
+      <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <div className="rounded-md border border-border bg-card p-5">
+          <div className="font-display text-base text-foreground">Pre-hardship context</div>
+          <p className="mt-1 text-sm text-foreground/80">
+            Although salaried, Lashawnna was not paid for partial-day intermittent-FMLA hours used for a condition her doctor
+            connected to workplace environmental/interpersonal issues and reported discrimination. That reduced income during
+            the same window as the medical expenses, rent arrears, and housing instability that drove the hardship request.
+          </p>
+          <p className="mt-2 text-sm text-foreground/70">
+            Chain of harm: workplace discrimination/retaliation → worsening medical/mental-health symptoms → intermittent FMLA →
+            unpaid FMLA hours / reduced income → hardship request → delayed assistance → eviction-related harm.
+          </p>
+        </div>
+        <div className="rounded-md border border-border bg-card p-5">
+          <div className="font-display text-base text-foreground">Policy benchmarks</div>
+          <ul className="mt-1 space-y-1 text-sm text-foreground/80">
+            <li>· Request was ~<strong>$4,950</strong> — above the $1,000 attestation threshold, below the $5,000 exception-only threshold. Attestation completed Nov 13.</li>
+            <li>· Once <em>complete documentation</em> is received, funds are processed twice weekly: Mon noon CT → Wed; Wed noon CT → Fri.</li>
+            <li>· Documentation submitted Nov 17, 2025. Funds received on/about Dec 5, 2025 — ~18 days later.</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Top callout */}
+      <div className="mt-6 rounded-md border border-accent/40 bg-accent/5 p-5">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="mt-0.5 size-5 text-accent" />
+          <div className="text-sm text-foreground/85">
+            <div className="font-display text-lg leading-tight text-foreground">HR and Recovery leadership had same-day notice.</div>
+            <p className="mt-1">
+              On the morning of Nov 13, 2025, a meeting titled <em>"SH Hardship"</em> appeared on Allan Glover's calendar with
+              Susan Marchinko and Greg Carfagna. Later that day, Cameron Hadley (Lead Employee Relations Consultant) emailed to
+              schedule the hardship discussion. Repeated written warnings about imminent housing loss followed through Nov 26,
+              Nov 28, and the morning of the Dec 1 eviction hearing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Steps */}
+      <ol className="mt-12 space-y-5">
+        {steps.map((evt, i) => {
+          const exhibits = evt.evidenceIds.map(id => exhibitById(id)).filter(Boolean);
+          const isHarm = evt.id === "e-2025-12-01-eviction" || evt.id === "e-2025-12-05-hardship-received";
+          return (
+            <li
+              key={evt.id}
+              className={`relative rounded-md border bg-card p-5 shadow-sm transition-shadow hover:shadow-md ${
+                isHarm ? "border-accent/50 ring-1 ring-accent/20" : "border-border"
+              }`}
+            >
+              <div className="flex flex-wrap items-start gap-4">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-sm bg-navy font-display text-navy-foreground">
+                  {i + 1}
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
+                    <time className="font-mono uppercase tracking-wider text-foreground/80">{evt.date}</time>
+                    <span className="opacity-40">·</span>
+                    <CategoryBadge category={evt.category} />
+                    <StatusBadge status={evt.status} />
+                  </div>
+                  <h2 className="mt-1.5 font-display text-xl leading-tight tracking-tight">{evt.title}</h2>
+                  <p className="mt-2 text-[14.5px] leading-relaxed text-foreground/85">{evt.description}</p>
+
+                  {evt.whyItMatters && (
+                    <div className="mt-3 rounded-sm border-l-2 border-accent bg-accent/5 px-3 py-2 text-sm text-foreground/85">
+                      <span className="font-medium text-foreground">Why this matters · </span>{evt.whyItMatters}
+                    </div>
+                  )}
+
+                  {exhibits.length > 0 && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {exhibits.map(ex => ex && (
+                        <button
+                          key={ex.id}
+                          onClick={() => open(ex.id)}
+                          className="group inline-flex max-w-full items-center gap-2 rounded-sm border border-border bg-secondary/60 px-2.5 py-1.5 text-left text-xs hover:bg-secondary"
+                        >
+                          <span className="rounded-sm bg-navy px-1.5 py-0.5 text-[10px] text-navy-foreground">{ex.exhibitNumber}</span>
+                          <FileText className="size-3.5 text-muted-foreground" />
+                          <span className="truncate font-medium text-foreground/90">{ex.fileName}</span>
+                          <span className="hidden sm:inline text-muted-foreground">· {ex.fileKind.toUpperCase()}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+
+      <div className="mt-10 rounded-md border border-border bg-secondary/40 p-5 text-sm text-foreground/80">
+        <div className="font-display text-base text-foreground">Bottom line</div>
+        <p className="mt-1">
+          The request was within the policy's standard tier (below the $5,000 exception threshold), the attestation was completed
+          on day one, the documentation Cameron Hadley requested was provided on Nov 17, and HR was given repeated written notice
+          that a child was at risk of losing housing. Funds nevertheless did not arrive until on or about Dec 5, 2025 — at or just
+          after the eviction-related harm. The open questions are why additional documentation was required, whether the same
+          requirements were applied consistently to other employees, when this request was treated as "complete," and why the
+          policy's twice-weekly funding cadence did not apply once documentation was received.
+        </p>
+      </div>
+    </div>
+  );
+}
