@@ -38,55 +38,55 @@
   --font-mono: var(--font-mono);
 }
 
-/* DEFAULT = HUD / intelligence-dashboard dark theme */
+/* DEFAULT = refined dark (Apple / OpenAI inspired) */
 :root {
-  --radius: 0.25rem;
+  --radius: 0.75rem;
 
-  /* HUD palette */
-  --paper: oklch(0.13 0.02 258);
-  --background: oklch(0.11 0.018 258);
-  --foreground: oklch(0.94 0.01 240);
-  --charcoal: oklch(0.94 0.01 240);
-  --card: oklch(0.15 0.022 258);
-  --card-foreground: oklch(0.94 0.01 240);
-  --popover: oklch(0.16 0.022 258);
-  --popover-foreground: oklch(0.94 0.01 240);
+  /* Near-black base with subtle warm-cool neutrality */
+  --paper: oklch(0.16 0.004 260);
+  --background: oklch(0.14 0.004 260);
+  --foreground: oklch(0.96 0.003 260);
+  --charcoal: oklch(0.96 0.003 260);
+  --card: oklch(0.18 0.004 260);
+  --card-foreground: oklch(0.96 0.003 260);
+  --popover: oklch(0.19 0.004 260);
+  --popover-foreground: oklch(0.96 0.003 260);
 
-  /* HUD-specific tokens */
-  --hud-bg: oklch(0.11 0.018 258);
-  --hud-panel: oklch(0.15 0.022 258);
-  --hud-panel-2: oklch(0.18 0.025 258);
-  --hud-grid: oklch(1 0 0 / 6%);
-  --hud-grid-strong: oklch(1 0 0 / 12%);
-  --hud-cyan: oklch(0.82 0.13 215);
-  --hud-cyan-dim: oklch(0.58 0.11 215);
-  --hud-amber: oklch(0.82 0.16 75);
-  --hud-red: oklch(0.68 0.22 22);
-  --hud-green: oklch(0.78 0.16 155);
-  --hud-violet: oklch(0.72 0.17 295);
+  /* Surface tokens (kept names for back-compat with existing utilities) */
+  --hud-bg: oklch(0.14 0.004 260);
+  --hud-panel: oklch(0.18 0.004 260);
+  --hud-panel-2: oklch(0.21 0.004 260);
+  --hud-grid: oklch(1 0 0 / 4%);
+  --hud-grid-strong: oklch(1 0 0 / 8%);
 
-  /* Primary = cyan (HUD signal color) */
-  --navy: oklch(0.15 0.022 258);
-  --navy-foreground: oklch(0.94 0.01 240);
-  --primary: oklch(0.82 0.13 215);
-  --primary-foreground: oklch(0.13 0.02 258);
+  /* Restrained signal colors — soft, not neon */
+  --hud-cyan: oklch(0.78 0.09 235);
+  --hud-cyan-dim: oklch(0.58 0.07 235);
+  --hud-amber: oklch(0.82 0.11 75);
+  --hud-red: oklch(0.66 0.18 25);
+  --hud-green: oklch(0.74 0.12 155);
+  --hud-violet: oklch(0.72 0.12 290);
 
-  --secondary: oklch(0.2 0.025 258);
-  --secondary-foreground: oklch(0.94 0.01 240);
-  --muted: oklch(0.2 0.025 258);
-  --muted-foreground: oklch(0.66 0.02 245);
+  --navy: oklch(0.18 0.004 260);
+  --navy-foreground: oklch(0.96 0.003 260);
+  --primary: oklch(0.96 0.003 260);
+  --primary-foreground: oklch(0.14 0.004 260);
 
-  /* Accent = amber signal */
-  --accent: oklch(0.82 0.16 75);
-  --accent-foreground: oklch(0.13 0.02 258);
-  --destructive: oklch(0.68 0.22 22);
-  --destructive-foreground: oklch(0.97 0.01 80);
+  --secondary: oklch(0.22 0.004 260);
+  --secondary-foreground: oklch(0.96 0.003 260);
+  --muted: oklch(0.22 0.004 260);
+  --muted-foreground: oklch(0.68 0.005 260);
 
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.82 0.13 215);
+  --accent: oklch(0.78 0.09 235);
+  --accent-foreground: oklch(0.14 0.004 260);
+  --destructive: oklch(0.66 0.18 25);
+  --destructive-foreground: oklch(0.98 0.003 260);
 
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.78 0.09 235);
+
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
@@ -158,45 +158,32 @@
   100% { box-shadow: 0 0 0 0 transparent; outline-color: transparent; }
 }
 
-/* HUD utility classes */
+/* Surface utility classes (Apple/OpenAI refined) */
 .hud-panel {
   background: var(--hud-panel);
   border: 1px solid var(--border);
+  border-radius: var(--radius);
   position: relative;
+  box-shadow: 0 1px 0 0 oklch(1 0 0 / 4%) inset, 0 8px 24px -12px oklch(0 0 0 / 40%);
 }
-.hud-panel::before,
-.hud-panel::after {
-  content: "";
-  position: absolute;
-  width: 8px; height: 8px;
-  border-color: var(--hud-cyan);
-  border-style: solid;
-}
-.hud-panel::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
-.hud-panel::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
 
 .hud-grid-bg {
   background-image:
-    linear-gradient(var(--hud-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--hud-grid) 1px, transparent 1px);
-  background-size: 40px 40px;
+    radial-gradient(oklch(1 0 0 / 3%) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
-.hud-scanline {
-  background: linear-gradient(180deg,
-    transparent 0%,
-    color-mix(in oklab, var(--hud-cyan) 8%, transparent) 50%,
-    transparent 100%);
-}
+.hud-scanline { display: none; }
 
-.font-mono, .mono { font-family: var(--font-mono); }
+.font-mono, .mono { font-family: var(--font-mono); font-feature-settings: "ss01", "cv11"; }
 
 .hud-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--hud-cyan);
+  color: var(--muted-foreground);
+  font-weight: 500;
 }
 
 @keyframes hud-blink {
