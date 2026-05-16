@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
-import { Check, X, AlertTriangle } from "lucide-react";
+import { Check, X, AlertTriangle, ArrowUpRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 
 // Horizontal status timeline across the three preserved snapshots of the
