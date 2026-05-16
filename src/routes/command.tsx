@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { events, exhibits, comparators, scheduleRows, CATEGORY_LABELS } from "@/data";
 import type { ScheduleType } from "@/data/schedule-data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
-import { AlertTriangle, Activity, Calendar, Network, BarChart3, Play, Pause, SkipBack, ExternalLink, FileText } from "lucide-react";
+import { AlertTriangle, Activity, Calendar, Network, BarChart3, Play, Pause, SkipBack, ExternalLink, FileText, Search, RotateCcw, ZoomIn, ZoomOut, ArrowUpRight } from "lucide-react";
 import { clsx } from "clsx";
 
 export const Route = createFileRoute("/command")({
