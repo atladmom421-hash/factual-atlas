@@ -354,6 +354,20 @@ export const events: TimelineEvent[] = [
     status: "confirmed-transcript",
     chapterId: "ch4",
   },
+  // Prior protected activity involving Cyndy Smith's group
+  {
+    id: "e-2025-02-cyndy-prior",
+    date: "February 2025",
+    sortKey: "2025-02-01",
+    title: "Prior internal complaint involving Cyndy Smith's group",
+    category: "protected-activity",
+    description: "Lashawnna made a prior internal complaint involving Cyndy Smith and her work group after she believed they took her compliance-check idea, recreated it, and excluded her after she created related assessment materials and videos. HR later advised they had spoken with them.",
+    peopleIds: ["harbin", "cyndy-smith"],
+    evidenceIds: ["EX-CYNDY-FOLLOWUP"],
+    whyItMatters: "Establishes prior protected complaint activity involving Cyndy Smith before her April 22, 2026 public criticism of Lashawnna's practices.",
+    status: "reported-lashawnna",
+    chapterId: "ch5",
+  },
   // April 2026 events
   {
     id: "e-2026-04-03-return",
