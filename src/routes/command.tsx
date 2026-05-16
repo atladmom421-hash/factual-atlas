@@ -282,13 +282,23 @@ function NetworkGraph() {
     const cx = W / 2, cy = H / 2;
     const ns = nodesRef.current.filter(n => visibleNodeIds.has(n.id));
     let frames = 0;
+    let frameSkip = 0;
     const step = () => {
-      const K = 0.022;
-      const charge = -220;
+      // Run physics every 3rd frame → ~20fps motion, much calmer to watch
+      frameSkip = (frameSkip + 1) % 3;
+      if (frameSkip !== 0) {
+        reqRef.current = requestAnimationFrame(step);
+        return;
+      }
+      const K = 0.012;            // was 0.022 — gentler centering
+      const charge = -110;         // was -220 — weaker repulsion
       const linkDist = 78;
+      const damping = 0.72;        // was 0.86 — more damping = slower drift
+      const springK = 0.022;       // was 0.05 — softer spring
+      const maxV = 1.4;            // velocity clamp so nothing whips around
       for (const a of ns) {
-        a.vx = (a.vx ?? 0) * 0.86;
-        a.vy = (a.vy ?? 0) * 0.86;
+        a.vx = (a.vx ?? 0) * damping;
+        a.vy = (a.vy ?? 0) * damping;
         a.vx += (cx - a.x) * K * 0.06;
         a.vy += (cy - a.y) * K * 0.06;
         for (const b of ns) {
@@ -307,20 +317,23 @@ function NetworkGraph() {
         if (!a || !b) continue;
         const dx = b.x - a.x, dy = b.y - a.y;
         const d = Math.sqrt(dx * dx + dy * dy) || 1;
-        const diff = (d - linkDist) * 0.05;
+        const diff = (d - linkDist) * springK;
         a.vx += (dx / d) * diff;
         a.vy += (dy / d) * diff;
         b.vx -= (dx / d) * diff;
         b.vy -= (dy / d) * diff;
       }
       for (const a of ns) {
+        // clamp velocity
+        if (a.vx > maxV) a.vx = maxV; else if (a.vx < -maxV) a.vx = -maxV;
+        if (a.vy > maxV) a.vy = maxV; else if (a.vy < -maxV) a.vy = -maxV;
         if (a.fx != null) { a.x = a.fx; a.vx = 0; }
         else a.x = Math.max(a.r, Math.min(W - a.r, a.x + a.vx));
         if (a.fy != null) { a.y = a.fy; a.vy = 0; }
         else a.y = Math.max(a.r, Math.min(H - a.r, a.y + a.vy));
       }
       frames++;
-      if (frames < 1600) {
+      if (frames < 2400) {
         force(f => f + 1);
         reqRef.current = requestAnimationFrame(step);
       }
