@@ -670,7 +670,6 @@ function prettify(id: string): string {
 
 /* ─── Timeline Scrubber ─────────────────────────────────────────────── */
 function TimelineScrubber() {
-  // Use sortKey to position events. Months from earliest to latest.
   const months = useMemo(() => {
     const set = new Set<string>();
     for (const e of events) set.add(e.sortKey.slice(0, 7));
@@ -680,6 +679,8 @@ function TimelineScrubber() {
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
   const playRef = useRef<number | null>(null);
+  const [hoverEvent, setHoverEvent] = useState<string | null>(null);
+  const draggingRef = useRef(false);
 
   useEffect(() => {
     if (!playing) return;
@@ -695,6 +696,18 @@ function TimelineScrubber() {
     return () => { if (playRef.current) clearTimeout(playRef.current); };
   }, [playing, speed, months.length]);
 
+  // Keyboard arrows
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement)?.tagName === "INPUT" || (e.target as HTMLElement)?.tagName === "TEXTAREA") return;
+      if (e.key === "ArrowRight") { setIdx(i => Math.min(months.length - 1, i + 1)); setPlaying(false); }
+      else if (e.key === "ArrowLeft") { setIdx(i => Math.max(0, i - 1)); setPlaying(false); }
+      else if (e.key === " ") { e.preventDefault(); setPlaying(p => !p); }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [months.length]);
+
   const activeMonth = months[idx];
   const visibleEvents = useMemo(() => events.filter(e => e.sortKey.slice(0, 7) <= activeMonth), [activeMonth]);
 
@@ -703,8 +716,7 @@ function TimelineScrubber() {
     return new Date(Number(y), Number(mm) - 1, 1).toLocaleString("en-US", { month: "short", year: "numeric" });
   };
 
-  // Lane assignment by category
-  const cats = Array.from(new Set(events.map(e => e.category)));
+  const cats = useMemo(() => Array.from(new Set(events.map(e => e.category))), []);
   const catColor: Record<string, string> = {
     "protected-activity": "var(--hud-amber)",
     "hr-complaint": "var(--hud-amber)",
@@ -717,14 +729,55 @@ function TimelineScrubber() {
     "internal-investigation": "var(--hud-violet)",
     "deleted-evidence": "var(--hud-red)",
   };
-  const W = 1320, H = 240;
+  const [hiddenCats, setHiddenCats] = useState<Set<string>>(new Set());
+  const toggleCat = (c: string) =>
+    setHiddenCats(prev => { const next = new Set(prev); next.has(c) ? next.delete(c) : next.add(c); return next; });
+
+  const W = 1320, H = 280;
   const trackY = H - 40;
   const x = (m: string) => {
     const i = months.indexOf(m);
-    return 40 + (i / Math.max(1, months.length - 1)) * (W - 80);
+    return 110 + (i / Math.max(1, months.length - 1)) * (W - 150);
   };
-  const laneY = (c: string) => 24 + (cats as string[]).indexOf(c) * 18;
+  const laneY = (c: string) => 24 + cats.indexOf(c) * 20;
   const playheadX = x(activeMonth);
+
+  const catCounts: Record<string, number> = {};
+  for (const e of events) catCounts[e.category] = (catCounts[e.category] ?? 0) + 1;
+
+  // Year separators
+  const years = useMemo(() => {
+    const seen = new Set<string>();
+    return months.filter(m => {
+      const y = m.slice(0, 4);
+      if (seen.has(y)) return false;
+      seen.add(y); return true;
+    });
+  }, [months]);
+
+  // Drag playhead on SVG
+  const onSvgPointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
+    draggingRef.current = true;
+    (e.currentTarget as Element).setPointerCapture(e.pointerId);
+    handleSvgScrub(e);
+    setPlaying(false);
+  };
+  const onSvgPointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
+    if (!draggingRef.current) return;
+    handleSvgScrub(e);
+  };
+  const onSvgPointerUp = () => { draggingRef.current = false; };
+  const handleSvgScrub = (e: React.PointerEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget;
+    const rect = svg.getBoundingClientRect();
+    const localX = ((e.clientX - rect.left) / rect.width) * W;
+    const ratio = Math.max(0, Math.min(1, (localX - 110) / (W - 150)));
+    const nextIdx = Math.round(ratio * (months.length - 1));
+    setIdx(nextIdx);
+  };
+
+  const hoveredEvent = hoverEvent ? events.find(e => e.id === hoverEvent) : null;
+  const newestRevealed = visibleEvents[visibleEvents.length - 1];
 
   return (
     <section id="scrubber" className="hud-panel bg-[color:var(--hud-panel)] p-4">
@@ -732,7 +785,7 @@ function TimelineScrubber() {
         <div>
           <div className="hud-eyebrow">Section 04 · Timeline</div>
           <h2 className="mt-1 font-display text-2xl tracking-tight">Scrub through {months.length} months of evidence</h2>
-          <p className="mt-1 text-xs text-foreground/70 max-w-2xl">Drag the playhead or press play. Events appear as their month is reached; lanes group by category.</p>
+          <p className="mt-1 text-xs text-foreground/70 max-w-2xl">Drag the playhead, press play, or use ← → / space. Click a lane label to hide it. Hover any dot for details; click to jump to the timeline page.</p>
         </div>
         <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-wider">
           <button onClick={() => { setIdx(0); setPlaying(false); }} className="p-1.5 border border-border hover:border-[color:var(--hud-cyan)]" aria-label="Restart"><SkipBack className="size-3" /></button>
@@ -748,25 +801,69 @@ function TimelineScrubber() {
         </div>
       </header>
 
-      <div className="mt-3 flex items-center gap-3">
-        <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground w-24">Cursor</div>
-        <div className="font-display text-2xl text-[color:var(--hud-cyan)]" style={{ minWidth: 140 }}>{monthLabel(activeMonth)}</div>
+      <div className="mt-3 flex flex-wrap items-baseline gap-4">
+        <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Cursor</div>
+        <div className="font-display text-3xl text-[color:var(--hud-cyan)] tabular-nums" style={{ minWidth: 180 }}>{monthLabel(activeMonth)}</div>
         <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
           {visibleEvents.length} / {events.length} events revealed
         </div>
+        {newestRevealed && (
+          <div className="ml-auto flex items-center gap-2 text-[11px]">
+            <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">Latest:</span>
+            <Link to="/timeline" hash={`evt-${newestRevealed.id}`} className="inline-flex items-center gap-1 hover:text-[color:var(--hud-cyan)] truncate max-w-[420px]">
+              {newestRevealed.title} <ArrowUpRight className="size-3 opacity-60 shrink-0" />
+            </Link>
+          </div>
+        )}
       </div>
 
       <div className="mt-3 overflow-x-auto">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-[240px] min-w-[900px] border border-border bg-[color:var(--hud-bg)]">
-          {/* category lanes */}
-          {cats.map(c => (
-            <g key={c}>
-              <text x={6} y={laneY(c) + 3} fontSize="8" fill="var(--muted-foreground)" className="font-mono">{(CATEGORY_LABELS[c] ?? c).toUpperCase().slice(0, 18)}</text>
-              <line x1={40} x2={W - 40} y1={laneY(c)} y2={laneY(c)} stroke="var(--hud-grid)" strokeDasharray="2 4" />
-            </g>
-          ))}
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full h-[300px] min-w-[900px] border border-border bg-[color:var(--hud-bg)] select-none"
+          onPointerDown={onSvgPointerDown}
+          onPointerMove={onSvgPointerMove}
+          onPointerUp={onSvgPointerUp}
+          onPointerLeave={() => { draggingRef.current = false; setHoverEvent(null); }}
+        >
+          {/* year bands */}
+          {years.map((m, i) => {
+            const start = x(m);
+            const nextYear = years[i + 1];
+            const end = nextYear ? x(nextYear) : W - 40;
+            return (
+              <g key={m}>
+                <rect x={start} y={10} width={end - start} height={trackY - 10}
+                  fill={i % 2 === 0 ? "var(--hud-grid)" : "transparent"} opacity={0.08} />
+                <text x={start + 3} y={20} fontSize="10" fill="var(--muted-foreground)" className="font-mono" pointerEvents="none">
+                  {m.slice(0, 4)}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* category lanes (click to toggle) */}
+          {cats.map(c => {
+            const hidden = hiddenCats.has(c);
+            const color = catColor[c] ?? "var(--hud-grid)";
+            return (
+              <g key={c} className="cursor-pointer" onPointerDown={(e) => { e.stopPropagation(); toggleCat(c); }}>
+                <rect x={0} y={laneY(c) - 8} width={108} height={16} fill="transparent" />
+                <circle cx={6} cy={laneY(c)} r={3} fill={color} opacity={hidden ? 0.25 : 1} />
+                <text x={14} y={laneY(c) + 3} fontSize="9" fill={hidden ? "var(--muted-foreground)" : "var(--foreground)"} opacity={hidden ? 0.45 : 0.85} className="font-mono">
+                  {(CATEGORY_LABELS[c] ?? c).toUpperCase().slice(0, 16)}
+                </text>
+                <text x={102} y={laneY(c) + 3} fontSize="8" fill="var(--muted-foreground)" textAnchor="end" className="font-mono">
+                  {catCounts[c] ?? 0}
+                </text>
+                <line x1={110} x2={W - 40} y1={laneY(c)} y2={laneY(c)}
+                  stroke="var(--hud-grid)" strokeDasharray="2 4" opacity={hidden ? 0.2 : 1} />
+              </g>
+            );
+          })}
+
           {/* x axis */}
-          <line x1={40} x2={W - 40} y1={trackY} y2={trackY} stroke="var(--hud-grid-strong)" />
+          <line x1={110} x2={W - 40} y1={trackY} y2={trackY} stroke="var(--hud-grid-strong)" />
           {months.map((m, i) => {
             const showLabel = i % Math.max(1, Math.floor(months.length / 12)) === 0;
             return (
@@ -776,21 +873,66 @@ function TimelineScrubber() {
               </g>
             );
           })}
+
           {/* events */}
           {events.map(e => {
             const m = e.sortKey.slice(0, 7);
             const revealed = m <= activeMonth;
+            const isLatest = newestRevealed?.id === e.id;
+            const hidden = hiddenCats.has(e.category);
+            if (hidden) return null;
+            const isHover = hoverEvent === e.id;
             return (
-              <circle key={e.id} cx={x(m)} cy={laneY(e.category)} r={revealed ? 3.5 : 1.5}
-                fill={catColor[e.category]} opacity={revealed ? 1 : 0.18}
-                style={{ transition: "r 250ms, opacity 250ms" }}>
-                <title>{e.date} · {e.title}</title>
-              </circle>
+              <g key={e.id} transform={`translate(${x(m)},${laneY(e.category)})`} className="cursor-pointer">
+                {isLatest && revealed && (
+                  <circle r={3.5} fill="none" stroke={catColor[e.category]} strokeWidth={1}>
+                    <animate attributeName="r" values="3.5;14;3.5" dur="1.6s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="1;0;1" dur="1.6s" repeatCount="indefinite" />
+                  </circle>
+                )}
+                <circle
+                  r={isHover ? 5.5 : revealed ? 3.8 : 1.5}
+                  fill={catColor[e.category]}
+                  opacity={revealed ? 1 : 0.18}
+                  stroke={isHover ? "var(--hud-cyan)" : "transparent"}
+                  strokeWidth={isHover ? 1.5 : 0}
+                  style={{ transition: "r 250ms, opacity 250ms" }}
+                  onPointerEnter={(ev) => { ev.stopPropagation(); setHoverEvent(e.id); }}
+                  onPointerLeave={() => setHoverEvent(h => (h === e.id ? null : h))}
+                  onClick={(ev) => { ev.stopPropagation(); window.location.href = `/timeline#evt-${e.id}`; }}
+                >
+                  <title>{e.date} · {e.title}</title>
+                </circle>
+              </g>
             );
           })}
+
           {/* playhead */}
-          <line x1={playheadX} x2={playheadX} y1={10} y2={trackY + 6} stroke="var(--hud-cyan)" strokeWidth={1.5} />
+          <line x1={playheadX} x2={playheadX} y1={10} y2={trackY + 6} stroke="var(--hud-cyan)" strokeWidth={1.5}>
+            <animate attributeName="opacity" values="1;0.55;1" dur="1.4s" repeatCount="indefinite" />
+          </line>
           <polygon points={`${playheadX - 5},${trackY + 6} ${playheadX + 5},${trackY + 6} ${playheadX},${trackY + 14}`} fill="var(--hud-cyan)" />
+          <circle cx={playheadX} cy={14} r={4} fill="var(--hud-cyan)" />
+
+          {/* hover tooltip */}
+          {hoveredEvent && (() => {
+            const m = hoveredEvent.sortKey.slice(0, 7);
+            const px = x(m);
+            const py = laneY(hoveredEvent.category);
+            const tx = Math.min(px + 10, W - 260);
+            const ty = Math.max(20, py - 30);
+            return (
+              <g pointerEvents="none">
+                <rect x={tx} y={ty} width={250} height={42} fill="var(--hud-bg)" stroke="var(--hud-grid-strong)" />
+                <text x={tx + 6} y={ty + 14} fontSize="9" fill="var(--hud-cyan)" className="font-mono">
+                  {hoveredEvent.date.toUpperCase()}
+                </text>
+                <text x={tx + 6} y={ty + 30} fontSize="10" fill="var(--foreground)">
+                  {hoveredEvent.title.length > 42 ? hoveredEvent.title.slice(0, 40) + "…" : hoveredEvent.title}
+                </text>
+              </g>
+            );
+          })()}
         </svg>
       </div>
 
@@ -803,12 +945,22 @@ function TimelineScrubber() {
 
       <footer className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 max-h-48 overflow-auto">
         {visibleEvents.slice(-6).reverse().map(e => (
-          <div key={e.id} className="border border-border bg-background/40 px-2 py-1.5 text-[11px]">
-            <div className="font-mono text-[9px] uppercase tracking-wider text-[color:var(--hud-cyan)]">{e.date}</div>
-            <div className="text-foreground/90 leading-tight truncate" title={e.title}>{e.title}</div>
-          </div>
+          <Link
+            key={e.id}
+            to="/timeline"
+            hash={`evt-${e.id}`}
+            className="group border border-border bg-background/40 px-2 py-1.5 text-[11px] hover:border-[color:var(--hud-cyan)]"
+          >
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block size-1.5" style={{ background: catColor[e.category] ?? "var(--hud-cyan)" }} />
+              <div className="font-mono text-[9px] uppercase tracking-wider text-[color:var(--hud-cyan)]">{e.date}</div>
+              <ArrowUpRight className="ml-auto size-3 opacity-0 group-hover:opacity-70" />
+            </div>
+            <div className="text-foreground/90 leading-tight truncate mt-0.5" title={e.title}>{e.title}</div>
+          </Link>
         ))}
       </footer>
     </section>
   );
 }
+
