@@ -15,6 +15,7 @@ import { Route as PreservationRouteImport } from './routes/preservation'
 import { Route as PeopleRouteImport } from './routes/people'
 import { Route as MovementMapRouteImport } from './routes/movement-map'
 import { Route as InvestigatorRouteImport } from './routes/investigator'
+import { Route as GregAnitaThreadRouteImport } from './routes/greg-anita-thread'
 import { Route as EvidenceRouteImport } from './routes/evidence'
 import { Route as ComparatorsRouteImport } from './routes/comparators'
 import { Route as IndexRouteImport } from './routes/index'
@@ -49,6 +50,11 @@ const InvestigatorRoute = InvestigatorRouteImport.update({
   path: '/investigator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GregAnitaThreadRoute = GregAnitaThreadRouteImport.update({
+  id: '/greg-anita-thread',
+  path: '/greg-anita-thread',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EvidenceRoute = EvidenceRouteImport.update({
   id: '/evidence',
   path: '/evidence',
@@ -69,6 +75,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
+  '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
@@ -80,6 +87,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
+  '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
@@ -92,6 +100,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
+  '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
@@ -105,6 +114,7 @@ export interface FileRouteTypes {
     | '/'
     | '/comparators'
     | '/evidence'
+    | '/greg-anita-thread'
     | '/investigator'
     | '/movement-map'
     | '/people'
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/'
     | '/comparators'
     | '/evidence'
+    | '/greg-anita-thread'
     | '/investigator'
     | '/movement-map'
     | '/people'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/'
     | '/comparators'
     | '/evidence'
+    | '/greg-anita-thread'
     | '/investigator'
     | '/movement-map'
     | '/people'
@@ -139,6 +151,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ComparatorsRoute: typeof ComparatorsRoute
   EvidenceRoute: typeof EvidenceRoute
+  GregAnitaThreadRoute: typeof GregAnitaThreadRoute
   InvestigatorRoute: typeof InvestigatorRoute
   MovementMapRoute: typeof MovementMapRoute
   PeopleRoute: typeof PeopleRoute
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestigatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/greg-anita-thread': {
+      id: '/greg-anita-thread'
+      path: '/greg-anita-thread'
+      fullPath: '/greg-anita-thread'
+      preLoaderRoute: typeof GregAnitaThreadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/evidence': {
       id: '/evidence'
       path: '/evidence'
@@ -219,6 +239,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ComparatorsRoute: ComparatorsRoute,
   EvidenceRoute: EvidenceRoute,
+  GregAnitaThreadRoute: GregAnitaThreadRoute,
   InvestigatorRoute: InvestigatorRoute,
   MovementMapRoute: MovementMapRoute,
   PeopleRoute: PeopleRoute,
@@ -229,3 +250,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
