@@ -4,6 +4,7 @@ export * from "./events";
 export * from "./comparators";
 export * from "./exhibits";
 export * from "./chapters";
+export * from "./exhibit-fulltext";
 
 export const CATEGORY_LABELS: Record<string, string> = {
   "protected-activity": "Protected Activity",
