@@ -7,6 +7,7 @@ import { exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
 import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
+import { WaitlistStatusTimeline } from "@/components/case/WaitlistStatusTimeline";
 import { AllanChatThreads } from "@/components/case/AllanChatThreads";
 
 export const Route = createFileRoute("/schedule-data")({
