@@ -407,6 +407,7 @@ function HardshipThreadPage() {
               <li>· <strong>Forced separation from her son starting August 2025</strong> — the denied PM/closing schedule ended at the same time school let out, leaving her unable to pick him up, help with homework, or be present after school. Son had to live with maternal grandmother for the school year; father unavailable (separated, working at Wilson). Severe loss of day-to-day parenting, daily bonding, and ordinary household life with her child — directly caused by the schedule denial that comparator TLs were not subjected to.</li>
               <li>· Loss of health insurance during the same window — interruption of mental-health care, inability to afford additional doctor visits.</li>
               <li>· Reasonable fear of further retaliation after raising the race-coded "example," Verint/screen-recording, and Edward Reyes concerns.</li>
+              <li>· <strong>Heightened scrutiny across multiple Operations Managers in late 2024</strong> — on Oct 4, 2024 Operations Manager Michelle Scozzari pressed Harbin on Eprob-Pervasive coaching completion in a tone Harbin contemporaneously identified in writing as "accusatory" (EX-047). This is the same window in which Allan Glover was applying race-coded scrutiny and Jen Roy was about to remove Harbin from the LVAR waitlist — corroborating a pattern of disparate managerial attention preceding the schedule-denial harm.</li>
             </ul>
           </div>
           <div className="rounded-md border border-border bg-card p-5">
