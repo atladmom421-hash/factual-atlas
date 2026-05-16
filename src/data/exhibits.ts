@@ -862,6 +862,25 @@ Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pa
     filePath: "/exhibits/EX-046-waitlist-2025-01-22.jpg",
     fileKind: "image",
   },
+  {
+    id: "EX-047",
+    exhibitNumber: "EX-047",
+    fileName: "Oct 4, 2024 — Michelle Scozzari Teams thread (Eprob-Pervasive coaching pressure → 'accusatory tone' exchange)",
+    date: "October 4, 2024",
+    category: "Protected activity",
+    peopleIds: ["scozzari", "harbin"],
+    summary: "Five-image Teams thread between Operations Manager Michelle Scozzari and Harbin on October 4, 2024. (1) 1:52 PM — Scozzari: 'Each month every TL is responsible for ensuring that anyone on their team (new or existing) has all Eprob-Pervasive coachings done regardless of when the original audit request came out. Trying to understand the confusion?' 1:53 PM Harbin: 'Is there anyway you can give a call.' 1:57 PM Scozzari: 'Go aheda and call me I am free.' (2) 5:32 PM (edited) Harbin: 'Hi Michelle! I wanted to follow up and let you know that I gained clarification on the proccess we discussed. I appreciate the insight and have learned from the misunderstanding. I'll make sure it doesn't happen again. That being said, I would appreciate it if, moving forward, we approach situation with shared information rather than an accusatory tone. I believe this well us work together more effectively. Thank you for you support and understanding.' (3) 5:56 PM Scozzari: 'Oh, I am so sorry you feel that way Shawna. I didn't feel I had an accusatory tone? I asked for insight and after you shared that insight with me I reached out and shared feedback on what you shared with me that others might not be aware. Again, apologies you felt that way. Happy to jump on a call if you'd like to clear anything up. ❤️' (4) 6:31 PM Harbin: thanks Scozzari, reiterates intention was collaborative, notes the tone 'came across to me in that moment,' confirms taken to heart. (5) 9:25 PM Scozzari: 'I appreciate you sharing that with me. Thank you 😊' + heart reaction. 9:27 PM Harbin forwards Scozzari's reply and adds 'Have a wonderful weekend Michelle!' 9:37 PM Scozzari: 'You too sunshine!' Documents a second Operations Manager applying heightened scrutiny to Harbin's coaching completion in October 2024 — the same window in which Jen Roy was preparing to remove Harbin's name from the LVAR waitlist (Feb 25, 2025, EX-045).",
+    linkedEventIds: ["e-2024-10-04-scozzari-tone"],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/EX-047-scozzari-1-coaching-dispute.png",
+    extraImagePaths: [
+      "/exhibits/EX-047-scozzari-2-go-ahead-call.png",
+      "/exhibits/EX-047-scozzari-3-sorry-you-feel-that-way.png",
+      "/exhibits/EX-047-scozzari-4-thread.png",
+      "/exhibits/EX-047-scozzari-5-closeout.png",
+    ],
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);

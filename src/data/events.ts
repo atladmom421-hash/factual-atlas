@@ -1248,6 +1248,18 @@ export const events: TimelineEvent[] = [
     status: "confirmed-screenshot",
     chapterId: "ch2",
   },
+  {
+    id: "e-2024-10-04-scozzari-tone",
+    date: "October 4, 2024",
+    sortKey: "2024-10-04",
+    title: "Michelle Scozzari (Ops Mgr) presses Harbin on Eprob-Pervasive coachings — Harbin flags 'accusatory tone'",
+    category: "retaliation",
+    description: "Operations Manager Michelle Scozzari messaged Harbin at 1:52 PM challenging her on completion of Eprob-Pervasive coachings for her team 'regardless of when the original audit request came out.' After a call, Harbin sent a 5:32 PM (edited) follow-up acknowledging the clarification but asking that 'moving forward, we approach situation with shared information rather than an accusatory tone.' Scozzari replied at 5:56 PM 'Oh, I am so sorry you feel that way Shawna. I didn't feel I had an accusatory tone?' and closed the thread at 9:37 PM with 'You too sunshine!' Documents a second Operations Manager — alongside Allan Glover — applying heightened scrutiny to Harbin's day-to-day work in late 2024, the same window in which Jen Roy was preparing to remove her from the LVAR waitlist (Feb 25, 2025, EX-045).",
+    peopleIds: ["scozzari", "harbin"],
+    evidenceIds: ["EX-047"],
+    whyItMatters: "Pattern evidence: increased managerial scrutiny across multiple Operations Managers in the months immediately before the Feb 2025 waitlist removal. Harbin's contemporaneous written objection to the 'accusatory tone' establishes protected-activity-style pushback that pre-dates the formal Sept 19, 2025 complaint.",
+    status: "confirmed-screenshot",
+  },
 ];
 
 export const eventsSorted = [...events].sort((a, b) => a.sortKey.localeCompare(b.sortKey));

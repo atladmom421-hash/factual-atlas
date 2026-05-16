@@ -80,6 +80,8 @@ export interface Exhibit {
   linkedEventIds: string[];
   reliability: ConfidenceStatus;
   filePath?: string;
+  /** Optional additional image paths rendered as a gallery below filePath. */
+  extraImagePaths?: string[];
   fileKind: "pdf" | "image" | "docx" | "transcript" | "note";
   transcriptText?: string;
   /** When set, this exhibit is treated as a governing internal rule/policy and

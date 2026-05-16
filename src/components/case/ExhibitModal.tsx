@@ -43,7 +43,12 @@ export function ExhibitModal({ exhibit, onClose }: { exhibit: Exhibit | null; on
                 <iframe src={exhibit.filePath} title={exhibit.fileName} className="h-[70vh] w-full bg-muted" />
               )}
               {exhibit.fileKind === "image" && exhibit.filePath && (
-                <img src={exhibit.filePath} alt={exhibit.fileName} className="w-full" />
+                <div className="flex flex-col">
+                  <img src={exhibit.filePath} alt={exhibit.fileName} className="w-full" />
+                  {exhibit.extraImagePaths?.map((p, i) => (
+                    <img key={p} src={p} alt={`${exhibit.fileName} — page ${i + 2}`} className="w-full border-t border-border" />
+                  ))}
+                </div>
               )}
               {exhibit.fileKind === "docx" && exhibit.filePath && (
                 <div className="p-8 text-sm">
