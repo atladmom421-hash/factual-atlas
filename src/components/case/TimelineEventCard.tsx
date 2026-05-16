@@ -1,14 +1,23 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, FileText } from "lucide-react";
+import { ChevronDown, FileText, Scale } from "lucide-react";
 import type { TimelineEvent } from "@/data/types";
-import { personById, exhibitById } from "@/data";
+import { personById, exhibitById, exhibits } from "@/data";
 import { StatusBadge, CategoryBadge } from "./Badges";
 import { useExhibit } from "./ExhibitProvider";
 
 export function TimelineEventCard({ event, index }: { event: TimelineEvent; index: number }) {
   const [open, setOpen] = useState(false);
   const { open: openExhibit } = useExhibit();
+
+  // Governing-rule exhibits that apply to this event (via reverse link or direct evidenceIds)
+  const governingRules = exhibits.filter(ex =>
+    ex.governingRule && (
+      ex.linkedEventIds.includes(event.id) ||
+      event.evidenceIds.includes(ex.id)
+    ),
+  );
+
   return (
     <motion.article
       id={`evt-${event.id}`}
@@ -32,6 +41,27 @@ export function TimelineEventCard({ event, index }: { event: TimelineEvent; inde
 
         <h3 className="mt-2 font-display text-xl leading-tight tracking-tight text-foreground sm:text-2xl">{event.title}</h3>
         <p className="mt-2 text-[14.5px] leading-relaxed text-foreground/85">{event.description}</p>
+
+        {governingRules.map(ex => (
+          <button
+            key={ex.id}
+            onClick={() => openExhibit(ex.id)}
+            className="mt-3 flex w-full items-start gap-2.5 rounded-sm border-l-2 border-amber-500 bg-amber-500/[0.07] px-3 py-2 text-left text-xs hover:bg-amber-500/[0.12]"
+          >
+            <Scale className="size-3.5 mt-0.5 shrink-0 text-amber-600 dark:text-amber-400" />
+            <div className="min-w-0">
+              <div className="text-[10px] uppercase tracking-wider text-amber-700/90 dark:text-amber-300/90">
+                Governing rule · {ex.exhibitNumber}
+              </div>
+              <div className="mt-0.5 font-medium text-foreground">{ex.governingRule!.shortName}</div>
+              <div className="mt-1 italic text-foreground/85">"{ex.governingRule!.rule}"</div>
+              <div className="mt-1 text-foreground/65">{ex.governingRule!.citation}</div>
+              {ex.governingRule!.appliedFrom && (
+                <div className="mt-0.5 text-foreground/65">{ex.governingRule!.appliedFrom}</div>
+              )}
+            </div>
+          </button>
+        ))}
 
         {event.peopleIds.length > 0 && (
           <div className="mt-3 flex flex-wrap items-center gap-1.5 text-xs">

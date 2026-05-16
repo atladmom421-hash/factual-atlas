@@ -82,6 +82,14 @@ export interface Exhibit {
   filePath?: string;
   fileKind: "pdf" | "image" | "docx" | "transcript" | "note";
   transcriptText?: string;
+  /** When set, this exhibit is treated as a governing internal rule/policy and
+   *  rendered as a distinctive callout next to any timeline event that links it. */
+  governingRule?: {
+    shortName: string;     // e.g. "Shift Changes SOW — 1-year rule"
+    rule: string;          // verbatim or close-paraphrase rule text
+    citation: string;      // owner / revision / date
+    appliedFrom?: string;  // when Harbin satisfied / when rule attaches
+  };
 }
 
 export interface Chapter {
