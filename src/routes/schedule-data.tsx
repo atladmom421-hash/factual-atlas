@@ -7,6 +7,7 @@ import { exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
 import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
+import { AllanChatThreads } from "@/components/case/AllanChatThreads";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
@@ -86,6 +87,11 @@ function ScheduleDataPage() {
       {/* Waitlist timeline — three snapshots + chats */}
       <div className="mt-10">
         <WaitlistTimeline />
+      </div>
+
+      {/* Verbatim Allan Glover chat threads */}
+      <div className="mt-10">
+        <AllanChatThreads />
       </div>
 
       {/* Summary chips */}
