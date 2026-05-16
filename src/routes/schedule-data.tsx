@@ -6,6 +6,7 @@ import { scheduleRows, SCHEDULE_TYPES, SCHEDULE_COLOR, type ScheduleType } from 
 import { exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
+import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
@@ -80,6 +81,11 @@ function ScheduleDataPage() {
       {/* Investigator matrix — the headline visual */}
       <div className="mt-10">
         <LeaderShiftMatrix />
+      </div>
+
+      {/* Waitlist timeline — three snapshots + chats */}
+      <div className="mt-10">
+        <WaitlistTimeline />
       </div>
 
       {/* Summary chips */}
