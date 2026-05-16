@@ -87,7 +87,7 @@ export const exhibits: Exhibit[] = [
     category: "Leave administration",
     peopleIds: ["harbin"],
     summary: "Concerns documented around leave processing, access deactivation, and FMLA notice deletion.",
-    linkedEventIds: ["e-2025-10-leave-misclass"],
+    linkedEventIds: ["e-2025-10-leave-misclass", "e-2025-10-13-fmla-request", "e-2025-10-15-fmla-paperwork", "e-2025-10-wrong-paperwork", "e-2025-10-16-access-deactivated", "e-2025-10-23-hartford-correction", "e-2025-10-23-fmla-designation", "e-2025-10-24-allan-call", "e-2025-11-18-last-day", "e-2025-11-24-std-filed", "e-2025-12-08-doctor-std", "e-2025-12-15-correction-warning", "e-2025-12-22-corrected", "e-2026-01-02-emergency-approval", "e-2026-01-05-std-extension", "e-2026-01-insurance-loss"],
     reliability: "needs-confirmation",
     filePath: "/exhibits/EX-007-leave-misclassification.pdf",
     fileKind: "pdf",
