@@ -60,12 +60,18 @@ function buildIndex(): Result[] {
   }
 
   for (const ex of exhibits) {
+    const ocr = exhibitFullText[ex.id] ?? "";
+    const body = [ex.transcriptText, ocr].filter(Boolean).join("\n\n");
     out.push({
       kind: "exhibit",
       id: ex.id,
       title: `${ex.exhibitNumber} — ${ex.fileName}`,
       subtitle: `${ex.date} · ${ex.category}`,
-      haystack: [ex.exhibitNumber, ex.fileName, ex.summary, ex.category, ex.date, ex.transcriptText].filter(Boolean).join(" ").toLowerCase(),
+      haystack: [
+        ex.exhibitNumber, ex.fileName, ex.summary, ex.category, ex.date,
+        ex.transcriptText, ocr,
+      ].filter(Boolean).join(" ").toLowerCase(),
+      body: body || undefined,
       to: "/evidence",
       hash: `exhibit-${ex.id}`,
     });
