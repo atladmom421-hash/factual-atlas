@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { AlertTriangle, FileText, HeartPulse, ArrowRight, DollarSign, Brain } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { AlertTriangle, FileText, HeartPulse, ArrowRight, DollarSign, Brain, ExternalLink } from "lucide-react";
 import { eventById, exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { StatusBadge, CategoryBadge } from "@/components/case/Badges";
