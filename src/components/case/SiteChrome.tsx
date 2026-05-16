@@ -11,6 +11,7 @@ const links = [
   { to: "/comparators", label: "Comparators" },
   { to: "/movement-map", label: "Movement" },
   { to: "/evidence", label: "Evidence" },
+  { to: "/preservation", label: "Preservation" },
   { to: "/story", label: "Story Mode" },
   { to: "/investigator", label: "Investigator Brief" },
 ] as const;
