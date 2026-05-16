@@ -37,6 +37,7 @@ export const people: Person[] = [
   { id: "amarel", name: "Alese Amarel", role: "Colleague", category: "witness", relationshipToCase: "Oct 13, 2025 Teams chat (still visible Oct 23) discussing Allan leaving the team chat." },
   { id: "hartford", name: "Hartford / Discover Leave Administration", role: "Third-party leave administrator", category: "other", relationshipToCase: "Misclassified Oct 13, 2025 intermittent FMLA as short-term disability; delayed STD approval through Jan 2026 causing financial and medical hardship." },
   { id: "marcinko", name: "Susan Marcinko", role: "HR", category: "hr", relationshipToCase: "May 31, 2024 and June 5, 2024 HR investigation calls regarding the May 29, 2024 formal complaint, racial slur, job-abandonment, schedule/waitlist, and interim move away from Rosanna." },
+  { id: "ascarte", name: "Ryan Ascarte", role: "TL", category: "comparator", relationshipToCase: "Peer TL — July 17, 2024 contemporaneous conversation confirming the 'documented coaching' requirement Greg applied to Lashawnna's rec-for-terms was not standard, was never communicated to TLs, and was not required of other TLs processing performance terms." },
 ];
 
 export const personById = (id: string) => people.find(p => p.id === id);
