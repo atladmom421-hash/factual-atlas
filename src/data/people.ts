@@ -1,0 +1,38 @@
+import type { Person } from "./types";
+
+export const people: Person[] = [
+  { id: "harbin", name: "Lashawnna Harbin", role: "TL / Unit Manager", category: "charging-party", relationshipToCase: "Charging Party", race: "Black / biracial Black" },
+  { id: "millisock", name: "Tyler Millisock", role: "TL / Unit Manager", category: "comparator", relationshipToCase: "Strongest comparator — same start date and level, moved areas and schedules", race: "White" },
+  { id: "cahoon", name: "Julie Cahoon", role: "TL / Unit Manager", category: "comparator", relationshipToCase: "Assignment-flexibility comparator (Karena Lesure concession)", race: "White" },
+  { id: "case", name: "Marc Case", role: "TL / Unit Manager", category: "comparator", relationshipToCase: "Same-shift flexibility comparator (allowed to leave early; Lashawnna covered his team)", race: "White" },
+  { id: "mascarenas", name: "Marissa Mascarenas", role: "TL / Unit Manager", category: "comparator", relationshipToCase: "Earlier/midshift schedule examples (8:00–4:30, 10:00–6:30)" },
+  { id: "samuel", name: "Hunter Samuel", role: "TL / Unit Manager", category: "comparator", relationshipToCase: "Schedule movement — received AM shift Lashawnna would have accepted" },
+  { id: "walker", name: "Brittnee Walker", role: "TL", category: "comparator", relationshipToCase: "Movement / schedule data — LVAR → onsite/Ohio references" },
+  { id: "mcgregor", name: "Leslie McGregor", role: "TL", category: "comparator", relationshipToCase: "Whitehall TL → Training / TBAY" },
+  { id: "faulkner", name: "Josh Faulkner", role: "TL", category: "comparator", relationshipToCase: "TBAY / Whitehall / training-related views" },
+  { id: "adkins", name: "Kandace Adkins", role: "TL", category: "comparator", relationshipToCase: "Schedule data reference" },
+  { id: "rinard", name: "Nicole Rinard", role: "Pay Pro", category: "comparator", relationshipToCase: "Pay Pro earlier-schedule example" },
+  { id: "buhler", name: "Shontelle Buhler", role: "Pay Pro", category: "comparator", relationshipToCase: "Pay Pro earlier-schedule example" },
+  { id: "mata", name: "Elisa MataAbarca", role: "PRE-D / DBC", category: "comparator", relationshipToCase: "Earlier-schedule example" },
+  { id: "boyd", name: "Marla Boyd", role: "PRE-D / DBC", category: "comparator", relationshipToCase: "Earlier-schedule example" },
+  { id: "ross", name: "Kari Ross", role: "PRE-D / DBC", category: "comparator", relationshipToCase: "Earlier-schedule example" },
+  { id: "clark", name: "Jerry Clark", role: "PRE-D / DBC", category: "comparator", relationshipToCase: "Earlier-schedule example" },
+  { id: "laye", name: "Amber Laye", role: "Operations Manager", category: "leadership", relationshipToCase: "April 2026 movement decisions; reportedly stated she alone made the assignment" },
+  { id: "jake-smith", name: "Jake Smith", role: "Director", category: "leadership", relationshipToCase: "April 23, 2026 message instructing leaders to hold on May movement announcements" },
+  { id: "currant", name: "Jodi Currant", role: "Unit Manager", category: "leadership", relationshipToCase: "Todd-pairing discussions" },
+  { id: "swindell", name: "Michelle Swindell", role: "Manager / leadership", category: "leadership", relationshipToCase: "April 22, 2026 calibration meeting; pursued termination of Todd" },
+  { id: "cyndy-smith", name: "Cyndy Smith", role: "Compliance Coordinator", category: "leadership", relationshipToCase: "April 22, 2026 publicly questioned Lashawnna's practices/ethics" },
+  { id: "mclaughlin", name: "Shawn McLaughlin", role: "Operations Manager", category: "leadership", relationshipToCase: "April 29, 2026 received report of retaliatory and racially disparate concerns" },
+  { id: "lesure", name: "Karena Lesure", role: "Coach", category: "witness", relationshipToCase: "May 12, 2026 stated Julie specifically requested her — concession comparator" },
+  { id: "watson", name: "Todd Watson", role: "Coach", category: "witness", relationshipToCase: "Subject of April 2026 pairing/termination discussions" },
+  { id: "seevers", name: "Steve Seevers", role: "Unit Manager", category: "leadership", relationshipToCase: "Previously had Karena Lesure assigned" },
+  { id: "rosanna", name: "Rosanna", role: "Former Manager", category: "leadership", relationshipToCase: "2024 waitlist placement issues; removed credit from document" },
+  { id: "allan", name: "Allan", role: "DM", category: "leadership", relationshipToCase: "Submitted waitlist requests on Lashawnna's behalf; Nov 2025 schedule conversation" },
+  { id: "jen-roy", name: "Jen Roy", role: "Manager / Admin", category: "leadership", relationshipToCase: "Feb 22, 2025 deleted name from waitlist; July 14, 2025 screenshot" },
+  { id: "anita", name: "Anita", role: "HR", category: "hr", relationshipToCase: "2024 HR conversations" },
+  { id: "francis", name: "Angie Francis", role: "Ethics Oversight", category: "hr", relationshipToCase: "Sept 19, 2025 complaint response" },
+  { id: "carfagna", name: "Greg Carfagna", role: "HR Leadership", category: "hr", relationshipToCase: "May 29, 2024 formal complaint recipient" },
+  { id: "markus", name: "Edina Markus", role: "Admin", category: "other", relationshipToCase: "July 16–17, 2025 re-added Lashawnna to waitlist with new date" },
+];
+
+export const personById = (id: string) => people.find(p => p.id === id);
