@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as StoryRouteImport } from './routes/story'
+import { Route as ScheduleDataRouteImport } from './routes/schedule-data'
 import { Route as PreservationRouteImport } from './routes/preservation'
 import { Route as PeopleRouteImport } from './routes/people'
 import { Route as MovementMapRouteImport } from './routes/movement-map'
@@ -30,6 +31,11 @@ const TimelineRoute = TimelineRouteImport.update({
 const StoryRoute = StoryRouteImport.update({
   id: '/story',
   path: '/story',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScheduleDataRoute = ScheduleDataRouteImport.update({
+  id: '/schedule-data',
+  path: '/schedule-data',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PreservationRoute = PreservationRouteImport.update({
@@ -94,6 +100,7 @@ export interface FileRoutesByFullPath {
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
   '/preservation': typeof PreservationRoute
+  '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
   '/timeline': typeof TimelineRoute
 }
@@ -108,6 +115,7 @@ export interface FileRoutesByTo {
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
   '/preservation': typeof PreservationRoute
+  '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
   '/timeline': typeof TimelineRoute
 }
@@ -123,6 +131,7 @@ export interface FileRoutesById {
   '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
   '/preservation': typeof PreservationRoute
+  '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
   '/timeline': typeof TimelineRoute
 }
@@ -139,6 +148,7 @@ export interface FileRouteTypes {
     | '/movement-map'
     | '/people'
     | '/preservation'
+    | '/schedule-data'
     | '/story'
     | '/timeline'
   fileRoutesByTo: FileRoutesByTo
@@ -153,6 +163,7 @@ export interface FileRouteTypes {
     | '/movement-map'
     | '/people'
     | '/preservation'
+    | '/schedule-data'
     | '/story'
     | '/timeline'
   id:
@@ -167,6 +178,7 @@ export interface FileRouteTypes {
     | '/movement-map'
     | '/people'
     | '/preservation'
+    | '/schedule-data'
     | '/story'
     | '/timeline'
   fileRoutesById: FileRoutesById
@@ -182,6 +194,7 @@ export interface RootRouteChildren {
   MovementMapRoute: typeof MovementMapRoute
   PeopleRoute: typeof PeopleRoute
   PreservationRoute: typeof PreservationRoute
+  ScheduleDataRoute: typeof ScheduleDataRoute
   StoryRoute: typeof StoryRoute
   TimelineRoute: typeof TimelineRoute
 }
@@ -200,6 +213,13 @@ declare module '@tanstack/react-router' {
       path: '/story'
       fullPath: '/story'
       preLoaderRoute: typeof StoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schedule-data': {
+      id: '/schedule-data'
+      path: '/schedule-data'
+      fullPath: '/schedule-data'
+      preLoaderRoute: typeof ScheduleDataRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/preservation': {
@@ -286,9 +306,20 @@ const rootRouteChildren: RootRouteChildren = {
   MovementMapRoute: MovementMapRoute,
   PeopleRoute: PeopleRoute,
   PreservationRoute: PreservationRoute,
+  ScheduleDataRoute: ScheduleDataRoute,
   StoryRoute: StoryRoute,
   TimelineRoute: TimelineRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
