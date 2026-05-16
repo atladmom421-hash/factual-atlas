@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { AlertTriangle, FileText, HeartPulse } from "lucide-react";
+import { AlertTriangle, FileText, HeartPulse, ArrowRight, DollarSign, Brain } from "lucide-react";
 import { eventById, exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { StatusBadge, CategoryBadge } from "@/components/case/Badges";
@@ -144,6 +144,166 @@ function HardshipThreadPage() {
           );
         })}
       </ol>
+
+      {/* Harm chain mapping */}
+      <section className="mt-16">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+            <ArrowRight className="size-3.5" /> Harm Chain — Delay → Eviction
+          </div>
+          <h2 className="mt-2 font-display text-3xl tracking-tight sm:text-4xl">From the delay to the eviction.</h2>
+          <p className="mt-3 text-foreground/75">
+            Each link in the chain is tied to the specific event(s) and exhibit(s) that support it. The chain is sequential —
+            each step is a foreseeable consequence of the prior step and of the delay in funding a hardship request that was
+            within policy and supported by submitted documentation.
+          </p>
+        </div>
+
+        <ol className="mt-8 space-y-3">
+          {HARM_CHAIN.map((link, i) => {
+            const linkedEvents = link.eventIds.map(id => eventById(id)).filter(Boolean) as NonNullable<ReturnType<typeof eventById>>[];
+            const linkedExhibits = link.exhibitIds.map(id => exhibitById(id)).filter(Boolean);
+            return (
+              <li key={i} className="rounded-md border border-border bg-card p-5">
+                <div className="flex flex-wrap items-start gap-4">
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent/15 font-display text-sm text-accent">
+                    {i + 1}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="font-display text-lg leading-tight tracking-tight">{link.title}</div>
+                    <p className="mt-1.5 text-sm text-foreground/80">{link.body}</p>
+                    {linkedEvents.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-1.5">
+                        {linkedEvents.map(e => (
+                          <span key={e.id} className="rounded-sm bg-secondary px-2 py-0.5 text-[11px] text-foreground/75">
+                            <span className="font-mono uppercase text-foreground/55">{e.date}</span> · {e.title}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    {linkedExhibits.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {linkedExhibits.map(ex => ex && (
+                          <button
+                            key={ex.id}
+                            onClick={() => open(ex.id)}
+                            className="inline-flex items-center gap-2 rounded-sm border border-border bg-secondary/60 px-2.5 py-1 text-xs hover:bg-secondary"
+                          >
+                            <span className="rounded-sm bg-navy px-1.5 py-0.5 text-[10px] text-navy-foreground">{ex.exhibitNumber}</span>
+                            <FileText className="size-3.5 text-muted-foreground" />
+                            <span className="truncate">{ex.fileName}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+
+      {/* Damages estimate */}
+      <section className="mt-16">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+            <DollarSign className="size-3.5" /> Estimated Damages
+          </div>
+          <h2 className="mt-2 font-display text-3xl tracking-tight sm:text-4xl">Economic damages — preliminary estimate.</h2>
+          <p className="mt-3 text-foreground/75">
+            Preliminary, good-faith estimates based on the documented hardship sequence and known consequences. Final figures
+            will depend on rent ledgers, court records, medical/insurance records, pay records, and treatment receipts.
+            All ranges are framed as estimated and subject to documentation.
+          </p>
+        </div>
+
+        <div className="mt-6 overflow-hidden rounded-md border border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-secondary/60 text-[11px] uppercase tracking-wider text-muted-foreground">
+              <tr>
+                <th className="px-4 py-2 text-left font-medium">Category</th>
+                <th className="px-4 py-2 text-left font-medium">Basis</th>
+                <th className="px-4 py-2 text-right font-medium">Low</th>
+                <th className="px-4 py-2 text-right font-medium">High</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              {DAMAGES.map((d, i) => (
+                <tr key={i} className="align-top">
+                  <td className="px-4 py-3 font-medium text-foreground">{d.category}</td>
+                  <td className="px-4 py-3 text-foreground/75">{d.basis}</td>
+                  <td className="px-4 py-3 text-right font-mono text-foreground/85">${d.low.toLocaleString()}</td>
+                  <td className="px-4 py-3 text-right font-mono text-foreground/85">${d.high.toLocaleString()}</td>
+                </tr>
+              ))}
+              <tr className="bg-secondary/40">
+                <td className="px-4 py-3 font-display text-base text-foreground" colSpan={2}>Subtotal — economic</td>
+                <td className="px-4 py-3 text-right font-mono font-semibold text-foreground">
+                  ${DAMAGES.reduce((s, d) => s + d.low, 0).toLocaleString()}
+                </td>
+                <td className="px-4 py-3 text-right font-mono font-semibold text-foreground">
+                  ${DAMAGES.reduce((s, d) => s + d.high, 0).toLocaleString()}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mt-3 text-xs text-muted-foreground">
+          Excludes punitive damages, attorneys' fees, costs, prejudgment interest, and any front-pay / future-loss component.
+        </p>
+      </section>
+
+      {/* Mental health damages */}
+      <section className="mt-12">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+            <Brain className="size-3.5" /> Emotional Distress / Mental Health
+          </div>
+          <h2 className="mt-2 font-display text-3xl tracking-tight sm:text-4xl">Mental-health and emotional-distress harm.</h2>
+          <p className="mt-3 text-foreground/75">
+            Non-economic harm associated with the hardship delay and the resulting housing loss, while Lashawnna and her son were
+            also navigating an unresolved short-term-disability claim and a workplace investigation.
+          </p>
+        </div>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="rounded-md border border-border bg-card p-5">
+            <div className="font-display text-base text-foreground">Documented and reported symptoms</div>
+            <ul className="mt-2 space-y-1.5 text-sm text-foreground/80">
+              <li>· Severe acute anxiety tied to the investigation process (told an investigator she felt like she was having a heart attack).</li>
+              <li>· Worsening mental-health symptoms supporting intermittent FMLA and later short-term disability through Hartford.</li>
+              <li>· Acute stress and humiliation from sleeping in a car with a minor child for ~one week pre-eviction.</li>
+              <li>· Loss of safety/stability for a minor child — heightened distress from parental responsibility.</li>
+              <li>· Loss of health insurance during the same window — interruption of mental-health care, inability to afford additional doctor visits.</li>
+              <li>· Reasonable fear of further retaliation after raising the race-coded "example," Verint/screen-recording, and Edward Reyes concerns.</li>
+            </ul>
+          </div>
+          <div className="rounded-md border border-border bg-card p-5">
+            <div className="font-display text-base text-foreground">Emotional-distress range (preliminary)</div>
+            <p className="mt-2 text-sm text-foreground/80">
+              Conservative range for emotional distress / pain and suffering associated specifically with the hardship delay and
+              eviction-related harm. Final number depends on treatment records, provider testimony, and jury instructions in the
+              forum of suit.
+            </p>
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="rounded-sm bg-secondary/60 p-3 text-center">
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Low</div>
+                <div className="mt-0.5 font-display text-2xl text-foreground">$75,000</div>
+              </div>
+              <div className="rounded-sm bg-secondary/60 p-3 text-center">
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground">High</div>
+                <div className="mt-0.5 font-display text-2xl text-foreground">$250,000</div>
+              </div>
+            </div>
+            <p className="mt-3 text-xs text-muted-foreground">
+              Higher end reflects severity (homelessness with a child), employer notice before the harm occurred, and the
+              context of contemporaneous protected-activity reports.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <div className="mt-10 rounded-md border border-border bg-secondary/40 p-5 text-sm text-foreground/80">
         <div className="font-display text-base text-foreground">Bottom line</div>
