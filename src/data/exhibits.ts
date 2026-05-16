@@ -325,3 +325,5 @@ So I just want to be clear on that. Okay?
 Well, I have to run to my next meeting, but thanks for taking the time to speak with me. I appreciate it. Okay.`,
   },
 ];
+
+export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
