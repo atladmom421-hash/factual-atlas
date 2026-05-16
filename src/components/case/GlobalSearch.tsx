@@ -20,6 +20,8 @@ interface Result {
   title: string;
   subtitle?: string;
   haystack: string;
+  /** Long-form body text (transcripts, parsed PDF/OCR). Used for snippet preview only. */
+  body?: string;
   to: string;
   hash?: string;
 }
