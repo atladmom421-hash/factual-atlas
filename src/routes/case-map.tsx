@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Map, Scale, Users, FileText, AlertTriangle, ArrowRight, Filter, Download, ExternalLink } from "lucide-react";
+import { Map as MapIcon, Scale, Users, FileText, AlertTriangle, ArrowRight, Filter, Download, ExternalLink } from "lucide-react";
 import { clsx } from "clsx";
 import { events, exhibits, people, CATEGORY_LABELS } from "@/data";
 import type { EventCategory, TimelineEvent } from "@/data/types";
@@ -132,7 +132,7 @@ function CaseMapPage() {
       {/* Hero */}
       <header className="space-y-4">
         <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-          <Map className="size-3.5" /> Investigator & Attorney Briefing
+          <MapIcon className="size-3.5" /> Investigator & Attorney Briefing
         </div>
         <h1 className="font-display text-4xl md:text-5xl tracking-tight">Case Map</h1>
         <p className="max-w-3xl text-foreground/70 leading-relaxed">
