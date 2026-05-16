@@ -131,8 +131,14 @@ const DAMAGES: { category: string; basis: string; low: number; high: number }[] 
     high: 8000,
   },
   {
+    category: "Family separation — son living with maternal grandmother (Aug 2025 →)",
+    basis: "Starting the August 2025 school year, Lashawnna's minor son had to live with his maternal grandmother because Lashawnna's denied 1:30 PM–10:00 PM closing schedule ended at the same time school let out, she lived too far from the school to reach him during her lunch period, and the child's father was unavailable (separated, working at Wilson). Grandmother handled school drop-off, pick-up, after-school care, homework help, and daily caregiving Lashawnna would otherwise have provided. Damages include reasonable value of substitute caregiving, transportation/fuel reimbursement to grandmother, and incremental household costs.",
+    low: 4000,
+    high: 14000,
+  },
+  {
     category: "Childcare / school disruption costs for minor child",
-    basis: "Additional childcare, transportation, and school-related costs caused by the displacement and unstable housing.",
+    basis: "Additional childcare, transportation, and school-related costs caused by the housing displacement and unstable living arrangements through the Nov–Dec 2025 hardship/eviction period.",
     low: 1000,
     high: 4000,
   },
@@ -398,6 +404,7 @@ function HardshipThreadPage() {
               <li>· Worsening mental-health symptoms supporting intermittent FMLA and later short-term disability through Hartford.</li>
               <li>· Acute stress and humiliation from sleeping in a car with a minor child for ~one week pre-eviction.</li>
               <li>· Loss of safety/stability for a minor child — heightened distress from parental responsibility.</li>
+              <li>· <strong>Forced separation from her son starting August 2025</strong> — the denied PM/closing schedule ended at the same time school let out, leaving her unable to pick him up, help with homework, or be present after school. Son had to live with maternal grandmother for the school year; father unavailable (separated, working at Wilson). Severe loss of day-to-day parenting, daily bonding, and ordinary household life with her child — directly caused by the schedule denial that comparator TLs were not subjected to.</li>
               <li>· Loss of health insurance during the same window — interruption of mental-health care, inability to afford additional doctor visits.</li>
               <li>· Reasonable fear of further retaliation after raising the race-coded "example," Verint/screen-recording, and Edward Reyes concerns.</li>
             </ul>
@@ -405,23 +412,24 @@ function HardshipThreadPage() {
           <div className="rounded-md border border-border bg-card p-5">
             <div className="font-display text-base text-foreground">Emotional-distress range (preliminary)</div>
             <p className="mt-2 text-sm text-foreground/80">
-              Conservative range for emotional distress / pain and suffering associated specifically with the hardship delay and
-              eviction-related harm. Final number depends on treatment records, provider testimony, and jury instructions in the
-              forum of suit.
+              Conservative range for emotional distress / pain and suffering associated with the schedule-denial parenting loss,
+              the hardship delay, and the eviction-related harm. Final number depends on treatment records, provider testimony,
+              and jury instructions in the forum of suit.
             </p>
             <div className="mt-4 grid grid-cols-2 gap-3">
               <div className="rounded-sm bg-secondary/60 p-3 text-center">
                 <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Low</div>
-                <div className="mt-0.5 font-display text-2xl text-foreground">$75,000</div>
+                <div className="mt-0.5 font-display text-2xl text-foreground">$100,000</div>
               </div>
               <div className="rounded-sm bg-secondary/60 p-3 text-center">
                 <div className="text-[10px] uppercase tracking-wider text-muted-foreground">High</div>
-                <div className="mt-0.5 font-display text-2xl text-foreground">$250,000</div>
+                <div className="mt-0.5 font-display text-2xl text-foreground">$325,000</div>
               </div>
             </div>
             <p className="mt-3 text-xs text-muted-foreground">
-              Higher end reflects severity (homelessness with a child), employer notice before the harm occurred, and the
-              context of contemporaneous protected-activity reports.
+              Range reflects (1) ~10 months of forced separation from a minor child caused directly by the denied schedule, (2)
+              one week of homelessness with that child, (3) employer notice before the housing harm occurred, and (4) the context
+              of contemporaneous protected-activity reports.
             </p>
           </div>
         </div>
