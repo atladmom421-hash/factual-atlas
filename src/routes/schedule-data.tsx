@@ -83,6 +83,11 @@ function ScheduleDataPage() {
         <LeaderShiftMatrix />
       </div>
 
+      {/* Waitlist timeline — three snapshots + chats */}
+      <div className="mt-10">
+        <WaitlistTimeline />
+      </div>
+
       {/* Summary chips */}
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
         {SCHEDULE_TYPES.map(t => (
