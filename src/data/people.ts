@@ -33,6 +33,8 @@ export const people: Person[] = [
   { id: "francis", name: "Angie Francis", role: "Ethics Oversight", category: "hr", relationshipToCase: "Sept 19, 2025 complaint response" },
   { id: "carfagna", name: "Greg Carfagna", role: "HR Leadership", category: "hr", relationshipToCase: "May 29, 2024 formal complaint recipient" },
   { id: "markus", name: "Edina Markus", role: "Admin", category: "other", relationshipToCase: "July 16–17, 2025 re-added Lashawnna to waitlist with new date" },
+  { id: "reyes", name: "Edward Reyes", role: "HR / Corporate Investigator", category: "hr", relationshipToCase: "Received Oct 7, 2025 formal written timeline detailing waitlist history, retaliation concerns, and Allan Glover's comments — placed Respondent on detailed written notice before the Teams chat deletion." },
+  { id: "amarel", name: "Alese Amarel", role: "Colleague", category: "witness", relationshipToCase: "Oct 13, 2025 Teams chat (still visible Oct 23) discussing Allan leaving the team chat." },
 ];
 
 export const personById = (id: string) => people.find(p => p.id === id);
