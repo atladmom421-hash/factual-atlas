@@ -10,6 +10,7 @@ const links = [
   { to: "/timeline", label: "Timeline" },
   { to: "/people", label: "People" },
   { to: "/comparators", label: "Comparators" },
+  { to: "/schedule-data", label: "Schedule Data" },
   { to: "/movement-map", label: "Movement" },
   { to: "/evidence", label: "Evidence" },
   { to: "/preservation", label: "Preservation" },
