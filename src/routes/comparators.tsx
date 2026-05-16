@@ -1,9 +1,26 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { comparators, exhibitById } from "@/data";
 import { StatusBadge } from "@/components/case/Badges";
 import { useExhibit } from "@/components/case/ExhibitProvider";
-import { AlertTriangle, FileText, ExternalLink } from "lucide-react";
+import { AlertTriangle, FileText, ExternalLink, CalendarRange } from "lucide-react";
 import { clsx } from "clsx";
+
+function monthRange(start: string, end: string): string[] {
+  // start/end in "YYYY-MM" format, inclusive
+  const out: string[] = [];
+  const [sy, sm] = start.split("-").map(Number);
+  const [ey, em] = end.split("-").map(Number);
+  let y = sy, m = sm;
+  while (y < ey || (y === ey && m <= em)) {
+    out.push(`${y}-${String(m).padStart(2, "0")}`);
+    m++; if (m > 12) { m = 1; y++; }
+  }
+  return out;
+}
+function monthLabel(months: string[]): string {
+  if (months.length === 1) return months[0];
+  return `${months[0]} → ${months[months.length - 1]}`;
+}
 
 export const Route = createFileRoute("/comparators")({
   head: () => ({
