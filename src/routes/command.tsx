@@ -57,7 +57,7 @@ function Hero() {
         </p>
         <div className="mt-4 flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-wider">
           {[
-            { label: "Heatmap", icon: BarChart3, href: "#heatmap" },
+            { label: "Adverse actions", icon: AlertTriangle, href: "#adverse" },
             { label: "Network", icon: Network, href: "#network" },
             { label: "Scrubber", icon: Activity, href: "#scrubber" },
           ].map(b => {
