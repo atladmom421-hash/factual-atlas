@@ -9,6 +9,7 @@ import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
 import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
 import { WaitlistStatusTimeline } from "@/components/case/WaitlistStatusTimeline";
 import { AllanChatThreads } from "@/components/case/AllanChatThreads";
+import { ScheduleSourceGallery } from "@/components/case/ScheduleSourceGallery";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
@@ -98,6 +99,11 @@ function ScheduleDataPage() {
       {/* Verbatim Allan Glover chat threads */}
       <div className="mt-10">
         <AllanChatThreads />
+      </div>
+
+      {/* Source schedule workbook screenshots (verified user uploads) */}
+      <div className="mt-10">
+        <ScheduleSourceGallery />
       </div>
 
       {/* Summary chips */}
