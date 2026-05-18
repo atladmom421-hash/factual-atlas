@@ -60,7 +60,7 @@ export function SiteHeader() {
             <span className="font-mono text-foreground/70" suppressHydrationWarning>{now || "--:--:--Z"}</span>
           </div>
           <div className="text-foreground/70">
-            Confidential · Attorney work product
+            Evidence timeline
           </div>
         </div>
       </div>
