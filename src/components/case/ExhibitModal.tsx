@@ -21,32 +21,39 @@ export function ExhibitModal({ exhibit, page, onClose }: { exhibit: Exhibit | nu
           onClick={onClose}
         >
           <motion.div
-            className="relative flex w-full max-w-5xl flex-col overflow-hidden bg-card text-card-foreground sm:rounded-md shadow-2xl max-h-[100dvh] sm:max-h-[90vh]"
+            className="relative flex w-[98vw] max-w-[1600px] h-[100dvh] sm:h-[95vh] flex-col overflow-hidden bg-card text-card-foreground sm:rounded-md shadow-2xl"
             initial={{ opacity: 0, y: 16, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
             onClick={e => e.stopPropagation()}
           >
-            <div className="flex items-start justify-between gap-4 border-b border-border px-6 py-4">
+            <div className="flex items-start justify-between gap-4 border-b border-border px-6 py-3 shrink-0">
               <div className="min-w-0">
                 <div className="flex items-center gap-3 text-[11px] uppercase tracking-wider text-muted-foreground">
                   <span className="rounded-sm bg-navy px-1.5 py-0.5 text-navy-foreground">{exhibit.exhibitNumber}</span>
                   <span>{exhibit.date}</span>
                   <span className="hidden sm:inline">{exhibit.category}</span>
                 </div>
-                <h2 className="mt-1 font-display text-2xl tracking-tight">{exhibit.fileName}</h2>
+                <h2 className="mt-1 font-display text-xl tracking-tight truncate">{exhibit.fileName}</h2>
               </div>
-              <button onClick={onClose} className="rounded-sm p-2 hover:bg-secondary"><X className="size-5" /></button>
+              <div className="flex items-center gap-2 shrink-0">
+                {exhibit.filePath && (
+                  <a href={page ? `${exhibit.filePath}#page=${page}` : exhibit.filePath} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 rounded-sm px-2 py-1.5 text-xs hover:bg-secondary">
+                    Open <ExternalLink className="size-3.5" />
+                  </a>
+                )}
+                <button onClick={onClose} className="rounded-sm p-2 hover:bg-secondary"><X className="size-5" /></button>
+              </div>
             </div>
 
-            <div className="flex-1 overflow-auto">
+            <div className="flex-1 min-h-0 overflow-auto bg-muted/40">
               {exhibit.fileKind === "pdf" && exhibit.filePath && (
-                <iframe src={page ? `${exhibit.filePath}#page=${page}` : exhibit.filePath} title={exhibit.fileName} className="h-[70vh] w-full bg-muted" />
+                <iframe src={page ? `${exhibit.filePath}#page=${page}` : exhibit.filePath} title={exhibit.fileName} className="h-full w-full bg-muted" />
               )}
               {exhibit.fileKind === "image" && exhibit.filePath && (
-                <div className="flex flex-col">
-                  <img src={exhibit.filePath} alt={exhibit.fileName} className="w-full" />
+                <div className="flex flex-col items-center">
+                  <img src={exhibit.filePath} alt={exhibit.fileName} className="max-w-full" />
                   {exhibit.extraImagePaths?.map((p, i) => (
-                    <img key={p} src={p} alt={`${exhibit.fileName} — page ${i + 2}`} className="w-full border-t border-border" />
+                    <img key={p} src={p} alt={`${exhibit.fileName} — page ${i + 2}`} className="max-w-full border-t border-border" />
                   ))}
                 </div>
               )}
