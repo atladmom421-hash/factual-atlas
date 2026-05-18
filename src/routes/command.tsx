@@ -129,33 +129,33 @@ function Counters() {
 // Compact, investigator-ready timeline of adverse actions taken against
 // Harbin after protected activity. Pulled from the same events dataset
 // used by /timeline so the dashboard stays in sync app-wide.
+const PROTECTED_COLOR = "var(--hud-violet, #a78bfa)";
 const ADVERSE_CATEGORIES: { id: string; label: string; color: string; cats: string[] }[] = [
+  { id: "protected", label: "Protected activity (trigger)", color: PROTECTED_COLOR, cats: ["protected-activity", "hr-complaint"] },
   { id: "schedule", label: "Schedule / waitlist denial", color: "var(--hud-red)", cats: ["schedule-waitlist"] },
   { id: "retaliation", label: "Retaliation / tone-policing", color: "var(--hud-amber)", cats: ["retaliation"] },
   { id: "performance", label: "Performance downgrade", color: "var(--hud-cyan)", cats: ["performance"] },
   { id: "preservation", label: "Record preservation concern", color: "var(--hud-green)", cats: ["deleted-evidence"] },
 ];
+const PROTECTED_CATS = new Set(["protected-activity", "hr-complaint"]);
 
 function AdverseActionsSummary() {
   const { open } = useExhibit();
-  const adverse = useMemo(() => {
+  const timeline = useMemo(() => {
     const allCats = new Set(ADVERSE_CATEGORIES.flatMap(c => c.cats));
     return events
       .filter(e => allCats.has(e.category))
       .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
   }, []);
+  const adverse = useMemo(() => timeline.filter(e => !PROTECTED_CATS.has(e.category)), [timeline]);
+  const protectedEvents = useMemo(() => timeline.filter(e => PROTECTED_CATS.has(e.category)), [timeline]);
+  const firstProtected = protectedEvents[0]?.sortKey;
 
-  const protectedDates = useMemo(
-    () => events.filter(e => e.category === "protected-activity").map(e => e.sortKey).sort(),
-    [],
-  );
-  const firstProtected = protectedDates[0];
-
-  // Build month bins for the mini-bar lane
+  // Build month bins for the mini-bar lane (covers protected + adverse)
   const months = useMemo(() => {
-    const s = new Set(adverse.map(e => e.sortKey.slice(0, 7)));
+    const s = new Set(timeline.map(e => e.sortKey.slice(0, 7)));
     return Array.from(s).sort();
-  }, [adverse]);
+  }, [timeline]);
 
   const colorFor = (cat: string) =>
     ADVERSE_CATEGORIES.find(c => c.cats.includes(cat))?.color ?? "var(--hud-amber)";
@@ -165,28 +165,28 @@ function AdverseActionsSummary() {
   const counts = useMemo(() => {
     const m: Record<string, number> = {};
     for (const c of ADVERSE_CATEGORIES) m[c.id] = 0;
-    for (const e of adverse) {
+    for (const e of timeline) {
       const cat = ADVERSE_CATEGORIES.find(c => c.cats.includes(e.category));
       if (cat) m[cat.id]++;
     }
     return m;
-  }, [adverse]);
+  }, [timeline]);
 
   return (
     <section id="adverse" className="hud-panel bg-[color:var(--hud-panel)] p-4 flex flex-col">
       <header className="flex items-start justify-between gap-4 pb-3 border-b border-border">
         <div>
-          <div className="hud-eyebrow">Section 02 · Adverse Actions</div>
-          <h2 className="mt-1 font-display text-2xl tracking-tight">Timeline summary</h2>
+          <div className="hud-eyebrow">Section 02 · Protected Activity → Adverse Actions</div>
+          <h2 className="mt-1 font-display text-2xl tracking-tight">Causation timeline</h2>
           <p className="mt-1 text-xs text-foreground/70 max-w-md">
-            Every documented adverse action taken against Harbin, anchored to the first protected activity ({firstProtected ?? "—"}). Click any row to open its exhibit.
+            Protected complaints in violet, anchored to the first protected activity ({firstProtected ?? "—"}), followed by every documented adverse action. Click any row to open its exhibit.
           </p>
         </div>
         <AdverseLegend />
       </header>
 
       {/* Category counts */}
-      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-5">
         {ADVERSE_CATEGORIES.map(c => (
           <div key={c.id} className="border border-border bg-background/50 px-2.5 py-2">
             <div className="flex items-center gap-1.5">
@@ -198,18 +198,20 @@ function AdverseActionsSummary() {
         ))}
       </div>
 
-      {/* Month strip */}
+      {/* Month strip — protected vs adverse */}
       {months.length > 0 && (
         <div className="mt-4">
           <div className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground mb-1">Density · {months[0]} → {months[months.length - 1]}</div>
           <div className="flex gap-px">
             {months.map(m => {
-              const inMonth = adverse.filter(e => e.sortKey.startsWith(m));
-              const dominant = inMonth[0]?.category;
+              const inMonth = timeline.filter(e => e.sortKey.startsWith(m));
+              const hasProtected = inMonth.some(e => PROTECTED_CATS.has(e.category));
+              const adverseInMonth = inMonth.filter(e => !PROTECTED_CATS.has(e.category));
+              const dominant = adverseInMonth[0]?.category ?? (hasProtected ? "protected-activity" : undefined);
               return (
                 <div
                   key={m}
-                  title={`${m} · ${inMonth.length} action(s)`}
+                  title={`${m} · ${inMonth.length} event(s)${hasProtected ? " · protected" : ""}`}
                   className="flex-1 h-3"
                   style={{
                     background: dominant ? colorFor(dominant) : "transparent",
@@ -224,20 +226,29 @@ function AdverseActionsSummary() {
 
       {/* Event list (compact, scrollable) */}
       <div className="mt-4 flex-1 overflow-y-auto max-h-[420px] divide-y divide-border/60 border border-border">
-        {adverse.map(e => {
+        {timeline.map(e => {
           const ex = e.evidenceIds[0];
+          const isProtected = PROTECTED_CATS.has(e.category);
           return (
             <button
               key={e.id}
               onClick={() => ex && open(ex)}
               disabled={!ex}
-              className="w-full text-left px-3 py-2 hover:bg-[color:var(--hud-cyan)]/5 transition-colors disabled:cursor-default group flex gap-3"
+              className={clsx(
+                "w-full text-left px-3 py-2 transition-colors disabled:cursor-default group flex gap-3",
+                isProtected
+                  ? "bg-[color:var(--hud-violet,#a78bfa)]/8 hover:bg-[color:var(--hud-violet,#a78bfa)]/15 border-l-2"
+                  : "hover:bg-[color:var(--hud-cyan)]/5",
+              )}
+              style={isProtected ? { borderLeftColor: PROTECTED_COLOR } : undefined}
             >
               <span className="mt-1 inline-block size-2 shrink-0 rounded-full" style={{ background: colorFor(e.category) }} />
               <div className="min-w-0 flex-1">
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{e.date}</span>
-                  <span className="font-mono text-[9px] uppercase tracking-wider text-foreground/60">{labelFor(e.category)}</span>
+                  <span className="font-mono text-[9px] uppercase tracking-wider" style={{ color: isProtected ? PROTECTED_COLOR : undefined }}>
+                    {isProtected ? "Protected activity" : labelFor(e.category)}
+                  </span>
                 </div>
                 <div className="mt-0.5 text-[13px] leading-snug text-foreground/90 truncate">{e.title}</div>
                 {ex && (
@@ -252,7 +263,7 @@ function AdverseActionsSummary() {
       </div>
 
       <footer className="mt-3 pt-3 border-t border-border flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-muted-foreground">
-        <span>{adverse.length} adverse actions on file</span>
+        <span>{protectedEvents.length} protected · {adverse.length} adverse</span>
         <Link to="/timeline" className="text-[color:var(--hud-cyan)] hover:underline inline-flex items-center gap-1">
           Open full timeline <ExternalLink className="size-3" />
         </Link>
