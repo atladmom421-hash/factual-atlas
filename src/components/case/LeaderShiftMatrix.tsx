@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { clsx } from "clsx";
 import { scheduleRows, SCHEDULE_TYPES, type ScheduleType } from "@/data/schedule-data";
+import { LEADER_PROFILE_BY_NAME } from "@/data/leader-profiles";
 
 // Compact tokens for the matrix cells (semantic-friendly via tailwind palette)
 const CELL: Record<ScheduleType, { bg: string; label: string; abbr: string }> = {
@@ -17,6 +18,8 @@ const EXCLUDE = new Set<string>([
   "Multiple leaders",
   "Multiple LVAR/PRE-D leaders",
   "Shawnna Harbin TL row", // stray label, not a person
+  "Ashley Beckwith",       // not a TL (per Harbin)
+  "Candice Nesti",         // not a TL (per Harbin)
 ]);
 
 // Display rename / merge
