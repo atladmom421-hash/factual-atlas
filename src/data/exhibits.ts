@@ -1019,6 +1019,68 @@ KEY ADMISSIONS / DISPUTES (summary for the record)
 6. Performance — Allan, unprompted, repeatedly told HR that Harbin is "the best team lead he's got."
 7. Harbin closed by stating she will pursue legal resources.`,
   },
+  {
+    id: "EX-050",
+    exhibitNumber: "EX-050",
+    fileName: "2023/2024 Annual Compensation Statement — Performance Rating: STRONG",
+    date: "FY2023 plan year (issued early 2024)",
+    category: "Performance / compensation record",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Discover 2023/2024 Annual Compensation Statement for Shawnna Harbin (3591E). FY2023 Performance Rating: STRONG. Base salary $58,000 → $60,500.03 (4.31% merit / $2,500.03). 2023 Bonus: target 5% / $2,169.04; Company PF 87.80%; INDIVIDUAL PF 115.02%; bonus payout $2,190.00 (100.97% of target). Establishes Harbin's pre-protected-activity baseline rating as STRONG with an above-target individual performance factor.",
+    linkedEventIds: ["e-2024-02-2023-rating-strong"],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/EX-050-2023-comp-statement-strong.jpeg",
+    fileKind: "image",
+  },
+  {
+    id: "EX-051",
+    exhibitNumber: "EX-051",
+    fileName: "2024/2025 Annual Compensation Statement — Performance Rating downgraded to SOLID",
+    date: "As of 01/24/2025",
+    category: "Performance / compensation record",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Discover 2024/2025 Annual Compensation Statement for Shawnna Harbin (3591E). FY2024 Performance Rating: SOLID — a DOWNGRADE from FY2023's STRONG rating, occurring in the first review cycle after the May 7, 2024 EEOC charge and May 29, 2024 formal complaint. Despite the rating downgrade: base $60,500.03 → $62,550.02 (3.39% merit); 2024 bonus target $3,025; Company PF 128.90%; INDIVIDUAL PF 96.49%; bonus payout $3,762.00 (124.36% of target). The bonus mechanics contradict any performance-based justification — payout went UP while the headline rating went DOWN.",
+    linkedEventIds: ["e-2025-02-solid", "e-2025-01-24-comp-statement"],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/EX-051-2024-comp-statement-solid.jpeg",
+    fileKind: "image",
+  },
+  {
+    id: "EX-052",
+    exhibitNumber: "EX-052",
+    fileName: "2023 Year-End Review — Overall Rating: STRONG (Manager) / OUTSTANDING (Employee)",
+    date: "Acknowledged 01/15/2024 01:13 PM",
+    category: "Performance review",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "2023 Year-End Review overall page. Manager rating: STRONG — 'Consistently delivers results including some beyond expectations.' Manager narrative directs Harbin to 'continue to grow into her role here at Discover, asking for support when needed and maintaining that strong leadership presence with all leaders, sharing best practices, learning and leveraging their strengths, knowledge,' with continued focus areas: (1) Reducing Regulatory defects; (2) Consistently leverage TL standard work on driving efficiency metrics; (3) Improving the employee experience. Employee rating: OUTSTANDING. Acknowledged by Shawnna Harbin (3591E) on 01/15/2024 01:13 PM. Establishes the pre-EEOC baseline as STRONG with growth-oriented coaching — not a performance concern.",
+    linkedEventIds: ["e-2024-02-2023-rating-strong"],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/EX-052-2023-year-end-review.jpeg",
+    fileKind: "image",
+  },
+  {
+    id: "EX-053",
+    exhibitNumber: "EX-053",
+    fileName: "2024 Year-End Review — Full review (Overall SOLID; sub-goals STRONG / STRONG / STRONG / STRONG)",
+    date: "Review period 01/01/2024 – 12/31/2024",
+    category: "Performance review",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "2024 Year-End Review. Manager: Allan Glover (26841). Evaluated By: Allan Glover (26841). Organization: Field CAR. Location: Home – US – AZ.\n\nOVERALL: Manager rating SOLID; Employee self-rating OUTSTANDING. Acknowledgement entered by Shawnna Harbin (3591E) on 01/08/2025.\n\nSUB-GOAL RATINGS (Manager / Employee):\n• Required Risk Goal — SOLID / STRONG. Manager narrative is uniformly positive: training completed timely without DM oversight, proactive risk assessment, leverage of iSuggest, influencing standards, creating a safe escalation environment.\n• Required DE&I Goal — STRONG / OUTSTANDING. Manager narrative explicitly praises Harbin for 'displaying the confidence to speak up and challenge the status quo' and 'pushing us on potential blind spots' — language directly inconsistent with treating her later complaints as performance issues.\n• Build A Culture That Creates Engaged Employees — STRONG / OUTSTANDING.\n• Create Efficiencies and Control Costs — STRONG / STRONG.\n• Drive Effective Team Performance — STRONG / OUTSTANDING.\n• People Leadership section summary — STRONG / OUTSTANDING. Manager notes Goal one average 3.75 with 4.00+ in 8 of 12 months; Goal two 2.90 (myVoice 3.88 vs. Employee First 2.36); Goal three 2.62.\n\nKEY EVIDENTIARY POINT: Every individual sub-goal received SOLID or STRONG from the manager, yet the OVERALL rating was downgraded to SOLID — a step down from the FY2023 STRONG rating (EX-050, EX-052). No sub-goal supports the downgrade, and the bonus payout (EX-051) was 124.36% of target. The downgrade landed in the first review cycle after Harbin's May 7, 2024 EEOC charge and May 29, 2024 formal complaint naming Carfagna and others. Pairs with EX-049 in which Allan Glover, unprompted, repeatedly told HR Harbin is 'the best team lead he's got.'",
+    linkedEventIds: ["e-2025-02-solid"],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/EX-053-2024-review-p1-overall.jpeg",
+    extraImagePaths: [
+      "/exhibits/EX-053-2024-review-p2-risk.jpeg",
+      "/exhibits/EX-053-2024-review-p3-dei.jpeg",
+      "/exhibits/EX-053-2024-review-p4-results.jpeg",
+      "/exhibits/EX-053-2024-review-p5-people.jpeg",
+    ],
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
