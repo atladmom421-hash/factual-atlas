@@ -19,7 +19,7 @@ export const comparators: ComparatorRow[] = [
     ticket: "Disputed / process barrier — told ticket was required; never moved.",
     performance: "High performer, often #1 or near top; strong employee surveys; generally rated 4 / strong.",
     evidenceRef: "EX-022 (15-month schedule grids), EX-008, EX-002, HR call transcript",
-    whyItMatters: "Baseline. Across 18 months 12+ peer TLs cycled between AM, midshift, mid/late, and closing — Harbin alone was frozen on PM/closing despite schedule requests, performance, and protected complaints.",
+    whyItMatters: "Baseline. Across 18 months 11 peer TLs in this roster cycled between AM, midshift, mid/late, and closing — Harbin alone was frozen on PM/closing despite schedule requests, performance, and protected complaints.",
     status: "confirmed",
   },
   {
