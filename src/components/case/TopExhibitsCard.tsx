@@ -10,7 +10,7 @@ const TOP: { id: string; why: string }[] = [
   { id: "EX-049", why: "Nov 6, 2025 HR close-out call — admissions re: Verint + missing ticket" },
   { id: "EX-008", why: "Temporary vs. permanent assignment framing" },
   { id: "EX-040", why: "Comparator chain — Tyler Millisock movement" },
-  { id: "EX-041", why: "Comparator chain — Faulkner / McGregor movement" },
+  { id: "EX-041", why: "Other-leader schedule movement (Faulkner / McGregor named in EX-022 grids; excluded from primary comparator roster)" },
   { id: "EX-047", why: "Oct 4, 2024 Scozzari Teams thread — tone policing" },
   { id: "EX-006", why: "Verint monitoring concern" },
   { id: "EX-053", why: "2024 Year-End review (paper downgrade with rising bonus)" },
