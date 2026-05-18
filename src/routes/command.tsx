@@ -18,12 +18,6 @@ export const Route = createFileRoute("/command")({
   component: CommandPage,
 });
 
-const SCHEDULE_COLOR: Record<ScheduleType, string> = {
-  "AM": "var(--hud-cyan)",
-  "Midshift": "var(--hud-green)",
-  "Mid/Late": "var(--hud-amber)",
-  "PM/Closing": "var(--hud-red)",
-};
 
 function CommandPage() {
   return (
