@@ -15,7 +15,6 @@ import { Route as StoryRouteImport } from './routes/story'
 import { Route as ScheduleDataRouteImport } from './routes/schedule-data'
 import { Route as PreservationRouteImport } from './routes/preservation'
 import { Route as PeopleRouteImport } from './routes/people'
-import { Route as MovementMapRouteImport } from './routes/movement-map'
 import { Route as InvestigatorRouteImport } from './routes/investigator'
 import { Route as HardshipThreadRouteImport } from './routes/hardship-thread'
 import { Route as GregAnitaThreadRouteImport } from './routes/greg-anita-thread'
@@ -53,11 +52,6 @@ const PreservationRoute = PreservationRouteImport.update({
 const PeopleRoute = PeopleRouteImport.update({
   id: '/people',
   path: '/people',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MovementMapRoute = MovementMapRouteImport.update({
-  id: '/movement-map',
-  path: '/movement-map',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InvestigatorRoute = InvestigatorRouteImport.update({
@@ -110,7 +104,6 @@ export interface FileRoutesByFullPath {
   '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
-  '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
   '/preservation': typeof PreservationRoute
   '/schedule-data': typeof ScheduleDataRoute
@@ -127,7 +120,6 @@ export interface FileRoutesByTo {
   '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
-  '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
   '/preservation': typeof PreservationRoute
   '/schedule-data': typeof ScheduleDataRoute
@@ -145,7 +137,6 @@ export interface FileRoutesById {
   '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
-  '/movement-map': typeof MovementMapRoute
   '/people': typeof PeopleRoute
   '/preservation': typeof PreservationRoute
   '/schedule-data': typeof ScheduleDataRoute
@@ -164,7 +155,6 @@ export interface FileRouteTypes {
     | '/greg-anita-thread'
     | '/hardship-thread'
     | '/investigator'
-    | '/movement-map'
     | '/people'
     | '/preservation'
     | '/schedule-data'
@@ -181,7 +171,6 @@ export interface FileRouteTypes {
     | '/greg-anita-thread'
     | '/hardship-thread'
     | '/investigator'
-    | '/movement-map'
     | '/people'
     | '/preservation'
     | '/schedule-data'
@@ -198,7 +187,6 @@ export interface FileRouteTypes {
     | '/greg-anita-thread'
     | '/hardship-thread'
     | '/investigator'
-    | '/movement-map'
     | '/people'
     | '/preservation'
     | '/schedule-data'
@@ -216,7 +204,6 @@ export interface RootRouteChildren {
   GregAnitaThreadRoute: typeof GregAnitaThreadRoute
   HardshipThreadRoute: typeof HardshipThreadRoute
   InvestigatorRoute: typeof InvestigatorRoute
-  MovementMapRoute: typeof MovementMapRoute
   PeopleRoute: typeof PeopleRoute
   PreservationRoute: typeof PreservationRoute
   ScheduleDataRoute: typeof ScheduleDataRoute
@@ -267,13 +254,6 @@ declare module '@tanstack/react-router' {
       path: '/people'
       fullPath: '/people'
       preLoaderRoute: typeof PeopleRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/movement-map': {
-      id: '/movement-map'
-      path: '/movement-map'
-      fullPath: '/movement-map'
-      preLoaderRoute: typeof MovementMapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/investigator': {
@@ -344,7 +324,6 @@ const rootRouteChildren: RootRouteChildren = {
   GregAnitaThreadRoute: GregAnitaThreadRoute,
   HardshipThreadRoute: HardshipThreadRoute,
   InvestigatorRoute: InvestigatorRoute,
-  MovementMapRoute: MovementMapRoute,
   PeopleRoute: PeopleRoute,
   PreservationRoute: PreservationRoute,
   ScheduleDataRoute: ScheduleDataRoute,

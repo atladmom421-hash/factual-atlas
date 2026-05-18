@@ -107,7 +107,7 @@ function Index() {
             { to: "/timeline", t: "Master Timeline", d: "Every documented event from 2023 through May 2026 — filterable by category, person, and year." },
             { to: "/people", t: "People Directory", d: "Cards for each leader, witness, and decision-maker, linked to their events and exhibits." },
             { to: "/comparators", t: "Comparator Matrix", d: "Side-by-side movement, waitlist, ticket, and performance comparison." },
-            { to: "/movement-map", t: "Department Movement Map", d: "Visual flow of who moved between areas and shifts." },
+            
             { to: "/evidence", t: "Evidence Library", d: "Every attached exhibit with reliability status and linked events." },
             { to: "/investigator", t: "Investigator Brief", d: "Agency-format summary: protected activity, adverse actions, comparators, open questions." },
           ].map(c => (
