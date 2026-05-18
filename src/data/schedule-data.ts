@@ -103,7 +103,7 @@ export const scheduleRows: ScheduleRow[] = [
 
   // ── Oct 2025 ─────────────────────────────────────────────
   { id: "s-2025-10-a", month: "October 2025", sortKey: "2025-10", area: "PRE-D / DBC", scheduleType: "Mid/Late", timeRange: "11:30 AM–8:00 PM EST", leaders: ["Tyler Millisock"], exhibitId: "EX-022", evidencePages: "p. 7", significance: "Final month before written notice to corporate investigator (Oct 7, 2025)." },
-  { id: "s-2025-10-b", month: "October 2025", sortKey: "2025-10", area: "LVAR", scheduleType: "PM/Closing", timeRange: "Closing shift ending 10:00 PM ET", leaders: ["Lashawnna Harbin"], exhibitId: "EX-022", evidencePages: "p. 7", significance: "Harbin still on closing.", highlightHarbin: true },
+  { id: "s-2025-10-b", month: "October 2025", sortKey: "2025-10", area: "LVAR", scheduleType: "PM/Closing", timeRange: "1:30 PM–10:00 PM ET (closing)", leaders: ["Lashawnna Harbin"], exhibitId: "EX-022", evidencePages: "p. 7", significance: "Harbin still on closing.", highlightHarbin: true },
 
   // ── Feb 2026 (named TL grid — Carfagna 2026 Schedule, Feb 2026 tab) ─────
   { id: "s-2026-02-am-lvar", month: "February 2026", sortKey: "2026-02", area: "LVAR UM (Shawnna's dept)", scheduleType: "AM", timeRange: "8:00 AM–4:30 PM ET", leaders: ["Gabriela Reyes", "Brittnee Walker", "Helen Ripley", "Jarin Bell", "Marissa Mascarenas", "Hunter Samuel", "Dylan Bryant", "Jodi Curran"], exhibitId: "EX-022", evidencePages: "p. 15 (Feb 2026 tab)", significance: "Eight named TLs on 8–4:30 AM in Shawnna's own dept in Feb 2026 — including Hunter Samuel, Jarin Bell, and Brittnee Walker, who were placed onto AM upon transfer from non-AM shifts. Harbin not among them." },
