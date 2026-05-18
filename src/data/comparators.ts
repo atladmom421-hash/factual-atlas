@@ -192,15 +192,6 @@ export const movementEdges: MovementEdge[] = [
   { id: "m-millisock-1", personId: "millisock", personName: "Tyler Millisock", from: "LVAR · PM closing 1:30–10 PM", to: "PRE-D / DBC · 11:30–8 PM mid/late", period: "Jan → Feb 2025", status: "confirmed" },
   { id: "m-millisock-2", personId: "millisock", personName: "Tyler Millisock", from: "PRE-D · 11:30–8 PM mid/late", to: "PRE-D · 10:30–7 PM midshift", period: "Jan → Feb 2026", status: "confirmed" },
 
-  // Josh Faulkner — three transitions in six months
-  { id: "m-faulkner-1", personId: "faulkner", personName: "Josh Faulkner", from: "Whitehall · 8–4:30 AM", to: "TBAY · 11:30–8 PM mid/late", period: "Dec 2024 → Apr 2025", status: "confirmed" },
-  { id: "m-faulkner-2", personId: "faulkner", personName: "Josh Faulkner", from: "TBAY · 11:30–8 PM mid/late", to: "TBAY · 1:30–10 PM closing", period: "Apr → May 2025", status: "confirmed" },
-  { id: "m-faulkner-3", personId: "faulkner", personName: "Josh Faulkner", from: "TBAY · 1:30–10 PM closing", to: "LVAR/Whitehall · 8–4:30 AM", period: "May → Sept 2025", status: "confirmed" },
-
-  // Leslie McGregor — four-step cycle across all four shift envelopes
-  { id: "m-mcgregor-1", personId: "mcgregor", personName: "Leslie McGregor", from: "Whitehall · 8–4:30 AM", to: "LVAR/TBAY · 1:30–10 PM closing", period: "Dec 2024 → Feb 2025", status: "confirmed" },
-  { id: "m-mcgregor-2", personId: "mcgregor", personName: "Leslie McGregor", from: "LVAR/TBAY · 1:30–10 PM closing", to: "Whitehall/TBAY · 9:30–6 midshift", period: "Feb → May 2025", status: "confirmed" },
-  { id: "m-mcgregor-3", personId: "mcgregor", personName: "Leslie McGregor", from: "Whitehall/TBAY · 9:30–6 midshift", to: "TL-in-Training/TBay · 11:30–8 PM mid/late", period: "May → Sept 2025", status: "confirmed" },
 
   // Whitnee Kollar — three shift changes Jul 2025 → Feb 2026
   { id: "m-kollar-1", personId: "kollar", personName: "Whitnee Kollar", from: "Whitehall · 8–4:30 AM", to: "PRE-D / DBC · 11:30–8 PM mid/late", period: "Dec 2024 → Jul 2025", status: "confirmed" },
