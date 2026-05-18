@@ -131,27 +131,55 @@ function Counters() {
 }
 
 /* ─── Schedule Heatmap ─────────────────────────────────────────────── */
+// Keep this in sync with LeaderShiftMatrix exclusions so the dashboard
+// reflects the same cleaned roster as /schedule-data.
+const HEATMAP_EXCLUDE = new Set<string>([
+  "Kari Ross",
+  "Tiffany Parks",
+  "Multiple leaders",
+  "Multiple LVAR/PRE-D leaders",
+  "Shawnna Harbin TL row",
+  "Ashley Beckwith",
+  "Candice Nesti",
+]);
+const HEATMAP_NORMALIZE: Record<string, string> = {
+  "Shawnna Harbin": "Shawnna Harbin (mgr)",
+};
+
 function ScheduleHeatmap() {
   const { open } = useExhibit();
   // Build month list (sorted) and leader list
   const months = useMemo(() => Array.from(new Set(scheduleRows.map(r => r.sortKey))).sort(), []);
-  const leaders = useMemo(() => {
-    const set = new Set<string>();
-    for (const r of scheduleRows) for (const l of r.leaders) set.add(l);
-    // Put Harbin first
-    return ["Lashawnna Harbin", ...Array.from(set).filter(n => n !== "Lashawnna Harbin").sort()];
-  }, []);
 
-  // cells[leader][month] = { type, row }
+  // cells[leader][month] = { type, row, pages }
   const cells = useMemo(() => {
     const map: Record<string, Record<string, { type: ScheduleType; rowId: string; pages: string }>> = {};
     for (const r of scheduleRows) {
-      for (const l of r.leaders) {
-        (map[l] ??= {})[r.sortKey] = { type: r.scheduleType, rowId: r.id, pages: r.evidencePages };
+      for (const raw of r.leaders) {
+        if (HEATMAP_EXCLUDE.has(raw)) continue;
+        const l = HEATMAP_NORMALIZE[raw] ?? raw;
+        // First-wins keeps Harbin's PM baseline stable when a row also lists peers.
+        if (!(map[l] ??= {})[r.sortKey]) {
+          map[l][r.sortKey] = { type: r.scheduleType, rowId: r.id, pages: r.evidencePages };
+        }
       }
     }
     return map;
   }, []);
+
+  // Leader order: Harbin first, then by # distinct schedule types (movement) desc, then alpha
+  const leaders = useMemo(() => {
+    const list = Object.keys(cells);
+    list.sort((a, b) => {
+      if (a === "Lashawnna Harbin") return -1;
+      if (b === "Lashawnna Harbin") return 1;
+      const ma = new Set(Object.values(cells[a]).map(c => c.type)).size;
+      const mb = new Set(Object.values(cells[b]).map(c => c.type)).size;
+      if (mb !== ma) return mb - ma;
+      return a.localeCompare(b);
+    });
+    return list;
+  }, [cells]);
 
   const [hover, setHover] = useState<{ leader: string; month: string } | null>(null);
   const monthLabel = (m: string) => {
@@ -200,7 +228,7 @@ function ScheduleHeatmap() {
                       key={m}
                       onMouseEnter={() => setHover({ leader: l, month: m })}
                       onMouseLeave={() => setHover(null)}
-                      onClick={() => c && open("EX-022")}
+                      onClick={() => c && open("EX-022", Number(c.pages.match(/\d+/)?.[0] ?? 1))}
                       className={clsx(
                         "w-7 h-7 shrink-0 border-r border-b border-border/40 transition-transform",
                         c && "hover:scale-110 hover:z-20 hover:relative cursor-pointer",
