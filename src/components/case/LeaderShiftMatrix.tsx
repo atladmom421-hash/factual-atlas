@@ -88,14 +88,15 @@ export function LeaderShiftMatrix() {
       <header className="border-b border-border p-4 sm:p-5">
         <div className="flex items-baseline justify-between gap-4 flex-wrap">
           <div>
-            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Disparate-treatment matrix</div>
+            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Comparator schedule matrix</div>
             <h2 className="mt-1 font-display text-2xl tracking-tight">Leader × Month — schedule placement</h2>
           </div>
           <div className="text-[11px] text-muted-foreground max-w-md">
             One row per Team Lead. One column per month (Dec 2024 → May 2026). Cell colour = schedule type held that
-            month. <span className="text-foreground/80 font-medium">Harbin's row is a continuous red band</span> while
-            peer rows change colour — the visual signature of disparate treatment.
+            month. <span className="text-foreground/80 font-medium">Harbin's row holds a single shift band</span> while
+            peer rows shift colour across the window — readers may draw their own inference.
           </div>
+
         </div>
 
         {/* Legend */}
