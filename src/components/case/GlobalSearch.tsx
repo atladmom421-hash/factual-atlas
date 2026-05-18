@@ -102,7 +102,7 @@ function buildIndex(): Result[] {
       title: d,
       subtitle: mentions ? "Department / area" : "Schedule / area reference",
       haystack: d.toLowerCase(),
-      to: "/movement-map",
+      to: "/schedule",
     });
   }
 
