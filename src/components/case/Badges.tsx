@@ -38,7 +38,7 @@ export function CategoryBadge({ category, className }: { category: string; class
     "performance": "Performance",
     "leave": "Leave",
     "internal-investigation": "Investigation",
-    "deleted-evidence": "Deleted Evidence",
+    "deleted-evidence": "Record Preservation",
   } as Record<string, string>)[category] ?? category;
   return (
     <span className={clsx(
