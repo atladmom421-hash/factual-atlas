@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { events, exhibits, comparators, scheduleRows, CATEGORY_LABELS } from "@/data";
-import type { ScheduleType } from "@/data/schedule-data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
-import { AlertTriangle, Activity, Calendar, Network, BarChart3, Play, Pause, SkipBack, ExternalLink, FileText, Search, RotateCcw, ZoomIn, ZoomOut, ArrowUpRight } from "lucide-react";
+import { AlertTriangle, Activity, Calendar, Network, Play, Pause, SkipBack, ExternalLink, FileText, Search, RotateCcw, ZoomIn, ZoomOut, ArrowUpRight } from "lucide-react";
 import { clsx } from "clsx";
+
+const SCHEDULE_ROW_COUNT = scheduleRows.length;
 
 export const Route = createFileRoute("/command")({
   head: () => ({
