@@ -5,7 +5,7 @@ import type { Exhibit } from "@/data/types";
 import { StatusBadge } from "./Badges";
 import { personById, eventById } from "@/data";
 
-export function ExhibitModal({ exhibit, onClose }: { exhibit: Exhibit | null; onClose: () => void }) {
+export function ExhibitModal({ exhibit, page, onClose }: { exhibit: Exhibit | null; page?: number; onClose: () => void }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", onKey);
@@ -40,7 +40,7 @@ export function ExhibitModal({ exhibit, onClose }: { exhibit: Exhibit | null; on
 
             <div className="flex-1 overflow-auto">
               {exhibit.fileKind === "pdf" && exhibit.filePath && (
-                <iframe src={exhibit.filePath} title={exhibit.fileName} className="h-[70vh] w-full bg-muted" />
+                <iframe src={page ? `${exhibit.filePath}#page=${page}` : exhibit.filePath} title={exhibit.fileName} className="h-[70vh] w-full bg-muted" />
               )}
               {exhibit.fileKind === "image" && exhibit.filePath && (
                 <div className="flex flex-col">
