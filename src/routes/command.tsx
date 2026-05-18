@@ -129,12 +129,15 @@ function Counters() {
 // Compact, investigator-ready timeline of adverse actions taken against
 // Harbin after protected activity. Pulled from the same events dataset
 // used by /timeline so the dashboard stays in sync app-wide.
+const PROTECTED_COLOR = "var(--hud-violet, #a78bfa)";
 const ADVERSE_CATEGORIES: { id: string; label: string; color: string; cats: string[] }[] = [
+  { id: "protected", label: "Protected activity (trigger)", color: PROTECTED_COLOR, cats: ["protected-activity", "hr-complaint"] },
   { id: "schedule", label: "Schedule / waitlist denial", color: "var(--hud-red)", cats: ["schedule-waitlist"] },
   { id: "retaliation", label: "Retaliation / tone-policing", color: "var(--hud-amber)", cats: ["retaliation"] },
   { id: "performance", label: "Performance downgrade", color: "var(--hud-cyan)", cats: ["performance"] },
   { id: "preservation", label: "Record preservation concern", color: "var(--hud-green)", cats: ["deleted-evidence"] },
 ];
+const PROTECTED_CATS = new Set(["protected-activity", "hr-complaint"]);
 
 function AdverseActionsSummary() {
   const { open } = useExhibit();
