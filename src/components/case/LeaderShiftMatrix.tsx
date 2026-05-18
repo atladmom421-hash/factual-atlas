@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { clsx } from "clsx";
 import { scheduleRows, SCHEDULE_TYPES, type ScheduleType } from "@/data/schedule-data";
+import { LEADER_PROFILE_BY_NAME } from "@/data/leader-profiles";
 
 // Compact tokens for the matrix cells (semantic-friendly via tailwind palette)
 const CELL: Record<ScheduleType, { bg: string; label: string; abbr: string }> = {
@@ -17,6 +18,8 @@ const EXCLUDE = new Set<string>([
   "Multiple leaders",
   "Multiple LVAR/PRE-D leaders",
   "Shawnna Harbin TL row", // stray label, not a person
+  "Ashley Beckwith",       // not a TL (per Harbin)
+  "Candice Nesti",         // not a TL (per Harbin)
 ]);
 
 // Display rename / merge
@@ -151,26 +154,55 @@ export function LeaderShiftMatrix() {
                   <th
                     scope="row"
                     className={clsx(
-                      "sticky left-0 z-10 whitespace-nowrap px-2 py-1 text-left font-normal",
+                      "sticky left-0 z-10 whitespace-nowrap px-2 py-1 text-left font-normal align-top",
                       isHarbin ? "bg-red-500/10 text-red-700 dark:text-red-300 font-medium" : "bg-card",
                     )}
                   >
-                    <div className="flex items-center gap-2">
-                      <span>{name}</span>
-                      <span
-                        className={clsx(
-                          "rounded-full px-1.5 py-[1px] text-[9px] ring-1",
-                          distinct === 1
-                            ? "bg-red-500/10 text-red-700 dark:text-red-300 ring-red-500/30"
-                            : distinct >= 3
-                            ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 ring-emerald-500/30"
-                            : "bg-secondary text-foreground/70 ring-border/50",
-                        )}
-                        title={`${distinct} distinct schedule type(s) observed across the 15-month window`}
-                      >
-                        {distinct}×
-                      </span>
-                    </div>
+                    {(() => {
+                      const profile = LEADER_PROFILE_BY_NAME[name];
+                      return (
+                        <div className="flex flex-col gap-0.5 max-w-[260px]">
+                          <div className="flex items-center gap-1.5 flex-wrap">
+                            <span>{name}</span>
+                            {profile?.inLashawnnasDept && (
+                              <span
+                                className="rounded-sm bg-amber-500/15 px-1 py-[1px] text-[8px] uppercase tracking-wider text-amber-700 dark:text-amber-300 ring-1 ring-amber-500/30"
+                                title="Member of Harbin's LVAR department"
+                              >
+                                LVAR
+                              </span>
+                            )}
+                            {profile && !profile.inLashawnnasDept && profile.dept !== "Other" && (
+                              <span
+                                className="rounded-sm bg-secondary px-1 py-[1px] text-[8px] uppercase tracking-wider text-foreground/60 ring-1 ring-border/50"
+                                title={`Department: ${profile.dept}`}
+                              >
+                                {profile.dept}
+                              </span>
+                            )}
+                            <span
+                              className={clsx(
+                                "rounded-full px-1.5 py-[1px] text-[9px] ring-1",
+                                distinct === 1
+                                  ? "bg-red-500/10 text-red-700 dark:text-red-300 ring-red-500/30"
+                                  : distinct >= 3
+                                  ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 ring-emerald-500/30"
+                                  : "bg-secondary text-foreground/70 ring-border/50",
+                              )}
+                              title={`${distinct} distinct schedule type(s) observed across the 15-month window`}
+                            >
+                              {distinct}×
+                            </span>
+                          </div>
+                          {(profile?.onSite || profile?.movement) && (
+                            <div className="text-[9px] font-normal text-muted-foreground leading-snug">
+                              {profile.onSite && <div>{profile.onSite}</div>}
+                              {profile.movement && <div className="italic">{profile.movement}</div>}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })()}
                   </th>
                   {months.map(([key]) => {
                     const cell = row.get(key);
