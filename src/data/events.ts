@@ -1286,6 +1286,19 @@ export const events: TimelineEvent[] = [
     whyItMatters: "Pattern evidence: increased managerial scrutiny across multiple Operations Managers in the months immediately before the Feb 2025 waitlist removal. Harbin's contemporaneous written objection to the 'accusatory tone' establishes protected-activity-style pushback that pre-dates the formal Sept 19, 2025 complaint.",
     status: "confirmed-screenshot",
   },
+  {
+    id: "e-2025-04-14-my-applications-history",
+    date: "April 14, 2025 (latest visible entry; screenshots also show earlier entries back to Dec. 2023)",
+    sortKey: "2025-04-14",
+    title: "Application-history screenshots show repeated internal mobility efforts ending in withdrawal or non-selection",
+    category: "retaliation",
+    description: "My Applications screenshots show Harbin repeatedly applying for internal roles across 2023–2025, including Team Leader and other lead/specialist openings, with the visible outcomes repeatedly marked 'Withdrawn' or 'No Longer Under Consideration.' The latest visible row is dated April 14, 2025 for 'R46036 CSE Team Leader Withdawn ~ PM Shift' (Withdrawn), and the screenshots also show multiple 2024 postings including Team Leader ~ Internal Strategy Team (NRC), Team Leader – CSE (PM Shift), Team Leader ~ High Risk Verification, and other lead/specialist roles.",
+    peopleIds: ["harbin"],
+    evidenceIds: ["EX-055"],
+    whyItMatters: "Corroborates sustained efforts to leave the existing role/schedule situation through formal internal postings — relevant to damages, mitigation, and the fact that Harbin was actively trying to secure workable internal alternatives rather than simply remaining in place by choice.",
+    status: "confirmed-screenshot",
+    chapterId: "ch2",
+  },
 ];
 
 export const eventsSorted = [...events].sort((a, b) => a.sortKey.localeCompare(b.sortKey));
