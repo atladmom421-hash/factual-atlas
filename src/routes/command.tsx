@@ -130,144 +130,149 @@ function Counters() {
   );
 }
 
-/* ─── Schedule Heatmap ─────────────────────────────────────────────── */
-// Keep this in sync with LeaderShiftMatrix exclusions so the dashboard
-// reflects the same cleaned roster as /schedule-data.
-const HEATMAP_EXCLUDE = new Set<string>([
-  "Kari Ross",
-  "Tiffany Parks",
-  "Multiple leaders",
-  "Multiple LVAR/PRE-D leaders",
-  "Shawnna Harbin TL row",
-  "Ashley Beckwith",
-  "Candice Nesti",
-]);
-const HEATMAP_NORMALIZE: Record<string, string> = {
-  "Shawnna Harbin": "Shawnna Harbin (mgr)",
-};
+/* ─── Adverse Actions Summary ──────────────────────────────────────── */
+// Compact, investigator-ready timeline of adverse actions taken against
+// Harbin after protected activity. Pulled from the same events dataset
+// used by /timeline so the dashboard stays in sync app-wide.
+const ADVERSE_CATEGORIES: { id: string; label: string; color: string; cats: string[] }[] = [
+  { id: "schedule", label: "Schedule / waitlist denial", color: "var(--hud-red)", cats: ["schedule-waitlist"] },
+  { id: "retaliation", label: "Retaliation / tone-policing", color: "var(--hud-amber)", cats: ["retaliation"] },
+  { id: "performance", label: "Performance downgrade", color: "var(--hud-cyan)", cats: ["performance"] },
+  { id: "preservation", label: "Record preservation concern", color: "var(--hud-green)", cats: ["deleted-evidence"] },
+];
 
-function ScheduleHeatmap() {
+function AdverseActionsSummary() {
   const { open } = useExhibit();
-  // Build month list (sorted) and leader list
-  const months = useMemo(() => Array.from(new Set(scheduleRows.map(r => r.sortKey))).sort(), []);
-
-  // cells[leader][month] = { type, row, pages }
-  const cells = useMemo(() => {
-    const map: Record<string, Record<string, { type: ScheduleType; rowId: string; pages: string }>> = {};
-    for (const r of scheduleRows) {
-      for (const raw of r.leaders) {
-        if (HEATMAP_EXCLUDE.has(raw)) continue;
-        const l = HEATMAP_NORMALIZE[raw] ?? raw;
-        // First-wins keeps Harbin's PM baseline stable when a row also lists peers.
-        if (!(map[l] ??= {})[r.sortKey]) {
-          map[l][r.sortKey] = { type: r.scheduleType, rowId: r.id, pages: r.evidencePages };
-        }
-      }
-    }
-    return map;
+  const adverse = useMemo(() => {
+    const allCats = new Set(ADVERSE_CATEGORIES.flatMap(c => c.cats));
+    return events
+      .filter(e => allCats.has(e.category))
+      .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
   }, []);
 
-  // Leader order: Harbin first, then by # distinct schedule types (movement) desc, then alpha
-  const leaders = useMemo(() => {
-    const list = Object.keys(cells);
-    list.sort((a, b) => {
-      if (a === "Lashawnna Harbin") return -1;
-      if (b === "Lashawnna Harbin") return 1;
-      const ma = new Set(Object.values(cells[a]).map(c => c.type)).size;
-      const mb = new Set(Object.values(cells[b]).map(c => c.type)).size;
-      if (mb !== ma) return mb - ma;
-      return a.localeCompare(b);
-    });
-    return list;
-  }, [cells]);
+  const protectedDates = useMemo(
+    () => events.filter(e => e.category === "protected-activity").map(e => e.sortKey).sort(),
+    [],
+  );
+  const firstProtected = protectedDates[0];
 
-  const [hover, setHover] = useState<{ leader: string; month: string } | null>(null);
-  const monthLabel = (m: string) => {
-    const [y, mm] = m.split("-");
-    return new Date(Number(y), Number(mm) - 1, 1).toLocaleString("en-US", { month: "short", year: "2-digit" });
-  };
+  // Build month bins for the mini-bar lane
+  const months = useMemo(() => {
+    const s = new Set(adverse.map(e => e.sortKey.slice(0, 7)));
+    return Array.from(s).sort();
+  }, [adverse]);
+
+  const colorFor = (cat: string) =>
+    ADVERSE_CATEGORIES.find(c => c.cats.includes(cat))?.color ?? "var(--hud-amber)";
+  const labelFor = (cat: string) =>
+    ADVERSE_CATEGORIES.find(c => c.cats.includes(cat))?.label ?? cat;
+
+  const counts = useMemo(() => {
+    const m: Record<string, number> = {};
+    for (const c of ADVERSE_CATEGORIES) m[c.id] = 0;
+    for (const e of adverse) {
+      const cat = ADVERSE_CATEGORIES.find(c => c.cats.includes(e.category));
+      if (cat) m[cat.id]++;
+    }
+    return m;
+  }, [adverse]);
 
   return (
-    <section id="heatmap" className="hud-panel bg-[color:var(--hud-panel)] p-4">
+    <section id="adverse" className="hud-panel bg-[color:var(--hud-panel)] p-4 flex flex-col">
       <header className="flex items-start justify-between gap-4 pb-3 border-b border-border">
         <div>
-          <div className="hud-eyebrow">Section 02 · Schedule Heatmap</div>
-          <h2 className="mt-1 font-display text-2xl tracking-tight">15-month schedule grid</h2>
-          <p className="mt-1 text-xs text-foreground/70 max-w-md">Each row a leader, each column a month. Lashawnna pinned at top: red = PM/closing. Peers move freely across AM (cyan), Midshift (green), Mid/Late (amber).</p>
+          <div className="hud-eyebrow">Section 02 · Adverse Actions</div>
+          <h2 className="mt-1 font-display text-2xl tracking-tight">Timeline summary</h2>
+          <p className="mt-1 text-xs text-foreground/70 max-w-md">
+            Every documented adverse action taken against Harbin, anchored to the first protected activity ({firstProtected ?? "—"}). Click any row to open its exhibit.
+          </p>
         </div>
-        <Legend />
+        <AdverseLegend />
       </header>
 
-      <div className="mt-4 overflow-x-auto">
-        <div className="inline-block min-w-full">
-          {/* Header row */}
-          <div className="flex">
-            <div className="w-40 shrink-0 sticky left-0 bg-[color:var(--hud-panel)] z-10 font-mono text-[9px] uppercase tracking-wider text-muted-foreground py-1">Leader</div>
-            {months.map(m => (
-              <div key={m} className="w-7 shrink-0 text-center font-mono text-[9px] uppercase text-muted-foreground py-1 [writing-mode:vertical-rl] rotate-180 h-12">
-                {monthLabel(m)}
-              </div>
-            ))}
+      {/* Category counts */}
+      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        {ADVERSE_CATEGORIES.map(c => (
+          <div key={c.id} className="border border-border bg-background/50 px-2.5 py-2">
+            <div className="flex items-center gap-1.5">
+              <span className="inline-block size-2.5" style={{ background: c.color }} />
+              <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">{c.label}</span>
+            </div>
+            <div className="mt-1 font-display text-2xl tracking-tight tabular-nums">{counts[c.id]}</div>
           </div>
-          {leaders.map(l => {
-            const isHarbin = l === "Lashawnna Harbin";
-            return (
-              <div key={l} className={clsx("flex border-t border-border/60", isHarbin && "bg-[color:var(--hud-red)]/8")}>
-                <div className={clsx(
-                  "w-40 shrink-0 sticky left-0 z-10 px-2 py-1.5 text-[11px] truncate",
-                  isHarbin ? "bg-[color:var(--hud-red)]/15 text-foreground font-medium border-l-2 border-[color:var(--hud-red)]" : "bg-[color:var(--hud-panel)] text-foreground/85",
-                )}>
-                  {isHarbin && <span className="mr-1 text-[color:var(--hud-red)]">●</span>}
-                  {l}
-                </div>
-                {months.map(m => {
-                  const c = cells[l]?.[m];
-                  const isHover = hover?.leader === l && hover?.month === m;
-                  return (
-                    <button
-                      key={m}
-                      onMouseEnter={() => setHover({ leader: l, month: m })}
-                      onMouseLeave={() => setHover(null)}
-                      onClick={() => c && open("EX-022", Number(c.pages.match(/\d+/)?.[0] ?? 1))}
-                      className={clsx(
-                        "w-7 h-7 shrink-0 border-r border-b border-border/40 transition-transform",
-                        c && "hover:scale-110 hover:z-20 hover:relative cursor-pointer",
-                        isHover && "ring-1 ring-[color:var(--hud-cyan)] z-20 relative",
-                      )}
-                      style={c ? { background: `color-mix(in oklab, ${SCHEDULE_COLOR[c.type]} 70%, transparent)` } : { background: "transparent" }}
-                      title={c ? `${l} · ${monthLabel(m)} · ${c.type} · EX-022 ${c.pages}` : `${l} · ${monthLabel(m)} · no data`}
-                    />
-                  );
-                })}
-              </div>
-            );
-          })}
+        ))}
+      </div>
+
+      {/* Month strip */}
+      {months.length > 0 && (
+        <div className="mt-4">
+          <div className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground mb-1">Density · {months[0]} → {months[months.length - 1]}</div>
+          <div className="flex gap-px">
+            {months.map(m => {
+              const inMonth = adverse.filter(e => e.sortKey.startsWith(m));
+              const dominant = inMonth[0]?.category;
+              return (
+                <div
+                  key={m}
+                  title={`${m} · ${inMonth.length} action(s)`}
+                  className="flex-1 h-3"
+                  style={{
+                    background: dominant ? colorFor(dominant) : "transparent",
+                    opacity: 0.25 + Math.min(0.75, inMonth.length * 0.2),
+                  }}
+                />
+              );
+            })}
+          </div>
         </div>
+      )}
+
+      {/* Event list (compact, scrollable) */}
+      <div className="mt-4 flex-1 overflow-y-auto max-h-[420px] divide-y divide-border/60 border border-border">
+        {adverse.map(e => {
+          const ex = e.evidenceIds[0];
+          return (
+            <button
+              key={e.id}
+              onClick={() => ex && open(ex)}
+              disabled={!ex}
+              className="w-full text-left px-3 py-2 hover:bg-[color:var(--hud-cyan)]/5 transition-colors disabled:cursor-default group flex gap-3"
+            >
+              <span className="mt-1 inline-block size-2 shrink-0 rounded-full" style={{ background: colorFor(e.category) }} />
+              <div className="min-w-0 flex-1">
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{e.date}</span>
+                  <span className="font-mono text-[9px] uppercase tracking-wider text-foreground/60">{labelFor(e.category)}</span>
+                </div>
+                <div className="mt-0.5 text-[13px] leading-snug text-foreground/90 truncate">{e.title}</div>
+                {ex && (
+                  <div className="mt-0.5 inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-[color:var(--hud-cyan)] opacity-0 group-hover:opacity-100">
+                    {ex} <ExternalLink className="size-3" />
+                  </div>
+                )}
+              </div>
+            </button>
+          );
+        })}
       </div>
 
       <footer className="mt-3 pt-3 border-t border-border flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-muted-foreground">
-        <span>{hover ? `${hover.leader} · ${monthLabel(hover.month)}` : "Hover a cell · click to open EX-022"}</span>
-        <Link to="/schedule-data" className="text-[color:var(--hud-cyan)] hover:underline inline-flex items-center gap-1">
-          Open full table <ExternalLink className="size-3" />
+        <span>{adverse.length} adverse actions on file</span>
+        <Link to="/timeline" className="text-[color:var(--hud-cyan)] hover:underline inline-flex items-center gap-1">
+          Open full timeline <ExternalLink className="size-3" />
         </Link>
       </footer>
     </section>
   );
 }
 
-function Legend() {
-  const items: { t: ScheduleType; label: string }[] = [
-    { t: "AM", label: "AM" },
-    { t: "Midshift", label: "Midshift" },
-    { t: "Mid/Late", label: "Mid/Late" },
-    { t: "PM/Closing", label: "PM / Closing" },
-  ];
+function AdverseLegend() {
   return (
-    <div className="flex flex-wrap gap-2 font-mono text-[9px] uppercase tracking-wider">
-      {items.map(i => (
-        <div key={i.t} className="flex items-center gap-1.5 border border-border bg-background/60 px-2 py-1">
-          <span className="inline-block size-2.5" style={{ background: SCHEDULE_COLOR[i.t] }} />
-          {i.label}
+    <div className="flex flex-wrap gap-1.5 font-mono text-[9px] uppercase tracking-wider">
+      {ADVERSE_CATEGORIES.map(c => (
+        <div key={c.id} className="flex items-center gap-1 border border-border bg-background/60 px-1.5 py-0.5">
+          <span className="inline-block size-2" style={{ background: c.color }} />
+          {c.id}
         </div>
       ))}
     </div>
