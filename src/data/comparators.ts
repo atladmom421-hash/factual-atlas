@@ -12,8 +12,8 @@ export const comparators: ComparatorRow[] = [
     person: "Lashawnna Harbin",
     role: "TL / Unit Manager",
     race: "Black / biracial Black",
-    priorArea: "LVAR — PM closing 1:30 PM–10:00 PM ET (Dec 2024)",
-    laterArea: "LVAR — PM closing 1:30 PM–10:00 PM ET (May 2026). Zero shift movement across 18 months.",
+    priorArea: "LVAR — closing shift ending 10:00 PM ET (Dec 2024)",
+    laterArea: "LVAR — closing shift ending 10:00 PM ET (May 2026). Zero shift movement across 18 months.",
     monthMoved: "— (no movement)",
     waitlist: "Disputed. Added 1/22/2025 → removed 2/25/2025 (Jen Roy, 5 edits in one day) → re-added 7/17/2025 with new date (Edina Markus).",
     ticket: "Disputed / process barrier — told ticket was required; never moved.",
@@ -27,7 +27,7 @@ export const comparators: ComparatorRow[] = [
     person: "Tyler Millisock",
     role: "TL / Unit Manager",
     race: "White",
-    priorArea: "LVAR — 1:30 PM–10:00 PM closing (Jan 2025), same shift as Harbin",
+    priorArea: "LVAR — Closing shift ending 10:00 PM ET (Jan 2025), same shift as Harbin",
     laterArea: "PRE-D / DBC — 11:30 AM–8:00 PM mid/late (Feb 2025 → Jan 2026), then 10:30 AM–7:00 PM midshift (Feb 2026 → May 2026)",
     monthMoved: "Feb 2025 (area + shift); Feb 2026 (shift within PRE-D)",
     waitlist: "Stated NOT on waitlist — still moved. Directly inconsistent with how Harbin's placement was treated as a barrier.",
@@ -249,7 +249,7 @@ export const movementEdges: MovementEdge[] = [
   { id: "m-nesti", personId: "nesti", personName: "Candice Nesti", from: "(Prior placement)", to: "PRE-D · 5:00 AM–1:30 PM early-AM", period: "Apr 2025", status: "confirmed" },
 
   // The non-movement that anchors the case
-  { id: "m-harbin", personId: "harbin", personName: "Lashawnna Harbin", from: "LVAR · 1:30–10 PM closing (Dec 2024)", to: "LVAR · 1:30–10 PM closing (May 2026) — no movement in 18 months", period: "Dec 2024 → May 2026", status: "confirmed" },
+  { id: "m-harbin", personId: "harbin", personName: "Lashawnna Harbin", from: "LVAR · Closing shift ending 10:00 PM ET (Dec 2024)", to: "LVAR · Closing shift ending 10:00 PM ET (May 2026) — no movement in 18 months", period: "Dec 2024 → May 2026", status: "confirmed" },
 ];
 
 export const AREAS = [

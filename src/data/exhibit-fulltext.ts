@@ -159,7 +159,7 @@ Records requested: April 21 communications with Amber Laye; April 22 calibration
 Comparator Movement and Flexibility Map.
 Schedule movement, department movement, waitlist and ticket treatment, performance, flexibility.
 Months reviewed: Dec 2024-Oct 2025 and Feb-May 2026. Schedule patterns: 7:45-4:30, 8:00-4:30, 8:30-4:30, 10:00-6:30, 10:30-7:00, 11:00-7:30, 11:30-8:00, 1:30-10:00.
-Strongest Comparator: Tyler Millisock. Lashawnna Harbin: start April 3, 2023, TL/UM, Black/biracial Black, PM closing Closing shift ending 10:00 PM ET, high performer often #1, rated 4/strong, waitlist placement disputed. Tyler Millisock: start April 3, 2023, TL/UM, White, PM-type Jan 2025 then earlier/midshift 11:30 AM-8:00 PM, lower-medium performer, worked in multiple areas later PRE-D/DBC, not on waitlist per Tyler, no ticket identified.
+Strongest Comparator: Tyler Millisock. Lashawnna Harbin: start April 3, 2023, TL/UM, Black/biracial Black, Closing shift ending 10:00 PM ET, high performer often #1, rated 4/strong, waitlist placement disputed. Tyler Millisock: start April 3, 2023, TL/UM, White, PM-type Jan 2025 then earlier/midshift 11:30 AM-8:00 PM, lower-medium performer, worked in multiple areas later PRE-D/DBC, not on waitlist per Tyler, no ticket identified.
 Primary comparator map:
 - Hunter: PM or similar shift, another department -> AM shift Lashawnna would have accepted. Waitlist issue tied to disputed placement.
 - Marc Case: Same PM shift as Lashawnna; allowed to leave about one hour early; Lashawnna covered his team. Same-shift flexibility comparator.
