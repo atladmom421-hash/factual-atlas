@@ -5,7 +5,7 @@ import { useExhibit } from "@/components/case/ExhibitProvider";
 import { AlertTriangle, Activity, Calendar, Network, Play, Pause, SkipBack, ExternalLink, FileText, Search, RotateCcw, ZoomIn, ZoomOut, ArrowUpRight } from "lucide-react";
 import { clsx } from "clsx";
 
-const SCHEDULE_ROW_COUNT = scheduleRows.length;
+
 
 export const Route = createFileRoute("/command")({
   head: () => ({
