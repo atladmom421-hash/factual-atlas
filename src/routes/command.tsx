@@ -224,42 +224,95 @@ function AdverseActionsSummary() {
         </div>
       )}
 
-      {/* Event list (compact, scrollable) */}
-      <div className="mt-4 flex-1 overflow-y-auto max-h-[420px] divide-y divide-border/60 border border-border">
-        {timeline.map(e => {
-          const ex = e.evidenceIds[0];
-          const isProtected = PROTECTED_CATS.has(e.category);
-          return (
-            <button
-              key={e.id}
-              onClick={() => ex && open(ex)}
-              disabled={!ex}
-              className={clsx(
-                "w-full text-left px-3 py-2 transition-colors disabled:cursor-default group flex gap-3",
-                isProtected
-                  ? "bg-[color:var(--hud-violet,#a78bfa)]/8 hover:bg-[color:var(--hud-violet,#a78bfa)]/15 border-l-2"
-                  : "hover:bg-[color:var(--hud-cyan)]/5",
-              )}
-              style={isProtected ? { borderLeftColor: PROTECTED_COLOR } : undefined}
-            >
-              <span className="mt-1 inline-block size-2 shrink-0 rounded-full" style={{ background: colorFor(e.category) }} />
-              <div className="min-w-0 flex-1">
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{e.date}</span>
-                  <span className="font-mono text-[9px] uppercase tracking-wider" style={{ color: isProtected ? PROTECTED_COLOR : undefined }}>
-                    {isProtected ? "Protected activity" : labelFor(e.category)}
-                  </span>
+      {/* Grouped: each protected activity becomes a trigger header for the
+          adverse actions that follow until the next protected activity. */}
+      <div className="mt-4 flex-1 overflow-y-auto max-h-[480px] space-y-3 pr-1">
+        {(() => {
+          type Group = { trigger: typeof timeline[number] | null; adverse: typeof timeline };
+          const groups: Group[] = [];
+          let current: Group = { trigger: null, adverse: [] };
+          for (const e of timeline) {
+            if (PROTECTED_CATS.has(e.category)) {
+              if (current.trigger || current.adverse.length) groups.push(current);
+              current = { trigger: e, adverse: [] };
+            } else {
+              current.adverse.push(e);
+            }
+          }
+          if (current.trigger || current.adverse.length) groups.push(current);
+
+          const renderRow = (e: typeof timeline[number], isProtected: boolean) => {
+            const ex = e.evidenceIds[0];
+            return (
+              <button
+                key={e.id}
+                onClick={() => ex && open(ex)}
+                disabled={!ex}
+                className={clsx(
+                  "w-full text-left px-3 py-2 transition-colors disabled:cursor-default group flex gap-3",
+                  isProtected ? "hover:bg-[color:var(--hud-violet,#a78bfa)]/15" : "hover:bg-[color:var(--hud-cyan)]/5",
+                )}
+              >
+                <span className="mt-1 inline-block size-2 shrink-0 rounded-full" style={{ background: colorFor(e.category) }} />
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{e.date}</span>
+                    <span className="font-mono text-[9px] uppercase tracking-wider" style={{ color: isProtected ? PROTECTED_COLOR : undefined }}>
+                      {isProtected ? "Protected activity" : labelFor(e.category)}
+                    </span>
+                  </div>
+                  <div className="mt-0.5 text-[13px] leading-snug text-foreground/90 truncate">{e.title}</div>
+                  {ex && (
+                    <div className="mt-0.5 inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-[color:var(--hud-cyan)] opacity-0 group-hover:opacity-100">
+                      {ex} <ExternalLink className="size-3" />
+                    </div>
+                  )}
                 </div>
-                <div className="mt-0.5 text-[13px] leading-snug text-foreground/90 truncate">{e.title}</div>
-                {ex && (
-                  <div className="mt-0.5 inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-[color:var(--hud-cyan)] opacity-0 group-hover:opacity-100">
-                    {ex} <ExternalLink className="size-3" />
+              </button>
+            );
+          };
+
+          return groups.map((g, gi) => {
+            const triggerKey = g.trigger?.sortKey;
+            const lastKey = g.adverse[g.adverse.length - 1]?.sortKey;
+            const gapDays = triggerKey && lastKey
+              ? Math.max(0, Math.round((new Date(lastKey).getTime() - new Date(triggerKey).getTime()) / 86400000))
+              : null;
+            return (
+              <div
+                key={g.trigger?.id ?? `pre-${gi}`}
+                className="border border-border bg-background/40"
+                style={g.trigger ? { borderLeft: `3px solid ${PROTECTED_COLOR}` } : undefined}
+              >
+                {g.trigger ? (
+                  <div className="bg-[color:var(--hud-violet,#a78bfa)]/10 px-3 py-2 border-b border-border/60">
+                    <div className="flex items-center justify-between gap-3">
+                      <span className="font-mono text-[9px] uppercase tracking-[0.18em]" style={{ color: PROTECTED_COLOR }}>
+                        Trigger · Protected activity
+                      </span>
+                      <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
+                        {g.adverse.length} adverse follow-up{g.adverse.length === 1 ? "" : "s"}
+                        {gapDays !== null && g.adverse.length > 0 ? ` · ${gapDays}d span` : ""}
+                      </span>
+                    </div>
+                    {renderRow(g.trigger, true)}
+                  </div>
+                ) : (
+                  <div className="px-3 py-1.5 bg-background/60 border-b border-border/60 font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
+                    Pre-protected baseline
                   </div>
                 )}
+                {g.adverse.length > 0 ? (
+                  <div className="divide-y divide-border/50">
+                    {g.adverse.map(e => renderRow(e, false))}
+                  </div>
+                ) : (
+                  <div className="px-3 py-2 text-[11px] text-muted-foreground italic">No adverse action recorded after this trigger yet.</div>
+                )}
               </div>
-            </button>
-          );
-        })}
+            );
+          });
+        })()}
       </div>
 
       <footer className="mt-3 pt-3 border-t border-border flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-muted-foreground">
