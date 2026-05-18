@@ -165,9 +165,9 @@ function ScheduleDataPage() {
                   <td className="px-3 py-3 align-top text-xs text-foreground/80">{r.significance}</td>
                   <td className="px-3 py-3 align-top">
                     <button
-                      onClick={() => open(r.exhibitId)}
+                      onClick={() => open(r.exhibitId, Number(r.evidencePages.match(/\d+/)?.[0] ?? 1))}
                       className="inline-flex items-center gap-1 rounded-sm bg-secondary px-2 py-1 text-[11px] hover:bg-secondary/70"
-                      title={`Open ${r.exhibitId} — ${r.evidencePages}`}
+                      title={`Open ${r.exhibitId} at ${r.evidencePages}`}
                     >
                       <FileText className="size-3" />
                       {r.exhibitId}

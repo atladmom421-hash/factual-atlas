@@ -3,18 +3,19 @@ import { exhibits } from "@/data";
 import type { Exhibit } from "@/data/types";
 import { ExhibitModal } from "./ExhibitModal";
 
-type Ctx = { open: (id: string) => void };
+type Ctx = { open: (id: string, page?: number) => void };
 const ExhibitContext = createContext<Ctx | null>(null);
 
 export function ExhibitProvider({ children }: { children: ReactNode }) {
   const [current, setCurrent] = useState<Exhibit | null>(null);
+  const [page, setPage] = useState<number | undefined>(undefined);
   return (
-    <ExhibitContext.Provider value={{ open: (id) => {
+    <ExhibitContext.Provider value={{ open: (id, p) => {
       const ex = exhibits.find(e => e.id === id);
-      if (ex) setCurrent(ex);
+      if (ex) { setCurrent(ex); setPage(p); }
     }}}>
       {children}
-      <ExhibitModal exhibit={current} onClose={() => setCurrent(null)} />
+      <ExhibitModal exhibit={current} page={page} onClose={() => { setCurrent(null); setPage(undefined); }} />
     </ExhibitContext.Provider>
   );
 }
