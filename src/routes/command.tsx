@@ -141,18 +141,15 @@ const PROTECTED_CATS = new Set(["protected-activity", "hr-complaint"]);
 
 function AdverseActionsSummary() {
   const { open } = useExhibit();
-  const adverse = useMemo(() => {
+  const timeline = useMemo(() => {
     const allCats = new Set(ADVERSE_CATEGORIES.flatMap(c => c.cats));
     return events
       .filter(e => allCats.has(e.category))
       .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
   }, []);
-
-  const protectedDates = useMemo(
-    () => events.filter(e => e.category === "protected-activity").map(e => e.sortKey).sort(),
-    [],
-  );
-  const firstProtected = protectedDates[0];
+  const adverse = useMemo(() => timeline.filter(e => !PROTECTED_CATS.has(e.category)), [timeline]);
+  const protectedEvents = useMemo(() => timeline.filter(e => PROTECTED_CATS.has(e.category)), [timeline]);
+  const firstProtected = protectedEvents[0]?.sortKey;
 
   // Build month bins for the mini-bar lane
   const months = useMemo(() => {
