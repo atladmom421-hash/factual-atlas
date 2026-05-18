@@ -61,6 +61,13 @@ function TimelinePage() {
         <p className="mt-3 text-foreground/75">From the late-2023 temporary PM assignment through the May 2026 Karena Lesure concession. Filter by category, person, or year.</p>
       </div>
 
+      <div className="mt-8 grid gap-5 lg:grid-cols-[1.4fr_1fr]">
+        <LegalTheorySnapshot />
+        <TopExhibitsCard />
+      </div>
+
+
+
       {/* Filters */}
       <div className="no-print mt-8 space-y-3 rounded-md border border-border bg-card p-4">
         <FilterRow label="Category" value={category} onChange={setCategory} options={[{ value: "all", label: "All categories" }, ...Object.entries(CATEGORY_LABELS).map(([value, label]) => ({ value, label }))]} />
