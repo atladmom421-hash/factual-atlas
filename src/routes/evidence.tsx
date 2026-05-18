@@ -36,7 +36,7 @@ const CATEGORY_BLURB: Record<string, string> = {
   "schedule-waitlist": "Waitlist placement, mid-shift requests, temp-vs-permanent inconsistencies.",
   "performance": "Performance history, rating drops, and ranking evidence.",
   "department-movement": "Cross-area moves granted to comparators while Lashawnna stayed fixed.",
-  "deleted-evidence": "Deleted Teams messages, missing tickets, and records-integrity concerns.",
+  "deleted-evidence": "Missing, deleted, altered, or inconsistent records — Teams messages, waitlist tickets, and version history.",
   "protected-activity": "EEOC charges, formal complaints, and other protected acts.",
   "hr-complaint": "HR / Ethics complaints and intake transcripts.",
   "retaliation": "Adverse actions following protected activity.",

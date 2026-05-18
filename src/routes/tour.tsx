@@ -82,7 +82,7 @@ const steps: Step[] = [
     icon: Calendar,
     eyebrow: "Step 4 of 5 · Schedule pattern",
     title: "15 months of schedule screenshots — the pattern visualized.",
-    lead: "EX-022 captures month-by-month schedules from Dec 2024 through May 2026. The filterable schedule table makes the disparate treatment visible in a single view: Lashawnna fixed on PM/Closing, peers moving freely across AM, Midshift, and Mid/Late shifts.",
+    lead: "EX-022 captures month-by-month schedules from Dec 2024 through May 2026. The filterable schedule table puts the pattern in one view: Lashawnna fixed on PM/Closing while peers move across AM, Midshift, and Mid/Late shifts. Readers draw their own inference.",
     bullets: [
       "32-row dataset covering Dec 2024 – May 2026.",
       "Filter by schedule type, year, or \"Harbin only\" to isolate the contrast.",

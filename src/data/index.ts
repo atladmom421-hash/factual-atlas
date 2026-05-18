@@ -17,7 +17,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
   "performance": "Performance Evidence",
   "leave": "Leave / Return from Leave",
   "internal-investigation": "Internal Investigation",
-  "deleted-evidence": "Deleted Evidence Concern",
+  "deleted-evidence": "Record Preservation Concern",
 };
 
 export const STATUS_LABELS: Record<string, string> = {

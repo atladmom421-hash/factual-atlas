@@ -4,6 +4,8 @@ import { eventsSorted, CATEGORY_LABELS, people } from "@/data";
 import { TimelineEventCard } from "@/components/case/TimelineEventCard";
 import { clsx } from "clsx";
 import { useHashFocus } from "@/components/case/useHashFocus";
+import { LegalTheorySnapshot } from "@/components/case/LegalTheorySnapshot";
+import { TopExhibitsCard } from "@/components/case/TopExhibitsCard";
 
 export const Route = createFileRoute("/timeline")({
   head: () => ({
@@ -58,6 +60,13 @@ function TimelinePage() {
         <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">Every event, in order.</h1>
         <p className="mt-3 text-foreground/75">From the late-2023 temporary PM assignment through the May 2026 Karena Lesure concession. Filter by category, person, or year.</p>
       </div>
+
+      <div className="mt-8 grid gap-5 lg:grid-cols-[1.4fr_1fr]">
+        <LegalTheorySnapshot />
+        <TopExhibitsCard />
+      </div>
+
+
 
       {/* Filters */}
       <div className="no-print mt-8 space-y-3 rounded-md border border-border bg-card p-4">
