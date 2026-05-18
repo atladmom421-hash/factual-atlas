@@ -140,17 +140,30 @@ function TimelinePage() {
   );
 }
 
-function FilterRow({ label, value, onChange, options }: { label: string; value: string; onChange: (v: string) => void; options: { value: string; label: string }[] }) {
+function FilterRow({ label, value, onChange, options, counts }: { label: string; value: string; onChange: (v: string) => void; options: { value: string; label: string }[]; counts?: Record<string, number> }) {
   return (
     <div className="flex flex-wrap items-center gap-2">
       <div className="w-20 text-[10px] uppercase tracking-wider text-muted-foreground">{label}</div>
       <div className="flex flex-wrap gap-1.5">
-        {options.map(o => (
-          <button key={o.value} onClick={() => onChange(o.value)} className={clsx(
-            "rounded-full px-3 py-1 text-xs transition-colors",
-            value === o.value ? "bg-navy text-navy-foreground" : "bg-secondary text-foreground/75 hover:bg-secondary/70"
-          )}>{o.label}</button>
-        ))}
+        {options.map(o => {
+          const n = counts?.[o.value];
+          const empty = counts && n === 0 && o.value !== value;
+          return (
+            <button
+              key={o.value}
+              onClick={() => onChange(o.value)}
+              disabled={empty}
+              className={clsx(
+                "rounded-full px-3 py-1 text-xs transition-colors inline-flex items-center gap-1.5",
+                value === o.value ? "bg-navy text-navy-foreground" : "bg-secondary text-foreground/75 hover:bg-secondary/70",
+                empty && "opacity-40 cursor-not-allowed hover:bg-secondary",
+              )}
+            >
+              {o.label}
+              {counts && <span className={clsx("font-mono text-[10px] tabular-nums", value === o.value ? "text-navy-foreground/70" : "text-muted-foreground")}>{n ?? 0}</span>}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
