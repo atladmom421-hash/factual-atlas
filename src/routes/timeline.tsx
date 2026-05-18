@@ -4,6 +4,8 @@ import { eventsSorted, CATEGORY_LABELS, people } from "@/data";
 import { TimelineEventCard } from "@/components/case/TimelineEventCard";
 import { clsx } from "clsx";
 import { useHashFocus } from "@/components/case/useHashFocus";
+import { LegalTheorySnapshot } from "@/components/case/LegalTheorySnapshot";
+import { TopExhibitsCard } from "@/components/case/TopExhibitsCard";
 
 export const Route = createFileRoute("/timeline")({
   head: () => ({
