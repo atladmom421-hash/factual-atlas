@@ -36,7 +36,7 @@ export const scheduleRows: ScheduleRow[] = [
   { id: "s-2024-12-e", month: "December 2024", sortKey: "2024-12", area: "LVAR", scheduleType: "PM/Closing", timeRange: "1:30 PM–10:00 PM ET (closing)", leaders: ["Lashawnna Harbin", "Marc Case"], exhibitId: "EX-022", evidencePages: "pp. 9–10", significance: "Harbin fixed on PM/closing baseline alongside Marc Case — establishes the PM cohort entering the movement window.", highlightHarbin: true },
 
   // ── Jan 2025 ─────────────────────────────────────────────
-  { id: "s-2025-01-a", month: "January 2025", sortKey: "2025-01", area: "LVAR", scheduleType: "PM/Closing", timeRange: "Closing shift ending 10:00 PM ET", leaders: ["Lashawnna Harbin", "Tyler Millisock", "Marc Case"], exhibitId: "EX-022", evidencePages: "p. 5", significance: "Establishes that Tyler, Marc, and Harbin were all on the same PM-type schedule before movement.", highlightHarbin: true },
+  { id: "s-2025-01-a", month: "January 2025", sortKey: "2025-01", area: "LVAR", scheduleType: "PM/Closing", timeRange: "1:30 PM–10:00 PM ET (closing)", leaders: ["Lashawnna Harbin", "Tyler Millisock", "Marc Case"], exhibitId: "EX-022", evidencePages: "p. 5", significance: "Establishes that Tyler, Marc, and Harbin were all on the same PM-type schedule before movement.", highlightHarbin: true },
   { id: "s-2025-01-b", month: "January 2025", sortKey: "2025-01", area: "Cross-area", scheduleType: "AM", timeRange: "8:00 AM–4:30 PM / 10:00 AM–6:30 PM", leaders: ["Marissa Mascarenas"], exhibitId: "EX-022", evidencePages: "pp. 9–10", significance: "Earlier and midshift schedules confirmed available." },
 
   // ── Feb 2025 ─────────────────────────────────────────────
