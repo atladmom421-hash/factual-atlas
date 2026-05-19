@@ -88,6 +88,33 @@ export function WaitlistStatusTimeline() {
           <span className="font-medium text-foreground"> still absent on Jul 3</span>, while juniors who requested
           AM <em>after</em> her continue to appear and "Qualify."
         </p>
+
+        <div className="mt-4 rounded-md border border-amber-500/40 bg-amber-500/[0.08] p-3 text-[12px] leading-relaxed text-foreground/90">
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-300">
+            Misrepresentation between Jul 3 and Jul 17, 2025
+          </div>
+          <ul className="mt-1 list-disc space-y-1 pl-5">
+            <li>
+              <span className="font-medium">Jul 14 ~8:52 AM</span> — Jen Roy sends Allan a 5-row "Shift Change Request" snippet that
+              <em> includes</em> Harbin (LVAR · PM → AM). Allan forwards it to Harbin as proof she is on the list.
+              <button onClick={() => open("EX-041")} className="ml-1 rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] hover:bg-secondary/70">EX-041</button>
+            </li>
+            <li>
+              <span className="font-medium">Same day</span> — the controlling SharePoint waitlist (last saved Jul 3, unchanged through Jul 16) does <em>not</em> contain Harbin.
+              <button onClick={() => open("EX-044")} className="ml-1 rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] hover:bg-secondary/70">EX-044</button>
+            </li>
+            <li>
+              The snippet strips every column the real waitlist uses to process candidates: <span className="font-mono">Date Requested · Months as CAR TL · Temp/Perm · Qualifies</span>.
+            </li>
+            <li>
+              <span className="font-medium">Jul 16</span> — Edina Markus finally re-adds Harbin, with a "Date Requested" of
+              <span className="font-mono"> 7/17/2025</span> — a date that <em>post-dates</em> Harbin's own inquiry and Jen's Jul 14 snippet (chronological impossibility for a legitimate intake), and silently flips status from Temporary to Permanent without ticket or director approval.
+              <button onClick={() => open("EX-048")} className="ml-1 rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] hover:bg-secondary/70">EX-048</button>
+              <Link to="/timeline" hash="evt-e-2025-07-17-readded" className="ml-1 inline-flex items-center gap-0.5 rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] hover:bg-secondary/70">timeline <ArrowUpRight className="size-2.5" /></Link>
+            </li>
+          </ul>
+        </div>
+
       </header>
 
       {/* Grid */}
