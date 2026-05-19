@@ -1179,6 +1179,20 @@ KEY ADMISSIONS / DISPUTES (summary for the record)
     ],
     fileKind: "image",
   },
+  {
+    id: "EX-058",
+    exhibitNumber: "EX-058",
+    fileName: "April 22, 2026 — Director Jake (Recovery) all-hands transcript: Backbook Wave 2 selection and schedule-based placement",
+    date: "April 22, 2026 (live meeting, exempt leadership audience)",
+    category: "Acquisition transition / selection criteria",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Verbatim transcript of an April 22, 2026 leadership meeting led by Jake, Director of Recovery on the legacy Discover side, announcing Backbook Wave 2 selections for transition to the Capital One ('blue') side of the post-acquisition org. Key admissions on the record:\n\n• PRIORITIZATION: First priority is staffing legacy 'orange' (Discover) customers; second is releasing excess agent capacity to 'blue' (Capital One). Selection began 'with the Lens of the agent' and looked at where there was 'excess capacity of agent staffing over all of our hours.'\n\n• SCHEDULE AS A SELECTION CRITERION (direct quotes): 'We looked at what shifts did they work. And how many of them are on unique teams and tried to keep as much as we could together to make this selection process to move through.' Later, when asked specifically about schedule mechanics: 'When we looked at schedule placement, we looked basically at the start time of their schedules… we looked at the start time of the shift for placement.' Jake also said the teams are 'focused very much on schedule alignment.'\n\n• NAMES ANNOUNCED FOR WAVE 2 (legacy Recovery → Capital One): Department Managers — Darren Hunt, Trevor Howe (joining Scott and Michelle already on the Capital One side). Unit Managers / TLs called out by name include Jare, Julie, Gabby, Steve, Will (early stage), Envelope/Crystal/Michelle (MVAR/CVAR per context), and — for HVAR — Alex and Cody. Coaches will be aligned 1-for-1 with teams that move, per Jake's planned Friday meeting.\n\n• TRAINING CADENCE: 3-week training cycles run May / June / July 2026. Wave 2 transition goes live at end of July 2026. CAR teams are in the June and July training cohorts.\n\n• REPORTING: Selected agents continue to report to legacy 'orange' (Jake's) org through the training months and only switch reporting lines to the new 'blue' UMs in May (early stage) or June (MR teams) ahead of the end-of-July go-live.\n\n• SELECTION PROCESS COMMUNICATIONS: Leaders were read in the week of April 21, 2026 ('I got read into this on Monday'). Selected and non-selected agents both receive emails the following Tuesday; final work and training schedules are released by May 1, 2026.\n\n• OPERATING MODEL DIFFERENCE: Capital One side uses a blended inbound/outbound team structure (outbound = legacy-collections approach; inbound = ~10–20% outbound blend plus servicing/universal inquiry mix). This means schedule and shift placement on the legacy side directly drives which Capital One team structure a leader can be slotted into.\n\nKEY EVIDENTIARY POINT: Director-level, on-the-record admission that shift start time and schedule alignment were primary inputs to Wave 2 selection. Harbin has been locked on PM/Closing on the LVAR side since February 2024 despite the documented waitlist record (EX-008, EX-022, EX-044, EX-046, EX-048) and despite repeated requests dating to 2023. That same schedule the employer controlled is now the gate for who moves to the post-acquisition Capital One side. Cody Christensen — a direct AM-anchored comparator on the schedule matrix — was named as a Wave 2 selectee for HVAR; Harbin (LVAR, pinned PM) was not. Converts the schedule denial from a quality-of-life complaint into a tangible adverse action affecting post-acquisition placement.",
+    linkedEventIds: ["e-2026-04-22-jake-wave2-transcript"],
+    reliability: "transcript",
+    filePath: "",
+    fileKind: "text",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);

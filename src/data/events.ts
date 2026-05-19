@@ -1299,6 +1299,19 @@ export const events: TimelineEvent[] = [
     status: "confirmed-screenshot",
     chapterId: "ch2",
   },
+  {
+    id: "e-2026-04-22-jake-wave2-transcript",
+    date: "April 22, 2026",
+    sortKey: "2026-04-22",
+    title: "Director Jake announces Backbook Wave 2 — schedule is an explicit selection criterion; Cody named, Harbin not",
+    category: "schedule-waitlist",
+    description: "Director Jake (Recovery, legacy Discover side) held a live leadership meeting announcing Backbook Wave 2 selections for the transition to the Capital One ('blue') side of the post-acquisition organization. On the record, Jake stated selection began 'with the Lens of the agent,' looked at where there was 'excess capacity of agent staffing,' and then 'looked at what shifts did they work… tried to keep as much as we could together.' When asked specifically about schedule mechanics he confirmed: 'we looked basically at the start time of their schedules… we looked at the start time of the shift for placement.' Jake also described the team focus as 'very much on schedule alignment.' Named Wave 2 DMs: Darren Hunt and Trevor Howe. Named UMs/TLs include Jare, Julie, Gabby, Steve, Will, Envelope/Crystal/Michelle, and — for HVAR — Alex and Cody. Wave 2 goes live end of July 2026; CAR teams train in June/July. Harbin (LVAR, pinned PM/Closing since Feb 2024) was not named.",
+    peopleIds: ["harbin", "allan"],
+    evidenceIds: ["EX-058", "EX-022", "EX-008", "EX-044", "EX-046", "EX-048"],
+    whyItMatters: "Director-level admission that shift start time and schedule alignment were primary inputs to Wave 2 selection. The same schedule the employer controlled — and that the documented waitlist manipulation (EX-044, EX-046, EX-048) kept Harbin from changing — is now the gate for who moves to the post-acquisition Capital One side. Cody Christensen, a direct AM-anchored comparator on the leader shift matrix, was named as a Wave 2 selectee; Harbin was not. This converts the schedule lock-in from a quality-of-life complaint into a tangible adverse action affecting post-acquisition placement, and is a fresh, independently actionable adverse decision occurring after the EEOC charge — restarting the limitations clock and supporting both Muldrow-era adverse-action analysis and a cat's-paw theory (Jen Roy's waitlist manipulation → Harbin pinned to PM → ineligible under Jake's 'start time of shift' criterion).",
+    status: "confirmed-screenshot",
+    chapterId: "ch2",
+  },
 ];
 
 export const eventsSorted = [...events].sort((a, b) => a.sortKey.localeCompare(b.sortKey));
