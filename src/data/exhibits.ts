@@ -750,7 +750,7 @@ Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pa
     linkedEventIds: [
       "e-2024-04-26-not-on-waitlist",
       "e-2025-02-22-jen-deleted",
-      "e-2025-07-16-waitlist-readded",
+      "e-2025-07-17-readded",
     "e-2026-04-22-jake-wave2-transcript"],
     reliability: "confirmed-screenshot",
     filePath: "/exhibits/EX-022-schedule-movement-comparator-evidence.pdf",
@@ -771,7 +771,7 @@ Me: Yeah, I mean, but they're just like terrible. You know, like 9, 8% Direct pa
       "e-2024-05-permanent-pm-misrepresentation",
       "e-2025-02-22-jen-deleted",
       "e-2025-07-14-jen-allan-waitlist",
-      "e-2025-07-16-readded",
+      "e-2025-07-17-readded",
       "e-2025-mid-allan-2yrs-thread",
     ],
     reliability: "confirmed-screenshot",
