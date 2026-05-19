@@ -318,7 +318,7 @@ export const events: TimelineEvent[] = [
     category: "deleted-evidence",
     description: "Re-added to the waitlist by Admin Edina Markus on July 16, 2025. The record showed a 'Date Requested' of July 17, 2025 — a date AFTER Harbin had already asked Allan about her waitlist position (raised again on/around July 9–14) and AFTER Jen Roy's July 14 snippet had falsely depicted her as already on the list. The original mid-shift request had existed since 2024 (6/26/2024 per the Jan 22, 2025 snapshot, EX-046). Status was also silently flipped from Temporary to Permanent without ticket, written notice, or director approval.",
     peopleIds: ["harbin", "markus", "jen-roy"],
-    evidenceIds: ["EX-008", "EX-048", "EX-046", "EX-041"],
+    evidenceIds: ["EX-008", "EX-048", "EX-046", "EX-041", "EX-022", "EX-040"],
     whyItMatters: "Resets seniority to dead-last using a date that post-dates Harbin's own inquiry — a chronological impossibility for a legitimate intake. Combined with the July 14 misrepresentation and the silent Temporary→Permanent flip (which SOW requires documentation and director approval for), this is the operative manipulation of the controlling waitlist record.",
     status: "confirmed-screenshot",
     chapterId: "ch8",
