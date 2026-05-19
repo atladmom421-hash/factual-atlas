@@ -95,9 +95,14 @@ export function WaitlistStatusTimeline() {
           </div>
           <ul className="mt-1 list-disc space-y-1 pl-5">
             <li>
-              <span className="font-medium">Jul 14 ~8:52 AM</span> — Jen Roy sends Allan a 5-row "Shift Change Request" snippet that
-              <em> includes</em> Harbin (LVAR · PM → AM). Allan forwards it to Harbin as proof she is on the list.
+              <span className="font-medium">Jul 14 · 8:51 AM</span> — Allan asks Jen "do you know where she falls on the waitlist by chance?"
+            </li>
+            <li>
+              <span className="font-medium">Jul 14 · 8:52 AM (≈60 seconds later)</span> — Jen replies with a 5-row "Shift Change Request" snippet that <em>includes</em> Harbin (LVAR · PM → AM), Allan says "Thank you," Jen says "No problem." The entire exchange — open the file, locate Harbin, crop/edit out the 4 material columns, screenshot, and send — completes inside a single minute.
               <button onClick={() => open("EX-041")} className="ml-1 rounded-sm bg-secondary px-1.5 py-0.5 text-[10px] hover:bg-secondary/70">EX-041</button>
+            </li>
+            <li>
+              <span className="font-medium">Inference</span> — a ≈60-second turnaround is not consistent with pulling the live waitlist on demand; it is consistent with a pre-prepared / already-open sanitized view being screenshotted and forwarded.
             </li>
             <li>
               <span className="font-medium">Same day</span> — the controlling SharePoint waitlist (last saved Jul 3, unchanged through Jul 16) does <em>not</em> contain Harbin.
