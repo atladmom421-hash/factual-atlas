@@ -7,6 +7,10 @@
     "dev": "vite dev",
     "build": "vite build",
     "build:dev": "vite build --mode development",
+    "prebuild": "bun run check:events",
+    "prebuild:dev": "bun run check:events",
+    "check:events": "bun run scripts/check-events.ts",
+    "check:events:fix": "bun run scripts/check-events.ts --fix",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
