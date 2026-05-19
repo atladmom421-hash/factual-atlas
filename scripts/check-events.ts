@@ -134,7 +134,8 @@ function applyFix() {
     if (toAdd.length === 0) return { src, changed: false };
 
     const trimmed = inner.replace(/\s+$/, "");
-    const sep = trimmed.length === 0 || trimmed.endsWith("[") ? "" : ", ";
+    const needsComma = trimmed.length > 0 && !trimmed.endsWith(",") && !trimmed.endsWith("[");
+    const sep = trimmed.length === 0 ? "" : (needsComma ? ", " : " ");
     const insertion = sep + toAdd.map(id => `"${id}"`).join(", ");
     const newSrc = src.slice(0, arrEnd) + insertion + src.slice(arrEnd);
     return { src: newSrc, changed: true };
