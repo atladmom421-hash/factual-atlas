@@ -105,11 +105,11 @@ function PerformancePage() {
   return (
     <div className="mx-auto max-w-[1400px] px-5 py-10">
       <header className="border-b-2 border-border pb-6">
-        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Section 09 · Performance Record</div>
-        <h1 className="mt-2 font-display text-4xl md:text-5xl">Performance Evaluations</h1>
+        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Section 09 · Performance</div>
+        <h1 className="mt-2 font-display text-4xl md:text-5xl">Performance Reviews</h1>
         <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
-          Year-over-year evaluations, manager vs. employee sub-ratings, objective team metrics, and the
-          CAR 2025 TL Scorecard — assembled to test whether the 2024 "Solid" downgrade is supported by the record.
+          Two years of reviews, the manager's scores vs. Harbin's scores, the team numbers, and the
+          monthly scorecard — does the 2024 rating drop match what the record actually shows?
         </p>
       </header>
 
