@@ -237,7 +237,16 @@ function PerformancePage() {
             </tbody>
           </table>
         </div>
+        <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">TH Metrics screenshots (EX-056)</div>
+          <EvidenceThumbs items={[
+            { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-2023-rascart-sharbi1.jpeg", caption: "2023 RASCART/SHARBI1" },
+            { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-rascart-2024.jpeg", caption: "2024 RASCART" },
+            { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-sharbi1-2024.jpeg", caption: "2024 SHARBI1" },
+          ]} />
+        </div>
       </section>
+
 
       {/* Scorecard */}
       <section className="mt-10">
