@@ -452,6 +452,8 @@ function HardshipThreadPage() {
           policy's twice-weekly funding cadence did not apply once documentation was received.
         </p>
       </div>
+
+      <PrintEvidenceAppendix exhibitIds={["EX-003","EX-021","EX-007"]} />
     </div>
   );
 }
