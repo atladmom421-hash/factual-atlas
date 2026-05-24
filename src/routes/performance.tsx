@@ -261,8 +261,8 @@ function PerformancePage() {
 
       {/* Scorecard */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">CAR 2025 TL Scorecard — monthly overall (EX-057)</h2>
-        <p className="mt-2 text-sm text-muted-foreground">YTD 3.93 · Q1 3.72 · Q2 4.09 · Q3 3.99. The scorecard explicitly notes data-driven results can be overridden by the direct manager in calibration.</p>
+        <h2 className="font-display text-2xl">2025 monthly scorecard (EX-057)</h2>
+        <p className="mt-2 text-sm text-muted-foreground">Year-to-date 3.93 out of 5. Scores stayed strong every month. The scorecard itself says a manager can override these numbers during calibration — which is what happened here.</p>
         <div className="mt-4 rounded-sm border-2 border-border bg-[color:var(--hud-panel)] p-4">
           <div className="grid grid-cols-9 gap-2">
             {scorecard.map(s => {
