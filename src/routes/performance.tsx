@@ -242,7 +242,7 @@ function PerformancePage() {
                   <td className="px-3 py-2">{r.metric}</td>
                   <td className="px-3 py-2 font-mono">{r.y2023}</td>
                   <td className="px-3 py-2 font-mono">{r.y2024}</td>
-                  <td className="px-3 py-2"><span className="text-emerald-400">▲ improved</span></td>
+                  <td className="px-3 py-2"><span className="text-emerald-400">▲ better</span></td>
                 </tr>
               ))}
             </tbody>
