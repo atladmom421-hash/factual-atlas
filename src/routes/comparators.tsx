@@ -226,6 +226,8 @@ function ComparatorsPage() {
       <div className="mt-6 rounded-md border-l-2 border-accent bg-accent/5 px-5 py-4 text-sm text-foreground/85">
         <strong className="text-foreground">Core question:</strong> If Respondent had the ability to move leaders across areas, place leaders into earlier or midshift schedules, allow early-leave flexibility, and make assignment exceptions, why was Lashawnna kept in the same general area and PM / closing schedule despite strong performance, documented schedule requests, disputed waitlist concerns, and protected complaints?
       </div>
+
+      <PrintEvidenceAppendix exhibitIds={["EX-022", "EX-010", "EX-048", "EX-049", "EX-058"]} />
     </div>
   );
 }
