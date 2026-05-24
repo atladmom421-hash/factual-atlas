@@ -115,17 +115,17 @@ function PerformancePage() {
 
       {/* YoY snapshot */}
       <section className="mt-8">
-        <h2 className="font-display text-2xl">Year-over-year snapshot</h2>
+        <h2 className="font-display text-2xl">2023 vs. 2024 at a glance</h2>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
               <tr>
                 <th className="px-3 py-2">Year</th>
-                <th className="px-3 py-2">Manager</th>
-                <th className="px-3 py-2">Overall (Mgr)</th>
-                <th className="px-3 py-2">Self-rating</th>
-                <th className="px-3 py-2">Bonus payout</th>
-                <th className="px-3 py-2">Exhibits</th>
+                <th className="px-3 py-2">Who wrote it</th>
+                <th className="px-3 py-2">Manager's score</th>
+                <th className="px-3 py-2">Harbin's score</th>
+                <th className="px-3 py-2">Bonus paid</th>
+                <th className="px-3 py-2">Proof</th>
               </tr>
             </thead>
             <tbody>
@@ -143,8 +143,8 @@ function PerformancePage() {
           </table>
         </div>
         <p className="mt-3 text-xs text-muted-foreground">
-          Overall rating dropped one step (STRONG → SOLID) while bonus payout reached <span className="text-foreground font-medium">124.36% of target</span> —
-          an internal contradiction: pay reflected performance, the headline label did not.
+          The rating dropped one level (Strong → Solid), but the bonus paid out at <span className="text-foreground font-medium">124.36% of target</span>.
+          The paycheck says she performed; the label says she didn't.
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           <div className="rounded-sm border-2 border-emerald-500/30 bg-emerald-500/5 p-3">
