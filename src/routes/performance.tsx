@@ -68,6 +68,36 @@ function ExhibitChip({ id }: { id: string }) {
   );
 }
 
+/** Render evidence image thumbnails inline next to a point. */
+function EvidenceThumbs({
+  items,
+  size = "md",
+}: {
+  items: { exhibitId: string; src: string; caption?: string }[];
+  size?: "sm" | "md";
+}) {
+  const { open } = useExhibit();
+  const dim = size === "sm" ? "h-20 w-28" : "h-32 w-44";
+  return (
+    <div className="flex flex-wrap gap-2">
+      {items.map((it, i) => (
+        <button
+          key={i}
+          onClick={() => open(it.exhibitId)}
+          className={`group relative overflow-hidden rounded-sm border-2 border-border bg-black/40 ${dim} hover:border-cyan-400/60`}
+          title={`${it.exhibitId}${it.caption ? " — " + it.caption : ""}`}
+        >
+          <img src={it.src} alt={it.caption || it.exhibitId} className="h-full w-full object-cover object-top transition group-hover:scale-105" loading="lazy" />
+          <span className="absolute bottom-0 left-0 right-0 bg-black/70 px-1 py-0.5 text-left font-mono text-[9px] text-cyan-200">
+            {it.exhibitId}{it.caption ? ` · ${it.caption}` : ""}
+          </span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+
 function PerformancePage() {
   const { open } = useExhibit();
   const perfExhibits = exhibits.filter(e => PERF_EXHIBIT_IDS.includes(e.id));
