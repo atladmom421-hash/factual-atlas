@@ -193,11 +193,15 @@ function PerformancePage() {
                 <span className="font-mono"> $2,169.04</span>, which is ~25% short.
               </li>
               <li>
-                Working backwards: <span className="font-mono">$2,169.04 ÷ 5% = $43,380.80</span> — that's the salary the target was actually computed against, not the $58,000 shown above it.
+                Working backwards: <span className="font-mono">$2,169.04 ÷ 5% = $43,380.80</span> — that's the salary the target was actually computed against.
               </li>
               <li>
-                The gap is consistent with a <span className="font-semibold">prorated / partial-year eligibility</span> (e.g., mid-year promotion or grade change), but the comp statement doesn't disclose the proration — it just shows the full $58,000 as "Bonus Eligible."
+                <span className="font-semibold text-emerald-200">That number now has a clean explanation.</span> Harbin's hire date was
+                <span className="font-mono"> April 3, 2023</span>. From Apr 3 → Dec 31 = 273 days (74.79% of the year).
+                <span className="font-mono"> $58,000 × 273/365 = $43,378.36</span> — within $2 of the implied base. The 2023 bonus was
+                <span className="font-semibold"> prorated for partial-year service</span>, but the comp statement never says so — it just shows the full $58,000 above a target that doesn't match.
               </li>
+
               <li>
                 The rest of the math is internally consistent:
                 <span className="font-mono"> $2,169.04 × 87.80% × 115.02% = $2,190.51 ≈ $2,190.00 </span>
