@@ -16,8 +16,8 @@ export const Route = createFileRoute("/performance")({
 const PERF_EXHIBIT_IDS = ["EX-050", "EX-051", "EX-052", "EX-053", "EX-054", "EX-056", "EX-057"];
 
 const compRows = [
-  { year: "2023", manager: "Rosanna Blackson", overall: "STRONG", self: "OUTSTANDING", bonus: "—", payout: "—", exhibits: ["EX-050", "EX-052", "EX-054"] },
-  { year: "2024", manager: "Allan Glover", overall: "SOLID", self: "OUTSTANDING", bonus: "Higher target", payout: "124.36% of target", exhibits: ["EX-051", "EX-053"] },
+  { year: "2023", manager: "Rosanna Blackson (author & admin)", overall: "STRONG", self: "OUTSTANDING", bonus: "—", payout: "—", exhibits: ["EX-050", "EX-052", "EX-054"] },
+  { year: "2024", manager: "Rosanna Blackson (author) · Allan Glover (admin)", overall: "SOLID", self: "OUTSTANDING", bonus: "Higher target", payout: "124.36% of target", exhibits: ["EX-051", "EX-053"] },
 ];
 
 const subRatings = [
@@ -157,7 +157,7 @@ function PerformancePage() {
             ]} />
           </div>
           <div className="rounded-sm border-2 border-amber-500/30 bg-amber-500/5 p-3">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · SOLID · Glover</div>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · SOLID · Authored by Rosanna · Administered by Allan</div>
             <EvidenceThumbs items={[
               { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "Comp · 124.36%" },
               { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "Overall p1" },
@@ -172,6 +172,17 @@ function PerformancePage() {
       <section className="mt-10">
         <h2 className="font-display text-2xl">Sub-ratings — manager vs. employee (2024)</h2>
         <p className="mt-2 text-sm text-muted-foreground">Every individual goal received SOLID or STRONG. Not a single goal was rated below SOLID, yet the overall headline was downgraded.</p>
+        <div className="mt-3 rounded-sm border-2 border-rose-500/40 bg-rose-500/5 p-3 text-xs text-rose-100">
+          <span className="font-mono uppercase tracking-wider text-rose-300">Conflict of interest · </span>
+          The 2024 review was <span className="font-semibold">authored by Rosanna Blackson</span> — the same manager named in Harbin's initial internal complaint —
+          and administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated that
+          <span className="font-semibold"> Rosanna had set the rating</span> and that he could not provide a substantive justification.
+        </div>
+        <div className="mt-3 grid gap-2 md:grid-cols-3 text-[11px]">
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Author</span><div className="text-foreground">Rosanna Blackson</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Administered by</span><div className="text-foreground">Allan Glover</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Allan's explanation</span><div className="text-foreground">"Rosanna did this" — no further clarification</div></div>
+        </div>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
@@ -314,6 +325,11 @@ function PerformancePage() {
               ] },
             { h: "Manager admission", b: "Allan separately told HR Harbin was 'the best team lead he's got' (EX-049), contradicting any performance-based defense of the downgrade.",
               thumbs: [] },
+            { h: "Conflict of interest in authorship", b: "The 2024 evaluation was authored by Rosanna Blackson — the same manager named in Harbin's initial internal complaint — and merely administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated Rosanna had set the rating and could not provide any substantive justification. A retaliation respondent should not be the scoring authority on a complainant's review.",
+              thumbs: [
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "2024 overall p1" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall narrative" },
+              ] },
           ]).map((row, i) => (
             <li key={row.h} className="rounded-sm border-2 border-border bg-card p-4">
               <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
