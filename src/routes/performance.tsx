@@ -157,7 +157,7 @@ function PerformancePage() {
             ]} />
           </div>
           <div className="rounded-sm border-2 border-amber-500/30 bg-amber-500/5 p-3">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · SOLID · Authored by Rosanna · Administered by Allan</div>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · Solid · Written by Rosanna · Delivered by Allan</div>
             <EvidenceThumbs items={[
               { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "Comp · 124.36%" },
               { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "Overall p1" },
