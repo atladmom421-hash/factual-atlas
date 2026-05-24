@@ -224,8 +224,8 @@ function PerformancePage() {
 
       {/* Objective metrics */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Objective team metrics (EX-056)</h2>
-        <p className="mt-2 text-sm text-muted-foreground">Discover's own TH Metrics tool — same teams, year over year. Every key metric Allan flagged as a "continued focus area" improved.</p>
+        <h2 className="font-display text-2xl">Team numbers — 2023 vs. 2024 (EX-056)</h2>
+        <p className="mt-2 text-sm text-muted-foreground">These are Discover's own team metrics. Every number Allan called a "focus area" actually got better year over year.</p>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
