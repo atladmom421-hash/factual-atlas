@@ -152,18 +152,21 @@ function HardshipThreadPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
-      <div className="max-w-3xl">
-        <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-          <HeartPulse className="size-3.5" /> Hardship Assistance / Financial Crisis
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+            <HeartPulse className="size-3.5" /> Hardship Assistance / Financial Crisis
+          </div>
+          <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">
+            Approved too late to keep the home.
+          </h1>
+          <p className="mt-3 text-foreground/75">
+            A neutral, dated thread of the November 13 – December 5, 2025 hardship-assistance request: same-day HR and
+            Recovery-leadership notice, documentation demands, repeated written escalations about imminent housing loss,
+            a December 1 eviction, and funds received only on or about December 5 — at or just after the eviction-related harm.
+          </p>
         </div>
-        <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">
-          Approved too late to keep the home.
-        </h1>
-        <p className="mt-3 text-foreground/75">
-          A neutral, dated thread of the November 13 – December 5, 2025 hardship-assistance request: same-day HR and
-          Recovery-leadership notice, documentation demands, repeated written escalations about imminent housing loss,
-          a December 1 eviction, and funds received only on or about December 5 — at or just after the eviction-related harm.
-        </p>
+        <PrintPdfButton title="Hardship Assistance — Harbin Case File" />
       </div>
 
       {/* Pre-context */}
