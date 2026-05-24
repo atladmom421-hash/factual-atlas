@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { comparators, exhibitById } from "@/data";
 import { StatusBadge } from "@/components/case/Badges";
 import { useExhibit } from "@/components/case/ExhibitProvider";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 import { AlertTriangle, FileText, ExternalLink, CalendarRange } from "lucide-react";
 import { clsx } from "clsx";
 
