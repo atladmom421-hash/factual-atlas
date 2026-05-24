@@ -16,8 +16,8 @@ export const Route = createFileRoute("/performance")({
 const PERF_EXHIBIT_IDS = ["EX-050", "EX-051", "EX-052", "EX-053", "EX-054", "EX-056", "EX-057"];
 
 const compRows = [
-  { year: "2023", manager: "Rosanna Blackson", overall: "STRONG", self: "OUTSTANDING", bonus: "—", payout: "—", exhibits: ["EX-050", "EX-052", "EX-054"] },
-  { year: "2024", manager: "Allan Glover", overall: "SOLID", self: "OUTSTANDING", bonus: "Higher target", payout: "124.36% of target", exhibits: ["EX-051", "EX-053"] },
+  { year: "2023", manager: "Rosanna Blackson (author & admin)", overall: "STRONG", self: "OUTSTANDING", bonus: "—", payout: "—", exhibits: ["EX-050", "EX-052", "EX-054"] },
+  { year: "2024", manager: "Rosanna Blackson (author) · Allan Glover (admin)", overall: "SOLID", self: "OUTSTANDING", bonus: "Higher target", payout: "124.36% of target", exhibits: ["EX-051", "EX-053"] },
 ];
 
 const subRatings = [
