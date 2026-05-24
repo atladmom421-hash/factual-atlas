@@ -193,11 +193,15 @@ function PerformancePage() {
                 <span className="font-mono"> $2,169.04</span>, which is ~25% short.
               </li>
               <li>
-                Working backwards: <span className="font-mono">$2,169.04 ÷ 5% = $43,380.80</span> — that's the salary the target was actually computed against, not the $58,000 shown above it.
+                Working backwards: <span className="font-mono">$2,169.04 ÷ 5% = $43,380.80</span> — that's the salary the target was actually computed against.
               </li>
               <li>
-                The gap is consistent with a <span className="font-semibold">prorated / partial-year eligibility</span> (e.g., mid-year promotion or grade change), but the comp statement doesn't disclose the proration — it just shows the full $58,000 as "Bonus Eligible."
+                <span className="font-semibold text-emerald-200">That number now has a clean explanation.</span> Harbin's hire date was
+                <span className="font-mono"> April 3, 2023</span>. From Apr 3 → Dec 31 = 273 days (74.79% of the year).
+                <span className="font-mono"> $58,000 × 273/365 = $43,378.36</span> — within $2 of the implied base. The 2023 bonus was
+                <span className="font-semibold"> prorated for partial-year service</span>, but the comp statement never says so — it just shows the full $58,000 above a target that doesn't match.
               </li>
+
               <li>
                 The rest of the math is internally consistent:
                 <span className="font-mono"> $2,169.04 × 87.80% × 115.02% = $2,190.51 ≈ $2,190.00 </span>
@@ -210,6 +214,60 @@ function PerformancePage() {
           </div>
         </div>
       </section>
+
+      {/* What the downgrade cost in raise dollars */}
+      <section className="mt-10">
+        <h2 className="font-display text-2xl">What the rating downgrade cost in raise dollars</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          The 2024 "Solid" rating didn't just change a label — it shrank the merit raise that compounds into base pay every year after.
+        </p>
+
+        <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
+              <tr>
+                <th className="px-3 py-2">Cycle</th>
+                <th className="px-3 py-2">Rating</th>
+                <th className="px-3 py-2">Base before</th>
+                <th className="px-3 py-2">Merit %</th>
+                <th className="px-3 py-2">Merit $</th>
+                <th className="px-3 py-2">Base after</th>
+              </tr>
+            </thead>
+            <tbody className="font-mono text-xs text-foreground">
+              <tr className="border-t border-border"><td className="px-3 py-2">2023 review → 2024</td><td className="px-3 py-2"><RatingBadge value="STRONG" /></td><td className="px-3 py-2">$58,000.00</td><td className="px-3 py-2 text-emerald-300">4.31%</td><td className="px-3 py-2 text-emerald-300">+$2,500.03</td><td className="px-3 py-2">$60,500.03</td></tr>
+              <tr className="border-t border-border bg-amber-500/5"><td className="px-3 py-2">2024 review → 2025</td><td className="px-3 py-2"><RatingBadge value="SOLID" /></td><td className="px-3 py-2">$60,500.03</td><td className="px-3 py-2 text-amber-300">3.39%</td><td className="px-3 py-2 text-amber-300">+$2,049.99</td><td className="px-3 py-2">$62,550.02</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-4 rounded-sm border-2 border-rose-500/40 bg-rose-500/5 p-3 text-xs text-rose-100">
+          <div className="mb-2 font-mono uppercase tracking-wider text-rose-300">What it could have been</div>
+          <ul className="ml-4 list-disc space-y-1">
+            <li>
+              If 2024 had matched the prior year's <span className="font-semibold">Strong (4.31%)</span> rate:
+              <span className="font-mono"> $60,500.03 × 4.31% = +$2,607.55</span> → new base
+              <span className="font-mono"> $63,107.58</span>. Actual new base was
+              <span className="font-mono"> $62,550.02</span>.
+              <span className="font-semibold"> Lost merit: $557.56/yr</span> baked into base — every year going forward.
+            </li>
+            <li>
+              The merit % dropped <span className="font-semibold">4.31% → 3.39%</span> (−0.92 percentage points)
+              even though every sub-goal stayed Solid or Strong, every team metric improved, and the bonus paid at <span className="font-semibold">124.36%</span> of target.
+            </li>
+            <li>
+              Because base salary compounds, a single missed cycle keeps stacking. Over a 5-year horizon at the
+              same delta, the lost compensation is roughly <span className="font-mono">$557.56 × 5 + lost future merit on the gap ≈ $3,000–$3,500</span> in base pay alone, before any bonus impact.
+            </li>
+            <li>
+              Worth requesting in discovery: Discover's published merit-matrix table tying rating → merit %, so the "Strong vs Solid vs Outstanding" raise bands are on the record.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
 
 
 
