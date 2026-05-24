@@ -568,6 +568,8 @@ function PerformancePage() {
           ))}
         </div>
       </section>
+
+      <PrintEvidenceAppendix exhibitIds={["EX-050","EX-051","EX-052","EX-053","EX-054","EX-056","EX-057"]} />
     </div>
   );
 }
