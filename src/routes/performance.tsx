@@ -113,6 +113,26 @@ function PerformancePage() {
         </p>
       </header>
 
+      {/* Why the rating matters — cohort disqualification */}
+      <section className="mt-6 rounded-sm border-2 border-red-500/40 bg-red-500/5 p-5">
+        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-red-300">Why the rating matters</div>
+        <h2 className="mt-1 font-display text-2xl text-foreground">The "Solid" rating locked Harbin out of the Department Manager training cohort</h2>
+        <p className="mt-3 text-sm text-foreground/90">
+          Shortly after the 2024 reviews were delivered, leadership notified management that Unit Managers and Team Leaders
+          would <span className="font-semibold">only be eligible for the Department Manager training cohort if they scored a 4 (Strong) or 5 (Outstanding)</span>.
+          A 3 (Solid) was automatically disqualifying.
+        </p>
+        <p className="mt-2 text-sm text-foreground/90">
+          Rosanna — the same manager named in Harbin's initial complaint — authored the downgrade from <span className="font-mono">Strong → Solid</span> despite a
+          124.36% bonus payout and improved operational metrics. The effect was not just a smaller raise: it removed Harbin from the only
+          internal pipeline to promotion, while peers with comparable numbers (e.g., Ryan Ascarte at Outstanding) remained eligible.
+        </p>
+        <div className="mt-3 text-xs text-muted-foreground">
+          Adverse action → loss of promotional opportunity → measurable career and compensation harm. This is a direct line from the
+          disputed rating to the cohort gate.
+        </div>
+      </section>
+
       {/* YoY snapshot */}
       <section className="mt-8">
         <h2 className="font-display text-2xl">2023 vs. 2024 at a glance</h2>
