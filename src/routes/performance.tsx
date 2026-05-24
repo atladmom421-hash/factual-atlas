@@ -148,7 +148,7 @@ function PerformancePage() {
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           <div className="rounded-sm border-2 border-emerald-500/30 bg-emerald-500/5 p-3">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-emerald-300">2023 · STRONG · Blackson</div>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-emerald-300">2023 · Strong · Written by Rosanna</div>
             <EvidenceThumbs items={[
               { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "Comp statement" },
               { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-year-end-review.jpeg", caption: "Year-end p1" },
