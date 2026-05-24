@@ -3,6 +3,8 @@ import { AlertTriangle, FileText, HeartPulse, ArrowRight, DollarSign, Brain, Ext
 import { eventById, exhibitById } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
 import { StatusBadge, CategoryBadge } from "@/components/case/Badges";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/hardship-thread")({
   head: () => ({
