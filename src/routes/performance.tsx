@@ -264,6 +264,9 @@ function PerformancePage() {
             </li>
           </ul>
         </div>
+      </section>
+
+
 
 
 
