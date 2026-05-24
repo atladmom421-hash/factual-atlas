@@ -290,45 +290,45 @@ function PerformancePage() {
 
       {/* Analysis */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Six-point analysis</h2>
+        <h2 className="font-display text-2xl">What the record actually shows</h2>
         <ol className="mt-4 space-y-3 text-sm">
           {([
-            { h: "Internal contradiction", b: "Higher bonus payout (124.36%) in 2024 despite a lower headline rating than 2023.",
+            { h: "The paycheck and the label don't match", b: "She was paid 124.36% of target in 2024 — above target — but the rating dropped from Strong to Solid. You don't pay someone above target for poor performance.",
               thumbs: [
-                { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "2023 STRONG" },
-                { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "2024 SOLID · 124.36%" },
+                { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "2023 Strong" },
+                { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "2024 · 124.36%" },
               ] },
-            { h: "Uniformly positive sub-ratings", b: "Every 2024 goal and behavior was SOLID or STRONG — no failed metric supports a downgrade.",
+            { h: "Every goal was Solid or Strong", b: "Not a single goal was rated below Solid. There's no failed goal to point to that would explain the overall downgrade.",
               thumbs: [
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk · SOLID" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I · STRONG" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results · STRONG" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk · Solid" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I · Strong" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results · Strong" },
               ] },
-            { h: "Substance → style shift", b: "2023 narrative cited specific deliverables and metrics; 2024 narrative pivoted to vague style commentary ('power of the whirlwind', 'keep your elements simple').",
+            { h: "Real numbers replaced with vague comments", b: "The 2023 review listed actual results and numbers. The 2024 review switched to vague phrases like 'power of the whirlwind' and 'keep your elements simple' — no specifics.",
               thumbs: [
-                { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p4-results.jpeg", caption: "2023 substance" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "2024 style" },
+                { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p4-results.jpeg", caption: "2023 — specifics" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "2024 — vague" },
                 { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p9-development.jpeg", caption: "Development" },
               ] },
-            { h: "Quantified record", b: "TH Metrics show YoY improvement in Compliance, Utilization, ACW, and Direct Pays for both RASCART and SHARBI1.",
+            { h: "The team numbers went up", b: "Compliance, Utilization, ACW, and Direct Pays all improved year over year for both teams. The data says she did better, not worse.",
               thumbs: [
                 { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-2023-rascart-sharbi1.jpeg", caption: "2023 baseline" },
                 { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-rascart-2024.jpeg", caption: "2024 RASCART" },
                 { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-sharbi1-2024.jpeg", caption: "2024 SHARBI1" },
-                { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-overview.jpeg", caption: "Scorecard YTD 3.93" },
+                { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-overview.jpeg", caption: "Scorecard 3.93" },
               ] },
-            { h: "Self-evaluation gap", b: "Manager's narrative omitted the specific accomplishments documented in Harbin's self-review.",
+            { h: "Her self-review wasn't reflected", b: "Specific wins Harbin listed in her own self-review never made it into the manager's narrative.",
               thumbs: [
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p19-results-full.jpeg", caption: "Self vs. Mgr" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p19-results-full.jpeg", caption: "Self vs. manager" },
                 { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p18-dei-full.jpeg", caption: "DE&I full" },
                 { exhibitId: "EX-054", src: "/exhibits/EX-054-2023-q3-checkin.jpeg", caption: "Q3 check-in" },
               ] },
-            { h: "Manager admission", b: "Allan separately told HR Harbin was 'the best team lead he's got' (EX-049), contradicting any performance-based defense of the downgrade.",
+            { h: "Allan privately said she was the best", b: "In a separate HR conversation (EX-049), Allan told HR Harbin was 'the best team lead he's got.' That doesn't match the rating he delivered.",
               thumbs: [] },
-            { h: "Conflict of interest in authorship", b: "The 2024 evaluation was authored by Rosanna Blackson — the same manager named in Harbin's initial internal complaint — and merely administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated Rosanna had set the rating and could not provide any substantive justification. A retaliation respondent should not be the scoring authority on a complainant's review.",
+            { h: "The person being complained about wrote the review", b: "Rosanna — the same manager Harbin first complained about — wrote the 2024 review. Allan only delivered it. When Harbin asked Allan why she was downgraded, he said Rosanna set the rating and he couldn't explain why. The subject of a complaint should not be the person scoring the complainant.",
               thumbs: [
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "2024 overall p1" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall narrative" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "2024 overall" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Final narrative" },
               ] },
           ]).map((row, i) => (
             <li key={row.h} className="rounded-sm border-2 border-border bg-card p-4">
