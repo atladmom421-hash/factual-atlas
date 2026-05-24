@@ -194,7 +194,22 @@ function PerformancePage() {
             </tbody>
           </table>
         </div>
+        <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Sub-rating evidence pages (EX-053)</div>
+          <EvidenceThumbs size="sm" items={[
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p5-people.jpeg", caption: "People" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p6-play-to-win.jpeg", caption: "Play to Win" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p7-get-better.jpeg", caption: "Get Better" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p8-succeed-together.jpeg", caption: "Succeed Together" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p15-team-perf-advance.jpeg", caption: "Team Perf" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p16-engaged-employees.jpeg", caption: "Engagement" },
+          ]} />
+        </div>
       </section>
+
 
       {/* Objective metrics */}
       <section className="mt-10">
