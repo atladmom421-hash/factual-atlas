@@ -215,6 +215,85 @@ function PerformancePage() {
         </div>
       </section>
 
+      {/* Full year-over-year side-by-side */}
+      <section className="mt-10">
+        <h2 className="font-display text-2xl">Year-over-year · 2023 vs. 2024 side by side</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Every measurable input got better. The label got worse. Read the columns straight across.
+        </p>
+
+        <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
+              <tr>
+                <th className="px-3 py-2 w-[28%]">Measure</th>
+                <th className="px-3 py-2">2023 (partial · Apr 3 start)</th>
+                <th className="px-3 py-2">2024 (full year)</th>
+                <th className="px-3 py-2">Direction</th>
+              </tr>
+            </thead>
+            <tbody className="text-foreground">
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Review author</td><td className="px-3 py-2">Rosanna Blackson</td><td className="px-3 py-2">Rosanna Blackson <span className="text-muted-foreground">(delivered by Allan Glover)</span></td><td className="px-3 py-2 text-amber-300">Same author — after EEOC charge</td></tr>
+              <tr className="border-t border-border bg-amber-500/5"><td className="px-3 py-2 text-muted-foreground">Overall rating</td><td className="px-3 py-2"><RatingBadge value="STRONG" /> <span className="font-mono text-xs text-muted-foreground">(4)</span></td><td className="px-3 py-2"><RatingBadge value="SOLID" /> <span className="font-mono text-xs text-muted-foreground">(3)</span></td><td className="px-3 py-2 text-rose-300">▼ down 1 level</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Self-assessment</td><td className="px-3 py-2"><RatingBadge value="OUTSTANDING" /></td><td className="px-3 py-2"><RatingBadge value="OUTSTANDING" /></td><td className="px-3 py-2 text-muted-foreground">Unchanged</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Base salary entering cycle</td><td className="px-3 py-2 font-mono">$58,000.00</td><td className="px-3 py-2 font-mono">$60,500.03</td><td className="px-3 py-2 text-emerald-300">▲ +$2,500</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Merit raise %</td><td className="px-3 py-2 font-mono text-emerald-300">4.31%</td><td className="px-3 py-2 font-mono text-amber-300">3.39%</td><td className="px-3 py-2 text-rose-300">▼ −0.92 pts</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Merit raise $</td><td className="px-3 py-2 font-mono text-emerald-300">+$2,500.03</td><td className="px-3 py-2 font-mono text-amber-300">+$2,049.99</td><td className="px-3 py-2 text-rose-300">▼ −$450.04</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Base salary leaving cycle</td><td className="px-3 py-2 font-mono">$60,500.03</td><td className="px-3 py-2 font-mono">$62,550.02</td><td className="px-3 py-2 text-emerald-300">▲ +$2,049.99</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Bonus target $</td><td className="px-3 py-2 font-mono">$2,169.04 <span className="text-muted-foreground">(prorated)</span></td><td className="px-3 py-2 font-mono">$3,025.00</td><td className="px-3 py-2 text-muted-foreground">Full-year target</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Bonus paid $</td><td className="px-3 py-2 font-mono">$2,190.00</td><td className="px-3 py-2 font-mono">$3,762.00</td><td className="px-3 py-2 text-emerald-300">▲ +$1,572</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Bonus payout %</td><td className="px-3 py-2 font-mono">100.97% of target</td><td className="px-3 py-2 font-mono text-emerald-300">124.36% of target</td><td className="px-3 py-2 text-emerald-300">▲ +23.4 pts</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Company performance factor</td><td className="px-3 py-2 font-mono">87.80%</td><td className="px-3 py-2 font-mono text-emerald-300">128.90%</td><td className="px-3 py-2 text-emerald-300">▲ +41.1 pts</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Individual performance factor</td><td className="px-3 py-2 font-mono text-emerald-300">115.02%</td><td className="px-3 py-2 font-mono">96.49%</td><td className="px-3 py-2 text-amber-300">▼ −18.5 pts <span className="text-muted-foreground">(but bonus still ↑)</span></td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Sub-goals scored Strong</td><td className="px-3 py-2 font-mono">1 of 3 scored</td><td className="px-3 py-2 font-mono text-emerald-300">5 of 8 scored Strong, 3 Solid</td><td className="px-3 py-2 text-emerald-300">▲ Zero "Needs Improvement"</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Compliance Pass (avg of both teams)</td><td className="px-3 py-2 font-mono">79.82%</td><td className="px-3 py-2 font-mono text-emerald-300">86.06%</td><td className="px-3 py-2 text-emerald-300">▲ +6.24 pts</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Utilization (avg of both teams)</td><td className="px-3 py-2 font-mono">79.05%</td><td className="px-3 py-2 font-mono text-emerald-300">81.06%</td><td className="px-3 py-2 text-emerald-300">▲ +2.01 pts</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">ACW % (avg · lower = better)</td><td className="px-3 py-2 font-mono">16.69%</td><td className="px-3 py-2 font-mono text-emerald-300">13.53%</td><td className="px-3 py-2 text-emerald-300">▼ −3.16 pts (improved)</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Direct Pays (combined teams)</td><td className="px-3 py-2 font-mono">11,925</td><td className="px-3 py-2 font-mono text-emerald-300">21,586</td><td className="px-3 py-2 text-emerald-300">▲ +81% YoY</td></tr>
+              <tr className="border-t border-border bg-amber-500/5"><td className="px-3 py-2 text-muted-foreground">Protected activity</td><td className="px-3 py-2 text-muted-foreground">None on record</td><td className="px-3 py-2 text-amber-200">EEOC charge filed May 2024</td><td className="px-3 py-2 text-amber-300">The only variable that changed direction</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-4 grid gap-3 md:grid-cols-3 text-xs">
+          <div className="rounded-sm border-2 border-emerald-500/30 bg-emerald-500/5 p-3">
+            <div className="font-mono uppercase tracking-wider text-emerald-300">What went up</div>
+            <ul className="mt-1 ml-4 list-disc space-y-1 text-emerald-100/90">
+              <li>Bonus dollars (+$1,572)</li>
+              <li>Bonus payout % (+23.4 pts)</li>
+              <li>Compliance, Utilization, Direct Pays</li>
+              <li>Sub-goal scores (5 Strong, 3 Solid, 0 NI)</li>
+              <li>Team count and scope</li>
+            </ul>
+          </div>
+          <div className="rounded-sm border-2 border-rose-500/30 bg-rose-500/5 p-3">
+            <div className="font-mono uppercase tracking-wider text-rose-300">What went down</div>
+            <ul className="mt-1 ml-4 list-disc space-y-1 text-rose-100/90">
+              <li>Overall rating (Strong → Solid)</li>
+              <li>Merit raise % (4.31% → 3.39%)</li>
+              <li>Merit raise $ (−$450/yr, compounding)</li>
+              <li>ACW % (this is an improvement — lower is better)</li>
+            </ul>
+          </div>
+          <div className="rounded-sm border-2 border-amber-500/30 bg-amber-500/5 p-3">
+            <div className="font-mono uppercase tracking-wider text-amber-300">What changed in the room</div>
+            <ul className="mt-1 ml-4 list-disc space-y-1 text-amber-100/90">
+              <li>Same author (Rosanna) — the person Harbin complained about</li>
+              <li>EEOC charge filed in May 2024</li>
+              <li>Allan delivered, couldn't explain the drop</li>
+              <li>Peer Ryan Ascarte (no charge) got Outstanding</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="mt-3 text-xs text-muted-foreground">
+          Every operational and financial column moved up. The two columns that moved down are the rating label and the merit %
+          — the only two numbers Rosanna personally controlled.
+        </p>
+      </section>
+
+
+
       {/* What the downgrade cost in raise dollars */}
       <section className="mt-10">
         <h2 className="font-display text-2xl">What the rating downgrade cost in raise dollars</h2>
