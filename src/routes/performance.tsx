@@ -167,11 +167,11 @@ function PerformancePage() {
         </div>
       </section>
 
-      {/* Peer comparator: Ryan Descarte */}
+      {/* Peer comparator: Ryan Ascarte */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Peer comparator · Ryan Descarte</h2>
+        <h2 className="font-display text-2xl">Peer comparator · Ryan Ascarte</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Ryan Descarte is another Unit Manager promoted into the role at the same time as Harbin.
+          Ryan Ascarte is another Unit Manager promoted into the role at the same time as Harbin.
           His operational numbers track closely with hers — but his 2024 overall rating came in at
           <span className="text-foreground font-medium"> Outstanding (5)</span> while Harbin received
           <span className="text-foreground font-medium"> Solid (3)</span>.
@@ -182,7 +182,7 @@ function PerformancePage() {
               <tr>
                 <th className="px-3 py-2">&nbsp;</th>
                 <th className="px-3 py-2">Harbin Quintero</th>
-                <th className="px-3 py-2">Ryan Descarte</th>
+                <th className="px-3 py-2">Ryan Ascarte</th>
               </tr>
             </thead>
             <tbody className="text-foreground">
