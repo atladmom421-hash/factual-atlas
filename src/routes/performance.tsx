@@ -164,8 +164,8 @@ function PerformancePage() {
               { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall full" },
             ]} />
           </div>
-          </div>
         </div>
+
 
         {/* 2023 Bonus breakdown + math check */}
         <div className="mt-6 rounded-sm border-2 border-border bg-card p-4">
