@@ -325,6 +325,11 @@ function PerformancePage() {
               ] },
             { h: "Manager admission", b: "Allan separately told HR Harbin was 'the best team lead he's got' (EX-049), contradicting any performance-based defense of the downgrade.",
               thumbs: [] },
+            { h: "Conflict of interest in authorship", b: "The 2024 evaluation was authored by Rosanna Blackson — the same manager named in Harbin's initial internal complaint — and merely administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated Rosanna had set the rating and could not provide any substantive justification. A retaliation respondent should not be the scoring authority on a complainant's review.",
+              thumbs: [
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "2024 overall p1" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall narrative" },
+              ] },
           ]).map((row, i) => (
             <li key={row.h} className="rounded-sm border-2 border-border bg-card p-4">
               <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
