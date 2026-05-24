@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { exhibits } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/performance")({
   head: () => ({
