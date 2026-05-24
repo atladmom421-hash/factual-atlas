@@ -233,7 +233,7 @@ function PerformancePage() {
                 <th className="px-3 py-2">Metric</th>
                 <th className="px-3 py-2">2023</th>
                 <th className="px-3 py-2">2024</th>
-                <th className="px-3 py-2">Δ</th>
+                <th className="px-3 py-2">Direction</th>
               </tr>
             </thead>
             <tbody>
