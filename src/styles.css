@@ -149,10 +149,62 @@
 }
 
 @media print {
-  .no-print { display: none !important; }
-  body { background: white; color: black; }
-  .hud-panel { background: white !important; border-color: #ddd !important; }
+  @page { size: Letter; margin: 0.5in; }
+  .no-print, nav, header.site-header, footer.site-footer { display: none !important; }
+
+  /* Force a clean white background and black text across the whole document */
+  html, body, #root, main, section, article, aside, header, footer, div,
+  .hud-panel, .bg-card, .bg-secondary, .bg-background, .bg-muted,
+  [class*="bg-"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+  }
+  h1, h2, h3, h4, h5, h6, p, li, span, td, th, strong, em, a, button, label, dt, dd {
+    color: #000000 !important;
+  }
+  .text-muted-foreground, .text-foreground\/70, .text-foreground\/75, .text-foreground\/80, .text-foreground\/85, .text-foreground\/90 {
+    color: #333333 !important;
+  }
+  a { color: #000000 !important; text-decoration: underline; }
+
+  /* Borders as thin grey lines */
+  *, *::before, *::after {
+    border-color: #cccccc !important;
+  }
+  .border, .border-t, .border-b, .border-l, .border-r, .border-x, .border-y,
+  .border-2, table, th, td {
+    border-color: #cccccc !important;
+  }
+
+  /* Keep accent / status colored chips legible */
+  .bg-accent, .bg-accent\/10, .bg-accent\/15, .bg-accent\/20, .bg-accent\/5 {
+    background: #fff7e6 !important;
+  }
+  .bg-red-500\/5, .bg-red-500\/10, .border-red-500\/40, .border-red-500\/30 {
+    background: #fff0f0 !important;
+    border-color: #d33 !important;
+  }
+  .bg-emerald-500\/5, .border-emerald-500\/30 {
+    background: #f0fbf3 !important;
+    border-color: #2a8b4f !important;
+  }
+  .bg-amber-500\/5, .border-amber-500\/30 {
+    background: #fff8e6 !important;
+    border-color: #b27a00 !important;
+  }
+
+  /* Images & avoid page-break inside key blocks */
+  img { max-width: 100% !important; height: auto !important; page-break-inside: avoid; }
+  section, article, table, tr, .avoid-break { page-break-inside: avoid; }
+  h1, h2, h3 { page-break-after: avoid; }
+
+  /* Reveal the printable evidence gallery hidden on screen */
+  .print-only { display: block !important; }
 }
+.print-only { display: none; }
 
 .search-flash {
   animation: search-flash 2.2s ease-out;

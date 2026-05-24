@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { exhibits } from "@/data";
 import { useExhibit } from "@/components/case/ExhibitProvider";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/performance")({
   head: () => ({
@@ -106,11 +108,16 @@ function PerformancePage() {
     <div className="mx-auto max-w-[1400px] px-5 py-10">
       <header className="border-b-2 border-border pb-6">
         <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Section 09 · Performance</div>
-        <h1 className="mt-2 font-display text-4xl md:text-5xl">Performance Reviews</h1>
-        <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
-          Two years of reviews, the manager's scores vs. Harbin's scores, the team numbers, and the
-          monthly scorecard — does the 2024 rating drop match what the record actually shows?
-        </p>
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <h1 className="mt-2 font-display text-4xl md:text-5xl">Performance Reviews</h1>
+            <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
+              Two years of reviews, the manager's scores vs. Harbin's scores, the team numbers, and the
+              monthly scorecard — does the 2024 rating drop match what the record actually shows?
+            </p>
+          </div>
+          <PrintPdfButton title="Performance Evaluations — Harbin Case File" />
+        </div>
       </header>
 
       {/* Why the rating matters — cohort disqualification */}
@@ -561,6 +568,8 @@ function PerformancePage() {
           ))}
         </div>
       </section>
+
+      <PrintEvidenceAppendix exhibitIds={["EX-050","EX-051","EX-052","EX-053","EX-054","EX-056","EX-057"]} />
     </div>
   );
 }
