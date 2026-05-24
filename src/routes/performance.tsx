@@ -172,6 +172,17 @@ function PerformancePage() {
       <section className="mt-10">
         <h2 className="font-display text-2xl">Sub-ratings — manager vs. employee (2024)</h2>
         <p className="mt-2 text-sm text-muted-foreground">Every individual goal received SOLID or STRONG. Not a single goal was rated below SOLID, yet the overall headline was downgraded.</p>
+        <div className="mt-3 rounded-sm border-2 border-rose-500/40 bg-rose-500/5 p-3 text-xs text-rose-100">
+          <span className="font-mono uppercase tracking-wider text-rose-300">Conflict of interest · </span>
+          The 2024 review was <span className="font-semibold">authored by Rosanna Blackson</span> — the same manager named in Harbin's initial internal complaint —
+          and administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated that
+          <span className="font-semibold"> Rosanna had set the rating</span> and that he could not provide a substantive justification.
+        </div>
+        <div className="mt-3 grid gap-2 md:grid-cols-3 text-[11px]">
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Author</span><div className="text-foreground">Rosanna Blackson</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Administered by</span><div className="text-foreground">Allan Glover</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Allan's explanation</span><div className="text-foreground">"Rosanna did this" — no further clarification</div></div>
+        </div>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
