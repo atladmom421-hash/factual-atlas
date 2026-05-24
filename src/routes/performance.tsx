@@ -105,27 +105,27 @@ function PerformancePage() {
   return (
     <div className="mx-auto max-w-[1400px] px-5 py-10">
       <header className="border-b-2 border-border pb-6">
-        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Section 09 · Performance Record</div>
-        <h1 className="mt-2 font-display text-4xl md:text-5xl">Performance Evaluations</h1>
+        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Section 09 · Performance</div>
+        <h1 className="mt-2 font-display text-4xl md:text-5xl">Performance Reviews</h1>
         <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
-          Year-over-year evaluations, manager vs. employee sub-ratings, objective team metrics, and the
-          CAR 2025 TL Scorecard — assembled to test whether the 2024 "Solid" downgrade is supported by the record.
+          Two years of reviews, the manager's scores vs. Harbin's scores, the team numbers, and the
+          monthly scorecard — does the 2024 rating drop match what the record actually shows?
         </p>
       </header>
 
       {/* YoY snapshot */}
       <section className="mt-8">
-        <h2 className="font-display text-2xl">Year-over-year snapshot</h2>
+        <h2 className="font-display text-2xl">2023 vs. 2024 at a glance</h2>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
               <tr>
                 <th className="px-3 py-2">Year</th>
-                <th className="px-3 py-2">Manager</th>
-                <th className="px-3 py-2">Overall (Mgr)</th>
-                <th className="px-3 py-2">Self-rating</th>
-                <th className="px-3 py-2">Bonus payout</th>
-                <th className="px-3 py-2">Exhibits</th>
+                <th className="px-3 py-2">Who wrote it</th>
+                <th className="px-3 py-2">Manager's score</th>
+                <th className="px-3 py-2">Harbin's score</th>
+                <th className="px-3 py-2">Bonus paid</th>
+                <th className="px-3 py-2">Proof</th>
               </tr>
             </thead>
             <tbody>
@@ -143,12 +143,12 @@ function PerformancePage() {
           </table>
         </div>
         <p className="mt-3 text-xs text-muted-foreground">
-          Overall rating dropped one step (STRONG → SOLID) while bonus payout reached <span className="text-foreground font-medium">124.36% of target</span> —
-          an internal contradiction: pay reflected performance, the headline label did not.
+          The rating dropped one level (Strong → Solid), but the bonus paid out at <span className="text-foreground font-medium">124.36% of target</span>.
+          The paycheck says she performed; the label says she didn't.
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           <div className="rounded-sm border-2 border-emerald-500/30 bg-emerald-500/5 p-3">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-emerald-300">2023 · STRONG · Blackson</div>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-emerald-300">2023 · Strong · Written by Rosanna</div>
             <EvidenceThumbs items={[
               { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "Comp statement" },
               { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-year-end-review.jpeg", caption: "Year-end p1" },
@@ -157,7 +157,7 @@ function PerformancePage() {
             ]} />
           </div>
           <div className="rounded-sm border-2 border-amber-500/30 bg-amber-500/5 p-3">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · SOLID · Authored by Rosanna · Administered by Allan</div>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · Solid · Written by Rosanna · Delivered by Allan</div>
             <EvidenceThumbs items={[
               { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "Comp · 124.36%" },
               { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "Overall p1" },
@@ -170,27 +170,27 @@ function PerformancePage() {
 
       {/* Sub-ratings */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Sub-ratings — manager vs. employee (2024)</h2>
-        <p className="mt-2 text-sm text-muted-foreground">Every individual goal received SOLID or STRONG. Not a single goal was rated below SOLID, yet the overall headline was downgraded.</p>
+        <h2 className="font-display text-2xl">Goal-by-goal scores (2024)</h2>
+        <p className="mt-2 text-sm text-muted-foreground">Every single goal was scored Solid or Strong. None were Needs Improvement. So why was the overall rating lowered?</p>
         <div className="mt-3 rounded-sm border-2 border-rose-500/40 bg-rose-500/5 p-3 text-xs text-rose-100">
-          <span className="font-mono uppercase tracking-wider text-rose-300">Conflict of interest · </span>
-          The 2024 review was <span className="font-semibold">authored by Rosanna Blackson</span> — the same manager named in Harbin's initial internal complaint —
-          and administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated that
-          <span className="font-semibold"> Rosanna had set the rating</span> and that he could not provide a substantive justification.
+          <span className="font-mono uppercase tracking-wider text-rose-300">Who scored it · </span>
+          The 2024 review was <span className="font-semibold">written by Rosanna Blackson</span> — the same manager Harbin first complained about —
+          and just delivered by Allan Glover. When Harbin asked Allan why she was downgraded after a strong year, he said
+          <span className="font-semibold"> Rosanna set the rating</span> and he couldn't explain it.
         </div>
         <div className="mt-3 grid gap-2 md:grid-cols-3 text-[11px]">
-          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Author</span><div className="text-foreground">Rosanna Blackson</div></div>
-          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Administered by</span><div className="text-foreground">Allan Glover</div></div>
-          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Allan's explanation</span><div className="text-foreground">"Rosanna did this" — no further clarification</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Wrote the review</span><div className="text-foreground">Rosanna Blackson</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Delivered the review</span><div className="text-foreground">Allan Glover</div></div>
+          <div className="rounded-sm border border-border bg-card p-2"><span className="font-mono text-muted-foreground">Allan's reason</span><div className="text-foreground">"Rosanna did this" — no further answer</div></div>
         </div>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
               <tr>
-                <th className="px-3 py-2">Goal / Behavior</th>
-                <th className="px-3 py-2">2023 (Blackson)</th>
-                <th className="px-3 py-2">2024 (Glover)</th>
-                <th className="px-3 py-2">2024 Self</th>
+                <th className="px-3 py-2">Goal</th>
+                <th className="px-3 py-2">2023 score</th>
+                <th className="px-3 py-2">2024 score</th>
+                <th className="px-3 py-2">Harbin's score</th>
               </tr>
             </thead>
             <tbody>
@@ -206,7 +206,7 @@ function PerformancePage() {
           </table>
         </div>
         <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
-          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Sub-rating evidence pages (EX-053)</div>
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Screenshots of every goal page (EX-053)</div>
           <EvidenceThumbs size="sm" items={[
             { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk" },
             { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I" },
@@ -224,8 +224,8 @@ function PerformancePage() {
 
       {/* Objective metrics */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Objective team metrics (EX-056)</h2>
-        <p className="mt-2 text-sm text-muted-foreground">Discover's own TH Metrics tool — same teams, year over year. Every key metric Allan flagged as a "continued focus area" improved.</p>
+        <h2 className="font-display text-2xl">Team numbers — 2023 vs. 2024 (EX-056)</h2>
+        <p className="mt-2 text-sm text-muted-foreground">These are Discover's own team metrics. Every number Allan called a "focus area" actually got better year over year.</p>
         <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
           <table className="w-full text-sm">
             <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
@@ -233,7 +233,7 @@ function PerformancePage() {
                 <th className="px-3 py-2">Metric</th>
                 <th className="px-3 py-2">2023</th>
                 <th className="px-3 py-2">2024</th>
-                <th className="px-3 py-2">Δ</th>
+                <th className="px-3 py-2">Direction</th>
               </tr>
             </thead>
             <tbody>
@@ -242,7 +242,7 @@ function PerformancePage() {
                   <td className="px-3 py-2">{r.metric}</td>
                   <td className="px-3 py-2 font-mono">{r.y2023}</td>
                   <td className="px-3 py-2 font-mono">{r.y2024}</td>
-                  <td className="px-3 py-2"><span className="text-emerald-400">▲ improved</span></td>
+                  <td className="px-3 py-2"><span className="text-emerald-400">▲ better</span></td>
                 </tr>
               ))}
             </tbody>
@@ -261,8 +261,8 @@ function PerformancePage() {
 
       {/* Scorecard */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">CAR 2025 TL Scorecard — monthly overall (EX-057)</h2>
-        <p className="mt-2 text-sm text-muted-foreground">YTD 3.93 · Q1 3.72 · Q2 4.09 · Q3 3.99. The scorecard explicitly notes data-driven results can be overridden by the direct manager in calibration.</p>
+        <h2 className="font-display text-2xl">2025 monthly scorecard (EX-057)</h2>
+        <p className="mt-2 text-sm text-muted-foreground">Year-to-date 3.93 out of 5. Scores stayed strong every month. The scorecard itself says a manager can override these numbers during calibration — which is what happened here.</p>
         <div className="mt-4 rounded-sm border-2 border-border bg-[color:var(--hud-panel)] p-4">
           <div className="grid grid-cols-9 gap-2">
             {scorecard.map(s => {
@@ -290,45 +290,45 @@ function PerformancePage() {
 
       {/* Analysis */}
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Six-point analysis</h2>
+        <h2 className="font-display text-2xl">What the record actually shows</h2>
         <ol className="mt-4 space-y-3 text-sm">
           {([
-            { h: "Internal contradiction", b: "Higher bonus payout (124.36%) in 2024 despite a lower headline rating than 2023.",
+            { h: "The paycheck and the label don't match", b: "She was paid 124.36% of target in 2024 — above target — but the rating dropped from Strong to Solid. You don't pay someone above target for poor performance.",
               thumbs: [
-                { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "2023 STRONG" },
-                { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "2024 SOLID · 124.36%" },
+                { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "2023 Strong" },
+                { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "2024 · 124.36%" },
               ] },
-            { h: "Uniformly positive sub-ratings", b: "Every 2024 goal and behavior was SOLID or STRONG — no failed metric supports a downgrade.",
+            { h: "Every goal was Solid or Strong", b: "Not a single goal was rated below Solid. There's no failed goal to point to that would explain the overall downgrade.",
               thumbs: [
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk · SOLID" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I · STRONG" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results · STRONG" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk · Solid" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I · Strong" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results · Strong" },
               ] },
-            { h: "Substance → style shift", b: "2023 narrative cited specific deliverables and metrics; 2024 narrative pivoted to vague style commentary ('power of the whirlwind', 'keep your elements simple').",
+            { h: "Real numbers replaced with vague comments", b: "The 2023 review listed actual results and numbers. The 2024 review switched to vague phrases like 'power of the whirlwind' and 'keep your elements simple' — no specifics.",
               thumbs: [
-                { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p4-results.jpeg", caption: "2023 substance" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "2024 style" },
+                { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p4-results.jpeg", caption: "2023 — specifics" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "2024 — vague" },
                 { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p9-development.jpeg", caption: "Development" },
               ] },
-            { h: "Quantified record", b: "TH Metrics show YoY improvement in Compliance, Utilization, ACW, and Direct Pays for both RASCART and SHARBI1.",
+            { h: "The team numbers went up", b: "Compliance, Utilization, ACW, and Direct Pays all improved year over year for both teams. The data says she did better, not worse.",
               thumbs: [
                 { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-2023-rascart-sharbi1.jpeg", caption: "2023 baseline" },
                 { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-rascart-2024.jpeg", caption: "2024 RASCART" },
                 { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-sharbi1-2024.jpeg", caption: "2024 SHARBI1" },
-                { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-overview.jpeg", caption: "Scorecard YTD 3.93" },
+                { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-overview.jpeg", caption: "Scorecard 3.93" },
               ] },
-            { h: "Self-evaluation gap", b: "Manager's narrative omitted the specific accomplishments documented in Harbin's self-review.",
+            { h: "Her self-review wasn't reflected", b: "Specific wins Harbin listed in her own self-review never made it into the manager's narrative.",
               thumbs: [
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p19-results-full.jpeg", caption: "Self vs. Mgr" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p19-results-full.jpeg", caption: "Self vs. manager" },
                 { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p18-dei-full.jpeg", caption: "DE&I full" },
                 { exhibitId: "EX-054", src: "/exhibits/EX-054-2023-q3-checkin.jpeg", caption: "Q3 check-in" },
               ] },
-            { h: "Manager admission", b: "Allan separately told HR Harbin was 'the best team lead he's got' (EX-049), contradicting any performance-based defense of the downgrade.",
+            { h: "Allan privately said she was the best", b: "In a separate HR conversation (EX-049), Allan told HR Harbin was 'the best team lead he's got.' That doesn't match the rating he delivered.",
               thumbs: [] },
-            { h: "Conflict of interest in authorship", b: "The 2024 evaluation was authored by Rosanna Blackson — the same manager named in Harbin's initial internal complaint — and merely administered by Allan Glover. When Harbin asked Allan to explain the downgrade after a strong year, he stated Rosanna had set the rating and could not provide any substantive justification. A retaliation respondent should not be the scoring authority on a complainant's review.",
+            { h: "The person being complained about wrote the review", b: "Rosanna — the same manager Harbin first complained about — wrote the 2024 review. Allan only delivered it. When Harbin asked Allan why she was downgraded, he said Rosanna set the rating and he couldn't explain why. The subject of a complaint should not be the person scoring the complainant.",
               thumbs: [
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "2024 overall p1" },
-                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall narrative" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "2024 overall" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Final narrative" },
               ] },
           ]).map((row, i) => (
             <li key={row.h} className="rounded-sm border-2 border-border bg-card p-4">
