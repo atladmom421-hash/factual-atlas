@@ -91,10 +91,13 @@ function ComparatorsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
-      <div className="max-w-3xl">
-        <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Comparator Movement Matrix</div>
-        <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">Who moved, who stayed.</h1>
-        <p className="mt-3 text-foreground/75">A side-by-side comparison of schedule, area, waitlist, ticket, performance, and process for each comparator leader.</p>
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="max-w-3xl">
+          <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Comparator Movement Matrix</div>
+          <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">Who moved, who stayed.</h1>
+          <p className="mt-3 text-foreground/75">A side-by-side comparison of schedule, area, waitlist, ticket, performance, and process for each comparator leader.</p>
+        </div>
+        <PrintPdfButton title="Comparator Matrix — Harbin Case File" />
       </div>
 
       {/* Tyler Millisock — dedicated evidence panel */}
