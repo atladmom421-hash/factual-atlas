@@ -146,7 +146,27 @@ function PerformancePage() {
           Overall rating dropped one step (STRONG → SOLID) while bonus payout reached <span className="text-foreground font-medium">124.36% of target</span> —
           an internal contradiction: pay reflected performance, the headline label did not.
         </p>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          <div className="rounded-sm border-2 border-emerald-500/30 bg-emerald-500/5 p-3">
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-emerald-300">2023 · STRONG · Blackson</div>
+            <EvidenceThumbs items={[
+              { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "Comp statement" },
+              { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-year-end-review.jpeg", caption: "Year-end p1" },
+              { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p9-overall-full.jpeg", caption: "Overall" },
+              { exhibitId: "EX-054", src: "/exhibits/EX-054-2023-q2-checkin.jpeg", caption: "Q2 check-in" },
+            ]} />
+          </div>
+          <div className="rounded-sm border-2 border-amber-500/30 bg-amber-500/5 p-3">
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · SOLID · Glover</div>
+            <EvidenceThumbs items={[
+              { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "Comp · 124.36%" },
+              { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "Overall p1" },
+              { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall full" },
+            ]} />
+          </div>
+        </div>
       </section>
+
 
       {/* Sub-ratings */}
       <section className="mt-10">
