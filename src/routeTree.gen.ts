@@ -14,6 +14,7 @@ import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as StoryRouteImport } from './routes/story'
 import { Route as ScheduleDataRouteImport } from './routes/schedule-data'
 import { Route as PreservationRouteImport } from './routes/preservation'
+import { Route as PerformanceRouteImport } from './routes/performance'
 import { Route as PeopleRouteImport } from './routes/people'
 import { Route as InvestigatorRouteImport } from './routes/investigator'
 import { Route as HardshipThreadRouteImport } from './routes/hardship-thread'
@@ -47,6 +48,11 @@ const ScheduleDataRoute = ScheduleDataRouteImport.update({
 const PreservationRoute = PreservationRouteImport.update({
   id: '/preservation',
   path: '/preservation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PerformanceRoute = PerformanceRouteImport.update({
+  id: '/performance',
+  path: '/performance',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PeopleRoute = PeopleRouteImport.update({
@@ -105,6 +111,7 @@ export interface FileRoutesByFullPath {
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/people': typeof PeopleRoute
+  '/performance': typeof PerformanceRoute
   '/preservation': typeof PreservationRoute
   '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
@@ -121,6 +128,7 @@ export interface FileRoutesByTo {
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/people': typeof PeopleRoute
+  '/performance': typeof PerformanceRoute
   '/preservation': typeof PreservationRoute
   '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
@@ -138,6 +146,7 @@ export interface FileRoutesById {
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
   '/people': typeof PeopleRoute
+  '/performance': typeof PerformanceRoute
   '/preservation': typeof PreservationRoute
   '/schedule-data': typeof ScheduleDataRoute
   '/story': typeof StoryRoute
@@ -156,6 +165,7 @@ export interface FileRouteTypes {
     | '/hardship-thread'
     | '/investigator'
     | '/people'
+    | '/performance'
     | '/preservation'
     | '/schedule-data'
     | '/story'
@@ -172,6 +182,7 @@ export interface FileRouteTypes {
     | '/hardship-thread'
     | '/investigator'
     | '/people'
+    | '/performance'
     | '/preservation'
     | '/schedule-data'
     | '/story'
@@ -188,6 +199,7 @@ export interface FileRouteTypes {
     | '/hardship-thread'
     | '/investigator'
     | '/people'
+    | '/performance'
     | '/preservation'
     | '/schedule-data'
     | '/story'
@@ -205,6 +217,7 @@ export interface RootRouteChildren {
   HardshipThreadRoute: typeof HardshipThreadRoute
   InvestigatorRoute: typeof InvestigatorRoute
   PeopleRoute: typeof PeopleRoute
+  PerformanceRoute: typeof PerformanceRoute
   PreservationRoute: typeof PreservationRoute
   ScheduleDataRoute: typeof ScheduleDataRoute
   StoryRoute: typeof StoryRoute
@@ -247,6 +260,13 @@ declare module '@tanstack/react-router' {
       path: '/preservation'
       fullPath: '/preservation'
       preLoaderRoute: typeof PreservationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/performance': {
+      id: '/performance'
+      path: '/performance'
+      fullPath: '/performance'
+      preLoaderRoute: typeof PerformanceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/people': {
@@ -325,6 +345,7 @@ const rootRouteChildren: RootRouteChildren = {
   HardshipThreadRoute: HardshipThreadRoute,
   InvestigatorRoute: InvestigatorRoute,
   PeopleRoute: PeopleRoute,
+  PerformanceRoute: PerformanceRoute,
   PreservationRoute: PreservationRoute,
   ScheduleDataRoute: ScheduleDataRoute,
   StoryRoute: StoryRoute,

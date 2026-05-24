@@ -14,7 +14,7 @@ const links = [
   { to: "/people", label: "People" },
   { to: "/comparators", label: "Comparators" },
   { to: "/schedule-data", label: "Schedule" },
-  
+  { to: "/performance", label: "Performance" },
   { to: "/evidence", label: "Evidence" },
   { to: "/preservation", label: "Preservation" },
   { to: "/greg-anita-thread", label: "Greg/Anita" },
