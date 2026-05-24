@@ -167,52 +167,6 @@ function PerformancePage() {
         </div>
 
 
-        {/* 2023 Bonus breakdown + math check */}
-        <div className="mt-6 rounded-sm border-2 border-border bg-card p-4">
-          <div className="flex items-center justify-between gap-3">
-            <div>
-              <h3 className="font-display text-lg">2023 Bonus — line-by-line</h3>
-              <p className="mt-1 text-xs text-muted-foreground">From Annual Compensation Statement (EX-050).</p>
-            </div>
-            <ExhibitChip id="EX-050" />
-          </div>
-          <div className="mt-3 grid gap-2 text-sm md:grid-cols-2">
-            <div className="rounded-sm border border-border bg-background/40 p-2"><span className="font-mono text-[11px] uppercase text-muted-foreground">Bonus Eligible Salary (12/31/23)</span><div className="font-mono text-foreground">$58,000.00</div></div>
-            <div className="rounded-sm border border-border bg-background/40 p-2"><span className="font-mono text-[11px] uppercase text-muted-foreground">Target Bonus %</span><div className="font-mono text-foreground">5.00%</div></div>
-            <div className="rounded-sm border border-border bg-background/40 p-2"><span className="font-mono text-[11px] uppercase text-muted-foreground">Target Bonus Amount</span><div className="font-mono text-foreground">$2,169.04</div></div>
-            <div className="rounded-sm border border-border bg-background/40 p-2"><span className="font-mono text-[11px] uppercase text-muted-foreground">Company Performance Factor</span><div className="font-mono text-foreground">87.80%</div></div>
-            <div className="rounded-sm border border-border bg-background/40 p-2"><span className="font-mono text-[11px] uppercase text-muted-foreground">Individual Performance Factor</span><div className="font-mono text-foreground">115.02%</div></div>
-            <div className="rounded-sm border border-border bg-background/40 p-2"><span className="font-mono text-[11px] uppercase text-muted-foreground">Bonus Payout</span><div className="font-mono text-foreground">$2,190.00 <span className="text-muted-foreground">(100.97% of target)</span></div></div>
-          </div>
-
-          <div className="mt-4 rounded-sm border-2 border-amber-500/40 bg-amber-500/5 p-3 text-xs">
-            <div className="mb-1 font-mono uppercase tracking-wider text-amber-300">Math check · One number doesn't fit</div>
-            <ul className="ml-4 list-disc space-y-1 text-amber-100">
-              <li>
-                <span className="font-semibold">Target should be 5% × $58,000 = $2,900.00</span> — but the statement shows
-                <span className="font-mono"> $2,169.04</span>, which is ~25% short.
-              </li>
-              <li>
-                Working backwards: <span className="font-mono">$2,169.04 ÷ 5% = $43,380.80</span> — that's the salary the target was actually computed against.
-              </li>
-              <li>
-                <span className="font-semibold text-emerald-200">That number now has a clean explanation.</span> Harbin's hire date was
-                <span className="font-mono"> April 3, 2023</span>. From Apr 3 → Dec 31 = 273 days (74.79% of the year).
-                <span className="font-mono"> $58,000 × 273/365 = $43,378.36</span> — within $2 of the implied base. The 2023 bonus was
-                <span className="font-semibold"> prorated for partial-year service</span>, but the comp statement never says so — it just shows the full $58,000 above a target that doesn't match.
-              </li>
-
-              <li>
-                The rest of the math is internally consistent:
-                <span className="font-mono"> $2,169.04 × 87.80% × 115.02% = $2,190.51 ≈ $2,190.00 </span>
-                payout, and <span className="font-mono">$2,190 ÷ $2,169.04 = 100.97%</span> of target. ✓
-              </li>
-              <li>
-                Worth requesting in discovery: the proration worksheet behind the $2,169.04 target — i.e., effective dates, base-rate changes, and any grade/role moves during 2023 that shrank the bonus base relative to the year-end salary.
-              </li>
-            </ul>
-          </div>
-        </div>
       </section>
 
       {/* Full year-over-year side-by-side */}
