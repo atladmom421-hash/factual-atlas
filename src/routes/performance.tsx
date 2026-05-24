@@ -206,7 +206,7 @@ function PerformancePage() {
           </table>
         </div>
         <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
-          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Sub-rating evidence pages (EX-053)</div>
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Screenshots of every goal page (EX-053)</div>
           <EvidenceThumbs size="sm" items={[
             { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk" },
             { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I" },
