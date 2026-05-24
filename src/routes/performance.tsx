@@ -68,6 +68,36 @@ function ExhibitChip({ id }: { id: string }) {
   );
 }
 
+/** Render evidence image thumbnails inline next to a point. */
+function EvidenceThumbs({
+  items,
+  size = "md",
+}: {
+  items: { exhibitId: string; src: string; caption?: string }[];
+  size?: "sm" | "md";
+}) {
+  const { open } = useExhibit();
+  const dim = size === "sm" ? "h-20 w-28" : "h-32 w-44";
+  return (
+    <div className="flex flex-wrap gap-2">
+      {items.map((it, i) => (
+        <button
+          key={i}
+          onClick={() => open(it.exhibitId)}
+          className={`group relative overflow-hidden rounded-sm border-2 border-border bg-black/40 ${dim} hover:border-cyan-400/60`}
+          title={`${it.exhibitId}${it.caption ? " — " + it.caption : ""}`}
+        >
+          <img src={it.src} alt={it.caption || it.exhibitId} className="h-full w-full object-cover object-top transition group-hover:scale-105" loading="lazy" />
+          <span className="absolute bottom-0 left-0 right-0 bg-black/70 px-1 py-0.5 text-left font-mono text-[9px] text-cyan-200">
+            {it.exhibitId}{it.caption ? ` · ${it.caption}` : ""}
+          </span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+
 function PerformancePage() {
   const { open } = useExhibit();
   const perfExhibits = exhibits.filter(e => PERF_EXHIBIT_IDS.includes(e.id));
@@ -116,7 +146,27 @@ function PerformancePage() {
           Overall rating dropped one step (STRONG → SOLID) while bonus payout reached <span className="text-foreground font-medium">124.36% of target</span> —
           an internal contradiction: pay reflected performance, the headline label did not.
         </p>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          <div className="rounded-sm border-2 border-emerald-500/30 bg-emerald-500/5 p-3">
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-emerald-300">2023 · STRONG · Blackson</div>
+            <EvidenceThumbs items={[
+              { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "Comp statement" },
+              { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-year-end-review.jpeg", caption: "Year-end p1" },
+              { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p9-overall-full.jpeg", caption: "Overall" },
+              { exhibitId: "EX-054", src: "/exhibits/EX-054-2023-q2-checkin.jpeg", caption: "Q2 check-in" },
+            ]} />
+          </div>
+          <div className="rounded-sm border-2 border-amber-500/30 bg-amber-500/5 p-3">
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-amber-300">2024 · SOLID · Glover</div>
+            <EvidenceThumbs items={[
+              { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "Comp · 124.36%" },
+              { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p1-overall.jpeg", caption: "Overall p1" },
+              { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "Overall full" },
+            ]} />
+          </div>
+        </div>
       </section>
+
 
       {/* Sub-ratings */}
       <section className="mt-10">
@@ -144,7 +194,22 @@ function PerformancePage() {
             </tbody>
           </table>
         </div>
+        <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Sub-rating evidence pages (EX-053)</div>
+          <EvidenceThumbs size="sm" items={[
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p5-people.jpeg", caption: "People" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p6-play-to-win.jpeg", caption: "Play to Win" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p7-get-better.jpeg", caption: "Get Better" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p8-succeed-together.jpeg", caption: "Succeed Together" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p15-team-perf-advance.jpeg", caption: "Team Perf" },
+            { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p16-engaged-employees.jpeg", caption: "Engagement" },
+          ]} />
+        </div>
       </section>
+
 
       {/* Objective metrics */}
       <section className="mt-10">
@@ -172,7 +237,16 @@ function PerformancePage() {
             </tbody>
           </table>
         </div>
+        <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">TH Metrics screenshots (EX-056)</div>
+          <EvidenceThumbs items={[
+            { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-2023-rascart-sharbi1.jpeg", caption: "2023 RASCART/SHARBI1" },
+            { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-rascart-2024.jpeg", caption: "2024 RASCART" },
+            { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-sharbi1-2024.jpeg", caption: "2024 SHARBI1" },
+          ]} />
+        </div>
       </section>
+
 
       {/* Scorecard */}
       <section className="mt-10">
@@ -194,26 +268,69 @@ function PerformancePage() {
             })}
           </div>
         </div>
+        <div className="mt-4 rounded-sm border-2 border-border bg-card p-3">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">Scorecard screenshots (EX-057)</div>
+          <EvidenceThumbs items={[
+            { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-overview.jpeg", caption: "Overview" },
+            { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-detail.jpeg", caption: "Detail" },
+          ]} />
+        </div>
       </section>
 
       {/* Analysis */}
       <section className="mt-10">
         <h2 className="font-display text-2xl">Six-point analysis</h2>
         <ol className="mt-4 space-y-3 text-sm">
-          {[
-            ["Internal contradiction", "Higher bonus payout (124.36%) in 2024 despite a lower headline rating than 2023."],
-            ["Uniformly positive sub-ratings", "Every 2024 goal and behavior was SOLID or STRONG — no failed metric supports a downgrade."],
-            ["Substance → style shift", "2023 narrative cited specific deliverables and metrics; 2024 narrative pivoted to vague style commentary ('power of the whirlwind', 'keep your elements simple')."],
-            ["Quantified record", "TH Metrics show YoY improvement in Compliance, Utilization, ACW, and Direct Pays for both RASCART and SHARBI1."],
-            ["Self-evaluation gap", "Manager's narrative omitted the specific accomplishments documented in Harbin's self-review."],
-            ["Manager admission", "Allan separately told HR Harbin was 'the best team lead he's got' (EX-049), contradicting any performance-based defense of the downgrade."],
-          ].map(([h, b], i) => (
-            <li key={h} className="rounded-sm border-2 border-border bg-card p-4">
-              <div className="font-mono text-[11px] text-muted-foreground">0{i + 1}</div>
-              <div className="mt-1 font-display text-lg">{h}</div>
-              <div className="mt-1 text-muted-foreground">{b}</div>
+          {([
+            { h: "Internal contradiction", b: "Higher bonus payout (124.36%) in 2024 despite a lower headline rating than 2023.",
+              thumbs: [
+                { exhibitId: "EX-050", src: "/exhibits/EX-050-2023-comp-statement-strong.jpeg", caption: "2023 STRONG" },
+                { exhibitId: "EX-051", src: "/exhibits/EX-051-2024-comp-statement-solid.jpeg", caption: "2024 SOLID · 124.36%" },
+              ] },
+            { h: "Uniformly positive sub-ratings", b: "Every 2024 goal and behavior was SOLID or STRONG — no failed metric supports a downgrade.",
+              thumbs: [
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p2-risk.jpeg", caption: "Risk · SOLID" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p3-dei.jpeg", caption: "DE&I · STRONG" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p4-results.jpeg", caption: "Results · STRONG" },
+              ] },
+            { h: "Substance → style shift", b: "2023 narrative cited specific deliverables and metrics; 2024 narrative pivoted to vague style commentary ('power of the whirlwind', 'keep your elements simple').",
+              thumbs: [
+                { exhibitId: "EX-052", src: "/exhibits/EX-052-2023-review-p4-results.jpeg", caption: "2023 substance" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p24-overall-full.jpeg", caption: "2024 style" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p9-development.jpeg", caption: "Development" },
+              ] },
+            { h: "Quantified record", b: "TH Metrics show YoY improvement in Compliance, Utilization, ACW, and Direct Pays for both RASCART and SHARBI1.",
+              thumbs: [
+                { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-2023-rascart-sharbi1.jpeg", caption: "2023 baseline" },
+                { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-rascart-2024.jpeg", caption: "2024 RASCART" },
+                { exhibitId: "EX-056", src: "/exhibits/EX-056-th-metrics-sharbi1-2024.jpeg", caption: "2024 SHARBI1" },
+                { exhibitId: "EX-057", src: "/exhibits/EX-057-car-2025-tl-scorecard-overview.jpeg", caption: "Scorecard YTD 3.93" },
+              ] },
+            { h: "Self-evaluation gap", b: "Manager's narrative omitted the specific accomplishments documented in Harbin's self-review.",
+              thumbs: [
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p19-results-full.jpeg", caption: "Self vs. Mgr" },
+                { exhibitId: "EX-053", src: "/exhibits/EX-053-2024-review-p18-dei-full.jpeg", caption: "DE&I full" },
+                { exhibitId: "EX-054", src: "/exhibits/EX-054-2023-q3-checkin.jpeg", caption: "Q3 check-in" },
+              ] },
+            { h: "Manager admission", b: "Allan separately told HR Harbin was 'the best team lead he's got' (EX-049), contradicting any performance-based defense of the downgrade.",
+              thumbs: [] },
+          ]).map((row, i) => (
+            <li key={row.h} className="rounded-sm border-2 border-border bg-card p-4">
+              <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                <div className="md:max-w-xl">
+                  <div className="font-mono text-[11px] text-muted-foreground">0{i + 1}</div>
+                  <div className="mt-1 font-display text-lg">{row.h}</div>
+                  <div className="mt-1 text-muted-foreground">{row.b}</div>
+                </div>
+                {row.thumbs.length > 0 && (
+                  <div className="md:flex-shrink-0">
+                    <EvidenceThumbs size="sm" items={row.thumbs} />
+                  </div>
+                )}
+              </div>
             </li>
           ))}
+
         </ol>
       </section>
 
