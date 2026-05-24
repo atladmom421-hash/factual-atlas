@@ -167,6 +167,40 @@ function PerformancePage() {
         </div>
       </section>
 
+      {/* Peer comparator: Ryan Descarte */}
+      <section className="mt-10">
+        <h2 className="font-display text-2xl">Peer comparator · Ryan Descarte</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Ryan Descarte is another Unit Manager promoted into the role at the same time as Harbin.
+          His operational numbers track closely with hers — but his 2024 overall rating came in at
+          <span className="text-foreground font-medium"> Outstanding (5)</span> while Harbin received
+          <span className="text-foreground font-medium"> Solid (3)</span>.
+        </p>
+        <div className="mt-4 overflow-x-auto rounded-sm border-2 border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-[color:var(--hud-panel)] text-left text-[11px] uppercase tracking-wider text-muted-foreground">
+              <tr>
+                <th className="px-3 py-2">&nbsp;</th>
+                <th className="px-3 py-2">Harbin Quintero</th>
+                <th className="px-3 py-2">Ryan Descarte</th>
+              </tr>
+            </thead>
+            <tbody className="text-foreground">
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Role</td><td className="px-3 py-2">Unit Manager (TL)</td><td className="px-3 py-2">Unit Manager (TL)</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Promoted into role</td><td className="px-3 py-2">Same cycle</td><td className="px-3 py-2">Same cycle</td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Operational numbers</td><td className="px-3 py-2">Comparable</td><td className="px-3 py-2">Comparable</td></tr>
+              <tr className="border-t border-border bg-amber-500/5"><td className="px-3 py-2 text-muted-foreground">2024 overall rating</td><td className="px-3 py-2"><RatingBadge value="SOLID" /> <span className="ml-1 text-xs text-muted-foreground">(3)</span></td><td className="px-3 py-2"><RatingBadge value="OUTSTANDING" /> <span className="ml-1 text-xs text-muted-foreground">(5)</span></td></tr>
+              <tr className="border-t border-border"><td className="px-3 py-2 text-muted-foreground">Filed EEOC charge?</td><td className="px-3 py-2 text-amber-200">Yes — May 2024</td><td className="px-3 py-2">No</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 text-xs text-muted-foreground">
+          Same role, same start, similar metrics — two-step rating gap. The one variable that differs is Harbin's protected activity.
+        </p>
+      </section>
+
+
+
 
       {/* Sub-ratings */}
       <section className="mt-10">
