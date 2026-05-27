@@ -89,7 +89,7 @@ function ScheduleDataPage() {
       )}
 
       {/* Investigator matrix — the headline visual */}
-      <div className="mt-10">
+      <div className="mt-10 print-shrink-matrix">
         <LeaderShiftMatrix />
       </div>
 
