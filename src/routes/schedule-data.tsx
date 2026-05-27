@@ -71,6 +71,11 @@ function ScheduleDataPage() {
         </p>
       </div>
 
+      <div className="no-print mt-6">
+        <PrintPdfButton label="Download Schedule PDF" title="Harbin Case — Schedule Movement Data" />
+      </div>
+
+
       {/* Source exhibit */}
       {ex022 && (
         <button
