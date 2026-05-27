@@ -6,6 +6,8 @@ import { clsx } from "clsx";
 import { useHashFocus } from "@/components/case/useHashFocus";
 import { LegalTheorySnapshot } from "@/components/case/LegalTheorySnapshot";
 import { TopExhibitsCard } from "@/components/case/TopExhibitsCard";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/timeline")({
   head: () => ({
