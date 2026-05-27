@@ -6,6 +6,8 @@ import { clsx } from "clsx";
 import { useHashFocus } from "@/components/case/useHashFocus";
 import { LegalTheorySnapshot } from "@/components/case/LegalTheorySnapshot";
 import { TopExhibitsCard } from "@/components/case/TopExhibitsCard";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/timeline")({
   head: () => ({
@@ -83,10 +85,13 @@ function TimelinePage() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
-      <div className="max-w-3xl">
-        <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Master Timeline</div>
-        <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">Every event, in order.</h1>
-        <p className="mt-3 text-foreground/75">From the late-2023 temporary PM assignment through the May 2026 Karena Lesure concession. Filter by category, person, or year.</p>
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="max-w-3xl">
+          <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Master Timeline</div>
+          <h1 className="mt-2 font-display text-4xl tracking-tight sm:text-5xl">Every event, in order.</h1>
+          <p className="mt-3 text-foreground/75">From the late-2023 temporary PM assignment through the May 2026 Karena Lesure concession. Filter by category, person, or year.</p>
+        </div>
+        <PrintPdfButton title="Master Timeline — Harbin Case File" label="Download Timeline PDF" />
       </div>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-[1.4fr_1fr]">
@@ -129,6 +134,15 @@ function TimelinePage() {
         </div>
       )}
 
+      {/* Print header summary */}
+      <div className="print-only mt-6 border-t border-b border-black py-2 text-xs">
+        <strong>Printed timeline:</strong> {filtered.length} of {eventsSorted.length} events
+        {category !== "all" && <> · Category: {CATEGORY_LABELS[category] ?? category}</>}
+        {year !== "all" && <> · Year: {year}</>}
+        {personId !== "all" && <> · Person: {people.find(p => p.id === personId)?.name}</>}
+        {months.length > 0 && <> · Months: {months.join(", ")}</>}
+      </div>
+
       {/* Timeline */}
       <div id="timeline-results" className="mt-12 space-y-6">
         {filtered.length === 0 && (
@@ -136,6 +150,11 @@ function TimelinePage() {
         )}
         {filtered.map((e, i) => <TimelineEventCard key={e.id} event={e} index={i} />)}
       </div>
+
+      <PrintEvidenceAppendix
+        title="Timeline Evidence Appendix"
+        exhibitIds={Array.from(new Set(filtered.flatMap(e => e.evidenceIds)))}
+      />
     </div>
   );
 }
