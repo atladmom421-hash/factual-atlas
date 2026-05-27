@@ -10,6 +10,8 @@ import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
 import { WaitlistStatusTimeline } from "@/components/case/WaitlistStatusTimeline";
 import { AllanChatThreads } from "@/components/case/AllanChatThreads";
 import { ScheduleSourceGallery } from "@/components/case/ScheduleSourceGallery";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
@@ -69,6 +71,11 @@ function ScheduleDataPage() {
         </p>
       </div>
 
+      <div className="no-print mt-6">
+        <PrintPdfButton label="Download Schedule PDF" title="Harbin Case — Schedule Movement Data" />
+      </div>
+
+
       {/* Source exhibit */}
       {ex022 && (
         <button
@@ -82,7 +89,7 @@ function ScheduleDataPage() {
       )}
 
       {/* Investigator matrix — the headline visual */}
-      <div className="mt-10">
+      <div className="mt-10 print-shrink-matrix">
         <LeaderShiftMatrix />
       </div>
 
@@ -191,6 +198,11 @@ function ScheduleDataPage() {
         Source: EX-022 — Schedule Movement, Flexibility & Comparator Timeline Evidence (18 pp.).
         Page references point to the section of the exhibit PDF where the underlying screenshot or chart appears.
       </p>
+
+      <PrintEvidenceAppendix
+        exhibitIds={Array.from(new Set(scheduleRows.map(r => r.exhibitId)))}
+        title="Schedule Evidence Appendix"
+      />
     </div>
   );
 }
