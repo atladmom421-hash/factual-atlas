@@ -198,6 +198,11 @@ function ScheduleDataPage() {
         Source: EX-022 — Schedule Movement, Flexibility & Comparator Timeline Evidence (18 pp.).
         Page references point to the section of the exhibit PDF where the underlying screenshot or chart appears.
       </p>
+
+      <PrintEvidenceAppendix
+        exhibitIds={Array.from(new Set(scheduleRows.map(r => r.exhibitId)))}
+        title="Schedule Evidence Appendix"
+      />
     </div>
   );
 }
