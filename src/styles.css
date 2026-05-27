@@ -201,6 +201,14 @@
   section, article, table, tr, .avoid-break { page-break-inside: avoid; }
   h1, h2, h3 { page-break-after: avoid; }
 
+  /* Force framer-motion / whileInView elements visible in print
+     (they start at opacity:0 and only animate when scrolled into view) */
+  [style*="opacity: 0"], [style*="opacity:0"],
+  .motion-safe\:opacity-0, .opacity-0 {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   /* Reveal the printable evidence gallery hidden on screen */
   .print-only { display: block !important; }
 }
