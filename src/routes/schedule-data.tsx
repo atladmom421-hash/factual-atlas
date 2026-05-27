@@ -10,6 +10,8 @@ import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
 import { WaitlistStatusTimeline } from "@/components/case/WaitlistStatusTimeline";
 import { AllanChatThreads } from "@/components/case/AllanChatThreads";
 import { ScheduleSourceGallery } from "@/components/case/ScheduleSourceGallery";
+import { PrintPdfButton } from "@/components/case/PrintPdfButton";
+import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
 export const Route = createFileRoute("/schedule-data")({
   head: () => ({
