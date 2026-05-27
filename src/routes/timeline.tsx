@@ -134,6 +134,15 @@ function TimelinePage() {
         </div>
       )}
 
+      {/* Print header summary */}
+      <div className="print-only mt-6 border-t border-b border-black py-2 text-xs">
+        <strong>Printed timeline:</strong> {filtered.length} of {eventsSorted.length} events
+        {category !== "all" && <> · Category: {CATEGORY_LABELS[category] ?? category}</>}
+        {year !== "all" && <> · Year: {year}</>}
+        {personId !== "all" && <> · Person: {people.find(p => p.id === personId)?.name}</>}
+        {months.length > 0 && <> · Months: {months.join(", ")}</>}
+      </div>
+
       {/* Timeline */}
       <div id="timeline-results" className="mt-12 space-y-6">
         {filtered.length === 0 && (
@@ -141,6 +150,11 @@ function TimelinePage() {
         )}
         {filtered.map((e, i) => <TimelineEventCard key={e.id} event={e} index={i} />)}
       </div>
+
+      <PrintEvidenceAppendix
+        title="Timeline Evidence Appendix"
+        exhibitIds={Array.from(new Set(filtered.flatMap(e => e.evidenceIds)))}
+      />
     </div>
   );
 }
