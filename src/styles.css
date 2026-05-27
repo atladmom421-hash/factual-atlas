@@ -211,6 +211,14 @@
 
   /* Reveal the printable evidence gallery hidden on screen */
   .print-only { display: block !important; }
+
+  /* Avoid clipping horizontally-scrolling tables (e.g. schedule matrix) */
+  .overflow-x-auto, .overflow-auto, .overflow-x-scroll {
+    overflow: visible !important;
+  }
+  /* Shrink wide tables so they fit on the printed page */
+  table { font-size: 9px !important; }
+  .print-shrink-matrix { transform: scale(0.78); transform-origin: top left; width: 128%; }
 }
 .print-only { display: none; }
 
