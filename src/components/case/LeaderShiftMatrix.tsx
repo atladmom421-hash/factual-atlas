@@ -4,11 +4,11 @@ import { scheduleRows, SCHEDULE_TYPES, type ScheduleType } from "@/data/schedule
 import { LEADER_PROFILE_BY_NAME } from "@/data/leader-profiles";
 
 // Compact tokens for the matrix cells (semantic-friendly via tailwind palette)
-const CELL: Record<ScheduleType, { bg: string; label: string; abbr: string }> = {
-  "AM":         { bg: "bg-emerald-500/70",  label: "AM (early)",            abbr: "AM" },
-  "Midshift":   { bg: "bg-sky-500/70",      label: "Midshift",              abbr: "MID" },
-  "Mid/Late":   { bg: "bg-amber-500/75",    label: "Mid/Late",              abbr: "M/L" },
-  "PM/Closing": { bg: "bg-red-500/75",      label: "PM / Closing (10 PM)",  abbr: "PM" },
+const CELL: Record<ScheduleType, { bg: string; label: string; abbr: string; printClass: string }> = {
+  "AM":         { bg: "bg-emerald-500/70",  label: "AM (early)",            abbr: "AM",  printClass: "sched-cell-am" },
+  "Midshift":   { bg: "bg-sky-500/70",      label: "Midshift",              abbr: "MID", printClass: "sched-cell-mid" },
+  "Mid/Late":   { bg: "bg-amber-500/75",    label: "Mid/Late",              abbr: "M/L", printClass: "sched-cell-ml" },
+  "PM/Closing": { bg: "bg-red-500/75",      label: "PM / Closing (10 PM)",  abbr: "PM",  printClass: "sched-cell-pm" },
 };
 
 // Coaches & non-TL noise to keep out of the matrix
