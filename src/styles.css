@@ -211,6 +211,10 @@
 
   /* Reveal the printable evidence gallery hidden on screen */
   .print-only { display: block !important; }
+  .print-only, .print-only section, .print-only div {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
 
   /* Avoid clipping horizontally-scrolling tables (e.g. schedule matrix) */
   .overflow-x-auto, .overflow-auto, .overflow-x-scroll {
