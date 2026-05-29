@@ -7,14 +7,14 @@ import { clsx } from "clsx";
 // chain of custody is preserved. Month labels marked "verified" were confirmed by inspecting the
 // active sheet tab in the screenshot; the remaining shots are tagged "workbook capture" and the
 // user can verify the month from the bottom tab bar visible in each image.
-type Shot = {
+export type ScheduleShot = {
   file: string;
   month: string;       // displayed label
   verified: boolean;   // whether month tag is confirmed
   note?: string;
 };
 
-const SHOTS: Shot[] = [
+export const SCHEDULE_SHOTS: ScheduleShot[] = [
   // Verified from inspection
   { file: "IMG_7104.jpg", month: "Dec 2024",  verified: true,  note: "LVAR roster, Harbin on 130-10 closing" },
   { file: "IMG_7115.jpg", month: "May 2025",  verified: true,  note: "LVAR + Whitehall + TBAY, Harbin still 130-10" },
@@ -91,9 +91,9 @@ const SHOTS: Shot[] = [
 ];
 
 export function ScheduleSourceGallery() {
-  const [active, setActive] = useState<Shot | null>(null);
+  const [active, setActive] = useState<ScheduleShot | null>(null);
 
-  const verifiedCount = SHOTS.filter(s => s.verified).length;
+  const verifiedCount = SCHEDULE_SHOTS.filter(s => s.verified).length;
 
   return (
     <section className="rounded-md border border-border bg-card p-5">
@@ -103,7 +103,7 @@ export function ScheduleSourceGallery() {
           <h2 className="mt-1 font-display text-2xl tracking-tight">Schedule workbook captures</h2>
         </div>
         <div className="text-[11px] text-muted-foreground">
-          {SHOTS.length} captures · {verifiedCount} month-verified · source: <span className="font-mono">2023-2025 USE THIS Schedule (NEW)</span>
+          {SCHEDULE_SHOTS.length} captures · {verifiedCount} month-verified · source: <span className="font-mono">2023-2025 USE THIS Schedule (NEW)</span>
         </div>
       </header>
 
@@ -116,7 +116,7 @@ export function ScheduleSourceGallery() {
       </p>
 
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-        {SHOTS.map(s => (
+        {SCHEDULE_SHOTS.map(s => (
           <button
             key={s.file}
             onClick={() => setActive(s)}
@@ -126,7 +126,7 @@ export function ScheduleSourceGallery() {
             <img
               src={`/exhibits/schedule-screenshots/${s.file}`}
               alt={`Schedule workbook ${s.file} (${s.month})`}
-              loading="lazy"
+              loading="eager"
               className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
             />
             <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-black/80 to-transparent px-2 pb-1.5 pt-6 text-[10px] text-white">
