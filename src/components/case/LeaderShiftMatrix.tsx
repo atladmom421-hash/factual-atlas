@@ -219,7 +219,7 @@ export function LeaderShiftMatrix() {
                       >
                         {cell ? (
                           <div
-                            className={clsx("h-full w-full", CELL[cell.type].bg)}
+                            className={clsx("h-full w-full", CELL[cell.type].bg, CELL[cell.type].printClass)}
                             title={`${name} · ${shortMonth(key)} · ${cell.type} · ${cell.timeRange} · ${cell.area} · EX-022 ${cell.pages}`}
                           />
                         ) : null}
