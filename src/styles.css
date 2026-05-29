@@ -218,6 +218,16 @@
   }
   /* Shrink wide tables so they fit on the printed page */
   table { font-size: 9px !important; }
+
+  /* Force browsers to actually print background colors / images for whitelisted graphics */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+
+  /* Schedule grid coloring — these win over the universal [class*="bg-"] white override
+     because they appear later in the cascade with equal specificity (+ !important). */
+  .sched-cell-am  { background: #10b981 !important; background-color: #10b981 !important; }
+  .sched-cell-mid { background: #0ea5e9 !important; background-color: #0ea5e9 !important; }
+  .sched-cell-ml  { background: #f59e0b !important; background-color: #f59e0b !important; }
+  .sched-cell-pm  { background: #ef4444 !important; background-color: #ef4444 !important; }
   .print-shrink-matrix { transform: scale(0.78); transform-origin: top left; width: 128%; }
 }
 .print-only { display: none; }
