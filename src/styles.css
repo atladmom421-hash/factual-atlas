@@ -229,6 +229,31 @@
   .sched-cell-ml  { background: #f59e0b !important; background-color: #f59e0b !important; }
   .sched-cell-pm  { background: #ef4444 !important; background-color: #ef4444 !important; }
   .print-shrink-matrix { transform: scale(0.78); transform-origin: top left; width: 128%; }
+  .print-schedule-evidence-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+  .print-schedule-evidence-shot {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    border: 1px solid #cccccc !important;
+    margin: 0 !important;
+    padding: 8px !important;
+  }
+  .print-schedule-evidence-shot img {
+    display: block !important;
+    width: 100% !important;
+    max-height: 4.2in !important;
+    object-fit: contain !important;
+    border: 1px solid #dddddd !important;
+  }
+  .print-schedule-evidence-shot figcaption {
+    margin-top: 6px !important;
+    font-size: 9px !important;
+    line-height: 1.3 !important;
+    color: #000000 !important;
+  }
 }
 .print-only { display: none; }
 
