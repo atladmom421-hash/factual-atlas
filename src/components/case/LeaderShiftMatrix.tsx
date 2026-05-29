@@ -103,7 +103,7 @@ export function LeaderShiftMatrix() {
         <div className="mt-4 flex flex-wrap gap-3">
           {SCHEDULE_TYPES.map(t => (
             <div key={t} className="flex items-center gap-2 text-[11px]">
-              <span className={clsx("inline-block size-3 rounded-sm ring-1 ring-border/50", CELL[t].bg)} />
+              <span className={clsx("inline-block size-3 rounded-sm ring-1 ring-border/50", CELL[t].bg, CELL[t].printClass)} />
               <span className="text-foreground/80">{CELL[t].label}</span>
             </div>
           ))}
