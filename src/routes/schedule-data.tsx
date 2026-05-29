@@ -9,7 +9,7 @@ import { LeaderShiftMatrix } from "@/components/case/LeaderShiftMatrix";
 import { WaitlistTimeline } from "@/components/case/WaitlistTimeline";
 import { WaitlistStatusTimeline } from "@/components/case/WaitlistStatusTimeline";
 import { AllanChatThreads } from "@/components/case/AllanChatThreads";
-import { ScheduleSourceGallery } from "@/components/case/ScheduleSourceGallery";
+import { ScheduleSourceGallery, SCHEDULE_SHOTS } from "@/components/case/ScheduleSourceGallery";
 import { PrintPdfButton } from "@/components/case/PrintPdfButton";
 import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
@@ -203,6 +203,29 @@ function ScheduleDataPage() {
         exhibitIds={Array.from(new Set(scheduleRows.map(r => r.exhibitId)))}
         title="Schedule Evidence Appendix"
       />
+
+      <section className="print-only mt-10 border-t-2 border-black pt-6">
+        <h2 style={{ fontSize: 22, fontWeight: 700, margin: "0 0 12px" }}>Schedule Source Screenshots</h2>
+        <p style={{ fontSize: 11, color: "#444", margin: "0 0 18px" }}>
+          Original schedule workbook captures used to verify the schedule grid and source evidence on this page.
+        </p>
+        <div className="print-schedule-evidence-grid">
+          {SCHEDULE_SHOTS.map((shot) => (
+            <figure key={shot.file} className="print-schedule-evidence-shot">
+              <img
+                src={`/exhibits/schedule-screenshots/${shot.file}`}
+                alt={`Schedule workbook ${shot.file} (${shot.month})`}
+                loading="eager"
+                decoding="sync"
+              />
+              <figcaption>
+                <strong>{shot.file}</strong> · {shot.month}{shot.verified ? " · month verified" : " · workbook capture"}
+                {shot.note ? ` · ${shot.note}` : ""}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
