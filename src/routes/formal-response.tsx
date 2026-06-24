@@ -151,8 +151,119 @@ function FormalResponsePage() {
         </h2>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          A. The "no record of any prior request" assertion (PS p. 3, §I.B.3)
+          A. Response to Respondent's Characterization of Charging Party's Prior EEOC Charge
+          (PS pp. 2–3, § I.B.1–2)
         </h3>
+        <p className="mt-3">
+          Respondent's description of Charging Party's prior EEOC charge is incomplete and
+          misleading. The Position Statement characterizes the prior charge as limited to
+          ordinary "workplace interactions" with a coworker and Charging Party's then-manager,
+          Rosanna Blackson. That framing minimizes the seriousness of what was reported. The
+          prior protected activity involved race discrimination, retaliation, hostile work
+          environment concerns, medical leave and disability-related retaliation, a false
+          job-abandonment issue, repeated denied transfer and schedule requests, and the
+          failure to properly add Charging Party to the mid-shift waitlist.
+        </p>
+        <p className="mt-3">
+          Respondent's reliance on the fact that its internal investigation "did not
+          substantiate" the prior complaint is not dispositive. A non-substantiation finding
+          by the employer does not establish that the underlying conduct did not occur, nor
+          does it resolve the retaliation that followed. The contemporaneous record includes
+          Charging Party's May 29, 2024 written complaint to multiple leaders and Employee
+          Relations representatives, the May 31, 2024 HR intake call in which Charging Party
+          reported race discrimination, retaliation, the false job-abandonment issue, project
+          exclusion, and the waitlist/schedule issue, and HR's June 5, 2024 follow-up
+          arranging Charging Party's reassignment away from Ms. Blackson's direct supervision
+          to report through Mr. Glover effective July 1, 2024. That reassignment itself
+          reflects Respondent's understanding that continued one-on-one interaction with
+          Ms. Blackson was problematic during the pendency of the investigation. See{" "}
+          <Ex id="EX-HR-CALL" />, <Ex id="EX-002" />.
+        </p>
+        <p className="mt-3">
+          Charging Party also disputes Respondent's assertion that she "experienced no
+          adverse action" during or after the prior charge. Continued employment is not the
+          test. Under <em>Burlington Northern &amp; Santa Fe Ry. Co. v. White</em>, 548 U.S.
+          53 (2006), the question is whether the challenged actions might dissuade a
+          reasonable worker from making or supporting a charge of discrimination. The record
+          identifies, among other things:
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-6">
+          <li>
+            Charging Party had requested mid-shift or earlier schedule movement but was not
+            properly added to the waitlist when she should have been. See <Ex id="EX-008" />,{" "}
+            <Ex id="EX-041" />, <Ex id="EX-042" />.
+          </li>
+          <li>
+            Respondent later treated Charging Party's PM assignment as permanent even though
+            it had been presented as temporary, and Respondent's own records continued to
+            reflect temporary status. See <Ex id="EX-044" />, <Ex id="EX-045" />.
+          </li>
+          <li>
+            After Charging Party's May 2024 EEOC charge and May 29, 2024 formal complaint,
+            she remained fixed on the PM/closing schedule while other similarly situated
+            leaders moved to AM, mid-shift, or otherwise more favorable schedules. See{" "}
+            <Ex id="EX-010" />.
+          </li>
+          <li>
+            In July 2024, after the protected activity, Charging Party was assigned
+            low-performing employees who were already expected to be terminated; the delay
+            in processing their corrective actions negatively affected her team's
+            performance metrics.
+          </li>
+          <li>
+            When Charging Party submitted termination recommendations that Employee
+            Relations had approved, Mr. Carfagna blocked or delayed them at the director
+            level based on a documentation/coaching requirement that HR later confirmed
+            Charging Party had already satisfied. HR told Charging Party she "did exactly
+            the right thing," confirming the issue was not her performance or process.
+          </li>
+          <li>
+            In the first review cycle following the EEOC charge and formal complaint,
+            Charging Party's overall rating was downgraded from Strong to Solid despite
+            improved operational metrics, no goal rated below Solid, and a 124.36% bonus
+            payout. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
+            <Ex id="EX-052" />, <Ex id="EX-053" />.
+          </li>
+          <li>
+            The Solid rating reduced Charging Party's merit impact and, based on
+            information provided to leadership, excluded her from the Department Manager
+            training cohort — an internal promotional pipeline.
+          </li>
+          <li>
+            Charging Party was excluded from internal opportunities, remained blocked from
+            schedule movement, and was later told by Mr. Glover that there was a
+            "blockade" preventing her from moving forward. See <Ex id="EX-055" />.
+          </li>
+        </ul>
+        <p className="mt-3">
+          Respondent's statement that Charging Party's "compensation, responsibilities, and
+          opportunities remained unchanged" is therefore inaccurate. Compensation was
+          affected by the 2024 downgrade because the merit percentage tied to the review was
+          lower than it would have been at Strong, notwithstanding stronger measurable
+          results. Opportunities were affected because the Solid rating excluded Charging
+          Party from the Department Manager training cohort and because she remained on an
+          unfavorable schedule while peers moved. Responsibilities and working conditions
+          were affected by the transfer of low-performing employees to her team and by the
+          continued requirement that she manage under conditions created by Respondent's
+          failure to resolve the schedule, waitlist, and retaliation concerns.
+        </p>
+        <p className="mt-3">
+          Respondent had actual, contemporaneous notice of these concerns. The May 29, 2024
+          written complaint was directed to multiple leaders and Employee Relations
+          representatives; the May 31, 2024 HR intake call placed the substance of the
+          complaint on the record; and the June 5, 2024 follow-up confirmed Respondent's
+          decision to separate Charging Party from Ms. Blackson during the investigation.
+          See <Ex id="EX-HR-CALL" />. The relevant question is not whether Charging Party
+          was immediately terminated or formally demoted, but whether, after protected
+          activity, Respondent took actions or permitted conditions that would reasonably
+          discourage a person from making or supporting a discrimination complaint. The
+          record establishes that it did.
+        </p>
+
+        <h3 className="mt-6 font-display text-[15px] tracking-tight">
+          B. The "no record of any prior request" assertion (PS p. 3, §I.B.3)
+        </h3>
+
         <p className="mt-3">
           Respondent asserts that, upon Mr. Glover's assumption of supervision in July 2024,
           "there was no record of any such request in the centralized scheduling system." The
