@@ -199,6 +199,34 @@ function FormalResponsePage() {
           from the Department Manager training cohort, an internal promotional pipeline.
         </p>
         <p className="mt-3">
+          The temporal pattern of the overall ratings reinforces this point. In 2023, before
+          any protected activity, Charging Party received an overall rating of{" "}
+          <strong>Strong</strong>. In 2024, the first review cycle following her May 6, 2024
+          EEOC charge and May 29, 2024 formal internal complaint, the overall rating dropped
+          to <strong>Solid</strong> — even though her measurable performance improved, her
+          bonus paid out at 124.36% of target, and no individual goal was rated below Solid.
+          In 2025, after the events at issue and after Respondent was already defending its
+          actions in this matter, the overall rating returned to <strong>Strong</strong>.
+          See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
+          <Ex id="EX-052" />, <Ex id="EX-053" />.
+        </p>
+        <p className="mt-3">
+          The Strong → Solid → Strong sequence is probative for two reasons. First, 2024 is
+          the only year in the sequence that followed protected activity, and it is the only
+          year in which the overall rating departed downward from the underlying scorecards,
+          IPF, and bonus payout. Under <em>Reeves v. Sanderson Plumbing Prods., Inc.</em>,
+          530 U.S. 133 (2000), an evaluation that is inconsistent with the contemporaneous
+          metrics it purports to summarize supports an inference of pretext. Second, the
+          consequences of the 2024 Solid rating were not cosmetic: it reduced Charging
+          Party's merit impact and excluded her from the Department Manager training
+          cohort — the internal promotion pipeline. Respondent's representation that
+          Charging Party's "compensation, responsibilities, and opportunities remained
+          unchanged" cannot be squared with a downgrade that affected both pay and
+          advancement opportunity in the single review cycle that immediately followed her
+          protected activity.
+        </p>
+
+        <p className="mt-3">
           Respondent's procedural caveats in the same section — that it "does not waive…
           any and all substantive and procedural defenses" and that "any efforts to contact
           its current managers be directed through its counsel" — are noted. They do not,
