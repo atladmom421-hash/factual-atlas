@@ -479,16 +479,107 @@ function FormalResponsePage() {
         </ul>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          H. The "Mr. Glover did not know the substance" assertion (PS p. 3, § I.B.2; p. 8, § II.B)
+          H. Response to Respondent's Characterization of Mr. Glover's Role and Knowledge
+          (PS p. 3, § I.B.2; p. 8, § II.B)
         </h3>
         <p className="mt-3">
-          Respondent concedes that Mr. Glover "later became aware that Ms. Harbin had filed a
-          prior EEOC charge." That admission is sufficient for retaliation causation under{" "}
-          <em>Raad v. Fairbanks North Star Borough School District</em>, 323 F.3d 1185 (9th Cir.
-          2003). Decisionmaker knowledge of the substance of the protected activity is not
-          required; knowledge of its existence is. The adverse actions described in Section II.E
-          above all post-date Mr. Glover's admitted awareness.
+          Charging Party disputes Respondent's attempt to distance Allan Glover from her
+          protected activity and the adverse treatment that followed. Respondent represents
+          that Mr. Glover did not become Charging Party's manager until July 2024, that the
+          prior charge did not involve him, and that he "was not informed of the substance"
+          of the allegations. That framing is incomplete and misleading.
         </p>
+        <p className="mt-3">
+          Charging Party's position is not that Mr. Glover caused the events that gave rise
+          to the original EEOC charge. Charging Party's position is that, after she engaged
+          in protected activity, Respondent placed her under Mr. Glover's management and he
+          became the manager through whom decisions and communications affecting her
+          schedule, waitlist status, performance evaluation, advancement, corrective-action
+          processing, and working conditions were made or transmitted. Respondent cannot
+          insulate itself from liability by observing that Mr. Glover was not the original
+          subject of the prior charge when the adverse treatment continued — and in several
+          respects escalated — after he became her manager.
+        </p>
+        <p className="mt-3">
+          Respondent also omits the circumstances in which Mr. Glover became Charging
+          Party's manager. The reassignment to Mr. Glover's organization was not an ordinary
+          rotation untethered from the protected activity. HR specifically arranged the move
+          because Charging Party had complained about Rosanna Blackson and because HR
+          wanted to limit her one-on-one interactions with Ms. Blackson during the
+          investigation. Susan Marcinko told Charging Party that she had spoken with Greg
+          Carfagna about moving Charging Party to Mr. Glover's organization effective
+          July 1, 2024, and that, in the interim, Charging Party could go to Mr. Glover for
+          one-on-one direction in place of Ms. Blackson. See <Ex id="EX-HR-CALL" />,{" "}
+          <Ex id="EX-002" />. Mr. Glover's involvement therefore began in the context of an
+          active HR investigation into a protected complaint — not as a neutral management
+          change disconnected from the underlying issues.
+        </p>
+        <p className="mt-3">
+          Respondent's assertion that Mr. Glover "was not informed of the substance" of the
+          allegations should be tested by the documentary record. At a minimum, Respondent
+          — through its HR function and leadership — had actual knowledge of the substance
+          of the complaint. The May 29, 2024 formal complaint was directed to multiple HR
+          and leadership recipients and described race discrimination, retaliation, an
+          alleged racial slur attributed to Ms. Blackson, denied transfer and schedule
+          requests, and the failure to properly place Charging Party on the mid-shift
+          waitlist. HR then discussed the matter with Mr. Carfagna and arranged the move to
+          Mr. Glover's organization. If Respondent maintains that Mr. Glover was
+          deliberately kept uninformed of the substance of the investigation while being
+          assigned as Charging Party's interim and then direct manager, Respondent should
+          produce the communications showing what Mr. Glover was told — by Mr. Carfagna,
+          Ms. Marcinko, Employee Relations, or anyone else — before he began managing
+          Charging Party.
+        </p>
+        <p className="mt-3">
+          The record also reflects that Charging Party herself put Mr. Glover on notice of
+          the substance of the prior complaint. In a Microsoft Teams video meeting,
+          Charging Party informed Mr. Glover that she had filed a complaint against
+          Ms. Blackson and explained that the ongoing conduct she was experiencing could be
+          retaliatory in nature. Mr. Glover responded that he had confronted Ms. Blackson
+          about the issue — using profanity in doing so — and had directed her to correct
+          the conduct. That contemporaneous exchange is direct evidence that Mr. Glover
+          knew (a) Charging Party had engaged in protected activity directed at Ms. Blackson
+          and (b) the conduct at issue was ongoing and required corrective intervention.
+          Respondent's representation that Mr. Glover "was not informed of the substance"
+          cannot be reconciled with his own statement that he confronted the subject of the
+          complaint about that very conduct.
+        </p>
+        <p className="mt-3">
+          Even setting aside the substance question, Respondent concedes that Mr. Glover
+          "later became aware that Ms. Harbin had filed a prior EEOC charge." Under{" "}
+          <em>Raad v. Fairbanks North Star Borough School District</em>, 323 F.3d 1185 (9th
+          Cir. 2003), decisionmaker awareness of the existence of protected activity is
+          sufficient to establish the knowledge element of retaliation causation; awareness
+          of every factual particular is not required. The adverse actions described in
+          Section II.G above all post-date Mr. Glover's admitted awareness.
+        </p>
+        <p className="mt-3">
+          Mr. Glover later became the decisionmaker or participant in several of the
+          disputed issues at the center of this Charge, including Charging Party's schedule
+          movement, waitlist status, the alleged May 2025 day-shift "offer," administration
+          of the 2024 performance review, internal-opportunity discussions, Training Bay
+          movement discussions, and FMLA- and leave-related communications. Respondent's
+          conclusory representation that he did not act "based on" the prior complaint is
+          not evidence. The contemporaneous record shows that after protected activity,
+          Charging Party remained blocked from schedule movement, her waitlist history was
+          disputed and later reset, her 2024 overall rating dropped from Strong to Solid,
+          and other leaders received schedule movement she did not. See{" "}
+          <Ex id="EX-008" />, <Ex id="EX-010" />, <Ex id="EX-041" />, <Ex id="EX-042" />,{" "}
+          <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />, <Ex id="EX-052" />,{" "}
+          <Ex id="EX-053" />.
+        </p>
+        <p className="mt-3">
+          Finally, retaliation liability does not depend on the final-line manager having
+          been the original actor in the underlying discrimination complaint. The relevant
+          inquiry is whether Respondent, acting through its managers, HR, and leadership,
+          had knowledge of Charging Party's protected activity and thereafter subjected her
+          to materially adverse treatment. HR, Mr. Carfagna, and other members of
+          leadership indisputably had actual notice. Mr. Glover then became the manager
+          through whom many of the later disputed decisions and explanations were
+          communicated. His later actions are therefore not insulated from the prior
+          protected activity merely because he was not named in the original charge.
+        </p>
+
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           I. The "same protected class" defense (PS p. 7, § II.A)
@@ -620,7 +711,33 @@ function FormalResponsePage() {
             The litigation-hold notice issued in connection with the May 2024 prior charge and
             all custodial deletion/retention activity since that date.
           </li>
+          <li>
+            All communications between Susan Marcinko, Greg Carfagna, Allan Glover, and
+            Human Resources / Employee Relations concerning the June–July 2024 reassignment
+            of Charging Party to Mr. Glover's organization.
+          </li>
+          <li>
+            Any instructions provided to Mr. Glover regarding Charging Party's reporting
+            arrangement, schedule request, prior internal complaint, Ms. Blackson, or the
+            ongoing HR investigation, including any onboarding briefing or written guidance.
+          </li>
+          <li>
+            All communications reflecting what Mr. Glover was told — or was deliberately
+            not told — about Charging Party's May 29, 2024 internal complaint and May 6,
+            2024 EEOC charge before and after he assumed supervision.
+          </li>
+          <li>
+            All documents identifying who decided that Mr. Glover would become Charging
+            Party's manager and the reasons stated for that decision.
+          </li>
+          <li>
+            All communications between Mr. Glover, Mr. Carfagna, Human Resources, Employee
+            Relations, and scheduling administrators concerning Charging Party's waitlist
+            placement, the alleged May 2025 day-shift offer, schedule movement, and
+            performance rating from July 2024 forward.
+          </li>
         </ol>
+
 
         {/* Section V */}
         <h2 className="mt-10 font-display text-lg tracking-tight">V. Conclusion</h2>
