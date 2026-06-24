@@ -87,7 +87,7 @@ function GatedPage() {
     );
   }
 
-  return <ResponseContent />;
+  return <FormalLetterBody />;
 }
 
 // ─────────────────────────────────────────────────────────────────
