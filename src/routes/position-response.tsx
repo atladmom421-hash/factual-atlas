@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FormalLetterBody } from "@/components/case/FormalLetterBody";
 import { useEffect, useState } from "react";
-import { Lock, ShieldAlert, KeyRound } from "lucide-react";
-import { PrintPdfButton } from "@/components/case/PrintPdfButton";
-import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
+import { Lock, KeyRound } from "lucide-react";
+
 
 export const Route = createFileRoute("/position-response")({
   head: () => ({
