@@ -711,7 +711,33 @@ function FormalResponsePage() {
             The litigation-hold notice issued in connection with the May 2024 prior charge and
             all custodial deletion/retention activity since that date.
           </li>
+          <li>
+            All communications between Susan Marcinko, Greg Carfagna, Allan Glover, and
+            Human Resources / Employee Relations concerning the June–July 2024 reassignment
+            of Charging Party to Mr. Glover's organization.
+          </li>
+          <li>
+            Any instructions provided to Mr. Glover regarding Charging Party's reporting
+            arrangement, schedule request, prior internal complaint, Ms. Blackson, or the
+            ongoing HR investigation, including any onboarding briefing or written guidance.
+          </li>
+          <li>
+            All communications reflecting what Mr. Glover was told — or was deliberately
+            not told — about Charging Party's May 29, 2024 internal complaint and May 6,
+            2024 EEOC charge before and after he assumed supervision.
+          </li>
+          <li>
+            All documents identifying who decided that Mr. Glover would become Charging
+            Party's manager and the reasons stated for that decision.
+          </li>
+          <li>
+            All communications between Mr. Glover, Mr. Carfagna, Human Resources, Employee
+            Relations, and scheduling administrators concerning Charging Party's waitlist
+            placement, the alleged May 2025 day-shift offer, schedule movement, and
+            performance rating from July 2024 forward.
+          </li>
         </ol>
+
 
         {/* Section V */}
         <h2 className="mt-10 font-display text-lg tracking-tight">V. Conclusion</h2>
