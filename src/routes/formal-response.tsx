@@ -151,9 +151,69 @@ function FormalResponsePage() {
         </h2>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          A. Response to Respondent's Characterization of Charging Party's Prior EEOC Charge
-          (PS pp. 2–3, § I.B.1–2)
+          A. Response to Respondent's Narrative of Charging Party's Employment
+          (PS pp. 2–3, § I.B — "Ms. Harbin's Employment with Discover")
         </h3>
+        <p className="mt-3">
+          Respondent opens Section I.B with the assertion that Charging Party "worked within
+          established operational and supervisory structures and was subject to the same
+          performance management, scheduling, and internal mobility processes that applied
+          uniformly to all similarly situated employees." That sentence is the foundation on
+          which the remainder of the Position Statement rests, and it is contradicted by the
+          investigative record.
+        </p>
+        <p className="mt-3">
+          The "uniform application" framing cannot be reconciled with the comparator and
+          process evidence already produced. Respondent's own Human Resources representative
+          told Charging Party on the November 6, 2025 follow-up call that comparator
+          movement occurred "because of leadership, not the waitlist." See{" "}
+          <Ex id="EX-HR-CALL" />. The May 12, 2026 Karena Lesure reassignment was granted
+          because Julie Cahoon "specifically asked." See <Ex id="EX-019" />. Named
+          comparators — Tyler Millisock, Hunter Samuel, Marc Case, Marissa Mascarenas, and
+          Karena Lesure — received favorable scheduling and assignment treatment that
+          Charging Party was denied under the same purportedly "neutral" process. See{" "}
+          <Ex id="EX-010" />. A process that produced these outcomes was not applied
+          uniformly to Charging Party.
+        </p>
+        <p className="mt-3">
+          Respondent's representation that Charging Party "performed her role without
+          incident" from April 2023 through mid-2024 is consistent with Charging Party's
+          position and with the contemporaneous record. It is also legally significant: it
+          forecloses any later suggestion that pre-existing performance concerns explain the
+          adverse actions that followed her May 6, 2024 EEOC charge and May 29, 2024 formal
+          internal complaint. Whatever changed in late 2024 and 2025, it was not Charging
+          Party's underlying performance.
+        </p>
+        <p className="mt-3">
+          Respondent's reference to "monthly scorecards that roll into annual performance
+          ratings" likewise undercuts its own narrative. The monthly scorecards, IPF
+          calculations, and bonus payout for 2024 reflect improved operational metrics, no
+          goal rated below Solid, an IPF of approximately 120%, and a bonus payout of
+          124.36%. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
+          <Ex id="EX-052" />, <Ex id="EX-053" />. The overall rating of "Solid" attached to
+          Exhibit B of the Position Statement is therefore not a neutral summation of the
+          scorecards Respondent cites; it is a downward departure from them. That
+          departure — the first review cycle after the EEOC charge and the formal
+          complaint — is itself an adverse action under <em>Burlington Northern v. White</em>,
+          548 U.S. 53 (2006), because it reduced merit impact and excluded Charging Party
+          from the Department Manager training cohort, an internal promotional pipeline.
+        </p>
+        <p className="mt-3">
+          Respondent's procedural caveats in the same section — that it "does not waive…
+          any and all substantive and procedural defenses" and that "any efforts to contact
+          its current managers be directed through its counsel" — are noted. They do not,
+          however, supply factual content responsive to the Charge, and they cannot
+          substitute for the documentary production identified in Section IV below.
+          Charging Party respects Respondent's right to route witness contact through
+          counsel and asks only that the Division ensure such routing does not delay or
+          obstruct the production of records the Position Statement places at issue.
+        </p>
+
+        <h3 className="mt-6 font-display text-[15px] tracking-tight">
+          B. Response to Respondent's Characterization of Charging Party's Prior EEOC Charge
+          (PS pp. 2–3, § I.B.1)
+        </h3>
+
         <p className="mt-3">
           Respondent's description of Charging Party's prior EEOC charge is incomplete and
           misleading. The Position Statement characterizes the prior charge as limited to
