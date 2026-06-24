@@ -22,6 +22,7 @@ const links = [
   { to: "/story", label: "Story Mode" },
   { to: "/investigator", label: "Brief" },
   { to: "/position-response", label: "PS Response 🔒" },
+  { to: "/formal-response", label: "Formal Letter" },
 ] as const;
 
 function useNowUTC() {
