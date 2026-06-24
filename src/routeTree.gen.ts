@@ -20,7 +20,6 @@ import { Route as PeopleRouteImport } from './routes/people'
 import { Route as InvestigatorRouteImport } from './routes/investigator'
 import { Route as HardshipThreadRouteImport } from './routes/hardship-thread'
 import { Route as GregAnitaThreadRouteImport } from './routes/greg-anita-thread'
-import { Route as FormalResponseRouteImport } from './routes/formal-response'
 import { Route as EvidenceRouteImport } from './routes/evidence'
 import { Route as ComparatorsRouteImport } from './routes/comparators'
 import { Route as CommandRouteImport } from './routes/command'
@@ -82,11 +81,6 @@ const GregAnitaThreadRoute = GregAnitaThreadRouteImport.update({
   path: '/greg-anita-thread',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FormalResponseRoute = FormalResponseRouteImport.update({
-  id: '/formal-response',
-  path: '/formal-response',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const EvidenceRoute = EvidenceRouteImport.update({
   id: '/evidence',
   path: '/evidence',
@@ -119,7 +113,6 @@ export interface FileRoutesByFullPath {
   '/command': typeof CommandRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
-  '/formal-response': typeof FormalResponseRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
@@ -138,7 +131,6 @@ export interface FileRoutesByTo {
   '/command': typeof CommandRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
-  '/formal-response': typeof FormalResponseRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
@@ -158,7 +150,6 @@ export interface FileRoutesById {
   '/command': typeof CommandRoute
   '/comparators': typeof ComparatorsRoute
   '/evidence': typeof EvidenceRoute
-  '/formal-response': typeof FormalResponseRoute
   '/greg-anita-thread': typeof GregAnitaThreadRoute
   '/hardship-thread': typeof HardshipThreadRoute
   '/investigator': typeof InvestigatorRoute
@@ -179,7 +170,6 @@ export interface FileRouteTypes {
     | '/command'
     | '/comparators'
     | '/evidence'
-    | '/formal-response'
     | '/greg-anita-thread'
     | '/hardship-thread'
     | '/investigator'
@@ -198,7 +188,6 @@ export interface FileRouteTypes {
     | '/command'
     | '/comparators'
     | '/evidence'
-    | '/formal-response'
     | '/greg-anita-thread'
     | '/hardship-thread'
     | '/investigator'
@@ -217,7 +206,6 @@ export interface FileRouteTypes {
     | '/command'
     | '/comparators'
     | '/evidence'
-    | '/formal-response'
     | '/greg-anita-thread'
     | '/hardship-thread'
     | '/investigator'
@@ -237,7 +225,6 @@ export interface RootRouteChildren {
   CommandRoute: typeof CommandRoute
   ComparatorsRoute: typeof ComparatorsRoute
   EvidenceRoute: typeof EvidenceRoute
-  FormalResponseRoute: typeof FormalResponseRoute
   GregAnitaThreadRoute: typeof GregAnitaThreadRoute
   HardshipThreadRoute: typeof HardshipThreadRoute
   InvestigatorRoute: typeof InvestigatorRoute
@@ -330,13 +317,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GregAnitaThreadRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/formal-response': {
-      id: '/formal-response'
-      path: '/formal-response'
-      fullPath: '/formal-response'
-      preLoaderRoute: typeof FormalResponseRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/evidence': {
       id: '/evidence'
       path: '/evidence'
@@ -381,7 +361,6 @@ const rootRouteChildren: RootRouteChildren = {
   CommandRoute: CommandRoute,
   ComparatorsRoute: ComparatorsRoute,
   EvidenceRoute: EvidenceRoute,
-  FormalResponseRoute: FormalResponseRoute,
   GregAnitaThreadRoute: GregAnitaThreadRoute,
   HardshipThreadRoute: HardshipThreadRoute,
   InvestigatorRoute: InvestigatorRoute,
