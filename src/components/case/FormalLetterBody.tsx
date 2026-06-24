@@ -1,21 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { PrintPdfButton } from "@/components/case/PrintPdfButton";
 import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
 
-export const Route = createFileRoute("/formal-response")({
-  head: () => ({
-    meta: [
-      { title: "Charging Party's Formal Response — Harbin v. DFS Services LLC" },
-      {
-        name: "description",
-        content:
-          "Charging Party's formal letter response to Respondent's June 5, 2026 Position Statement (CRD-2026-0386 / EEOC 35A-2026-00320).",
-      },
-      { name: "robots", content: "noindex,nofollow" },
-    ],
-  }),
-  component: FormalResponsePage,
-});
 
 // Exhibits cited in this letter — bundled into the print appendix.
 const CITED_EXHIBITS = [
