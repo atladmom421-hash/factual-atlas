@@ -376,7 +376,7 @@ export function FormalLetterBody() {
         </p>
 
         <p className="mt-3">
-          <strong>Third, the September 19, 2024 conversation with Mr. Glover confirms the
+          <strong>Third, the September 19, 2025 conversation with Mr. Glover confirms the
           issue was mid-shift.</strong> Charging Party directly challenged Mr. Glover's
           characterization that he had "offered" her a shift; the contemporaneous record
           reflects the issue was mid-shift, not "day shift." See <Ex id="EX-005" />.
