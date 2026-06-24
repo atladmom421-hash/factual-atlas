@@ -819,7 +819,37 @@ export function FormalLetterBody() {
             placement, the alleged May 2025 day-shift offer, schedule movement, and
             performance rating from July 2024 forward.
           </li>
+          <li>
+            The complete ticket Mr. Glover allegedly submitted on Charging Party's behalf in
+            July 2024, including any document showing whether the request was entered as
+            mid-shift, AM/day shift, or another schedule category, and all records showing why
+            Charging Party's original mid-shift request was not recorded as mid-shift.
+          </li>
+          <li>
+            All communications between Rosanna Blackson, Ryan Tafoya, Susan Marcinko, Greg
+            Carfagna, Allan Glover, Jen Roy, Edina Markus, and Human Resources regarding
+            Charging Party's mid-shift request.
+          </li>
+          <li>
+            The complete waitlist entry for Charging Party showing request date, requested
+            shift, current shift, temporary/permanent status, months as TL, and qualifies
+            status, together with all SharePoint version history and audit logs for the
+            Current TL Shifts / waitlist file from April 2024 through July 2025.
+          </li>
+          <li>
+            Any documentation explaining why Charging Party's status changed from Temporary
+            to Permanent, and why her request date was later reflected as July 17, 2025
+            despite her mid-shift request and complaint predating that date.
+          </li>
+          <li>
+            Any documentation regarding the four-day, ten-hour schedule, including who
+            requested it, whether Charging Party was initially told no, whether team
+            approval was required, whether she had to obtain agreement from her team before
+            it was implemented, and any records reflecting that the four-day schedule was
+            treated as a substitute for, or resolution of, her mid-shift request.
+          </li>
         </ol>
+
 
 
         {/* Section V */}
