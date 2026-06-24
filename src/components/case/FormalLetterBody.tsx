@@ -335,22 +335,119 @@ export function FormalLetterBody() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          C. The "no record of any prior request" assertion (PS p. 3, §I.B.3)
+          C. The "no record of any prior request" / "day-shift" assertion (PS p. 3, §I.B.3; p. 4, §I.B.5)
         </h3>
 
         <p className="mt-3">
-          Respondent asserts that, upon Mr. Glover's assumption of supervision in July 2024,
-          "there was no record of any such request in the centralized scheduling system." The
-          absence of a record in a system Respondent solely controls cannot, without more,
-          establish that no request was made. Respondent has not produced (a) the ticket Mr.
-          Glover allegedly submitted on Charging Party's behalf, (b) the custodial chain through
-          which it was processed (reportedly Edina Markus), or (c) the audit history showing
-          additions, deletions, or status changes to Charging Party's entry. The same waitlist
-          system Respondent characterizes as authoritative reflects Charging Party's name as{" "}
-          <em>deleted</em> on February 22, 2025 and <em>re-added</em> on July 17, 2025 with a
-          fresh request date — materially harming seniority. See <Ex id="EX-008" />,{" "}
-          <Ex id="EX-041" />, <Ex id="EX-042" />, <Ex id="EX-043" />, <Ex id="EX-048" />.
+          Charging Party disputes Respondent's characterization of her scheduling history, her
+          original request, and the reason she was later placed into the AM/day-shift waitlist
+          process. Respondent represents that when Mr. Glover assumed responsibility for
+          Charging Party's team he became aware that she "believed" she had previously requested
+          a "day-shift schedule," but that "there was no record of any such request in the
+          centralized scheduling system." That framing is incomplete and misleading in three
+          respects.
         </p>
+
+        <p className="mt-3">
+          <strong>First, the original request was mid-shift, not day shift.</strong> Charging
+          Party's documented request was to return to her mid-shift schedule. The absence of a
+          record in a system Respondent solely controls does not establish that no request was
+          made; it supports Charging Party's position that Respondent failed to properly
+          document or process her mid-shift request. Recasting that request as a "day-shift"
+          request — and then placing Charging Party on an AM/day-shift waitlist — does not
+          neutralize the original mid-shift issue, it confirms it.
+        </p>
+
+        <p className="mt-3">
+          <strong>Second, the waitlist failure was already part of the May 2024 protected
+          activity.</strong> In her May 29, 2024 written complaint, Charging Party specifically
+          raised that she had repeatedly requested to move to a different role, department, or
+          schedule, that she had been assured she would be placed on a waitlist for a new
+          schedule, and that "unfortunately this never happened." See <Ex id="EX-001" />. The
+          May 31, 2024 HR intake call with Susan Marcinko confirms the same: Charging Party
+          explained that Ms. Blackson had told her she was placed on the waitlist, but that
+          when she contacted Ryan Tafoya, a Department Manager, he confirmed she was not on
+          the mid-shift list. See <Ex id="EX-002" />. Charging Party has preserved the
+          April 26, 2024 exchange in which Mr. Tafoya confirmed she was not currently on the
+          MID-shift list. See <Ex id="EX-008" />. HR's June 5, 2024 follow-up then arranged
+          Charging Party's reassignment to Mr. Glover's organization effective July 1, 2024 —
+          confirming HR was actively addressing the waitlist/schedule complaint, not routing
+          her through a routine neutral process. See <Ex id="EX-002" />.
+        </p>
+
+        <p className="mt-3">
+          <strong>Third, the September 19, 2024 conversation with Mr. Glover confirms the
+          issue was mid-shift.</strong> Charging Party directly challenged Mr. Glover's
+          characterization that he had "offered" her a shift; the contemporaneous record
+          reflects the issue was mid-shift, not "day shift." See <Ex id="EX-005" />.
+        </p>
+
+        <p className="mt-3">
+          Respondent has not produced (a) the ticket Mr. Glover allegedly submitted on
+          Charging Party's behalf in July 2024, (b) any document showing whether that request
+          was entered as mid-shift, AM/day shift, or another category, (c) the custodial chain
+          through which it was processed (reportedly Edina Markus), or (d) the audit history
+          showing additions, deletions, or status changes to Charging Party's entry. If
+          Respondent's position is that there was no record of the prior request, Respondent
+          should explain why no record exists after Charging Party requested the schedule,
+          after Mr. Tafoya confirmed she was not on the MID list, after she raised it in her
+          May 29, 2024 complaint, and after HR discussed it with her on May 31, 2024.
+        </p>
+
+        <p className="mt-3">
+          Respondent also omits that the PM assignment was originally presented as
+          <em> temporary</em>. After Charging Party's protected activity, Respondent later
+          treated or described that PM assignment as permanent, yet Respondent's own records
+          continued to reflect temporary status through at least February 2025. When Charging
+          Party was re-added to the waitlist on July 10/17, 2025, her status appeared as
+          PM / Permanent with a new July 17, 2025 request date — without notice, ticket,
+          approval, or documentation. That inconsistency matters because Respondent's own
+          process treats temporary and permanent shift movement differently. See{" "}
+          <Ex id="EX-008" />, <Ex id="EX-041" />, <Ex id="EX-042" />, <Ex id="EX-043" />,{" "}
+          <Ex id="EX-048" />.
+        </p>
+
+        <p className="mt-3">
+          Charging Party further disputes Respondent's statement that management "took steps
+          to bring [her] closer to [her] desired schedule" by moving her to a four-day,
+          ten-hour schedule beginning at 9:00 a.m. That framing presents a management-created
+          remedy. The record is otherwise. After Charging Party was not moved to the
+          mid-shift schedule she had requested, she asked Mr. Glover whether she could work a
+          four-day, ten-hour schedule with one weekday off so she could have at least one day
+          with her son. She was initially told no and told the only path was full team
+          agreement. Charging Party then had to canvass her team and secure their consent
+          herself; her understanding is that Mr. Carfagna was surprised she was able to
+          accomplish it. The four-day, ten-hour schedule was therefore a compromise Charging
+          Party organized after Respondent failed to place her on the mid-shift waitlist and
+          failed to move her to the schedule she had actually requested. It required longer
+          ten-hour days, kept her in an unfavorable closing posture, and should not be
+          presented as evidence of favorable treatment or resolution of the schedule issue.
+        </p>
+
+        <p className="mt-3">
+          Respondent also states that Charging Party was positioned approximately "fifth or
+          sixth" on a lengthy waitlist. Charging Party requests the complete underlying
+          records supporting that representation, including ticket number, request date,
+          requested shift type, current shift, temporary/permanent status, waitlist ranking,
+          and full version history. The preserved record reflects material inconsistencies:
+          Charging Party was not on the MID-shift list when she should have been; Respondent
+          later placed her under an AM/day-shift category rather than her original mid-shift
+          request; her status appeared as Temporary; her waitlist row was later removed; and
+          she remained absent from the controlling waitlist while other employees continued
+          to qualify and move. See <Ex id="EX-008" />, <Ex id="EX-041" />, <Ex id="EX-042" />,{" "}
+          <Ex id="EX-043" />, <Ex id="EX-048" />.
+        </p>
+
+        <p className="mt-3">
+          For these reasons, Respondent's statement does not accurately describe the
+          scheduling issue. The evidence shows that Charging Party requested mid-shift, that
+          her failure to be added to the mid-shift waitlist was part of her May 2024
+          protected complaint, that HR was on actual notice, that Respondent later placed her
+          under the wrong schedule category, and that the four-day, ten-hour schedule was a
+          self-organized compromise — not a remedy — while Charging Party continued to be
+          denied the schedule movement she had requested.
+        </p>
+
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           D. The "neutral, centralized waitlist" assertion (PS pp. 4–5, §§ I.B.6–7; p. 6, §II.A)
