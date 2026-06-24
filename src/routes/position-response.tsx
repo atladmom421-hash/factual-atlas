@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { FormalLetterBody } from "@/components/case/FormalLetterBody";
 import { useEffect, useState } from "react";
 import { Lock, ShieldAlert, KeyRound } from "lucide-react";
 import { PrintPdfButton } from "@/components/case/PrintPdfButton";
