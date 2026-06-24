@@ -21,6 +21,7 @@ const links = [
   { to: "/hardship-thread", label: "Hardship" },
   { to: "/story", label: "Story Mode" },
   { to: "/investigator", label: "Brief" },
+  { to: "/position-response", label: "PS Response 🔒" },
 ] as const;
 
 function useNowUTC() {
