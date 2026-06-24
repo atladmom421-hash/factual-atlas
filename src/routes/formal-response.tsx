@@ -321,7 +321,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          B. The "no record of any prior request" assertion (PS p. 3, §I.B.3)
+          C. The "no record of any prior request" assertion (PS p. 3, §I.B.3)
         </h3>
 
         <p className="mt-3">
@@ -339,7 +339,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          C. The "neutral, centralized waitlist" assertion (PS pp. 4–5, §§ I.B.6–7; p. 6, §II.A)
+          D. The "neutral, centralized waitlist" assertion (PS pp. 4–5, §§ I.B.6–7; p. 6, §II.A)
         </h3>
         <p className="mt-3">
           Respondent represents that "[m]anagers do not have authority to bypass the waitlist" and
@@ -387,7 +387,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          D. The "May 2025 day-shift offer" assertion (PS p. 4, § I.B.5; p. 7, § II.B)
+          E. The "May 2025 day-shift offer" assertion (PS p. 4, § I.B.5; p. 7, § II.B)
         </h3>
         <p className="mt-3">
           Respondent represents that, in May 2025, a day-shift opportunity was offered and that
@@ -403,7 +403,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          E. The "no similarly situated comparator" assertion (PS pp. 2, 6, 10)
+          F. The "no similarly situated comparator" assertion (PS pp. 2, 6, 10)
         </h3>
         <p className="mt-3">
           Respondent asserts that the Charge "does not identify any similarly situated
@@ -415,7 +415,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          F. The "continuously employed" assertion (PS pp. 2, 6, 8, 10)
+          G. The "continuously employed" assertion (PS pp. 2, 6, 8, 10)
         </h3>
         <p className="mt-3">
           Respondent repeatedly notes that Charging Party "remains employed" and characterizes
@@ -451,7 +451,7 @@ function FormalResponsePage() {
         </ul>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          G. The "Mr. Glover did not know the substance" assertion (PS p. 3, § I.B.2; p. 8, § II.B)
+          H. The "Mr. Glover did not know the substance" assertion (PS p. 3, § I.B.2; p. 8, § II.B)
         </h3>
         <p className="mt-3">
           Respondent concedes that Mr. Glover "later became aware that Ms. Harbin had filed a
@@ -463,7 +463,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          H. The "same protected class" defense (PS p. 7, § II.A)
+          I. The "same protected class" defense (PS p. 7, § II.A)
         </h3>
         <p className="mt-3">
           Respondent concedes this point is "not dispositive." It is also legally insufficient. In{" "}
@@ -475,7 +475,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          I. The hardship-fund assertion (PS p. 6, § I.B.8)
+          J. The hardship-fund assertion (PS p. 6, § I.B.8)
         </h3>
         <p className="mt-3">
           Respondent represents that all hardship-fund applicants must submit documentation and
@@ -487,7 +487,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          J. The HBCU-comment denial (PS p. 6, § I.B.8)
+          K. The HBCU-comment denial (PS p. 6, § I.B.8)
         </h3>
         <p className="mt-3">
           The comment is contemporaneously documented at <Ex id="EX-005" />. Whether Mr. Glover
@@ -496,7 +496,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          K. The system-recording assertion (PS pp. 5, 8)
+          L. The system-recording assertion (PS pp. 5, 8)
         </h3>
         <p className="mt-3">
           Respondent represents that recording is "applied broadly" and not directed at any
@@ -507,7 +507,7 @@ function FormalResponsePage() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
-          L. The chat-deletion assertion (PS p. 8, § II.D)
+          M. The chat-deletion assertion (PS p. 8, § II.D)
         </h3>
         <p className="mt-3">
           Respondent represents that chat deletion was "consistent with [its] retention policy."{" "}
