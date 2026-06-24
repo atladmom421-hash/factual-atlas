@@ -20,7 +20,7 @@ export const Route = createFileRoute("/position-response")({
 // Change PASSWORD below and re-deploy to rotate. SessionStorage only
 // — closing the tab requires re-entry.
 // ─────────────────────────────────────────────────────────────────
-const PASSWORD = "harbin-truth-2026";
+const PASSWORD = "K@rmakid42113";
 const STORAGE_KEY = "pr-unlocked-v1";
 
 function GatedPage() {
