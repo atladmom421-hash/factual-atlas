@@ -110,7 +110,7 @@ const REBUTTALS: Rebuttal[] = [
       "“There was no record of any such request in the centralized scheduling system” when Mr. Glover took over in July 2024, so a new request was submitted on Ms. Harbin's behalf and she was placed 5th–6th on the waitlist.",
     response:
       "Discover cannot rely on the absence of a record it controls. No SharePoint ticket has been produced for the July 2024 submission Mr. Glover allegedly created on her behalf, and Edina Markus is reportedly the custodian of those tickets. The same scheduling system that allegedly had \"no record\" also reflects a Temporary status long after management told Ms. Harbin her assignment was Permanent — see EX-008.",
-    evidence: ["EX-008", "EX-011"],
+    evidence: ["EX-008", "EX-HR-CALL", "EX-041", "EX-042", "EX-043", "EX-044", "EX-045", "EX-046", "EX-048", "EX-040"],
     bullets: [
       "May 2024 prior complaint already raised the waitlist issue — Discover was on notice.",
       "Ms. Harbin's name was deleted from the waitlist on February 22, 2025 and re-added July 17, 2025 with a fresh request date, materially harming seniority.",
@@ -124,7 +124,7 @@ const REBUTTALS: Rebuttal[] = [
       "“Managers do not have authority to bypass the waitlist… Any perceived differences in employee schedules are attributable to separate roles, preexisting assignments, training obligations, or approved accommodations.”",
     response:
       "Discover's own HR conceded the opposite on the November 6, 2025 follow-up call: comparator movement happened \"because of leadership, not the waitlist.\" That is a direct admission that the \"neutral\" process was bypassed for others. The May 12, 2026 Karena Lesure assignment-flexibility concession (granted because Julie Cahoon \"specifically asked\") further contradicts the no-request rule that was applied to Ms. Harbin and Todd.",
-    evidence: ["EX-010"],
+    evidence: ["EX-010", "EX-HR-CALL", "EX-044", "EX-045", "EX-046"],
     bullets: [
       "Tyler Millisock — same start date / level, moved areas and schedules Jan–Oct 2025; no ticket produced, reportedly not on waitlist.",
       "Hunter Samuel — received the AM shift Ms. Harbin would have accepted.",
@@ -139,7 +139,7 @@ const REBUTTALS: Rebuttal[] = [
       "“In May 2025… a day-shift opportunity became available… she declined the move, explaining that she preferred to remain on her current schedule due to her graduate school commitments.”",
     response:
       "Ms. Harbin disputes that any such offer was ever made. Discover has not produced (a) the identity of who extended the offer, (b) the specific shift offered, (c) the date, or (d) any written confirmation. A purported offer that exists only in a manager's later recollection — and that conveniently restarts the waitlist clock — cannot carry Discover's burden when documentary proof is in its sole custody.",
-    evidence: ["EX-008", "EX-011"],
+    evidence: ["EX-008", "EX-HR-CALL", "EX-041", "EX-042", "EX-045", "EX-044"],
     bullets: [
       "No email, Teams message, ticket, or signed acknowledgement has been produced.",
       "Re-entry on July 10, 2025 with a new request date is the actual recorded action — and it is what determined her later waitlist position.",
@@ -152,7 +152,7 @@ const REBUTTALS: Rebuttal[] = [
       "“The Charge does not identify any similarly situated comparator… any materially adverse action taken under circumstances suggesting discrimination, or any facts establishing a causal connection.”",
     response:
       "Comparators have been identified by name, role, and conduct. EX-010 (Comparator Movement & Flexibility Map) sets out each comparator's role, start date, schedule history, and source. The Position Statement does not engage with any of them.",
-    evidence: ["EX-010"],
+    evidence: ["EX-010", "EX-044", "EX-045", "EX-046"],
     bullets: [
       "Tyler Millisock, Hunter Samuel, Marc Case, Julie Cahoon, Marissa Mascarenas — each outside Ms. Harbin's protected class and each received scheduling or assignment flexibility she was denied.",
       "Discover's silence on these specific names is itself evidence of disparate treatment.",
@@ -165,7 +165,7 @@ const REBUTTALS: Rebuttal[] = [
       "Continuity of employment, unchanged compensation, and strong evaluations show there was no adverse action and no retaliation.",
     response:
       "Continuous employment is not a defense to materially adverse actions under Burlington Northern v. White, 548 U.S. 53 (2006). The standard is whether the action \"well might have dissuaded a reasonable worker from making or supporting a charge.\" The record reflects multiple such actions.",
-    evidence: ["EX-008", "EX-010", "EX-002", "EX-053"],
+    evidence: ["EX-008", "EX-010", "EX-002", "EX-050", "EX-051", "EX-053"],
     bullets: [
       "2024 overall rating downgraded to SOLID even though every sub-rating was Solid or Strong, the bonus payout rose to 124.36%, IPF rose to 120%, and operational metrics improved YoY (see Investigator Brief, §Performance Evaluation Analysis).",
       "Disputed waitlist placement; name deleted Feb 22, 2025 and re-added July 17, 2025 with a new request date.",
@@ -181,7 +181,7 @@ const REBUTTALS: Rebuttal[] = [
       "“Although Mr. Glover later became aware that Ms. Harbin had filed a prior EEOC charge, he was not informed of the substance… and did not make any employment decisions affecting Ms. Harbin based on the existence of that complaint.”",
     response:
       "Knowledge of the existence of a protected EEOC charge is sufficient for retaliation causation under Ninth Circuit law; specific knowledge of the substance is not required. Raad v. Fairbanks N. Star Borough Sch. Dist., 323 F.3d 1185 (9th Cir. 2003). Discover admits Mr. Glover knew the charge existed, and the adverse actions described above all post-date that knowledge.",
-    evidence: ["EX-008", "EX-010"],
+    evidence: ["EX-008", "EX-010", "EX-041", "EX-042"],
   },
   {
     topic: "7. \"Same protected class\" defense for Mr. Glover",
@@ -238,7 +238,7 @@ const REBUTTALS: Rebuttal[] = [
       "“Her non-selections were the result of competitive hiring decisions… no hiring decisionmaker would have known of her prior charge.”",
     response:
       "Discover should identify, by position: the hiring decisionmakers, the selected candidates, the qualification criteria used, and the demographic composition of the panels. Without that record, the assertion that no decisionmaker knew of the prior charge is unfalsifiable.",
-    evidence: [],
+    evidence: ["EX-055"],
   },
   {
     topic: "13. Chat deletion — \"consistent with retention policy\"",
@@ -256,8 +256,9 @@ const REBUTTALS: Rebuttal[] = [
       "“Following that review, it was determined that movement outside of established schedule assignments was not operationally feasible.”",
     response:
       "\"Not operationally feasible\" was contradicted weeks later by the Karena Lesure reassignment (May 12, 2026) accommodating Julie Cahoon's specific request. The rule was elastic for comparators and rigid for Ms. Harbin.",
-    evidence: ["EX-010"],
+    evidence: ["EX-010", "EX-019"],
   },
+
 ];
 
 // All exhibit IDs cited above — feed into the print appendix.
