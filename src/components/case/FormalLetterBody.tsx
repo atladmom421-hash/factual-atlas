@@ -1444,6 +1444,20 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
+        <InlineExhibits
+          heading="Ancillary-allegations evidence — Verint, Teams, leave, hardship"
+          items={[
+            { id: "EX-006", relevance: "Verint monitoring evidence — Harbin's profile visibility versus other Team Leaders." },
+            { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns documented to HR." },
+            { id: "EX-007", relevance: "October 2025 FMLA misclassification as STD and resulting system-access deactivation." },
+            { id: "EX-003", relevance: "Hardship-fund timeline — Cordi, Dide, and Harbin requests; same-day escalation to HR, ER, and director-level leadership." },
+            { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments and same-day documentation." },
+            { id: "EX-005", relevance: "August 2025 HBCU recruiting and 'blockade' statement context." },
+          ]}
+        />
+
+
+
         {/* Section II.A–II.D — Response to Respondent's Discussion (Legal Argument) */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
           III. Response to Respondent's Section II — Discussion (Legal Argument)
