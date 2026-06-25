@@ -1995,6 +1995,48 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-082-allan-chat-sept3.png",
     fileKind: "image",
   },
+  {
+    id: "EX-083",
+    exhibitNumber: "EX-083",
+    fileName: "2024 Team Ratios.xlsx — Sept 24, 2024 10:10 AM version (Harbin under Allan, PM, TBay preference)",
+    date: "September 24, 2024",
+    category: "SharePoint record",
+    peopleIds: ["harbin", "allan", "rosanna"],
+    summary:
+      "Screenshot of the 2024 Team Ratios.xlsx workbook (CAR Early Stage Leaders SharePoint) opened to the Sept 24, 2024 10:10 AM version, Version History panel visible. Key contents:\n\n• DM/TLs roster (top): Allan Glover's TLs — Whitnee Kollar – AZ, Ann Mack – TN, Travis Christiansen – CA, Kandace Adkins – OH, Shawnna Harbin – AZ (HC 12, Shift = PM, Preferences = Tbay). Rosanna Blackson's TLs — Bryan Robles, Ryan Ascarte, Marissa Mascarenas, Courtney Griffith – PHX, Marc Case.\n\n• Early Stage Summary: LVAR 10/121/12.10; PreD 8/140/17.50; TBay 3/60/20.00; Classroom 3/84/28.00; Overall 24/405/16.88. Adjusted: Overall 22/405/18.41.\n\n• DM Shift Split: Rosanna 60% AM / 20% MID / 20% PM; Allan 60% AM / 20% MID / 20% PM. TL Ratio: AM 11.8, MID 11.5, PM 13.5.\n\n• Version History panel: edits by Darren Hunt, Scott McLaughlin, Trevor Howe, Allan Glover, Rosanna Blackson — multiple same-day edits at 10:10 AM, 11:07, 11:42, 12:01, 12:41, 3:24, 3:41 PM.\n\nRELEVANCE: (1) Authoritative SharePoint record placing Harbin on PM with a documented TBay (Training Bay) preference as of Sept 24, 2024 — directly contradicts any claim that Harbin did not request Training Bay; (2) the Preferences column being populated for Harbin shows preferences were formally tracked at the DM level; (3) version history confirms Allan, Rosanna, Darren, Scott, and Trevor all had edit access — defeats any 'I didn't know' defense regarding Harbin's shift/preference status; (4) corroborates EX-048 and EX-022.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-083-team-ratios-2024-sept24-1010am.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-084",
+    exhibitNumber: "EX-084",
+    fileName: "2024 Team Ratios.xlsx — January view (Harbin under Allan; LVAR MID = 0 TLs / #DIV/0!)",
+    date: "January 2024 (workbook view)",
+    category: "SharePoint record",
+    peopleIds: ["harbin", "allan", "rosanna"],
+    summary:
+      "Screenshot of the 2024 Team Ratios.xlsx workbook on the January tab. Key contents:\n\n• DM/TLs roster: Allan Glover's TLs — Whitnee Kollar – AZ, Travis Christiansen – CA, Shawnna Harbin – AZ. Rosanna Blackson's TLs — Bryan Robles, Ryan Ascarte, Marissa Mascarenas, Marc Case.\n\n• Early Stage Summary: LVAR 7/101/14.43; PreD 8/149/18.63; TBay 5/84/16.80; Classroom 2/75/37.50; Overall 22/409/18.59.\n\n• LVAR CURRENT shift breakdown: AM 73 agents / 5 TLs / 14.6; MID 0 / 0 / #DIV/0!; PM 28 / 2 / 14. Totals 101 / 7 / 14.429.\n\n• LVAR PLAN: AM 73/5; MID 24/1 (highlighted yellow) = 14.6; PM 33/1 = 33; Totals 130/7 = 18.571 — showing a planned MID TL addition.\n\n• 'ADDING TLs?' planning table: Current 51/2 = 25.5; +1 TL = 17; +2 TL = 12.75; overall +1 TL = 130/8 = 16.25.\n\nRELEVANCE: (1) Early-2024 authoritative roster placing Harbin under Allan Glover in LVAR from the start of the year; (2) LVAR shift table shows MID = 0 TLs and PLAN proposes adding a MID TL — yet Harbin (standing mid-shift request) was not the TL added; (3) the 'ADDING TLs?' planning section proves leadership was actively modeling TL additions for ratio purposes, contradicting any 'no flexibility' defense; (4) corroborates EX-048 and EX-083.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-084-team-ratios-2024-january-view.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-085",
+    exhibitNumber: "EX-085",
+    fileName: "2024 Team Ratios.xlsx — Sept 23, 2024 3:24 PM version (Harbin PM HC 15; Marissa AM w/ MID pref)",
+    date: "September 23, 2024",
+    category: "SharePoint record",
+    peopleIds: ["harbin", "allan", "rosanna", "marissa"],
+    summary:
+      "Screenshot of the 2024 Team Ratios.xlsx workbook at the Sept 23, 2024 3:24 PM version. Key contents:\n\n• DM/TLs roster: Allan Glover's TLs — Whitnee Kollar (HC 15, AM), Travis Christiansen (HC 15, AM), Shawnna Harbin (HC 15, PM); plus MID-preference 'Tbay' row. Rosanna Blackson's TLs — Bryan Robles (HC 14, AM), Ryan Ascarte (HC 15, AM), Marissa Mascarenas (HC 14, AM with MID preference noted), Marc Case (HC 13, PM).\n\n• TL Shift Split: AM 5 / 71.4%; MID 2 / 28.6%; PM 2 / 28.6%; Total 9.\n• Agent Shift Split: AM 73 / 72.3%; MID 0 / 0.0%; PM 28 / 27.7%; Total 101.\n• DM Shift Split: Rosanna 60/20/20; Allan 40/20/20. TL Ratio: AM 14.6, MID 0.0, PM 14.0. Totals 7 TLs / 101 agents / 14.4:1 Rotation.\n\n• Whitnee Kollar's agent roster with EST Schedule, 1st Pref, 2nd Pref, Move To, FWW-JA, LOA-Term, On TERM File columns populated — structured preference and movement tracking at the agent level. 'No Rspns' flags on multiple rows.\n\nRELEVANCE: (1) Sept 23, 2024 snapshot places Harbin on PM (HC 15) under Allan — confirms the PM lock continued into late Sept 2024 despite the documented mid-shift request; (2) Marissa Mascarenas shown with AM assignment but MID preference noted — corroborates the Marissa deep-dive (EX-022 / EX-010) showing Marissa held a midshift TL slot in March/April 2025, proving mid-shift coverage was operationally feasible and assigned to a comparator; (3) DM Shift Split shows Allan's team intentionally allocated 40/20/20 — a deliberate mix, not a constraint; (4) the formal Pref/Move To tracking proves the org tracked preferences and movements — defeats any 'no formal process' defense; (5) edited the day before EX-083, part of the same active multi-editor window.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-085-team-ratios-2024-sept23-324pm.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
