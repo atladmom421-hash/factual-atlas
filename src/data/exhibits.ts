@@ -1193,6 +1193,107 @@ KEY ADMISSIONS / DISPUTES (summary for the record)
     filePath: "",
     fileKind: "transcript",
   },
+  {
+    id: "EX-059",
+    exhibitNumber: "EX-059",
+    fileName: "September 19, 2025 — Conversation with Allan Glover re: Training Bay selection and shift movement (transcript)",
+    date: "September 19, 2025",
+    category: "Transcript",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Verbatim transcript of a conversation with Allan Glover regarding Training Bay selection and the long-standing mid-shift waitlist request. Allan admits there was no formal criteria for Training Bay selection and identifies the decision-making group as himself, Amber, Trevor, and Dan. When asked about the mid-shift waitlist request, Allan first stated he had 'offered' a shift, then changed it to 'mornings' when pressed. Harbin disputes that any AM or mid-shift offer was ever made. Harbin identifies comparators (Tyler Millisock, Josh, Hunter) who moved through mid-shift, AM, and PM placements while she remained pinned on PM. Allan responds 'I'm not aware of that.' Harbin tells Allan there is a 'blockade' in front of her that she cannot get past, referencing Allan's own prior statement. Allan asks 'What blockade?' Relevant to: inconsistent schedule movement, lack of documentation for the alleged shift offer, unclear/absent selection criteria for Training Bay, comparator movement, and the August/September 2025 'blockade' theme.",
+    linkedEventIds: [],
+    reliability: "confirmed-transcript",
+    filePath: "",
+    fileKind: "transcript",
+    transcriptText: `Conversation with Allan Glover — September 19, 2025
+Re: Training Bay selection / shift-movement / mid-shift waitlist
+
+Shawnna: So, so what happened with Training Bay?
+
+Allan: So no one is — no one's moving. The only person — well, people are moving, but they stay in their shift.
+
+Shawnna: This time, right? Mm hmm.
+
+Allan: Yeah. Michelle is moving to Training Bay. So she's at night. Steve is moving to Training Bay. He works at night. Marissa is moving to Training Bay, so she works days, and Josh is going to be in Training Bay and he works —
+
+Shawnna: Yeah, what does he work? Just curious. So maybe he works a little bit of everything, I think, right?
+
+Allan: So he does. So, yes. So, um —
+
+Shawnna: What is the criteria, or what exactly are you guys looking for as far as moving to Training Bay? Like, what was the criteria on picking someone? It just seems so random.
+
+Allan: There wasn't a criteria. That's why I asked you. My thought was, in all honesty, like I said to you before, was that I wanted to make sure that we had the right people. I said that's why I asked Marissa, right? And that's why I asked you about it as well, because that was my thought.
+
+Shawnna: So who, I guess, is the final decision maker?
+
+Allan: I guess, all of us at the end of the day.
+
+Shawnna: Who's all of us?
+
+Allan: Myself, Amber, Trevor, Dan. Okay. What are you trying to get to?
+
+Shawnna: What I'm getting into is the lack of availability of moving to a different shift. So, there has been moves in shifts, right? I was on the the wait list to go on mid-shift, right?
+
+Allan: Yes.
+
+Shawnna: What happened with that?
+
+Allan: Shawnna, I offered you —
+
+Shawnna: You never offered me mid-shift. You never offered me mid-shift. When was it? What was it?
+
+Allan: No — well — it was mornings.
+
+Shawnna: Allan, you did not offer me AM. You did not offer that to me. You did not offer that to me. When? When, what was that? What position was it? What group?
+
+Allan: Are you serious right now?
+
+Shawnna: Yeah, I'm serious, because I'm looking at the schedule, and what I see is people moving to mid-shifts and to AM shifts. Why am I the only person that's not moving?
+
+Allan: Who are these people?
+
+Shawnna: Tyler Millisock. So he's worked mid-shift, AM, and PM.
+
+Allan: Okay?
+
+Shawnna: Josh has worked the same thing. Mid-shift and PM. I have a whole list. Hunter came from HVAR, which is outside of our director's area. She went from mid-shift in HVAR to AM over here.
+
+Allan: I'm not aware of that.
+
+Shawnna: Yes, that is the truth. That is the truth. There's a ton of other cases where that's happened, too. That is not fair. That is putting me in a really messed-up situation. I'm really starting to feel like you guys are purposely doing it. That's how I really feel.
+
+Allan: Okay.
+
+Shawnna: That's not okay. I have a ton of cases. I have a ton of examples. I have a ton of examples from other TLs where they've been offered different shifts — mid-shift that I've been waiting for two years for, that was my original shift that I was supposed to be working. Like, this is not a joke. Dude, I miss my kid. It's not a joke, Allan. It's not a joke. And I don't know what you're up to. I don't know what you're up to or what you're trying to present, but trust me — facts. Facts of the straight retaliation from Greg to Rosanna to the whole entire group. Clearly.
+
+Allan: Okay.
+
+Shawnna: Yeah, not okay. It's not okay. It's not okay. Seriously, not okay. You have anything to say? What is the discrepancy? Why have I been on a wait list for two years and so many people have gotten mid-shift?
+
+Allan: I'm not aware of all these people.
+
+Shawnna: Well, you're my manager. You're the one making the decisions. You just said you and the group are making the decisions. How do you not know?
+
+Allan: First of all, hold on. I don't understand you being upset.
+
+Shawnna: Yeah, no, I am very upset. I've been going through this for two years of straight-up retaliation. I don't want this. I don't.
+
+Allan: Don't talk to me like that.
+
+Shawnna: Okay. I'm not talking to you anyway, but you're acting like you're pretending that what I'm saying isn't the case. You're pretending to act like you don't know that there is a blockade in front of me that is prohibiting me from going past that, right? You yourself said that I can't get past that blockade.
+
+Allan: What blockade?
+
+Shawnna: Okay. Allan, if that's how you're going to play this, clearly you're not even being honest with yourself, and you're not the person you think you are.
+
+Allan: You're entitled to your opinion, that's fine.
+
+Shawnna: Okay. Any news for me? Anything else?
+
+Allan: No.`,
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
+
