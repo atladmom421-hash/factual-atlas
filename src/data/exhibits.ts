@@ -1939,6 +1939,34 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-078-waitlist-feb18.png",
     fileKind: "image",
   },
+  {
+    id: "EX-079",
+    exhibitNumber: "EX-079",
+    fileName: "Current TL Shifts — waitlist version dated February 25, 2025 10:53 AM (Jen Roy modified)",
+    date: "Screenshot taken 10/4/2025; selected version dated February 25, 10:53 AM",
+    category: "Business record / version history",
+    peopleIds: ["harbin"],
+    summary:
+      "SharePoint/Excel version-history view with the February 25, 2025 10:53 AM version selected and marked as modified by Jen Roy. The visible Current Waitlist table is highlighted and lists Nameer Khan, Cody Christensen, Kandace Adkins, Kaitlin Reed, Cory Galt, Hunter Samuel, and Courtney Griffith — but **does not include Shawnna Harbin**. The right-side version pane shows multiple Jen Roy edits on February 25 (10:53 AM, 12:01 PM, 12:46 PM, 7:22 PM, 7:31 PM), with later edits on March 19, July 3, and July 16. Relevance: (1) provides an even earlier February 25 deletion-state screenshot than EX-072, showing Harbin already absent by 10:53 AM that morning; (2) tightens the deletion window further when read against EX-078 (Harbin still present on Feb 18) and EX-076 (present on Jan 22); (3) specifically identifies Jen Roy as the editor associated with the deletion-state version; (4) helps show the removal was not a one-off display anomaly because multiple Feb. 25 versions that day all reflect the absent state.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-079-waitlist-feb25-1053am.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-080",
+    exhibitNumber: "EX-080",
+    fileName: "Current TL Shifts — waitlist version dated March 19, 2025 10:51 AM (Jen Roy / Edina Markus)",
+    date: "Screenshot taken 10/4/2025; selected version dated March 19, 10:51 AM",
+    category: "Business record / version history",
+    peopleIds: ["harbin"],
+    summary:
+      "SharePoint/Excel version-history view with the March 19, 2025 10:51 AM version selected, showing modifications by Jen Roy and Edina Markus. The visible Current Waitlist table lists only Courtney Griffith (AM, 8/13/2024), Nameer Khan (MID, 2/28/2023), and Caton Woods (AM, 9/1/2023). **Shawnna Harbin is not listed.** The right-side version pane shows the March 19 version between the cluster of February 25 Jen Roy edits and the later July 3 / July 16 versions. Relevance: (1) confirms Harbin remained off the waitlist well after the February 25 deletion and before the July 2025 re-addition; (2) shows the list contents were materially altered during the period of Harbin’s absence, not merely frozen; (3) links both Jen Roy and Edina Markus to the post-removal state; (4) strengthens the chronology: present Jan 22 and Feb 18 → absent by Feb 25 10:53 AM → still absent March 19 → still absent July 3 → re-added July 16 with reset date.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-080-waitlist-mar19.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
