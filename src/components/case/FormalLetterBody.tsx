@@ -538,8 +538,9 @@ export function FormalLetterBody() {
         <ul className="mt-2 list-disc space-y-1 pl-6">
           <li>
             <strong>The 2024 overall-rating downgrade to "Solid."</strong> Every sub-rating in
-            the same document was Solid or Strong; the bonus payout rose to 124.36%, IPF rose to
-            120%, and the operational metrics improved year over year. The 2024 overall rating is
+            the same document was Solid or Strong; the bonus payout was 124.36% of target,
+            Individual Performance Factor was 96.49%, Company Performance Factor was 128.90%,
+            and the operational metrics improved year over year. The 2024 overall rating is
             the actionable evaluation, and the Position Statement omits it entirely. See{" "}
             <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />, <Ex id="EX-052" />,{" "}
             <Ex id="EX-053" />.
