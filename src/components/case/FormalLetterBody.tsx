@@ -1145,7 +1145,9 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Race-discrimination evidence (PS § II.A)"
           items={[
+            { id: "EX-059", relevance: "September 19, 2025 transcript — Allan names Tyler Millisock, Josh, and Hunter context; admits no formal criteria for Training Bay; identifies management decisionmakers (Allan, Amber, Trevor, Dan); supports comparator/differential-movement analysis." },
             { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Tyler Millisock (same start date, same level, outside protected class, moved from LVAR PM/closing to PRE-D/DBC) and additional comparators receiving movement Charging Party was denied." },
+
             { id: "EX-051", relevance: "2024 compensation statement — Solid downgrade after protected activity with 124.36% bonus payout, 96.49% IPF, 128.90% CPF." },
             { id: "EX-053", relevance: "2024 year-end review showing every sub-goal and Discover Behavior rated Solid or Strong despite overall Solid downgrade." },
             { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments — Cordi (White) hardship handled without documentation; Dide (Black) request triggered race-coded 'example.'" },
