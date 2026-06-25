@@ -1326,7 +1326,7 @@ export function FormalLetterBody() {
         </p>
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          1. Respondent Has Not Rebutted Race Discrimination
+          A. Respondent Has Not Rebutted Race Discrimination
         </h4>
         <p className="mt-3">
           Respondent argues that Charging Party cannot establish race discrimination
