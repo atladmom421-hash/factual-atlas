@@ -1666,6 +1666,23 @@ export function FormalLetterBody() {
         <p className="mt-3">The harm was not theoretical. The workplace conditions and Respondent's handling of my complaints contributed to serious mental-health deterioration, PTSD symptoms, panic attacks, FMLA use, reduced income, financial crisis, time away from my child, housing instability, loss of housing, transportation instability, and severe emotional distress. Respondent's conclusion attempts to minimize those consequences as ordinary workplace processes. They were not ordinary, and they were not harmless.</p>
         <p className="mt-3">The record does not confirm that Discover treated me fairly, consistently, or in accordance with legitimate business practices. It shows the opposite: inconsistent rules, missing tickets, altered waitlist records, comparator movement, unsupported denials, HR admissions, and documented harm. Respondent has not rebutted discrimination, retaliation, or hostile work environment. The Division should reject Respondent's request for dismissal and issue findings consistent with the documented record.</p>
 
+        <InlineExhibits
+          heading="Visual evidence summary — Section IV Conclusion"
+          items={[
+            { id: "EX-014", relevance: "Protected activity — May 29, 2024 formal internal complaint and prior EEOC charge." },
+            { id: "EX-046", relevance: "Waitlist contradiction — January 22, 2025: Harbin listed with June 26, 2024 request date." },
+            { id: "EX-045", relevance: "Waitlist contradiction — February 25, 2025: Harbin removed by Jen Roy while juniors remained." },
+            { id: "EX-044", relevance: "Waitlist contradiction — July 3, 2025: Harbin absent from controlling SharePoint waitlist." },
+            { id: "EX-041", relevance: "Waitlist contradiction — July 14, 2025 limited screenshot omitting material fields; July 17, 2025 re-add date." },
+            { id: "EX-010", relevance: "Comparator movement — Tyler Millisock and other comparators received movement Harbin was denied." },
+            { id: "EX-051", relevance: "Performance contradiction — Strong → Solid downgrade with 124.36% bonus payout." },
+            { id: "EX-006", relevance: "Verint admission — HR stated Harbin had 'more visibility than' she should have had." },
+            { id: "EX-002", relevance: "Teams deletion — Allan/Amber chat missing while other same-period chats remained visible." },
+            { id: "EX-003", relevance: "Hardship harm — SH Hardship meeting / delayed funds / housing loss." },
+          ]}
+        />
+
+
 
 
         {/* Section V */}
