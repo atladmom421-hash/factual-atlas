@@ -1312,874 +1312,119 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
-        {/* Section III - Discussion: Response to Respondent's Legal Argument */}
+        {/* Section II Discussion - Response to Respondent's Legal Argument */}
+        <h3 className="mt-8 font-display text-base tracking-tight">
+          II. A Discussion — Response to Respondent's Legal Argument
+        </h3>
+        <p className="mt-3">
+          Respondent's legal discussion does not resolve the Charge. It attempts to characterize the evidence as ordinary workplace disagreement, but the record shows materially disputed facts involving schedule access, waitlist manipulation, comparator movement, performance-rating impact, advancement barriers, project exclusion, race-related comments, and inconsistent application of workplace processes.
+        </p>
+
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          A. Respondent Has Not Rebutted Race Discrimination
+        </h4>
+        <p className="mt-3">Respondent argues that I cannot establish race discrimination because I supposedly did not suffer a materially adverse employment action. That is incorrect.</p>
+        <p className="mt-3">I was kept on PM/closing for an extended period despite repeated requests to return to mid-shift or move to an earlier schedule. That schedule affected my family obligations, childcare, ability to be present for my son, internal mobility, and access to development opportunities. I was also removed from the waitlist, later shown an incomplete screenshot that did not match the controlling SharePoint waitlist, re-added with a later request date, and changed from PM/Temporary to PM/Permanent without a clear ticket, notice, or approval documentation.</p>
+        <p className="mt-3">Respondent cannot defeat this issue by saying I remained employed, kept my pay, or received strong evaluations. Under Title VII, an employee does not have to show termination, demotion, or loss of pay to show harm. Schedule, assignments, access to opportunity, visibility, and working conditions can be terms or conditions of employment. Here, the record shows harm to my schedule, advancement path, project access, performance rating, and career mobility.</p>
+        <p className="mt-3">Respondent also states that I received strong evaluations. That is incomplete. Before my protected activity, I received a 2023 overall rating of Strong. In the first review cycle after my May 2024 EEOC charge and May 29, 2024 formal internal complaint, my overall rating dropped to Solid. That downgrade occurred despite strong underlying metrics, no goal rated below Solid, and a 124.36% bonus payout. My rating later returned to Strong in 2025. The issue is the Strong → Solid → Strong pattern and the timing of the 2024 downgrade.</p>
+        <p className="mt-3">The 2024 Solid rating was not harmless. Leadership later communicated that Unit Managers / Team Leaders needed a rating of 4 Strong or 5 Outstanding to be eligible for the TL Plus / Department Manager training cohort. A 3 Solid rating excluded me from that advancement pipeline. Respondent's statement that I maintained my responsibilities and was not precluded from advancement ignores the actual consequence of the 2024 rating.</p>
+        <p className="mt-3">Respondent further claims that I failed to identify similarly situated employees outside my protected class who were treated more favorably. That is also incorrect. Comparator evidence includes employees who received schedule movement, department movement, or other opportunities while I remained fixed on PM/closing. Tyler Millisock is a key comparator because he had the same April 3, 2023 start date, was at the same level, is outside my protected class, and moved from LVAR PM/closing to PRE-D/DBC 11:30 a.m.–8:00 p.m. while I remained stuck on PM/closing. Tyler also stated he was not on the waitlist. That directly contradicts Respondent's claim that movement was strictly controlled by a centralized waitlist and that no employee moved outside the established system.</p>
+        <p className="mt-3">The waitlist records also show inconsistent treatment. I requested mid-shift in 2024, discovered on April 26, 2024 that I was not on the MID-shift waitlist, and raised that issue in my May 29, 2024 formal complaint and May 31, 2024 HR intake call. Respondent's own January 22, 2025 waitlist snapshot showed me on the list with a June 26, 2024 request date, PM/Temporary status, and Qualifies = Yes. By February 25, 2025, after Jen Roy edited the waitlist multiple times, my row was removed while other employees remained and continued to qualify. Respondent has not explained who authorized my removal, why I was removed, or why no ticket has been produced.</p>
+        <p className="mt-3">Respondent's claim that I was offered a day-shift opportunity in May 2025 and declined it is false. I did not receive a May 2025 shift offer. I was not offered AM, mid-shift, or any other shift opportunity in May 2025. Respondent has not produced the alleged offer, the alleged decline, the ticket, the communication, the shift details, or the person who allegedly recorded my response. Respondent also cannot explain how I was supposedly removed for declining a May 2025 offer when the records show I had already been removed from the waitlist in February 2025.</p>
+        <p className="mt-3">Respondent's claim that I was "reentered" onto the waitlist on July 10, 2025 based on a new request is also misleading. July 2025 was not the beginning of my schedule issue. I had already requested mid-shift in 2024. In June 2025, after being stuck on PM/closing, I asked to also be considered for AM in addition to the mid-shift request I believed was already pending. In July, I asked Allan Glover where I was on the waitlist. Allan contacted Jen Roy, and within approximately one minute Jen provided a limited five-row screenshot. That screenshot omitted the material fields needed to verify placement, including Date Requested, Months as CAR TL, Temporary/Permanent status, and Qualifies = Yes/No. The controlling SharePoint waitlist did not contain my name at that time. I was later re-added with a July 17, 2025 request date, which reset the earlier June 26, 2024 date reflected in the January 2025 snapshot.</p>
+        <p className="mt-3">Respondent says managers did not control the process. The record contradicts that. During the September 19, 2025 recorded conversation, Allan discussed Training Bay movement and stated there "wasn't a criteria" for that movement. When asked who was involved in the decision, he identified "myself, Amber, Trevor, Dan." That is not a strictly neutral, automatic, centralized process. It shows management involvement and discretionary decision-making.</p>
+        <p className="mt-3">Respondent also says that any differences in schedules were due to separate roles, preexisting assignments, training obligations, or accommodations. That explanation is unsupported without the underlying records. If that is Respondent's position, it should produce the comparator movement records, tickets, accommodations, training assignments, onboarding records, and schedules for the employees it claims are distinguishable. Respondent should not be permitted to rely on generalized explanations while withholding the documents that would show whether those explanations are true.</p>
+        <p className="mt-3">Respondent's performance and advancement argument is also incomplete. I applied for nearly 50 internal roles from approximately February 2023 through April 2025. Respondent has not produced the postings, selected candidates, interview notes, scoring criteria, recruiter notes, decisionmaker names, or comparative qualifications. Respondent's statement that other candidates were "more qualified" is conclusory. It cannot rebut discrimination without the records showing who was selected, why they were selected, who made the decision, and whether the decisionmakers knew of my protected activity or my complaints.</p>
+        <p className="mt-3">Respondent also ignores project exclusion. Advancement at Discover was not limited to formal job postings. Advancement also came through project visibility, operational tools, process-improvement work, leadership exposure, and internal sponsorship. After my protected activity, I was excluded from project-related opportunities and credit. I raised concerns that my Compliance Check concept and related materials were used or recreated by Cyndy Smith's group while I was excluded from related meetings and credit. I also created call-flow/process tools and attempted to present them to leadership, including Greg Carfagna, but did not receive meaningful support or visibility. Those facts are relevant to advancement and opportunity.</p>
+        <p className="mt-3">Respondent's argument that Mr. Glover is in the "same protected racial class" does not defeat the claim. First, the decisions at issue were not made by Allan alone. The record involves Rosanna Blackson, Greg Carfagna, Jen Roy, Edina Markus, Amber, Trevor, Dan, HR, Employee Relations, scheduling administrators, and other leaders. Second, the law does not presume that a person cannot discriminate against someone who shares a protected trait or some portion of a protected identity. That argument does not erase the comparator evidence, timing, inconsistent records, race-related comments, or unequal application of process.</p>
+        <p className="mt-3">Respondent also attempts to dismiss the hardship-fund and HBCU comments as isolated and disconnected. They are not disconnected. The hardship-fund evidence shows different treatment in the same general process. Shortly before the July 10, 2025 incident, I personally assisted Brandi Cordi, a White employee on my team, with a hardship-fund request. Brandi was not required to submit supporting documentation. She only had to identify what she needed assistance for and provide a list or explanation of the requested need. Allan was aware of and assisted with that request. No concern was raised.</p>
+        <p className="mt-3">Shortly afterward, I asked Allan about helping Araksan Dide, a Black employee who was homeless and needed housing support. Allan responded differently. Instead of assisting in the same manner, he told me to hold off and gave an example involving Black employees, stating in substance that if one Black employee told another Black employee and that person tried to access the hardship fund, it could be a serious problem. I documented the issue immediately, followed up with Allan in Teams, and Allan responded that he was "just providing an example of what could happen." That is not vague or disconnected. It is direct evidence of race entering a workplace benefit/access discussion.</p>
+        <p className="mt-3">The HBCU comment is also relevant. Allan discussed HBCU recruiting during a broader conversation about blocked opportunity, lack of advancement, lack of projects, schedule restrictions, and my inability to get past barriers in the organization. He also made the "blockade" statement during that conversation. Respondent's statement that Allan had no formal recruiting role does not answer whether the statement was made, why it was made, or whether HBCU recruiting resulted in actual hiring.</p>
+        <p className="mt-3">Respondent's legal argument depends on accepting its version of disputed facts. That is not appropriate at this stage. The record contains multiple facts supporting an inference of discrimination: similarly situated employees receiving movement while I remained stuck; inconsistent waitlist records; a missing ticket; a false May 2025 offer/decline explanation; a 2024 downgrade after protected activity; exclusion from the TL Plus / Department Manager pipeline; nearly 50 unsuccessful internal applications despite strong performance; project exclusion and lack of credit; different hardship-fund treatment for a White employee and a Black employee; same-day documentation of Allan's race-related hardship example; and HBCU/blockade comments tied to opportunity and advancement.</p>
+        <p className="mt-3">For these reasons, Respondent has not shown that the Charge fails as a matter of law. At minimum, the evidence creates material factual disputes requiring further investigation and production of the underlying records.</p>
+
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          B. Respondent Has Not Rebutted Retaliation
+        </h4>
+        <p className="mt-3">Respondent does not dispute that I engaged in protected activity. I filed an EEOC charge in May 2024 and made multiple internal complaints regarding race discrimination, retaliation, schedule equity, project exclusion, and related workplace concerns. Respondent's position is that no materially adverse action occurred and that there is no causation. The record does not support that argument.</p>
+        <p className="mt-3">Respondent's argument depends on an artificially narrow view of retaliation. A retaliation claim does not require termination, demotion, or loss of pay. Under <em>Burlington Northern &amp; Santa Fe Railway Co. v. White</em>, a materially adverse action in the retaliation context is one that could dissuade a reasonable worker from making or supporting a charge of discrimination. The facts here meet that standard.</p>
+        <p className="mt-3">After protected activity, I was kept on PM/closing despite repeated requests to return to mid-shift or move to an earlier schedule. I was not properly placed on the MID-shift waitlist. I was later removed from the waitlist. Respondent then relied on an alleged May 2025 shift offer and decline that I dispute and that Respondent has not documented. My request date was later reset, my status changed from PM/Temporary to PM/Permanent, and no clear ticket or approval record has been produced. These are not minor disagreements with routine scheduling. These are disputed schedule, waitlist, and record-integrity events affecting my working conditions, family obligations, childcare, advancement access, and ability to remain in the role.</p>
+        <p className="mt-3">Respondent states that I remained employed, continued performing, and kept my compensation and responsibilities. That does not defeat retaliation. An employee can be retaliated against while still employed. An employee can be retaliated against through schedule restrictions, blocked internal movement, rating consequences, project exclusion, increased scrutiny, record manipulation, monitoring, or denial of support. Respondent's "she remained employed" argument does not answer the actual adverse actions in the record.</p>
+        <p className="mt-3">Respondent also claims the timeline is "dispositive." It is not. The timeline supports retaliation. My May 29, 2024 formal complaint was sent to multiple leaders and Employee Relations representatives, including Greg Carfagna and Susan Marcinko. That complaint specifically raised race discrimination, retaliation, schedule issues, transfer denials, and the failure to place me on the mid-shift waitlist. Shortly afterward, HR moved me out of Rosanna Blackson's reporting line during the investigation, confirming that the complaint was known and serious.</p>
+        <p className="mt-3">After that protected activity, adverse events continued. In July 2024, after ER approved my rec-for-term paperwork, Greg Carfagna blocked the process at the director step by requiring additional coaching documentation that peer Team Leaders reported they had not been required to provide. Anita later confirmed I had completed the process correctly and that the issue was that approvers did not know how to access the linked documentation. That delay forced me to keep low-performing employees longer and affected my scorecard.</p>
+        <p className="mt-3">In the 2024 review cycle after my protected activity, my overall rating dropped from Strong to Solid despite strong underlying metrics, no individual goal rated below Solid, and a 124.36% bonus payout. That downgrade mattered because leadership later communicated that Unit Managers / Team Leaders needed a 4 Strong or 5 Outstanding rating to be eligible for the TL Plus / Department Manager development cohort. A 3 Solid rating excluded me from that advancement pipeline. Respondent's statement that I experienced no change to opportunities is therefore inaccurate.</p>
+        <p className="mt-3">Respondent also states that the scheduling process was neutral and consistent. The records contradict that. My original request was for mid-shift. I discovered on April 26, 2024 that I had not been added to the MID-shift waitlist. I raised that issue in my May 29, 2024 complaint and May 31, 2024 HR intake. A January 22, 2025 waitlist snapshot later showed me on the list with a June 26, 2024 request date, PM/Temporary status, and Qualifies = Yes. By February 25, 2025, after multiple Jen Roy edits, my row was removed while other employees remained listed and continued to qualify. Respondent has not explained who authorized that removal or produced the ticket.</p>
+        <p className="mt-3">Respondent's May 2025 offer/decline explanation is also disputed. I did not receive or decline a May 2025 shift offer. I was not offered AM, mid-shift, or any other shift opportunity in May 2025. Respondent has not produced the alleged offer, alleged decline, ticket, shift details, communication, or person who allegedly recorded my response. Respondent's explanation is also illogical because the records show I had already been removed from the waitlist in February 2025, months before the alleged May 2025 offer.</p>
+        <p className="mt-3">Respondent further claims I reentered the waitlist on July 10, 2025 through a new request. That is misleading. July 2025 was not the beginning of my schedule issue. I had already requested mid-shift in 2024, complained about not being added, and had a January 2025 waitlist record showing a June 26, 2024 request date. In June 2025, I asked to also be considered for AM in addition to the mid-shift request I believed was already pending. In July, when I asked Allan Glover for my specific waitlist position, Jen Roy sent a limited five-row screenshot within approximately one minute. That screenshot omitted the material fields needed to verify my placement: Date Requested, Months as CAR TL, Temporary/Permanent status, and Qualifies = Yes/No. The controlling SharePoint waitlist did not contain my name at that time. I was later re-added with a July 17, 2025 request date.</p>
+        <p className="mt-3">These inconsistencies support pretext. Respondent's stated reason depends on a missing May 2025 offer, a missing decline, missing tickets, an unexplained February 2025 removal, an incomplete July 2025 screenshot, and a reset request date. Under <em>Reeves v. Sanderson Plumbing Products</em>, evidence that an employer's stated explanation is false or inconsistent may support an inference of unlawful motive. Here, Respondent's explanations are not supported by the underlying records.</p>
+        <p className="mt-3">Respondent also argues that Allan Glover did not know the substance of the prior EEOC charge and did not make decisions based on it. This does not defeat causation. First, the decisionmakers were not limited to Allan. The record involves Rosanna Blackson, Greg Carfagna, Jen Roy, Edina Markus, Amber, Trevor, Dan, HR, Employee Relations, scheduling administrators, and other leaders. Second, my protected activity was not limited to the prior EEOC charge. I made repeated internal complaints that were known to leadership, HR, and Employee Relations. Third, Allan became involved after HR moved me into his organization because of the complaint. He was also directly involved in later schedule, waitlist, hardship, and leave-related communications.</p>
+        <p className="mt-3">Respondent's lack-of-knowledge argument also ignores the documents. My May 29, 2024 complaint was sent to leadership and HR. My May 31 HR intake addressed the same issues. My July 19, 2024 Anita complaint addressed Greg blocking performance paperwork after protected activity. My September 2025 Ethical Concerns complaint addressed the waitlist and schedule issue again. My October 2025 communications addressed FMLA, Verint monitoring, and record-preservation concerns. Respondent cannot isolate one EEOC charge and ignore the repeated protected activity that followed.</p>
+        <p className="mt-3">Respondent states that I continued to be encouraged to apply for internal opportunities. That does not rebut retaliation. Encouraging me to apply while blocking or failing to select me is not proof of non-retaliation. I applied for nearly 50 internal roles from approximately February 2023 through April 2025. Respondent has not produced the selected candidates, recruiter notes, interview scoring, decisionmaker names, comparative qualifications, or communications. Respondent's statement that I remained free to apply does not explain why I was not selected, why projects were withheld, why my rating dropped, or why development opportunities were unavailable.</p>
+        <p className="mt-3">The record also includes additional retaliatory events after continued protected activity. In October 2025, I raised concerns about Verint monitoring and unusual screen visibility. My evidence shows my PC/profile appearing on live monitor while other Team Leaders in my department were logged in and active but did not show live monitoring active. HR later stated there was a technical problem and that I had "more visibility than" I should have had. HR also stated they did not know what changed, who did it, or why and were trying to backtrack permissions. That is evidence of unequal visibility and unresolved access changes, not a routine process conclusively applied to everyone.</p>
+        <p className="mt-3">The Verint issue also overlaps with the Teams deletion evidence. After I sent HR investigator Edward Reyes a formal timeline on October 7, 2025; after I notified Allan and Amber of FMLA in Teams on October 14; and after I complained about Verint monitoring on October 21, the Allan/Amber Teams chat was blank on October 23. Other same-period Teams chats remained visible, including chats dated October 10, October 13, October 15, October 16, October 17, and October 21. The same Allan/Amber chat was also cleared from my phone by October 24. Those facts support a preservation issue and support an inference that records tied to protected activity were treated differently.</p>
+        <p className="mt-3">The hardship-fund events also occurred after extensive protected activity. On November 13, 2025, I submitted a hardship request and completed the required attestation the same day. That same morning, an "SH Hardship" meeting appeared on Allan Glover's calendar involving Susan Marchinko, Allan Glover, and Greg Carfagna. Later that day, Cameron Hadley from Employee Relations contacted me to discuss the request. On November 17, Cameron stated that my request could not proceed without additional documentation. I had direct knowledge that Brandi Cordi, a White employee I had helped with a hardship request shortly before the July 10 hardship/race incident, was not required to submit the same type of supporting documentation. Respondent's statement that all hardship requests required documentation is therefore disputed.</p>
+        <p className="mt-3">Respondent says routine business processes were applied consistently before, during, and after protected activity. The record shows the opposite. The same types of processes repeatedly broke against me after protected activity: waitlist placement, waitlist removal, request dates, performance rating, project credit, internal applications, schedule movement, Verint visibility, Teams preservation, leave processing, and hardship assistance. The pattern, timing, missing records, inconsistent explanations, and comparator evidence support causation and pretext.</p>
+        <p className="mt-3">Respondent also argues that there is no "but for" causation. But-for causation does not require protected activity to be the only cause. The question is whether the challenged actions would have occurred in the same way absent the protected activity. Here, the record supports that they would not have. Before and during protected activity, I was raising race discrimination, retaliation, schedule equity, and HR concerns. After that activity, my schedule remained blocked, my waitlist records changed, my performance rating dropped, development access was affected, project access diminished, monitoring concerns arose, protected Teams messages disappeared, and hardship assistance was handled differently.</p>
+        <p className="mt-3">For these reasons, Respondent has not rebutted retaliation. Its argument depends on disputed facts and unsupported conclusions. At minimum, the evidence creates material factual disputes requiring further investigation and production of the underlying records.</p>
+
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          C. Respondent Has Not Rebutted the Hostile Work Environment Claim
+        </h4>
+        <p className="mt-3">Respondent argues that the hostile work environment claim fails because the conduct was not severe or pervasive and was not based on race. That argument misstates the record.</p>
+        <p className="mt-3">This is not a claim based only on scheduling disputes, performance disagreements, promotion frustration, or ordinary management conflict. The record includes race-based conduct, repeated protected complaints, schedule and waitlist obstruction, project exclusion, performance consequences, unusual monitoring, deleted Teams messages, leave-processing issues, hardship-fund unequal treatment, and race-related comments. These facts must be viewed together, not separated into isolated events.</p>
+        <p className="mt-3">Under <em>Harris v. Forklift Systems</em>, the hostile work environment analysis considers the totality of the circumstances, including frequency, severity, humiliation, and interference with work performance. Under <em>National Railroad Passenger Corp. v. Morgan</em>, a hostile environment claim is based on the cumulative effect of individual acts. Respondent cannot defeat the claim by isolating each event and labeling it ordinary.</p>
+        <p className="mt-3">The record includes a serious race-based allegation involving Rosanna Blackson. In my May 29, 2024 formal complaint, I reported that Rosanna used the racial slur "nigger" during a one-on-one conversation, which my mother witnessed. That is not a vague scheduling dispute or ordinary workplace disagreement. A racial slur by a manager or supervisor is severe evidence of race-based hostility. Respondent's Position Statement does not meaningfully address that allegation.</p>
+        <p className="mt-3">The record also shows that HR treated the May 29 complaint as serious. On June 5, 2024, HR confirmed that I would be moved away from Rosanna's reporting line during the investigation so I would not have one-on-one interactions with her. That response supports that the company understood the seriousness of the issues I reported.</p>
+        <p className="mt-3">The environment did not end with the Rosanna complaint. After I raised race discrimination and retaliation concerns, I continued experiencing schedule obstruction, waitlist inconsistencies, project exclusion, and adverse treatment tied to the same protected issues. My original mid-shift request was not properly processed. I later discovered I was not on the MID-shift list. I raised that in protected complaints. I was then removed from the waitlist in February 2025, shown an incomplete screenshot in July 2025, re-added with a later request date, and changed from PM/Temporary to PM/Permanent without clear documentation. Those facts are part of the overall environment because the schedule issue was repeatedly tied to my protected complaints and race-related treatment concerns.</p>
+        <p className="mt-3">Respondent also minimizes Allan Glover's race-related hardship-fund comment. That comment was not vague. I had recently assisted Brandi Cordi, a White employee on my team, with a hardship-fund request. Brandi was not required to submit supporting documentation, and no concern was raised. Shortly afterward, I asked Allan about assisting Araksan Dide, a Black employee who was homeless and needed housing support. Allan responded differently and gave an example involving Black employees, stating in substance that if one Black employee told another Black employee and that person tried to access the hardship fund, it could be a serious problem.</p>
+        <p className="mt-3">I documented that immediately. I texted a coworker because I was shocked. I then messaged Allan in Teams and stated that I was caught off guard and confused by the example he used. Allan did not deny using an example. He responded that he was "just providing an example of what could happen." When I asked, "What exactly are you saying?" Allan called me directly and asked, "What exactly are you trying to get to?" I also disclosed the incident to coworkers the same day. That is not an isolated, unsupported remark. It is a documented race-related workplace interaction connected to access to an employee benefit.</p>
+        <p className="mt-3">Respondent also dismisses the HBCU comment as isolated and disconnected. It was not disconnected. Allan discussed HBCU recruiting during a broader August 2025 conversation about lack of advancement, lack of projects, blocked opportunity, schedule restrictions, and my inability to move forward in the organization. During that same conversation, Allan made the "blockade" statement, telling me in substance that there was a blockade and that he did not believe I could get past it. Respondent's statement that Allan had no formal recruiting role does not answer whether he made the statement or why he made it during a conversation about blocked opportunity.</p>
+        <p className="mt-3">Respondent also argues that system recording, chat deletion, and leave processing are not tied to race. That is too narrow. These events occurred after repeated protected complaints about race discrimination, retaliation, schedule equity, and HR handling. They are part of the same course of conduct and may be considered as part of the total environment and retaliatory context. The issue is not whether each event used racial language. The issue is whether the total environment became hostile after I raised race discrimination and retaliation concerns.</p>
+        <p className="mt-3">The Verint evidence is specific. My profile appeared on live monitor while other Team Leaders in my same department were logged in and active but did not show live monitoring active. HR later acknowledged there was a technical problem and that I had "more visibility than" I should have had. HR also stated they did not know what changed, who did it, or why. That is not simply a standard operational tool being applied uniformly.</p>
+        <p className="mt-3">The Teams deletion evidence is also specific. After I sent HR a formal written timeline, notified Allan and Amber of FMLA in Teams, and complained about Verint monitoring, the Allan/Amber Teams chat disappeared. Other Teams chats from the same period remained visible, including chats dated October 10, October 13, October 15, October 16, October 17, and October 21. The same Allan/Amber chat was also cleared from my phone. That is a record-preservation issue tied to the same protected-activity and leave period.</p>
+        <p className="mt-3">The leave-processing evidence is also part of the total environment. After I requested intermittent FMLA, the leave was mishandled or misclassified, my system access was deactivated, and related Teams messages disappeared. These facts occurred after I had repeatedly raised race discrimination, retaliation, and HR concerns.</p>
+        <p className="mt-3">Respondent's argument that the conduct was not severe or pervasive ignores both severity and duration. The conduct began with race discrimination concerns involving Rosanna, included a reported racial slur, continued through HR intervention, continued through waitlist and schedule obstruction, continued through project exclusion and performance consequences, included later race-related hardship-fund and HBCU/blockade comments, and continued into monitoring, record-preservation, leave-processing, and hardship-fund issues. This was not one isolated comment. It was a continuing pattern.</p>
+        <p className="mt-3">The conduct also interfered with my work and working conditions. I remained fixed on PM/closing despite repeated requests and family/childcare impact. I was excluded from advancement-related opportunities and project credit. My 2024 rating dropped after protected activity and affected eligibility for the TL Plus / Department Manager development pipeline. I had to repeatedly escalate basic schedule, HR, monitoring, leave, and hardship issues. The environment affected my ability to perform, advance, and remain stable in the workplace.</p>
+        <p className="mt-3">Respondent's legal conclusion depends on accepting its own disputed facts and ignoring the cumulative record. The hostile work environment claim should not be dismissed as ordinary workplace disagreement. The record contains race-based conduct, race-related comments, protected complaints, repeated escalation, management involvement, inconsistent records, and workplace actions that affected my conditions of employment.</p>
+        <p className="mt-3">For these reasons, Respondent has not shown that the hostile work environment claim fails as a matter of law. At minimum, the evidence creates factual disputes requiring further investigation.</p>
+
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          D. Respondent's "Ancillary Allegations" Argument Is Incorrect
+        </h4>
+        <p className="mt-3">Respondent's argument that my Teams deletion, system recording, leave processing, and hardship-fund allegations are "ancillary," speculative, unsupported, and unrelated is incorrect. These events are documented, specific, and connected to the same protected-activity timeline.</p>
+        <p className="mt-3">First, the Teams deletion issue is not based on assumption. The record shows that on October 7, 2025, I sent HR investigator Edward Reyes a written timeline regarding my waitlist history, retaliation concerns, and Allan Glover's comments. On October 14, 2025, I notified Allan Glover and Amber in Teams that I had filed FMLA. That same Teams chat also documented concerns about leadership support after Allan removed himself from my team chat. On October 21, 2025, I emailed HR regarding Verint/screen-recording concerns.</p>
+        <p className="mt-3">On October 23, 2025, the Allan/Amber Teams chat was blank on my work computer. The only visible message stated that older messages had been deleted due to the organization's retention policy. However, other Teams chats from the same general period remained visible, including chats dated October 10, October 13, October 15, October 16, October 17, and October 21. The October 13 Alese Amarel chat remained visible and included messages discussing Allan leaving the chat and FMLA/LOA-related issues. By October 24, 2025, the same Allan/Amber chat was also cleared from my phone.</p>
+        <p className="mt-3">Those facts are specific. The relevant Allan/Amber chat disappeared after protected activity, after FMLA notice, after a written HR timeline, and after my Verint complaint, while other same-period chats remained visible. Respondent cannot dismiss that as a generic retention-policy issue without producing the retention logs, deletion logs, audit history, and preservation records.</p>
+        <p className="mt-3">Second, the Verint/system-recording issue is not speculative. Respondent states that recording is a standard operational tool. That does not answer the evidence. My records show my PC/profile appearing on live monitor while other Team Leaders in the same department were logged in and active but did not show live monitoring active. That is the factual issue: my profile appeared differently than similarly situated Team Leaders.</p>
+        <p className="mt-3">HR later confirmed this was not simply a misunderstanding. HR stated there was a technical problem and that I had "more visibility than" I should have had. HR also stated the issue had been turned over to product owners, the vendor, and the BT team; that they did not know what happened; that they did not know who did it; and that they were trying to backtrack permissions. Those statements contradict Respondent's claim that there is no indication I was treated differently.</p>
+        <p className="mt-3">Third, the leave-processing issue is connected to protected activity and is not outside the case simply because a centralized leave administrator was involved. I requested intermittent FMLA on or about October 13, 2025. I notified Allan and Amber in Teams on October 14. My doctor completed paperwork documenting that my condition was related to workplace environmental or interpersonal issues and that I had reported discrimination at work. Instead of the leave being handled cleanly as intermittent FMLA, the leave process was mishandled or misclassified, the wrong paperwork was sent, and my system access was deactivated. Allan later confirmed that the communication he received stated "short term" and warned that systems could be disabled again.</p>
+        <p className="mt-3">Respondent cannot avoid the issue by saying leave administration was centralized. The relevant facts are that the leave issue occurred immediately after protected activity and FMLA notice, involved communications to management, resulted in system-access consequences, and overlapped with the disappearance of the Allan/Amber Teams chat.</p>
+        <p className="mt-3">Fourth, the hardship-fund issue is not speculative and is not merely about payment timing. Respondent states that hardship-fund requests require documentation and involve multiple levels of review. That does not match how the process was applied in my direct experience. Shortly before the July 10, 2025 race-related hardship-fund incident, I personally assisted Brandi Cordi, a White employee on my team, with a hardship-fund request. Brandi was not required to submit supporting documentation. She only had to identify what she needed assistance for and provide a list or explanation of the requested need. Allan Glover was aware of and assisted with that request. No concern was raised.</p>
+        <p className="mt-3">Shortly afterward, I asked Allan about helping Araksan Dide, a Black employee who was homeless and needed housing support. Allan responded differently. He told me to hold off and gave an example involving Black employees, stating in substance that if one Black employee told another Black employee and that person tried to access the hardship fund, it could be a serious problem. I documented that immediately through a text to a coworker, a Teams follow-up to Allan, Allan's response that he was "just providing an example of what could happen," and same-day disclosure to coworkers.</p>
+        <p className="mt-3">Those facts directly tie the hardship-fund issue to race and unequal treatment. A White employee's hardship request was handled without supporting documentation and without warning. A Black employee's potential hardship request triggered hesitation and a race-related warning. Respondent's generalized statement that hardship requests required documentation does not answer that comparator evidence.</p>
+        <p className="mt-3">Fifth, my own hardship request was immediately known to HR, Employee Relations, and leadership. On November 13, 2025, I submitted my hardship assistance request and completed the required attestation the same day. That same morning, an "SH Hardship" meeting appeared on Allan Glover's calendar involving Susan Marchinko, Allan Glover, and Greg Carfagna. Later that day, Cameron Hadley from Employee Relations contacted me to discuss the request. On November 17, Cameron stated that my request could not proceed without additional documentation. I provided the requested documentation the same day or shortly thereafter. The funds were not received until after significant housing harm had already occurred.</p>
+        <p className="mt-3">Those facts contradict Respondent's effort to minimize the hardship issue as ordinary payment timing. The hardship request was known, escalated, and discussed by HR, Employee Relations, operations leadership, and director-level leadership the same day it was submitted. Respondent should produce the meeting invite, attendee list, notes, communications, approval chain, documentation requests, completion date, approval date, and payment date.</p>
+        <p className="mt-3">Respondent also argues that none of these events would constitute an adverse employment action. That is too narrow, especially for retaliation. Under <em>Burlington Northern</em>, a retaliation claim can include actions that might dissuade a reasonable worker from making or supporting a charge of discrimination. Targeted or unequal monitoring, deletion or disappearance of relevant protected-activity communications, leave-processing errors causing access deactivation, and delayed hardship assistance during a housing crisis are not trivial. They are materially relevant to retaliation, pretext, hostile environment, and credibility.</p>
+        <p className="mt-3">These allegations are not disconnected from protected activity. They occurred after my May 2024 EEOC charge, after my May 29, 2024 formal internal complaint, after repeated schedule/waitlist complaints, after my September 2025 Ethical Concerns complaint, after my October 2025 FMLA notice, and after my written HR timeline. The timing and documentation matter.</p>
+        <p className="mt-3">Respondent's "ancillary allegations" section should therefore be rejected. The records show specific facts: the Allan/Amber Teams chat disappeared while other same-period chats remained visible; my Verint profile showed visibility other Team Leaders did not show; HR admitted I had more visibility than I should have had; my leave was mishandled or misclassified after FMLA notice; my system access was deactivated; a White employee's hardship request was handled without supporting documentation; a Black employee's potential hardship request triggered a race-related warning; and my own hardship request was escalated to HR, Employee Relations, operations leadership, and director-level leadership the day it was submitted.</p>
+
+        {/* Section III - Conclusion — Charging Party's Response */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          III. Discussion — Response to Respondent's Legal Argument
+          III. Conclusion — Charging Party's Response
         </h2>
-        <p className="mt-3">
-          Respondent's legal discussion does not resolve the Charge. It attempts to
-          characterize the evidence as ordinary workplace disagreement, but the record
-          shows materially disputed facts involving schedule access, waitlist
-          manipulation, comparator movement, performance-rating impact, advancement
-          barriers, project exclusion, race-related comments, and inconsistent
-          application of workplace processes.
-        </p>
+        <p className="mt-3">Respondent's request for dismissal should be rejected. Respondent's conclusion is not supported by the record. It depends on disputed facts, missing documents, incomplete explanations, and broad denials that are contradicted by Respondent's own records.</p>
+        <p className="mt-3">This case is not about routine workplace disagreement. The record shows protected activity followed by schedule obstruction, waitlist removal, inconsistent request dates, comparator movement, a post-complaint rating downgrade, exclusion from advancement opportunities, project exclusion, unusual Verint visibility, deleted Teams messages, leave-processing problems, hardship-fund inconsistency, and race-related comments involving hardship assistance and HBCU recruiting.</p>
+        <p className="mt-3">Respondent repeatedly states that I remained employed and continued performing well. That does not defeat my claims. It confirms that I was qualified and performing. The issue is why a strong performer was kept fixed on PM/closing, removed from the waitlist, shown an incomplete waitlist screenshot, re-added with a new request date, denied movement while comparators moved, downgraded after protected activity, excluded from the TL Plus / Department Manager pipeline, and forced to repeatedly escalate issues that Respondent now claims were neutral.</p>
+        <p className="mt-3">Respondent's scheduling defense is directly contradicted by the records. I requested mid-shift in 2024, learned I was not on the MID-shift list, raised that failure in protected complaints, appeared on a January 2025 waitlist snapshot, was removed by February 2025, remained absent in July 2025, and was later re-added with a July 17, 2025 request date. Respondent's claim that I declined a May 2025 day-shift opportunity is unsupported. I did not receive or decline that offer. Respondent has not produced the offer, the ticket, the shift details, the communication, or the alleged decline. A May 2025 alleged decline also cannot explain why I was already removed from the waitlist in February 2025.</p>
+        <p className="mt-3">Respondent's comparator argument also fails. The record identifies similarly situated employees who received schedule movement, department movement, AM placement, midshift placement, Training Bay movement, or more favorable flexibility while I remained fixed on PM/closing. Tyler Millisock is a direct comparator: same start date, same level, outside my protected class, moved from LVAR PM/closing to PRE-D/DBC on an earlier schedule, and stated he was not on the waitlist. Respondent cannot claim the waitlist was an absolute barrier for me while employees outside my protected class moved without the same barrier.</p>
+        <p className="mt-3">Respondent's performance and advancement defense is also misleading. My 2024 rating dropped from Strong to Solid in the first review cycle after my protected activity, despite strong metrics, no goal below Solid, and a 124.36% bonus payout. That rating was not harmless. It excluded me from the TL Plus / Department Manager development pipeline. Respondent also fails to explain nearly 50 internal applications, repeated non-selection, project exclusion, missing interview records, and unsupported "more qualified candidate" explanations.</p>
+        <p className="mt-3">Respondent's retaliation defense ignores the actual sequence of events. After protected activity, the same types of processes repeatedly broke against me: schedule movement, waitlist placement, waitlist removal, request dates, performance rating, project credit, internal applications, Verint visibility, Teams preservation, leave processing, system access, and hardship assistance. That pattern is not speculation. It is documented.</p>
+        <p className="mt-3">Respondent's hostile work environment defense also fails because it isolates each event and strips out the cumulative impact. My May 29, 2024 complaint reported a racial slur, retaliation, false job abandonment, and failure to place me on the waitlist. HR moved me away from Rosanna during the investigation. Later, Allan made race-related hardship-fund comments, discussed HBCU recruiting, and made a "blockade" statement during a conversation about my lack of opportunities. The environment continued through monitoring, record-preservation, leave, and hardship issues.</p>
+        <p className="mt-3">Respondent's effort to label Verint, Teams deletion, leave processing, and hardship assistance as "ancillary" is also wrong. These issues caused real harm and are tied to the same protected-activity timeline. My Verint evidence showed different visibility from other Team Leaders, and HR later admitted I had more visibility than I should have had. The Allan/Amber Teams chat disappeared while other same-period chats remained visible. My intermittent FMLA request was mishandled as short-term/continuous leave, affecting my system access. My hardship request was escalated to HR, Employee Relations, Allan Glover, Susan Marchinko, and Greg Carfagna the day it was submitted.</p>
+        <p className="mt-3">The harm was not theoretical. The workplace conditions and Respondent's handling of my complaints contributed to serious mental-health deterioration, PTSD symptoms, panic attacks, FMLA use, reduced income, financial crisis, time away from my child, housing instability, loss of housing, transportation instability, and severe emotional distress. Respondent's conclusion attempts to minimize those consequences as ordinary workplace processes. They were not ordinary, and they were not harmless.</p>
+        <p className="mt-3">The record does not confirm that Discover treated me fairly, consistently, or in accordance with legitimate business practices. It shows the opposite: inconsistent rules, missing tickets, altered waitlist records, comparator movement, unsupported denials, HR admissions, and documented harm. Respondent has not rebutted discrimination, retaliation, or hostile work environment. The Division should reject Respondent's request for dismissal and issue findings consistent with the documented record.</p>
 
-        <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          a. Respondent Has Not Rebutted Race Discrimination
-        </h4>
-        <p className="mt-3">
-          Respondent argues that Charging Party cannot establish race discrimination
-          because she supposedly did not suffer a materially adverse employment action.
-          That is incorrect. Charging Party was kept on PM/closing for an extended
-          period despite repeated requests to return to mid-shift or move to an earlier
-          schedule. That schedule affected her family obligations, childcare, ability
-          to be present for her son, internal mobility, and access to development
-          opportunities. She was also removed from the waitlist, later shown an
-          incomplete screenshot that did not match the controlling SharePoint
-          waitlist, re-added with a later request date, and changed from PM/Temporary
-          to PM/Permanent without a clear ticket, notice, or approval documentation.
-        </p>
-        <p className="mt-3">
-          Respondent cannot defeat this issue by saying Charging Party remained
-          employed, kept her pay, or received strong evaluations. Under Title VII, an
-          employee does not have to show termination, demotion, or loss of pay to show
-          harm. Schedule, assignments, access to opportunity, visibility, and working
-          conditions can be terms or conditions of employment. Here, the record shows
-          harm to Charging Party's schedule, advancement path, project access,
-          performance rating, and career mobility.
-        </p>
-        <p className="mt-3">
-          Respondent also states that Charging Party received strong evaluations. That
-          is incomplete. Before her protected activity, she received a 2023 overall
-          rating of Strong. In the first review cycle after her May 2024 EEOC charge
-          and May 29, 2024 formal internal complaint, her overall rating dropped to
-          Solid. That downgrade occurred despite strong underlying metrics, no goal
-          rated below Solid, and a 124.36% bonus payout. Her rating later returned to
-          Strong in 2025. The issue is the Strong → Solid → Strong pattern and the
-          timing of the 2024 downgrade.
-        </p>
-        <p className="mt-3">
-          The 2024 Solid rating was not harmless. Leadership later communicated that
-          Unit Managers / Team Leaders needed a rating of 4 Strong or 5 Outstanding to
-          be eligible for the TL Plus / Department Manager training cohort. A 3 Solid
-          rating excluded Charging Party from that advancement pipeline. Respondent's
-          statement that she maintained her responsibilities and was not precluded
-          from advancement ignores the actual consequence of the 2024 rating.
-        </p>
-        <p className="mt-3">
-          Respondent further claims that Charging Party failed to identify similarly
-          situated employees outside her protected class who were treated more
-          favorably. That is also incorrect. Comparator evidence includes employees who
-          received schedule movement, department movement, or other opportunities while
-          Charging Party remained fixed on PM/closing. Tyler Millisock is a key
-          comparator because he had the same April 3, 2023 start date, was at the
-          same level, is outside Charging Party's protected class, and moved from
-          LVAR PM/closing to PRE-D/DBC 11:30 a.m.–8:00 p.m. while she remained stuck
-          on PM/closing. Tyler also stated he was not on the waitlist. That directly
-          contradicts Respondent's claim that movement was strictly controlled by a
-          centralized waitlist and that no employee moved outside the established
-          system.
-        </p>
-        <p className="mt-3">
-          The waitlist records also show inconsistent treatment. Charging Party
-          requested mid-shift in 2024, discovered on April 26, 2024 that she was not
-          on the MID-shift waitlist, and raised that issue in her May 29, 2024 formal
-          complaint and May 31, 2024 HR intake call. Respondent's own January 22, 2025
-          waitlist snapshot showed her on the list with a June 26, 2024 request date,
-          PM/Temporary status, and Qualifies = Yes. By February 25, 2025, after Jen
-          Roy edited the waitlist multiple times, her row was removed while other
-          employees remained and continued to qualify. Respondent has not explained
-          who authorized her removal, why she was removed, or why no ticket has been
-          produced.
-        </p>
-        <p className="mt-3">
-          Respondent's claim that Charging Party was offered a day-shift opportunity in
-          May 2025 and declined it is false. She did not receive a May 2025 shift
-          offer. She was not offered AM, mid-shift, or any other shift opportunity in
-          May 2025. Respondent has not produced the alleged offer, the alleged
-          decline, the ticket, the communication, the shift details, or the person who
-          allegedly recorded her response. Respondent also cannot explain how Charging
-          Party was supposedly removed for declining a May 2025 offer when the records
-          show she had already been removed from the waitlist in February 2025.
-        </p>
-        <p className="mt-3">
-          Respondent's claim that Charging Party was "reentered" onto the waitlist on
-          July 10, 2025 based on a new request is also misleading. July 2025 was not
-          the beginning of the schedule issue. Charging Party had already requested
-          mid-shift in 2024. In June 2025, after being stuck on PM/closing, she asked
-          to also be considered for AM in addition to the mid-shift request she
-          believed was already pending. In July, she asked Allan Glover where she was
-          on the waitlist. Allan contacted Jen Roy, and within approximately one
-          minute Jen provided a limited five-row screenshot. That screenshot omitted
-          the material fields needed to verify placement, including Date Requested,
-          Months as CAR TL, Temporary/Permanent status, and Qualifies = Yes/No. The
-          controlling SharePoint waitlist did not contain her name at that time. She
-          was later re-added with a July 17, 2025 request date, which reset the
-          earlier June 26, 2024 date reflected in the January 2025 snapshot.
-        </p>
-        <p className="mt-3">
-          Respondent says managers did not control the process. The record contradicts
-          that. During the September 19, 2025 recorded conversation, Allan discussed
-          Training Bay movement and stated there "wasn't a criteria" for that
-          movement. When asked who was involved in the decision, he identified
-          "myself, Amber, Trevor, Dan." That is not a strictly neutral, automatic,
-          centralized process. It shows management involvement and discretionary
-          decision-making.
-        </p>
-        <p className="mt-3">
-          Respondent also says that any differences in schedules were due to separate
-          roles, preexisting assignments, training obligations, or accommodations.
-          That explanation is unsupported without the underlying records. If that is
-          Respondent's position, it should produce the comparator movement records,
-          tickets, accommodations, training assignments, onboarding records, and
-          schedules for the employees it claims are distinguishable. Respondent should
-          not be permitted to rely on generalized explanations while withholding the
-          documents that would show whether those explanations are true.
-        </p>
-        <p className="mt-3">
-          Respondent's performance and advancement argument is also incomplete.
-          Charging Party applied for nearly 50 internal roles from approximately
-          February 2023 through April 2025. Respondent has not produced the postings,
-          selected candidates, interview notes, scoring criteria, recruiter notes,
-          decisionmaker names, or comparative qualifications. Respondent's statement
-          that other candidates were "more qualified" is conclusory. It cannot rebut
-          discrimination without the records showing who was selected, why they were
-          selected, who made the decision, and whether the decisionmakers knew of
-          Charging Party's protected activity or her complaints.
-        </p>
-        <p className="mt-3">
-          Respondent also ignores project exclusion. Advancement at Discover was not
-          limited to formal job postings. Advancement also came through project
-          visibility, operational tools, process-improvement work, leadership
-          exposure, and internal sponsorship. After her protected activity, Charging
-          Party was excluded from project-related opportunities and credit. She raised
-          concerns that her Compliance Check concept and related materials were used
-          or recreated by Cyndy Smith's group while she was excluded from related
-          meetings and credit. She also created call-flow/process tools and attempted
-          to present them to leadership, including Greg Carfagna, but did not receive
-          meaningful support or visibility. Those facts are relevant to advancement
-          and opportunity.
-        </p>
-        <p className="mt-3">
-          Respondent's argument that Mr. Glover is in the "same protected racial
-          class" does not defeat the claim. First, the decisions at issue were not
-          made by Allan alone. The record involves Rosanna Blackson, Greg Carfagna,
-          Jen Roy, Edina Markus, Amber, Trevor, Dan, HR, Employee Relations,
-          scheduling administrators, and other leaders. Second, the law does not
-          presume that a person cannot discriminate against someone who shares a
-          protected trait or some portion of a protected identity. That argument does
-          not erase the comparator evidence, timing, inconsistent records,
-          race-related comments, or unequal application of process.
-        </p>
-        <p className="mt-3">
-          Respondent also attempts to dismiss the hardship-fund and HBCU comments as
-          isolated and disconnected. They are not disconnected. The hardship-fund
-          evidence shows different treatment in the same general process. Shortly
-          before the July 10, 2025 incident, Charging Party personally assisted
-          Brandi Cordi, a White employee on her team, with a hardship-fund request.
-          Brandi was not required to submit supporting documentation. She only had to
-          identify what she needed assistance for and provide a list or explanation of
-          the requested need. Allan was aware of and assisted with that request. No
-          concern was raised.
-        </p>
-        <p className="mt-3">
-          Shortly afterward, Charging Party asked Allan about helping Araksan Dide, a
-          Black employee who was homeless and needed housing support. Allan responded
-          differently. Instead of assisting in the same manner, he told her to hold
-          off and gave an example involving Black employees, stating in substance that
-          if one Black employee told another Black employee and that person tried to
-          access the hardship fund, it could be a serious problem. Charging Party
-          documented the issue immediately, followed up with Allan in Teams, and Allan
-          responded that he was "just providing an example of what could happen." That
-          is not vague or disconnected. It is direct evidence of race entering a
-          workplace benefit/access discussion.
-        </p>
-        <p className="mt-3">
-          The HBCU comment is also relevant. Allan discussed HBCU recruiting during a
-          broader conversation about blocked opportunity, lack of advancement, lack of
-          projects, schedule restrictions, and Charging Party's inability to get past
-          barriers in the organization. He also made the "blockade" statement during
-          that conversation. Respondent's statement that Allan had no formal
-          recruiting role does not answer whether the statement was made, why it was
-          made, or whether HBCU recruiting resulted in actual hiring.
-        </p>
-        <p className="mt-3">
-          Respondent's legal argument depends on accepting its version of disputed
-          facts. That is not appropriate at this stage. The record contains multiple
-          facts supporting an inference of discrimination: similarly situated
-          employees receiving movement while Charging Party remained stuck;
-          inconsistent waitlist records; a missing ticket; a false May 2025
-          offer/decline explanation; a 2024 downgrade after protected activity;
-          exclusion from the TL Plus / Department Manager pipeline; nearly 50
-          unsuccessful internal applications despite strong performance; project
-          exclusion and lack of credit; different hardship-fund treatment for a White
-          employee and a Black employee; same-day documentation of Allan's
-          race-related hardship example; and HBCU/blockade comments tied to
-          opportunity and advancement.
-        </p>
-        <p className="mt-3">
-          For these reasons, Respondent has not shown that the Charge fails as a
-          matter of law. At minimum, the evidence creates material factual disputes
-          requiring further investigation and production of the underlying records.
-        </p>
 
-        <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          b. Respondent Has Not Rebutted Retaliation
-        </h4>
-        <p className="mt-3">
-          Respondent does not dispute that Charging Party engaged in protected
-          activity. She filed an EEOC charge in May 2024 and made multiple internal
-          complaints regarding race discrimination, retaliation, schedule equity,
-          project exclusion, and related workplace concerns. Respondent's position is
-          that no materially adverse action occurred and that there is no causation.
-          The record does not support that argument.
-        </p>
-        <p className="mt-3">
-          Respondent's argument depends on an artificially narrow view of retaliation.
-          A retaliation claim does not require termination, demotion, or loss of pay.
-          Under <em>Burlington Northern &amp; Santa Fe Railway Co. v. White</em>, a
-          materially adverse action in the retaliation context is one that could
-          dissuade a reasonable worker from making or supporting a charge of
-          discrimination. The facts here meet that standard.
-        </p>
-        <p className="mt-3">
-          After protected activity, Charging Party was kept on PM/closing despite
-          repeated requests to return to mid-shift or move to an earlier schedule.
-          She was not properly placed on the MID-shift waitlist. She was later
-          removed from the waitlist. Respondent then relied on an alleged May 2025
-          shift offer and decline that Charging Party disputes and that Respondent
-          has not documented. Her request date was later reset, her status changed
-          from PM/Temporary to PM/Permanent, and no clear ticket or approval record
-          has been produced. These are not minor disagreements with routine
-          scheduling. These are disputed schedule, waitlist, and record-integrity
-          events affecting her working conditions, family obligations, childcare,
-          advancement access, and ability to remain in the role.
-        </p>
-        <p className="mt-3">
-          Respondent states that Charging Party remained employed, continued
-          performing, and kept her compensation and responsibilities. That does not
-          defeat retaliation. An employee can be retaliated against while still
-          employed. An employee can be retaliated against through schedule
-          restrictions, blocked internal movement, rating consequences, project
-          exclusion, increased scrutiny, record manipulation, monitoring, or denial
-          of support. Respondent's "she remained employed" argument does not answer
-          the actual adverse actions in the record.
-        </p>
-        <p className="mt-3">
-          Respondent also claims the timeline is "dispositive." It is not. The
-          timeline supports retaliation. Charging Party's May 29, 2024 formal
-          complaint was sent to multiple leaders and Employee Relations
-          representatives, including Greg Carfagna and Susan Marcinko. That
-          complaint specifically raised race discrimination, retaliation, schedule
-          issues, transfer denials, and the failure to place her on the mid-shift
-          waitlist. Shortly afterward, HR moved her out of Rosanna Blackson's
-          reporting line during the investigation, confirming that the complaint was
-          known and serious.
-        </p>
-        <p className="mt-3">
-          After that protected activity, adverse events continued. In July 2024,
-          after ER approved Charging Party's rec-for-term paperwork, Greg Carfagna
-          blocked the process at the director step by requiring additional coaching
-          documentation that peer Team Leaders reported they had not been required
-          to provide. Anita later confirmed Charging Party had completed the process
-          correctly and that the issue was that approvers did not know how to access
-          the linked documentation. That delay forced her to keep low-performing
-          employees longer and affected her scorecard.
-        </p>
-        <p className="mt-3">
-          In the 2024 review cycle after her protected activity, Charging Party's
-          overall rating dropped from Strong to Solid despite strong underlying
-          metrics, no individual goal rated below Solid, and a 124.36% bonus payout.
-          That downgrade mattered because leadership later communicated that Unit
-          Managers / Team Leaders needed a 4 Strong or 5 Outstanding rating to be
-          eligible for the TL Plus / Department Manager development cohort. A 3
-          Solid rating excluded Charging Party from that advancement pipeline.
-          Respondent's statement that she experienced no change to opportunities is
-          therefore inaccurate.
-        </p>
-        <p className="mt-3">
-          Respondent also states that the scheduling process was neutral and
-          consistent. The records contradict that. Charging Party's original request
-          was for mid-shift. She discovered on April 26, 2024 that she had not been
-          added to the MID-shift waitlist. She raised that issue in her May 29, 2024
-          complaint and May 31, 2024 HR intake. A January 22, 2025 waitlist snapshot
-          later showed her on the list with a June 26, 2024 request date,
-          PM/Temporary status, and Qualifies = Yes. By February 25, 2025, after
-          multiple Jen Roy edits, her row was removed while other employees remained
-          listed and continued to qualify. Respondent has not explained who
-          authorized that removal or produced the ticket.
-        </p>
-        <p className="mt-3">
-          Respondent's May 2025 offer/decline explanation is also disputed. Charging
-          Party did not receive or decline a May 2025 shift offer. She was not
-          offered AM, mid-shift, or any other shift opportunity in May 2025.
-          Respondent has not produced the alleged offer, alleged decline, ticket,
-          shift details, communication, or person who allegedly recorded her
-          response. Respondent's explanation is also illogical because the records
-          show she had already been removed from the waitlist in February 2025,
-          months before the alleged May 2025 offer.
-        </p>
-        <p className="mt-3">
-          Respondent further claims Charging Party reentered the waitlist on July
-          10, 2025 through a new request. That is misleading. July 2025 was not the
-          beginning of the schedule issue. She had already requested mid-shift in
-          2024, complained about not being added, and had a January 2025 waitlist
-          record showing a June 26, 2024 request date. In June 2025, she asked to
-          also be considered for AM in addition to the mid-shift request she
-          believed was already pending. In July, when she asked Allan Glover for her
-          specific waitlist position, Jen Roy sent a limited five-row screenshot
-          within approximately one minute. That screenshot omitted the material
-          fields needed to verify her placement: Date Requested, Months as CAR TL,
-          Temporary/Permanent status, and Qualifies = Yes/No. The controlling
-          SharePoint waitlist did not contain her name at that time. She was later
-          re-added with a July 17, 2025 request date.
-        </p>
-        <p className="mt-3">
-          These inconsistencies support pretext. Respondent's stated reason depends
-          on a missing May 2025 offer, a missing decline, missing tickets, an
-          unexplained February 2025 removal, an incomplete July 2025 screenshot,
-          and a reset request date. Under <em>Reeves v. Sanderson Plumbing
-          Products</em>, evidence that an employer's stated explanation is false or
-          inconsistent may support an inference of unlawful motive. Here,
-          Respondent's explanations are not supported by the underlying records.
-        </p>
-        <p className="mt-3">
-          Respondent also argues that Allan Glover did not know the substance of
-          the prior EEOC charge and did not make decisions based on it. This does
-          not defeat causation. First, the decisionmakers were not limited to Allan.
-          The record involves Rosanna Blackson, Greg Carfagna, Jen Roy, Edina
-          Markus, Amber, Trevor, Dan, HR, Employee Relations, scheduling
-          administrators, and other leaders. Second, Charging Party's protected
-          activity was not limited to the prior EEOC charge. She made repeated
-          internal complaints that were known to leadership, HR, and Employee
-          Relations. Third, Allan became involved after HR moved her into his
-          organization because of the complaint. He was also directly involved in
-          later schedule, waitlist, hardship, and leave-related communications.
-        </p>
-        <p className="mt-3">
-          Respondent's lack-of-knowledge argument also ignores the documents.
-          Charging Party's May 29, 2024 complaint was sent to leadership and HR.
-          Her May 31 HR intake addressed the same issues. Her July 19, 2024 Anita
-          complaint addressed Greg blocking performance paperwork after protected
-          activity. Her September 2025 Ethical Concerns complaint addressed the
-          waitlist and schedule issue again. Her October 2025 communications
-          addressed FMLA, Verint monitoring, and record-preservation concerns.
-          Respondent cannot isolate one EEOC charge and ignore the repeated
-          protected activity that followed.
-        </p>
-        <p className="mt-3">
-          Respondent states that Charging Party continued to be encouraged to apply
-          for internal opportunities. That does not rebut retaliation. Encouraging
-          her to apply while blocking or failing to select her is not proof of
-          non-retaliation. She applied for nearly 50 internal roles from
-          approximately February 2023 through April 2025. Respondent has not
-          produced the selected candidates, recruiter notes, interview scoring,
-          decisionmaker names, comparative qualifications, or communications.
-          Respondent's statement that she remained free to apply does not explain
-          why she was not selected, why projects were withheld, why her rating
-          dropped, or why development opportunities were unavailable.
-        </p>
-        <p className="mt-3">
-          The record also includes additional retaliatory events after continued
-          protected activity. In October 2025, Charging Party raised concerns about
-          Verint monitoring and unusual screen visibility. Her evidence shows her
-          PC/profile appearing on live monitor while other Team Leaders in her
-          department were logged in and active but did not show live monitoring
-          active. HR later stated there was a technical problem and that she had
-          "more visibility than" she should have had. HR also stated they did not
-          know what changed, who did it, or why and were trying to backtrack
-          permissions. That is evidence of unequal visibility and unresolved access
-          changes, not a routine process conclusively applied to everyone.
-        </p>
-        <p className="mt-3">
-          The Verint issue also overlaps with the Teams deletion evidence. After
-          Charging Party sent HR investigator Edward Reyes a formal timeline on
-          October 7, 2025; after she notified Allan and Amber of FMLA in Teams on
-          October 14; and after she complained about Verint monitoring on October
-          21, the Allan/Amber Teams chat was blank on October 23. Other same-period
-          Teams chats remained visible, including chats dated October 10, October
-          13, October 15, October 16, October 17, and October 21. The same
-          Allan/Amber chat was also cleared from her phone by October 24. Those
-          facts support a preservation issue and support an inference that records
-          tied to protected activity were treated differently.
-        </p>
-        <p className="mt-3">
-          The hardship-fund events also occurred after extensive protected activity.
-          On November 13, 2025, Charging Party submitted a hardship request and
-          completed the required attestation the same day. That same morning, an
-          "SH Hardship" meeting appeared on Allan Glover's calendar involving Susan
-          Marchinko, Allan Glover, and Greg Carfagna. Later that day, Cameron
-          Hadley from Employee Relations contacted her to discuss the request. On
-          November 17, Cameron stated that her request could not proceed without
-          additional documentation. Charging Party had direct knowledge that Brandi
-          Cordi, a White employee she had helped with a hardship request shortly
-          before the July 10 hardship/race incident, was not required to submit the
-          same type of supporting documentation. Respondent's statement that all
-          hardship requests required documentation is therefore disputed.
-        </p>
-        <p className="mt-3">
-          Respondent says routine business processes were applied consistently
-          before, during, and after protected activity. The record shows the
-          opposite. The same types of processes repeatedly broke against Charging
-          Party after protected activity: waitlist placement, waitlist removal,
-          request dates, performance rating, project credit, internal applications,
-          schedule movement, Verint visibility, Teams preservation, leave
-          processing, and hardship assistance. The pattern, timing, missing
-          records, inconsistent explanations, and comparator evidence support
-          causation and pretext.
-        </p>
-        <p className="mt-3">
-          Respondent also argues that there is no "but for" causation. But-for
-          causation does not require protected activity to be the only cause. The
-          question is whether the challenged actions would have occurred in the
-          same way absent the protected activity. Here, the record supports that
-          they would not have. Before and during protected activity, Charging Party
-          was raising race discrimination, retaliation, schedule equity, and HR
-          concerns. After that activity, her schedule remained blocked, her
-          waitlist records changed, her performance rating dropped, development
-          access was affected, project access diminished, monitoring concerns
-          arose, protected Teams messages disappeared, and hardship assistance was
-          handled differently.
-        </p>
-        <p className="mt-3">
-          For these reasons, Respondent has not rebutted retaliation. Its argument
-          depends on disputed facts and unsupported conclusions. At minimum, the
-          evidence creates material factual disputes requiring further
-          investigation and production of the underlying records.
-        </p>
-
-        <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          c. Respondent Has Not Rebutted the Hostile Work Environment Claim
-        </h4>
-        <p className="mt-3">
-          Respondent argues that the hostile work environment claim fails because the
-          conduct was not severe or pervasive and was not based on race. That
-          argument misstates the record.
-        </p>
-        <p className="mt-3">
-          This is not a claim based only on scheduling disputes, performance
-          disagreements, promotion frustration, or ordinary management conflict. The
-          record includes race-based conduct, repeated protected complaints, schedule
-          and waitlist obstruction, project exclusion, performance consequences,
-          unusual monitoring, deleted Teams messages, leave-processing issues,
-          hardship-fund unequal treatment, and race-related comments. These facts
-          must be viewed together, not separated into isolated events.
-        </p>
-        <p className="mt-3">
-          Under <em>Harris v. Forklift Systems</em>, the hostile work environment
-          analysis considers the totality of the circumstances, including frequency,
-          severity, humiliation, and interference with work performance. Under{" "}
-          <em>National Railroad Passenger Corp. v. Morgan</em>, a hostile environment
-          claim is based on the cumulative effect of individual acts. Respondent
-          cannot defeat the claim by isolating each event and labeling it ordinary.
-        </p>
-        <p className="mt-3">
-          The record includes a serious race-based allegation involving Rosanna
-          Blackson. In Charging Party's May 29, 2024 formal complaint, she reported
-          that Rosanna used the racial slur "nigger" during a one-on-one
-          conversation, which her mother witnessed. That is not a vague scheduling
-          dispute or ordinary workplace disagreement. A racial slur by a manager or
-          supervisor is severe evidence of race-based hostility. Respondent's
-          Position Statement does not meaningfully address that allegation.
-        </p>
-        <p className="mt-3">
-          The record also shows that HR treated the May 29 complaint as serious. On
-          June 5, 2024, HR confirmed that Charging Party would be moved away from
-          Rosanna's reporting line during the investigation so she would not have
-          one-on-one interactions with her. That response supports that the company
-          understood the seriousness of the issues she reported.
-        </p>
-        <p className="mt-3">
-          The environment did not end with the Rosanna complaint. After Charging
-          Party raised race discrimination and retaliation concerns, she continued
-          experiencing schedule obstruction, waitlist inconsistencies, project
-          exclusion, and adverse treatment tied to the same protected issues. Her
-          original mid-shift request was not properly processed. She later
-          discovered she was not on the MID-shift list. She raised that in protected
-          complaints. She was then removed from the waitlist in February 2025, shown
-          an incomplete screenshot in July 2025, re-added with a later request date,
-          and changed from PM/Temporary to PM/Permanent without clear documentation.
-          Those facts are part of the overall environment because the schedule issue
-          was repeatedly tied to her protected complaints and race-related treatment
-          concerns.
-        </p>
-        <p className="mt-3">
-          Respondent also minimizes Allan Glover's race-related hardship-fund
-          comment. That comment was not vague. Charging Party had recently assisted
-          Brandi Cordi, a White employee on her team, with a hardship-fund request.
-          Brandi was not required to submit supporting documentation, and no
-          concern was raised. Shortly afterward, Charging Party asked Allan about
-          assisting Araksan Dide, a Black employee who was homeless and needed
-          housing support. Allan responded differently and gave an example involving
-          Black employees, stating in substance that if one Black employee told
-          another Black employee and that person tried to access the hardship fund,
-          it could be a serious problem.
-        </p>
-        <p className="mt-3">
-          Charging Party documented that immediately. She texted a coworker because
-          she was shocked. She then messaged Allan in Teams and stated that she was
-          caught off guard and confused by the example he used. Allan did not deny
-          using an example. He responded that he was "just providing an example of
-          what could happen." When Charging Party asked, "What exactly are you
-          saying?" Allan called her directly and asked, "What exactly are you trying
-          to get to?" She also disclosed the incident to coworkers the same day.
-          That is not an isolated, unsupported remark. It is a documented
-          race-related workplace interaction connected to access to an employee
-          benefit.
-        </p>
-        <p className="mt-3">
-          Respondent also dismisses the HBCU comment as isolated and disconnected.
-          It was not disconnected. Allan discussed HBCU recruiting during a broader
-          August 2025 conversation about lack of advancement, lack of projects,
-          blocked opportunity, schedule restrictions, and Charging Party's inability
-          to move forward in the organization. During that same conversation, Allan
-          made the "blockade" statement, telling her in substance that there was a
-          blockade and that he did not believe she could get past it. Respondent's
-          statement that Allan had no formal recruiting role does not answer whether
-          he made the statement or why he made it during a conversation about
-          blocked opportunity.
-        </p>
-        <p className="mt-3">
-          Respondent also argues that system recording, chat deletion, and leave
-          processing are not tied to race. That is too narrow. These events occurred
-          after repeated protected complaints about race discrimination,
-          retaliation, schedule equity, and HR handling. They are part of the same
-          course of conduct and may be considered as part of the total environment
-          and retaliatory context. The issue is not whether each event used racial
-          language. The issue is whether the total environment became hostile after
-          Charging Party raised race discrimination and retaliation concerns.
-        </p>
-        <p className="mt-3">
-          The Verint evidence is specific. Charging Party's profile appeared on live
-          monitor while other Team Leaders in her same department were logged in and
-          active but did not show live monitoring active. HR later acknowledged
-          there was a technical problem and that she had "more visibility than" she
-          should have had. HR also stated they did not know what changed, who did
-          it, or why. That is not simply a standard operational tool being applied
-          uniformly.
-        </p>
-        <p className="mt-3">
-          The Teams deletion evidence is also specific. After Charging Party sent HR
-          a formal written timeline, notified Allan and Amber of FMLA in Teams, and
-          complained about Verint monitoring, the Allan/Amber Teams chat
-          disappeared. Other Teams chats from the same period remained visible,
-          including chats dated October 10, October 13, October 15, October 16,
-          October 17, and October 21. The same Allan/Amber chat was also cleared
-          from her phone. That is a record-preservation issue tied to the same
-          protected-activity and leave period.
-        </p>
-        <p className="mt-3">
-          The leave-processing evidence is also part of the total environment. After
-          Charging Party requested intermittent FMLA, the leave was mishandled or
-          misclassified, her system access was deactivated, and related Teams
-          messages disappeared. These facts occurred after she had repeatedly raised
-          race discrimination, retaliation, and HR concerns.
-        </p>
-        <p className="mt-3">
-          Respondent's argument that the conduct was not severe or pervasive ignores
-          both severity and duration. The conduct began with race discrimination
-          concerns involving Rosanna, included a reported racial slur, continued
-          through HR intervention, continued through waitlist and schedule
-          obstruction, continued through project exclusion and performance
-          consequences, included later race-related hardship-fund and HBCU/blockade
-          comments, and continued into monitoring, record-preservation,
-          leave-processing, and hardship-fund issues. This was not one isolated
-          comment. It was a continuing pattern.
-        </p>
-        <p className="mt-3">
-          The conduct also interfered with Charging Party's work and working
-          conditions. She remained fixed on PM/closing despite repeated requests
-          and family/childcare impact. She was excluded from advancement-related
-          opportunities and project credit. Her 2024 rating dropped after protected
-          activity and affected eligibility for the TL Plus / Department Manager
-          development pipeline. She had to repeatedly escalate basic schedule, HR,
-          monitoring, leave, and hardship issues. The environment affected her
-          ability to perform, advance, and remain stable in the workplace.
-        </p>
-        <p className="mt-3">
-          Respondent's legal conclusion depends on accepting its own disputed facts
-          and ignoring the cumulative record. The hostile work environment claim
-          should not be dismissed as ordinary workplace disagreement. The record
-          contains race-based conduct, race-related comments, protected complaints,
-          repeated escalation, management involvement, inconsistent records, and
-          workplace actions that affected Charging Party's conditions of
-          employment.
-        </p>
-        <p className="mt-3">
-          For these reasons, Respondent has not shown that the hostile work
-          environment claim fails as a matter of law. At minimum, the evidence
-          creates factual disputes requiring further investigation.
-        </p>
-
-        <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          d. Respondent's "Ancillary Allegations" Argument Is Incorrect
-        </h4>
-        <p className="mt-3">
-          Respondent's argument that Charging Party's Teams deletion, system
-          recording, leave processing, and hardship-fund allegations are
-          "ancillary," speculative, unsupported, and unrelated is incorrect. These
-          events are documented, specific, and connected to the same
-          protected-activity timeline.
-        </p>
-        <p className="mt-3">
-          First, the Teams deletion issue is not based on assumption. The record
-          shows that on October 7, 2025, Charging Party sent HR investigator Edward
-          Reyes a written timeline regarding her waitlist history, retaliation
-          concerns, and Allan Glover's comments. On October 14, 2025, she notified
-          Allan Glover and Amber in Teams that she had filed FMLA. That same Teams
-          chat also documented concerns about leadership support after Allan removed
-          himself from her team chat. On October 21, 2025, she emailed HR regarding
-          Verint/screen-recording concerns.
-        </p>
-        <p className="mt-3">
-          On October 23, 2025, the Allan/Amber Teams chat was blank on Charging
-          Party's work computer. The only visible message stated that older messages
-          had been deleted due to the organization's retention policy. However,
-          other Teams chats from the same general period remained visible, including
-          chats dated October 10, October 13, October 15, October 16, October 17,
-          and October 21. The October 13 Alese Amarel chat remained visible and
-          included messages discussing Allan leaving the chat and FMLA/LOA-related
-          issues. By October 24, 2025, the same Allan/Amber chat was also cleared
-          from her phone.
-        </p>
-        <p className="mt-3">
-          Those facts are specific. The relevant Allan/Amber chat disappeared after
-          protected activity, after FMLA notice, after a written HR timeline, and
-          after the Verint complaint, while other same-period chats remained
-          visible. Respondent cannot dismiss that as a generic retention-policy
-          issue without producing the retention logs, deletion logs, audit history,
-          and preservation records.
-        </p>
-        <p className="mt-3">
-          Second, the Verint/system-recording issue is not speculative. Respondent
-          states that recording is a standard operational tool. That does not answer
-          the evidence. Charging Party's records show her PC/profile appearing on
-          live monitor while other Team Leaders in the same department were logged
-          in and active but did not show live monitoring active. That is the
-          factual issue: her profile appeared differently than similarly situated
-          Team Leaders. HR later confirmed this was not simply a misunderstanding.
-          HR stated there was a technical problem and that she had "more visibility
-          than" she should have had. HR also stated the issue had been turned over
-          to product owners, the vendor, and the BT team; that they did not know
-          what happened; that they did not know who did it; and that they were
-          trying to backtrack permissions. Those statements contradict Respondent's
-          claim that there is no indication she was treated differently.
-        </p>
-        <p className="mt-3">
-          Third, the leave-processing issue is connected to protected activity and
-          is not outside the case simply because a centralized leave administrator
-          was involved. Charging Party requested intermittent FMLA on or about
-          October 13, 2025. She notified Allan and Amber in Teams on October 14.
-          Her doctor completed paperwork documenting that her condition was related
-          to workplace environmental or interpersonal issues and that she had
-          reported discrimination at work. Instead of the leave being handled
-          cleanly as intermittent FMLA, the leave process was mishandled or
-          misclassified, the wrong paperwork was sent, and her system access was
-          deactivated. Allan later confirmed that the communication he received
-          stated "short term" and warned that systems could be disabled again.
-          Respondent cannot avoid the issue by saying leave administration was
-          centralized. The relevant facts are that the leave issue occurred
-          immediately after protected activity and FMLA notice, involved
-          communications to management, resulted in system-access consequences, and
-          overlapped with the disappearance of the Allan/Amber Teams chat.
-        </p>
-        <p className="mt-3">
-          Fourth, the hardship-fund issue is not speculative and is not merely about
-          payment timing. Respondent states that hardship-fund requests require
-          documentation and involve multiple levels of review. That does not match
-          how the process was applied in Charging Party's direct experience.
-          Shortly before the July 10, 2025 race-related hardship-fund incident,
-          Charging Party personally assisted Brandi Cordi, a White employee on her
-          team, with a hardship-fund request. Brandi was not required to submit
-          supporting documentation. She only had to identify what she needed
-          assistance for and provide a list or explanation of the requested need.
-          Allan Glover was aware of and assisted with that request. No concern was
-          raised. Shortly afterward, Charging Party asked Allan about helping
-          Araksan Dide, a Black employee who was homeless and needed housing
-          support. Allan responded differently. He told her to hold off and gave an
-          example involving Black employees, stating in substance that if one Black
-          employee told another Black employee and that person tried to access the
-          hardship fund, it could be a serious problem. Charging Party documented
-          that immediately through a text to a coworker, a Teams follow-up to
-          Allan, Allan's response that he was "just providing an example of what
-          could happen," and same-day disclosure to coworkers. Those facts directly
-          tie the hardship-fund issue to race and unequal treatment. A White
-          employee's hardship request was handled without supporting documentation
-          and without warning. A Black employee's potential hardship request
-          triggered hesitation and a race-related warning. Respondent's generalized
-          statement that hardship requests required documentation does not answer
-          that comparator evidence.
-        </p>
-        <p className="mt-3">
-          Fifth, Charging Party's own hardship request was immediately known to HR,
-          Employee Relations, and leadership. On November 13, 2025, she submitted
-          her hardship assistance request and completed the required attestation
-          the same day. That same morning, an "SH Hardship" meeting appeared on
-          Allan Glover's calendar involving Susan Marchinko, Allan Glover, and Greg
-          Carfagna. Later that day, Cameron Hadley from Employee Relations
-          contacted her to discuss the request. On November 17, Cameron stated that
-          her request could not proceed without additional documentation. She
-          provided the requested documentation the same day or shortly thereafter.
-          The funds were not received until after significant housing harm had
-          already occurred. Those facts contradict Respondent's effort to minimize
-          the hardship issue as ordinary payment timing. The hardship request was
-          known, escalated, and discussed by HR, Employee Relations, operations
-          leadership, and director-level leadership the same day it was submitted.
-          Respondent should produce the meeting invite, attendee list, notes,
-          communications, approval chain, documentation requests, completion date,
-          approval date, and payment date.
-        </p>
-        <p className="mt-3">
-          Respondent also argues that none of these events would constitute an
-          adverse employment action. That is too narrow, especially for retaliation.
-          Under <em>Burlington Northern</em>, a retaliation claim can include
-          actions that might dissuade a reasonable worker from making or supporting
-          a charge of discrimination. Targeted or unequal monitoring, deletion or
-          disappearance of relevant protected-activity communications,
-          leave-processing errors causing access deactivation, and delayed hardship
-          assistance during a housing crisis are not trivial. They are materially
-          relevant to retaliation, pretext, hostile environment, and credibility.
-        </p>
-        <p className="mt-3">
-          These allegations are not disconnected from protected activity. They
-          occurred after the May 2024 EEOC charge, after the May 29, 2024 formal
-          internal complaint, after repeated schedule/waitlist complaints, after
-          the September 2025 Ethical Concerns complaint, after the October 2025
-          FMLA notice, and after the written HR timeline. The timing and
-          documentation matter.
-        </p>
-        <p className="mt-3">
-          Respondent's "ancillary allegations" section should therefore be
-          rejected. The records show specific facts: the Allan/Amber Teams chat
-          disappeared while other same-period chats remained visible; Charging
-          Party's Verint profile showed visibility other Team Leaders did not show;
-          HR admitted she had more visibility than she should have had; her leave
-          was mishandled or misclassified after FMLA notice; her system access was
-          deactivated; a White employee's hardship request was handled without
-          supporting documentation; a Black employee's potential hardship request
-          triggered a race-related warning; and her own hardship request was
-          escalated to HR, Employee Relations, operations leadership, and
-          director-level leadership the day it was submitted.
-        </p>
-
-        <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          e. Conclusion — Charging Party's Response
-        </h4>
-        <p className="mt-3">
-          Respondent's request for dismissal should be rejected. Respondent's
-          conclusion is not supported by the record. It depends on disputed facts,
-          missing documents, incomplete explanations, and broad denials that are
-          contradicted by Respondent's own records.
-        </p>
-        <p className="mt-3">
-          This case is not about routine workplace disagreement. The record shows
-          protected activity followed by schedule obstruction, waitlist removal,
-          inconsistent request dates, comparator movement, a post-complaint rating
-          downgrade, exclusion from advancement opportunities, project exclusion,
-          unusual Verint visibility, deleted Teams messages, leave-processing
-          problems, hardship-fund inconsistency, and race-related comments
-          involving hardship assistance and HBCU recruiting.
-        </p>
-        <p className="mt-3">
-          Respondent repeatedly states that Charging Party remained employed and
-          continued performing well. That does not defeat her claims. It confirms
-          that she was qualified and performing. The issue is why a strong
-          performer was kept fixed on PM/closing, removed from the waitlist, shown
-          an incomplete waitlist screenshot, re-added with a new request date,
-          denied movement while comparators moved, downgraded after protected
-          activity, excluded from the TL Plus / Department Manager pipeline, and
-          forced to repeatedly escalate issues that Respondent now claims were
-          neutral.
-        </p>
-        <p className="mt-3">
-          Respondent's scheduling defense is directly contradicted by the records.
-          Charging Party requested mid-shift in 2024, learned she was not on the
-          MID-shift list, raised that failure in protected complaints, appeared on
-          a January 2025 waitlist snapshot, was removed by February 2025, remained
-          absent in July 2025, and was later re-added with a July 17, 2025 request
-          date. Respondent's claim that she declined a May 2025 day-shift
-          opportunity is unsupported. She did not receive or decline that offer.
-          Respondent has not produced the offer, the ticket, the shift details,
-          the communication, or the alleged decline. A May 2025 alleged decline
-          also cannot explain why she was already removed from the waitlist in
-          February 2025.
-        </p>
-        <p className="mt-3">
-          Respondent's comparator argument also fails. The record identifies
-          similarly situated employees who received schedule movement, department
-          movement, AM placement, midshift placement, Training Bay movement, or
-          more favorable flexibility while Charging Party remained fixed on
-          PM/closing. Tyler Millisock is a direct comparator: same start date,
-          same level, outside her protected class, moved from LVAR PM/closing to
-          PRE-D/DBC on an earlier schedule, and stated he was not on the waitlist.
-          Respondent cannot claim the waitlist was an absolute barrier for
-          Charging Party while employees outside her protected class moved without
-          the same barrier.
-        </p>
-        <p className="mt-3">
-          Respondent's performance and advancement defense is also misleading.
-          Charging Party's 2024 rating dropped from Strong to Solid in the first
-          review cycle after her protected activity, despite strong metrics, no
-          goal below Solid, and a 124.36% bonus payout. That rating was not
-          harmless. It excluded her from the TL Plus / Department Manager
-          development pipeline. Respondent also fails to explain nearly 50
-          internal applications, repeated non-selection, project exclusion,
-          missing interview records, and unsupported "more qualified candidate"
-          explanations.
-        </p>
-        <p className="mt-3">
-          Respondent's retaliation defense ignores the actual sequence of events.
-          After protected activity, the same types of processes repeatedly broke
-          against Charging Party: schedule movement, waitlist placement, waitlist
-          removal, request dates, performance rating, project credit, internal
-          applications, Verint visibility, Teams preservation, leave processing,
-          system access, and hardship assistance. That pattern is not speculation.
-          It is documented.
-        </p>
-        <p className="mt-3">
-          Respondent's hostile work environment defense also fails because it
-          isolates each event and strips out the cumulative impact. Charging
-          Party's May 29, 2024 complaint reported a racial slur, retaliation,
-          false job abandonment, and failure to place her on the waitlist. HR
-          moved her away from Rosanna during the investigation. Later, Allan made
-          race-related hardship-fund comments, discussed HBCU recruiting, and made
-          a "blockade" statement during a conversation about her lack of
-          opportunities. The environment continued through monitoring,
-          record-preservation, leave, and hardship issues.
-        </p>
-        <p className="mt-3">
-          Respondent's effort to label Verint, Teams deletion, leave processing,
-          and hardship assistance as "ancillary" is also wrong. These issues
-          caused real harm and are tied to the same protected-activity timeline.
-          Charging Party's Verint evidence showed different visibility from other
-          Team Leaders, and HR later admitted she had more visibility than she
-          should have had. The Allan/Amber Teams chat disappeared while other
-          same-period chats remained visible. Her intermittent FMLA request was
-          mishandled as short-term/continuous leave, affecting her system access.
-          Her hardship request was escalated to HR, Employee Relations, Allan
-          Glover, Susan Marchinko, and Greg Carfagna the day it was submitted.
-        </p>
-        <p className="mt-3">
-          The harm was not theoretical. The workplace conditions and Respondent's
-          handling of Charging Party's complaints contributed to serious
-          mental-health deterioration, PTSD symptoms, panic attacks, FMLA use,
-          reduced income, financial crisis, time away from her child, housing
-          instability, loss of housing, transportation instability, and severe
-          emotional distress. Respondent's conclusion attempts to minimize those
-          consequences as ordinary workplace processes. They were not ordinary,
-          and they were not harmless.
-        </p>
-        <p className="mt-3">
-          The record does not confirm that Discover treated Charging Party fairly,
-          consistently, or in accordance with legitimate business practices. It
-          shows the opposite: inconsistent rules, missing tickets, altered
-          waitlist records, comparator movement, unsupported denials, HR
-          admissions, and documented harm. Respondent has not rebutted
-          discrimination, retaliation, or hostile work environment. The Division
-          should reject Respondent's request for dismissal and issue findings
-          consistent with the documented record.
-        </p>
 
         {/* Section IV */}
         <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
@@ -2726,23 +1971,8 @@ export function FormalLetterBody() {
 
 
 
-        {/* Section V */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">VI. Conclusion</h2>
-        <p className="mt-3">
-          Respondent's Position Statement does not rebut the Charge; it reframes it. It treats
-          the absence of records Respondent controls as a failure of proof, it describes as
-          "neutral" a process its own HR has admitted was driven by leadership discretion, and it
-          omits the 2024 evaluation that is the principal performance action at issue.
-          Charging Party has identified comparators by name, tied each material event to a
-          specific exhibit, and described adverse actions that meet the{" "}
-          <em>Burlington Northern</em> standard.
-        </p>
-        <p className="mt-3">
-          For the reasons set forth above, Charging Party respectfully requests that the Arizona
-          Civil Rights Division and the EEOC decline to issue a no-cause determination, direct
-          Respondent to produce the records identified in Section V, and proceed with a full
-          investigation on the merits.
-        </p>
+
+
 
         <p className="mt-8">Respectfully submitted,</p>
         <div className="mt-8">
