@@ -1104,6 +1104,10 @@ export function FormalLetterBody() {
         <p className="mt-3">
           This pattern is relevant because Respondent's Position Statement portrays the processes as neutral, uniform, and well-documented. However, when I asked the manager directly involved to explain the criteria, decisionmakers, and alleged offer, he did not provide clear documentation or a consistent explanation. Instead, he treated basic process questions as suspicious or confrontational. That supports further investigation into whether Respondent's stated reasons are complete, accurate, and supported by contemporaneous records.
         </p>
+        <p className="mt-3">
+          The July 10, 2025 reaction is independently corroborated by a contemporaneous same-day text-message thread to a coworker (<Ex id="EX-064" />) sent at 2:15 PM, immediately after the meeting with Allan. In that thread I wrote, in real time, that Allan "was insinuating that I was only helping Black people," that the meeting "felt very weird," that Allan "was like that's a problem," and that when I asked "what are you trying to say who did what I'm confused . . . he didn't clarify." A follow-up message later that afternoon recorded that when I pressed Allan for clarification, he said he "was just speaking in general" and that I was "misinterpreting" him, but offered no clarification of the underlying example. This contemporaneous record eliminates any argument that the race-coded character of Allan's hardship-fund comments, his "that's a problem" remark, or his refusal to clarify were reconstructed after the fact.
+        </p>
+
 
         <h4 className="mt-5 font-display text-sm font-semibold tracking-tight">
           Additional Record Integrity Issue — Team Ratios / Formula Change
