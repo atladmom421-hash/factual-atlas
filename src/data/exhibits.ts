@@ -2107,6 +2107,48 @@ Me: Bye.`,
     filePath: "/exhibits/ex-090-allan-waitlist-two-years.png",
     fileKind: "image",
   },
+  {
+    id: "EX-091",
+    exhibitNumber: "EX-091",
+    fileName: "Teams chat — Allan and Amber chat showing retention-deletion notice (Oct 23, 2025, 7:56 PM)",
+    date: "October 23, 2025 (screenshot at 4:56 PM; system clock 7:56 PM)",
+    category: "Teams chat",
+    peopleIds: ["harbin", "allan", "amber"],
+    summary:
+      "Photo of Harbin's work laptop showing Microsoft Teams open to the 'Allan and Amber' chat (pinned in the left rail with a 10/14 timestamp and preview 'Amber: I'm sorry to hear that y…'). The conversation pane is empty except for a single system notice in the message area: 'We've deleted older messages due to your org's retention policy.' The compose box reads 'Type a message.' The Teams left rail also lists other active chats (Bruce Bowker 10/21, Joshwa Holliday 10/21, VET – Shared Busi… 10/21, ACE Call Review 10/17, Take5 Card/NRC C… 10/17, CAR Open-File Exe… 10/16, Iris Staging (Inacti… 10/16, Carmen/Darren/Jay… 10/15, Allan and Amber 10/14, Alese Amarel 10/13, Dream Team – Wee… 10/10).\n\nRELEVANCE: (1) The Allan/Amber chat is the only chat in the visible list whose message history has been wiped to a retention notice — all other chats in the same client, on the same account, on the same date, still display their message history; (2) directly rebuts any 'uniform org-wide retention deletion' explanation, since a uniform retention policy would have deleted older messages across other chats in the same window, not just this one; (3) supports the spoliation argument in Section III.D (Ancillary Allegations) — the specific 1:1 chat between Harbin, Allan Glover, and Amber Laye is the chat that lost content during the same period Harbin was raising complaints; (4) timestamp 10/23/2025 7:56 PM (system clock) places the deletion observation contemporaneous with the FMLA / access-deactivation events.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-091-teams-deleted-retention-notice.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-092",
+    exhibitNumber: "EX-092",
+    fileName: "Teams chat — Alese Amarel chat history intact from 10/13/2025 (same client, same date)",
+    date: "October 23, 2025 (screenshot; messages dated 10/13/2025 12:43–12:51 PM)",
+    category: "Teams chat",
+    peopleIds: ["harbin"],
+    summary:
+      "Photo of Harbin's work laptop, taken in the same session as EX-091, showing Microsoft Teams open to the 'Alese Amarel' 1:1 chat. The conversation pane displays an intact message history from 10/13/2025, including:\n\n• Alese Amarel (10/13, before 12:43 PM): 'i dont know about people leaving the chat i know allan has been on pto i think i had sent that email to you and him about Q and got an auto message saying he was out of the office til 15th but he did reply to me yesterday i believe. i hadnt noticed anything about the chat'\n• Harbin (10/13 12:43 PM): 'Yes I seen that! It looks like he left on Sunday. Hmm just curious if some news came out.' / 'lol well we shall see. I'll let you know if I hear anything'\n• Alese Amarel (10/13 12:44 PM): 'idk i havent heard anything' / 'i did see simone is on loa. is bruce at 12 now? or is he on loa as well? he was only here 1 day last week i believe'\n• Harbin (10/13 12:46 PM): 'Yes, I hope Simone is okay. Bruce is the same LOA.'\n• Alese Amarel (10/13 12:46 PM): 'oh ok bruce doesnt show loa on iex so thats good to know then'\n• Harbin (10/13 12:51 PM): 'Oh yes,. Pals adds that in. Not sure if he's going to do std for fmla but that pending or switching the type of loa could delay it the iex input slightly as well.'\n\nRELEVANCE: (1) Same Teams client, same Harbin account, same screenshot session as EX-091 — yet the Alese Amarel chat retains messages from 10/13/2025 while the Allan/Amber chat (EX-091) shows only a retention-deletion notice; (2) directly disproves any claim that an organization-wide retention policy uniformly deleted older messages on Harbin's account — the deletion was scoped to the Allan/Amber chat, not the account; (3) the substantive content also corroborates the timeline of Allan 'leaving' chats around that period (consistent with EX-081, Allan removing himself from the team chat); (4) supports the inference that the loss of the Allan/Amber chat content was selective and consistent with spoliation.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-092-teams-alese-history-intact.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-093",
+    exhibitNumber: "EX-093",
+    fileName: "iMessage — Harbin to 'Allan and Amber' group asking why Allan removed himself from chat (Oct 14, 2025)",
+    date: "October 14, 2025 10:58 AM",
+    category: "Text message",
+    peopleIds: ["harbin", "allan", "amber"],
+    summary:
+      "Photo of Harbin's personal iPhone showing the 'Allan and Amber' iMessage thread (3 participants). Time stamp on screen: 7:39. Visible messages:\n\n• Harbin (Oct 14, 10:58 AM): 'Hi Everyone! I hope you are both doing well. I wanted to check in to confirm whether there have been any changes to our team structure or communication channels. I noticed Allan removed himself from my chat on Sunday and just wanted to make sure that wasn't an update or transition I have missed. Thank you both for clarifying when you have a chance.'\n• Amber Laye (reply): 'Hi Shawnna Harbin! Happy Tuesday! Allan is out today on PTO, and I think he may have been working remotely this weekend. So, I'll let him confirm if he was just doing some chat cleanup 😊 or if it occurred in error. But, to your specific question, no changes to hierarchy or anything like that.'\n• Harbin (reply): 'Thank you Amber. I've been feeling very isolated and really without clear leadership… I did file a claim for FMLA today as well. Just wanted to give you guys a heads up on that so that you guys can find coverage for my team…'\n\nRELEVANCE: (1) Contemporaneous, cross-platform record (personal iMessage, not work-controlled Teams) of Harbin raising the same Allan-removed-from-chat issue documented in EX-081 and tied to the deleted Teams content in EX-091; (2) Amber Laye's reply confirms Allan removed himself — the question is only whether it was 'chat cleanup' or 'error'; (3) confirms no organizational hierarchy change was communicated, undercutting any innocent-restructure explanation; (4) Harbin's reply documents the FMLA filing on the same day, tying the chat-removal and content-deletion events to the protected leave period at issue in Section III.D; (5) Harbin's statement that she felt 'very isolated and really without clear leadership' is contemporaneous evidence supporting the emotional-distress damages in Section IV.A.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-093-imessage-allan-removed-himself.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
