@@ -1312,10 +1312,10 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
-        {/* Section II.S - Discussion: Response to Respondent's Legal Argument */}
-        <h3 className="mt-8 font-display text-base tracking-tight">
-          S. Discussion — Response to Respondent's Legal Argument
-        </h3>
+        {/* Section III - Discussion: Response to Respondent's Legal Argument */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">
+          III. Discussion — Response to Respondent's Legal Argument
+        </h2>
         <p className="mt-3">
           Respondent's legal discussion does not resolve the Charge. It attempts to
           characterize the evidence as ordinary workplace disagreement, but the record
