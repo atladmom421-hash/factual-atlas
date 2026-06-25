@@ -1304,7 +1304,7 @@ Allan: No.`,
     summary:
       "Production request placeholder for Allan Glover's calendar invite, attendee list, meeting title, meeting notes, Teams/chat communications, emails, and any follow-up records for a meeting with Susan Marchinko immediately preceding the September 19, 2025 Training Bay / shift movement conversation (EX-059). Relevance: if the calendar record reflects that Allan met with HR (Susan Marchinko) immediately before speaking with Harbin, the September 19 conversation should not be treated as an isolated or spontaneous manager discussion. The timing would establish HR knowledge and management coordination immediately before Allan gave the explanations documented in EX-059 — including that Training Bay selection had 'no criteria' and that the decision group consisted of Allan, Amber, Trevor, and Dan — and bears directly on the credibility of Allan's explanations regarding Training Bay, shift movement, and the alleged offer.",
     linkedEventIds: [],
-    reliability: "needs-verification",
+    reliability: "to-verify",
     filePath: "",
     fileKind: "note",
   },
