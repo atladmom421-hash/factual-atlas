@@ -1008,6 +1008,17 @@ export function FormalLetterBody() {
           without production of the underlying records identified in Section V.
         </p>
 
+        <InlineExhibits
+          heading="May 2025 / waitlist removal evidence"
+          items={[
+            { id: "EX-046", relevance: "January 22, 2025 saved waitlist — Harbin listed with June 26, 2024 request date." },
+            { id: "EX-045", relevance: "February 25, 2025 Jen Roy edit removing Harbin while junior employees remained and continued to qualify." },
+            { id: "EX-048", relevance: "Mid-shift waitlist version-history narrative documenting placement, removal, absence, and re-add." },
+          ]}
+        />
+
+
+
         {/* Section II.P - July 2025 Waitlist Status */}
         <h3 className="mt-8 font-display text-base tracking-tight">
           P. Response to Respondent's "July 2025 Waitlist Status" Assertion
