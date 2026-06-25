@@ -792,6 +792,17 @@ export function FormalLetterBody() {
           protected activity merely because he was not named in the original charge.
         </p>
 
+        <InlineExhibits
+          heading="Glover transition / knowledge evidence (PS § I.B.2)"
+          items={[
+            { id: "EX-016", relevance: "June 5, 2024 HR follow-up showing Charging Party's reassignment to Allan Glover's organization was arranged by HR during the active investigation of the May 29, 2024 complaint." },
+            { id: "EX-HR-CALL", relevance: "Susan Marcinko confirmation that she had spoken with Greg Carfagna about moving Charging Party to Mr. Glover's organization effective July 1, 2024 because of the protected complaint." },
+            { id: "EX-042", relevance: "Allan Glover Teams thread reflecting his ongoing knowledge of the schedule/waitlist issue raised in the prior complaint." },
+          ]}
+        />
+
+
+
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           I. The "same protected class" defense (PS p. 7, § II.A)
