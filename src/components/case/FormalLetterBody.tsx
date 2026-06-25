@@ -1,55 +1,18 @@
 import { Link } from "@tanstack/react-router";
 import { PrintPdfButton } from "@/components/case/PrintPdfButton";
 import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
-import { exhibitById } from "@/data";
+import { exhibitById, exhibits } from "@/data";
 
 
 
-// Exhibits cited in this letter — bundled into the print appendix.
-const CITED_EXHIBITS = [
-  "EX-001",
-  "EX-002",
-  "EX-003",
-  "EX-004",
-  "EX-005",
-  "EX-006",
-  "EX-007",
-  "EX-008",
-  "EX-010",
-  "EX-011",
-  "EX-012",
-  "EX-013",
-  "EX-014",
-  "EX-015",
-  "EX-016",
-  "EX-017",
-  "EX-018",
-  "EX-019",
-  "EX-020",
-  "EX-040",
-  "EX-041",
-  "EX-042",
-  "EX-043",
-  "EX-044",
-  "EX-045",
-  "EX-046",
-  "EX-048",
-  "EX-049",
-  "EX-050",
-  "EX-051",
-  "EX-052",
-  "EX-053",
-  "EX-055",
-  "EX-056",
-  "EX-057",
-  "EX-058",
-  "EX-059",
-  "EX-060",
-  "EX-061",
-  "EX-062",
-  "EX-HR-CALL",
-  "EX-ALLAN-OCT24",
-];
+// Evidentiary rebuttal: ALL exhibits are reproduced in full in the appendix —
+// raw transcripts, raw screenshots, raw documents. No references to external
+// files; the document is self-contained.
+const CITED_EXHIBITS = exhibits
+  .slice()
+  .sort((a, b) => a.exhibitNumber.localeCompare(b.exhibitNumber, undefined, { numeric: true }))
+  .map(e => e.id);
+
 
 function Ex({ id }: { id: string }) {
   return (
