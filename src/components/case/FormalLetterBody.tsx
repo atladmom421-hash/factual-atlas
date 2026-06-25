@@ -1313,10 +1313,10 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
-        {/* Section II Discussion - Response to Respondent's Legal Argument */}
-        <h3 className="mt-8 font-display text-base tracking-tight">
-          II. A Discussion — Response to Respondent's Legal Argument
-        </h3>
+        {/* Section II.A–II.D — Response to Respondent's Discussion (Legal Argument) */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">
+          III. Response to Respondent's Section II — Discussion (Legal Argument)
+        </h2>
         <p className="mt-3">
           Respondent's legal discussion does not resolve the Charge. It attempts to characterize the evidence as ordinary workplace disagreement, but the record shows materially disputed facts involving schedule access, waitlist manipulation, comparator movement, performance-rating impact, advancement barriers, project exclusion, race-related comments, and inconsistent application of workplace processes.
         </p>
