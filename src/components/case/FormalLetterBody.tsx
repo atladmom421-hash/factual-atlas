@@ -211,13 +211,12 @@ export function FormalLetterBody() {
           process evidence already produced. Respondent's own Human Resources representative
           told Charging Party on the November 6, 2025 follow-up call that comparator
           movement occurred "because of leadership, not the waitlist." See{" "}
-          <Ex id="EX-HR-CALL" />. The May 12, 2026 Karena Lesure reassignment was granted
-          because Julie Cahoon "specifically asked." See <Ex id="EX-019" />. Named
-          comparators — Tyler Millisock, Hunter Samuel, Marc Case, Marissa Mascarenas, and
-          Karena Lesure — received favorable scheduling and assignment treatment that
-          Charging Party was denied under the same purportedly "neutral" process. See{" "}
-          <Ex id="EX-010" />. A process that produced these outcomes was not applied
-          uniformly to Charging Party.
+          <Ex id="EX-HR-CALL" />. Named Team Leader comparators — Tyler Millisock,
+          Hunter Samuel, Cody Christensen, Marc Case, Marissa Mascarenas, Whitnee Kollar,
+          Leslie McGregor, and Jarin Bell — received favorable scheduling and department
+          assignment treatment that Charging Party was denied under the same purportedly
+          "neutral" process. See <Ex id="EX-010" />. A process that produced these outcomes
+          was not applied uniformly to Charging Party.
         </p>
         <p className="mt-3">
           Respondent's representation that Charging Party "performed her role without
