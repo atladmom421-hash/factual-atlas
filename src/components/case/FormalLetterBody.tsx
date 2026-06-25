@@ -1731,505 +1731,187 @@ export function FormalLetterBody() {
           To test the assertions on which the Position Statement relies, Charging Party
           respectfully requests that the Division direct Respondent to produce:
         </p>
-        <ol className="mt-2 list-decimal space-y-1 pl-6">
+        <ol className="mt-2 list-decimal space-y-2 pl-6">
           <li>
-            Every waitlist ticket submitted on Charging Party's behalf (May 2024, July 2024, July
-            2025), with author, submission date, and audit history.
+            <strong>Waitlist records, tickets, SharePoint version history, and audit logs.</strong>{" "}
+            Every waitlist ticket submitted on Charging Party's behalf (May 2024, July 2024,
+            July 2025) with author, submission date, and audit history; the complete unredacted
+            Team Leader waitlist (2023–present) with request date, current status, and full
+            status-change history; the complete SharePoint version history and audit logs for
+            the Current TL Shifts / waitlist file from April 2024 through July 2025 (including
+            the February 25, 2025 Jen Roy edits, July 3, 2025 state, July 14, 2025 state, and
+            July 16–17, 2025 re-addition); the complete source file from which Jen Roy produced
+            the July 14, 2025 screenshot sent to Allan Glover and all columns omitted from that
+            screenshot (Date Requested, Months as CAR TL, Temporary/Permanent, Qualifies =
+            Yes/No); and the Team Ratios 2024 file change history (September 24, 2024 modification).
           </li>
           <li>
-            The complete unredacted Team Leader waitlist (2023–present), with request date,
-            status, status-change history, and prior modifications.
+            <strong>May 2025 alleged shift offer and alleged decline records.</strong> All
+            documentation of the alleged May 2025 day-shift "offer" — offeror, shift,
+            department, role, date, time, channel, and Charging Party's recorded response; any
+            written or recorded statement showing Charging Party declined a May 2025 shift
+            because of University of Arizona graduate school commitments and the identity of
+            the person who recorded the alleged decline; any ticket connected to the alleged
+            opportunity; and any SOW, policy, or procedure requiring removal from the waitlist
+            after declining a shift, together with documentation showing that procedure was
+            followed in Charging Party's case. Documentation also explaining why Charging Party
+            was removed from the waitlist in February 2025 if the alleged decline did not occur
+            until May 2025.
           </li>
           <li>
-            All documentation of the May 2025 day-shift "offer" — offeror, shift, date, channel,
-            and Charging Party's recorded response.
+            <strong>Comparator movement and schedule-change records.</strong> Records showing
+            schedule movement, department movement, AM/midshift placement, Training Bay
+            movement, and flexibility for Tyler Millisock, Hunter Samuel, Cody Christensen,
+            Whitnee Kollar, Marissa Mascarenas, Jarin Bell, Julie Cahoon, and Karena Lesure
+            from May 2024 through 2026; the Karena Lesure assignment-change approval and all
+            related communications among Steve Seevers, Julie Cahoon, Amber Laye, and Michelle
+            Swindell; and the April 28, 2026 movement worksheets with edit/authorship metadata.
           </li>
           <li>
+            <strong>Temporary vs. permanent status records and approvals.</strong>{" "}
             Director-level approval for the change from Temporary to Permanent status (required
-            under the applicable SOW).
+            under the applicable SOW); documentation explaining why Charging Party's status
+            changed from Temporary to Permanent; documentation explaining why her request date
+            was later reflected as July 17, 2025 despite her mid-shift request and complaint
+            predating that date; and records regarding the four-day, ten-hour schedule
+            (requester, initial denial, team-approval requirement, and whether it was treated
+            as a substitute for or resolution of her mid-shift request).
           </li>
-          <li>The Team Ratios 2024 file change history (September 24, 2024 modification).</li>
-          <li>The April 28, 2026 movement worksheets and any edit/authorship metadata.</li>
           <li>
-            The Karena Lesure assignment-change approval and all related communications among
-            Steve Seevers, Julie Cahoon, Amber Laye, and Michelle Swindell.
-          </li>
-          <li>
+            <strong>Performance calibration and TL Plus / Department Manager cohort records.</strong>{" "}
             All communications between Cyndy Smith and Michelle Swindell regarding the April 22,
-            2026 calibration meeting.
-          </li>
-          <li>Verint monitoring access logs for Charging Party covering the FMLA period.</li>
-          <li>
-            For each internal posting Charging Party applied to: the hiring decisionmakers, the
-            selected candidates, the qualification criteria used, and the demographic composition
-            of the interview panels. See <Ex id="EX-055" />.
+            2026 calibration meeting; TL Plus / Department Manager training cohort eligibility
+            rules; the list of employees selected for the cohort; and documents showing how
+            Charging Party's 2024 Solid rating affected her eligibility.
           </li>
           <li>
-            The litigation-hold notice issued in connection with the May 2024 prior charge and
-            all custodial deletion/retention activity since that date.
+            <strong>Internal application, hiring, recruiter, interview, and selected-candidate
+            records.</strong> Charging Party's complete internal application history from
+            February 2023 through April 2025, including all postings applied to, recruiter
+            notes, interview notes, scoring rubrics, and the names of all hiring decisionmakers,
+            interviewers, recruiters, and managers; for each posting, documents showing whether
+            decisionmakers knew or had access to information about Charging Party's protected
+            activity and the selected candidates' qualifications, ratings, tenure, internal
+            experience, schedule history, and protected-activity history; and all related
+            recruiter, hiring-manager, and HR communications. See <Ex id="EX-055" />.
           </li>
           <li>
+            <strong>Project assignment and project credit records.</strong> All communications
+            regarding the Compliance Check project, Cyndy Smith's group, and related meetings,
+            including documents reflecting the origin of the concept and participants in
+            subsequent meetings; calendar invites and attendance records for Charging Party's
+            scheduled Call Flow tool presentation to Greg Carfagna; and documents showing
+            project assignments, invitations, and participation for similarly situated Unit
+            Managers from May 2024 through 2026, including cross-department movement and
+            schedule movement during that period.
+          </li>
+          <li>
+            <strong>Greg Carfagna / Anita HR rec-for-term records.</strong> All communications
+            and documents reflecting Greg Carfagna's involvement in the July 19, 2024 Anita
+            complaint, blocked performance paperwork after protected activity, and any
+            recommendation for termination or adverse action against Charging Party.
+          </li>
+          <li>
+            <strong>Verint access, monitoring, visibility, permission, vendor, BT, and
+            product-owner records.</strong> Verint monitoring access logs, permission-change
+            records, visibility settings, and screen-recording records for Charging Party
+            (including the FMLA period); communications with the Verint vendor, BT, and
+            product owner regarding Charging Party's profile and PC visibility; and records
+            comparing Charging Party's Verint visibility to other Team Leaders during the same
+            period.
+          </li>
+          <li>
+            <strong>Microsoft Teams deletion, retention, audit, and preservation/legal-hold
+            records.</strong> The litigation-hold notice issued in connection with the May 2024
+            prior charge and all custodial deletion/retention activity since that date; full
+            retention logs, deletion logs, and audit history for the Allan/Amber Teams chat
+            and for all same-period Teams chats that remained visible (October 10, 13, 15, 16,
+            17, and 21, 2025); and records showing why the Allan/Amber chat disappeared from
+            both work computer and phone while other chats remained.
+          </li>
+          <li>
+            <strong>FMLA / leave processing / STD misclassification / access deactivation
+            records.</strong> All leave-processing records relating to Charging Party's
+            October 2025 intermittent FMLA request, the STD misclassification, the wrong
+            paperwork sent, the system-access deactivation, and all related communications
+            among Allan Glover, Amber, HR, and the leave administrator.
+          </li>
+          <li>
+            <strong>Hardship-fund records for Brandi Cordi, Araksan Dide, and Shawnna Harbin.</strong>{" "}
+            All hardship-fund applications, supporting documentation requirements,
+            approvals/denials, processing timelines, and communications for Brandi Cordi,
+            Araksan Dide, and Charging Party, including documentation showing what each
+            applicant was required to submit.
+          </li>
+          <li>
+            <strong>November 13, 2025 "SH Hardship" meeting records.</strong> The "SH Hardship"
+            calendar invite, attendee list, agenda, notes, and all related communications
+            among Susan Marchinko, Allan Glover, Greg Carfagna, and Employee Relations.
+          </li>
+          <li>
+            <strong>November 17, 2025 Cameron Hadley conversation records.</strong> The
+            recording or transcript of the November 17, 2025 conversation, related notes,
+            and all communications between Cameron Hadley and Charging Party regarding
+            documentation requirements for the hardship request.
+          </li>
+          <li>
+            <strong>July 10, 2025 hardship-fund race-related comment records.</strong> All
+            records regarding Allan Glover's July 10, 2025 hardship-fund example, including
+            the Teams follow-up exchange, Allan's "just providing an example of what could
+            happen" response, and any same-day disclosures to coworkers.
+          </li>
+          <li>
+            <strong>HBCU recruiting records and Allan Glover "blockade" records.</strong> All
+            records regarding Allan Glover's HBCU recruiting statements and "blockade"
+            statement made during the conversation about Charging Party's lack of
+            opportunities, including any follow-up Teams messages.
+          </li>
+          <li>
+            <strong>HR / Employee Relations investigation files.</strong> Complete
+            investigation files for the May 29, 2024 complaint, the May 31, 2024 HR intake,
+            the July 19, 2024 Anita complaint, the September 2025 Ethical Concerns complaint,
+            the October 2025 communications, and the October 7, 2025 written timeline to
+            investigator Edward Reyes.
+          </li>
+          <li>
+            <strong>Communications showing who knew about protected activity and when.</strong>{" "}
+            All communications reflecting what management, HR, and Employee Relations knew
+            about Charging Party's May 6, 2024 EEOC charge, the May 29, 2024 internal
+            complaint, and subsequent protected activity — including what Allan Glover was
+            told (or deliberately not told) before and after he assumed supervision.
+          </li>
+          <li>
+            <strong>June–July 2024 reassignment from Rosanna Blackson to Allan Glover.</strong>{" "}
             All communications between Susan Marcinko, Greg Carfagna, Allan Glover, and
-            Human Resources / Employee Relations concerning the June–July 2024 reassignment
-            of Charging Party to Mr. Glover's organization.
-          </li>
-          <li>
-            Any instructions provided to Mr. Glover regarding Charging Party's reporting
+            Human Resources / Employee Relations concerning the June–July 2024 reassignment;
+            any instructions provided to Mr. Glover regarding Charging Party's reporting
             arrangement, schedule request, prior internal complaint, Ms. Blackson, or the
-            ongoing HR investigation, including any onboarding briefing or written guidance.
-          </li>
-          <li>
-            All communications reflecting what Mr. Glover was told — or was deliberately
-            not told — about Charging Party's May 29, 2024 internal complaint and May 6,
-            2024 EEOC charge before and after he assumed supervision.
-          </li>
-          <li>
-            All documents identifying who decided that Mr. Glover would become Charging
-            Party's manager and the reasons stated for that decision.
-          </li>
-          <li>
-            All communications between Mr. Glover, Mr. Carfagna, Human Resources, Employee
-            Relations, and scheduling administrators concerning Charging Party's waitlist
-            placement, the alleged May 2025 day-shift offer, schedule movement, and
-            performance rating from July 2024 forward.
-          </li>
-          <li>
-            The complete ticket Mr. Glover allegedly submitted on Charging Party's behalf in
-            July 2024, including any document showing whether the request was entered as
-            mid-shift, AM/day shift, or another schedule category, and all records showing why
-            Charging Party's original mid-shift request was not recorded as mid-shift.
-          </li>
-          <li>
-            All communications between Rosanna Blackson, Ryan Tafoya, Susan Marcinko, Greg
-            Carfagna, Allan Glover, Jen Roy, Edina Markus, and Human Resources regarding
-            Charging Party's mid-shift request.
-          </li>
-          <li>
-            The complete waitlist entry for Charging Party showing request date, requested
-            shift, current shift, temporary/permanent status, months as TL, and qualifies
-            status, together with all SharePoint version history and audit logs for the
-            Current TL Shifts / waitlist file from April 2024 through July 2025.
-          </li>
-          <li>
-            Any documentation explaining why Charging Party's status changed from Temporary
-            to Permanent, and why her request date was later reflected as July 17, 2025
-            despite her mid-shift request and complaint predating that date.
-          </li>
-          <li>
-            Any documentation regarding the four-day, ten-hour schedule, including who
-            requested it, whether Charging Party was initially told no, whether team
-            approval was required, whether she had to obtain agreement from her team before
-            it was implemented, and any records reflecting that the four-day schedule was
-            treated as a substitute for, or resolution of, her mid-shift request.
-          </li>
-          <li>
-            Charging Party's complete internal application history from February 2023 through
-            April 2025, including all job postings applied to, recruiter notes, interview
-            notes, interview scoring rubrics, and the names of all hiring decisionmakers,
-            interviewers, recruiters, and managers involved in each role.
-          </li>
-          <li>
-            For each posting, documents showing whether the decisionmaker(s) knew or had
-            access to information about Charging Party's protected activity, and the selected
-            candidates' qualifications, ratings, tenure, internal experience, schedule
-            history, and protected-activity history.
-          </li>
-          <li>
-            All communications regarding Charging Party's internal applications, including
-            recruiter, hiring-manager, and HR communications.
-          </li>
-          <li>
-            TL Plus / Department Manager training cohort eligibility rules, the list of
-            employees selected for that cohort, and documents showing how the 2024 Solid
-            rating affected eligibility.
-          </li>
-          <li>
-            All communications regarding the Compliance Check project, Cyndy Smith's group,
-            and related meetings, including any documents reflecting the origin of the
-            concept and the participants in subsequent meetings.
-          </li>
-          <li>
-            Calendar invites and attendance records for Charging Party's scheduled Call Flow
-            tool presentation to Greg Carfagna.
-          </li>
-          <li>
-            Documents showing project assignments, project invitations, and project
-            participation for Unit Managers from May 2024 through 2026, and records showing
-            cross-department movement, schedule movement, and project assignments for
-            similarly situated Unit Managers during the same period.
-          </li>
-          <li>
-            The alleged May 2025 shift-offer communication, including the exact shift,
-            department, and role allegedly offered; the name and title of the person who
-            allegedly made the offer; and the date, time, and method of the alleged offer.
-          </li>
-          <li>
-            Any written or recorded statement showing Charging Party declined a May 2025
-            shift opportunity because of University of Arizona graduate school commitments,
-            and the identity of the person who recorded the alleged decline.
-          </li>
-          <li>
-            The waitlist record showing Charging Party's position immediately before the
-            alleged May 2025 offer, and the waitlist record showing her removal together
-            with the reason code or explanation for removal.
-          </li>
-          <li>
-            The full SharePoint version history for the waitlist from January 2025 through
-            May 2025, including the February 25, 2025 edits by Jen Roy.
-          </li>
-          <li>
-            Any ticket connected to the alleged May 2025 opportunity, and any SOW, policy,
-            or procedure requiring removal from the waitlist after declining a shift,
-            together with documentation showing that procedure was followed in Charging
-            Party's case.
-          </li>
-          <li>
-            Documentation explaining why Charging Party was removed from the waitlist in
-            February 2025 if the alleged decline did not occur until May 2025.
-          </li>
-          <li>
-            The alleged July 10, 2025 SharePoint request, including the full metadata
-            and audit history for that request (author, submission date/time, device,
-            and all subsequent edits).
-          </li>
-          <li>
-            The complete source file from which Jen Roy produced the July 14, 2025
-            screenshot sent to Allan Glover, and all columns omitted from that
-            screenshot, including Date Requested, Months as CAR TL, Temporary/Permanent
-            status, and Qualifies = Yes/No.
-          </li>
-          <li>
-            The full SharePoint version history for the Current TL Shifts / waitlist
-            file showing Charging Party's January 2025 placement, February 2025
-            removal, July 3, 2025 absence, July 14, 2025 status, and July 16–17, 2025
-            re-addition.
-          </li>
-          <li>
-            Documentation explaining why Charging Party's waitlist request date changed
-            from June 26, 2024 to July 17, 2025, and why her status changed from
-            PM/Temporary to PM/Permanent, including all approvals, tickets, and
-            notifications.
-          </li>
-          <li>
-            All tickets Allan Glover allegedly submitted on Charging Party's behalf, and
-            all communications between Allan Glover, Jen Roy, Edina Markus, Human
-            Resources, and scheduling administrators regarding Charging Party's
-            waitlist status from January 2025 through the present.
-          </li>
-          <li>
-            Comparator movement records showing whether employees such as Tyler
-            Millisock, Hunter Samuel, Cody Christensen, Courtney Griffith, and others
-            moved through the same waitlist process, a separate manager request, a
-            preexisting assignment, a training obligation, or an accommodation.
-          </li>
-          <li>
-            All records regarding the DNA role Charging Party applied for in August
-            2025, including the job posting, selected candidate qualifications,
-            interview notes, scoring criteria, recruiter notes, decisionmaker names,
-            and all related communications.
-          </li>
-          <li>
-            All notes, Teams messages, calendar invites, and follow-up communications
-            regarding the August 2025 conversation between Charging Party and Allan
-            Glover, and all documents regarding Allan's "blockade" statement and any
-            related communications.
-          </li>
-          <li>
-            The September 18, 2025 leadership meeting invite, attendee list, agenda,
-            notes, schedule/coverage worksheets, decision criteria, and decision
-            records, and all communications among Allan Glover, Amber, Trevor, Dan,
-            and any scheduling or HR personnel regarding Training Bay movement and
-            the determination that Charging Party's movement was "not operationally
-            feasible."
-          </li>
-          <li>
-            The criteria used to select Michelle, Steve, Marissa, Josh, or any other
-            employee for Training Bay, and all documents showing whether those
-            employees kept or changed schedules in connection with the Training Bay
-            assignment.
-          </li>
-          <li>
-            Comparator records for Tyler Millisock, Josh, Hunter, Michelle, Steve,
-            Marissa, and any other similarly situated Team Leader who moved areas,
-            schedules, or Training Bay assignments, including the process by which
-            each moved (waitlist, manager request, training assignment, preexisting
-            assignment, accommodation, or otherwise).
-          </li>
-          <li>
-            The complete Ethical Concerns file for Charging Party's September 2025
-            schedule/waitlist complaint, including all intake notes, investigator
-            assignments, interview notes, evidence gathered, findings, and final
-            disposition.
-          </li>
-          <li>
-            All records supporting the alleged May 2025 shift offer and alleged
-            decline, and all waitlist tickets and audit history relied on in that
-            investigation.
-          </li>
-          <li>
-            All Verint screenshots, live-monitoring records, access logs,
-            screen-recording logs, permission-change history, product-owner
-            communications, BT escalation records, and vendor communications relating
-            to Charging Party, together with records showing which Team Leaders were
-            visible or active in Verint before and after Charging Party's complaint.
-          </li>
-          <li>
-            Microsoft Teams retention logs, deletion logs, audit history, and any
-            preservation or legal-hold records covering the Allan Glover / Amber chat
-            and Charging Party's account from October 1, 2025 forward.
-          </li>
-          <li>
-            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging Party,
-            including the application materials submitted, what each applicant was
-            required to submit, all reviewer notes, and the outcome of each request.
-          </li>
-          <li>
-            The November 13, 2025 "SH Hardship" calendar invite, attendee list, agenda,
-            notes, and all communications among Allan Glover, Susan Marchinko, Greg
-            Carfagna, Cameron Hadley, Lindsay Beck, and Employee Relations regarding
-            Charging Party's hardship assistance request.
-          </li>
-          <li>
-            The November 17, 2025 Cameron Hadley conversation recording or transcript
-            and related notes, and all communications between Employee Relations and
-            Charging Party regarding hardship documentation requirements.
-          </li>
-          <li>
-            The July 10, 2025 Teams thread between Charging Party and Allan Glover
-            regarding the hardship-fund discussion, the call records and any witness
-            statements regarding the July 10 follow-up call, and Charging Party's
-            same-day text/Teams communications with coworkers about the incident.
-          </li>
-          <li>
-            HBCU recruiting-event records, including attendance, candidate submissions,
-            interview outcomes, rejection reasons, and hiring outcomes, together with
-            all communications or notes regarding Allan Glover's August 2025
-            "blockade" and HBCU-related conversation with Charging Party.
-          </li>
-          <li>
-            The complete waitlist SharePoint file and full version history from 2023
-            through the present, including every edit, editor, and timestamp.
-          </li>
-          <li>
-            All shift-change tickets allegedly submitted on Charging Party's behalf,
-            together with author, submission date, routing history, and disposition.
-          </li>
-          <li>
-            All records supporting the alleged May 2025 day-shift offer and decline,
-            including the offer communication, the recorded decline, the ticket, and
-            the identity of the person who recorded the response.
-          </li>
-          <li>
-            All comparator movement records for Tyler Millisock and other similarly
-            situated Unit Managers, including the process by which each moved
-            (waitlist, manager request, training assignment, preexisting assignment,
-            accommodation, or otherwise).
-          </li>
-          <li>
-            All documents explaining Charging Party's February 2025 waitlist removal
-            and July 2025 re-addition, including approval records, notifications,
-            ticket numbers, and audit history.
-          </li>
-          <li>
-            The complete 2024 rating calibration records and the TL Plus / Department
-            Manager training cohort eligibility records, including the rating
-            thresholds, calibration participants, calibration notes, and the list of
-            employees selected for that cohort.
-          </li>
-          <li>
-            All internal application records covering Charging Party's nearly 50
-            applications from February 2023 through April 2025, including postings,
-            selected-candidate records, interview notes, scoring rubrics, recruiter
-            notes, and decisionmaker communications.
-          </li>
-          <li>
-            All project-assignment and project-credit records involving the
-            Compliance Check concept, Cyndy Smith's group, and Charging Party's
-            call-flow/process tools, including any presentation materials, meeting
-            invites, attendance records, and authorship metadata.
-          </li>
-          <li>
-            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging
-            Party's own request, including application materials, documentation
-            requirements applied to each applicant, reviewer notes, and outcomes.
-          </li>
-          <li>
-            All communications regarding Allan Glover's July 10, 2025 hardship-fund
-            example, including the Teams thread, call records, and Charging Party's
-            same-day communications with coworkers.
-          </li>
-          <li>
-            HBCU recruiting-event records, including event attendance, candidate
-            submissions, interview outcomes, rejection reasons, and hiring outcomes.
-          </li>
-          <li>
-            All communications or notes regarding Allan Glover's August 2025
-            "blockade" and HBCU-related statements, including any contemporaneous
-            notes, follow-up messages, and references in HR investigation files.
-          </li>
-          <li>
-            All records relating to Charging Party's May 2024 EEOC charge and May
-            29, 2024 internal complaint, including intake documents, routing,
-            investigator notes, and disposition.
-          </li>
-          <li>
-            All communications showing who knew about Charging Party's protected
-            activity and when, including distribution lists, forwards, and HR
-            briefings.
-          </li>
-          <li>
-            All schedule-change tickets submitted on Charging Party's behalf, with
-            author, submission date, routing history, and disposition.
-          </li>
-          <li>
-            All records supporting the alleged May 2025 day-shift offer and alleged
-            decline, including the offer communication, the recorded decline, and
-            the identity of the person who recorded the response.
-          </li>
-          <li>
-            The complete waitlist SharePoint file and full version history from
-            2023 through the present.
-          </li>
-          <li>
-            All documents explaining Charging Party's February 2025 waitlist
-            removal and July 2025 re-addition, including approval records,
-            notifications, tickets, and audit history.
-          </li>
-          <li>
-            Performance calibration records for 2023, 2024, and 2025, and the TL
-            Plus / Department Manager eligibility records, including rating
-            thresholds, calibration participants, and the list of employees
-            selected for the cohort.
-          </li>
-          <li>
-            All records regarding Greg Carfagna's July 2024 block of Charging
-            Party's rec-for-term process, including the additional coaching
-            documentation requested, the documentation requirements applied to
-            peer Team Leaders, and all approver communications.
-          </li>
-          <li>
-            All internal application records for Charging Party's nearly 50
-            applications from February 2023 through April 2025, including
-            postings, selected-candidate records, interview notes, scoring
-            rubrics, recruiter notes, and decisionmaker communications.
-          </li>
-          <li>
-            Project-assignment and project-credit records involving Charging
-            Party, including Compliance Check, Cyndy Smith's group, and
-            call-flow/process tools.
-          </li>
-          <li>
-            Verint access logs, screen-recording logs, permission-change history,
-            product-owner communications, vendor communications, and BT escalation
-            records relating to Charging Party and to similarly situated Team
-            Leaders before and after her October 2025 complaint.
-          </li>
-          <li>
-            Microsoft Teams retention logs, deletion logs, audit history, and
-            preservation or legal-hold records for the Allan Glover / Amber chat
-            and Charging Party's account from October 1, 2025 forward.
-          </li>
-          <li>
-            Leave-processing records relating to the October 2025 FMLA/STD
-            misclassification and access deactivation, including system
-            timestamps, status changes, approvers, and notifications.
-          </li>
-          <li>
-            Hardship-fund records, including the November 13, 2025 "SH Hardship"
-            calendar invite and notes, the Cameron Hadley communications, and the
-            hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
-            own request.
-          </li>
-          <li>
-            All records regarding Charging Party's May 29, 2024 complaint involving
-            Rosanna Blackson, including intake notes, routing, witness lists, and
-            disposition.
-          </li>
-          <li>
-            All HR investigation notes regarding the racial-slur allegation,
-            including interview notes, witness statements, and findings.
-          </li>
-          <li>
-            All communications regarding the June 2024 decision to move Charging
-            Party away from Rosanna Blackson's reporting line during the
-            investigation, including the reasons, the approvers, and the
-            implementation timeline.
-          </li>
-          <li>
-            All waitlist, schedule, and ticket records relating to Charging
-            Party's mid-shift and AM requests from 2024 through the present.
-          </li>
-          <li>
-            All communications regarding Charging Party's project exclusion and
-            the Compliance Check concerns, including the origin of the concept and
-            participants in subsequent meetings.
-          </li>
-          <li>
-            All records regarding Allan Glover's July 10, 2025 hardship-fund
-            example, including the Teams thread, call records, and Charging
-            Party's same-day communications with coworkers.
-          </li>
-          <li>
-            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging
-            Party's own request, including application materials, documentation
-            requirements applied to each applicant, reviewer notes, and outcomes.
-          </li>
-          <li>
-            All records regarding Allan Glover's HBCU and "blockade" statements,
-            including contemporaneous notes, follow-up messages, and references in
-            HR investigation files.
-          </li>
-          <li>
-            Verint access logs and permission-change records relating to Charging
-            Party and to similarly situated Team Leaders before and after her
-            October 2025 complaint.
-          </li>
-          <li>
-            Microsoft Teams deletion, retention, and preservation records for the
-            Allan Glover / Amber chat and Charging Party's account from October 1,
-            2025 forward.
-          </li>
-          <li>
-            Leave-processing records related to Charging Party's October 2025 FMLA
-            request, access deactivation, and related communications, including
-            system timestamps, status changes, approvers, and notifications.
-          </li>
-          <li>
-            Microsoft Teams retention logs, deletion logs, audit history, and
-            preservation/legal-hold records for the Allan Glover / Amber chat.
-          </li>
-          <li>
-            Verint access logs, live-monitoring records, screen-recording logs,
-            permission-change history, product-owner communications, BT escalation
-            records, and vendor communications relating to Charging Party.
-          </li>
-          <li>
-            Records showing which Team Leaders were visible or active in Verint
-            before and after Charging Party's October 2025 complaint.
-          </li>
-          <li>
-            Leave-processing records relating to Charging Party's October 2025
-            intermittent FMLA request, STD misclassification, the wrong paperwork
-            sent, and the system-access deactivation, including all related
-            communications.
-          </li>
-          <li>
-            Hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
-            own hardship request, together with documentation showing what each
-            hardship applicant was required to submit.
-          </li>
-          <li>
-            The November 13, 2025 "SH Hardship" calendar invite, attendee list,
-            notes, and all related communications.
-          </li>
-          <li>
-            The November 17, 2025 Cameron Hadley conversation recording or
-            transcript and related notes.
-          </li>
-          <li>
-            All communications involving Allan Glover, Susan Marchinko, Greg
-            Carfagna, Cameron Hadley, Lindsay Beck, and Employee Relations
-            regarding hardship assistance.
+            ongoing HR investigation (including any onboarding briefing or written guidance);
+            and all documents identifying who decided that Mr. Glover would become Charging
+            Party's manager and the reasons stated.
+          </li>
+          <li>
+            <strong>Training Bay movement and September 2025 leadership review.</strong>{" "}
+            All records regarding Training Bay movement, the September 19, 2025 conversation
+            in which Allan stated there "wasn't a criteria" and identified "myself, Amber,
+            Trevor, Dan," and the September 2025 leadership review of schedule and
+            assignment decisions.
+          </li>
+          <li>
+            <strong>Mid-shift request records and the Glover July 2024 ticket.</strong> The
+            complete ticket Mr. Glover allegedly submitted on Charging Party's behalf in
+            July 2024 (including whether the request was entered as mid-shift, AM/day shift,
+            or another category) and all records showing why Charging Party's original
+            mid-shift request was not recorded as mid-shift; all communications between
+            Rosanna Blackson, Ryan Tafoya, Susan Marcinko, Greg Carfagna, Allan Glover, Jen
+            Roy, Edina Markus, and Human Resources regarding Charging Party's mid-shift
+            request.
+          </li>
+          <li>
+            <strong>October–November 2025 overlap records (Teams, Verint, leave, and
+            hardship).</strong> All records showing the temporal overlap among the Teams
+            deletion, Verint complaint, FMLA filing, system-access deactivation, hardship
+            request, and "SH Hardship" meeting from October 7, 2025 through November 17, 2025.
           </li>
         </ol>
 
