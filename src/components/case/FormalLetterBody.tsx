@@ -898,7 +898,131 @@ export function FormalLetterBody() {
           without production of the underlying records identified in Section IV.
         </p>
 
-
+        {/* Section II.P - July 2025 Waitlist Status */}
+        <h3 className="mt-8 font-display text-base tracking-tight">
+          P. Response to Respondent's "July 2025 Waitlist Status" Assertion
+        </h3>
+        <p className="mt-3">
+          Respondent's "July 2025 Waitlist Status" section is incomplete and misleading.
+          Respondent states that, in July 2025, Charging Party informed Allan Glover that
+          her circumstances had changed and that she "now" needed to move to a day
+          schedule. That framing is not accurate.
+        </p>
+        <p className="mt-3">
+          July 2025 was not the beginning of Charging Party's schedule request. Her
+          original request was for mid-shift, and she understood that she was already
+          supposed to be on the waitlist for mid-shift. In June 2025, after remaining
+          stuck on PM/closing and after Respondent failed to resolve the mid-shift issue,
+          she asked to also be considered for AM shifts in addition to the mid-shift
+          request. She did not abandon the mid-shift request. She expanded the request
+          because Respondent had still not moved her and she needed any earlier schedule
+          that would allow her to better manage her family and childcare obligations.
+        </p>
+        <p className="mt-3">
+          Respondent's statement that a "new request" was submitted on July 10, 2025
+          ignores what had already happened. Charging Party had requested mid-shift in
+          2024, discovered in April 2024 that she had not been added to the mid-shift
+          waitlist, raised that issue in her May 29, 2024 formal complaint, and later
+          had records showing she was on a waitlist with a June 26, 2024 request date.
+          Respondent's own records also showed her as PM/Temporary through February 2025.
+          Then, after Jen Roy edited the waitlist multiple times on February 25, 2025,
+          Charging Party's name was removed from the waitlist while other employees
+          remained listed and continued to qualify.
+        </p>
+        <p className="mt-3">
+          That February removal matters. By the time Charging Party asked Allan in July
+          2025 where she stood on the waitlist, she was asking about a process she
+          believed she had already been placed into, but the underlying record shows she
+          had been removed months earlier. Respondent cannot fairly characterize July
+          2025 as a clean "new request" without explaining why she had been removed in
+          February, why she was not on the controlling waitlist in July, and why the
+          earlier request date was not preserved.
+        </p>
+        <p className="mt-3">
+          In July 2025, Charging Party asked Allan for her specific numbered position on
+          the waitlist. That request triggered the Jen Roy screenshot issue. On July 14,
+          2025, Allan contacted Jen Roy and asked where Charging Party fell on the
+          waitlist. Within approximately one minute, Jen sent Allan a limited screenshot
+          showing a five-row "Shift Change Request" list that included "LVAR — Shawnna
+          Harbin — PM → AM." Allan thanked her within that same minute and later
+          forwarded the screenshot to Charging Party.
+        </p>
+        <p className="mt-3">
+          That screenshot was not the complete waitlist. It omitted the material fields
+          needed to verify her actual position and whether Respondent was applying the
+          process correctly, including Date Requested, Months as CAR TL,
+          Temporary/Permanent status, and Qualifies = Yes/No. Those fields were not
+          minor. They were the exact fields needed to determine whether the process was
+          chronological, whether she qualified, whether her earlier request date was
+          preserved, and whether her temporary/permanent status had been changed.
+        </p>
+        <p className="mt-3">
+          The timing of the exchange is also significant. Allan asked Jen where Charging
+          Party was on the waitlist, and Jen provided the limited screenshot within
+          approximately sixty seconds. The exchange then ended with Allan saying thank
+          you. That speed, combined with the omitted columns, raises a serious question
+          about whether the screenshot was a selective or prepared view rather than the
+          complete controlling source record.
+        </p>
+        <p className="mt-3">
+          The July 14 screenshot also did not match the actual SharePoint waitlist
+          record. The controlling "Current TL Shifts" SharePoint waitlist on or around
+          that time did not contain Charging Party's name. The July 3, 2025 saved
+          version, co-edited by Edina Markus and Jen Roy, showed other employees listed
+          and qualifying while Charging Party remained absent. She was not actually
+          re-added to the live waitlist until July 16, 2025, and the record then showed
+          a new July 17, 2025 request date.
+        </p>
+        <p className="mt-3">
+          That July 17 request date is another material inconsistency. Charging Party's
+          mid-shift request existed since 2024. The January 2025 waitlist snapshot
+          reflected a June 26, 2024 request date. Yet after she asked Allan where she
+          stood and after Jen produced the July 14 screenshot, she was re-added with a
+          July 17, 2025 request date. That appears to reset her seniority and materially
+          harm her ability to receive the schedule movement she had been seeking.
+        </p>
+        <p className="mt-3">
+          Respondent also changed or reflected her status as PM/Permanent without
+          explanation. Charging Party's PM assignment had been presented to her as
+          temporary, and Respondent's own records continued to show PM/Temporary status.
+          When she was later re-added, her status appeared as PM/Permanent without
+          notice, ticket, approval documentation, or explanation. That matters because
+          Respondent's own shift-change process distinguishes between temporary and
+          permanent movement.
+        </p>
+        <p className="mt-3">
+          Respondent's assertion that the process was "centralized and uniformly
+          applied" is further contradicted by the movement occurring around the same
+          period. While Charging Party was removed, omitted, re-added, and reset, other
+          employees remained on the list, continued qualifying, or moved across
+          schedules/departments. The February 2025 version history showed her row
+          removed while employees such as Cody Christensen, Hunter Samuel, and Courtney
+          Griffith remained and continued to qualify. Comparator evidence also shows
+          that employees such as Tyler Millisock were able to move shifts or departments
+          without the same waitlist barriers being applied to Charging Party.
+        </p>
+        <p className="mt-3">
+          Respondent's statement that managers "do not control" the process is also
+          disputed by Respondent's own later explanations. During the September 19, 2025
+          conversation with Allan, Allan stated there "wasn't a criteria" for Training
+          Bay movement and identified himself, Amber, Trevor, and Dan as part of the
+          decision-making group. When Charging Party raised that other employees had
+          moved while she remained stuck, Allan did not provide a clear waitlist-based
+          explanation. In the November 6, 2025 HR follow-up call, HR also discussed the
+          waitlist and comparator movement, including Tyler, and acknowledged the
+          explanation she had been given by Allan. Those later discussions show that
+          Respondent's "strict centralized process" narrative did not resolve the actual
+          movement decisions or the comparator inconsistencies.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's July 2025 waitlist explanation should not be
+          accepted as evidence of transparency or uniform application. July 2025 was not
+          a new scheduling issue. It was the point at which Charging Party asked where
+          she stood on a waitlist she believed she was already on, after Respondent had
+          failed to properly process her mid-shift request, after she had been removed
+          in February, and after she had expanded her request in June to include AM in
+          addition to mid-shift.
+        </p>
 
         {/* Section III */}
         <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
