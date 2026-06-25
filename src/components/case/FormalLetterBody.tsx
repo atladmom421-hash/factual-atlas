@@ -1146,6 +1146,27 @@ export function FormalLetterBody() {
           ]}
         />
 
+        {/* Damages and Harm */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">
+          IV.A. Damages and Harm — Physical, Mental, Financial, and Personal Impact
+        </h2>
+        <p className="mt-3">
+          The harm was not limited to workplace frustration. By October 2025, the cumulative stress
+          from the unresolved schedule issues, repeated complaints, Verint visibility concerns,
+          Teams deletion concerns, leave-processing problems, and continued lack of support
+          contributed to serious physical and mental-health deterioration. I experienced PTSD
+          symptoms, panic attacks, severe distress, sleep disruption, intrusive or distorted
+          thoughts, and worsening psychiatric symptoms. I was in therapy and psychiatric care, and
+          my condition ultimately required FMLA/STD leave. I also experienced severe stomach pain
+          requiring emergency medical attention in early October 2025. These events were followed
+          by reduced income, financial crisis, housing instability, loss of housing, transportation
+          instability, time away from my child, and severe emotional distress. Respondent's
+          Position Statement minimizes these events as routine processes, but the documented impact
+          was serious and destabilizing.
+        </p>
+
+
+
 
 
 
