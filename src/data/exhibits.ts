@@ -1981,6 +1981,20 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-081-reyes-email-oct14-2025.png",
     fileKind: "image",
   },
+  {
+    id: "EX-082",
+    exhibitNumber: "EX-082",
+    fileName: "Teams chat with Allan Glover — Sept 3, 2025 (schedule request, leadership calibration, OT submission)",
+    date: "September 3, 2025",
+    category: "Contemporaneous chat",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Teams chat between Shawnna Harbin and Allan Glover on 9/3/2025. Harbin opens with a schedule question. Allan (11:00 AM): \"Good morning, Boss Lady — Just being honest with you, I do not think that will happen but going to talk to Jen, as well for something else.\" Harbin (11:02 AM) replies with a worried-face emoji and \"Okay.\" Allan (11:04 AM): \"I'm sorry, but I will keep trying.\" Harbin (11:05 AM): \"It's okay don't even worry about it's not going to happen I'll figure something else out.\" Allan (11:12 AM): \"I'm going to still talk to Jen.\" Harbin (11:16 AM): \"Thanks for trying Allan. I appreciate you.\" Allan (11:36 AM): \"Of course.\" Harbin (11:39 AM): \"Allan are we still having the leadership calibration today?\" Harbin (11:48 AM): \"side note: can you enter in OT for Simone Pugh this week? 9/12/25, 9/19/25 and 9/25/25 starting at 3pm until 7pm est. Thank you. Also: let me know if there is a better way to submit the OT requests? I don't want you doing all of this manually if there is another way to submit.\" Allan (12:48 PM, quoting Harbin's calibration question): \"Canceled, listening to no pays next week\" and \"Updated and you can send them to me, no issues.\" Harbin (12:53 PM): \"K got it! Gracias!\" Allan (12:54 PM): \"You bet!\" Relevance: (1) contemporaneous admission by Allan that the requested schedule change \"will [not] happen\" despite repeated requests — yet he says he will \"still talk to Jen [Roy],\" again identifying Jen Roy as a decisionmaker controlling shift movement (consistent with EX-069 and the September 19, 2025 Training Bay transcript); (2) shows the leadership calibration meeting was \"canceled\" on the day of, consistent with the broader pattern of opaque calibration timing; (3) confirms Allan personally enters OT and routes operational requests, contradicting any narrative that movement/OT decisions are \"centralized\" outside his control; (4) further evidence of the polite, cooperative tone Harbin maintained throughout — undercutting any \"performance/attitude\" narrative.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-082-allan-chat-sept3.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
