@@ -534,6 +534,19 @@ export function FormalLetterBody() {
           denied the schedule movement she had requested.
         </p>
 
+        <InlineExhibits
+          heading="Waitlist evidence — mid-shift request and version history"
+          items={[
+            { id: "EX-043", relevance: "April 26, 2024 Ryan Tafoya confirmation that Harbin was not on the MID-shift list." },
+            { id: "EX-046", relevance: "January 22, 2025 saved waitlist showing Harbin on the list with June 26, 2024 request date and PM/Temporary status." },
+            { id: "EX-045", relevance: "February 25, 2025 waitlist after Jen Roy's edits — Harbin's row removed while junior employees remained." },
+            { id: "EX-042", relevance: "Allan Glover acknowledging Harbin had been on the waitlist for approximately two years." },
+          ]}
+        />
+
+
+
+
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           D. The "neutral, centralized waitlist" assertion (PS pp. 4–5, §§ I.B.6–7; p. 6, §II.A)
