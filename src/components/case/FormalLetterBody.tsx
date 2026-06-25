@@ -297,6 +297,18 @@ export function FormalLetterBody() {
           obstruct the production of records the Position Statement places at issue.
         </p>
 
+        <InlineExhibits
+          heading="Performance evidence — 2024 review cycle"
+          items={[
+            { id: "EX-050", relevance: "2023 compensation statement reflecting Strong rating before protected activity." },
+            { id: "EX-051", relevance: "2024 compensation statement reflecting Solid downgrade with 124.36% of-target bonus payout, 96.49% Individual Performance Factor, and 128.90% Company Performance Factor." },
+            { id: "EX-052", relevance: "2023 year-end review (Strong) for comparison with 2024." },
+            { id: "EX-053", relevance: "2024 year-end review reflecting overall Solid rating despite Solid/Strong sub-ratings." },
+          ]}
+        />
+
+
+
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           B. Response to Respondent's Characterization of Charging Party's Prior EEOC Charge
           (PS pp. 2–3, § I.B.1)
