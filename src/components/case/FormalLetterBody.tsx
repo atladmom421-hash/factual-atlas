@@ -174,8 +174,8 @@ export function FormalLetterBody() {
           Respondent's reference to "monthly scorecards that roll into annual performance
           ratings" likewise undercuts its own narrative. The monthly scorecards, IPF
           calculations, and bonus payout for 2024 reflect improved operational metrics, no
-          goal rated below Solid, an IPF of approximately 120%, and a bonus payout of
-          124.36%. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
+          goal rated below Solid, an Individual Performance Factor of 96.49%, a Company
+          Performance Factor of 128.90%, and a bonus payout of 124.36% of target. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
           <Ex id="EX-052" />, <Ex id="EX-053" />. The overall rating of "Solid" attached to
           Exhibit B of the Position Statement is therefore not a neutral summation of the
           scorecards Respondent cites; it is a downward departure from them. That
