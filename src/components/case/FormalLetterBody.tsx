@@ -211,13 +211,12 @@ export function FormalLetterBody() {
           process evidence already produced. Respondent's own Human Resources representative
           told Charging Party on the November 6, 2025 follow-up call that comparator
           movement occurred "because of leadership, not the waitlist." See{" "}
-          <Ex id="EX-HR-CALL" />. The May 12, 2026 Karena Lesure reassignment was granted
-          because Julie Cahoon "specifically asked." See <Ex id="EX-019" />. Named
-          comparators — Tyler Millisock, Hunter Samuel, Marc Case, Marissa Mascarenas, and
-          Karena Lesure — received favorable scheduling and assignment treatment that
-          Charging Party was denied under the same purportedly "neutral" process. See{" "}
-          <Ex id="EX-010" />. A process that produced these outcomes was not applied
-          uniformly to Charging Party.
+          <Ex id="EX-HR-CALL" />. Named Team Leader comparators — Tyler Millisock,
+          Hunter Samuel, Cody Christensen, Marc Case, Marissa Mascarenas, Whitnee Kollar,
+          Leslie McGregor, and Jarin Bell — received favorable scheduling and department
+          assignment treatment that Charging Party was denied under the same purportedly
+          "neutral" process. See <Ex id="EX-010" />. A process that produced these outcomes
+          was not applied uniformly to Charging Party.
         </p>
         <p className="mt-3">
           Respondent's representation that Charging Party "performed her role without
@@ -449,9 +448,15 @@ export function FormalLetterBody() {
           stating that comparator movement occurred "because of leadership, not the waitlist."
           See <Ex id="EX-HR-CALL" />. That statement, made by Respondent's agent, is a direct
           admission that the process Respondent now describes as neutral was, in practice,
-          discretionary. The May 12, 2026 Karena Lesure reassignment — granted, on the record,
-          because Julie Cahoon "specifically asked" — confirms the same pattern.{" "}
-          See <Ex id="EX-010" />, <Ex id="EX-019" />.
+          discretionary.
+        </p>
+        <p className="mt-3">
+          The Team Leader comparators identified below all hold the same Team Leader role as
+          Charging Party, in the same Vehicle Assistance line of business, under the same
+          purportedly centralized scheduling and waitlist process. Each comparator's actual
+          department, shift hours, days off, and movement history is set out at the schedule-by-schedule
+          level in the post-complaint timeline (§ II.O.1 below) and the supporting comparator matrix.
+          See <Ex id="EX-010" />, <Ex id="EX-022" />.
         </p>
         <p className="mt-3">
           Comparators were identified by name, role, start date, schedule history, and source in{" "}
@@ -459,26 +464,49 @@ export function FormalLetterBody() {
         </p>
         <ul className="mt-2 list-disc space-y-1 pl-6">
           <li>
-            <strong>Tyler Millisock</strong> — same start date and level as Charging Party; moved
-            areas and schedules between January and October 2025; no waitlist ticket has been
-            produced.
+            <strong>Tyler Millisock</strong> (Team Leader, LVAR → PRE-D/DBC) — same April 3, 2023
+            start date and same TL level as Charging Party; moved from LVAR PM/closing
+            (1:30 p.m.–10:00 p.m., Sun–Thu) to PRE-D/DBC 11:30 a.m.–8:00 p.m. between January and
+            October 2025; stated he was not on the waitlist; no waitlist ticket has been produced.
           </li>
           <li>
-            <strong>Hunter Samuel</strong> — received the AM shift Charging Party would have
-            accepted.
+            <strong>Hunter Samuel</strong> (Team Leader, HVAR → LVAR/Whitehall) — cross-department
+            transfer in June–July 2025 placed directly into AM (approximately 8:00 a.m.–4:30 p.m.,
+            weekday core schedule) in Charging Party's own department while Charging Party remained
+            on PM/closing.
           </li>
           <li>
-            <strong>Marc Case</strong> — on the same PM shift; routinely permitted to leave
-            approximately one hour early while Charging Party covered his team.
+            <strong>Cody Christensen</strong> (Team Leader, HVAR → LVAR/Whitehall) — cross-department
+            transfer in June–July 2025 placed directly into AM in Charging Party's department; carried
+            a "Temporary" designation rather than going through the permanent waitlist Charging Party
+            was held to.
           </li>
           <li>
-            <strong>Marissa Mascarenas</strong> — earlier and mid-shift placements (8:00–4:30,
-            10:00–6:30) without a waitlist explanation.
+            <strong>Marc Case</strong> (Team Leader, LVAR PM) — on the same 1:30 p.m.–10:00 p.m. PM
+            closing schedule as Charging Party; routinely permitted to leave approximately one hour
+            early (typically by 9:00 p.m.) while Charging Party was required to cover his team.
           </li>
           <li>
-            <strong>Julie Cahoon / Karena Lesure</strong> — May 12, 2026 reassignment based on a
-            specific request, contradicting the "not operationally feasible" rationale applied to
-            Charging Party in September 2025.
+            <strong>Marissa Mascarenas</strong> (Team Leader, LVAR) — held rotating 10:00 a.m.–6:30
+            p.m. mid-shift (March 2025), an active mid-shift TL placement (April 2025), and
+            8:00 a.m.–4:30 p.m. AM placement (September 2025), without a waitlist explanation,
+            during the same period Charging Party's mid-shift request remained unresolved.
+          </li>
+          <li>
+            <strong>Whitnee Kollar</strong> (Team Leader, LVAR) — placed on a dedicated
+            9:00 a.m.–5:30 p.m. mid-shift in August 2025, confirming mid-shift Team Leader
+            placements existed during the same window Charging Party was told no mid-shift was
+            available.
+          </li>
+          <li>
+            <strong>Leslie McGregor</strong> (Team Leader / TL-in-Training, Training Bay) — placed
+            into 11:30 a.m.–8:00 p.m. in TBay / TL-in-Training in September 2025, the same earlier
+            schedule envelope Charging Party had been requesting since 2024.
+          </li>
+          <li>
+            <strong>Jarin Bell</strong> (Team Leader, Maintenance → LVAR/Whitehall) — transferred
+            from a late shift in Maintenance directly into AM in Charging Party's department in
+            September 2025.
           </li>
         </ul>
         <p className="mt-3">
@@ -489,8 +517,8 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Comparator evidence"
           items={[
-            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Millisock, Samuel, Case, Mascarenas, Lesure." },
-            { id: "EX-019", relevance: "September 2025 HR ticket screenshot tied to Karena Lesure reassignment context." },
+            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Millisock, Samuel, Christensen, Case, Mascarenas, Kollar, McGregor, Bell." },
+            { id: "EX-022", relevance: "Schedule Movement Data — actual department, shift hours, and days for each Team Leader comparator." },
           ]}
         />
 
@@ -850,88 +878,125 @@ export function FormalLetterBody() {
         </p>
 
         <div className="mt-4 overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
+          <table className="w-full border-collapse text-[12px]">
             <thead>
               <tr className="border-b-2 border-foreground/40 bg-foreground/5 text-left">
                 <th className="px-2 py-2 font-display font-semibold">Month / Date</th>
-                <th className="px-2 py-2 font-display font-semibold">Comparator</th>
-                <th className="px-2 py-2 font-display font-semibold">Prior Schedule / Dept.</th>
-                <th className="px-2 py-2 font-display font-semibold">New Schedule / Dept.</th>
-                <th className="px-2 py-2 font-display font-semibold">Evidence Source</th>
+                <th className="px-2 py-2 font-display font-semibold">Team Leader (Role)</th>
+                <th className="px-2 py-2 font-display font-semibold">Prior Dept. / Shift Hours / Days</th>
+                <th className="px-2 py-2 font-display font-semibold">New Dept. / Shift Hours / Days</th>
+                <th className="px-2 py-2 font-display font-semibold">Shift Category</th>
+                <th className="px-2 py-2 font-display font-semibold">Temp / Perm</th>
+                <th className="px-2 py-2 font-display font-semibold">Evidence</th>
                 <th className="px-2 py-2 font-display font-semibold">Why It Matters</th>
               </tr>
             </thead>
             <tbody className="align-top">
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">Jan–Oct 2025</td>
-                <td className="px-2 py-2">Tyler Millisock</td>
-                <td className="px-2 py-2">LVAR PM/closing (same start date and level as Harbin)</td>
-                <td className="px-2 py-2">11:30 a.m.–8:00 p.m. in PRE-D/DBC</td>
+                <td className="px-2 py-2">Tyler Millisock (Team Leader; April 3, 2023 start — same as Harbin)</td>
+                <td className="px-2 py-2">LVAR · 1:30 p.m.–10:00 p.m. PM/closing · Sun–Thu</td>
+                <td className="px-2 py-2">PRE-D/DBC · 11:30 a.m.–8:00 p.m. · weekday core</td>
+                <td className="px-2 py-2">PM → earlier PM (PRE-D/DBC)</td>
+                <td className="px-2 py-2">No waitlist ticket produced</td>
                 <td className="px-2 py-2">EX-010; EX-022</td>
-                <td className="px-2 py-2">Stated he was not on the waitlist; directly contradicts the claim that the waitlist controlled all movement.</td>
+                <td className="px-2 py-2">Stated he was not on the waitlist; same TL role and start date as Harbin; directly contradicts the "neutral waitlist controls all movement" claim.</td>
               </tr>
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">June–July 2025</td>
-                <td className="px-2 py-2">Hunter Samuel</td>
-                <td className="px-2 py-2">HVAR — non-AM shift</td>
-                <td className="px-2 py-2">AM in LVAR/Whitehall (Harbin's department)</td>
+                <td className="px-2 py-2">Hunter Samuel (Team Leader)</td>
+                <td className="px-2 py-2">HVAR · non-AM (mid/late) shift</td>
+                <td className="px-2 py-2">LVAR/Whitehall (Harbin's dept.) · ~8:00 a.m.–4:30 p.m. AM · weekday core</td>
+                <td className="px-2 py-2">AM</td>
+                <td className="px-2 py-2">Transfer placed directly into AM (no waitlist position produced)</td>
                 <td className="px-2 py-2">EX-022</td>
-                <td className="px-2 py-2">Cross-department transfer placed directly into preferred AM schedule.</td>
+                <td className="px-2 py-2">Cross-department transfer placed straight into the AM schedule Harbin had requested.</td>
               </tr>
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">June–July 2025</td>
-                <td className="px-2 py-2">Cody Christensen</td>
-                <td className="px-2 py-2">HVAR — mid/late shift</td>
-                <td className="px-2 py-2">AM in LVAR/Whitehall (Harbin's department)</td>
+                <td className="px-2 py-2">Cody Christensen (Team Leader)</td>
+                <td className="px-2 py-2">HVAR · mid/late shift</td>
+                <td className="px-2 py-2">LVAR/Whitehall (Harbin's dept.) · ~8:00 a.m.–4:30 p.m. AM · weekday core</td>
+                <td className="px-2 py-2">AM</td>
+                <td className="px-2 py-2">"T" (Temporary) designation while in AM</td>
                 <td className="px-2 py-2">EX-022</td>
-                <td className="px-2 py-2">Cross-department transfer placed directly into AM while Harbin remained on closing.</td>
+                <td className="px-2 py-2">Allowed into AM via "Temporary" status while Harbin was held to permanent-waitlist mechanics for the same shift.</td>
               </tr>
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">August 2025</td>
-                <td className="px-2 py-2">Whitnee Kollar</td>
+                <td className="px-2 py-2">Whitnee Kollar (Team Leader, LVAR)</td>
                 <td className="px-2 py-2">Prior non-mid placement</td>
-                <td className="px-2 py-2">Dedicated 9:00 a.m.–5:30 p.m. mid-shift</td>
+                <td className="px-2 py-2">LVAR · 9:00 a.m.–5:30 p.m. mid-shift · weekday core</td>
+                <td className="px-2 py-2">MID</td>
+                <td className="px-2 py-2">Permanent mid placement</td>
                 <td className="px-2 py-2">EX-022</td>
-                <td className="px-2 py-2">Confirms mid-shift placements existed during the same period Harbin's mid-shift request remained unresolved.</td>
+                <td className="px-2 py-2">Confirms TL-level mid-shift placements existed in LVAR while Harbin was told no mid-shift was available.</td>
+              </tr>
+              <tr className="border-b border-foreground/15">
+                <td className="px-2 py-2">Mar–Sep 2025</td>
+                <td className="px-2 py-2">Marissa Mascarenas (Team Leader, LVAR)</td>
+                <td className="px-2 py-2">Rotating 10:00 a.m.–6:30 p.m. mid-shift (Mar 2025)</td>
+                <td className="px-2 py-2">Active mid-shift TL (Apr 2025) → 8:00 a.m.–4:30 p.m. AM (Sep 2025)</td>
+                <td className="px-2 py-2">MID → AM</td>
+                <td className="px-2 py-2">Mid stated as preference; AM placement without waitlist record produced</td>
+                <td className="px-2 py-2">EX-010; EX-022; EX-085</td>
+                <td className="px-2 py-2">Three favorable schedule placements in six months under the same "neutral" process Harbin was held to.</td>
               </tr>
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">September 2025</td>
-                <td className="px-2 py-2">Leslie McGregor</td>
+                <td className="px-2 py-2">Leslie McGregor (TL-in-Training, Training Bay)</td>
                 <td className="px-2 py-2">Prior placement</td>
-                <td className="px-2 py-2">11:30 a.m.–8:00 p.m. as TL-in-Training / Training Bay</td>
-                <td className="px-2 py-2">EX-022</td>
-                <td className="px-2 py-2">Fresh placement into the exact earlier schedule envelope Harbin had requested.</td>
+                <td className="px-2 py-2">Training Bay · 11:30 a.m.–8:00 p.m.</td>
+                <td className="px-2 py-2">Earlier PM (TBay)</td>
+                <td className="px-2 py-2">Training-Bay placement (Allan: "no criteria")</td>
+                <td className="px-2 py-2">EX-022; EX-059</td>
+                <td className="px-2 py-2">Fresh placement into the exact earlier-PM envelope Harbin had requested; Allan admitted Training Bay selection had "no criteria."</td>
               </tr>
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">September 2025</td>
-                <td className="px-2 py-2">Jarin Bell</td>
-                <td className="px-2 py-2">Late shift in Maintenance</td>
-                <td className="px-2 py-2">AM in LVAR/Whitehall (Harbin's department)</td>
+                <td className="px-2 py-2">Jarin Bell (Team Leader)</td>
+                <td className="px-2 py-2">Maintenance · late shift</td>
+                <td className="px-2 py-2">LVAR/Whitehall (Harbin's dept.) · ~8:00 a.m.–4:30 p.m. AM</td>
+                <td className="px-2 py-2">AM</td>
+                <td className="px-2 py-2">Transfer placed directly into AM</td>
                 <td className="px-2 py-2">EX-022</td>
-                <td className="px-2 py-2">Transfer placed directly into AM, supporting the pattern that transfers received AM placements while Harbin remained on closing.</td>
+                <td className="px-2 py-2">Confirms the pattern: TL transfers into Harbin's department received AM while Harbin stayed on closing.</td>
               </tr>
               <tr className="border-b border-foreground/15">
                 <td className="px-2 py-2">2025 (ongoing)</td>
-                <td className="px-2 py-2">Brittnee Walker, Dylan Bryant, Marissa Mascarenas, Josh Faulkner</td>
-                <td className="px-2 py-2">Various</td>
-                <td className="px-2 py-2">AM or earlier schedule placements in LVAR/Whitehall / TBay</td>
+                <td className="px-2 py-2">Brittnee Walker, Dylan Bryant, Josh Faulkner (Team Leaders)</td>
+                <td className="px-2 py-2">Various LVAR/Whitehall placements</td>
+                <td className="px-2 py-2">AM or earlier-shift placements in LVAR/Whitehall / TBay</td>
+                <td className="px-2 py-2">AM / earlier</td>
+                <td className="px-2 py-2">Permanent AM-area placements</td>
                 <td className="px-2 py-2">EX-010; EX-022</td>
-                <td className="px-2 py-2">AM availability persisted in Harbin's own area throughout the period her request remained unresolved.</td>
+                <td className="px-2 py-2">AM TL availability persisted in Harbin's own area throughout the period her request remained unresolved.</td>
               </tr>
               <tr>
                 <td className="px-2 py-2 font-semibold">Same period</td>
-                <td className="px-2 py-2 font-semibold">Shawnna Harbin (Charging Party)</td>
-                <td className="px-2 py-2">LVAR PM/closing</td>
-                <td className="px-2 py-2">Remained on PM/closing ending 10:00 p.m. (no movement)</td>
+                <td className="px-2 py-2 font-semibold">Shawnna Harbin (Team Leader — Charging Party)</td>
+                <td className="px-2 py-2">LVAR · 1:30 p.m.–10:00 p.m. PM/closing · Sun–Thu</td>
+                <td className="px-2 py-2">LVAR · 1:30 p.m.–10:00 p.m. PM/closing · Sun–Thu (no movement)</td>
+                <td className="px-2 py-2">PM (closing)</td>
+                <td className="px-2 py-2">"P" (Permanent) — converted without ticket</td>
                 <td className="px-2 py-2">EX-022; EX-044; EX-045; EX-046; EX-048</td>
-                <td className="px-2 py-2">While comparators moved, Harbin's status, request date, and waitlist position were altered or reset.</td>
+                <td className="px-2 py-2">While TL comparators above moved across AM, MID, PRE-D/DBC, and Training Bay placements, Harbin's status, request date, and waitlist position were altered or reset.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <p className="mt-4">
-          The June–September 2025 records are especially probative. In June 2025, Tyler, Elisa, and Will appear on 11:30 a.m.–8:00 p.m. in PRE-D/DBC while I remained on closing ending 10:00 p.m. Hunter and Cody transferred from HVAR non-AM shifts into AM placements in my area. In August 2025, Whitnee moved to 9:00 a.m.–5:30 p.m. In September 2025, Leslie moved to 11:30 a.m.–8:00 p.m. in TBay/TL-in-Training, and Jarin transferred from a late shift in Maintenance directly into AM. Throughout that same window, Brittnee, Dylan, Marissa, and Josh held AM or earlier placements in my own area. I did not.
+          Read at the schedule-by-schedule level, the June–September 2025 records are especially
+          probative. Tyler Millisock, Elisa, and Will appear on 11:30 a.m.–8:00 p.m. in PRE-D/DBC
+          while Harbin remained on 1:30 p.m.–10:00 p.m. closing in LVAR. Hunter Samuel and Cody
+          Christensen transferred from HVAR non-AM shifts into ~8:00 a.m.–4:30 p.m. AM placements
+          in Harbin's department. In August 2025, Whitnee Kollar moved to 9:00 a.m.–5:30 p.m. MID
+          in LVAR. In September 2025, Leslie McGregor moved to 11:30 a.m.–8:00 p.m. in
+          TBay/TL-in-Training, and Jarin Bell transferred from a late shift in Maintenance
+          directly into AM. Across that same window, Brittnee Walker, Dylan Bryant, Marissa
+          Mascarenas, and Josh Faulkner held AM or earlier-shift placements in Harbin's own area.
+          Harbin did not.
         </p>
 
         <InlineExhibits
@@ -1786,11 +1851,11 @@ export function FormalLetterBody() {
           <li>
             <strong>Comparator movement and schedule-change records.</strong> Records showing
             schedule movement, department movement, AM/midshift placement, Training Bay
-            movement, and flexibility for Tyler Millisock, Hunter Samuel, Cody Christensen,
-            Whitnee Kollar, Marissa Mascarenas, Jarin Bell, Julie Cahoon, and Karena Lesure
-            from May 2024 through 2026; the Karena Lesure assignment-change approval and all
-            related communications among Steve Seevers, Julie Cahoon, Amber Laye, and Michelle
-            Swindell; and the April 28, 2026 movement worksheets with edit/authorship metadata.
+            movement, and flexibility for Team Leader comparators Tyler Millisock, Hunter Samuel,
+            Cody Christensen, Whitnee Kollar, Marissa Mascarenas, Leslie McGregor, Jarin Bell,
+            Brittnee Walker, Dylan Bryant, and Josh Faulkner from May 2024 through 2026, with
+            actual shift hours, days off, department, and Temp/Perm designation for each
+            placement; and the April 28, 2026 movement worksheets with edit/authorship metadata.
           </li>
           <li>
             <strong>Temporary vs. permanent status records and approvals.</strong>{" "}
@@ -2015,8 +2080,8 @@ export function FormalLetterBody() {
                 <tr>
                   <td className="border border-border px-2 py-1">I.B.6–7 (Neutral Waitlist)</td>
                   <td className="border border-border px-2 py-1">II.D</td>
-                  <td className="border border-border px-2 py-1">EX-010, EX-019, EX-HR-CALL</td>
-                  <td className="border border-border px-2 py-1">Comparator movement "because of leadership, not the waitlist"; Lesure reassignment by specific request.</td>
+                  <td className="border border-border px-2 py-1">EX-010, EX-022, EX-HR-CALL</td>
+                  <td className="border border-border px-2 py-1">Comparator movement "because of leadership, not the waitlist"; TL comparators received AM/MID/PRE-D/TBay placements while Harbin remained on PM/closing.</td>
                 </tr>
                 <tr>
                   <td className="border border-border px-2 py-1">I.B.7 (July 2025 Waitlist Status)</td>
