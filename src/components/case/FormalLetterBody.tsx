@@ -1145,6 +1145,17 @@ export function FormalLetterBody() {
           addition to mid-shift.
         </p>
 
+        <InlineExhibits
+          heading="July 2025 waitlist evidence"
+          items={[
+            { id: "EX-041", relevance: "Jen Roy's July 14, 2025 limited five-row screenshot sent to Allan Glover — omits Date Requested, Months as CAR TL, Temporary/Permanent status, and Qualifies." },
+            { id: "EX-044", relevance: "July 3, 2025 controlling 'Current TL Shifts' SharePoint waitlist — Harbin absent while other employees listed and qualifying." },
+            { id: "EX-040", relevance: "Shift-Change SOW revisions showing the documented process for ticket-based waitlist movement." },
+          ]}
+        />
+
+
+
         {/* Section II.Q - August–September 2025 Events */}
         <h3 className="mt-8 font-display text-base tracking-tight">
           Q. Response to Respondent's "August–September 2025 Events" Narrative
