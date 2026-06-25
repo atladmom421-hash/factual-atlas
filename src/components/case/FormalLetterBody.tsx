@@ -1574,7 +1574,59 @@ export function FormalLetterBody() {
             each moved (waitlist, manager request, training assignment, preexisting
             assignment, accommodation, or otherwise).
           </li>
+          <li>
+            The complete Ethical Concerns file for Charging Party's September 2025
+            schedule/waitlist complaint, including all intake notes, investigator
+            assignments, interview notes, evidence gathered, findings, and final
+            disposition.
+          </li>
+          <li>
+            All records supporting the alleged May 2025 shift offer and alleged
+            decline, and all waitlist tickets and audit history relied on in that
+            investigation.
+          </li>
+          <li>
+            All Verint screenshots, live-monitoring records, access logs,
+            screen-recording logs, permission-change history, product-owner
+            communications, BT escalation records, and vendor communications relating
+            to Charging Party, together with records showing which Team Leaders were
+            visible or active in Verint before and after Charging Party's complaint.
+          </li>
+          <li>
+            Microsoft Teams retention logs, deletion logs, audit history, and any
+            preservation or legal-hold records covering the Allan Glover / Amber chat
+            and Charging Party's account from October 1, 2025 forward.
+          </li>
+          <li>
+            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging Party,
+            including the application materials submitted, what each applicant was
+            required to submit, all reviewer notes, and the outcome of each request.
+          </li>
+          <li>
+            The November 13, 2025 "SH Hardship" calendar invite, attendee list, agenda,
+            notes, and all communications among Allan Glover, Susan Marchinko, Greg
+            Carfagna, Cameron Hadley, Lindsay Beck, and Employee Relations regarding
+            Charging Party's hardship assistance request.
+          </li>
+          <li>
+            The November 17, 2025 Cameron Hadley conversation recording or transcript
+            and related notes, and all communications between Employee Relations and
+            Charging Party regarding hardship documentation requirements.
+          </li>
+          <li>
+            The July 10, 2025 Teams thread between Charging Party and Allan Glover
+            regarding the hardship-fund discussion, the call records and any witness
+            statements regarding the July 10 follow-up call, and Charging Party's
+            same-day text/Teams communications with coworkers about the incident.
+          </li>
+          <li>
+            HBCU recruiting-event records, including attendance, candidate submissions,
+            interview outcomes, rejection reasons, and hiring outcomes, together with
+            all communications or notes regarding Allan Glover's August 2025
+            "blockade" and HBCU-related conversation with Charging Party.
+          </li>
         </ol>
+
 
 
 
