@@ -1009,18 +1009,25 @@ export function FormalLetterBody() {
           </dl>
         </div>
 
-
+        <p>
+          The timing of Allan Glover's conversation with me should also be evaluated against his communications with Human Resources. If the calendar record reflects that Allan met with Susan Marchinko immediately before speaking with me about Training Bay and shift movement, that fact is relevant because the conversation should not be treated as an isolated or spontaneous manager discussion. It would show HR involvement or awareness immediately before Allan gave the explanations documented in the transcript, including that Training Bay selection had no formal criteria and involved a management decision group consisting of Allan, Amber, Trevor, and Dan.
+        </p>
+        <p>
+          Respondent should therefore produce the calendar invite, attendee list, meeting title, meeting notes, Teams/chat communications, emails, and any follow-up records for Allan Glover's meeting with Susan Marchinko immediately before the Training Bay / shift movement conversation. If Allan met with Susan Marchinko immediately before this conversation, Respondent should produce the meeting records because that timing bears directly on HR knowledge, management coordination, and the credibility of Allan's explanations regarding Training Bay, shift movement, and the alleged offer.
+        </p>
 
         <InlineExhibits
           heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
           items={[
             { id: "EX-059", relevance: "September 19, 2025 verbatim transcript — Allan admits no formal criteria for Training Bay; first claims he 'offered' Harbin a shift then changes to 'mornings'; Harbin disputes any AM/mid-shift offer; identifies Tyler Millisock, Josh, and Hunter as comparators who moved; references Allan's own prior 'blockade' statement." },
+            { id: "EX-060", relevance: "Allan Glover / Susan Marchinko calendar meeting immediately preceding the September 19, 2025 conversation — production request. Relevant to HR knowledge, management coordination, and the credibility of Allan's explanations regarding Training Bay, shift movement, and the alleged offer." },
             { id: "EX-005", relevance: "August 2025 HBCU recruiting comments and 'blockade' conversation with Allan Glover during the discussion about blocked advancement and schedule restrictions." },
             { id: "EX-042", relevance: "Allan Glover Teams thread — 'I've been requesting midshift for 2 years' / 'Demoting to a coach?' context surrounding the August–September discussions." },
             { id: "EX-019", relevance: "September 19, 2025 HR ticket summary referencing Greg-retaliation context tied to the recorded Allan conversation." },
             { id: "EX-010", relevance: "Comparator movement showing Tyler Millisock, Hunter, Josh and others received movement Charging Party was told was unavailable." },
           ]}
         />
+
 
         {/* Section II.R - Complaints, Recording, and Hardship Fund */}
         <h3 className="mt-8 font-display text-base tracking-tight">
