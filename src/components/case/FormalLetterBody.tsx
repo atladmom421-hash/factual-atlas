@@ -1427,8 +1427,8 @@ export function FormalLetterBody() {
 
 
 
-        {/* Section IV */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
+        {/* Section V */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">V. Legal Standards</h2>
         <p className="mt-3">
           Respondent's Position Statement applies the wrong legal standards in several respects:
         </p>
@@ -1457,9 +1457,9 @@ export function FormalLetterBody() {
           </li>
         </ul>
 
-        {/* Section IV */}
+        {/* Section VI */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          V. Documents the Division Should Request
+          VI. Documents the Division Should Request
         </h2>
         <p className="mt-3">
           To test the assertions on which the Position Statement relies, Charging Party
