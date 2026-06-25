@@ -432,6 +432,45 @@ export function FormalLetterBody() {
           ]}
         />
 
+        {/* Ticket-Requirement / Version-History rebuttal */}
+        <div className="mt-5 rounded-md border-2 border-foreground/40 bg-foreground/5 p-4">
+          <h4 className="font-display text-base font-semibold tracking-tight">
+            The Waitlist Document Itself Requires a CFS Ticket — Respondent Has Not Produced One
+          </h4>
+          <p className="mt-3">
+            The waitlist document states on its face: <em>"DM must open ticket with CFS to request TL shift change/placement on waitlist."</em> See <Ex id="EX-068" /> and the header of the Current TL Shifts / waitlist file reflected in <Ex id="EX-077" />. This is significant because Respondent relies on scheduling and waitlist explanations, but has not produced the underlying CFS tickets, request records, routing history, approval records, or audit logs supporting (1) my original mid-shift request; (2) the alleged May 2025 offer and alleged decline; (3) my February 2025 removal from the waitlist; (4) my July 17, 2025 re-addition and reset request date; (5) my change from PM/Temporary to PM/Permanent; or (6) the comparator movements Respondent attributes to "the waitlist" or "leadership decisions."
+          </p>
+          <p className="mt-3">
+            The version-history records further show that my waitlist history was not static. The February 25, 2025 version reflects edits by Jen Roy, and my name does not appear in the visible waitlist records from that version. See <Ex id="EX-072" /> and <Ex id="EX-079" />. The earlier January 22, 2025 and February 18, 2025 versions show I was still present on the list. See <Ex id="EX-076" /> and <Ex id="EX-078" />. The March 19, 2025 and July 3, 2025 versions show I remained absent. See <Ex id="EX-080" /> and <Ex id="EX-071" />. The July 16, 2025 and September 22, 2025 versions then list me with a new request date of July 17, 2025, a requested shift of AM, a current shift of PM, and a Permanent designation — none of which reflects my original long-standing mid-shift request. See <Ex id="EX-070" /> and <Ex id="EX-075" />.
+          </p>
+          <p className="mt-3">
+            Taken together, the waitlist document's own ticket requirement and the version-history chain narrow the deletion window to February 18–25, 2025, identify the editors (Jen Roy, Edina Markus, Lily Cano), and confirm that my July 2025 re-entry was a reset, not a continuation of my prior request. Respondent should be required to produce the native SharePoint file, the complete version history, all CFS tickets and routing records, audit logs, editor metadata, and all communications explaining the February 2025 removal, the July 2025 re-addition, the request-date reset, and the Temporary-to-Permanent status change.
+          </p>
+          <p className="mt-3 rounded-md border-l-4 border-foreground/60 bg-background/60 px-3 py-2 font-medium">
+            Respondent cannot rely on a scheduling/waitlist process while refusing to produce the tickets and source records that the waitlist document itself says are required.
+          </p>
+          <div className="mt-3">
+            <InlineExhibits
+              heading="Ticket requirement and version-history chain"
+              items={[
+                { id: "EX-068", relevance: "CAR TL Shift Changes SOW — requires DM to open a CFS ticket for any TL shift change or waitlist placement." },
+                { id: "EX-066", relevance: "Official TL Shift Change Process (Tyler Wilding) — PM is default; DMs/AMs control moves via waitlist; all moves require a CAR Field Support ticket." },
+                { id: "EX-077", relevance: "Nov 21, 2024 HR Current Roster Shifts — authoritative HR record listing Harbin under Allan/Greg, LVAR, PM, Eligible-for-AM = Yes." },
+                { id: "EX-076", relevance: "Jan 22, 2025 waitlist version — Harbin still present." },
+                { id: "EX-078", relevance: "Feb 18, 2025 waitlist version — Harbin still present." },
+                { id: "EX-072", relevance: "Feb 25, 2025 12:01 PM version (Jen Roy edits) — Harbin removed." },
+                { id: "EX-079", relevance: "Feb 25, 2025 10:53 AM version — Harbin already absent, tightening the deletion window." },
+                { id: "EX-080", relevance: "Mar 19, 2025 version — Harbin still absent, well before the alleged May 2025 offer." },
+                { id: "EX-071", relevance: "July 3, 2025 version — Harbin still absent." },
+                { id: "EX-070", relevance: "July 16, 2025 version — Harbin re-added with reset request date of 7/17/2025." },
+                { id: "EX-075", relevance: "Sept 22, 2025 version — Harbin listed with AM requested, PM current, 7/17/2025 request date, Temp/Perm flipped to Permanent." },
+              ]}
+            />
+          </div>
+        </div>
+
+
+
 
 
 
