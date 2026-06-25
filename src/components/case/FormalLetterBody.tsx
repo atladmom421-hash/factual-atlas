@@ -1605,6 +1605,19 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent's legal conclusion depends on accepting its own disputed facts and ignoring the cumulative record. The hostile work environment claim should not be dismissed as ordinary workplace disagreement. The record contains race-based conduct, race-related comments, protected complaints, repeated escalation, management involvement, inconsistent records, and workplace actions that affected my conditions of employment.</p>
         <p className="mt-3">For these reasons, Respondent has not shown that the hostile work environment claim fails as a matter of law. At minimum, the evidence creates factual disputes requiring further investigation.</p>
 
+        <InlineExhibits
+          heading="Hostile work environment evidence (PS § II.C)"
+          items={[
+            { id: "EX-014", relevance: "May 29, 2024 formal complaint reporting racial slur attributed to Rosanna Blackson." },
+            { id: "EX-015", relevance: "May 31, 2024 HR intake call placing the substance of the racial-slur and retaliation complaint on the record." },
+            { id: "EX-016", relevance: "June 5, 2024 HR follow-up moving Charging Party away from Rosanna's reporting line — confirming HR treated the complaint as serious." },
+            { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund 'example' from Allan Glover after Cordi (White) hardship was handled without concern." },
+            { id: "EX-005", relevance: "August 2025 HBCU recruiting and 'blockade' comments during conversation about blocked opportunity." },
+            { id: "EX-006", relevance: "October 2025 Verint monitoring / unequal visibility cumulative-environment evidence." },
+          ]}
+        />
+
+
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
           D. Respondent's "Ancillary Allegations" Argument Is Incorrect
         </h4>
