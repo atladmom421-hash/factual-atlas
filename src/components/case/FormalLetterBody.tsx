@@ -827,6 +827,79 @@ export function FormalLetterBody() {
           while failing to explain the adverse actions that followed protected activity.
         </p>
 
+        {/* Section II.O - May 2025 Shift Opportunity */}
+        <h3 className="mt-8 font-display text-base tracking-tight">
+          O. Response to Respondent's "May 2025 Shift Opportunity" Assertion
+        </h3>
+        <p className="mt-3">
+          Respondent's "May 2025 Shift Opportunity" assertion is disputed. Respondent states
+          that a day-shift opportunity became available to Charging Party in May 2025, that
+          she declined it because of graduate school commitments at the University of Arizona,
+          and that she was removed from the waitlist consistent with standard procedure. That
+          is not what happened.
+        </p>
+        <p className="mt-3">
+          Charging Party did not receive a May 2025 shift offer. She was not offered an AM
+          shift, a mid-shift, or any other shift movement opportunity in May 2025. She did
+          not decline any shift opportunity because of graduate school. She has not been
+          offered any shift since being placed on or associated with the waitlist.
+        </p>
+        <p className="mt-3">
+          Respondent has not produced any documentation supporting the alleged May 2025
+          offer. Respondent has not identified the person who allegedly made the offer, the
+          exact shift offered, the department or role involved, the date and time of the
+          offer, the method of communication, the person who allegedly confirmed her
+          decline, or where her alleged decline was recorded. Respondent also has not
+          produced a Teams message, email, ticket, calendar invite, written confirmation, or
+          any written decline.
+        </p>
+        <p className="mt-3">
+          The timeline also contradicts Respondent's explanation. Respondent states that
+          Charging Party was removed from the waitlist after declining a May 2025
+          opportunity. However, the preserved waitlist evidence shows she had already been
+          removed months earlier. The January 22, 2025 saved waitlist version showed
+          Charging Party on the list, with a June 26, 2024 request date, PM/Temporary
+          status, and Qualifies = Yes. Respondent's records still showed her as
+          PM/Temporary through February 18, 2025. Then, after Jen Roy edited the waitlist
+          multiple times on February 25, 2025, Charging Party's row was removed while
+          junior employees remained on the list and continued to qualify.
+        </p>
+        <p className="mt-3">
+          That chronology matters. If Respondent's position is that Charging Party was
+          removed because she declined a May 2025 offer, Respondent must explain why she
+          was already removed from the waitlist in February 2025. A May 2025 alleged
+          decline cannot explain a February 2025 removal.
+        </p>
+        <p className="mt-3">
+          Respondent's reference to "standard procedure" is also unsupported. The
+          waitlist/SOW records reflect that a DM must open a ticket with CFS to request a
+          TL shift change or placement on the waitlist. If Allan Glover allegedly submitted
+          schedule-change requests on Charging Party's behalf, Respondent should produce
+          those tickets. If a May 2025 shift opportunity was allegedly offered and
+          declined, Respondent should produce the ticket, offer communication, decline
+          documentation, and audit trail showing the offer, the response, and the
+          resulting removal.
+        </p>
+        <p className="mt-3">
+          This section addresses only Respondent's May 2025 offer/decline assertion. The
+          separate July 2025 waitlist screenshot, the limited five-row snippet, the July
+          re-add, the July 17 request date, and the PM/Permanent status issue are addressed
+          separately. However, even without the July evidence, Respondent's May 2025
+          explanation is not supported by the February waitlist records.
+        </p>
+        <p className="mt-3">
+          Respondent's May 2025 assertion therefore raises material factual disputes. If
+          Charging Party was removed because she declined an alleged May 2025 offer, why
+          was she already removed in February 2025? If an offer was made, where is the
+          written offer or ticket? If she declined, where is her written or recorded
+          decline? If removal after a declined offer was standard procedure, where is the
+          policy and the audit trail showing that procedure was followed? For these
+          reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted
+          without production of the underlying records identified in Section IV.
+        </p>
+
+
+
         {/* Section III */}
         <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
         <p className="mt-3">
@@ -992,7 +1065,37 @@ export function FormalLetterBody() {
             cross-department movement, schedule movement, and project assignments for
             similarly situated Unit Managers during the same period.
           </li>
+          <li>
+            The alleged May 2025 shift-offer communication, including the exact shift,
+            department, and role allegedly offered; the name and title of the person who
+            allegedly made the offer; and the date, time, and method of the alleged offer.
+          </li>
+          <li>
+            Any written or recorded statement showing Charging Party declined a May 2025
+            shift opportunity because of University of Arizona graduate school commitments,
+            and the identity of the person who recorded the alleged decline.
+          </li>
+          <li>
+            The waitlist record showing Charging Party's position immediately before the
+            alleged May 2025 offer, and the waitlist record showing her removal together
+            with the reason code or explanation for removal.
+          </li>
+          <li>
+            The full SharePoint version history for the waitlist from January 2025 through
+            May 2025, including the February 25, 2025 edits by Jen Roy.
+          </li>
+          <li>
+            Any ticket connected to the alleged May 2025 opportunity, and any SOW, policy,
+            or procedure requiring removal from the waitlist after declining a shift,
+            together with documentation showing that procedure was followed in Charging
+            Party's case.
+          </li>
+          <li>
+            Documentation explaining why Charging Party was removed from the waitlist in
+            February 2025 if the alleged decline did not occur until May 2025.
+          </li>
         </ol>
+
 
 
 
