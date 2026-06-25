@@ -1729,6 +1729,20 @@ Me: Thanks. Talk to you soon.
 HR, Susan Marcinko: Bye.
 Me: Bye.`,
   },
+  {
+    id: "EX-064",
+    exhibitNumber: "EX-064",
+    fileName: "July 10, 2025 — Contemporaneous Text Messages to Amber (post-Allan meeting)",
+    date: "July 10, 2025",
+    category: "Contemporaneous communication",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Same-day iMessage thread with coworker Amber sent at 2:15 PM on July 10, 2025 — immediately after Harbin's meeting with Allan Glover regarding the hardship fund. Verbatim text: \"Girlll / Did you mention something about the hardship fund? I just met with Allan and I felt like he was insinuating that I was only helping Black people. I offered the same thing to anyone and everyone. / The meeting just felt very weird. He was like that's a problem. / I was like what are you trying to say who did what I'm confused and he didn't clarify.\" Amber replies: \"No u told me u would look into it. I was just waiting on u.\" At 4:21 PM Harbin follows up: \"Lol girl. I had to ask him what he was saying. He was like I was just speaking in general, but you're misinterpreting what I said. I was like OK but I don't know it was just weird. It seemed like he had a major attitude.\" Relevance: (1) contemporaneous corroboration — sent the same day as the meeting, eliminating reconstruction or hindsight-bias arguments; (2) directly corroborates the hostile work environment / race element by showing Harbin perceived Allan's hardship-fund comments as racially targeted (\"only helping Black people\") in real time; (3) corroborates the \"What are you trying to get to / say?\" deflection pattern attributed to Allan, and Allan's \"that's a problem\" remark; (4) pairs with the Teams chat follow-up where Allan replied \"I did not think that / I weas just providing an example of what could happen\"; (5) the second message confirms Allan refused to clarify when directly asked, consistent with the pattern shown in the September 19, 2025 Training Bay transcript.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-064-text-amber-jul10.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
