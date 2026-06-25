@@ -1781,7 +1781,7 @@ export function FormalLetterBody() {
 
         {/* Section IV */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          IV. Documents the Division Should Request
+          V. Documents the Division Should Request
         </h2>
         <p className="mt-3">
           To test the assertions on which the Position Statement relies, Charging Party
