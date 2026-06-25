@@ -1971,23 +1971,8 @@ export function FormalLetterBody() {
 
 
 
-        {/* Section V */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">VI. Conclusion</h2>
-        <p className="mt-3">
-          Respondent's Position Statement does not rebut the Charge; it reframes it. It treats
-          the absence of records Respondent controls as a failure of proof, it describes as
-          "neutral" a process its own HR has admitted was driven by leadership discretion, and it
-          omits the 2024 evaluation that is the principal performance action at issue.
-          Charging Party has identified comparators by name, tied each material event to a
-          specific exhibit, and described adverse actions that meet the{" "}
-          <em>Burlington Northern</em> standard.
-        </p>
-        <p className="mt-3">
-          For the reasons set forth above, Charging Party respectfully requests that the Arizona
-          Civil Rights Division and the EEOC decline to issue a no-cause determination, direct
-          Respondent to produce the records identified in Section V, and proceed with a full
-          investigation on the merits.
-        </p>
+
+
 
         <p className="mt-8">Respectfully submitted,</p>
         <div className="mt-8">
