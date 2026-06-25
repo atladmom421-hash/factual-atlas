@@ -16,12 +16,16 @@ const CITED_EXHIBITS = [
   "EX-007",
   "EX-008",
   "EX-010",
+  "EX-011",
+  "EX-012",
+  "EX-013",
   "EX-014",
   "EX-015",
   "EX-016",
   "EX-017",
   "EX-018",
   "EX-019",
+  "EX-020",
   "EX-040",
   "EX-041",
   "EX-042",
@@ -38,6 +42,7 @@ const CITED_EXHIBITS = [
   "EX-055",
   "EX-056",
   "EX-057",
+  "EX-058",
   "EX-HR-CALL",
   "EX-ALLAN-OCT24",
 ];
@@ -79,11 +84,11 @@ function InlineExhibits({
 
   return (
     <aside
-      className="my-6 break-inside-avoid rounded-md border border-border bg-secondary/30 p-4 print:my-4 print:border print:border-black/40 print:bg-white"
+      className="no-print my-6 break-inside-avoid rounded-md border border-border bg-secondary/30 p-4 print:hidden"
       aria-label={heading}
     >
       <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-foreground/70">
-        {heading}
+        {heading} <span className="font-normal normal-case tracking-normal text-foreground/55">— full exhibits attached in PDF appendix</span>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {resolved.map(({ it, ex }) => {

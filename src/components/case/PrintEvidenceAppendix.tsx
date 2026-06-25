@@ -42,7 +42,7 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
             )}
             {ex.fileKind === "transcript" && ex.transcriptText && (
               <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: 0 }}>
-                {ex.transcriptText.slice(0, 4000)}{ex.transcriptText.length > 4000 ? "\n…(truncated)" : ""}
+                {ex.transcriptText}
               </pre>
             )}
           </article>
