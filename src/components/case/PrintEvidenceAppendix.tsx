@@ -35,7 +35,8 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
               {ex.summary && (
                 <p style={{ fontSize: 12, color: "#222", margin: "0 0 8px", lineHeight: 1.4 }}>{ex.summary}</p>
               )}
-              {ex.fileKind === "image" && ex.filePath && (
+              {/* Always reproduce raw image content when an image path exists */}
+              {ex.filePath && /\.(png|jpe?g|webp|gif)$/i.test(ex.filePath) && (
                 <div>
                   <img src={ex.filePath} alt={ex.fileName} style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd" }} />
                   {ex.extraImagePaths?.map((p, i) => (
@@ -43,16 +44,19 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
                   ))}
                 </div>
               )}
-              {ex.fileKind !== "image" && ex.fileKind !== "transcript" && ex.filePath && (
+              {/* Always reproduce raw transcript text when present */}
+              {ex.transcriptText && (
+                <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: "8px 0 0" }}>
+                  {ex.transcriptText}
+                </pre>
+              )}
+              {/* Fallback file reference only when neither image nor transcript is available */}
+              {ex.filePath && !/\.(png|jpe?g|webp|gif)$/i.test(ex.filePath) && !ex.transcriptText && (
                 <div style={{ fontSize: 11, color: "#555", fontFamily: "monospace" }}>
                   File: {ex.filePath}
                 </div>
               )}
-              {ex.fileKind === "transcript" && ex.transcriptText && (
-                <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: 0 }}>
-                  {ex.transcriptText}
-                </pre>
-              )}
+
             </div>
           </article>
         ))}
