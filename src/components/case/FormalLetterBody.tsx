@@ -712,70 +712,34 @@ export function FormalLetterBody() {
           O. Response to Respondent's "May 2025 Shift Opportunity" Assertion
         </h3>
         <p className="mt-3">
-          Respondent's "May 2025 Shift Opportunity" assertion is disputed. Respondent states
-          that a day-shift opportunity became available to Charging Party in May 2025, that
-          she declined it because of graduate school commitments at the University of Arizona,
-          and that she was removed from the waitlist consistent with standard procedure. That
-          is not what happened.
+          Respondent's "May 2025 Shift Opportunity" assertion is disputed. Respondent states that a day-shift opportunity became available to me in May 2025, that I declined it because of graduate school commitments at the University of Arizona, and that I was removed from the waitlist consistent with standard procedure. That is not what happened.
         </p>
         <p className="mt-3">
-          Charging Party did not receive a May 2025 shift offer. She was not offered an AM
-          shift, a mid-shift, or any other shift movement opportunity in May 2025. She did
-          not decline any shift opportunity because of graduate school. She has not been
-          offered any shift since being placed on or associated with the waitlist.
+          I did not receive a May 2025 shift offer. I was not offered an AM shift, a mid-shift, or any other shift movement opportunity in May 2025. I did not decline any shift opportunity because of graduate school. I have not been offered any shift since being placed on or associated with the waitlist.
         </p>
         <p className="mt-3">
-          Respondent has not produced any documentation supporting the alleged May 2025
-          offer. Respondent has not identified the person who allegedly made the offer, the
-          exact shift offered, the department or role involved, the date and time of the
-          offer, the method of communication, the person who allegedly confirmed her
-          decline, or where her alleged decline was recorded. Respondent also has not
-          produced a Teams message, email, ticket, calendar invite, written confirmation, or
-          any written decline.
+          Respondent has not produced any documentation supporting the alleged May 2025 offer. Respondent has not identified the person who allegedly made the offer, the exact shift offered, the department or role involved, the date and time of the offer, the method of communication, the person who allegedly confirmed my decline, or where my alleged decline was recorded. Respondent also has not produced a Teams message, email, ticket, calendar invite, written confirmation, or any written decline.
         </p>
         <p className="mt-3">
-          The timeline also contradicts Respondent's explanation. Respondent states that
-          Charging Party was removed from the waitlist after declining a May 2025
-          opportunity. However, the preserved waitlist evidence shows she had already been
-          removed months earlier. The January 22, 2025 saved waitlist version showed
-          Charging Party on the list, with a June 26, 2024 request date, PM/Temporary
-          status, and Qualifies = Yes. Respondent's records still showed her as
-          PM/Temporary through February 18, 2025. Then, after Jen Roy edited the waitlist
-          multiple times on February 25, 2025, Charging Party's row was removed while
-          junior employees remained on the list and continued to qualify.
+          The timeline also contradicts Respondent's explanation. Respondent states that I was removed from the waitlist after declining a May 2025 opportunity. However, the preserved waitlist evidence shows I had already been removed months earlier. The January 22, 2025 saved waitlist version showed me on the list, with a June 26, 2024 request date, PM/Temporary status, and Qualifies = Yes. Respondent's records still showed me as PM/Temporary through February 18, 2025. Then, after Jen Roy edited the waitlist multiple times on February 25, 2025, my row was removed while junior employees remained on the list and continued to qualify.
         </p>
         <p className="mt-3">
-          That chronology matters. If Respondent's position is that Charging Party was
-          removed because she declined a May 2025 offer, Respondent must explain why she
-          was already removed from the waitlist in February 2025. A May 2025 alleged
-          decline cannot explain a February 2025 removal.
+          That chronology matters. If Respondent's position is that I was removed because I declined a May 2025 offer, Respondent must explain why I was already removed from the waitlist in February 2025. A May 2025 alleged decline cannot explain a February 2025 removal.
         </p>
         <p className="mt-3">
-          Respondent's reference to "standard procedure" is also unsupported. The
-          waitlist/SOW records reflect that a DM must open a ticket with CFS to request a
-          TL shift change or placement on the waitlist. If Allan Glover allegedly submitted
-          schedule-change requests on Charging Party's behalf, Respondent should produce
-          those tickets. If a May 2025 shift opportunity was allegedly offered and
-          declined, Respondent should produce the ticket, offer communication, decline
-          documentation, and audit trail showing the offer, the response, and the
-          resulting removal.
+          Respondent's reference to "standard procedure" is also unsupported. The waitlist/SOW records reflect that a DM must open a ticket with CFS to request a TL shift change or placement on the waitlist. If Allan Glover allegedly submitted schedule-change requests on my behalf, Respondent should produce those tickets. If a May 2025 shift opportunity was allegedly offered and declined, Respondent should produce the ticket, offer communication, decline documentation, and audit trail showing the offer, the response, and the resulting removal.
         </p>
         <p className="mt-3">
-          This section addresses only Respondent's May 2025 offer/decline assertion. The
-          separate July 2025 waitlist screenshot, the limited five-row snippet, the July
-          re-add, the July 17 request date, and the PM/Permanent status issue are addressed
-          separately. However, even without the July evidence, Respondent's May 2025
-          explanation is not supported by the February waitlist records.
+          This section addresses only Respondent's May 2025 offer/decline assertion. The separate July 2025 waitlist screenshot, the limited five-row snippet, the July re-add, the July 17 request date, and the PM/Permanent status issue will be addressed separately. However, even without the July evidence, Respondent's May 2025 explanation is not supported by the February waitlist records.
         </p>
         <p className="mt-3">
-          Respondent's May 2025 assertion therefore raises material factual disputes. If
-          Charging Party was removed because she declined an alleged May 2025 offer, why
-          was she already removed in February 2025? If an offer was made, where is the
-          written offer or ticket? If she declined, where is her written or recorded
-          decline? If removal after a declined offer was standard procedure, where is the
-          policy and the audit trail showing that procedure was followed? For these
-          reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted
-          without production of the underlying records identified in Section V.
+          Respondent's May 2025 assertion therefore raises material factual disputes. If I was removed because I declined an alleged May 2025 offer, why was I already removed in February 2025? If an offer was made, where is the written offer or ticket? If I declined, where is my written or recorded decline? If removal after a declined offer was standard procedure, where is the policy and the audit trail showing that procedure was followed?
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted without production of the underlying records.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce: (1) the alleged May 2025 offer communication; (2) the exact shift, department, and role allegedly offered; (3) the name and title of the person who allegedly made the offer; (4) the date, time, and method of the alleged offer; (5) any written or recorded statement showing I declined because of University of Arizona graduate school commitments; (6) the waitlist record showing my position immediately before the alleged offer; (7) the waitlist record showing my removal and the reason code or explanation for removal; (8) the full SharePoint version history for the waitlist from January 2025 through May 2025; (9) the July 2024 ticket Allan allegedly submitted; (10) any ticket connected to the alleged May 2025 opportunity; (11) any SOW, policy, or procedure requiring removal after declining a shift; and (12) documentation explaining why I was removed in February 2025 if the alleged decline occurred in May 2025.
         </p>
 
         <InlineExhibits
