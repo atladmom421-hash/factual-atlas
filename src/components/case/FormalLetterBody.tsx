@@ -2564,6 +2564,43 @@ export function FormalLetterBody() {
             request, access deactivation, and related communications, including
             system timestamps, status changes, approvers, and notifications.
           </li>
+          <li>
+            Microsoft Teams retention logs, deletion logs, audit history, and
+            preservation/legal-hold records for the Allan Glover / Amber chat.
+          </li>
+          <li>
+            Verint access logs, live-monitoring records, screen-recording logs,
+            permission-change history, product-owner communications, BT escalation
+            records, and vendor communications relating to Charging Party.
+          </li>
+          <li>
+            Records showing which Team Leaders were visible or active in Verint
+            before and after Charging Party's October 2025 complaint.
+          </li>
+          <li>
+            Leave-processing records relating to Charging Party's October 2025
+            intermittent FMLA request, STD misclassification, the wrong paperwork
+            sent, and the system-access deactivation, including all related
+            communications.
+          </li>
+          <li>
+            Hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
+            own hardship request, together with documentation showing what each
+            hardship applicant was required to submit.
+          </li>
+          <li>
+            The November 13, 2025 "SH Hardship" calendar invite, attendee list,
+            notes, and all related communications.
+          </li>
+          <li>
+            The November 17, 2025 Cameron Hadley conversation recording or
+            transcript and related notes.
+          </li>
+          <li>
+            All communications involving Allan Glover, Susan Marchinko, Greg
+            Carfagna, Cameron Hadley, Lindsay Beck, and Employee Relations
+            regarding hardship assistance.
+          </li>
         </ol>
 
 
