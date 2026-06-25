@@ -1573,6 +1573,84 @@ Me: Yes. Anything that would, you know, finally just make the work day less host
     reliability: "confirmed-transcript",
     filePath: "",
     fileKind: "transcript",
+    transcriptText: `June 5, 2024 HR Follow-Up Transcript
+Participants: Shawnna Harbin and HR, Susan Marcinko
+Topic: Interim move away from Rosanna during investigation
+
+Opening / Technical Issues
+
+HR, Susan Marcinko: Have a seat here. Up. Hi there. For some reason, my mic's not working.
+Me: Yeah, I can't hear you.
+HR, Susan Marcinko: How do you say? It just shows you a mute. Let me... Settings. I made a sound. There. There we go. Okay. Hello.
+Me: Hi.
+
+HR explains purpose of call
+
+HR, Susan Marcinko: All right. This won't take long. I just wanted to catch you. I'm trying to work out a potential move for you so that, you know, you don't have to have one-on-one interaction with Rosanna while we're working on your investigation. Okay?
+Me: Sure.
+HR, Susan Marcinko: I had some conversation with Greg Kfanya earlier today, and you know, your department makes moves officially on the first of the month.
+Me: Right.
+HR, Susan Marcinko: So he can definitely have you officially moved by 7/1. However, I asked him, you know, since you had spoken favorably about, you know, working under Allen's organization, if it would be possible, one, to move you to that organization effective with July 1st. And he said, yeah, that wouldn't be a problem. But in the interim, because what I wanted to do is try and make it so that, you know, you don't have to have one-on-one interactions, you know, you, you're, you know, clearly very upset about this. And, you know, I just want to make sure that, you know, I'm trying to make this as easy as possible for you while we're, you know, taking our time to do a thorough investigation.
+Me: Right.
+
+Interim reporting arrangement through Allan
+
+HR, Susan Marcinko: So we can, according to Greg, he can set it up so that, you know, you'll still have to attend any team meetings for the rest of June that are already planned, where your team joins the rest of Rosanna's teams. I don't know what that looks like. There might be situations. There might not be. I have no idea. But, you know, if you need one-on-one direction from a manager, what I'd like to do is set it up so if you can go to Alan in the interim. Okay. Would that be, you know, helpful for you?
+Me: Yes, I do have, so we have like, um, we have a group manager meeting every morning with Rosanna. And sometimes it'll just be like me, myself, and maybe like one other manager in the department and we meet with her and, you know, might play a game or, you know, we just talk about our day and things like that. And I would, to me, that's one of like almost a one-on-one type of interaction where it's just very very uncomfortable for myself. And, you know, I don't want to not go to them because I don't want to, you know, look like I'm not really participating or, you know, being proactive about, you know, my day. But would that be something that I would still need to attend? Or, no.
+
+Morning meetings with Rosanna
+
+HR, Susan Marcinko: So is it a forum where you're bringing up anything that's planned for the day, any issues or concerns that Rosanna would need to know about in order to with the team? Or is this just sort of a touch base in the morning?
+Me: Yeah, just a morning touch base. And it's really supposed to be non-work related. So more like, you know, like personal banter.
+HR, Susan Marcinko: Right.
+Me: Yeah, it could be just me sometimes. It depends on, you know, if the other TLs have availability or, you know, whatever it may be. But because I come in almost right when it begins. So within like the first 15 minutes, usually I always have availability because I'm just getting in. So it could be me and her one-on-one. It could be, you know, someone else in the department as well.
+HR, Susan Marcinko: All right. And those are every single morning?
+Me: Right. Mm-hmm.
+HR, Susan Marcinko: All right. Um. I'm going to say, I will leave it up to you, okay, with what you feel comfortable doing as far as that morning meeting. Okay. You know, there may be information that's being shared. I don't know, and I don't want you to, you know, miss that if that's something that you want to attend. I'm also trying to make this as, you know, seamless as possible, you know, for you so that it's, you know, you don't have to be on a call with her one-on-one.
+Me: Right.
+HR, Susan Marcinko: So, you know, perhaps if you are in a one-on-one situation on that call and you want to log off, you know, I would say, you know, that's fine. If you think you could be on the call with your peers and, you know, there's something valuable to learn or share, then I'll leave that up to you on whether you want to attend that or not.
+Me: Sure.
+
+Official move to Allan's team
+
+HR, Susan Marcinko: But as far as moving permanently, well, I can't say permanently because we constantly reorder. But with the next monthly moves, moving to Alan's team, is that going to be something that you think is appealing to you that you can, you know, be successful at?
+Me: Yes.
+HR, Susan Marcinko: Okay. All right. I am going to send you a follow-up email just to kind of recap that, and I just need you to respond back so that I have it in writing, essentially that you acknowledge that you're going to go to a new team. I just want it to be clear so that, you know, if there's any question later, that you have that in writing from me.
+Me: Sure.
+HR, Susan Marcinko: We were making that offer for you.
+
+Interim issues before July move
+
+HR, Susan Marcinko: Is there anything else that you can think of in the interim that you might have to deal with in June that I need to know about right now?
+Me: Not that I can think of right now. The only other question that I have would be, is if, and you may or may not know this, I'm not sure, but if my team would go with me to Alex, or would I just be restarting with a new group of folks?
+HR, Susan Marcinko: I know, I believe you're going to carry your team with you. I think that's the least disruptive from what Greg said.
+Me: Right. Okay, great.
+HR, Susan Marcinko: I know, I'm not in the weeds, so I don't know all the, like how moves happen in your org, but he said it would be, you know, the least disruptive if we can have your team stay with you.
+Me: Okay.
+HR, Susan Marcinko: And, you know, the move impacts others as well. So that's why they tend to make these moves just on the first of the month.
+Me: Right. Okay.
+
+Confidentiality / limited sharing
+
+HR, Susan Marcinko: All righty. I don't know how soon we can get all this communicated because, you know, I'm trying to maintain confidentiality as well on, you know, who needs information in order to be able to, you know, do jobs.
+Me: Right. Right.
+HR, Susan Marcinko: So, you know, obviously, you had copied, um, Greg on your email, so he was aware of the concerns. But I don't see any reason for why Alan would have to be involved in, you know, getting that information. So that's still private for you.
+Me: Okay.
+
+Closing / HR confirms investigation is ongoing
+
+HR, Susan Marcinko: Okay. That was all I needed. I just wanted to see. I'll send you a real quick follow-up and then I'll let Greg know so that he can try and put some of that stuff in the works. If you, you know, bear with me while we try and get this finalized, you might have some sort of interaction with Rosanna in the interim, but it should be professional and it should be about business. Yep. Right?
+Me: Yeah, definitely.
+HR, Susan Marcinko: Okay. If anything else pops out, let me know. And I'm still working on, you know, your case. So I have some interviews planned, but hopefully I'll be able to follow up with you. Okay.
+Me: All right, great.
+HR, Susan Marcinko: All, any questions before we go?
+Me: Nope. Nothing as of right now. If I think of anything, I'll, you know, shoot you an email or something.
+HR, Susan Marcinko: Yeah, sure. Email me or we can, you know, try and find time. My calendar is a little crazy this week. I've got a lot of training and I have some medical appointments for myself. So, but email is probably the fastest way of getting a hold of me. But let me know if anything else happens, okay?
+Me: Okay, great.
+HR, Susan Marcinko: All right. Well, thank you. I appreciate it.
+Me: Thanks. Talk to you soon.
+HR, Susan Marcinko: Bye.
+Me: Bye.`,
   },
 ];
 
