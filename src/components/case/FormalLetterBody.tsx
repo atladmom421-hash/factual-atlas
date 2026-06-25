@@ -1530,9 +1530,22 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent's legal argument depends on accepting its version of disputed facts. That is not appropriate at this stage. The record contains multiple facts supporting an inference of discrimination: similarly situated employees receiving movement while I remained stuck; inconsistent waitlist records; a missing ticket; a false May 2025 offer/decline explanation; a 2024 downgrade after protected activity; exclusion from the TL Plus / Department Manager pipeline; nearly 50 unsuccessful internal applications despite strong performance; project exclusion and lack of credit; different hardship-fund treatment for a White employee and a Black employee; same-day documentation of Allan's race-related hardship example; and HBCU/blockade comments tied to opportunity and advancement.</p>
         <p className="mt-3">For these reasons, Respondent has not shown that the Charge fails as a matter of law. At minimum, the evidence creates material factual disputes requiring further investigation and production of the underlying records.</p>
 
+        <InlineExhibits
+          heading="Race-discrimination evidence (PS § II.A)"
+          items={[
+            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Tyler Millisock (same start date, same level, outside protected class, moved from LVAR PM/closing to PRE-D/DBC) and additional comparators receiving movement Charging Party was denied." },
+            { id: "EX-051", relevance: "2024 compensation statement — Solid downgrade after protected activity with 124.36% bonus payout, 96.49% IPF, 128.90% CPF." },
+            { id: "EX-053", relevance: "2024 year-end review showing every sub-goal and Discover Behavior rated Solid or Strong despite overall Solid downgrade." },
+            { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments — Cordi (White) hardship handled without documentation; Dide (Black) request triggered race-coded 'example.'" },
+            { id: "EX-005", relevance: "August 2025 HBCU-recruiting and 'blockade' comments during conversation about blocked opportunity." },
+            { id: "EX-014", relevance: "May 29, 2024 formal complaint reporting racial slur attributed to Rosanna Blackson and the underlying race-discrimination concerns." },
+          ]}
+        />
+
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
           B. Respondent Has Not Rebutted Retaliation
         </h4>
+
         <p className="mt-3">Respondent does not dispute that I engaged in protected activity. I filed an EEOC charge in May 2024 and made multiple internal complaints regarding race discrimination, retaliation, schedule equity, project exclusion, and related workplace concerns. Respondent's position is that no materially adverse action occurred and that there is no causation. The record does not support that argument.</p>
         <p className="mt-3">Respondent's argument depends on an artificially narrow view of retaliation. A retaliation claim does not require termination, demotion, or loss of pay. Under <em>Burlington Northern &amp; Santa Fe Railway Co. v. White</em>, a materially adverse action in the retaliation context is one that could dissuade a reasonable worker from making or supporting a charge of discrimination. The facts here meet that standard.</p>
         <p className="mt-3">After protected activity, I was kept on PM/closing despite repeated requests to return to mid-shift or move to an earlier schedule. I was not properly placed on the MID-shift waitlist. I was later removed from the waitlist. Respondent then relied on an alleged May 2025 shift offer and decline that I dispute and that Respondent has not documented. My request date was later reset, my status changed from PM/Temporary to PM/Permanent, and no clear ticket or approval record has been produced. These are not minor disagreements with routine scheduling. These are disputed schedule, waitlist, and record-integrity events affecting my working conditions, family obligations, childcare, advancement access, and ability to remain in the role.</p>
