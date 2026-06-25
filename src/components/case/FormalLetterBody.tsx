@@ -101,13 +101,13 @@ function InlineExhibits({
               className="break-inside-avoid rounded border-2 border-foreground/30 bg-card p-3 print:border-black/60"
               style={{ pageBreakInside: "avoid" }}
             >
-              <div className="mb-2 flex items-baseline justify-between gap-2 border-b-2 border-foreground/40 pb-1 print:border-black/70">
-                <span className="font-mono text-[15px] font-extrabold uppercase tracking-wider text-foreground">
-                  EXHIBIT {ex.exhibitNumber}
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.12em] text-foreground/60">
-                  {ex.date}
-                </span>
+              <div className="mb-2 border-b-2 border-foreground/40 pb-2 print:border-black/70">
+                <div className="font-mono text-[15px] font-extrabold uppercase leading-tight tracking-wider text-foreground">
+                  EXHIBIT {ex.exhibitNumber} — {label}
+                </div>
+                <div className="mt-0.5 text-[10px] uppercase tracking-[0.12em] text-foreground/60">
+                  {ex.date}{ex.category ? ` · ${ex.category}` : ""}
+                </div>
               </div>
               {showImage ? (
                 <img
