@@ -1280,6 +1280,24 @@ export function FormalLetterBody() {
           ]}
         />
 
+        <h4 className="font-semibold mt-6 mb-2">
+          Team Ratios Workbook — October Version Activity and MID Formula Discrepancies
+        </h4>
+        <p>
+          The Team Ratios workbook raises additional record-integrity concerns. The October 2024 version history reflects modification activity associated with Rosanna Blackson and other users in the same workbook where MID staffing and ratio fields appear to have been changed, reduced, zeroed out, or affected by formula errors. I am not asserting, based on the visible version-history screenshot alone, that Rosanna personally changed a specific formula cell. However, her appearance in the October version history is relevant and should be investigated through the native file and audit history.
+        </p>
+        <p className="mt-3">
+          The workbook shows a discrepancy between the summary/ratio fields and the detailed roster/planning data. In certain versions, MID appears as zero or produces formula errors such as <strong>"#DIV/0!"</strong> in staffing ratio sections. At the same time, the detailed monthly planning sections continue to show MID agents and MID schedules assigned under other Team Leaders, including later-month planning involving Marissa Mascarenas's team. This indicates that mid-shift work continued to exist even while the summary/ratio fields reflected MID differently.
+        </p>
+        <p className="mt-3">
+          This is significant because Respondent relies on staffing, schedule availability, and waitlist explanations to justify why I remained on PM/closing while other Team Leaders and agents continued to receive or work MID, AM, Training Bay, and earlier-shift placements. Respondent should be required to produce the native Team Ratios workbook, complete version history, cell-level edit history, formula history, SharePoint audit logs, author/editor metadata, and communications explaining who changed the MID ratio/formula fields, why those changes were made, and whether those changes affected my mid-shift availability, waitlist position, schedule eligibility, or the stated business reasons for denying my schedule movement.
+        </p>
+        <p className="mt-3 text-sm italic">
+          To attribute any specific formula-cell change to any specific individual, the following native records are required: (i) Excel "Show Changes" detail for the specific cell or range; (ii) SharePoint / Microsoft 365 audit-log entries showing cell or range modifications; (iii) the native workbook with full version-compare history; (iv) the workbook's formula history; and (v) author/editor metadata for the exact cell or range. Until those records are produced, I state only that Rosanna Blackson appears in the October version history of the workbook and that the file shows MID formula/ratio discrepancies during the same period — not that any particular person edited any particular formula cell.
+        </p>
+
+
+
 
         <InlineExhibits
           heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
