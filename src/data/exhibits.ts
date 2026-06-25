@@ -1743,6 +1743,48 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-064-text-amber-jul10.png",
     fileKind: "image",
   },
+  {
+    id: "EX-065",
+    exhibitNumber: "EX-065",
+    fileName: "Teams Chat with Rosanna Blackson — \"Never Added to the Waitlist\"",
+    date: "2025 (Teams screenshot, 8:04 AM / 10:11 AM timestamps)",
+    category: "Contemporaneous communication",
+    peopleIds: ["harbin", "rosanna"],
+    summary:
+      "Teams chat with Rosanna Blackson (then-manager). (1) 8:04 AM — Rosanna writes: \"Good morning! In Greg's meeting and reviewing TL completion for Monthends and Compliance Trainings. I thought you had completed these.\" with an embedded LearningHub screenshot showing \"14 INCOMPLETE\" against an 11-required / 3-recommended baseline. (2) 10:11 AM — Harbin replies: \"Yes, I can completed all of the ones that are due around 7 trainings. The remaining trainings were not due until October. Did you want me to do all of those as well?\" (3) Harbin then writes: \"I need to call out today, I'll but using my personal holiday but I did want to let you know I reached out to Ryan and field support about my schedule time change. Going from p.m. to mid shift. They said that I was never added to the waitlist.\" Relevance: (1) contemporaneous, in-writing statement from Discover field support — relayed by Harbin to her manager the same day — that Harbin was never added to the mid-shift waitlist, directly contradicting Respondent's position that Harbin was on the waitlist, was offered a slot, and declined; (2) supports the February 2025 waitlist removal and July 2025 reset-date evidence; (3) documents same-day stress impact (use of personal holiday to call out) tied to the schedule/waitlist dispute, supporting damages; (4) shows Harbin escalated through proper channels (Ryan / field support).",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-065-rosanna-waitlist.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-066",
+    exhibitNumber: "EX-066",
+    fileName: "Official Discover \"TL Shift Change Process\" (Tyler Wilding)",
+    date: "Internal Discover policy document",
+    category: "Employer policy document",
+    peopleIds: ["harbin"],
+    summary:
+      "Official Discover internal policy document titled \"TL Shift Change Process\" authored by Tyler Wilding. Key verbatim policy text under \"TL Shift Change Request — Did you know?\": (1) \"All TLs start in a permanent PM shift, unless a business need requires starting them in a temporary shift.\" (2) \"DMs and AMs can make temporary moves, permanent moves, or put the TL on a waitlist.\" (3) \"Once a TL discusses the desired [shift] with their DM/AM, the DM/AM will open a ticket within the Car Field Support Request Form.\" (4) Bold red callout: \"ALL MOVES REQUIRE A CAR FIELD SUPPORT TICKET TO BE SUBMITTED.\" The document also shows the CAR Field Support Request Form ticket-type dropdown including \"Team Leader Shift/Status Change.\" Relevance: (1) anchors that PM is the default permanent assignment — Harbin's PM schedule is the policy baseline, not a punishment or unfilled accommodation; (2) DMs and AMs (not a centralized neutral HR process) control all movement decisions, corroborating Allan Glover's September 19, 2025 admission that the decisionmakers were \"myself, Amber, Trevor, Dan\" (EX-059); (3) \"ALL MOVES REQUIRE A CAR FIELD SUPPORT TICKET\" — Respondent must produce a ticket for (a) the alleged May 2025 day-shift offer, (b) the February 2025 waitlist removal, and (c) every comparator move cited in EX-022 / EX-010; absence of a ticket = no policy-compliant offer or move occurred; (4) supports the Section III.E.1 \"Key Contradiction\" rebuttal of the November 6, 2025 HR call.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-066-tl-shift-change-process.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-067",
+    exhibitNumber: "EX-067",
+    fileName: "Teams Chat with Allan Glover — LVAR Recognition Document Credit Removal",
+    date: "Teams chat (8:29 AM timestamp; Allan \"Out of office\" status)",
+    category: "Contemporaneous communication",
+    peopleIds: ["harbin", "allan", "rosanna"],
+    summary:
+      "Teams chat between Harbin and Allan Glover regarding the removal of Harbin's name and credit from an LVAR Recognition document she created. Verbatim exchange — Harbin: \"I hope you're doing well. I noticed that Rosanna removed my name and credit from the LVAR Recognition document that I created. This is concerning to me, as I worked hard on it, and it's important that contributions are properly acknowledged. Could we possibly follow up on this issue? I'd appreciate your help in addressing it.\" Allan replies in four separate messages: \"Ugh...I'm sorry and yes let's discuss.\" / \"I'm very sorry!!\" / \"The point of placing your name on their is to acknowledge intellectual property and providing credit\" / \"I'm really sorry.\" Harbin responds: \"Yes, I'm just really frustrated by this situation. It's really important that my work is recognized as it has not been in the past. Thanks for understanding though.\" Allan replies: \"Of course I understand and again, I'm very sorry\" (Harbin reacts with a heart). Relevance: (1) concrete, documented instance of project-credit erasure by Rosanna Blackson — the same manager named in the May 29, 2024 racial slur complaint (EX-061); Allan's admission that the purpose of the name is to \"acknowledge intellectual property and providing credit\" confirms the removal stripped Harbin of formal recognition; (2) Allan's repeated apologies function as an admission by a management decisionmaker that the removal was improper; (3) Harbin's contemporaneous statement that her work \"has not been [recognized] in the past\" establishes pattern, not isolated incident; (4) directly rebuts Respondent's \"no materially adverse action\" position by documenting a tangible adverse action (loss of recognition / IP credit); (5) supports Section III.B (retaliation) and III.C (hostile work environment) as cumulative-conduct evidence involving Rosanna.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-067-allan-lvar-credit.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
