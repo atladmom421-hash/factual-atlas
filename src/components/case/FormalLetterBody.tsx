@@ -1851,11 +1851,11 @@ export function FormalLetterBody() {
           <li>
             <strong>Comparator movement and schedule-change records.</strong> Records showing
             schedule movement, department movement, AM/midshift placement, Training Bay
-            movement, and flexibility for Tyler Millisock, Hunter Samuel, Cody Christensen,
-            Whitnee Kollar, Marissa Mascarenas, Jarin Bell, Julie Cahoon, and Karena Lesure
-            from May 2024 through 2026; the Karena Lesure assignment-change approval and all
-            related communications among Steve Seevers, Julie Cahoon, Amber Laye, and Michelle
-            Swindell; and the April 28, 2026 movement worksheets with edit/authorship metadata.
+            movement, and flexibility for Team Leader comparators Tyler Millisock, Hunter Samuel,
+            Cody Christensen, Whitnee Kollar, Marissa Mascarenas, Leslie McGregor, Jarin Bell,
+            Brittnee Walker, Dylan Bryant, and Josh Faulkner from May 2024 through 2026, with
+            actual shift hours, days off, department, and Temp/Perm designation for each
+            placement; and the April 28, 2026 movement worksheets with edit/authorship metadata.
           </li>
           <li>
             <strong>Temporary vs. permanent status records and approvals.</strong>{" "}
