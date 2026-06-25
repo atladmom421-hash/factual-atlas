@@ -1750,7 +1750,7 @@ export function FormalLetterBody() {
         </p>
 
         {/* Section III */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
+        <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
         <p className="mt-3">
           Respondent's Position Statement applies the wrong legal standards in several respects:
         </p>
