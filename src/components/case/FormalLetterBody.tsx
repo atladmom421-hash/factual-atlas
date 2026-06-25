@@ -7,9 +7,22 @@ import { exhibitById } from "@/data";
 
 // Exhibits cited in this letter — bundled into the print appendix.
 const CITED_EXHIBITS = [
+  "EX-001",
+  "EX-002",
+  "EX-003",
+  "EX-004",
+  "EX-005",
+  "EX-006",
+  "EX-007",
   "EX-008",
   "EX-010",
-  "EX-HR-CALL",
+  "EX-014",
+  "EX-015",
+  "EX-016",
+  "EX-017",
+  "EX-018",
+  "EX-019",
+  "EX-040",
   "EX-041",
   "EX-042",
   "EX-043",
@@ -17,13 +30,6 @@ const CITED_EXHIBITS = [
   "EX-045",
   "EX-046",
   "EX-048",
-  "EX-040",
-  "EX-002",
-  "EX-003",
-  "EX-004",
-  "EX-005",
-  "EX-006",
-  "EX-019",
   "EX-049",
   "EX-050",
   "EX-051",
@@ -32,6 +38,8 @@ const CITED_EXHIBITS = [
   "EX-055",
   "EX-056",
   "EX-057",
+  "EX-HR-CALL",
+  "EX-ALLAN-OCT24",
 ];
 
 function Ex({ id }: { id: string }) {
@@ -407,6 +415,17 @@ export function FormalLetterBody() {
           continued requirement that she manage under conditions created by Respondent's
           failure to resolve the schedule, waitlist, and retaliation concerns.
         </p>
+
+        <InlineExhibits
+          heading="Prior EEOC charge / May–June 2024 protected-activity evidence"
+          items={[
+            { id: "EX-014", relevance: "May 29, 2024 formal internal complaint 'Serious issues at work' — race discrimination, retaliation, racial-slur allegation, denied transfers, and failure to place Harbin on the mid-shift waitlist." },
+            { id: "EX-015", relevance: "May 31, 2024 HR intake call with Susan Marcinko placing the substance of the complaint on the record, including the mid-shift waitlist failure." },
+            { id: "EX-016", relevance: "June 5, 2024 HR follow-up confirming Charging Party would be moved out of Rosanna Blackson's reporting line during the investigation and reassigned to Allan Glover's organization effective July 1, 2024." },
+            { id: "EX-001", relevance: "Filed Charge of Discrimination establishing the protected-activity record now before the Division." },
+          ]}
+        />
+
         <p className="mt-3">
           Respondent had actual, contemporaneous notice of these concerns. The May 29, 2024
           written complaint was directed to multiple leaders and Employee Relations
@@ -772,6 +791,17 @@ export function FormalLetterBody() {
           communicated. His later actions are therefore not insulated from the prior
           protected activity merely because he was not named in the original charge.
         </p>
+
+        <InlineExhibits
+          heading="Glover transition / knowledge evidence (PS § I.B.2)"
+          items={[
+            { id: "EX-016", relevance: "June 5, 2024 HR follow-up showing Charging Party's reassignment to Allan Glover's organization was arranged by HR during the active investigation of the May 29, 2024 complaint." },
+            { id: "EX-HR-CALL", relevance: "Susan Marcinko confirmation that she had spoken with Greg Carfagna about moving Charging Party to Mr. Glover's organization effective July 1, 2024 because of the protected complaint." },
+            { id: "EX-042", relevance: "Allan Glover Teams thread reflecting his ongoing knowledge of the schedule/waitlist issue raised in the prior complaint." },
+          ]}
+        />
+
+
 
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
@@ -1296,8 +1326,19 @@ export function FormalLetterBody() {
           not provide the basic details of any alleged AM or mid-shift offer.
         </p>
 
+        <InlineExhibits
+          heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
+          items={[
+            { id: "EX-005", relevance: "August 2025 HBCU recruiting comments and 'blockade' conversation with Allan Glover during the discussion about blocked advancement and schedule restrictions." },
+            { id: "EX-042", relevance: "Allan Glover Teams thread — 'I've been requesting midshift for 2 years' / 'Demoting to a coach?' context surrounding the August–September discussions." },
+            { id: "EX-019", relevance: "September 19, 2025 HR ticket summary referencing Greg-retaliation context tied to the recorded Allan conversation." },
+            { id: "EX-010", relevance: "Comparator movement showing Tyler Millisock, Hunter, Josh and others received movement Charging Party was told was unavailable." },
+          ]}
+        />
+
         {/* Section II.R - Complaints, Recording, and Hardship Fund */}
         <h3 className="mt-8 font-display text-base tracking-tight">
+
           R. Response to Respondent's "Complaints, Recording, and Hardship Fund" Narrative
         </h3>
         <p className="mt-3">
@@ -1489,9 +1530,22 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent's legal argument depends on accepting its version of disputed facts. That is not appropriate at this stage. The record contains multiple facts supporting an inference of discrimination: similarly situated employees receiving movement while I remained stuck; inconsistent waitlist records; a missing ticket; a false May 2025 offer/decline explanation; a 2024 downgrade after protected activity; exclusion from the TL Plus / Department Manager pipeline; nearly 50 unsuccessful internal applications despite strong performance; project exclusion and lack of credit; different hardship-fund treatment for a White employee and a Black employee; same-day documentation of Allan's race-related hardship example; and HBCU/blockade comments tied to opportunity and advancement.</p>
         <p className="mt-3">For these reasons, Respondent has not shown that the Charge fails as a matter of law. At minimum, the evidence creates material factual disputes requiring further investigation and production of the underlying records.</p>
 
+        <InlineExhibits
+          heading="Race-discrimination evidence (PS § II.A)"
+          items={[
+            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Tyler Millisock (same start date, same level, outside protected class, moved from LVAR PM/closing to PRE-D/DBC) and additional comparators receiving movement Charging Party was denied." },
+            { id: "EX-051", relevance: "2024 compensation statement — Solid downgrade after protected activity with 124.36% bonus payout, 96.49% IPF, 128.90% CPF." },
+            { id: "EX-053", relevance: "2024 year-end review showing every sub-goal and Discover Behavior rated Solid or Strong despite overall Solid downgrade." },
+            { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments — Cordi (White) hardship handled without documentation; Dide (Black) request triggered race-coded 'example.'" },
+            { id: "EX-005", relevance: "August 2025 HBCU-recruiting and 'blockade' comments during conversation about blocked opportunity." },
+            { id: "EX-014", relevance: "May 29, 2024 formal complaint reporting racial slur attributed to Rosanna Blackson and the underlying race-discrimination concerns." },
+          ]}
+        />
+
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
           B. Respondent Has Not Rebutted Retaliation
         </h4>
+
         <p className="mt-3">Respondent does not dispute that I engaged in protected activity. I filed an EEOC charge in May 2024 and made multiple internal complaints regarding race discrimination, retaliation, schedule equity, project exclusion, and related workplace concerns. Respondent's position is that no materially adverse action occurred and that there is no causation. The record does not support that argument.</p>
         <p className="mt-3">Respondent's argument depends on an artificially narrow view of retaliation. A retaliation claim does not require termination, demotion, or loss of pay. Under <em>Burlington Northern &amp; Santa Fe Railway Co. v. White</em>, a materially adverse action in the retaliation context is one that could dissuade a reasonable worker from making or supporting a charge of discrimination. The facts here meet that standard.</p>
         <p className="mt-3">After protected activity, I was kept on PM/closing despite repeated requests to return to mid-shift or move to an earlier schedule. I was not properly placed on the MID-shift waitlist. I was later removed from the waitlist. Respondent then relied on an alleged May 2025 shift offer and decline that I dispute and that Respondent has not documented. My request date was later reset, my status changed from PM/Temporary to PM/Permanent, and no clear ticket or approval record has been produced. These are not minor disagreements with routine scheduling. These are disputed schedule, waitlist, and record-integrity events affecting my working conditions, family obligations, childcare, advancement access, and ability to remain in the role.</p>
@@ -1512,6 +1566,23 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent says routine business processes were applied consistently before, during, and after protected activity. The record shows the opposite. The same types of processes repeatedly broke against me after protected activity: waitlist placement, waitlist removal, request dates, performance rating, project credit, internal applications, schedule movement, Verint visibility, Teams preservation, leave processing, and hardship assistance. The pattern, timing, missing records, inconsistent explanations, and comparator evidence support causation and pretext.</p>
         <p className="mt-3">Respondent also argues that there is no "but for" causation. But-for causation does not require protected activity to be the only cause. The question is whether the challenged actions would have occurred in the same way absent the protected activity. Here, the record supports that they would not have. Before and during protected activity, I was raising race discrimination, retaliation, schedule equity, and HR concerns. After that activity, my schedule remained blocked, my waitlist records changed, my performance rating dropped, development access was affected, project access diminished, monitoring concerns arose, protected Teams messages disappeared, and hardship assistance was handled differently.</p>
         <p className="mt-3">For these reasons, Respondent has not rebutted retaliation. Its argument depends on disputed facts and unsupported conclusions. At minimum, the evidence creates material factual disputes requiring further investigation and production of the underlying records.</p>
+
+        <InlineExhibits
+          heading="Retaliation evidence (PS § II.B)"
+          items={[
+            { id: "EX-014", relevance: "May 29, 2024 protected internal complaint distributed to leadership and Employee Relations." },
+            { id: "EX-016", relevance: "June 5, 2024 HR move away from Rosanna Blackson during the active investigation." },
+            { id: "EX-017", relevance: "July 19, 2024 complaint to Anita re: Greg Carfagna blocking rec-for-term paperwork after protected activity." },
+            { id: "EX-051", relevance: "2024 Solid downgrade after protected activity — excluded Charging Party from TL Plus / Department Manager pipeline." },
+            { id: "EX-045", relevance: "February 25, 2025 Jen Roy waitlist edit removing Harbin while juniors remained and continued to qualify." },
+            { id: "EX-041", relevance: "July 14, 2025 limited five-row screenshot omitting Date Requested, Months as CAR TL, Temporary/Permanent, and Qualifies." },
+            { id: "EX-006", relevance: "Verint monitoring evidence and HR admission that Harbin had 'more visibility than' she should have had." },
+            { id: "EX-002", relevance: "October 2025 Teams deletion / preservation concerns documented to HR." },
+            { id: "EX-007", relevance: "October 2025 FMLA misclassification, wrong paperwork, and resulting system-access deactivation." },
+            { id: "EX-003", relevance: "November 13, 2025 hardship request escalated same day to HR, Employee Relations, Allan Glover, Susan Marcinko, and Greg Carfagna." },
+          ]}
+        />
+
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
           C. Respondent Has Not Rebutted the Hostile Work Environment Claim
@@ -1534,6 +1605,19 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent's legal conclusion depends on accepting its own disputed facts and ignoring the cumulative record. The hostile work environment claim should not be dismissed as ordinary workplace disagreement. The record contains race-based conduct, race-related comments, protected complaints, repeated escalation, management involvement, inconsistent records, and workplace actions that affected my conditions of employment.</p>
         <p className="mt-3">For these reasons, Respondent has not shown that the hostile work environment claim fails as a matter of law. At minimum, the evidence creates factual disputes requiring further investigation.</p>
 
+        <InlineExhibits
+          heading="Hostile work environment evidence (PS § II.C)"
+          items={[
+            { id: "EX-014", relevance: "May 29, 2024 formal complaint reporting racial slur attributed to Rosanna Blackson." },
+            { id: "EX-015", relevance: "May 31, 2024 HR intake call placing the substance of the racial-slur and retaliation complaint on the record." },
+            { id: "EX-016", relevance: "June 5, 2024 HR follow-up moving Charging Party away from Rosanna's reporting line — confirming HR treated the complaint as serious." },
+            { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund 'example' from Allan Glover after Cordi (White) hardship was handled without concern." },
+            { id: "EX-005", relevance: "August 2025 HBCU recruiting and 'blockade' comments during conversation about blocked opportunity." },
+            { id: "EX-006", relevance: "October 2025 Verint monitoring / unequal visibility cumulative-environment evidence." },
+          ]}
+        />
+
+
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
           D. Respondent's "Ancillary Allegations" Argument Is Incorrect
         </h4>
@@ -1554,6 +1638,18 @@ export function FormalLetterBody() {
         <p className="mt-3">These allegations are not disconnected from protected activity. They occurred after my May 2024 EEOC charge, after my May 29, 2024 formal internal complaint, after repeated schedule/waitlist complaints, after my September 2025 Ethical Concerns complaint, after my October 2025 FMLA notice, and after my written HR timeline. The timing and documentation matter.</p>
         <p className="mt-3">Respondent's "ancillary allegations" section should therefore be rejected. The records show specific facts: the Allan/Amber Teams chat disappeared while other same-period chats remained visible; my Verint profile showed visibility other Team Leaders did not show; HR admitted I had more visibility than I should have had; my leave was mishandled or misclassified after FMLA notice; my system access was deactivated; a White employee's hardship request was handled without supporting documentation; a Black employee's potential hardship request triggered a race-related warning; and my own hardship request was escalated to HR, Employee Relations, operations leadership, and director-level leadership the day it was submitted.</p>
 
+        <InlineExhibits
+          heading="Ancillary-allegations evidence (PS § II.D)"
+          items={[
+            { id: "EX-006", relevance: "Verint visibility evidence — Harbin's profile live-monitored while same-department Team Leaders were not." },
+            { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns — Allan/Amber chat missing while same-period chats remained visible." },
+            { id: "EX-007", relevance: "FMLA preliminary designation / leave correction / access deactivation evidence." },
+            { id: "EX-ALLAN-OCT24", relevance: "October 24, 2025 call with Allan Glover confirming the leave communication he received stated 'short term' and that systems could be disabled again." },
+            { id: "EX-003", relevance: "Hardship-assistance timeline — November 13 'SH Hardship' meeting (Marcinko / Glover / Carfagna) and Employee Relations escalation." },
+          ]}
+        />
+
+
         {/* Section IV — Response to Respondent's Section III — Conclusion */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
           IV. Response to Respondent's Section III — Conclusion
@@ -1569,6 +1665,23 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent's effort to label Verint, Teams deletion, leave processing, and hardship assistance as "ancillary" is also wrong. These issues caused real harm and are tied to the same protected-activity timeline. My Verint evidence showed different visibility from other Team Leaders, and HR later admitted I had more visibility than I should have had. The Allan/Amber Teams chat disappeared while other same-period chats remained visible. My intermittent FMLA request was mishandled as short-term/continuous leave, affecting my system access. My hardship request was escalated to HR, Employee Relations, Allan Glover, Susan Marchinko, and Greg Carfagna the day it was submitted.</p>
         <p className="mt-3">The harm was not theoretical. The workplace conditions and Respondent's handling of my complaints contributed to serious mental-health deterioration, PTSD symptoms, panic attacks, FMLA use, reduced income, financial crisis, time away from my child, housing instability, loss of housing, transportation instability, and severe emotional distress. Respondent's conclusion attempts to minimize those consequences as ordinary workplace processes. They were not ordinary, and they were not harmless.</p>
         <p className="mt-3">The record does not confirm that Discover treated me fairly, consistently, or in accordance with legitimate business practices. It shows the opposite: inconsistent rules, missing tickets, altered waitlist records, comparator movement, unsupported denials, HR admissions, and documented harm. Respondent has not rebutted discrimination, retaliation, or hostile work environment. The Division should reject Respondent's request for dismissal and issue findings consistent with the documented record.</p>
+
+        <InlineExhibits
+          heading="Visual evidence summary — Section IV Conclusion"
+          items={[
+            { id: "EX-014", relevance: "Protected activity — May 29, 2024 formal internal complaint and prior EEOC charge." },
+            { id: "EX-046", relevance: "Waitlist contradiction — January 22, 2025: Harbin listed with June 26, 2024 request date." },
+            { id: "EX-045", relevance: "Waitlist contradiction — February 25, 2025: Harbin removed by Jen Roy while juniors remained." },
+            { id: "EX-044", relevance: "Waitlist contradiction — July 3, 2025: Harbin absent from controlling SharePoint waitlist." },
+            { id: "EX-041", relevance: "Waitlist contradiction — July 14, 2025 limited screenshot omitting material fields; July 17, 2025 re-add date." },
+            { id: "EX-010", relevance: "Comparator movement — Tyler Millisock and other comparators received movement Harbin was denied." },
+            { id: "EX-051", relevance: "Performance contradiction — Strong → Solid downgrade with 124.36% bonus payout." },
+            { id: "EX-006", relevance: "Verint admission — HR stated Harbin had 'more visibility than' she should have had." },
+            { id: "EX-002", relevance: "Teams deletion — Allan/Amber chat missing while other same-period chats remained visible." },
+            { id: "EX-003", relevance: "Hardship harm — SH Hardship meeting / delayed funds / housing loss." },
+          ]}
+        />
+
 
 
 
