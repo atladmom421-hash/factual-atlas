@@ -217,7 +217,7 @@ export function FormalLetterBody() {
           any and all substantive and procedural defenses" and that "any efforts to contact
           its current managers be directed through its counsel" — are noted. They do not,
           however, supply factual content responsive to the Charge, and they cannot
-          substitute for the documentary production identified in Section IV below.
+          substitute for the documentary production identified in Section V below.
           Charging Party respects Respondent's right to route witness contact through
           counsel and asks only that the Division ensure such routing does not delay or
           obstruct the production of records the Position Statement places at issue.
