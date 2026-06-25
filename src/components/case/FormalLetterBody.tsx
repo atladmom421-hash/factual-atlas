@@ -1525,7 +1525,7 @@ export function FormalLetterBody() {
         </p>
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          2. Respondent Has Not Rebutted Retaliation
+          B. Respondent Has Not Rebutted Retaliation
         </h4>
         <p className="mt-3">
           Respondent does not dispute that Charging Party engaged in protected
