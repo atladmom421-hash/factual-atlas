@@ -1912,6 +1912,157 @@ export function FormalLetterBody() {
           creates factual disputes requiring further investigation.
         </p>
 
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          d. Respondent's "Ancillary Allegations" Argument Is Incorrect
+        </h4>
+        <p className="mt-3">
+          Respondent's argument that Charging Party's Teams deletion, system
+          recording, leave processing, and hardship-fund allegations are
+          "ancillary," speculative, unsupported, and unrelated is incorrect. These
+          events are documented, specific, and connected to the same
+          protected-activity timeline.
+        </p>
+        <p className="mt-3">
+          First, the Teams deletion issue is not based on assumption. The record
+          shows that on October 7, 2025, Charging Party sent HR investigator Edward
+          Reyes a written timeline regarding her waitlist history, retaliation
+          concerns, and Allan Glover's comments. On October 14, 2025, she notified
+          Allan Glover and Amber in Teams that she had filed FMLA. That same Teams
+          chat also documented concerns about leadership support after Allan removed
+          himself from her team chat. On October 21, 2025, she emailed HR regarding
+          Verint/screen-recording concerns.
+        </p>
+        <p className="mt-3">
+          On October 23, 2025, the Allan/Amber Teams chat was blank on Charging
+          Party's work computer. The only visible message stated that older messages
+          had been deleted due to the organization's retention policy. However,
+          other Teams chats from the same general period remained visible, including
+          chats dated October 10, October 13, October 15, October 16, October 17,
+          and October 21. The October 13 Alese Amarel chat remained visible and
+          included messages discussing Allan leaving the chat and FMLA/LOA-related
+          issues. By October 24, 2025, the same Allan/Amber chat was also cleared
+          from her phone.
+        </p>
+        <p className="mt-3">
+          Those facts are specific. The relevant Allan/Amber chat disappeared after
+          protected activity, after FMLA notice, after a written HR timeline, and
+          after the Verint complaint, while other same-period chats remained
+          visible. Respondent cannot dismiss that as a generic retention-policy
+          issue without producing the retention logs, deletion logs, audit history,
+          and preservation records.
+        </p>
+        <p className="mt-3">
+          Second, the Verint/system-recording issue is not speculative. Respondent
+          states that recording is a standard operational tool. That does not answer
+          the evidence. Charging Party's records show her PC/profile appearing on
+          live monitor while other Team Leaders in the same department were logged
+          in and active but did not show live monitoring active. That is the
+          factual issue: her profile appeared differently than similarly situated
+          Team Leaders. HR later confirmed this was not simply a misunderstanding.
+          HR stated there was a technical problem and that she had "more visibility
+          than" she should have had. HR also stated the issue had been turned over
+          to product owners, the vendor, and the BT team; that they did not know
+          what happened; that they did not know who did it; and that they were
+          trying to backtrack permissions. Those statements contradict Respondent's
+          claim that there is no indication she was treated differently.
+        </p>
+        <p className="mt-3">
+          Third, the leave-processing issue is connected to protected activity and
+          is not outside the case simply because a centralized leave administrator
+          was involved. Charging Party requested intermittent FMLA on or about
+          October 13, 2025. She notified Allan and Amber in Teams on October 14.
+          Her doctor completed paperwork documenting that her condition was related
+          to workplace environmental or interpersonal issues and that she had
+          reported discrimination at work. Instead of the leave being handled
+          cleanly as intermittent FMLA, the leave process was mishandled or
+          misclassified, the wrong paperwork was sent, and her system access was
+          deactivated. Allan later confirmed that the communication he received
+          stated "short term" and warned that systems could be disabled again.
+          Respondent cannot avoid the issue by saying leave administration was
+          centralized. The relevant facts are that the leave issue occurred
+          immediately after protected activity and FMLA notice, involved
+          communications to management, resulted in system-access consequences, and
+          overlapped with the disappearance of the Allan/Amber Teams chat.
+        </p>
+        <p className="mt-3">
+          Fourth, the hardship-fund issue is not speculative and is not merely about
+          payment timing. Respondent states that hardship-fund requests require
+          documentation and involve multiple levels of review. That does not match
+          how the process was applied in Charging Party's direct experience.
+          Shortly before the July 10, 2025 race-related hardship-fund incident,
+          Charging Party personally assisted Brandi Cordi, a White employee on her
+          team, with a hardship-fund request. Brandi was not required to submit
+          supporting documentation. She only had to identify what she needed
+          assistance for and provide a list or explanation of the requested need.
+          Allan Glover was aware of and assisted with that request. No concern was
+          raised. Shortly afterward, Charging Party asked Allan about helping
+          Araksan Dide, a Black employee who was homeless and needed housing
+          support. Allan responded differently. He told her to hold off and gave an
+          example involving Black employees, stating in substance that if one Black
+          employee told another Black employee and that person tried to access the
+          hardship fund, it could be a serious problem. Charging Party documented
+          that immediately through a text to a coworker, a Teams follow-up to
+          Allan, Allan's response that he was "just providing an example of what
+          could happen," and same-day disclosure to coworkers. Those facts directly
+          tie the hardship-fund issue to race and unequal treatment. A White
+          employee's hardship request was handled without supporting documentation
+          and without warning. A Black employee's potential hardship request
+          triggered hesitation and a race-related warning. Respondent's generalized
+          statement that hardship requests required documentation does not answer
+          that comparator evidence.
+        </p>
+        <p className="mt-3">
+          Fifth, Charging Party's own hardship request was immediately known to HR,
+          Employee Relations, and leadership. On November 13, 2025, she submitted
+          her hardship assistance request and completed the required attestation
+          the same day. That same morning, an "SH Hardship" meeting appeared on
+          Allan Glover's calendar involving Susan Marchinko, Allan Glover, and Greg
+          Carfagna. Later that day, Cameron Hadley from Employee Relations
+          contacted her to discuss the request. On November 17, Cameron stated that
+          her request could not proceed without additional documentation. She
+          provided the requested documentation the same day or shortly thereafter.
+          The funds were not received until after significant housing harm had
+          already occurred. Those facts contradict Respondent's effort to minimize
+          the hardship issue as ordinary payment timing. The hardship request was
+          known, escalated, and discussed by HR, Employee Relations, operations
+          leadership, and director-level leadership the same day it was submitted.
+          Respondent should produce the meeting invite, attendee list, notes,
+          communications, approval chain, documentation requests, completion date,
+          approval date, and payment date.
+        </p>
+        <p className="mt-3">
+          Respondent also argues that none of these events would constitute an
+          adverse employment action. That is too narrow, especially for retaliation.
+          Under <em>Burlington Northern</em>, a retaliation claim can include
+          actions that might dissuade a reasonable worker from making or supporting
+          a charge of discrimination. Targeted or unequal monitoring, deletion or
+          disappearance of relevant protected-activity communications,
+          leave-processing errors causing access deactivation, and delayed hardship
+          assistance during a housing crisis are not trivial. They are materially
+          relevant to retaliation, pretext, hostile environment, and credibility.
+        </p>
+        <p className="mt-3">
+          These allegations are not disconnected from protected activity. They
+          occurred after the May 2024 EEOC charge, after the May 29, 2024 formal
+          internal complaint, after repeated schedule/waitlist complaints, after
+          the September 2025 Ethical Concerns complaint, after the October 2025
+          FMLA notice, and after the written HR timeline. The timing and
+          documentation matter.
+        </p>
+        <p className="mt-3">
+          Respondent's "ancillary allegations" section should therefore be
+          rejected. The records show specific facts: the Allan/Amber Teams chat
+          disappeared while other same-period chats remained visible; Charging
+          Party's Verint profile showed visibility other Team Leaders did not show;
+          HR admitted she had more visibility than she should have had; her leave
+          was mishandled or misclassified after FMLA notice; her system access was
+          deactivated; a White employee's hardship request was handled without
+          supporting documentation; a Black employee's potential hardship request
+          triggered a race-related warning; and her own hardship request was
+          escalated to HR, Employee Relations, operations leadership, and
+          director-level leadership the day it was submitted.
+        </p>
+
         {/* Section IV */}
         <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
         <p className="mt-3">
@@ -2412,6 +2563,43 @@ export function FormalLetterBody() {
             Leave-processing records related to Charging Party's October 2025 FMLA
             request, access deactivation, and related communications, including
             system timestamps, status changes, approvers, and notifications.
+          </li>
+          <li>
+            Microsoft Teams retention logs, deletion logs, audit history, and
+            preservation/legal-hold records for the Allan Glover / Amber chat.
+          </li>
+          <li>
+            Verint access logs, live-monitoring records, screen-recording logs,
+            permission-change history, product-owner communications, BT escalation
+            records, and vendor communications relating to Charging Party.
+          </li>
+          <li>
+            Records showing which Team Leaders were visible or active in Verint
+            before and after Charging Party's October 2025 complaint.
+          </li>
+          <li>
+            Leave-processing records relating to Charging Party's October 2025
+            intermittent FMLA request, STD misclassification, the wrong paperwork
+            sent, and the system-access deactivation, including all related
+            communications.
+          </li>
+          <li>
+            Hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
+            own hardship request, together with documentation showing what each
+            hardship applicant was required to submit.
+          </li>
+          <li>
+            The November 13, 2025 "SH Hardship" calendar invite, attendee list,
+            notes, and all related communications.
+          </li>
+          <li>
+            The November 17, 2025 Cameron Hadley conversation recording or
+            transcript and related notes.
+          </li>
+          <li>
+            All communications involving Allan Glover, Susan Marchinko, Greg
+            Carfagna, Cameron Hadley, Lindsay Beck, and Employee Relations
+            regarding hardship assistance.
           </li>
         </ol>
 
