@@ -1185,7 +1185,9 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Retaliation evidence (PS § II.B)"
           items={[
+            { id: "EX-059", relevance: "September 19, 2025 transcript — after protected activity, Allan could not provide date, position, group, ticket, or written record for the alleged shift offer; admits no formal criteria for Training Bay; confronts Allan with prior 'blockade' statement, which he does not substantively explain." },
             { id: "EX-014", relevance: "May 29, 2024 protected internal complaint distributed to leadership and Employee Relations." },
+
             { id: "EX-016", relevance: "June 5, 2024 HR move away from Rosanna Blackson during the active investigation." },
             { id: "EX-017", relevance: "July 19, 2024 complaint to Anita re: Greg Carfagna blocking rec-for-term paperwork after protected activity." },
             { id: "EX-051", relevance: "2024 Solid downgrade after protected activity — excluded Charging Party from TL Plus / Department Manager pipeline." },
