@@ -7,9 +7,22 @@ import { exhibitById } from "@/data";
 
 // Exhibits cited in this letter — bundled into the print appendix.
 const CITED_EXHIBITS = [
+  "EX-001",
+  "EX-002",
+  "EX-003",
+  "EX-004",
+  "EX-005",
+  "EX-006",
+  "EX-007",
   "EX-008",
   "EX-010",
-  "EX-HR-CALL",
+  "EX-014",
+  "EX-015",
+  "EX-016",
+  "EX-017",
+  "EX-018",
+  "EX-019",
+  "EX-040",
   "EX-041",
   "EX-042",
   "EX-043",
@@ -17,13 +30,6 @@ const CITED_EXHIBITS = [
   "EX-045",
   "EX-046",
   "EX-048",
-  "EX-040",
-  "EX-002",
-  "EX-003",
-  "EX-004",
-  "EX-005",
-  "EX-006",
-  "EX-019",
   "EX-049",
   "EX-050",
   "EX-051",
@@ -32,6 +38,8 @@ const CITED_EXHIBITS = [
   "EX-055",
   "EX-056",
   "EX-057",
+  "EX-HR-CALL",
+  "EX-ALLAN-OCT24",
 ];
 
 function Ex({ id }: { id: string }) {
