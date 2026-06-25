@@ -44,6 +44,7 @@ const CITED_EXHIBITS = [
   "EX-057",
   "EX-058",
   "EX-059",
+  "EX-060",
   "EX-HR-CALL",
   "EX-ALLAN-OCT24",
 ];
