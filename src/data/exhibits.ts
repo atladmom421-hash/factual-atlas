@@ -1897,6 +1897,48 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-075-waitlist.png",
     fileKind: "image",
   },
+  {
+    id: "EX-076",
+    exhibitNumber: "EX-076",
+    fileName: "Current TL Shifts — waitlist version dated January 22, 2025 9:36 AM (Lilly Cano / Edina Markus)",
+    date: "Screenshot taken 10/4/2025; selected version dated January 22, 9:36 AM",
+    category: "Business record / version history",
+    peopleIds: ["harbin"],
+    summary:
+      "SharePoint/Excel version-history view with the January 22, 2025 9:36 AM version selected (modified by Lilly Cano and Edina Markus). The visible Current Waitlist table lists: Nameer Khan (MID, 2/28/2023), Cody Christensen (AM, 1/2/2024), Kandace Adkins (AM, 1/23/2024), Kaitlin Reed (AM, 2/28/2024), Cory Galt (AM, 6/10/2024), **Shawnna Harbin (AM, 6/26/2024, 19.83 mos as CAR TL, Current PM, T, Qualifies Yes)**, Hunter Samuel (MID, 7/1/2024), Jamie Fresh (AM, 7/19/2024), Courtney Griffith (AM, 8/13/2024), and Jarin Bell (AM, 10/15/2024). The right-side version pane shows surrounding edits on Feb 25, Feb 18, Jan 22, Jan 15, Jan 14, and Dec 19, 2024. Relevance: (1) confirms Harbin was present on the waitlist as of January 22, 2025 with original request date 6/26/2024 — narrowing the deletion window to between Jan 22 and Feb 25, 2025; (2) original Temp/Perm classification was \"T\" (temporary), which later versions flipped to \"P\" without explanation; (3) corroborates EX-073 (Jan 14) continuous presence and contrasts directly with EX-072 (Feb 25 removal).",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-076-waitlist-jan22.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-077",
+    exhibitNumber: "EX-077",
+    fileName: "HR Current Roster Shifts — November 21, 2024 view showing Harbin assigned to Allan Glover / LVAR / PM",
+    date: "Screenshot taken 10/4/2025; selected version dated November 21, 2024 3:37 PM",
+    category: "Business record / roster",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Screenshot of the \"HR Current Roster Shifts\" tab of the Current TL Shifts workbook with the November 21, 2024 3:37 PM version selected. Row 4 (Shawnna Harbin / sharbi1) shows: Status \"Active,\" DM/AM \"Allan Glover,\" Director \"Greg Carfagna,\" Current PCF \"LVAR,\" Current PCF Date \"7/1/2023,\" Months in PCF \"16.87,\" TL Start Date \"4/3/2023,\" Months as TL \"19.83,\" CAR TL Start Date \"4/3/2023,\" Months as CAR TL \"19.83,\" Current Shift \"PM,\" Temp/Perm \"T,\" Eligible for AM? \"Yes.\" The surrounding rows show comparator TLs across multiple DM/AM groups (Amber Laye, Chase Devey, Darren Hunt, Dianna Maloney, Doug Martin, Mario Vasquez, Matthew Cad—) and their respective shift assignments and eligibility statuses. Relevance: (1) authoritative HR-side roster record confirming Harbin's reporting line (Allan Glover → Greg Carfagna), PCF (LVAR), PM assignment, and \"Eligible for AM? Yes\" status as of late November 2024; (2) provides a complete comparator population on the same sheet for shift-equity and movement analysis; (3) Temp/Perm \"T\" is consistent with the contemporaneous waitlist (EX-073/EX-076) and contradicts later \"P\" reclassification (EX-075); (4) supports production of the full HR Current Roster Shifts version history for the relevant window.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-077-roster-nov21.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-078",
+    exhibitNumber: "EX-078",
+    fileName: "Current TL Shifts — waitlist version dated February 18, 2025 4:06 PM (Lilly Cano / Edina Markus)",
+    date: "Screenshot taken 10/4/2025; selected version dated February 18, 4:06 PM",
+    category: "Business record / version history",
+    peopleIds: ["harbin"],
+    summary:
+      "SharePoint/Excel version-history view with the February 18, 2025 4:06 PM version selected (modified by Lilly Cano and Edina Markus). The visible Current Waitlist table lists: Nameer Khan (MID, 2/28/2023), Cody Christensen (AM, 1/2/2024), Kandace Adkins (AM, 1/23/2024), Kaitlin Reed (AM, 2/28/2024), Cory Galt (AM, 6/10/2024), **Shawnna Harbin (AM, 6/26/2024, 19.83 mos as CAR TL, Current PM, T, Qualifies Yes)**, Hunter Samuel (MID, 7/1/2024), Jamie Fresh (AM, 7/19/2024), Courtney Griffith (AM, 8/13/2024), and Jarin Bell (AM, 10/15/2024). The right-side version pane shows surrounding edits on July 16, July 3, March 19, February 25 (Jen Roy / Lilly Cano / Edina Markus), February 18, January 22, January 15, January 14, and December 19, 2024. Relevance: (1) **narrows the deletion window to a one-week span between Feb 18 and Feb 25, 2025** — Harbin was still present with original 6/26/2024 request date as of Feb 18, then absent by the Feb 25 12:01 PM Jen Roy edit (EX-072); (2) tight timing makes the removal traceable to specific edits and editors during that week; (3) Temp/Perm still \"T\" at this point, before the later \"P\" reclassification; (4) strengthens production demand for the Feb 18–Feb 25, 2025 edit history, including any CFS tickets, emails, or Teams messages by Jen Roy, Lilly Cano, or Edina Markus referencing Harbin in that window.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-078-waitlist-feb18.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
