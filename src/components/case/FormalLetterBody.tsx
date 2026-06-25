@@ -2080,8 +2080,8 @@ export function FormalLetterBody() {
                 <tr>
                   <td className="border border-border px-2 py-1">I.B.6–7 (Neutral Waitlist)</td>
                   <td className="border border-border px-2 py-1">II.D</td>
-                  <td className="border border-border px-2 py-1">EX-010, EX-019, EX-HR-CALL</td>
-                  <td className="border border-border px-2 py-1">Comparator movement "because of leadership, not the waitlist"; Lesure reassignment by specific request.</td>
+                  <td className="border border-border px-2 py-1">EX-010, EX-022, EX-HR-CALL</td>
+                  <td className="border border-border px-2 py-1">Comparator movement "because of leadership, not the waitlist"; TL comparators received AM/MID/PRE-D/TBay placements while Harbin remained on PM/closing.</td>
                 </tr>
                 <tr>
                   <td className="border border-border px-2 py-1">I.B.7 (July 2025 Waitlist Status)</td>
