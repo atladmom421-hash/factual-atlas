@@ -217,7 +217,7 @@ export function FormalLetterBody() {
           any and all substantive and procedural defenses" and that "any efforts to contact
           its current managers be directed through its counsel" — are noted. They do not,
           however, supply factual content responsive to the Charge, and they cannot
-          substitute for the documentary production identified in Section IV below.
+          substitute for the documentary production identified in Section V below.
           Charging Party respects Respondent's right to route witness contact through
           counsel and asks only that the Division ensure such routing does not delay or
           obstruct the production of records the Position Statement places at issue.
@@ -895,7 +895,7 @@ export function FormalLetterBody() {
           decline? If removal after a declined offer was standard procedure, where is the
           policy and the audit trail showing that procedure was followed? For these
           reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted
-          without production of the underlying records identified in Section IV.
+          without production of the underlying records identified in Section V.
         </p>
 
         {/* Section II.P - July 2025 Waitlist Status */}
@@ -1312,10 +1312,10 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
-        {/* Section II.S - Discussion: Response to Respondent's Legal Argument */}
-        <h3 className="mt-8 font-display text-base tracking-tight">
-          S. Discussion — Response to Respondent's Legal Argument
-        </h3>
+        {/* Section III - Discussion: Response to Respondent's Legal Argument */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">
+          III. Discussion — Response to Respondent's Legal Argument
+        </h2>
         <p className="mt-3">
           Respondent's legal discussion does not resolve the Charge. It attempts to
           characterize the evidence as ordinary workplace disagreement, but the record
@@ -1326,7 +1326,7 @@ export function FormalLetterBody() {
         </p>
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          1. Respondent Has Not Rebutted Race Discrimination
+          A. Respondent Has Not Rebutted Race Discrimination
         </h4>
         <p className="mt-3">
           Respondent argues that Charging Party cannot establish race discrimination
@@ -1525,7 +1525,7 @@ export function FormalLetterBody() {
         </p>
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          2. Respondent Has Not Rebutted Retaliation
+          B. Respondent Has Not Rebutted Retaliation
         </h4>
         <p className="mt-3">
           Respondent does not dispute that Charging Party engaged in protected
@@ -1750,7 +1750,7 @@ export function FormalLetterBody() {
         </p>
 
         {/* Section III */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
+        <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
         <p className="mt-3">
           Respondent's Position Statement applies the wrong legal standards in several respects:
         </p>
@@ -1781,7 +1781,7 @@ export function FormalLetterBody() {
 
         {/* Section IV */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          IV. Documents the Division Should Request
+          V. Documents the Division Should Request
         </h2>
         <p className="mt-3">
           To test the assertions on which the Position Statement relies, Charging Party
@@ -2204,7 +2204,7 @@ export function FormalLetterBody() {
 
 
         {/* Section V */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">V. Conclusion</h2>
+        <h2 className="mt-10 font-display text-lg tracking-tight">VI. Conclusion</h2>
         <p className="mt-3">
           Respondent's Position Statement does not rebut the Charge; it reframes it. It treats
           the absence of records Respondent controls as a failure of proof, it describes as
@@ -2217,7 +2217,7 @@ export function FormalLetterBody() {
         <p className="mt-3">
           For the reasons set forth above, Charging Party respectfully requests that the Arizona
           Civil Rights Division and the EEOC decline to issue a no-cause determination, direct
-          Respondent to produce the records identified in Section IV, and proceed with a full
+          Respondent to produce the records identified in Section V, and proceed with a full
           investigation on the merits.
         </p>
 
