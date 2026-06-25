@@ -328,120 +328,36 @@ export function FormalLetterBody() {
         </h3>
 
         <p className="mt-3">
-          Respondent's description of Charging Party's prior EEOC charge is incomplete and
-          misleading. The Position Statement characterizes the prior charge as limited to
-          ordinary "workplace interactions" with a coworker and Charging Party's then-manager,
-          Rosanna Blackson. That framing minimizes the seriousness of what was reported. The
-          prior protected activity involved race discrimination, retaliation, hostile work
-          environment concerns, medical leave and disability-related retaliation, a false
-          job-abandonment issue, repeated denied transfer and schedule requests, and the
-          failure to properly add Charging Party to the mid-shift waitlist.
+          Respondent's description of my prior EEOC charge is incomplete and misleading. Respondent attempts to characterize the prior charge as limited to "workplace interactions" and ordinary concerns involving a coworker and my then-manager, Rosanna Blackson. That framing minimizes the seriousness of what was reported. My prior protected activity involved race discrimination, retaliation, hostile work environment concerns, medical leave/disability-related retaliation, a false job-abandonment issue, repeated denied transfer/schedule requests, and the failure to properly add me to the mid-shift waitlist.
         </p>
         <p className="mt-3">
-          Respondent's reliance on the fact that its internal investigation "did not
-          substantiate" the prior complaint is not dispositive. A non-substantiation finding
-          by the employer does not establish that the underlying conduct did not occur, nor
-          does it resolve the retaliation that followed. The contemporaneous record includes
-          Charging Party's May 29, 2024 written complaint to multiple leaders and Employee
-          Relations representatives, the May 31, 2024 HR intake call in which Charging Party
-          reported race discrimination, retaliation, the false job-abandonment issue, project
-          exclusion, and the waitlist/schedule issue, and HR's June 5, 2024 follow-up
-          arranging Charging Party's reassignment away from Ms. Blackson's direct supervision
-          to report through Mr. Glover effective July 1, 2024. That reassignment itself
-          reflects Respondent's understanding that continued one-on-one interaction with
-          Ms. Blackson was problematic during the pendency of the investigation. See{" "}
-          <Ex id="EX-HR-CALL" />, <Ex id="EX-002" />.
+          Respondent's claim that the prior investigation "did not substantiate" my claims does not mean the conduct did not occur, nor does it resolve the retaliation issues that followed. The fact that Respondent internally chose not to substantiate the complaint should be weighed against the actual record, including my contemporaneous written complaint, HR's follow-up, and the actions taken after my complaint. In fact, after my complaint, HR arranged for me to move away from Rosanna's direct supervision and report through Allan Glover effective July 1, 2024. That action itself shows Respondent understood the seriousness of the situation and that continued one-on-one interaction with Rosanna was problematic during the investigation.
         </p>
         <p className="mt-3">
-          Charging Party also disputes Respondent's assertion that she "experienced no
-          adverse action" during or after the prior charge. Continued employment is not the
-          test. Under <em>Burlington Northern &amp; Santa Fe Ry. Co. v. White</em>, 548 U.S.
-          53 (2006), the question is whether the challenged actions might dissuade a
-          reasonable worker from making or supporting a charge of discrimination. The record
-          identifies, among other things:
+          I also dispute Respondent's statement that I "experienced no adverse action" during or after the prior charge. Remaining employed does not mean I was not negatively impacted. After my protected activity, I continued to experience schedule-related harm, waitlist issues, loss of opportunity, performance-rating harm, and other retaliatory treatment.
         </p>
-        <ul className="mt-2 list-disc space-y-1 pl-6">
-          <li>
-            Charging Party had requested mid-shift or earlier schedule movement but was not
-            properly added to the waitlist when she should have been. See <Ex id="EX-008" />,{" "}
-            <Ex id="EX-041" />, <Ex id="EX-042" />.
-          </li>
-          <li>
-            Respondent later treated Charging Party's PM assignment as permanent even though
-            it had been presented as temporary, and Respondent's own records continued to
-            reflect temporary status. See <Ex id="EX-044" />, <Ex id="EX-045" />.
-          </li>
-          <li>
-            After Charging Party's May 2024 EEOC charge and May 29, 2024 formal complaint,
-            she remained fixed on the PM/closing schedule while other similarly situated
-            leaders moved to AM, mid-shift, or otherwise more favorable schedules. See{" "}
-            <Ex id="EX-010" />.
-          </li>
-          <li>
-            In July 2024, after the protected activity, Charging Party was assigned
-            low-performing employees who were already expected to be terminated; the delay
-            in processing their corrective actions negatively affected her team's
-            performance metrics.
-          </li>
-          <li>
-            When Charging Party submitted termination recommendations that Employee
-            Relations had approved, Mr. Carfagna blocked or delayed them at the director
-            level based on a documentation/coaching requirement that HR later confirmed
-            Charging Party had already satisfied. HR told Charging Party she "did exactly
-            the right thing," confirming the issue was not her performance or process.
-          </li>
-          <li>
-            In the first review cycle following the EEOC charge and formal complaint,
-            Charging Party's overall rating was downgraded from Strong to Solid despite
-            improved operational metrics, no goal rated below Solid, and a 124.36% bonus
-            payout. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
-            <Ex id="EX-052" />, <Ex id="EX-053" />.
-          </li>
-          <li>
-            The Solid rating reduced Charging Party's merit impact and, based on
-            information provided to leadership, excluded her from the Department Manager
-            training cohort — an internal promotional pipeline.
-          </li>
-          <li>
-            Charging Party was excluded from internal opportunities, remained blocked from
-            schedule movement, and was later told by Mr. Glover that there was a
-            "blockade" preventing her from moving forward. See <Ex id="EX-055" />.
-          </li>
+        <p className="mt-3">Examples include:</p>
+        <ul className="mt-2 list-disc space-y-2 pl-6">
+          <li>I had already requested mid-shift/earlier schedule movement, but I was not properly added to the waitlist when I should have been.</li>
+          <li>Respondent later treated my PM assignment as permanent, even though it had been presented to me as temporary and Respondent's own records later continued to reflect temporary status.</li>
+          <li>After my May 2024 EEOC charge and May 29, 2024 formal complaint, I remained fixed on PM/closing while other similarly situated leaders moved to AM, midshift, or other more favorable schedules.</li>
+          <li>In July 2024, after my protected activity, I was assigned low-performing employees who were already expected to be terminated. The delay in processing their corrective actions negatively affected my team's performance results.</li>
+          <li>When I submitted termination recommendations that Employee Relations approved, Greg Carfagna blocked or delayed them at the director level based on a documentation/coaching requirement that HR later confirmed I had already satisfied. HR later told me I "did exactly the right thing," confirming the issue was not my performance or process.</li>
+          <li>In the first review cycle after my EEOC charge and formal complaint, my overall rating was downgraded from Strong to Solid, despite improved operational metrics, no goal rated below Solid, and a 124.36% bonus payout.</li>
+          <li>The Solid rating had consequences beyond a label. It reduced my merit impact and, based on information provided to leadership, excluded me from the Department Manager training cohort, which was an internal promotional pipeline.</li>
+          <li>My internal opportunities and advancement were not "unchanged." I was excluded from opportunities, remained blocked from schedule movement, and was later told by Allan there was a "blockade" preventing me from moving forward.</li>
         </ul>
         <p className="mt-3">
-          Respondent's statement that Charging Party's "compensation, responsibilities, and
-          opportunities remained unchanged" is therefore inaccurate. Compensation was
-          affected by the 2024 downgrade because the merit percentage tied to the review was
-          lower than it would have been at Strong, notwithstanding stronger measurable
-          results. Opportunities were affected because the Solid rating excluded Charging
-          Party from the Department Manager training cohort and because she remained on an
-          unfavorable schedule while peers moved. Responsibilities and working conditions
-          were affected by the transfer of low-performing employees to her team and by the
-          continued requirement that she manage under conditions created by Respondent's
-          failure to resolve the schedule, waitlist, and retaliation concerns.
+          Respondent also states that my "compensation, responsibilities, and opportunities remained unchanged." I dispute that. My compensation was affected by the 2024 downgrade because the merit percentage tied to my review was lower than it would have been had I remained Strong, despite stronger measurable results. My opportunities were affected because the Solid rating excluded me from the Department Manager training cohort and because I remained stuck on an unfavorable schedule while peers moved. My responsibilities and working conditions were also affected by the transfer of low-performing employees to my team and the continued requirement that I manage under conditions created by Respondent's failure to resolve the schedule/waitlist and retaliation concerns.
         </p>
-
-        <InlineExhibits
-          heading="Prior EEOC charge / May–June 2024 protected-activity evidence"
-          items={[
-            { id: "EX-014", relevance: "May 29, 2024 formal internal complaint 'Serious issues at work' — race discrimination, retaliation, racial-slur allegation, denied transfers, and failure to place Harbin on the mid-shift waitlist." },
-            { id: "EX-015", relevance: "May 31, 2024 HR intake call with Susan Marcinko placing the substance of the complaint on the record, including the mid-shift waitlist failure." },
-            { id: "EX-016", relevance: "June 5, 2024 HR follow-up confirming Charging Party would be moved out of Rosanna Blackson's reporting line during the investigation and reassigned to Allan Glover's organization effective July 1, 2024." },
-            { id: "EX-001", relevance: "Filed Charge of Discrimination establishing the protected-activity record now before the Division." },
-          ]}
-        />
-
         <p className="mt-3">
-          Respondent had actual, contemporaneous notice of these concerns. The May 29, 2024
-          written complaint was directed to multiple leaders and Employee Relations
-          representatives; the May 31, 2024 HR intake call placed the substance of the
-          complaint on the record; and the June 5, 2024 follow-up confirmed Respondent's
-          decision to separate Charging Party from Ms. Blackson during the investigation.
-          See <Ex id="EX-HR-CALL" />. The relevant question is not whether Charging Party
-          was immediately terminated or formally demoted, but whether, after protected
-          activity, Respondent took actions or permitted conditions that would reasonably
-          discourage a person from making or supporting a discrimination complaint. The
-          record establishes that it did.
+          Respondent's position also omits that HR had notice of these concerns in real time. My May 29, 2024 complaint was sent to multiple leaders and Employee Relations representatives. On May 31, 2024, I participated in an HR intake call and reported race discrimination, retaliation, the false job-abandonment issue, project exclusion, and the waitlist/schedule issue. On June 5, 2024, HR followed up and arranged the move away from Rosanna during the investigation. These events show that Respondent had actual notice of protected activity and the underlying issues.
+        </p>
+        <p className="mt-3">
+          The performance-rating timeline is also important. In 2023, before my EEOC charge and formal complaints, I received a Strong rating. In 2024, after my protected activity, my rating dropped to Solid, even though my measurable performance improved, my bonus paid out at 124.36% of target, and no goal was rated below Solid. Then, in 2025, after the events at issue and after Respondent was already defending its actions, I was rated Strong again. This Strong → Solid → Strong pattern supports my position that the 2024 Solid rating was not a neutral reflection of my actual performance. It was the only year in that sequence that followed my protected activity, and it had real consequences. It reduced my merit impact and excluded me from the Department Manager training cohort/promotion pipeline. Respondent cannot fairly claim my "compensation, responsibilities, and opportunities remained unchanged" when the 2024 downgrade affected both pay and advancement opportunity.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's statement that I remained employed and therefore experienced no adverse action is not accurate. The relevant issue is not whether I was immediately terminated or formally demoted. The relevant issue is whether, after protected activity, Respondent took actions or allowed conditions that would reasonably discourage a person from making or supporting a discrimination complaint. The record shows that it did.
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
