@@ -1312,6 +1312,218 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
+        {/* Section II.S - Discussion: Response to Respondent's Legal Argument */}
+        <h3 className="mt-8 font-display text-base tracking-tight">
+          S. Discussion — Response to Respondent's Legal Argument
+        </h3>
+        <p className="mt-3">
+          Respondent's legal discussion does not resolve the Charge. It attempts to
+          characterize the evidence as ordinary workplace disagreement, but the record
+          shows materially disputed facts involving schedule access, waitlist
+          manipulation, comparator movement, performance-rating impact, advancement
+          barriers, project exclusion, race-related comments, and inconsistent
+          application of workplace processes.
+        </p>
+
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          1. Respondent Has Not Rebutted Race Discrimination
+        </h4>
+        <p className="mt-3">
+          Respondent argues that Charging Party cannot establish race discrimination
+          because she supposedly did not suffer a materially adverse employment action.
+          That is incorrect. Charging Party was kept on PM/closing for an extended
+          period despite repeated requests to return to mid-shift or move to an earlier
+          schedule. That schedule affected her family obligations, childcare, ability
+          to be present for her son, internal mobility, and access to development
+          opportunities. She was also removed from the waitlist, later shown an
+          incomplete screenshot that did not match the controlling SharePoint
+          waitlist, re-added with a later request date, and changed from PM/Temporary
+          to PM/Permanent without a clear ticket, notice, or approval documentation.
+        </p>
+        <p className="mt-3">
+          Respondent cannot defeat this issue by saying Charging Party remained
+          employed, kept her pay, or received strong evaluations. Under Title VII, an
+          employee does not have to show termination, demotion, or loss of pay to show
+          harm. Schedule, assignments, access to opportunity, visibility, and working
+          conditions can be terms or conditions of employment. Here, the record shows
+          harm to Charging Party's schedule, advancement path, project access,
+          performance rating, and career mobility.
+        </p>
+        <p className="mt-3">
+          Respondent also states that Charging Party received strong evaluations. That
+          is incomplete. Before her protected activity, she received a 2023 overall
+          rating of Strong. In the first review cycle after her May 2024 EEOC charge
+          and May 29, 2024 formal internal complaint, her overall rating dropped to
+          Solid. That downgrade occurred despite strong underlying metrics, no goal
+          rated below Solid, and a 124.36% bonus payout. Her rating later returned to
+          Strong in 2025. The issue is the Strong → Solid → Strong pattern and the
+          timing of the 2024 downgrade.
+        </p>
+        <p className="mt-3">
+          The 2024 Solid rating was not harmless. Leadership later communicated that
+          Unit Managers / Team Leaders needed a rating of 4 Strong or 5 Outstanding to
+          be eligible for the TL Plus / Department Manager training cohort. A 3 Solid
+          rating excluded Charging Party from that advancement pipeline. Respondent's
+          statement that she maintained her responsibilities and was not precluded
+          from advancement ignores the actual consequence of the 2024 rating.
+        </p>
+        <p className="mt-3">
+          Respondent further claims that Charging Party failed to identify similarly
+          situated employees outside her protected class who were treated more
+          favorably. That is also incorrect. Comparator evidence includes employees who
+          received schedule movement, department movement, or other opportunities while
+          Charging Party remained fixed on PM/closing. Tyler Millisock is a key
+          comparator because he had the same April 3, 2023 start date, was at the
+          same level, is outside Charging Party's protected class, and moved from
+          LVAR PM/closing to PRE-D/DBC 11:30 a.m.–8:00 p.m. while she remained stuck
+          on PM/closing. Tyler also stated he was not on the waitlist. That directly
+          contradicts Respondent's claim that movement was strictly controlled by a
+          centralized waitlist and that no employee moved outside the established
+          system.
+        </p>
+        <p className="mt-3">
+          The waitlist records also show inconsistent treatment. Charging Party
+          requested mid-shift in 2024, discovered on April 26, 2024 that she was not
+          on the MID-shift waitlist, and raised that issue in her May 29, 2024 formal
+          complaint and May 31, 2024 HR intake call. Respondent's own January 22, 2025
+          waitlist snapshot showed her on the list with a June 26, 2024 request date,
+          PM/Temporary status, and Qualifies = Yes. By February 25, 2025, after Jen
+          Roy edited the waitlist multiple times, her row was removed while other
+          employees remained and continued to qualify. Respondent has not explained
+          who authorized her removal, why she was removed, or why no ticket has been
+          produced.
+        </p>
+        <p className="mt-3">
+          Respondent's claim that Charging Party was offered a day-shift opportunity in
+          May 2025 and declined it is false. She did not receive a May 2025 shift
+          offer. She was not offered AM, mid-shift, or any other shift opportunity in
+          May 2025. Respondent has not produced the alleged offer, the alleged
+          decline, the ticket, the communication, the shift details, or the person who
+          allegedly recorded her response. Respondent also cannot explain how Charging
+          Party was supposedly removed for declining a May 2025 offer when the records
+          show she had already been removed from the waitlist in February 2025.
+        </p>
+        <p className="mt-3">
+          Respondent's claim that Charging Party was "reentered" onto the waitlist on
+          July 10, 2025 based on a new request is also misleading. July 2025 was not
+          the beginning of the schedule issue. Charging Party had already requested
+          mid-shift in 2024. In June 2025, after being stuck on PM/closing, she asked
+          to also be considered for AM in addition to the mid-shift request she
+          believed was already pending. In July, she asked Allan Glover where she was
+          on the waitlist. Allan contacted Jen Roy, and within approximately one
+          minute Jen provided a limited five-row screenshot. That screenshot omitted
+          the material fields needed to verify placement, including Date Requested,
+          Months as CAR TL, Temporary/Permanent status, and Qualifies = Yes/No. The
+          controlling SharePoint waitlist did not contain her name at that time. She
+          was later re-added with a July 17, 2025 request date, which reset the
+          earlier June 26, 2024 date reflected in the January 2025 snapshot.
+        </p>
+        <p className="mt-3">
+          Respondent says managers did not control the process. The record contradicts
+          that. During the September 19, 2025 recorded conversation, Allan discussed
+          Training Bay movement and stated there "wasn't a criteria" for that
+          movement. When asked who was involved in the decision, he identified
+          "myself, Amber, Trevor, Dan." That is not a strictly neutral, automatic,
+          centralized process. It shows management involvement and discretionary
+          decision-making.
+        </p>
+        <p className="mt-3">
+          Respondent also says that any differences in schedules were due to separate
+          roles, preexisting assignments, training obligations, or accommodations.
+          That explanation is unsupported without the underlying records. If that is
+          Respondent's position, it should produce the comparator movement records,
+          tickets, accommodations, training assignments, onboarding records, and
+          schedules for the employees it claims are distinguishable. Respondent should
+          not be permitted to rely on generalized explanations while withholding the
+          documents that would show whether those explanations are true.
+        </p>
+        <p className="mt-3">
+          Respondent's performance and advancement argument is also incomplete.
+          Charging Party applied for nearly 50 internal roles from approximately
+          February 2023 through April 2025. Respondent has not produced the postings,
+          selected candidates, interview notes, scoring criteria, recruiter notes,
+          decisionmaker names, or comparative qualifications. Respondent's statement
+          that other candidates were "more qualified" is conclusory. It cannot rebut
+          discrimination without the records showing who was selected, why they were
+          selected, who made the decision, and whether the decisionmakers knew of
+          Charging Party's protected activity or her complaints.
+        </p>
+        <p className="mt-3">
+          Respondent also ignores project exclusion. Advancement at Discover was not
+          limited to formal job postings. Advancement also came through project
+          visibility, operational tools, process-improvement work, leadership
+          exposure, and internal sponsorship. After her protected activity, Charging
+          Party was excluded from project-related opportunities and credit. She raised
+          concerns that her Compliance Check concept and related materials were used
+          or recreated by Cyndy Smith's group while she was excluded from related
+          meetings and credit. She also created call-flow/process tools and attempted
+          to present them to leadership, including Greg Carfagna, but did not receive
+          meaningful support or visibility. Those facts are relevant to advancement
+          and opportunity.
+        </p>
+        <p className="mt-3">
+          Respondent's argument that Mr. Glover is in the "same protected racial
+          class" does not defeat the claim. First, the decisions at issue were not
+          made by Allan alone. The record involves Rosanna Blackson, Greg Carfagna,
+          Jen Roy, Edina Markus, Amber, Trevor, Dan, HR, Employee Relations,
+          scheduling administrators, and other leaders. Second, the law does not
+          presume that a person cannot discriminate against someone who shares a
+          protected trait or some portion of a protected identity. That argument does
+          not erase the comparator evidence, timing, inconsistent records,
+          race-related comments, or unequal application of process.
+        </p>
+        <p className="mt-3">
+          Respondent also attempts to dismiss the hardship-fund and HBCU comments as
+          isolated and disconnected. They are not disconnected. The hardship-fund
+          evidence shows different treatment in the same general process. Shortly
+          before the July 10, 2025 incident, Charging Party personally assisted
+          Brandi Cordi, a White employee on her team, with a hardship-fund request.
+          Brandi was not required to submit supporting documentation. She only had to
+          identify what she needed assistance for and provide a list or explanation of
+          the requested need. Allan was aware of and assisted with that request. No
+          concern was raised.
+        </p>
+        <p className="mt-3">
+          Shortly afterward, Charging Party asked Allan about helping Araksan Dide, a
+          Black employee who was homeless and needed housing support. Allan responded
+          differently. Instead of assisting in the same manner, he told her to hold
+          off and gave an example involving Black employees, stating in substance that
+          if one Black employee told another Black employee and that person tried to
+          access the hardship fund, it could be a serious problem. Charging Party
+          documented the issue immediately, followed up with Allan in Teams, and Allan
+          responded that he was "just providing an example of what could happen." That
+          is not vague or disconnected. It is direct evidence of race entering a
+          workplace benefit/access discussion.
+        </p>
+        <p className="mt-3">
+          The HBCU comment is also relevant. Allan discussed HBCU recruiting during a
+          broader conversation about blocked opportunity, lack of advancement, lack of
+          projects, schedule restrictions, and Charging Party's inability to get past
+          barriers in the organization. He also made the "blockade" statement during
+          that conversation. Respondent's statement that Allan had no formal
+          recruiting role does not answer whether the statement was made, why it was
+          made, or whether HBCU recruiting resulted in actual hiring.
+        </p>
+        <p className="mt-3">
+          Respondent's legal argument depends on accepting its version of disputed
+          facts. That is not appropriate at this stage. The record contains multiple
+          facts supporting an inference of discrimination: similarly situated
+          employees receiving movement while Charging Party remained stuck;
+          inconsistent waitlist records; a missing ticket; a false May 2025
+          offer/decline explanation; a 2024 downgrade after protected activity;
+          exclusion from the TL Plus / Department Manager pipeline; nearly 50
+          unsuccessful internal applications despite strong performance; project
+          exclusion and lack of credit; different hardship-fund treatment for a White
+          employee and a Black employee; same-day documentation of Allan's
+          race-related hardship example; and HBCU/blockade comments tied to
+          opportunity and advancement.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent has not shown that the Charge fails as a
+          matter of law. At minimum, the evidence creates material factual disputes
+          requiring further investigation and production of the underlying records.
+        </p>
+
         {/* Section III */}
         <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
         <p className="mt-3">
@@ -1624,6 +1836,67 @@ export function FormalLetterBody() {
             interview outcomes, rejection reasons, and hiring outcomes, together with
             all communications or notes regarding Allan Glover's August 2025
             "blockade" and HBCU-related conversation with Charging Party.
+          </li>
+          <li>
+            The complete waitlist SharePoint file and full version history from 2023
+            through the present, including every edit, editor, and timestamp.
+          </li>
+          <li>
+            All shift-change tickets allegedly submitted on Charging Party's behalf,
+            together with author, submission date, routing history, and disposition.
+          </li>
+          <li>
+            All records supporting the alleged May 2025 day-shift offer and decline,
+            including the offer communication, the recorded decline, the ticket, and
+            the identity of the person who recorded the response.
+          </li>
+          <li>
+            All comparator movement records for Tyler Millisock and other similarly
+            situated Unit Managers, including the process by which each moved
+            (waitlist, manager request, training assignment, preexisting assignment,
+            accommodation, or otherwise).
+          </li>
+          <li>
+            All documents explaining Charging Party's February 2025 waitlist removal
+            and July 2025 re-addition, including approval records, notifications,
+            ticket numbers, and audit history.
+          </li>
+          <li>
+            The complete 2024 rating calibration records and the TL Plus / Department
+            Manager training cohort eligibility records, including the rating
+            thresholds, calibration participants, calibration notes, and the list of
+            employees selected for that cohort.
+          </li>
+          <li>
+            All internal application records covering Charging Party's nearly 50
+            applications from February 2023 through April 2025, including postings,
+            selected-candidate records, interview notes, scoring rubrics, recruiter
+            notes, and decisionmaker communications.
+          </li>
+          <li>
+            All project-assignment and project-credit records involving the
+            Compliance Check concept, Cyndy Smith's group, and Charging Party's
+            call-flow/process tools, including any presentation materials, meeting
+            invites, attendance records, and authorship metadata.
+          </li>
+          <li>
+            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging
+            Party's own request, including application materials, documentation
+            requirements applied to each applicant, reviewer notes, and outcomes.
+          </li>
+          <li>
+            All communications regarding Allan Glover's July 10, 2025 hardship-fund
+            example, including the Teams thread, call records, and Charging Party's
+            same-day communications with coworkers.
+          </li>
+          <li>
+            HBCU recruiting-event records, including event attendance, candidate
+            submissions, interview outcomes, rejection reasons, and hiring outcomes.
+          </li>
+          <li>
+            All communications or notes regarding Allan Glover's August 2025
+            "blockade" and HBCU-related statements, including any contemporaneous
+            notes, follow-up messages, and references in HR investigation files.
           </li>
         </ol>
 
