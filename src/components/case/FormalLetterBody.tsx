@@ -46,6 +46,78 @@ function Ex({ id }: { id: string }) {
   );
 }
 
+/**
+ * InlineExhibits — renders a compact, captioned strip of exhibit screenshots
+ * directly inside the response body so the PDF is self-contained. Each item
+ * supports a short relevance line per the requested label format.
+ *
+ * Pass either a list of exhibit IDs (image exhibits will render their primary
+ * filePath) or a list of explicit {id, relevance} pairs.
+ */
+type InlineExhibitItem = { id: string; relevance?: string; label?: string };
+
+function InlineExhibits({
+  items,
+  heading = "Evidence cited above",
+}: {
+  items: InlineExhibitItem[];
+  heading?: string;
+}) {
+  const resolved = items
+    .map((it) => ({ it, ex: exhibitById(it.id) }))
+    .filter((r): r is { it: InlineExhibitItem; ex: NonNullable<ReturnType<typeof exhibitById>> } => Boolean(r.ex));
+
+  if (resolved.length === 0) return null;
+
+  return (
+    <aside
+      className="my-6 break-inside-avoid rounded-md border border-border bg-secondary/30 p-4 print:my-4 print:border print:border-black/40 print:bg-white"
+      aria-label={heading}
+    >
+      <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-foreground/70">
+        {heading}
+      </div>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {resolved.map(({ it, ex }) => {
+          const label = it.label ?? ex.fileName;
+          const showImage = ex.fileKind === "image" && ex.filePath;
+          return (
+            <figure
+              key={it.id}
+              className="break-inside-avoid rounded border border-border bg-card p-2 print:border-black/30"
+              style={{ pageBreakInside: "avoid" }}
+            >
+              {showImage ? (
+                <img
+                  src={ex.filePath}
+                  alt={label}
+                  loading="eager"
+                  className="block max-h-[360px] w-full rounded border border-border object-contain print:max-h-none"
+                />
+              ) : (
+                <div className="rounded border border-dashed border-border bg-secondary/40 p-3 text-[11px] text-foreground/70">
+                  {ex.fileKind.toUpperCase()} on file · {ex.filePath || "see appendix"}
+                </div>
+              )}
+              <figcaption className="mt-2 text-[11px] leading-snug text-foreground/85">
+                <span className="font-mono font-semibold">
+                  Exhibit: {ex.exhibitNumber}
+                </span>{" "}
+                — {label}
+                {it.relevance && (
+                  <div className="mt-0.5 text-foreground/75">
+                    <span className="font-semibold">Relevance:</span> {it.relevance}
+                  </div>
+                )}
+              </figcaption>
+            </figure>
+          );
+        })}
+      </div>
+    </aside>
+  );
+}
+
 export function FormalLetterBody() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-10 sm:py-14">
