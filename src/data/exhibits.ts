@@ -2093,6 +2093,20 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-089-team-ratios-ascarte-mid-roster.png",
     fileKind: "image",
   },
+  {
+    id: "EX-090",
+    exhibitNumber: "EX-090",
+    fileName: "Teams chat — Allan Glover acknowledging two-year mid-shift waitlist wait",
+    date: "Wednesday (Teams chat screenshot)",
+    category: "Teams chat",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Screenshot of Teams chat between Harbin and Allan Glover. Key exchanges:\n\n• Harbin: 'I may have to resign unfortunately if I'm unable to work a different schedule. It sucks but I just miss seeing Atlas and this just isn't right. I've been requesting midshift for 2 years lol.'\n• Allan Glover (3:12 PM): 'I understand and keep pushing.'\n• Harbin (5:17 PM): 'Allan would it be too much to see if anyone would be willing to switch schedules permanently? Or is that even an option, if someone would take my schedule?'\n• Allan Glover (5:17 PM): 'I can check for sure.'\n• Harbin (5:18 PM): 'Yes. If not maybe changing to a different role like a coach if they have availability?'\n• Allan Glover (5:20 PM): 'What?'\n• Harbin (5:21 PM): 'Demoting to a coach?'\n• Harbin: 'I've heard of a few people doing that. If they have early schedule availability, I would do that.'\n• Allan Glover (5:24 PM): 'I will check.'\n• Harbin (5:25 PM): 'Thank you so much!'\n• Allan Glover (5:37 PM): 'Sorry for all of the messages lol but I just sent Bruce's PE over via workday for your approval.'\n• Allan Glover (5:38 PM): 'On it and give me a few.'\n• Allan Glover (5:45 PM): 'Done.'\n• Harbin (5:47 PM): 'Thank you!'\n• Allan Glover (5:49 PM): 'You're welcome.'\n\nRELEVANCE: (1) Allan Glover — a named decisionmaker per the Sept 19, 2025 Training Bay transcript (EX-059) — acknowledges Harbin's two-year mid-shift request without correction; (2) Harbin explicitly states 'I've been requesting midshift for 2 years' and Allan responds 'I understand and keep pushing,' not 'you were already offered and declined' — directly contradicts Respondent's 'May 2025 offer / decline' narrative; (3) Harbin offers to demote to a coach role to obtain an earlier schedule — proves the severity of the harm and willingness to accept material downside to escape PM-only assignment; (4) mention of resigning to be with her child (Atlas) corroborates the damages section (parenting impact, emotional distress); (5) Allan's offer to 'check' if anyone would swap schedules confirms no formal waitlist offer was pending at that time.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-090-allan-waitlist-two-years.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
