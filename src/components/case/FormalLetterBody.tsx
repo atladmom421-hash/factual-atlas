@@ -448,9 +448,15 @@ export function FormalLetterBody() {
           stating that comparator movement occurred "because of leadership, not the waitlist."
           See <Ex id="EX-HR-CALL" />. That statement, made by Respondent's agent, is a direct
           admission that the process Respondent now describes as neutral was, in practice,
-          discretionary. The May 12, 2026 Karena Lesure reassignment — granted, on the record,
-          because Julie Cahoon "specifically asked" — confirms the same pattern.{" "}
-          See <Ex id="EX-010" />, <Ex id="EX-019" />.
+          discretionary.
+        </p>
+        <p className="mt-3">
+          The Team Leader comparators identified below all hold the same Team Leader role as
+          Charging Party, in the same Vehicle Assistance line of business, under the same
+          purportedly centralized scheduling and waitlist process. Each comparator's actual
+          department, shift hours, days off, and movement history is set out at the schedule-by-schedule
+          level in the post-complaint timeline (§ II.O.1 below) and the supporting comparator matrix.
+          See <Ex id="EX-010" />, <Ex id="EX-022" />.
         </p>
         <p className="mt-3">
           Comparators were identified by name, role, start date, schedule history, and source in{" "}
@@ -458,26 +464,49 @@ export function FormalLetterBody() {
         </p>
         <ul className="mt-2 list-disc space-y-1 pl-6">
           <li>
-            <strong>Tyler Millisock</strong> — same start date and level as Charging Party; moved
-            areas and schedules between January and October 2025; no waitlist ticket has been
-            produced.
+            <strong>Tyler Millisock</strong> (Team Leader, LVAR → PRE-D/DBC) — same April 3, 2023
+            start date and same TL level as Charging Party; moved from LVAR PM/closing
+            (1:30 p.m.–10:00 p.m., Sun–Thu) to PRE-D/DBC 11:30 a.m.–8:00 p.m. between January and
+            October 2025; stated he was not on the waitlist; no waitlist ticket has been produced.
           </li>
           <li>
-            <strong>Hunter Samuel</strong> — received the AM shift Charging Party would have
-            accepted.
+            <strong>Hunter Samuel</strong> (Team Leader, HVAR → LVAR/Whitehall) — cross-department
+            transfer in June–July 2025 placed directly into AM (approximately 8:00 a.m.–4:30 p.m.,
+            weekday core schedule) in Charging Party's own department while Charging Party remained
+            on PM/closing.
           </li>
           <li>
-            <strong>Marc Case</strong> — on the same PM shift; routinely permitted to leave
-            approximately one hour early while Charging Party covered his team.
+            <strong>Cody Christensen</strong> (Team Leader, HVAR → LVAR/Whitehall) — cross-department
+            transfer in June–July 2025 placed directly into AM in Charging Party's department; carried
+            a "Temporary" designation rather than going through the permanent waitlist Charging Party
+            was held to.
           </li>
           <li>
-            <strong>Marissa Mascarenas</strong> — earlier and mid-shift placements (8:00–4:30,
-            10:00–6:30) without a waitlist explanation.
+            <strong>Marc Case</strong> (Team Leader, LVAR PM) — on the same 1:30 p.m.–10:00 p.m. PM
+            closing schedule as Charging Party; routinely permitted to leave approximately one hour
+            early (typically by 9:00 p.m.) while Charging Party was required to cover his team.
           </li>
           <li>
-            <strong>Julie Cahoon / Karena Lesure</strong> — May 12, 2026 reassignment based on a
-            specific request, contradicting the "not operationally feasible" rationale applied to
-            Charging Party in September 2025.
+            <strong>Marissa Mascarenas</strong> (Team Leader, LVAR) — held rotating 10:00 a.m.–6:30
+            p.m. mid-shift (March 2025), an active mid-shift TL placement (April 2025), and
+            8:00 a.m.–4:30 p.m. AM placement (September 2025), without a waitlist explanation,
+            during the same period Charging Party's mid-shift request remained unresolved.
+          </li>
+          <li>
+            <strong>Whitnee Kollar</strong> (Team Leader, LVAR) — placed on a dedicated
+            9:00 a.m.–5:30 p.m. mid-shift in August 2025, confirming mid-shift Team Leader
+            placements existed during the same window Charging Party was told no mid-shift was
+            available.
+          </li>
+          <li>
+            <strong>Leslie McGregor</strong> (Team Leader / TL-in-Training, Training Bay) — placed
+            into 11:30 a.m.–8:00 p.m. in TBay / TL-in-Training in September 2025, the same earlier
+            schedule envelope Charging Party had been requesting since 2024.
+          </li>
+          <li>
+            <strong>Jarin Bell</strong> (Team Leader, Maintenance → LVAR/Whitehall) — transferred
+            from a late shift in Maintenance directly into AM in Charging Party's department in
+            September 2025.
           </li>
         </ul>
         <p className="mt-3">
@@ -488,8 +517,8 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Comparator evidence"
           items={[
-            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Millisock, Samuel, Case, Mascarenas, Lesure." },
-            { id: "EX-019", relevance: "September 2025 HR ticket screenshot tied to Karena Lesure reassignment context." },
+            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Millisock, Samuel, Christensen, Case, Mascarenas, Kollar, McGregor, Bell." },
+            { id: "EX-022", relevance: "Schedule Movement Data — actual department, shift hours, and days for each Team Leader comparator." },
           ]}
         />
 
