@@ -956,6 +956,42 @@ export function FormalLetterBody() {
             it was implemented, and any records reflecting that the four-day schedule was
             treated as a substitute for, or resolution of, her mid-shift request.
           </li>
+          <li>
+            Charging Party's complete internal application history from February 2023 through
+            April 2025, including all job postings applied to, recruiter notes, interview
+            notes, interview scoring rubrics, and the names of all hiring decisionmakers,
+            interviewers, recruiters, and managers involved in each role.
+          </li>
+          <li>
+            For each posting, documents showing whether the decisionmaker(s) knew or had
+            access to information about Charging Party's protected activity, and the selected
+            candidates' qualifications, ratings, tenure, internal experience, schedule
+            history, and protected-activity history.
+          </li>
+          <li>
+            All communications regarding Charging Party's internal applications, including
+            recruiter, hiring-manager, and HR communications.
+          </li>
+          <li>
+            TL Plus / Department Manager training cohort eligibility rules, the list of
+            employees selected for that cohort, and documents showing how the 2024 Solid
+            rating affected eligibility.
+          </li>
+          <li>
+            All communications regarding the Compliance Check project, Cyndy Smith's group,
+            and related meetings, including any documents reflecting the origin of the
+            concept and the participants in subsequent meetings.
+          </li>
+          <li>
+            Calendar invites and attendance records for Charging Party's scheduled Call Flow
+            tool presentation to Greg Carfagna.
+          </li>
+          <li>
+            Documents showing project assignments, project invitations, and project
+            participation for Unit Managers from May 2024 through 2026, and records showing
+            cross-department movement, schedule movement, and project assignments for
+            similarly situated Unit Managers during the same period.
+          </li>
         </ol>
 
 
