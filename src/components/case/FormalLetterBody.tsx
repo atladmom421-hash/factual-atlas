@@ -764,9 +764,7 @@ export function FormalLetterBody() {
           ]}
         />
 
-            { id: "EX-048", relevance: "Mid-shift waitlist version-history narrative documenting placement, removal, absence, and re-add." },
-          ]}
-        />
+
 
 
 
