@@ -1250,6 +1250,37 @@ export function FormalLetterBody() {
           Respondent should be required to produce the original Team Ratios 2024 file, complete version history, formula history, edit history, author/editor metadata, SharePoint audit logs, and any communications explaining why the LVAR mid-shift staffing formula was changed. Respondent should also explain whether that formula change affected mid-shift availability, waitlist eligibility, staffing ratios, or the stated business reasons for denying my shift movement.
         </p>
 
+        <h4 className="mt-5 font-display text-sm font-semibold tracking-tight">
+          Team Ratios Workbook — MID Work Continued Under Other Team Leaders After the September 24, 2024 Formula Changes
+        </h4>
+        <p>
+          The Team Ratios workbook further contradicts Respondent's position that my schedule issue was simply a matter of neutral availability or lack of mid-shift options. The workbook contains monthly tabs for January through December 2024 (<ExhibitCite id="EX-086" />, <ExhibitCite id="EX-087" />), and the later-month roster data shows that MID shifts and MID agents continued to exist in the same operational planning period — including MID agents assigned or redistributed under other Team Leaders.
+        </p>
+        <p className="mt-3">
+          The Sept 24, 2024 7:14 PM version (<ExhibitCite id="EX-086" />) shows the LVAR TL Shift Split with <strong>MID = 0 / 0.0%</strong>, the Agent Shift Split with <strong>MID = 0 / 0.0%</strong>, and the TL Ratio cell for MID returning <strong>#DIV/0!</strong>. Three weeks later, the Oct 10, 2024 11:47 AM version (<ExhibitCite id="EX-087" />) shows the same LVAR MID = 0 / #DIV/0! pattern in both CURRENT and PLAN — confirming this was a sustained state, not a transient edit. Yet the very same Oct 10 workbook shows PreD CURRENT with <strong>MID = 36 agents / 2 TLs / ratio 18</strong>, proving MID staffing was operationally viable in the same workbook, the same business unit, and the same day.
+        </p>
+        <p className="mt-3">
+          The agent-level roster data is even more direct. Marissa Mascarenas's team detail (<ExhibitCite id="EX-088" />) shows at least six MID-scheduled agents — Khadijah Marks (11:30-20:00), Alyssa Rocha (10:00-18:30), Jason Heyder (10:00-18:30), Joanna Quintanilla (08:00-16:30), Deron Sutton (08:00-16:30), Nathalie Austin (11:30-20:00), Ariane Smith (11:30-20:00), Rashanna Burley (08:30-17:00 and 11:30-20:00). Ryan Ascarte's team detail (<ExhibitCite id="EX-089" />) shows additional MID-scheduled agents — Ashley Rochester (09:00-17:30), Lanaja Jernigan (08:00-16:30), Kendra King (10:30-19:00), Amy Minshall (11:30-20:00), Tityana Walker (08:00-16:30). Both Marissa and Ryan report to Rosanna Blackson. The "Move To," "FWW/JA," "On TERM File," "Left LVAR/CAR," and "Moved to Fraud" columns confirm Respondent operated a formal movement mechanism during this same period.
+        </p>
+        <p className="mt-3">
+          The version-history evidence reflects activity associated with Allan Glover, Darren Hunt, Scott McLaughlin, Trevor Howe, and Rosanna Blackson during the window in which the LVAR mid-shift formula/ratio fields changed (<ExhibitCite id="EX-086" />, <ExhibitCite id="EX-087" />). I do not assert from the screenshots alone that any particular individual changed any particular cell; the native file, cell-level edit history, formula history, and SharePoint audit logs are required to resolve that question — which is precisely why Respondent should be required to produce them.
+        </p>
+        <p className="mt-3">
+          The record does not support a simple "no mid-shift availability" explanation. Respondent's own Team Ratios workbook shows MID schedules continued to exist and were being allocated to other Team Leaders' agent teams after my protected complaints, while the LVAR mid-shift ratio fields under my line of leadership were zeroed out or left in formula-error state. Respondent should be required to produce the native Team Ratios workbook, complete version history, cell-level edit history, formula history, author/editor metadata, SharePoint audit logs, and communications explaining (i) why the LVAR MID staffing formulas or ratio calculations were changed on or around September 24, 2024; (ii) why MID agents were assigned or redistributed under other Team Leaders during the same period; and (iii) why those MID opportunities were not used to resolve my long-standing mid-shift request.
+        </p>
+
+        <InlineExhibits
+          heading="Team Ratios workbook — MID continuity & version-history activity"
+          items={[
+            { id: "EX-086", relevance: "Sept 24, 2024 7:14 PM version — LVAR TL Shift Split MID=0/0.0%, Agent Shift Split MID=0/0.0%, TL Ratio MID=#DIV/0!; Version History shows same-day edits by Allan Glover, Darren Hunt, Scott McLaughlin, Trevor Howe." },
+            { id: "EX-087", relevance: "Oct 10, 2024 11:47 AM version — LVAR MID=0/#DIV/0! sustained three weeks later in CURRENT and PLAN; same workbook shows PreD MID=36 agents/2 TLs/ratio 18, proving MID staffing was operationally viable; Rosanna Blackson edit activity logged." },
+            { id: "EX-088", relevance: "Marissa Mascarenas team detail — 6+ MID-scheduled agents (11:30-20:00, 10:00-18:30, 08:00-16:30) on a comparator TL's team under Rosanna during the same period Respondent claims no MID availability existed." },
+            { id: "EX-089", relevance: "Ryan Ascarte team detail — 5 additional MID-scheduled agents (09:00-17:30, 08:00-16:30, 10:30-19:00, 11:30-20:00) on a second comparator TL's team under Rosanna; 'Moved to Fraud' / 'Left LVAR/CAR' notes confirm an active agent-movement mechanism." },
+            { id: "EX-048", relevance: "Original Team Ratios formula/ratio change reference — September 24, 2024 modification narrative." },
+          ]}
+        />
+
+
         <InlineExhibits
           heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
           items={[
