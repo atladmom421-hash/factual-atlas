@@ -1837,6 +1837,67 @@ export function FormalLetterBody() {
             all communications or notes regarding Allan Glover's August 2025
             "blockade" and HBCU-related conversation with Charging Party.
           </li>
+          <li>
+            The complete waitlist SharePoint file and full version history from 2023
+            through the present, including every edit, editor, and timestamp.
+          </li>
+          <li>
+            All shift-change tickets allegedly submitted on Charging Party's behalf,
+            together with author, submission date, routing history, and disposition.
+          </li>
+          <li>
+            All records supporting the alleged May 2025 day-shift offer and decline,
+            including the offer communication, the recorded decline, the ticket, and
+            the identity of the person who recorded the response.
+          </li>
+          <li>
+            All comparator movement records for Tyler Millisock and other similarly
+            situated Unit Managers, including the process by which each moved
+            (waitlist, manager request, training assignment, preexisting assignment,
+            accommodation, or otherwise).
+          </li>
+          <li>
+            All documents explaining Charging Party's February 2025 waitlist removal
+            and July 2025 re-addition, including approval records, notifications,
+            ticket numbers, and audit history.
+          </li>
+          <li>
+            The complete 2024 rating calibration records and the TL Plus / Department
+            Manager training cohort eligibility records, including the rating
+            thresholds, calibration participants, calibration notes, and the list of
+            employees selected for that cohort.
+          </li>
+          <li>
+            All internal application records covering Charging Party's nearly 50
+            applications from February 2023 through April 2025, including postings,
+            selected-candidate records, interview notes, scoring rubrics, recruiter
+            notes, and decisionmaker communications.
+          </li>
+          <li>
+            All project-assignment and project-credit records involving the
+            Compliance Check concept, Cyndy Smith's group, and Charging Party's
+            call-flow/process tools, including any presentation materials, meeting
+            invites, attendance records, and authorship metadata.
+          </li>
+          <li>
+            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging
+            Party's own request, including application materials, documentation
+            requirements applied to each applicant, reviewer notes, and outcomes.
+          </li>
+          <li>
+            All communications regarding Allan Glover's July 10, 2025 hardship-fund
+            example, including the Teams thread, call records, and Charging Party's
+            same-day communications with coworkers.
+          </li>
+          <li>
+            HBCU recruiting-event records, including event attendance, candidate
+            submissions, interview outcomes, rejection reasons, and hiring outcomes.
+          </li>
+          <li>
+            All communications or notes regarding Allan Glover's August 2025
+            "blockade" and HBCU-related statements, including any contemporaneous
+            notes, follow-up messages, and references in HR investigation files.
+          </li>
         </ol>
 
 
