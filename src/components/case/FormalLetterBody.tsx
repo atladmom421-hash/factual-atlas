@@ -511,6 +511,72 @@ export function FormalLetterBody() {
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
+          E.1. November 6, 2025 HR Follow-Up Call — Alleged AM Offer Used to Justify Removal From Mid-Shift Waitlist
+        </h3>
+        <p className="mt-3">
+          Respondent's explanation regarding the alleged May 2025 shift offer is internally
+          inconsistent and unsupported by the record. During the November 6, 2025 HR follow-up
+          call, HR relayed Allan Glover's account that a day-shift offer was allegedly made in
+          May 2025 and declined, and that two schedule-change requests had been submitted on my
+          behalf. HR then stated that if employees are offered something and decline it, that is
+          why they are pulled off the waitlist.
+        </p>
+        <p className="mt-3">
+          I immediately disputed that explanation. I explained that my long-standing request was
+          for mid-shift, that I had never been offered a mid-shift position, and that I had never
+          been offered or declined an AM/day-shift position. I also challenged the logic of
+          removing someone from a waitlist for one shift based on an alleged offer of a different
+          shift. HR responded that "that is how it works" and characterized the practice as
+          offering the "next shift available."
+        </p>
+        <p className="mt-3">
+          This explanation is not credible without supporting records. Respondent should be
+          required to produce the alleged May 2025 offer, including the date it was made, the
+          person who made it, the shift offered, the department/group, the communication method,
+          the alleged decline, the associated ticket, the waitlist-removal record, the written
+          policy authorizing removal from a mid-shift waitlist based on an alleged day-shift
+          offer, and any notice provided to me that I had been removed.
+        </p>
+        <p className="mt-3">
+          This issue is especially important because the preserved waitlist version-history
+          evidence shows my name was deleted from the waitlist in February 2025 — months before
+          the alleged May 2025 offer. Respondent cannot rely on a May 2025 alleged offer to
+          explain a February 2025 deletion. If Respondent now claims a different, earlier offer
+          occurred, it should be required to explain why its Position Statement and the
+          November 6, 2025 HR follow-up both identified May 2025, and to produce the
+          contemporaneous records supporting any revised explanation. See <Ex id="EX-008" />,{" "}
+          <Ex id="EX-045" />, <Ex id="EX-046" />.
+        </p>
+        <p className="mt-3">
+          Later in the same November 6, 2025 call, HR further stated that if employees were
+          moving over, it "may have nothing to do with being on a waitlist" and "may have to do
+          with leadership." That admission directly undercuts Respondent's representation that
+          the waitlist is a neutral, centralized process that managers cannot bypass.
+        </p>
+
+        <div className="mt-4 border-l-4 border-foreground/60 bg-muted/40 p-4">
+          <p className="font-display text-[13px] font-semibold tracking-tight">
+            Key Contradiction
+          </p>
+          <p className="mt-2 text-[13px]">
+            Respondent claims I was removed from the waitlist because I declined an alleged
+            May 2025 day-shift offer. But my request was for mid-shift, I disputed ever receiving
+            or declining an AM or mid-shift offer, and the version-history evidence shows my name
+            was deleted in February 2025 — before the alleged May 2025 offer.
+          </p>
+          <p className="mt-3 font-display text-[13px] font-semibold tracking-tight">
+            Question for the Investigator
+          </p>
+          <p className="mt-2 text-[13px]">
+            What written policy allowed Respondent to remove me from a mid-shift waitlist
+            because of an alleged day-shift offer, and where is the record showing that offer,
+            decline, removal, and notice?
+          </p>
+        </div>
+
+
+
+        <h3 className="mt-6 font-display text-[15px] tracking-tight">
           F. The "no similarly situated comparator" assertion (PS pp. 2, 6, 10)
         </h3>
         <p className="mt-3">
