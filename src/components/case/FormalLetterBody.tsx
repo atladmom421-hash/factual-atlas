@@ -1457,11 +1457,15 @@ export function FormalLetterBody() {
           heading="Ancillary-allegations evidence — Verint, Teams, leave, hardship"
           items={[
             { id: "EX-006", relevance: "Verint monitoring evidence — Harbin's profile visibility versus other Team Leaders." },
+            { id: "EX-094", relevance: "Verint Monitor Employees — Harbin's account searching/coaching CAHOON, JULIE on TEAM_AGLOVE1; system permits monitoring subject only to target being logged on." },
+            { id: "EX-095", relevance: "Verint Monitor Employees — Harbin's account reaching NIELSEN, PAUL on Organization 11:GM_AL.R1 across the full DTG org tree (BANK/GMA/MVNO)." },
+            { id: "EX-096", relevance: "Verint Interaction Review — HARBIN, SHAWNNA 'Logged in' with live SCREEN feed visible while no evaluation form is assigned, rebutting 'QA-only' explanation." },
             { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns documented to HR." },
             { id: "EX-007", relevance: "October 2025 FMLA misclassification as STD and resulting system-access deactivation." },
             { id: "EX-003", relevance: "Hardship-fund timeline — Cordi, Dide, and Harbin requests; same-day escalation to HR, ER, and director-level leadership." },
             { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments and same-day documentation." },
             { id: "EX-005", relevance: "August 2025 HBCU recruiting and 'blockade' statement context." },
+
           ]}
         />
 
