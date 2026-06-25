@@ -2359,6 +2359,60 @@ export function FormalLetterBody() {
             hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
             own request.
           </li>
+          <li>
+            All records regarding Charging Party's May 29, 2024 complaint involving
+            Rosanna Blackson, including intake notes, routing, witness lists, and
+            disposition.
+          </li>
+          <li>
+            All HR investigation notes regarding the racial-slur allegation,
+            including interview notes, witness statements, and findings.
+          </li>
+          <li>
+            All communications regarding the June 2024 decision to move Charging
+            Party away from Rosanna Blackson's reporting line during the
+            investigation, including the reasons, the approvers, and the
+            implementation timeline.
+          </li>
+          <li>
+            All waitlist, schedule, and ticket records relating to Charging
+            Party's mid-shift and AM requests from 2024 through the present.
+          </li>
+          <li>
+            All communications regarding Charging Party's project exclusion and
+            the Compliance Check concerns, including the origin of the concept and
+            participants in subsequent meetings.
+          </li>
+          <li>
+            All records regarding Allan Glover's July 10, 2025 hardship-fund
+            example, including the Teams thread, call records, and Charging
+            Party's same-day communications with coworkers.
+          </li>
+          <li>
+            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging
+            Party's own request, including application materials, documentation
+            requirements applied to each applicant, reviewer notes, and outcomes.
+          </li>
+          <li>
+            All records regarding Allan Glover's HBCU and "blockade" statements,
+            including contemporaneous notes, follow-up messages, and references in
+            HR investigation files.
+          </li>
+          <li>
+            Verint access logs and permission-change records relating to Charging
+            Party and to similarly situated Team Leaders before and after her
+            October 2025 complaint.
+          </li>
+          <li>
+            Microsoft Teams deletion, retention, and preservation records for the
+            Allan Glover / Amber chat and Charging Party's account from October 1,
+            2025 forward.
+          </li>
+          <li>
+            Leave-processing records related to Charging Party's October 2025 FMLA
+            request, access deactivation, and related communications, including
+            system timestamps, status changes, approvers, and notifications.
+          </li>
         </ol>
 
 
