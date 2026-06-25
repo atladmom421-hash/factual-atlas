@@ -719,6 +719,114 @@ export function FormalLetterBody() {
           be addressed by production of the litigation-hold notice and custodial activity log.
         </p>
 
+        <h3 className="mt-6 font-display text-[15px] tracking-tight">
+          N. Response to Respondent's "Performance and Advancement" Narrative (PS § II.C)
+        </h3>
+        <p className="mt-3">
+          Respondent's "Performance and Advancement" section confirms an important fact:
+          Charging Party was a strong performer. Respondent acknowledges that she continued
+          performing at a high level, that her manager recognized her strong results, and that
+          she later received a 2025 rating equivalent to Strong. Charging Party does not
+          dispute that she was a strong performer. What is disputed is Respondent's attempt to
+          use that strong performance as proof that no harm occurred. Strong performance makes
+          the later treatment <em>harder</em> to explain, not easier. If Charging Party was
+          consistently performing at a high level, Respondent should explain why she was
+          downgraded in 2024, excluded from advancement pipelines, left out of project
+          opportunities, repeatedly denied internal mobility, and kept fixed on PM/closing
+          while other employees continued moving across departments, schedules, and
+          opportunities.
+        </p>
+        <p className="mt-3">
+          Respondent selectively relies on the 2025 Strong rating while omitting the most
+          important rating event in the record: the 2024 downgrade. Before protected activity,
+          Charging Party received a 2023 overall rating of <strong>Strong</strong>. In the
+          first review cycle after her May 2024 EEOC charge and May 29, 2024 formal internal
+          complaint, her overall rating dropped to <strong>Solid</strong>. That downgrade
+          occurred despite improved measurable performance, no individual goal rated below
+          Solid, improved team metrics, and a 124.36% bonus payout.{" "}
+          <Ex id="EX-052" />, <Ex id="EX-053" />. After the events at issue, and after
+          Respondent was already defending its actions, the rating returned to{" "}
+          <strong>Strong</strong> in 2025. The Strong → Solid → Strong pattern is central to
+          this Charge. The 2024 Solid rating was the outlier: it followed protected activity,
+          it did not match the underlying metrics, and it carried consequences.
+        </p>
+        <p className="mt-3">
+          The 2024 Solid rating was not harmless. Shortly after the 2024 reviews were issued,
+          leadership communicated that Unit Managers / Team Leaders needed a rating of
+          4 Strong or 5 Outstanding to be eligible for the TL Plus / Department Manager
+          training cohort — an internal development pipeline for Department Manager or Area
+          Manager advancement. Because Charging Party received a 3 Solid rating in 2024, she
+          was excluded from that pipeline. Respondent's statement that her opportunities
+          remained unchanged is therefore inaccurate. The rating affected both compensation
+          and advancement opportunity.
+        </p>
+        <p className="mt-3">
+          Respondent also states that promotions were handled through a formal posting and
+          interview process. The existence of a formal process does not prove the process was
+          applied fairly, consistently, or without retaliation. Charging Party's application
+          history reflects nearly 50 internal applications from approximately February 2023
+          through April 2025. <Ex id="EX-055" />. Despite strong performance, leadership
+          experience, operational knowledge, process expertise, and repeated efforts to
+          advance internally, she was not selected. Respondent has not produced the
+          decisionmakers, selected candidates, interview notes, scoring criteria, recruiter
+          notes, comparative qualifications, or communications explaining those decisions.
+          Respondent's statement that "another candidate was determined to be the best fit" is
+          conclusory: it identifies no decisionmaker, no qualifications compared, no business
+          need, no interview scoring, no calibration, no knowledge analysis, and no comparison
+          of the selected candidate's tenure, performance, ratings, experience, or
+          protected-activity history.
+        </p>
+        <p className="mt-3">
+          Respondent's further assertion that "no hiring decisionmaker would have known of
+          [Charging Party's] prior charge" is unsupported. Respondent has not identified the
+          hiring decisionmakers, interview panels, recruiters, or managers for each role, nor
+          produced the communications related to those applications. The May 29, 2024 formal
+          complaint was distributed to multiple leaders and Employee Relations representatives,
+          and Charging Party's schedule, transfer, project, performance, and advancement
+          concerns were repeatedly raised thereafter. Respondent cannot defeat causation by a
+          broad knowledge denial while withholding the records that would show who participated
+          in each decision and what they knew.
+        </p>
+        <p className="mt-3">
+          Respondent's advancement narrative is also too narrow because it treats advancement
+          as only formal job postings. At Discover, advancement also occurred through
+          leadership visibility, project assignments, process-improvement work, Department
+          Manager development cohorts, cross-department movement, schedule flexibility, and
+          opportunities to present or be credited for operational work. After protected
+          activity, Charging Party was excluded from those opportunities despite her
+          performance and process knowledge. She had created a Compliance Check concept and
+          related materials, but Cyndy Smith's group later recreated or used the idea while
+          excluding her from related meetings and credit. She also developed a Call Flow /
+          process tool and had a scheduled meeting to present it to Greg Carfagna, but
+          Mr. Carfagna did not attend — eliminating an opportunity to demonstrate concrete
+          process-improvement work to leadership.
+        </p>
+        <p className="mt-3">
+          This was not happening in isolation. During the same period, other employees
+          continued receiving movement across LVAR, MVAR, HVAR, PRE-D/DBC, Training Bay, and
+          other areas while Charging Party remained fixed on PM/closing and was told movement
+          was unavailable, waitlist-controlled, or not operationally feasible. Respondent
+          cannot separate "advancement" from those opportunities because schedule movement,
+          department movement, project exposure, and leadership visibility all affected career
+          development.
+        </p>
+        <p className="mt-3">
+          Respondent's position therefore creates a contradiction. Respondent admits Charging
+          Party was a strong performer, yet asks the Division to accept that her lack of
+          advancement, project exclusion, 2024 rating downgrade, TL Plus exclusion, and
+          continued schedule immobility were all neutral and unrelated to protected activity.
+          Respondent should be required to explain why the only rating downgrade occurred
+          after protected activity; why the 2024 Solid rating did not match the underlying
+          metrics; why that rating excluded Charging Party from the TL Plus / Department
+          Manager development pipeline; why nearly 50 internal applications did not result in
+          advancement; why project opportunities and credit were withheld; why leadership did
+          not support her process-improvement work; why Mr. Carfagna did not attend the
+          scheduled Call Flow tool presentation; and why other employees continued receiving
+          movement and opportunity while Charging Party remained blocked. The "Performance and
+          Advancement" section does not rebut the Charge — it confirms strong performance
+          while failing to explain the adverse actions that followed protected activity.
+        </p>
+
         {/* Section III */}
         <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
         <p className="mt-3">
