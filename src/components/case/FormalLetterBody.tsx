@@ -760,6 +760,11 @@ export function FormalLetterBody() {
             { id: "EX-046", relevance: "January 22, 2025 saved waitlist — Harbin listed with June 26, 2024 request date." },
             { id: "EX-045", relevance: "February 25, 2025 Jen Roy edit removing Harbin while junior employees remained and continued to qualify." },
             { id: "EX-048", relevance: "Mid-shift waitlist version-history narrative documenting placement, removal, absence, and re-add." },
+            { id: "EX-022", relevance: "Respondent's schedule materials appear to suggest Harbin worked 11:30 a.m.–8:00 p.m.; preserved schedule records show Harbin remained on PM/closing ending 10:00 p.m., while Tyler Millisock and other comparators held the 11:30 a.m.–8:00 p.m. schedule." },
+          ]}
+        />
+
+            { id: "EX-048", relevance: "Mid-shift waitlist version-history narrative documenting placement, removal, absence, and re-add." },
           ]}
         />
 
