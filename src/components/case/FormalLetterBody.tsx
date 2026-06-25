@@ -1326,7 +1326,7 @@ export function FormalLetterBody() {
         </p>
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          A. Respondent Has Not Rebutted Race Discrimination
+          a. Respondent Has Not Rebutted Race Discrimination
         </h4>
         <p className="mt-3">
           Respondent argues that Charging Party cannot establish race discrimination
@@ -1525,7 +1525,7 @@ export function FormalLetterBody() {
         </p>
 
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
-          B. Respondent Has Not Rebutted Retaliation
+          b. Respondent Has Not Rebutted Retaliation
         </h4>
         <p className="mt-3">
           Respondent does not dispute that Charging Party engaged in protected
@@ -1749,7 +1749,170 @@ export function FormalLetterBody() {
           investigation and production of the underlying records.
         </p>
 
-        {/* Section III */}
+        <h4 className="mt-6 font-display text-[15px] tracking-tight">
+          c. Respondent Has Not Rebutted the Hostile Work Environment Claim
+        </h4>
+        <p className="mt-3">
+          Respondent argues that the hostile work environment claim fails because the
+          conduct was not severe or pervasive and was not based on race. That
+          argument misstates the record.
+        </p>
+        <p className="mt-3">
+          This is not a claim based only on scheduling disputes, performance
+          disagreements, promotion frustration, or ordinary management conflict. The
+          record includes race-based conduct, repeated protected complaints, schedule
+          and waitlist obstruction, project exclusion, performance consequences,
+          unusual monitoring, deleted Teams messages, leave-processing issues,
+          hardship-fund unequal treatment, and race-related comments. These facts
+          must be viewed together, not separated into isolated events.
+        </p>
+        <p className="mt-3">
+          Under <em>Harris v. Forklift Systems</em>, the hostile work environment
+          analysis considers the totality of the circumstances, including frequency,
+          severity, humiliation, and interference with work performance. Under{" "}
+          <em>National Railroad Passenger Corp. v. Morgan</em>, a hostile environment
+          claim is based on the cumulative effect of individual acts. Respondent
+          cannot defeat the claim by isolating each event and labeling it ordinary.
+        </p>
+        <p className="mt-3">
+          The record includes a serious race-based allegation involving Rosanna
+          Blackson. In Charging Party's May 29, 2024 formal complaint, she reported
+          that Rosanna used the racial slur "nigger" during a one-on-one
+          conversation, which her mother witnessed. That is not a vague scheduling
+          dispute or ordinary workplace disagreement. A racial slur by a manager or
+          supervisor is severe evidence of race-based hostility. Respondent's
+          Position Statement does not meaningfully address that allegation.
+        </p>
+        <p className="mt-3">
+          The record also shows that HR treated the May 29 complaint as serious. On
+          June 5, 2024, HR confirmed that Charging Party would be moved away from
+          Rosanna's reporting line during the investigation so she would not have
+          one-on-one interactions with her. That response supports that the company
+          understood the seriousness of the issues she reported.
+        </p>
+        <p className="mt-3">
+          The environment did not end with the Rosanna complaint. After Charging
+          Party raised race discrimination and retaliation concerns, she continued
+          experiencing schedule obstruction, waitlist inconsistencies, project
+          exclusion, and adverse treatment tied to the same protected issues. Her
+          original mid-shift request was not properly processed. She later
+          discovered she was not on the MID-shift list. She raised that in protected
+          complaints. She was then removed from the waitlist in February 2025, shown
+          an incomplete screenshot in July 2025, re-added with a later request date,
+          and changed from PM/Temporary to PM/Permanent without clear documentation.
+          Those facts are part of the overall environment because the schedule issue
+          was repeatedly tied to her protected complaints and race-related treatment
+          concerns.
+        </p>
+        <p className="mt-3">
+          Respondent also minimizes Allan Glover's race-related hardship-fund
+          comment. That comment was not vague. Charging Party had recently assisted
+          Brandi Cordi, a White employee on her team, with a hardship-fund request.
+          Brandi was not required to submit supporting documentation, and no
+          concern was raised. Shortly afterward, Charging Party asked Allan about
+          assisting Araksan Dide, a Black employee who was homeless and needed
+          housing support. Allan responded differently and gave an example involving
+          Black employees, stating in substance that if one Black employee told
+          another Black employee and that person tried to access the hardship fund,
+          it could be a serious problem.
+        </p>
+        <p className="mt-3">
+          Charging Party documented that immediately. She texted a coworker because
+          she was shocked. She then messaged Allan in Teams and stated that she was
+          caught off guard and confused by the example he used. Allan did not deny
+          using an example. He responded that he was "just providing an example of
+          what could happen." When Charging Party asked, "What exactly are you
+          saying?" Allan called her directly and asked, "What exactly are you trying
+          to get to?" She also disclosed the incident to coworkers the same day.
+          That is not an isolated, unsupported remark. It is a documented
+          race-related workplace interaction connected to access to an employee
+          benefit.
+        </p>
+        <p className="mt-3">
+          Respondent also dismisses the HBCU comment as isolated and disconnected.
+          It was not disconnected. Allan discussed HBCU recruiting during a broader
+          August 2025 conversation about lack of advancement, lack of projects,
+          blocked opportunity, schedule restrictions, and Charging Party's inability
+          to move forward in the organization. During that same conversation, Allan
+          made the "blockade" statement, telling her in substance that there was a
+          blockade and that he did not believe she could get past it. Respondent's
+          statement that Allan had no formal recruiting role does not answer whether
+          he made the statement or why he made it during a conversation about
+          blocked opportunity.
+        </p>
+        <p className="mt-3">
+          Respondent also argues that system recording, chat deletion, and leave
+          processing are not tied to race. That is too narrow. These events occurred
+          after repeated protected complaints about race discrimination,
+          retaliation, schedule equity, and HR handling. They are part of the same
+          course of conduct and may be considered as part of the total environment
+          and retaliatory context. The issue is not whether each event used racial
+          language. The issue is whether the total environment became hostile after
+          Charging Party raised race discrimination and retaliation concerns.
+        </p>
+        <p className="mt-3">
+          The Verint evidence is specific. Charging Party's profile appeared on live
+          monitor while other Team Leaders in her same department were logged in and
+          active but did not show live monitoring active. HR later acknowledged
+          there was a technical problem and that she had "more visibility than" she
+          should have had. HR also stated they did not know what changed, who did
+          it, or why. That is not simply a standard operational tool being applied
+          uniformly.
+        </p>
+        <p className="mt-3">
+          The Teams deletion evidence is also specific. After Charging Party sent HR
+          a formal written timeline, notified Allan and Amber of FMLA in Teams, and
+          complained about Verint monitoring, the Allan/Amber Teams chat
+          disappeared. Other Teams chats from the same period remained visible,
+          including chats dated October 10, October 13, October 15, October 16,
+          October 17, and October 21. The same Allan/Amber chat was also cleared
+          from her phone. That is a record-preservation issue tied to the same
+          protected-activity and leave period.
+        </p>
+        <p className="mt-3">
+          The leave-processing evidence is also part of the total environment. After
+          Charging Party requested intermittent FMLA, the leave was mishandled or
+          misclassified, her system access was deactivated, and related Teams
+          messages disappeared. These facts occurred after she had repeatedly raised
+          race discrimination, retaliation, and HR concerns.
+        </p>
+        <p className="mt-3">
+          Respondent's argument that the conduct was not severe or pervasive ignores
+          both severity and duration. The conduct began with race discrimination
+          concerns involving Rosanna, included a reported racial slur, continued
+          through HR intervention, continued through waitlist and schedule
+          obstruction, continued through project exclusion and performance
+          consequences, included later race-related hardship-fund and HBCU/blockade
+          comments, and continued into monitoring, record-preservation,
+          leave-processing, and hardship-fund issues. This was not one isolated
+          comment. It was a continuing pattern.
+        </p>
+        <p className="mt-3">
+          The conduct also interfered with Charging Party's work and working
+          conditions. She remained fixed on PM/closing despite repeated requests
+          and family/childcare impact. She was excluded from advancement-related
+          opportunities and project credit. Her 2024 rating dropped after protected
+          activity and affected eligibility for the TL Plus / Department Manager
+          development pipeline. She had to repeatedly escalate basic schedule, HR,
+          monitoring, leave, and hardship issues. The environment affected her
+          ability to perform, advance, and remain stable in the workplace.
+        </p>
+        <p className="mt-3">
+          Respondent's legal conclusion depends on accepting its own disputed facts
+          and ignoring the cumulative record. The hostile work environment claim
+          should not be dismissed as ordinary workplace disagreement. The record
+          contains race-based conduct, race-related comments, protected complaints,
+          repeated escalation, management involvement, inconsistent records, and
+          workplace actions that affected Charging Party's conditions of
+          employment.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent has not shown that the hostile work
+          environment claim fails as a matter of law. At minimum, the evidence
+          creates factual disputes requiring further investigation.
+        </p>
+
+        {/* Section IV */}
         <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
         <p className="mt-3">
           Respondent's Position Statement applies the wrong legal standards in several respects:
@@ -2195,6 +2358,60 @@ export function FormalLetterBody() {
             calendar invite and notes, the Cameron Hadley communications, and the
             hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
             own request.
+          </li>
+          <li>
+            All records regarding Charging Party's May 29, 2024 complaint involving
+            Rosanna Blackson, including intake notes, routing, witness lists, and
+            disposition.
+          </li>
+          <li>
+            All HR investigation notes regarding the racial-slur allegation,
+            including interview notes, witness statements, and findings.
+          </li>
+          <li>
+            All communications regarding the June 2024 decision to move Charging
+            Party away from Rosanna Blackson's reporting line during the
+            investigation, including the reasons, the approvers, and the
+            implementation timeline.
+          </li>
+          <li>
+            All waitlist, schedule, and ticket records relating to Charging
+            Party's mid-shift and AM requests from 2024 through the present.
+          </li>
+          <li>
+            All communications regarding Charging Party's project exclusion and
+            the Compliance Check concerns, including the origin of the concept and
+            participants in subsequent meetings.
+          </li>
+          <li>
+            All records regarding Allan Glover's July 10, 2025 hardship-fund
+            example, including the Teams thread, call records, and Charging
+            Party's same-day communications with coworkers.
+          </li>
+          <li>
+            Hardship-fund records for Brandi Cordi, Araksan Dide, and Charging
+            Party's own request, including application materials, documentation
+            requirements applied to each applicant, reviewer notes, and outcomes.
+          </li>
+          <li>
+            All records regarding Allan Glover's HBCU and "blockade" statements,
+            including contemporaneous notes, follow-up messages, and references in
+            HR investigation files.
+          </li>
+          <li>
+            Verint access logs and permission-change records relating to Charging
+            Party and to similarly situated Team Leaders before and after her
+            October 2025 complaint.
+          </li>
+          <li>
+            Microsoft Teams deletion, retention, and preservation records for the
+            Allan Glover / Amber chat and Charging Party's account from October 1,
+            2025 forward.
+          </li>
+          <li>
+            Leave-processing records related to Charging Party's October 2025 FMLA
+            request, access deactivation, and related communications, including
+            system timestamps, status changes, approvers, and notifications.
           </li>
         </ol>
 
