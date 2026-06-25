@@ -84,11 +84,11 @@ function InlineExhibits({
 
   return (
     <aside
-      className="my-6 break-inside-avoid rounded-md border border-border bg-secondary/30 p-4 print:my-4 print:border print:border-black/40 print:bg-white"
+      className="no-print my-6 break-inside-avoid rounded-md border border-border bg-secondary/30 p-4 print:hidden"
       aria-label={heading}
     >
       <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-foreground/70">
-        {heading}
+        {heading} <span className="font-normal normal-case tracking-normal text-foreground/55">— full exhibits attached in PDF appendix</span>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {resolved.map(({ it, ex }) => {
