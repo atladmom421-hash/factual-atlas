@@ -2133,7 +2133,111 @@ export function FormalLetterBody() {
           Enclosures: Evidence Appendix (cited exhibits, attached). cc: U.S. Equal Employment
           Opportunity Commission (EEOC No. 35A-2026-00320).
         </div>
+
+        {/* Evidence Crosswalk — supplemental table; does not alter body text */}
+        <section className="mt-12 break-inside-avoid">
+          <h2 className="font-display text-lg tracking-tight">
+            Evidence Crosswalk by Respondent Position Statement Section
+          </h2>
+          <p className="mt-2 text-[12px] text-foreground/70">
+            Cross-reference of Respondent's Position Statement sections to Charging Party's
+            response sections and the supporting exhibits embedded above and in the appendix.
+          </p>
+          <div className="mt-3 overflow-x-auto">
+            <table className="w-full border-collapse text-[11px]">
+              <thead>
+                <tr className="bg-secondary/40 text-left">
+                  <th className="border border-border px-2 py-1">Respondent Section</th>
+                  <th className="border border-border px-2 py-1">Charging Party Response</th>
+                  <th className="border border-border px-2 py-1">Exhibits Included</th>
+                  <th className="border border-border px-2 py-1">What the Evidence Shows</th>
+                </tr>
+              </thead>
+              <tbody className="align-top">
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B (Employment Narrative)</td>
+                  <td className="border border-border px-2 py-1">II.A</td>
+                  <td className="border border-border px-2 py-1">EX-050, EX-051, EX-052, EX-053</td>
+                  <td className="border border-border px-2 py-1">2024 Solid downgrade despite IPF 96.49%, CPF 128.90%, 124.36% bonus payout, no goal below Solid.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.1 (Prior EEOC Charge)</td>
+                  <td className="border border-border px-2 py-1">II.B</td>
+                  <td className="border border-border px-2 py-1">EX-HR-CALL, EX-002, EX-008, EX-041, EX-042</td>
+                  <td className="border border-border px-2 py-1">May 2024 protected activity, HR-arranged reassignment, waitlist non-placement.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.2 (Glover Role / Knowledge)</td>
+                  <td className="border border-border px-2 py-1">II.H</td>
+                  <td className="border border-border px-2 py-1">EX-HR-CALL, EX-002</td>
+                  <td className="border border-border px-2 py-1">Reassignment context; Glover's admitted awareness of prior charge.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.3 (No prior request)</td>
+                  <td className="border border-border px-2 py-1">II.C</td>
+                  <td className="border border-border px-2 py-1">EX-008, EX-043, EX-001, EX-002</td>
+                  <td className="border border-border px-2 py-1">Mid-shift request raised in May 29, 2024 complaint; Tafoya April 26, 2024 confirmation.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.5 (May 2025 Day-Shift Offer)</td>
+                  <td className="border border-border px-2 py-1">II.E / II.O</td>
+                  <td className="border border-border px-2 py-1">EX-045, EX-046, EX-048</td>
+                  <td className="border border-border px-2 py-1">February 2025 removal predates alleged May 2025 decline; no ticket or offer produced.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.6–7 (Neutral Waitlist)</td>
+                  <td className="border border-border px-2 py-1">II.D</td>
+                  <td className="border border-border px-2 py-1">EX-010, EX-019, EX-HR-CALL</td>
+                  <td className="border border-border px-2 py-1">Comparator movement "because of leadership, not the waitlist"; Lesure reassignment by specific request.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.7 (July 2025 Waitlist Status)</td>
+                  <td className="border border-border px-2 py-1">II.P</td>
+                  <td className="border border-border px-2 py-1">EX-041, EX-044, EX-040</td>
+                  <td className="border border-border px-2 py-1">Limited five-row Jen Roy screenshot; July 3 SharePoint waitlist absence; SOW process.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.8 (Hardship / HBCU)</td>
+                  <td className="border border-border px-2 py-1">II.J / II.K</td>
+                  <td className="border border-border px-2 py-1">EX-003, EX-004, EX-005</td>
+                  <td className="border border-border px-2 py-1">Cordi/Dide disparate documentation; race-related hardship comment; HBCU/blockade.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.A (Race Discrimination)</td>
+                  <td className="border border-border px-2 py-1">III.A</td>
+                  <td className="border border-border px-2 py-1">EX-010, EX-051, EX-053, EX-055</td>
+                  <td className="border border-border px-2 py-1">Tyler Millisock comparator; 2024 downgrade; ~50 internal applications.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.B (Retaliation)</td>
+                  <td className="border border-border px-2 py-1">III.B</td>
+                  <td className="border border-border px-2 py-1">EX-001, EX-002, EX-006, EX-007, EX-045</td>
+                  <td className="border border-border px-2 py-1">Post-protected-activity adverse events: waitlist removal, rating, Verint, FMLA, Teams.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.C (Performance / Advancement)</td>
+                  <td className="border border-border px-2 py-1">II.N / III.A</td>
+                  <td className="border border-border px-2 py-1">EX-049, EX-051, EX-053, EX-055, EX-057</td>
+                  <td className="border border-border px-2 py-1">Strong→Solid→Strong; TL Plus / Department Manager pipeline exclusion.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.D (Ancillary Allegations)</td>
+                  <td className="border border-border px-2 py-1">III.D</td>
+                  <td className="border border-border px-2 py-1">EX-002, EX-006, EX-007, EX-003, EX-004</td>
+                  <td className="border border-border px-2 py-1">Verint visibility; Allan/Amber chat deletion; FMLA mishandling; hardship escalation.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">III (Conclusion)</td>
+                  <td className="border border-border px-2 py-1">IV</td>
+                  <td className="border border-border px-2 py-1">All cited exhibits</td>
+                  <td className="border border-border px-2 py-1">Cumulative pattern of disputed facts, missing records, and documented harm.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </article>
+
 
       {/* Print-only appendix — embeds cited exhibit images into the PDF */}
       <PrintEvidenceAppendix
