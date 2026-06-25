@@ -21,18 +21,15 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
         {items.map(ex => (
           <article key={ex.id} style={{ pageBreakInside: "avoid", border: "2px solid #000", padding: 0, background: "#fff" }}>
             {/* Large prominent EXHIBIT banner */}
-            <div style={{ background: "#000", color: "#fff", padding: "10px 14px", display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 12 }}>
-              <div style={{ fontSize: 22, fontWeight: 900, letterSpacing: 2, fontFamily: "Arial, Helvetica, sans-serif", textTransform: "uppercase" }}>
-                EXHIBIT {ex.exhibitNumber}
+            <div style={{ background: "#000", color: "#fff", padding: "12px 14px" }}>
+              <div style={{ fontSize: 20, fontWeight: 900, letterSpacing: 1.5, fontFamily: "Arial, Helvetica, sans-serif", textTransform: "uppercase", lineHeight: 1.2 }}>
+                EXHIBIT {ex.exhibitNumber} — {ex.fileName}
               </div>
-              <div style={{ fontSize: 11, fontFamily: "Arial, Helvetica, sans-serif", textTransform: "uppercase", letterSpacing: 1, opacity: 0.9 }}>
-                {ex.date}
+              <div style={{ marginTop: 4, fontSize: 11, fontFamily: "Arial, Helvetica, sans-serif", textTransform: "uppercase", letterSpacing: 1, opacity: 0.85 }}>
+                {ex.date}{ex.category ? ` · ${ex.category}` : ""}
               </div>
             </div>
             <div style={{ padding: 12 }}>
-              <div style={{ fontSize: 11, fontFamily: "monospace", color: "#333", marginBottom: 4 }}>
-                {ex.category}
-              </div>
               <div style={{ fontSize: 14, fontWeight: 700, color: "#000", marginBottom: 6 }}>{ex.fileName}</div>
               {ex.summary && (
                 <p style={{ fontSize: 12, color: "#222", margin: "0 0 8px", lineHeight: 1.4 }}>{ex.summary}</p>
