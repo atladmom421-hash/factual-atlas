@@ -895,7 +895,7 @@ export function FormalLetterBody() {
           decline? If removal after a declined offer was standard procedure, where is the
           policy and the audit trail showing that procedure was followed? For these
           reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted
-          without production of the underlying records identified in Section IV.
+          without production of the underlying records identified in Section V.
         </p>
 
         {/* Section II.P - July 2025 Waitlist Status */}
