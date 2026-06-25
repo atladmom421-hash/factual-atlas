@@ -1016,10 +1016,13 @@ export function FormalLetterBody() {
         </div>
 
         <p>
-          The timing of Allan Glover's conversation with me should also be evaluated against his communications with Human Resources. If the calendar record reflects that Allan met with Susan Marchinko immediately before speaking with me about Training Bay and shift movement, that fact is relevant because the conversation should not be treated as an isolated or spontaneous manager discussion. It would show HR involvement or awareness immediately before Allan gave the explanations documented in the transcript, including that Training Bay selection had no formal criteria and involved a management decision group consisting of Allan, Amber, Trevor, and Dan.
+          This conversation is significant because Allan Glover was not merely a passive messenger. For months, I had asked Allan who controlled schedule movement, why my long-standing mid-shift request remained unresolved, and why other leaders were moving while I remained fixed on PM/closing. Allan repeatedly presented himself as someone trying to assist or advocate regarding my schedule concerns.
         </p>
         <p>
-          Respondent should therefore produce the calendar invite, attendee list, meeting title, meeting notes, Teams/chat communications, emails, and any follow-up records for Allan Glover's meeting with Susan Marchinko immediately before the Training Bay / shift movement conversation. If Allan met with Susan Marchinko immediately before this conversation, Respondent should produce the meeting records because that timing bears directly on HR knowledge, management coordination, and the credibility of Allan's explanations regarding Training Bay, shift movement, and the alleged offer.
+          However, during the September 19, 2025 Training Bay / shift movement conversation, Allan stated that Training Bay selection had no formal criteria and identified the decision-making group as "myself, Amber, Trevor, Dan." This was the first time he clearly identified himself as part of the group making these decisions. That statement is important because Respondent's Position Statement characterizes schedule movement as neutral, centralized, and outside manager discretion. Allan's own statements contradict that framing.
+        </p>
+        <p>
+          The timing is also important. Allan's calendar reflects that he met with Susan Marchinko immediately before this conversation. Respondent should therefore produce the calendar invite, meeting records, notes, chats, emails, and any follow-up communications related to that HR meeting. Allan's statements after that meeting should be evaluated in the context of HR knowledge, management coordination, Training Bay selection, comparator movement, and the alleged shift offer Respondent now relies on.
         </p>
 
         <InlineExhibits
