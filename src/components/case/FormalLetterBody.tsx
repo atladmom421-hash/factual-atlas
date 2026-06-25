@@ -1043,6 +1043,95 @@ export function FormalLetterBody() {
           Respondent should be required to produce: (1) all records regarding the DNA role, including the job posting, selected candidate qualifications, interview notes, scoring criteria, recruiter notes, decisionmaker names, and communications; (2) all notes, Teams messages, calendar invites, and follow-up communications regarding the August 2025 conversation with Allan; (3) all documents regarding Allan's "blockade" statement and any related communications; (4) the September 18, 2025 leadership meeting invite, attendee list, agenda, notes, schedule worksheets, and decision records; (5) all communications among Allan, Amber, Trevor, Dan, and any scheduling or HR personnel regarding Training Bay movement; (6) the criteria used to select Michelle, Steve, Marissa, Josh, or any other employee for Training Bay; (7) all documents showing whether those employees kept or changed schedules; (8) all records explaining why my movement was deemed not operationally feasible; (9) all comparator records for Tyler Millisock, Josh, Hunter, Michelle, Steve, Marissa, and any other similarly situated Team Leader who moved areas, schedules, or Training Bay assignments; (10) the alleged May 2025 offer communication and decline documentation; and (11) all tickets Allan allegedly submitted on my behalf.
         </p>
 
+        {/* Marissa Mascarenas Comparator Deep Dive */}
+        <div className="mt-6 rounded-md border-2 border-foreground/40 bg-foreground/5 p-4">
+          <h4 className="font-display text-base font-semibold tracking-tight">
+            Marissa Mascarenas Comparator Deep Dive — Schedule Flexibility and Training Bay
+          </h4>
+          <p className="mt-3">
+            Marissa Mascarenas should be evaluated as a separate comparator because her schedule history reflects the type of flexibility Respondent denied to me. The preserved schedule records show Marissa in mid-shift and earlier-shift placements before the September 2025 Training Bay decision. Those records support that mid-shift coverage existed and that earlier-shift movement was available to other Team Leaders while I remained fixed on PM/closing.
+          </p>
+          <p className="mt-3">
+            This matters because Respondent later relied on "same schedule" or "not operationally feasible" as a reason I could not move into Training Bay. However, during the September 19, 2025 conversation, Allan Glover identified Marissa as moving into Training Bay and stated there was no formal criteria for Training Bay selection. When asked who made the decision, he identified himself, Amber, Trevor, and Dan. That evidence contradicts Respondent's claim that movement was strictly neutral, centralized, or outside management control.
+          </p>
+          <p className="mt-3">
+            The issue is not only that Marissa received Training Bay. The issue is that Marissa's schedule history shows prior flexibility, mid-shift/earlier-shift placement, and later Training Bay selection, while I remained fixed on PM/closing despite a long-standing mid-shift request, protected complaints, strong performance, and documented waitlist issues.
+          </p>
+
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full border-collapse text-xs">
+              <thead className="bg-foreground/10">
+                <tr>
+                  <th className="border border-foreground/20 px-2 py-2 text-left">Date / Month</th>
+                  <th className="border border-foreground/20 px-2 py-2 text-left">Marissa's Schedule / Role</th>
+                  <th className="border border-foreground/20 px-2 py-2 text-left">Evidence Source</th>
+                  <th className="border border-foreground/20 px-2 py-2 text-left">Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">March 2025</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Rotating 10:00 a.m.–6:30 p.m. mid-shift / active mid-shift TL coverage</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">EX-022</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Confirms mid-shift TL coverage existed and was operationally feasible.</td>
+                </tr>
+                <tr>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">April 2025</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Active mid-shift TL placement (9:30–6:00 / 10:00–6:30 coverage, alongside Leslie McGregor)</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">EX-022</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Mid-shift placements continued through Spring 2025, contradicting "no mid-shift available."</td>
+                </tr>
+                <tr>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">September 2025</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Listed among AM 8:00–4:30 leaders while Harbin remained on PM/closing ending 10:00 p.m.</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">EX-022</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Earlier-shift movement was available to Marissa over time; not available to Harbin.</td>
+                </tr>
+                <tr>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Sept. 19, 2025</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Allan identifies Marissa as moving into Training Bay</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">EX-059</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Direct admission that Marissa was selected for Training Bay.</td>
+                </tr>
+                <tr>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Sept. 19, 2025</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Allan: "There wasn't a criteria" for Training Bay selection</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">EX-059</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Confirms Training Bay selection was discretionary, not policy-driven.</td>
+                </tr>
+                <tr>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Sept. 19, 2025</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Allan identifies decisionmakers: "Myself, Amber, Trevor, Dan"</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">EX-059</td>
+                  <td className="border border-foreground/20 px-2 py-2 align-top">Confirms manager-level discretion controlled Training Bay placement.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-3">
+            Marissa Mascarenas is significant because her schedule history shows earlier-shift and mid-shift flexibility before the September 2025 Training Bay decision. When Charging Party raised the lack of availability to move shifts, Respondent relied on "same schedule" / operational feasibility explanations. But the September 19 transcript shows Training Bay selection was discretionary, had no formal criteria, and involved management decisionmakers. Respondent should therefore be required to produce the records showing why Marissa was selected for Training Bay and why Harbin was excluded despite her long-standing mid-shift request.
+          </p>
+
+          <p className="mt-3">
+            Respondent should be required to produce: (1) Marissa Mascarenas's complete schedule history from 2024 through 2026; (2) Marissa's shift-change tickets and waitlist records; (3) Training Bay selection criteria, if any exist; (4) the September 18/19, 2025 Training Bay decision records, including invites, attendee lists, agendas, and decision notes; (5) all communications among Allan Glover, Amber, Trevor, Dan, Michelle, Steve, Marissa, Josh, and HR/scheduling personnel regarding Training Bay; (6) Training Bay class schedules, participant workload records, team-assignment records, and role duties; and (7) records showing whether Training Bay participants retained teams, lost teams, had reduced workloads, or had active training classes.
+          </p>
+
+          <p className="mt-3 rounded-md border-l-4 border-foreground/60 bg-background/60 px-3 py-2 font-medium">
+            Respondent cannot rely on "same schedule" or "operational feasibility" to exclude me from Training Bay while refusing to produce the records showing how Training Bay participants were selected, what schedules they held, what duties they performed, and whether management discretion controlled the decision.
+          </p>
+
+          <div className="mt-3">
+            <InlineExhibits items={[
+              { id: "EX-022", relevance: "Schedule Movement Data — Marissa Mascarenas in rotating 10:00 a.m.–6:30 p.m. mid-shift (March 2025), active mid-shift TL placement (April 2025), and AM 8:00–4:30 placement (September 2025) while Harbin remained on PM/closing." },
+              { id: "EX-059", relevance: "September 19, 2025 transcript — Allan identifies Marissa as moving into Training Bay, states there 'wasn't a criteria' for Training Bay selection, and identifies decisionmakers as 'myself, Amber, Trevor, Dan.'" },
+              { id: "EX-010", relevance: "Comparator Matrix — Marissa Mascarenas comparator data alongside other similarly situated Team Leaders." },
+            ]} />
+          </div>
+        </div>
+
+
+
         <div className="mt-4 rounded-md border-2 border-foreground/40 bg-foreground/5 p-4">
           <div className="font-display text-sm font-semibold tracking-tight">
             Key Transcript Excerpts — EX-059 (September 19, 2025, Allan Glover)
