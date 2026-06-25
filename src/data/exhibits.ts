@@ -465,6 +465,83 @@ Shawnna: Of course. Thanks for this info.`,
     reliability: "confirmed-transcript",
     filePath: "/exhibits/EX-017-july19-2024-complaint.pdf",
     fileKind: "pdf",
+    transcriptText: `July 19, 2024 — Complaint Call with Anita (HR)
+Participants: Shawnna Harbin and Anita (HR)
+Topic: Greg Carfagna blocking ER-approved rec-for-term paperwork based on a "coaching documentation" requirement not applied to peer TLs
+
+[Opening small talk re: Arizona heat, family, travel]
+
+HR Anita: Okay, so I'm going to start with what you wrote just so I can take notes based off of each piece of it, if that makes sense. Because I have gone over it. I do have some questions but I think I'll go back and forth if I start with whatever I want. So anyway.
+Me: Can I ask you a question real quick? Because, oh, man, honestly, like, even bringing this up, like, it's really put me under, like, just a weird headspace and just like a lot of anxiety and whatnot, to be honest. And after I wrote, I really felt like, you know, maybe I should just, you know, because I don't know. I just feel like, you know, making complaints or whatever, even though I really feel like shady things are happening. I just feel like I don't even know if it's worth it to say anything anymore at this point, you know? Honestly.
+
+HR Anita: Well, let me just skip to one piece of it. Okay. So when you say about the documentation, I'm assuming it's for performance and it's for a termination, a rec for term versus a final or a formal, right?
+Me: Right.
+HR Anita: Okay, so my first question is, who in ER did you talk to? Because we have different roles. The advisors are the ones that look at all the corrective action. My understanding for non-exempts — I get it for exempts, which are far between because that's the caliber of an exempt versus a non-exempt — but my understanding, and I'll have to get clarification because I'm not the expert, but my understanding on a performance rec for term, documentation is required, which —
+Me: Correct. It is.
+HR Anita: Maybe the difference is coaching versus documentation to show that you're treating everyone the same. Because I thought they had to, in the rec for term, you had to add the documentation that says, well, not only Joe Schmo, but Susie and whatever, and they're also not meeting, but they're not at the same point in the process. So you're correct. I have that right, right?
+Me: Right. It's just the coaching.
+
+HR Anita: So for clarification, it's just the coaching piece that you feel is added on or nuanced, right? Carfagna is requiring this, yet it's not been a requirement for some of your peers.
+Me: Right, yeah. When I met with all of the other TLs and they were like, I've never had to provide this information, never heard of it. Like, where did you hear that?
+
+HR Anita: I see exactly where you're saying. I'm wondering — you mentioned that the other team leader left the company, and that's why you got these employees that aren't making your staff.
+Me: So they actually went to another TL who's here, and then they moved from her to me, but she's still here.
+HR Anita: And how long did the other TL in between have them?
+Me: She had them one month.
+HR Anita: One month. Okay. So the team leader that the issue started with isn't here anymore. I don't know if this is a case — I wouldn't tell you if that team leader was let go.
+Me: Well, she wasn't let go. She had another job already lined up.
+HR Anita: I was just thinking, if it was a team leader that really wasn't doing their job in coaching and making sure coaches were providing the coaching, maybe that was the concern for Carfagna. I don't know.
+
+Me: So just to give you a little context on the coaching part — this is something we would coach to as TLs. Let's say they don't meet utilization, inbound or outbound. We'll meet with them and let them know, hey, this is something that could lead to corrective action. So he's asking for that documented conversation, but what I want to tell you is that no TL documents that at this time. So that's not even a thing.
+
+HR Anita: So let me step back. Did you submit some rec for terms, so it went through up to ER. Did ER approve it?
+Me: ER approved it. Right.
+HR Anita: ER approved it, then the last person for a rec for term is the director, so it would be Carfagna. And then he kicked it back? I got that right?
+Me: Yes. So I submitted it on the 7th and it's been by-passed again.
+HR Anita: How many did you have?
+Me: Two.
+HR Anita: Two. So you had two rec for terms that went through all the approvals up until the last approval, which is Carfagna, and Carfagna declined it or wouldn't approve it.
+Me: Correct.
+
+HR Anita: Okay. And so basically that's the evidence for you that leads you that — where you feel, hey, does this have something to do with my prior complaints? Because it's out of the norm from what you understand from other leads. Is that right?
+Me: Right. And I've even submitted a performance termination and had it approved in the past with just the same information. So that's why I felt so confident. I'm like, okay, cool, we're good to go. And then I got that feedback. There is a difference on the documentation that is standard between the conduct or work-avoidance related stuff, where we're giving more context and describing the conversation we're having with them.
+HR Anita: Right. Different kind of detail included in that.
+Me: Yes. He's using that as an example. Like, he wants that. But I'm like, this is the standard and this is what's been happening. And nobody else is doing it. When I talked to all the other TLs, they were like, we don't do that. So what's going to happen to our terms?
+HR Anita: When you say you've talked to all of them, are they everybody in Carfagna's organization?
+Me: All in my call channel, in LVAR.
+
+HR Anita: Okay, so let me tell you what I would like to do. I can start with — who did you say you report to?
+Me: Allan.
+HR Anita: Okay. I can start with Allan or go straight to Carfagna. It doesn't really matter. I want your preference, but I want to understand the situation — is there confusion — and give them the opportunity to speak to it. Whether that's your DM Allan or just go straight to Carfagna, because I don't know the answer. I don't know if this is new for Carfagna or just getting rolled out, but to your point, it needs to be consistent across all the team leaders. I do know it's just like with this painful attendance requirement that was paused until May and then got pushed until now and is finally back. Some businesses already had the requirement that is now in place since the 15th — documenting that you had a conversation with the employee and provided the PIPs information. In some businesses they already had that requirement, and if they weren't doing it, the team leader was getting deemed and coached. So there are some business units that require more regardless of what the requirements are from an HR perspective. It doesn't sound like you're aware of that or the team leaders are aware of that. Who's the name of the two employees that you submitted it for?
+Me: Adrian Rose and DeJuan Jones.
+HR Anita: DeJuan?
+Me: Yep, D-E-J-U-A-N.
+HR Anita: Yeah, I would never have gotten that right. What'd you say the last name was?
+Me: Jones.
+
+HR Anita: All right, so that is where I would take it at this point. I just want to make sure we're on the same page.
+Me: Yeah, definitely, because I just feel like I'm not getting a straight answer. I would just like to know what is the requirement then? Because it's very mysterious and unclear, you know? I'm just not getting straight answers. So if you could talk to Greg, I mean —
+HR Anita: Yeah. Okay, I will do that. It's Friday. But I will get on the schedule now. Does Greg have an admin? Do you know?
+Me: Yes. I can look it up.
+HR Anita: I have access to look it up. But sometimes it's easier to go through the admin. I will do that next week. I just want to give you my timeline — I usually take a lot of days off the last two weeks of July, one because it's a state holiday on Wednesday the 24th. And then it's my son's birthday, he's coming home from school Tuesday of next week and home through Monday the 29th. So I've got some intermittent time off. I don't want you to think I'm not getting to it.
+
+HR Anita: Carfagna is in Arizona too, isn't he?
+Me: Yep, he's in Arizona.
+[Brief small talk re: Arizona/California travel, Disneyland, San Diego, Oregon trip, landscaping/AC]
+
+HR Anita: Okay, so that will be my next step, and I will follow up with you as soon as I can get on his schedule. I'd rather get back to you next week than the following week at the end of the week when I'm back. So I will get back to you so I can better understand. I'm glad I have the names. So they had a formal, a final, where they didn't meet — and you guys are collections — so they didn't meet, they hit the formal three out of five months.
+Me: Right.
+HR Anita: Then they hit the final when they didn't hit two out of five months.
+Me: Yeah.
+HR Anita: And then they hit the rec for term when they missed one more, right?
+Me: Right. Four months. Yep. And then I got them.
+HR Anita: All right. I will look into it so I have an understanding and then I'll follow back up with you.
+Me: Sounds good. Thank you so much.
+HR Anita: Okay. Take care. Stay cool.
+
+[Closing small talk re: weather, Google Nest thermostat, an unrelated workforce-management JAban case ("Robin"), end of week]
+HR Anita: All right. Take care, Shawnna, and we'll talk to you soon.
+Me: All right.`,
   },
   {
     id: "EX-018",
