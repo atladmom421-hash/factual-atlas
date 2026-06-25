@@ -1321,6 +1321,244 @@ Allan: No.`,
     reliability: "confirmed-transcript",
     filePath: "",
     fileKind: "transcript",
+    transcriptText: `May 31, 2024 HR Conversation Transcript
+Participants: Shawnna Harbin and HR, Susan Marcinko
+Topic: Follow-up after protected complaint / EEOC charge / hostile work environment / schedule and waitlist concerns
+
+HR intake call following my internal complaint and EEOC activity. In this call, I reported race discrimination, retaliation, disability/medical leave issues, alleged job abandonment, hostile work environment, project exclusion, and schedule/waitlist concerns. HR acknowledged the seriousness of the situation and discussed moving me to another team while investigating.
+
+Opening / Technical Issues
+
+Me: Man. I can hear you. Yes, that was so that was so weird.
+HR, Susan Marcinko: Yeah. Yeah, Teams is sometimes funky, so. Man. Let me see here. Make sure all my systems are working. Can you hear me okay?
+Me: Yep, I can hear you.
+HR, Susan Marcinko: Okay, great. And is your camera working?
+Me: It is. I have like a sinus, weird infection, and I got swollen eyes and stuff, so. But yeah, my, it looks like my internet went out and it came back up again.
+HR, Susan Marcinko: Okay. All right.
+
+HR states purpose of call
+
+HR, Susan Marcinko: So I had received the email that you had said, and I appreciate you getting back to me so quickly. Just trying to understand, you know, what all transpired, you know, the things that you mentioned in the email seemed really serious, and I'm trying to get an understanding of it sort of of like how this all, you know, has evolved and what you've experienced. So, you pull up the email that you had sent actually because it thought I had that pulled up, but stuff gets around between my screens.
+Me: Yeah. No, I totally. Totally understand.
+HR, Susan Marcinko: Okay. So, you wrote that there had been a previous complaint.
+Me: Right.
+HR, Susan Marcinko: And then, you know, you had gone out on Bel leave and then when you came back on your leave, you were seeking another shift, it looks like.
+Me: Right.
+HR, Susan Marcinko: And that in the conversation with your manager that she used the racial slur.
+Me: Correct.
+
+HR asks about leave / job abandonment
+
+HR, Susan Marcinko: And I was trying to kind of piece together, you know, ahead of our call, you know, if I could see like, when was your leave and that kind of stuff so I could kind of get a sense of timing for everything. But I didn't see a lead in Workday for you. So I wasn't sure whether you had taken like a significant amount of time off or whether you had just taken a couple days. I just, I get out from the system. Yeah. I don't have any access to your leave information.
+Me: No, yeah, if I was out for a month.
+HR, Susan Marcinko: Help me with the dates for that?
+Me: It was February 21st, and the day that I had initially returned was the 15th. But when I came back, my systems were disabled and a job abandonment had been executed on my account.
+HR, Susan Marcinko: Okay. And I'm just taking notes while we're talking so I can kind of keep up. So, and there have been a JA. Okay.
+Me: Right.
+HR, Susan Marcinko: So like you said, I was looking in Workday. I don't know if you're familiar, like when you look at your own employees, you can see on their time off record if there's, you know, a period of leave or, you know, what kind of absences. But I didn't see a leave and that was what was confusing to me if I was reading through your email. So you were out for about a month, you say. And that wasn't on a leave through the Hartford.
+Me: Correct.
+HR, Susan Marcinko: Okay. Was that leave through an accommodation with the PALs team?
+Me: I'm not sure exactly how Rosanna ended up getting it worked out. Um, but I had some internal bleeding. And, um, after that, I went through, you know, like a spot of depression, anxiety, but it was a very serious issue where like, you know, I couldn't.
+HR, Susan Marcinko: I'm sorry, I don't mean to interrupt you because I don't want you to share medical information with me, so I just want to, you know, stop you before you share.
+Me: Well, I guess, well, the reason that I do want to, you know, kind of just give more information on that is just to, I guess, highlight the severity and, you know, make sure that it is known that I wasn't able to, you know, get out of bed. I wasn't able to, you know, take care of myself. So, yeah, it wasn't.
+HR, Susan Marcinko: Did you contact PALs about a leave?
+Me: Yes, I did speak with them.
+HR, Susan Marcinko: Because I understand probably the timing of this, looking at your hire date, you probably weren't yet eligible for FMLA at that time, but you might have been eligible for short-term disability, or, you know, a covered leave had gone for a month, and that would have been paid.
+Me: Correct.
+HR, Susan Marcinko: You met the criteria for it?
+Me: Correct.
+HR, Susan Marcinko: Okay. But PALs did not open a leave for you?
+Me: They, I'm not sure if they did or not. So we, there was the window was open, right? So they give you the window of, et cetera, to send your information in. But unfortunately, I didn't even get that opportunity because a job abandonment had been processed, which was also falsely input into the system.
+
+HR asks about schedule change request
+
+HR, Susan Marcinko: So when you were. Okay. I mean, I don't want to get caught up in the details of that right this minute. Let me come back to it. Because again, I wanted to speak with you before I started digging into anything. I wanted to, you know, talk with you first, if I could.
+Me: Sure.
+HR, Susan Marcinko: And I'll see what I can find out about the leave and all that stuff. But so you come back from this time off and then you want to go to another schedule. Was the reason for another schedule related to your medical situation or was it other courses, first classes, something like that? What was the request about?
+Me: So when I had initially come back after I did, you know, provide the information to HR in order to cancel out the job abandonment. So I had to, you know, submit information proving that, you know, I did report my absences correctly. So after that, I did tell them that I did not feel comfortable working under Rosanna and in my email during the job abandonment process, I did let them know that I felt like she was retaliating against me for the initial complaint that I made back in January when she threatened me. So I did ask them, um, to you know, change leadership or go to the department, change my schedule, anything. And I was told that, um, you know, basically, that I'm going to be going back to work under Rosanna, and that she actually had experienced as severe emotional distress that I experienced while she was retaliating against me.
+HR, Susan Marcinko: I'm, I understand what that means. Can you maybe explain that a little bit more for me?
+Me: Yes. So when I spoke to the HR representative, you know, I was in tears. Like, when I tell you, it was really, really stressful. I can, I can't even really explain. I did not know if I was going to have my job, or, you know, I just felt totally, I just couldn't believe that that was happening, honestly. And I told them, I don't feel comfortable going back to work for her after she's done this. And, you know, obviously, if she's willing to take these steps to provide false information or whatever, I don't know even what she's capable next, you know, and this has really just impacted me a lot. And they told me that she has actually experienced the same level of stress and emotional trauma that I was going through. And, you know, that she just wants to make sure that I'm okay. And, yeah, that she was actually the person who was experiencing the emotional stress.
+HR, Susan Marcinko: Who said that with you?
+Me: Anita Spence. But yeah, I could not believe. But anyways.
+
+Timeline correction: March 25 / March 27
+
+HR, Susan Marcinko: Okay. So. Do you remember, like, when that conversation was?
+Me: Yes.
+HR, Susan Marcinko: You said it was when you were coming back.
+Me: Well, she called me. Initially came back on the 15th. Right. I came back on the 15th. My systems were disabled. At that time, they asked me to prove, you know, that I had requested my time off, which I did. They could not give me an answer when I could return back to work or not, or whether I would be paid for the time. I believe on, I want to say it was like maybe three days later, Anita called me first thing in the morning and said that I had provided adequate information and that I was able to return back to work.
+HR, Susan Marcinko: Okay.
+Me: But at that time, I did express, you know, obviously, that I do not feel comfortable going back to work under Rosanna.
+HR, Susan Marcinko: So I'm just trying to nail down a timeline if I can. It helps me keep my information organized.
+Me: Sure.
+HR, Susan Marcinko: So you initially came back on the 15th. That was a Friday in March.
+Me: Or you know what, actually. Let me pull up. I'm sorry, I had that date wrong.
+HR, Susan Marcinko: Okay. This is why I kind of walk through that. You know, it's hard to keep dates straight, especially, you know, a couple months ago, certainly.
+Me: Yes. Let me take a look here. So it was. So the day that she called me back to say that I could come back to work was on March 27th. The day that I had returned to work was the 25th, I'm sorry.
+HR, Susan Marcinko: So you returned, the initial day you returned to work was the 25th, not the 15th, is that what you mean?
+Me: Correct.
+HR, Susan Marcinko: Okay, so 3/25. And the day that you spoke to Anita initially, was that on the 27th?
+Me: I spoke to her on the 25th. I spoke to her every day up until the 27th.
+HR, Susan Marcinko: Okay. And you provided documents that she said, "Okay, you're able to return."
+Me: Correct.
+
+Alleged racial slur conversation with Rosanna
+
+HR, Susan Marcinko: All right. So on the 25th, talk to her, then you came back on a Wednesday, I guess. So the conversation with Rosanna, where she used the racial slur, was that on the 27th? Or was that some days after?
+Me: That was some days after. That was on, I believe it was on the first, but I'd have to check my notes, because, you know, obviously I noted all of this down.
+HR, Susan Marcinko: Okay. Yeah, if you could confirm that for me, that would be helpful.
+Me: Sure. And I'm sorry, it was March 28th that that happened.
+HR, Susan Marcinko: Okay. So, when you had the conversation with her, we'll say it was the first for right now. I understand you're not positive was the exact thing. You know, were you in a scheduled meeting? Were you just in a chat? Did you have a call? Like, how did this all kind of come together?
+Me: Yeah. It was not. I messaged her and I asked her if Alan Glover was coming to LVAR and she just called me. So it was an impromptu conversation.
+HR, Susan Marcinko: So you sent her a message asking about some sort of business process or something.
+Me: Right.
+HR, Susan Marcinko: And instead of messaging you back, she called you back.
+Me: Right.
+HR, Susan Marcinko: Did she call you back immediately or was it some time later?
+Me: It was like immediately. Probably a couple minutes.
+HR, Susan Marcinko: Okay. Tell me about that conversation. If you could just sort of take me from the beginning to the end of it.
+Me: Yeah, well, we got on the phone. She, you know, it was, it was a, I guess an uncomfortable conversation just because I just returned back, right? And the rest of the situation had happened. But we just talked about Alan Glover coming to the department. And I expressed to her that I was interested in going to his department and, you know, I just really liked his presence in our department meetings. And, you know, maybe I could, you know, go help him out. And she said, well, you're my, my, well, she said, you're my N word. And I don't know if she was with other people because it sounded like she was in a car driving or something. But she just had like a good chuckle about it. And I was just blown away. I didn't even really say anything. I had no response. She just kept talking, like, as if she were like a friend from down the street. She started telling me about, um, you know, she had a migraine and she didn't want to do her makeup today, and, you know, XYZ. So, yeah, it was not the typical conversation that I would have had with her. Usually when we speak, it's very business focused.
+HR, Susan Marcinko: How long did that conversation go on for?
+Me: I want to say it was about 10 minutes.
+HR, Susan Marcinko: Do you know if that call was recorded or did you record the call?
+Me: I did not record the call, but, you know, I do have people that live in my house and my mom was here and she heard her say that and my mom was like, who is that? Like, she could not believe. And I was like, that was my boss. But yeah, we were all shocked and just beyond disgusted.
+HR, Susan Marcinko: Had you ever heard her say anything like that before?
+Me: Um, she's used other slurs, I'll say, related to other employees I've heard in the past. In a meeting.
+HR, Susan Marcinko: Tell me more about this.
+Me: It was just one time she did call one of our Asian agents. She called him Chang. That's not his name. But, yeah, and she kind of did the same thing at that time as well. A laugh, you know, a little giggle laugh. And I was alarmed about that as well.
+HR, Susan Marcinko: And there were other times, you said?
+Me: That was the only other instance that I can remember at this time.
+HR, Susan Marcinko: Okay. All right. So you said she sounded like she was in a car. Could she have been outside? I don't know whether she works on site or whether you work on site and haven't, you know, gone to look at your work arrangements or anything. I'm just trying to think of why she would have been on the phone in her car.
+Me: I'm not sure. I believe when I was talking to her, she indicated she was going to, I think, one of her kids' softball games or something.
+HR, Susan Marcinko: Okay. The comment that you say she made about this other agent calling him Chang, was anybody else a witness to that?
+Me: No, that was a one-on-one meeting.
+HR, Susan Marcinko: Okay. About how long ago was that?
+Me: I believe it was back in November, December. It was a while back.
+HR, Susan Marcinko: Okay. And I understand. You're just, you know, trying to remember, and it's hard to pull exact dates and stuff out of that. You know, the behavior that you're describing, you know, in my experience, you know, if people commonly engage in these kinds of comments, other people might have observed it or heard it. Is there anybody else that you think I should talk to who might have information that can help me?
+Me: You know, I don't know anyone else that would have this information. I'm not sure. But I agree with you that, you know, if someone's conducting themselves like this, it's probably, um, you know, consistent.
+
+Retaliation / threat after January complaint
+
+Me: Also, I do just want to highlight and make sure that it is recognized that when I initially made my complaint about one of my colleagues discriminating against an employee, that she did threaten me. She threatened, you know, that if I did say something about the discrimination issue, because I had brought it up multiple times over months. And I did tell her I was going to HR. She did threaten me saying that, well, do you want me to bring up your adjustment compliance issue? And then she indicated that I wouldn't be here at Discover anymore. And directly after that, I had a conversation with Tammy McNurney in HR.
+HR, Susan Marcinko: You said adjustment, something?
+Me: Yeah. There was a compliance adjustment. I never even heard of it until that time. And she never mentioned it to me after the fact. But yeah, she did threaten to blackmail me with that and was saying, well, if I'm no longer with the company, like she wishes me luck. And I was like, what are you talking about? Where did that even come from? And I directly asked her that at that time. Why would you say that? When I just asked you about reporting a discrimination issue to HR, where did you even, how did you even get to that when I just said this to you? So I asked her point blank, why would you even say that?
+HR, Susan Marcinko: And what was her response?
+Me: She was like, well, I just wanted you to know, like, I know there was that adjustment compliance issue. And, you know, I just want to let you know, like, it's not a problem. It's not a problem. And this is, so I'm literally telling her, I'm going to HR to make a complaint about this. And she says that to me. Do you see what I'm saying? So, like, when that happens, I'm alarmed.
+HR, Susan Marcinko: Sorry, I'm just trying to capture exactly the way you described it to me.
+Me: Yes. Okay. Yes.
+
+Loss of projects / exclusion after complaint
+
+Me: So, since January, she has been. I haven't worked on any projects. I used to work on all of the projects, very engaged in my department. I haven't had any opportunities like that since then. Yeah, just really, really hard. Yeah, and I have a meeting with her right after this.
+HR, Susan Marcinko: Okay. Are you still good on time? I want to make sure I understand what's going on.
+Me: Yes.
+HR, Susan Marcinko: And I had a couple more questions, if you don't mind.
+Me: Sure.
+
+Waitlist / schedule change details
+
+HR, Susan Marcinko: When you wrote in your email something about you were waitlisted for the schedule change. Is the wait list like through workforce management? Is it something that's just like in the department? Help me understand what the wait list is.
+Me: The wait list is through our admin. So field support. So there is a wait list. I admin. I believe Cindy Wickert, Lily Co, and I believe Adina Marcus is the manager of that group at this time. So I did request a schedule change. Rosanna informed me that I was put on the wait list that day.
+HR, Susan Marcinko: Well, what day was that?
+Me: That was, um, I want to say, April 1st. Formally on paper, I'll say. But I was. Yes. During that time, so obviously, I'm on the wait list, right? While Rosanna was out, I reached out to another department manager to check on the status of me being on the wait list and he said that I was never added to the wait list.
+HR, Susan Marcinko: Who was that?
+Me: That was Ryan Tafoya.
+HR, Susan Marcinko: Can you spell the last for me?
+Me: T-A-F-O-I-A.
+HR, Susan Marcinko: And he said you were never on the wait list.
+Me: Correct.
+HR, Susan Marcinko: Gotcha. Okay. And the procedure to get on a wait list like that is you tell your manager, your manager lets the admins know that you're interested?
+Me: Yep.
+
+HR asks about project exclusion
+
+HR, Susan Marcinko: All right. You said since January, you used to be on a lot of projects, but nothing since. Were other people put on projects? Are you aware of anybody else working special projects?
+Me: Yes, everyone, except for me. Actually, to the point where if you go and look at our work availability board, everyone is red or orange and I'm green. I have no special projects. And I definitely put it out there that, you know, I'm interested in working and developing myself and, you know, collaborating with my peers. But those opportunities have not been available to me since I've made my complaint about her.
+HR, Susan Marcinko: And when you've asked Rosanna about projects or, you know, opportunities, what has her explanation been?
+Me: I mean, she doesn't really have an explanation. She just tells me, you know, like, you're still down for the cause, right? And I'm like, yeah, you know, I'm here to support you in any way possible. And I know there are other folks in our department that, you know, have multiple projects, you know, three, four projects.
+HR, Susan Marcinko: So what does that comment, though, "you're still down for the cause" mean to you?
+Me: Just, you know, supporting her team and helping us reach our performance goals.
+HR, Susan Marcinko: Okay. And others had multiple projects.
+Me: Correct.
+HR, Susan Marcinko: Do you know if any of them received those projects to do since you made your complaint back in January? Were they already on those projects beforehand?
+Me: Yes, there's been a multitude of projects since then. But none more given to you. Right, and none.
+HR, Susan Marcinko: Okay. Gotcha.
+
+Leave timeline follow-up
+
+HR, Susan Marcinko: All right, let me just take it real quick, run through my questions. Some of this you've already answered, I didn't have to ask you. You just provided it for me as you were talking. Let's see. You said your leave began February 21st. Was that the first day that you missed?
+Me: Um, you know what? Yes. Yes. Correct. Yep, February 21st.
+HR, Susan Marcinko: Had you missed any time prior to that recently?
+Me: Recently? Um, no, not unapproved or unplanned time.
+HR, Susan Marcinko: Okay. So you were out from roughly 2/21 until 3/25 when you attempted to come back.
+Me: Correct.
+HR, Susan Marcinko: While you were out, were you keeping in contact with Rosanna or anybody else in the management team?
+Me: Yes, Rosanna. I kept in contact with her.
+HR, Susan Marcinko: Was that, like, for agents, we require them to call every day. Technically, I guess, our exempt staff is supposed to do the same thing, unless they're on an approved leave. So were you contacting her regularly? Were you contacting her by phone? Were you sending her emails?
+Me: Yeah, I contacted her by phone and I would let her know or text phone texted. And I would let her know, hey, you know, I'll be out for sure until here. I'll keep you updated, and so on.
+HR, Susan Marcinko: Okay. And you didn't officially open a leave with Hartford?
+Me: Hartford? No, I did not have a leave open with Hartford.
+HR, Susan Marcinko: Yeah, they manage all of our leaves of absence.
+Me: All right, well, then I don't know if I. I can't say whether I did or did not. I know I did talk to PALs.
+HR, Susan Marcinko: Yeah, you would have had to fill out forms. Your doctor would have had to provide documentation.
+Me: So I did fill out a form. The time for my doctor to fill out the documentation, the period had not closed by the time I came back. So it was still open for me to be processed through the leave process. But the job abandonment was input during that window of time that I was going to be, whether I would or would not provide the information. Right. So I didn't even get the opportunity to submit information.
+HR, Susan Marcinko: So, you know, with the leave of absence, the first five days are, you know, what they call a waiting period, and that has to come out of your PTO bucket. And then generally, if you're approved for a leave, even conditionally approved for leave, you know, the leave process starts and, um, if you're eligible for short-term disability and they're on that concurrently if somebody has FMLA. But you never provided documents to them. Is that correct?
+Me: Correct. At the time the job abandonment was initiated, I had not provided any information, but also the time frame that they gave me was still open, right? So I still had time to submit the paperwork.
+HR, Susan Marcinko: All right. Maybe what I'm missing here is when did you contact PALs or Hartford to begin that process?
+Me: Oh, let's see. I'm going to have to pull or get into my personal email. Let me see. Yeah, I don't have that note available right here. But yeah, I can pull it up in my personal email and provide it to you.
+HR, Susan Marcinko: You know, if you could just confirm that for me, I just, we're trying to understand again. I'm just trying to piece together a time frame of, you know, when things occurred to help me understand all the different facts of the situation.
+Me: Sure.
+
+Anita / Tammy / HR contacts
+
+HR, Susan Marcinko: Let me see, make sure there's anything else I needed to capture here. Okay. You mentioned that you contacted Tammy, I recall.
+Me: Yes.
+HR, Susan Marcinko: And that was immediately after the comment, the racial slur comment?
+Me: Yes, I submitted a human resource consultation form.
+HR, Susan Marcinko: Okay. And she responded back to, you know, the information I had put. Okay. And then you mentioned something about you were speaking to Anita.
+Me: Right.
+HR, Susan Marcinko: And she had told you that Rosanna was experiencing, I guess, the same emotional concern about you? Help me understand that a little bit better.
+Me: Yeah. Um, you know, I told her that this was one of the most traumatic experiences that I've ever experienced in my life. And, you know, I expressed to her that I was very upset. And she said, well, I just want you to know that Rosanna has went through just as much as you have, you know, just the, you know, her having to go through this, like, it's really had a strong impact on her. So basically saying that, yes, she had equal amount of emotional stress as I had while I was not knowing whether I was going to have a job or not.
+HR, Susan Marcinko: Okay. And how did you come to talk to Anita? I thought you said Tammy was the person who talked to you about the consult that you have been adopted. Or there's two separate things?
+Me: Two separate incidents. Tammy, I spoke to her regarding my initial complaint, regarding Rosanna. Anita ended up taking over that in January or February. The job abandonment issue.
+HR, Susan Marcinko: Oh, that's what it was. It was the job abandonment that took. Okay. Yeah. All right. Now it's making sense. I do much better when I've got all the dates in a row.
+Me: Yes. I'll go back and start checking the dates and stuff.
+
+HR asks for documents / evidence
+
+HR, Susan Marcinko: All right. Do you have any documents, recordings, snips, text messages, screenshots of texts, anything that you want to share with me, anything that you think I should look at?
+Me: Um, the only thing that I guess I can really say right now, um, and, you know, this has been well documented over time since January, is that I really, and I've spoken to so many people about this, about working in this type of environment, having a manager that is constantly retaliating against me, really putting me through daily emotional stress, literally traumatic every day. I really, really hope that you guys finally take this seriously because what is being allowed to happen right now is abusive and I just don't think that this should be accepted and I really don't feel like I should be subjected to this any further. I mean, it's just gone on too long.
+HR, Susan Marcinko: So I will, you know, look at what we can do in the interim while this is being reviewed and investigated. It may be possible to move you to another team. Is there a particular team within your department that you would be comfortable going to?
+Me: Um, I mean, for me, I don't even. Anywhere but here at this point, you know, like.
+HR, Susan Marcinko: Okay. I had started to ask if you had any text messages, emails, um, any kind of evidence that you think might show the way that she's been interacting with you. Do you have anything like that that you want me to see?
+Me: Um. I do have notes and things like that, but I probably, at this time, you know, because I did file a charge with the EEOC, I don't feel comfortable sharing that at this time. But of course, I'm open to, you know, help us get to the bottom of this. And I do want to be proactive in getting this issue resolved, of course. But, you know, I just need to check my resources and things on that.
+
+Attorney / EEOC charge mentioned
+
+HR, Susan Marcinko: Okay. So you mentioned that you had filed a charge. If you are represented by an attorney, I just need you to let me know because it changes the way that, you know, you engage.
+Me: Yes, I do have an attorney. And he did send out a letter of representation to you guys as well.
+HR, Susan Marcinko: Okay. And I'm not involved in anything related to the charge, so that wouldn't come to me. So I just want to, you know, check in with you. So you do have an attorney.
+Me: Right.
+HR, Susan Marcinko: And if they've sent a letter, then the attorneys will be involved with that. I don't need to be involved in that. All right. If you would, you know, definitely check with your attorney, then it would be helpful to me if you do have things that shows any kind of, you know, inappropriate or misconduct on her part that lets me get, you know, hopefully to a conclusion more quickly.
+Me: Right.
+HR, Susan Marcinko: You know, I can certainly understand not being comfortable sharing it until, you know, you've checked with your resources.
+
+HR asks who else to interview
+
+HR, Susan Marcinko: So is there anybody else that you think that, you know, I should talk to? Is there anybody else that you think might have similar experiences or similar knowledge?
+Me: You know, I think the best folks for you to talk to just to get clarification on my specific issue would be Tammy, Anita, the folks that I have consistently made complaints to. I feel like they're fully aware of the entire timeline. I mean, as I've said, this has been going on since January, right? So we're like six months into this.
+HR, Susan Marcinko: And I can, I will certainly, you know, do my due diligence there. I just mean if there was anybody else, any other peers, any other coworkers, any other employees that you think might be able to support some of the things that you've shared or may have had their own experiences even that, you know, you think I should talk to?
+Me: You know, I can't say anyone in particular.
+HR, Susan Marcinko: Okay. And that's fine. You know, you may not know anybody. I just want to make sure I'm, you know, doing as thorough of an investigation as possible.
+
+Closing / HR says she will check in and inquire about moving Shawnna
+
+HR, Susan Marcinko: All right. If you think of anything else that I need to know, and if you, you know, recall anything that we've talked about, that maybe you want to provide some additional details about, let me know. And if it's something you can send, feel free to email me. If you would rather, you know, have a conversation about it too, that's fine. We can schedule time to do that, okay?
+Me: Okay.
+HR, Susan Marcinko: All right. And I will let you know if I need any more clarification or need some follow-up on any of the information that you've given me. You've given me a lot, so it's probably going to take me a little bit of time to sort through and try and get, you know, an idea of what's transpired. But I will check in with you next week just to, you know, keep you up to date on where I'm at, okay?
+Me: Okay.
+HR, Susan Marcinko: All righty. And I will inquire about moving you to another team if possible while this is being investigated, okay?
+Me: Yes. Anything that would, you know, finally just make the work day less hostile, I guess, you would say, would be fantastic. Like I said, this has been going on since January. Very stressful situation to be in on a daily basis when my direct manager is carrying out, you know, these.`,
   },
   {
     id: "EX-062",
