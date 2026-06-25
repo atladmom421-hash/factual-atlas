@@ -415,6 +415,17 @@ export function FormalLetterBody() {
           continued requirement that she manage under conditions created by Respondent's
           failure to resolve the schedule, waitlist, and retaliation concerns.
         </p>
+
+        <InlineExhibits
+          heading="Prior EEOC charge / May–June 2024 protected-activity evidence"
+          items={[
+            { id: "EX-014", relevance: "May 29, 2024 formal internal complaint 'Serious issues at work' — race discrimination, retaliation, racial-slur allegation, denied transfers, and failure to place Harbin on the mid-shift waitlist." },
+            { id: "EX-015", relevance: "May 31, 2024 HR intake call with Susan Marcinko placing the substance of the complaint on the record, including the mid-shift waitlist failure." },
+            { id: "EX-016", relevance: "June 5, 2024 HR follow-up confirming Charging Party would be moved out of Rosanna Blackson's reporting line during the investigation and reassigned to Allan Glover's organization effective July 1, 2024." },
+            { id: "EX-001", relevance: "Filed Charge of Discrimination establishing the protected-activity record now before the Division." },
+          ]}
+        />
+
         <p className="mt-3">
           Respondent had actual, contemporaneous notice of these concerns. The May 29, 2024
           written complaint was directed to multiple leaders and Employee Relations
