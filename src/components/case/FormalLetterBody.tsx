@@ -1024,6 +1024,148 @@ export function FormalLetterBody() {
           addition to mid-shift.
         </p>
 
+        {/* Section II.Q - August–September 2025 Events */}
+        <h3 className="mt-8 font-display text-base tracking-tight">
+          Q. Response to Respondent's "August–September 2025 Events" Narrative
+        </h3>
+        <p className="mt-3">
+          Respondent's "August–September 2025 Events" section is incomplete and
+          contradicted by the recorded September 19, 2025 conversation Respondent itself
+          appears to reference.
+        </p>
+        <p className="mt-3">
+          Respondent first states that Allan Glover continued to support Charging
+          Party's career development in August 2025 by encouraging her to apply for
+          additional opportunities, including a role within the DNA organization.
+          Charging Party does not dispute that she applied for internal opportunities,
+          including opportunities Allan encouraged her to pursue. Encouraging her to
+          apply for a role, however, does not rebut the claim that she was being blocked
+          from meaningful advancement, schedule movement, project visibility, and
+          internal mobility. Respondent has not produced the DNA posting, selected
+          candidate information, interview notes, scoring criteria, recruiter notes,
+          hiring decisionmakers, or communications showing why she was not selected. The
+          statement that another candidate was "more qualified" is conclusory unless
+          Respondent produces the records supporting that claim.
+        </p>
+        <p className="mt-3">
+          Respondent's August framing also omits the broader context of the August 2025
+          conversation with Allan. During that time, Charging Party raised the impact of
+          her fixed PM/closing schedule on her family, including the effect on her son's
+          school schedule and her inability to be present during normal evening hours.
+          She also raised concerns about being stuck on the waitlist, not receiving
+          projects, not being selected for opportunities, and not being able to move
+          despite strong performance. Allan told her, in substance, that there was a
+          "blockade" and that he did not believe she would be able to get past it. That
+          is not consistent with Respondent's current position that she was receiving
+          normal support and opportunities.
+        </p>
+        <p className="mt-3">
+          Respondent next states that in September 2025, management evaluated possible
+          movement within T-Bay operations and determined movement outside existing
+          schedule assignments was not operationally feasible. Respondent should be
+          required to produce the September 18, 2025 meeting invite, attendees, notes,
+          decision criteria, coverage worksheets, schedule data, and all communications
+          reflecting that determination, and to identify who made the decision, what
+          options were considered, what criteria were used, and why Charging Party was
+          excluded.
+        </p>
+        <p className="mt-3">
+          The September 19, 2025 recorded conversation directly contradicts Respondent's
+          description of a strict, uniform, policy-controlled process. During that
+          conversation, Allan identified multiple people moving into Training Bay,
+          including Michelle, Steve, Marissa, and Josh. When Charging Party asked what
+          criteria were used to select people for Training Bay, Allan stated that there
+          "wasn't a criteria." When she asked who the final decisionmaker was, Allan
+          stated it was "all of us," and when she asked who "all of us" meant, he
+          identified "myself, Amber, Trevor, Dan." That statement is inconsistent with
+          Respondent's claim that movement was strictly centralized, uniformly applied,
+          and outside manager control.
+        </p>
+        <p className="mt-3">
+          The September 19 transcript also confirms that Charging Party's concern was
+          not simply disagreement with one decision. She explained to Allan that she was
+          raising the lack of availability to move to a different shift, that there had
+          been shift movement, and that she was on the waitlist to go to mid-shift.
+          Allan responded "Yes," confirming that he understood the issue as a mid-shift
+          waitlist issue. This is important because Respondent's Position Statement
+          repeatedly attempts to reframe her request as a later day-shift request or a
+          July 2025 re-entry, rather than the unresolved mid-shift/waitlist problem that
+          had existed since 2024.
+        </p>
+        <p className="mt-3">
+          When Allan then stated, "Shawnna, I offered you—," Charging Party immediately
+          disputed that statement. She stated that he had never offered her mid-shift
+          and asked when it occurred. Allan then clarified, "No—well—it was mornings."
+          Charging Party again disputed that any AM offer had been made and asked when
+          it happened, what position it was, and what group it involved. Allan did not
+          identify a date, position, department, written offer, ticket, or
+          communication. That exchange directly undermines Respondent's current claim
+          that she declined a prior day-shift opportunity in May 2025. If that offer
+          actually occurred, Respondent should produce the documentation.
+        </p>
+        <p className="mt-3">
+          Respondent also states that management explained other team leaders were hired
+          for night shifts but had to attend day classes for onboarding and would later
+          transition to night schedules. The September 19 transcript does not resolve
+          the comparator issue. During that conversation, Charging Party identified
+          specific employees who had moved shifts or worked multiple schedules,
+          including Tyler Millisock, Josh, and Hunter. She explained that Tyler had
+          worked mid-shift, AM, and PM; that Josh had worked mid-shift and PM; and that
+          Hunter came from HVAR, outside their director's area, and moved from mid-shift
+          in HVAR to AM in her area. Allan responded that he was "not aware of that."
+          That response is not a substantive explanation. It does not show that the
+          process was uniform, and it does not rebut the comparator evidence.
+        </p>
+        <p className="mt-3">
+          Respondent's statement that no employee moved ahead of the waitlist outside
+          established policy is unsupported. The recorded conversation shows Allan
+          acknowledging movement into Training Bay and stating there was no criteria for
+          selecting people. It also shows management-level involvement in the decision
+          through Allan, Amber, Trevor, and Dan. Respondent cannot rely on the
+          September 19 conversation as support for its position while omitting the parts
+          of that conversation showing discretionary selection, unclear criteria, and
+          management involvement.
+        </p>
+        <p className="mt-3">
+          Respondent's statement that movement outside existing schedules was not
+          operationally feasible also requires scrutiny because it appears to have been
+          made after Charging Party repeatedly raised that other employees were moving
+          across shifts and departments while she remained fixed on PM/closing.
+          Respondent should explain why movement suddenly became "not operationally
+          feasible" when she requested it, even though other employees were moving into
+          Training Bay, across areas, or across schedules. Respondent should also
+          produce all records showing whether those employees moved through the
+          waitlist, through manager request, through training assignment, through
+          preexisting assignment, through accommodation, or through another process.
+        </p>
+        <p className="mt-3">
+          Respondent again relies on the alleged May 2025 day-shift offer and the claim
+          that Charging Party re-entered the waitlist on July 10, 2025. She disputes
+          both characterizations for the reasons already stated. She did not receive or
+          decline any May 2025 shift offer. She had not been properly placed on the
+          mid-shift waitlist, she had been removed from the waitlist in February 2025,
+          and the July 2025 request was not a clean new request; it was part of the same
+          unresolved schedule issue. In the November 6, 2025 HR follow-up call, HR
+          repeated Allan's explanation that he submitted two schedule-change requests
+          and that a day shift had allegedly been offered and declined. She disputed
+          that in real time, explained that she had never been offered the shift, and
+          asked for the underlying ticket. No ticket has been produced.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's August–September 2025 narrative should not be
+          accepted at face value. The evidence does not show a neutral process that
+          Charging Party simply disagreed with. It shows that after she repeatedly
+          raised schedule and opportunity concerns, Respondent held a leadership review,
+          denied movement as not operationally feasible, and then relied on explanations
+          that are contradicted by the recorded September 19 conversation. That
+          transcript shows there was no formal criteria for Training Bay selection, that
+          managers participated in the decision, that movement was occurring, that
+          Charging Party disputed the alleged offer in real time, and that Allan could
+          not provide the basic details of any alleged AM or mid-shift offer.
+        </p>
+
+
+
         {/* Section III */}
         <h2 className="mt-10 font-display text-lg tracking-tight">III. Legal Standards</h2>
         <p className="mt-3">
