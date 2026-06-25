@@ -328,120 +328,36 @@ export function FormalLetterBody() {
         </h3>
 
         <p className="mt-3">
-          Respondent's description of Charging Party's prior EEOC charge is incomplete and
-          misleading. The Position Statement characterizes the prior charge as limited to
-          ordinary "workplace interactions" with a coworker and Charging Party's then-manager,
-          Rosanna Blackson. That framing minimizes the seriousness of what was reported. The
-          prior protected activity involved race discrimination, retaliation, hostile work
-          environment concerns, medical leave and disability-related retaliation, a false
-          job-abandonment issue, repeated denied transfer and schedule requests, and the
-          failure to properly add Charging Party to the mid-shift waitlist.
+          Respondent's description of my prior EEOC charge is incomplete and misleading. Respondent attempts to characterize the prior charge as limited to "workplace interactions" and ordinary concerns involving a coworker and my then-manager, Rosanna Blackson. That framing minimizes the seriousness of what was reported. My prior protected activity involved race discrimination, retaliation, hostile work environment concerns, medical leave/disability-related retaliation, a false job-abandonment issue, repeated denied transfer/schedule requests, and the failure to properly add me to the mid-shift waitlist.
         </p>
         <p className="mt-3">
-          Respondent's reliance on the fact that its internal investigation "did not
-          substantiate" the prior complaint is not dispositive. A non-substantiation finding
-          by the employer does not establish that the underlying conduct did not occur, nor
-          does it resolve the retaliation that followed. The contemporaneous record includes
-          Charging Party's May 29, 2024 written complaint to multiple leaders and Employee
-          Relations representatives, the May 31, 2024 HR intake call in which Charging Party
-          reported race discrimination, retaliation, the false job-abandonment issue, project
-          exclusion, and the waitlist/schedule issue, and HR's June 5, 2024 follow-up
-          arranging Charging Party's reassignment away from Ms. Blackson's direct supervision
-          to report through Mr. Glover effective July 1, 2024. That reassignment itself
-          reflects Respondent's understanding that continued one-on-one interaction with
-          Ms. Blackson was problematic during the pendency of the investigation. See{" "}
-          <Ex id="EX-HR-CALL" />, <Ex id="EX-002" />.
+          Respondent's claim that the prior investigation "did not substantiate" my claims does not mean the conduct did not occur, nor does it resolve the retaliation issues that followed. The fact that Respondent internally chose not to substantiate the complaint should be weighed against the actual record, including my contemporaneous written complaint, HR's follow-up, and the actions taken after my complaint. In fact, after my complaint, HR arranged for me to move away from Rosanna's direct supervision and report through Allan Glover effective July 1, 2024. That action itself shows Respondent understood the seriousness of the situation and that continued one-on-one interaction with Rosanna was problematic during the investigation.
         </p>
         <p className="mt-3">
-          Charging Party also disputes Respondent's assertion that she "experienced no
-          adverse action" during or after the prior charge. Continued employment is not the
-          test. Under <em>Burlington Northern &amp; Santa Fe Ry. Co. v. White</em>, 548 U.S.
-          53 (2006), the question is whether the challenged actions might dissuade a
-          reasonable worker from making or supporting a charge of discrimination. The record
-          identifies, among other things:
+          I also dispute Respondent's statement that I "experienced no adverse action" during or after the prior charge. Remaining employed does not mean I was not negatively impacted. After my protected activity, I continued to experience schedule-related harm, waitlist issues, loss of opportunity, performance-rating harm, and other retaliatory treatment.
         </p>
-        <ul className="mt-2 list-disc space-y-1 pl-6">
-          <li>
-            Charging Party had requested mid-shift or earlier schedule movement but was not
-            properly added to the waitlist when she should have been. See <Ex id="EX-008" />,{" "}
-            <Ex id="EX-041" />, <Ex id="EX-042" />.
-          </li>
-          <li>
-            Respondent later treated Charging Party's PM assignment as permanent even though
-            it had been presented as temporary, and Respondent's own records continued to
-            reflect temporary status. See <Ex id="EX-044" />, <Ex id="EX-045" />.
-          </li>
-          <li>
-            After Charging Party's May 2024 EEOC charge and May 29, 2024 formal complaint,
-            she remained fixed on the PM/closing schedule while other similarly situated
-            leaders moved to AM, mid-shift, or otherwise more favorable schedules. See{" "}
-            <Ex id="EX-010" />.
-          </li>
-          <li>
-            In July 2024, after the protected activity, Charging Party was assigned
-            low-performing employees who were already expected to be terminated; the delay
-            in processing their corrective actions negatively affected her team's
-            performance metrics.
-          </li>
-          <li>
-            When Charging Party submitted termination recommendations that Employee
-            Relations had approved, Mr. Carfagna blocked or delayed them at the director
-            level based on a documentation/coaching requirement that HR later confirmed
-            Charging Party had already satisfied. HR told Charging Party she "did exactly
-            the right thing," confirming the issue was not her performance or process.
-          </li>
-          <li>
-            In the first review cycle following the EEOC charge and formal complaint,
-            Charging Party's overall rating was downgraded from Strong to Solid despite
-            improved operational metrics, no goal rated below Solid, and a 124.36% bonus
-            payout. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
-            <Ex id="EX-052" />, <Ex id="EX-053" />.
-          </li>
-          <li>
-            The Solid rating reduced Charging Party's merit impact and, based on
-            information provided to leadership, excluded her from the Department Manager
-            training cohort — an internal promotional pipeline.
-          </li>
-          <li>
-            Charging Party was excluded from internal opportunities, remained blocked from
-            schedule movement, and was later told by Mr. Glover that there was a
-            "blockade" preventing her from moving forward. See <Ex id="EX-055" />.
-          </li>
+        <p className="mt-3">Examples include:</p>
+        <ul className="mt-2 list-disc space-y-2 pl-6">
+          <li>I had already requested mid-shift/earlier schedule movement, but I was not properly added to the waitlist when I should have been.</li>
+          <li>Respondent later treated my PM assignment as permanent, even though it had been presented to me as temporary and Respondent's own records later continued to reflect temporary status.</li>
+          <li>After my May 2024 EEOC charge and May 29, 2024 formal complaint, I remained fixed on PM/closing while other similarly situated leaders moved to AM, midshift, or other more favorable schedules.</li>
+          <li>In July 2024, after my protected activity, I was assigned low-performing employees who were already expected to be terminated. The delay in processing their corrective actions negatively affected my team's performance results.</li>
+          <li>When I submitted termination recommendations that Employee Relations approved, Greg Carfagna blocked or delayed them at the director level based on a documentation/coaching requirement that HR later confirmed I had already satisfied. HR later told me I "did exactly the right thing," confirming the issue was not my performance or process.</li>
+          <li>In the first review cycle after my EEOC charge and formal complaint, my overall rating was downgraded from Strong to Solid, despite improved operational metrics, no goal rated below Solid, and a 124.36% bonus payout.</li>
+          <li>The Solid rating had consequences beyond a label. It reduced my merit impact and, based on information provided to leadership, excluded me from the Department Manager training cohort, which was an internal promotional pipeline.</li>
+          <li>My internal opportunities and advancement were not "unchanged." I was excluded from opportunities, remained blocked from schedule movement, and was later told by Allan there was a "blockade" preventing me from moving forward.</li>
         </ul>
         <p className="mt-3">
-          Respondent's statement that Charging Party's "compensation, responsibilities, and
-          opportunities remained unchanged" is therefore inaccurate. Compensation was
-          affected by the 2024 downgrade because the merit percentage tied to the review was
-          lower than it would have been at Strong, notwithstanding stronger measurable
-          results. Opportunities were affected because the Solid rating excluded Charging
-          Party from the Department Manager training cohort and because she remained on an
-          unfavorable schedule while peers moved. Responsibilities and working conditions
-          were affected by the transfer of low-performing employees to her team and by the
-          continued requirement that she manage under conditions created by Respondent's
-          failure to resolve the schedule, waitlist, and retaliation concerns.
+          Respondent also states that my "compensation, responsibilities, and opportunities remained unchanged." I dispute that. My compensation was affected by the 2024 downgrade because the merit percentage tied to my review was lower than it would have been had I remained Strong, despite stronger measurable results. My opportunities were affected because the Solid rating excluded me from the Department Manager training cohort and because I remained stuck on an unfavorable schedule while peers moved. My responsibilities and working conditions were also affected by the transfer of low-performing employees to my team and the continued requirement that I manage under conditions created by Respondent's failure to resolve the schedule/waitlist and retaliation concerns.
         </p>
-
-        <InlineExhibits
-          heading="Prior EEOC charge / May–June 2024 protected-activity evidence"
-          items={[
-            { id: "EX-014", relevance: "May 29, 2024 formal internal complaint 'Serious issues at work' — race discrimination, retaliation, racial-slur allegation, denied transfers, and failure to place Harbin on the mid-shift waitlist." },
-            { id: "EX-015", relevance: "May 31, 2024 HR intake call with Susan Marcinko placing the substance of the complaint on the record, including the mid-shift waitlist failure." },
-            { id: "EX-016", relevance: "June 5, 2024 HR follow-up confirming Charging Party would be moved out of Rosanna Blackson's reporting line during the investigation and reassigned to Allan Glover's organization effective July 1, 2024." },
-            { id: "EX-001", relevance: "Filed Charge of Discrimination establishing the protected-activity record now before the Division." },
-          ]}
-        />
-
         <p className="mt-3">
-          Respondent had actual, contemporaneous notice of these concerns. The May 29, 2024
-          written complaint was directed to multiple leaders and Employee Relations
-          representatives; the May 31, 2024 HR intake call placed the substance of the
-          complaint on the record; and the June 5, 2024 follow-up confirmed Respondent's
-          decision to separate Charging Party from Ms. Blackson during the investigation.
-          See <Ex id="EX-HR-CALL" />. The relevant question is not whether Charging Party
-          was immediately terminated or formally demoted, but whether, after protected
-          activity, Respondent took actions or permitted conditions that would reasonably
-          discourage a person from making or supporting a discrimination complaint. The
-          record establishes that it did.
+          Respondent's position also omits that HR had notice of these concerns in real time. My May 29, 2024 complaint was sent to multiple leaders and Employee Relations representatives. On May 31, 2024, I participated in an HR intake call and reported race discrimination, retaliation, the false job-abandonment issue, project exclusion, and the waitlist/schedule issue. On June 5, 2024, HR followed up and arranged the move away from Rosanna during the investigation. These events show that Respondent had actual notice of protected activity and the underlying issues.
+        </p>
+        <p className="mt-3">
+          The performance-rating timeline is also important. In 2023, before my EEOC charge and formal complaints, I received a Strong rating. In 2024, after my protected activity, my rating dropped to Solid, even though my measurable performance improved, my bonus paid out at 124.36% of target, and no goal was rated below Solid. Then, in 2025, after the events at issue and after Respondent was already defending its actions, I was rated Strong again. This Strong → Solid → Strong pattern supports my position that the 2024 Solid rating was not a neutral reflection of my actual performance. It was the only year in that sequence that followed my protected activity, and it had real consequences. It reduced my merit impact and excluded me from the Department Manager training cohort/promotion pipeline. Respondent cannot fairly claim my "compensation, responsibilities, and opportunities remained unchanged" when the 2024 downgrade affected both pay and advancement opportunity.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's statement that I remained employed and therefore experienced no adverse action is not accurate. The relevant issue is not whether I was immediately terminated or formally demoted. The relevant issue is whether, after protected activity, Respondent took actions or allowed conditions that would reasonably discourage a person from making or supporting a discrimination complaint. The record shows that it did.
         </p>
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
@@ -449,114 +365,54 @@ export function FormalLetterBody() {
         </h3>
 
         <p className="mt-3">
-          Charging Party disputes Respondent's characterization of her scheduling history, her
-          original request, and the reason she was later placed into the AM/day-shift waitlist
-          process. Respondent represents that when Mr. Glover assumed responsibility for
-          Charging Party's team he became aware that she "believed" she had previously requested
-          a "day-shift schedule," but that "there was no record of any such request in the
-          centralized scheduling system." That framing is incomplete and misleading in three
-          respects.
+          I dispute Respondent's characterization of my scheduling history, my original request, and the reason I was placed into the later scheduling process. Respondent states that when Allan Glover assumed responsibility for my team, he became aware that I "believed" I had previously requested a "day-shift schedule," but that there was no record of the request in the centralized scheduling system. That framing is incomplete and misleading.
         </p>
-
         <p className="mt-3">
-          <strong>First, the original request was mid-shift, not day shift.</strong> Charging
-          Party's documented request was to return to her mid-shift schedule. The absence of a
-          record in a system Respondent solely controls does not establish that no request was
-          made; it supports Charging Party's position that Respondent failed to properly
-          document or process her mid-shift request. Recasting that request as a "day-shift"
-          request — and then placing Charging Party on an AM/day-shift waitlist — does not
-          neutralize the original mid-shift issue, it confirms it.
+          My issue was not merely that I "believed" I had requested a day shift. My original request was to return to my mid-shift schedule. The fact that Respondent claims there was no record in the centralized system does not prove that I failed to request the schedule. It supports my position that Respondent failed to properly document or process my request.
         </p>
-
         <p className="mt-3">
-          <strong>Second, the waitlist failure was already part of the May 2024 protected
-          activity.</strong> In her May 29, 2024 written complaint, Charging Party specifically
-          raised that she had repeatedly requested to move to a different role, department, or
-          schedule, that she had been assured she would be placed on a waitlist for a new
-          schedule, and that "unfortunately this never happened." See <Ex id="EX-001" />. The
-          May 31, 2024 HR intake call with Susan Marcinko confirms the same: Charging Party
-          explained that Ms. Blackson had told her she was placed on the waitlist, but that
-          when she contacted Ryan Tafoya, a Department Manager, he confirmed she was not on
-          the mid-shift list. See <Ex id="EX-002" />. Charging Party has preserved the
-          April 26, 2024 exchange in which Mr. Tafoya confirmed she was not currently on the
-          MID-shift list. See <Ex id="EX-008" />. HR's June 5, 2024 follow-up then arranged
-          Charging Party's reassignment to Mr. Glover's organization effective July 1, 2024 —
-          confirming HR was actively addressing the waitlist/schedule complaint, not routing
-          her through a routine neutral process. See <Ex id="EX-002" />.
+          This waitlist failure was already part of my May 2024 protected activity. In my May 29, 2024 written complaint, I specifically raised that I had repeatedly requested to move to a different role, department, or schedule, and that I had been assured I would be placed on a waitlist for a new schedule, but that this did not happen. This was not a new issue that first arose after Allan became my manager. It was part of the protected complaint that triggered HR involvement.
         </p>
-
         <p className="mt-3">
-          <strong>Third, the September 19, 2025 conversation with Mr. Glover confirms the
-          issue was mid-shift.</strong> Charging Party directly challenged Mr. Glover's
-          characterization that he had "offered" her a shift; the contemporaneous record
-          reflects the issue was mid-shift, not "day shift." See <Ex id="EX-005" />.
+          The May 31, 2024 HR intake call also confirms this. During that call, Susan Marcinko asked me about the waitlist and schedule-change issue. I explained that Rosanna had told me I was placed on the waitlist, but when I contacted Ryan Tafoya, a Department Manager, to check my status, he confirmed I was not on the mid-shift waitlist. I also have a screenshot of that April 26, 2024 exchange with Ryan, where I asked him to check whether I was on the waitlist for mid-shift and he responded that I was not currently on the MID shift list.
         </p>
-
         <p className="mt-3">
-          Respondent has not produced (a) the ticket Mr. Glover allegedly submitted on
-          Charging Party's behalf in July 2024, (b) any document showing whether that request
-          was entered as mid-shift, AM/day shift, or another category, (c) the custodial chain
-          through which it was processed (reportedly Edina Markus), or (d) the audit history
-          showing additions, deletions, or status changes to Charging Party's entry. If
-          Respondent's position is that there was no record of the prior request, Respondent
-          should explain why no record exists after Charging Party requested the schedule,
-          after Mr. Tafoya confirmed she was not on the MID list, after she raised it in her
-          May 29, 2024 complaint, and after HR discussed it with her on May 31, 2024.
+          This is important because Respondent's Position Statement repeatedly reframes the issue as a "day-shift" request. My original and documented request was mid-shift. HR was aware of that issue, it was included in my complaint, and HR later told me the issue would be addressed through the move to Allan's organization. The later placement on an AM/day-shift waitlist did not accurately reflect my original mid-shift request.
         </p>
-
         <p className="mt-3">
-          Respondent also omits that the PM assignment was originally presented as
-          <em> temporary</em>. After Charging Party's protected activity, Respondent later
-          treated or described that PM assignment as permanent, yet Respondent's own records
-          continued to reflect temporary status through at least February 2025. When Charging
-          Party was re-added to the waitlist on July 10/17, 2025, her status appeared as
-          PM / Permanent with a new July 17, 2025 request date — without notice, ticket,
-          approval, or documentation. That inconsistency matters because Respondent's own
-          process treats temporary and permanent shift movement differently. See{" "}
-          <Ex id="EX-008" />, <Ex id="EX-041" />, <Ex id="EX-042" />, <Ex id="EX-043" />,{" "}
-          <Ex id="EX-048" />.
+          Respondent's statement that Allan placed me on the "day-shift waitlist" also fails to explain why I was not placed on the correct mid-shift waitlist after HR was already on notice that my mid-shift request had not been properly processed. If Respondent's position is that there was no record of my prior request, Respondent should explain why there was no record after I had requested the schedule, after Ryan confirmed I was not on the MID list, after I raised it in my May 29 complaint, and after HR discussed it with me on May 31.
         </p>
-
         <p className="mt-3">
-          Charging Party further disputes Respondent's statement that management "took steps
-          to bring [her] closer to [her] desired schedule" by moving her to a four-day,
-          ten-hour schedule beginning at 9:00 a.m. That framing presents a management-created
-          remedy. The record is otherwise. After Charging Party was not moved to the
-          mid-shift schedule she had requested, she asked Mr. Glover whether she could work a
-          four-day, ten-hour schedule with one weekday off so she could have at least one day
-          with her son. She was initially told no and told the only path was full team
-          agreement. Charging Party then had to canvass her team and secure their consent
-          herself; her understanding is that Mr. Carfagna was surprised she was able to
-          accomplish it. The four-day, ten-hour schedule was therefore a compromise Charging
-          Party organized after Respondent failed to place her on the mid-shift waitlist and
-          failed to move her to the schedule she had actually requested. It required longer
-          ten-hour days, kept her in an unfavorable closing posture, and should not be
-          presented as evidence of favorable treatment or resolution of the schedule issue.
+          Respondent also omits that my PM assignment was originally presented to me as temporary. After my protected activity, Respondent later treated or described that PM assignment as permanent. However, Respondent's own records continued to reflect temporary status through at least February 2025. When I was later re-added to the waitlist in July 2025, my status appeared as PM / Permanent with a new July 17, 2025 request date, without clear notice, explanation, ticket, approval, or documentation. That inconsistency matters because Respondent's own process treats temporary and permanent shift movement differently.
         </p>
-
         <p className="mt-3">
-          Respondent also states that Charging Party was positioned approximately "fifth or
-          sixth" on a lengthy waitlist. Charging Party requests the complete underlying
-          records supporting that representation, including ticket number, request date,
-          requested shift type, current shift, temporary/permanent status, waitlist ranking,
-          and full version history. The preserved record reflects material inconsistencies:
-          Charging Party was not on the MID-shift list when she should have been; Respondent
-          later placed her under an AM/day-shift category rather than her original mid-shift
-          request; her status appeared as Temporary; her waitlist row was later removed; and
-          she remained absent from the controlling waitlist while other employees continued
-          to qualify and move. See <Ex id="EX-008" />, <Ex id="EX-041" />, <Ex id="EX-042" />,{" "}
-          <Ex id="EX-043" />, <Ex id="EX-048" />.
+          I also dispute Respondent's statement that management "took steps to bring me closer to my desired schedule" by moving me to a four-day, ten-hour schedule beginning at 9:00 a.m. That statement makes it sound as though management proactively gave me a favorable schedule adjustment. That is not what happened.
         </p>
-
         <p className="mt-3">
-          For these reasons, Respondent's statement does not accurately describe the
-          scheduling issue. The evidence shows that Charging Party requested mid-shift, that
-          her failure to be added to the mid-shift waitlist was part of her May 2024
-          protected complaint, that HR was on actual notice, that Respondent later placed her
-          under the wrong schedule category, and that the four-day, ten-hour schedule was a
-          self-organized compromise — not a remedy — while Charging Party continued to be
-          denied the schedule movement she had requested.
+          After I was not moved to the mid-shift schedule I had requested, I asked Allan whether I could work a four-day, ten-hour schedule and have one weekday off so I could at least have one day with my son. I was still closing, and the schedule did not give me the mid-shift or traditional day schedule I had requested. I was initially told no, and I was told the only way it could happen was if everyone on my team agreed to move to that schedule. I then had to go to my team and ask them to agree. My team ultimately signed on to the schedule. My understanding is that Greg was surprised I was able to accomplish that.
         </p>
+        <p className="mt-3">
+          Therefore, the four-day, ten-hour schedule was not a management-created remedy to bring me closer to my desired schedule. It was a compromise I had to organize myself after Respondent failed to properly place me on the mid-shift waitlist and after Respondent failed to move me to the schedule I had requested. It required me to work longer ten-hour days, and it still left me stuck in an unfavorable closing-shift situation. Respondent should not present this as evidence that it treated me favorably or resolved the schedule issue.
+        </p>
+        <p className="mt-3">
+          Respondent also states that I was positioned approximately fifth or sixth on a lengthy waitlist. I request that Respondent produce the complete underlying records supporting that claim, including the ticket number, request date, requested shift type, current shift, temporary/permanent status, waitlist ranking, and all version history. The records I have preserved show major inconsistencies: I was not on the MID shift list when I should have been; Respondent later placed me under an AM/day-shift category rather than my original mid-shift request; my status appeared as Temporary; my waitlist row was later removed; and I remained absent from the controlling waitlist while other employees continued to qualify.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's statement does not accurately describe the scheduling issue. The evidence shows that I requested mid-shift, that my failure to be added to the mid-shift waitlist was part of my May 2024 protected complaint, that HR was aware of the issue, that Respondent later placed me under the wrong schedule category, and that the four-day, ten-hour schedule was not a true remedy but a compromise I had to pursue myself while still being denied the schedule movement I had requested.
+        </p>
+        <p className="mt-3"><strong>Requested records for this issue:</strong></p>
+        <ul className="mt-2 list-disc space-y-1 pl-6">
+          <li>The complete ticket Allan Glover allegedly submitted on my behalf in July 2024.</li>
+          <li>Any document showing whether that request was entered as mid-shift, AM/day shift, or another schedule category.</li>
+          <li>All records showing why my original mid-shift request was not recorded as mid-shift.</li>
+          <li>All communications between Rosanna Blackson, Ryan Tafoya, Susan Marcinko, Greg Carfagna, Allan Glover, Jen Roy, Edina Markus, and HR regarding my mid-shift request.</li>
+          <li>The complete waitlist entry showing my request date, requested shift, current shift, temporary/permanent status, months as TL, and qualifies status.</li>
+          <li>All SharePoint version history and audit logs for the Current TL Shifts / waitlist file from April 2024 through July 2025.</li>
+          <li>Any documentation explaining why my status changed from Temporary to Permanent.</li>
+          <li>Any documentation explaining why my request date was later reflected as July 17, 2025 despite my mid-shift request and complaint predating that date.</li>
+          <li>Any documentation regarding the four-day, ten-hour schedule, including who requested it, whether I was initially told no, whether team approval was required, and whether I had to obtain agreement from my team before it was implemented.</li>
+          <li>Any records showing that the four-day schedule was considered a substitute for, or resolution of, my mid-shift request.</li>
+        </ul>
 
         <InlineExhibits
           heading="Waitlist evidence — mid-shift request and version history"
@@ -700,102 +556,37 @@ export function FormalLetterBody() {
           (PS p. 3, § I.B.2; p. 8, § II.B)
         </h3>
         <p className="mt-3">
-          Charging Party disputes Respondent's attempt to distance Allan Glover from her
-          protected activity and the adverse treatment that followed. Respondent represents
-          that Mr. Glover did not become Charging Party's manager until July 2024, that the
-          prior charge did not involve him, and that he "was not informed of the substance"
-          of the allegations. That framing is incomplete and misleading.
+          I dispute Respondent's attempt to distance Allan Glover from my protected activity and the actions that followed. Respondent states that Mr. Glover did not become my manager until July 2024, that the prior charge did not involve him, and that he was not informed of the substance of the allegations. This framing is incomplete and misleading.
         </p>
         <p className="mt-3">
-          Charging Party's position is not that Mr. Glover caused the events that gave rise
-          to the original EEOC charge. Charging Party's position is that, after she engaged
-          in protected activity, Respondent placed her under Mr. Glover's management and he
-          became the manager through whom decisions and communications affecting her
-          schedule, waitlist status, performance evaluation, advancement, corrective-action
-          processing, and working conditions were made or transmitted. Respondent cannot
-          insulate itself from liability by observing that Mr. Glover was not the original
-          subject of the prior charge when the adverse treatment continued — and in several
-          respects escalated — after he became her manager.
+          My position is not that Mr. Glover caused every event that led to my original EEOC charge. My position is that after I engaged in protected activity, Respondent placed me under Mr. Glover's management and he became involved in decisions and communications that affected my schedule, waitlist status, performance, advancement, corrective-action processing, and working conditions. Respondent cannot avoid liability by saying Mr. Glover was not the original subject of the prior charge when the adverse treatment continued after he became my manager.
         </p>
         <p className="mt-3">
-          Respondent also omits the circumstances in which Mr. Glover became Charging
-          Party's manager. The reassignment to Mr. Glover's organization was not an ordinary
-          rotation untethered from the protected activity. HR specifically arranged the move
-          because Charging Party had complained about Rosanna Blackson and because HR
-          wanted to limit her one-on-one interactions with Ms. Blackson during the
-          investigation. Susan Marcinko told Charging Party that she had spoken with Greg
-          Carfagna about moving Charging Party to Mr. Glover's organization effective
-          July 1, 2024, and that, in the interim, Charging Party could go to Mr. Glover for
-          one-on-one direction in place of Ms. Blackson. See <Ex id="EX-HR-CALL" />,{" "}
-          <Ex id="EX-002" />. Mr. Glover's involvement therefore began in the context of an
-          active HR investigation into a protected complaint — not as a neutral management
-          change disconnected from the underlying issues.
+          Respondent also omits that my move to Allan Glover's organization was not an ordinary transfer with no context. HR specifically arranged the move because I had complained about Rosanna Blackson and because HR wanted to limit my one-on-one interactions with Rosanna during the investigation. Susan Marcinko told me she had spoken with Greg Carfagna about moving me to Allan's organization effective July 1, 2024, and that in the interim I could go to Allan for one-on-one direction instead of Rosanna. This shows that Allan's involvement began in the context of an active HR investigation and protected complaint, not as a neutral management change with no connection to the underlying issues.
         </p>
         <p className="mt-3">
-          Respondent's assertion that Mr. Glover "was not informed of the substance" of the
-          allegations should be tested by the documentary record. At a minimum, Respondent
-          — through its HR function and leadership — had actual knowledge of the substance
-          of the complaint. The May 29, 2024 formal complaint was directed to multiple HR
-          and leadership recipients and described race discrimination, retaliation, an
-          alleged racial slur attributed to Ms. Blackson, denied transfer and schedule
-          requests, and the failure to properly place Charging Party on the mid-shift
-          waitlist. HR then discussed the matter with Mr. Carfagna and arranged the move to
-          Mr. Glover's organization. If Respondent maintains that Mr. Glover was
-          deliberately kept uninformed of the substance of the investigation while being
-          assigned as Charging Party's interim and then direct manager, Respondent should
-          produce the communications showing what Mr. Glover was told — by Mr. Carfagna,
-          Ms. Marcinko, Employee Relations, or anyone else — before he began managing
-          Charging Party.
+          Respondent's statement that Mr. Glover "was not informed of the substance" of the allegations should be investigated. At minimum, the company and leadership had actual knowledge of the substance of my complaint. My May 29, 2024 formal complaint was sent to multiple HR and leadership recipients and described race discrimination, retaliation, the alleged racial slur by Rosanna, denied transfer/schedule requests, and the failure to properly place me on the mid-shift waitlist. HR then discussed the matter with Greg Carfagna and arranged my move to Allan's organization. If Respondent claims Allan was deliberately kept uninformed of the substance of the investigation while being assigned as my interim and then direct manager, Respondent should produce the communications showing what Allan was told, what Greg told him, what Susan told him, and what information was provided to him before he began managing me.
         </p>
         <p className="mt-3">
-          The record also reflects that Charging Party herself put Mr. Glover on notice of
-          the substance of the prior complaint. In a Microsoft Teams video meeting,
-          Charging Party informed Mr. Glover that she had filed a complaint against
-          Ms. Blackson and explained that the ongoing conduct she was experiencing could be
-          retaliatory in nature. Mr. Glover responded that he had confronted Ms. Blackson
-          about the issue — using profanity in doing so — and had directed her to correct
-          the conduct. That contemporaneous exchange is direct evidence that Mr. Glover
-          knew (a) Charging Party had engaged in protected activity directed at Ms. Blackson
-          and (b) the conduct at issue was ongoing and required corrective intervention.
-          Respondent's representation that Mr. Glover "was not informed of the substance"
-          cannot be reconciled with his own statement that he confronted the subject of the
-          complaint about that very conduct.
+          I also directly notified Allan of my protected activity. I let Allan know over a Microsoft Teams video meeting that I had made a complaint against Rosanna and that this could be why she was treating me the way she was. Allan told me that he confronted Rosanna and even swore at her and told her to correct the issue. That admission shows Allan in fact knew about my complaint and the conduct it concerned, contrary to Respondent's representation that he was not informed of the substance.
         </p>
         <p className="mt-3">
-          Even setting aside the substance question, Respondent concedes that Mr. Glover
-          "later became aware that Ms. Harbin had filed a prior EEOC charge." Under{" "}
-          <em>Raad v. Fairbanks North Star Borough School District</em>, 323 F.3d 1185 (9th
-          Cir. 2003), decisionmaker awareness of the existence of protected activity is
-          sufficient to establish the knowledge element of retaliation causation; awareness
-          of every factual particular is not required. The adverse actions described in
-          Section II.G above all post-date Mr. Glover's admitted awareness.
+          Even if Allan was not involved in the original events, he later became the decisionmaker or participant in several disputed issues, including my schedule movement, waitlist status, alleged shift offer, performance review administration, internal opportunity discussions, Training Bay movement discussions, and later FMLA/leave-related communications. Respondent's claim that he did not make decisions "based on" the prior complaint is a conclusion, not proof. The record shows that after protected activity, I remained blocked from schedule movement, my waitlist history was disputed and later reset, my 2024 rating dropped from Strong to Solid, and other leaders received schedule movement that I did not receive.
         </p>
         <p className="mt-3">
-          Mr. Glover later became the decisionmaker or participant in several of the
-          disputed issues at the center of this Charge, including Charging Party's schedule
-          movement, waitlist status, the alleged May 2025 day-shift "offer," administration
-          of the 2024 performance review, internal-opportunity discussions, Training Bay
-          movement discussions, and FMLA- and leave-related communications. Respondent's
-          conclusory representation that he did not act "based on" the prior complaint is
-          not evidence. The contemporaneous record shows that after protected activity,
-          Charging Party remained blocked from schedule movement, her waitlist history was
-          disputed and later reset, her 2024 overall rating dropped from Strong to Solid,
-          and other leaders received schedule movement she did not. See{" "}
-          <Ex id="EX-008" />, <Ex id="EX-010" />, <Ex id="EX-041" />, <Ex id="EX-042" />,{" "}
-          <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />, <Ex id="EX-052" />,{" "}
-          <Ex id="EX-053" />.
+          Respondent also cannot isolate Mr. Glover from the broader company knowledge. Retaliation does not require the final manager to have been the original actor in the discrimination complaint. The relevant question is whether Respondent, through its managers, HR, and leadership, had knowledge of my protected activity and then subjected me to materially adverse treatment. Here, HR, Greg Carfagna, and other leadership had actual notice. Allan then became the manager through whom many of the later disputed decisions and explanations were communicated.
         </p>
         <p className="mt-3">
-          Finally, retaliation liability does not depend on the final-line manager having
-          been the original actor in the underlying discrimination complaint. The relevant
-          inquiry is whether Respondent, acting through its managers, HR, and leadership,
-          had knowledge of Charging Party's protected activity and thereafter subjected her
-          to materially adverse treatment. HR, Mr. Carfagna, and other members of
-          leadership indisputably had actual notice. Mr. Glover then became the manager
-          through whom many of the later disputed decisions and explanations were
-          communicated. His later actions are therefore not insulated from the prior
-          protected activity merely because he was not named in the original charge.
+          For these reasons, I dispute Respondent's suggestion that Allan Glover's later actions are insulated from the prior protected activity merely because he was not named in the original charge. The evidence shows that he became involved because of the protected complaint, served as the management contact during the investigation period, and later participated in or communicated decisions that are central to my retaliation and discrimination claims.
         </p>
+        <p className="mt-3"><strong>Requested records related to this issue:</strong></p>
+        <ul className="mt-2 list-disc space-y-1 pl-6">
+          <li>All communications between Susan Marcinko, Greg Carfagna, Allan Glover, and HR regarding my move to Allan's organization in June/July 2024.</li>
+          <li>Any instructions given to Allan regarding my reporting arrangement, schedule request, prior complaint, Rosanna Blackson, or the ongoing investigation.</li>
+          <li>Any communications showing what Allan was told or not told about my May 2024 complaint and EEOC charge.</li>
+          <li>Any documents identifying who decided Allan would become my manager and why.</li>
+          <li>Any communications between Allan, Greg, HR, Employee Relations, or scheduling administrators regarding my waitlist placement, alleged shift offer, schedule movement, and performance rating after July 2024.</li>
+        </ul>
 
         <InlineExhibits
           heading="Glover transition / knowledge evidence (PS § I.B.2)"
@@ -868,108 +659,52 @@ export function FormalLetterBody() {
           N. Response to Respondent's "Performance and Advancement" Narrative (PS § II.C)
         </h3>
         <p className="mt-3">
-          Respondent's "Performance and Advancement" section confirms an important fact:
-          Charging Party was a strong performer. Respondent acknowledges that she continued
-          performing at a high level, that her manager recognized her strong results, and that
-          she later received a 2025 rating equivalent to Strong. Charging Party does not
-          dispute that she was a strong performer. What is disputed is Respondent's attempt to
-          use that strong performance as proof that no harm occurred. Strong performance makes
-          the later treatment <em>harder</em> to explain, not easier. If Charging Party was
-          consistently performing at a high level, Respondent should explain why she was
-          downgraded in 2024, excluded from advancement pipelines, left out of project
-          opportunities, repeatedly denied internal mobility, and kept fixed on PM/closing
-          while other employees continued moving across departments, schedules, and
-          opportunities.
+          Respondent's "Performance and Advancement" section confirms an important fact: I was a strong performer. Respondent acknowledges that I continued performing at a high level, that my manager recognized my strong results, and that I later received a 2025 rating equivalent to Strong. I agree that I was a strong performer. That is not disputed.
         </p>
         <p className="mt-3">
-          Respondent selectively relies on the 2025 Strong rating while omitting the most
-          important rating event in the record: the 2024 downgrade. Before protected activity,
-          Charging Party received a 2023 overall rating of <strong>Strong</strong>. In the
-          first review cycle after her May 2024 EEOC charge and May 29, 2024 formal internal
-          complaint, her overall rating dropped to <strong>Solid</strong>. That downgrade
-          occurred despite improved measurable performance, no individual goal rated below
-          Solid, improved team metrics, and a 124.36% bonus payout.{" "}
-          <Ex id="EX-052" />, <Ex id="EX-053" />. After the events at issue, and after
-          Respondent was already defending its actions, the rating returned to{" "}
-          <strong>Strong</strong> in 2025. The Strong → Solid → Strong pattern is central to
-          this Charge. The 2024 Solid rating was the outlier: it followed protected activity,
-          it did not match the underlying metrics, and it carried consequences.
+          What is disputed is Respondent's attempt to use my strong performance as proof that I was not harmed. My strong performance makes the later treatment harder to explain, not easier. If I was consistently performing at a high level, Respondent should explain why I was downgraded in 2024, excluded from advancement pipelines, left out of project opportunities, repeatedly denied internal mobility, and kept fixed on PM/closing while other employees continued moving across departments, schedules, and opportunities.
         </p>
         <p className="mt-3">
-          The 2024 Solid rating was not harmless. Shortly after the 2024 reviews were issued,
-          leadership communicated that Unit Managers / Team Leaders needed a rating of
-          4 Strong or 5 Outstanding to be eligible for the TL Plus / Department Manager
-          training cohort — an internal development pipeline for Department Manager or Area
-          Manager advancement. Because Charging Party received a 3 Solid rating in 2024, she
-          was excluded from that pipeline. Respondent's statement that her opportunities
-          remained unchanged is therefore inaccurate. The rating affected both compensation
-          and advancement opportunity.
+          Respondent selectively relies on my 2025 Strong rating while omitting the most important rating event in the record: the 2024 downgrade. Before my protected activity, I received a 2023 overall rating of Strong. In the first review cycle after my May 2024 EEOC charge and May 29, 2024 formal internal complaint, my overall rating dropped to Solid. That downgrade occurred despite improved measurable performance, no individual goal rated below Solid, improved team metrics, and a 124.36% bonus payout. After the events at issue, and after Respondent was already defending its actions, my rating returned to Strong in 2025.
         </p>
         <p className="mt-3">
-          Respondent also states that promotions were handled through a formal posting and
-          interview process. The existence of a formal process does not prove the process was
-          applied fairly, consistently, or without retaliation. Charging Party's application
-          history reflects nearly 50 internal applications from approximately February 2023
-          through April 2025. <Ex id="EX-055" />. Despite strong performance, leadership
-          experience, operational knowledge, process expertise, and repeated efforts to
-          advance internally, she was not selected. Respondent has not produced the
-          decisionmakers, selected candidates, interview notes, scoring criteria, recruiter
-          notes, comparative qualifications, or communications explaining those decisions.
-          Respondent's statement that "another candidate was determined to be the best fit" is
-          conclusory: it identifies no decisionmaker, no qualifications compared, no business
-          need, no interview scoring, no calibration, no knowledge analysis, and no comparison
-          of the selected candidate's tenure, performance, ratings, experience, or
-          protected-activity history.
+          That Strong → Solid → Strong pattern is central to this Charge. The 2024 Solid rating was the outlier. It occurred after protected activity, it did not match the underlying metrics, and it carried consequences.
         </p>
         <p className="mt-3">
-          Respondent's further assertion that "no hiring decisionmaker would have known of
-          [Charging Party's] prior charge" is unsupported. Respondent has not identified the
-          hiring decisionmakers, interview panels, recruiters, or managers for each role, nor
-          produced the communications related to those applications. The May 29, 2024 formal
-          complaint was distributed to multiple leaders and Employee Relations representatives,
-          and Charging Party's schedule, transfer, project, performance, and advancement
-          concerns were repeatedly raised thereafter. Respondent cannot defeat causation by a
-          broad knowledge denial while withholding the records that would show who participated
-          in each decision and what they knew.
+          The 2024 Solid rating was not harmless. Shortly after the 2024 reviews were issued, leadership communicated that Unit Managers / Team Leaders needed a rating of 4 Strong or 5 Outstanding to be eligible for the TL Plus / Department Manager training cohort, which was an internal development pipeline for Department Manager or Area Manager advancement. Because I received a 3 Solid rating in 2024, I was excluded from that pipeline. Respondent's statement that my opportunities remained unchanged is therefore inaccurate. The rating affected both compensation and advancement opportunity.
         </p>
         <p className="mt-3">
-          Respondent's advancement narrative is also too narrow because it treats advancement
-          as only formal job postings. At Discover, advancement also occurred through
-          leadership visibility, project assignments, process-improvement work, Department
-          Manager development cohorts, cross-department movement, schedule flexibility, and
-          opportunities to present or be credited for operational work. After protected
-          activity, Charging Party was excluded from those opportunities despite her
-          performance and process knowledge. She had created a Compliance Check concept and
-          related materials, but Cyndy Smith's group later recreated or used the idea while
-          excluding her from related meetings and credit. She also developed a Call Flow /
-          process tool and had a scheduled meeting to present it to Greg Carfagna, but
-          Mr. Carfagna did not attend — eliminating an opportunity to demonstrate concrete
-          process-improvement work to leadership.
+          Respondent also states that promotions were handled through a formal posting and interview process. I do not dispute that internal postings existed. However, the existence of a formal posting process does not prove the process was applied fairly, consistently, or without retaliation. My application history reflects nearly 50 internal applications from approximately February 2023 through April 2025. Despite strong performance, leadership experience, operational knowledge, process expertise, and repeated efforts to advance internally, I was not selected for advancement opportunities. Respondent has not produced the decisionmakers, selected candidates, interview notes, scoring criteria, recruiter notes, comparative qualifications, or communications explaining those decisions.
         </p>
         <p className="mt-3">
-          This was not happening in isolation. During the same period, other employees
-          continued receiving movement across LVAR, MVAR, HVAR, PRE-D/DBC, Training Bay, and
-          other areas while Charging Party remained fixed on PM/closing and was told movement
-          was unavailable, waitlist-controlled, or not operationally feasible. Respondent
-          cannot separate "advancement" from those opportunities because schedule movement,
-          department movement, project exposure, and leadership visibility all affected career
-          development.
+          Respondent's statement that "another candidate was determined to be the best fit" is conclusory. It does not identify who made that determination, what qualifications were compared, what business need was applied, whether interview scoring was used, whether calibration occurred, whether the decisionmaker knew of my protected activity, or whether the selected candidate had comparable performance, tenure, ratings, experience, protected-activity history, or internal visibility. Without those records, Respondent's "best fit" explanation should not be accepted as a neutral reason.
         </p>
         <p className="mt-3">
-          Respondent's position therefore creates a contradiction. Respondent admits Charging
-          Party was a strong performer, yet asks the Division to accept that her lack of
-          advancement, project exclusion, 2024 rating downgrade, TL Plus exclusion, and
-          continued schedule immobility were all neutral and unrelated to protected activity.
-          Respondent should be required to explain why the only rating downgrade occurred
-          after protected activity; why the 2024 Solid rating did not match the underlying
-          metrics; why that rating excluded Charging Party from the TL Plus / Department
-          Manager development pipeline; why nearly 50 internal applications did not result in
-          advancement; why project opportunities and credit were withheld; why leadership did
-          not support her process-improvement work; why Mr. Carfagna did not attend the
-          scheduled Call Flow tool presentation; and why other employees continued receiving
-          movement and opportunity while Charging Party remained blocked. The "Performance and
-          Advancement" section does not rebut the Charge — it confirms strong performance
-          while failing to explain the adverse actions that followed protected activity.
+          Respondent also asserts that "no hiring decisionmaker would have known of her prior charge." That statement is unsupported. Respondent has not identified the hiring decisionmakers for each role, the interview panels, the recruiters, the managers involved, or the communications related to those applications. My May 29, 2024 formal complaint was sent to multiple leaders and Employee Relations representatives, and my schedule, transfer, project, performance, and advancement concerns were repeatedly raised thereafter. Respondent cannot defeat causation by making a broad knowledge denial while withholding the records that would show who participated in each hiring decision and what they knew.
+        </p>
+        <p className="mt-3">
+          Respondent's advancement narrative is also too narrow because it treats advancement as only formal job postings. At Discover, advancement did not happen only through posted roles. Advancement also happened through leadership visibility, project assignments, process-improvement work, Department Manager development cohorts, cross-department movement, schedule flexibility, and opportunities to present or be credited for operational work. Those opportunities mattered because they created exposure, sponsorship, and credibility for future promotion.
+        </p>
+        <p className="mt-3">
+          After my protected activity, I was excluded from those types of opportunities despite my performance and process knowledge. I had previously been involved in operational process work and had created tools and ideas intended to improve performance, compliance, and call flow. I created a Compliance Check concept and related materials, but later raised concerns that Cyndy Smith's group recreated or used the idea while excluding me from related meetings and credit. I was not included in the meetings where the work was discussed or advanced, even though the concept originated from my work and I had created related materials.
+        </p>
+        <p className="mt-3">
+          I also created and developed call-flow/process tools because I was trying to create visibility and solve operational problems even while I was being left out of normal advancement channels. I had a scheduled meeting to present the Call Flow tool to Greg Carfagna, but Greg did not attend. That matters because I was attempting to show leadership concrete process-improvement work, yet the opportunity did not result in meaningful sponsorship, visibility, or advancement support.
+        </p>
+        <p className="mt-3">
+          This was not happening in a vacuum. During the same general period, other employees continued receiving movement across departments and schedules. Employees moved across LVAR, MVAR, HVAR, PRE-D/DBC, Training Bay, and other areas while I remained fixed on PM/closing and continued to be told that movement was unavailable, waitlist-controlled, or not operationally feasible. Respondent cannot separate "advancement" from those opportunities because schedule movement, department movement, project exposure, and leadership visibility all affected career development.
+        </p>
+        <p className="mt-3">
+          Respondent's position therefore creates a contradiction. On one hand, Respondent admits I was a strong performer. On the other hand, Respondent asks the Division to accept that my lack of advancement, project exclusion, 2024 rating downgrade, TL Plus exclusion, and continued schedule immobility were all neutral and unrelated to protected activity. The record does not support that conclusion without further investigation.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to explain why the only rating downgrade occurred after protected activity; why the 2024 Solid rating did not match the underlying performance metrics; why that rating excluded me from the TL Plus / Department Manager development pipeline; why nearly 50 internal applications did not result in advancement; why project opportunities and credit were withheld; why leadership did not support my process-improvement work; why Greg Carfagna did not attend the scheduled Call Flow tool presentation; and why other employees continued receiving movement and opportunity while I remained blocked.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's "Performance and Advancement" section does not rebut the Charge. It confirms my strong performance while failing to explain the adverse actions, blocked opportunities, and inconsistent advancement treatment that followed my protected activity.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce: (1) my complete internal application history; (2) all job postings for which I applied; (3) recruiter notes; (4) interview notes; (5) interview scoring rubrics; (6) names of all hiring decisionmakers, interviewers, recruiters, and managers involved in each role; (7) documents showing whether each decisionmaker knew or had access to information about my protected activity; (8) selected candidates' qualifications, ratings, tenure, internal experience, schedule history, and protected-activity history; (9) communications regarding my applications; (10) TL Plus / Department Manager training cohort eligibility rules; (11) the list of employees selected for that cohort; (12) documents showing how the 2024 Solid rating affected eligibility; (13) all communications regarding the Compliance Check project, Cyndy Smith's group, and related meetings; (14) calendar invites and attendance records for my Call Flow tool presentation; (15) documents showing project assignments, project invitations, and project participation for Unit Managers from May 2024 through 2026; and (16) records showing cross-department movement, schedule movement, and project assignments for similarly situated Unit Managers during the same period.
         </p>
 
         {/* Section II.O - May 2025 Shift Opportunity */}
@@ -977,70 +712,34 @@ export function FormalLetterBody() {
           O. Response to Respondent's "May 2025 Shift Opportunity" Assertion
         </h3>
         <p className="mt-3">
-          Respondent's "May 2025 Shift Opportunity" assertion is disputed. Respondent states
-          that a day-shift opportunity became available to Charging Party in May 2025, that
-          she declined it because of graduate school commitments at the University of Arizona,
-          and that she was removed from the waitlist consistent with standard procedure. That
-          is not what happened.
+          Respondent's "May 2025 Shift Opportunity" assertion is disputed. Respondent states that a day-shift opportunity became available to me in May 2025, that I declined it because of graduate school commitments at the University of Arizona, and that I was removed from the waitlist consistent with standard procedure. That is not what happened.
         </p>
         <p className="mt-3">
-          Charging Party did not receive a May 2025 shift offer. She was not offered an AM
-          shift, a mid-shift, or any other shift movement opportunity in May 2025. She did
-          not decline any shift opportunity because of graduate school. She has not been
-          offered any shift since being placed on or associated with the waitlist.
+          I did not receive a May 2025 shift offer. I was not offered an AM shift, a mid-shift, or any other shift movement opportunity in May 2025. I did not decline any shift opportunity because of graduate school. I have not been offered any shift since being placed on or associated with the waitlist.
         </p>
         <p className="mt-3">
-          Respondent has not produced any documentation supporting the alleged May 2025
-          offer. Respondent has not identified the person who allegedly made the offer, the
-          exact shift offered, the department or role involved, the date and time of the
-          offer, the method of communication, the person who allegedly confirmed her
-          decline, or where her alleged decline was recorded. Respondent also has not
-          produced a Teams message, email, ticket, calendar invite, written confirmation, or
-          any written decline.
+          Respondent has not produced any documentation supporting the alleged May 2025 offer. Respondent has not identified the person who allegedly made the offer, the exact shift offered, the department or role involved, the date and time of the offer, the method of communication, the person who allegedly confirmed my decline, or where my alleged decline was recorded. Respondent also has not produced a Teams message, email, ticket, calendar invite, written confirmation, or any written decline.
         </p>
         <p className="mt-3">
-          The timeline also contradicts Respondent's explanation. Respondent states that
-          Charging Party was removed from the waitlist after declining a May 2025
-          opportunity. However, the preserved waitlist evidence shows she had already been
-          removed months earlier. The January 22, 2025 saved waitlist version showed
-          Charging Party on the list, with a June 26, 2024 request date, PM/Temporary
-          status, and Qualifies = Yes. Respondent's records still showed her as
-          PM/Temporary through February 18, 2025. Then, after Jen Roy edited the waitlist
-          multiple times on February 25, 2025, Charging Party's row was removed while
-          junior employees remained on the list and continued to qualify.
+          The timeline also contradicts Respondent's explanation. Respondent states that I was removed from the waitlist after declining a May 2025 opportunity. However, the preserved waitlist evidence shows I had already been removed months earlier. The January 22, 2025 saved waitlist version showed me on the list, with a June 26, 2024 request date, PM/Temporary status, and Qualifies = Yes. Respondent's records still showed me as PM/Temporary through February 18, 2025. Then, after Jen Roy edited the waitlist multiple times on February 25, 2025, my row was removed while junior employees remained on the list and continued to qualify.
         </p>
         <p className="mt-3">
-          That chronology matters. If Respondent's position is that Charging Party was
-          removed because she declined a May 2025 offer, Respondent must explain why she
-          was already removed from the waitlist in February 2025. A May 2025 alleged
-          decline cannot explain a February 2025 removal.
+          That chronology matters. If Respondent's position is that I was removed because I declined a May 2025 offer, Respondent must explain why I was already removed from the waitlist in February 2025. A May 2025 alleged decline cannot explain a February 2025 removal.
         </p>
         <p className="mt-3">
-          Respondent's reference to "standard procedure" is also unsupported. The
-          waitlist/SOW records reflect that a DM must open a ticket with CFS to request a
-          TL shift change or placement on the waitlist. If Allan Glover allegedly submitted
-          schedule-change requests on Charging Party's behalf, Respondent should produce
-          those tickets. If a May 2025 shift opportunity was allegedly offered and
-          declined, Respondent should produce the ticket, offer communication, decline
-          documentation, and audit trail showing the offer, the response, and the
-          resulting removal.
+          Respondent's reference to "standard procedure" is also unsupported. The waitlist/SOW records reflect that a DM must open a ticket with CFS to request a TL shift change or placement on the waitlist. If Allan Glover allegedly submitted schedule-change requests on my behalf, Respondent should produce those tickets. If a May 2025 shift opportunity was allegedly offered and declined, Respondent should produce the ticket, offer communication, decline documentation, and audit trail showing the offer, the response, and the resulting removal.
         </p>
         <p className="mt-3">
-          This section addresses only Respondent's May 2025 offer/decline assertion. The
-          separate July 2025 waitlist screenshot, the limited five-row snippet, the July
-          re-add, the July 17 request date, and the PM/Permanent status issue are addressed
-          separately. However, even without the July evidence, Respondent's May 2025
-          explanation is not supported by the February waitlist records.
+          This section addresses only Respondent's May 2025 offer/decline assertion. The separate July 2025 waitlist screenshot, the limited five-row snippet, the July re-add, the July 17 request date, and the PM/Permanent status issue will be addressed separately. However, even without the July evidence, Respondent's May 2025 explanation is not supported by the February waitlist records.
         </p>
         <p className="mt-3">
-          Respondent's May 2025 assertion therefore raises material factual disputes. If
-          Charging Party was removed because she declined an alleged May 2025 offer, why
-          was she already removed in February 2025? If an offer was made, where is the
-          written offer or ticket? If she declined, where is her written or recorded
-          decline? If removal after a declined offer was standard procedure, where is the
-          policy and the audit trail showing that procedure was followed? For these
-          reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted
-          without production of the underlying records identified in Section V.
+          Respondent's May 2025 assertion therefore raises material factual disputes. If I was removed because I declined an alleged May 2025 offer, why was I already removed in February 2025? If an offer was made, where is the written offer or ticket? If I declined, where is my written or recorded decline? If removal after a declined offer was standard procedure, where is the policy and the audit trail showing that procedure was followed?
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted without production of the underlying records.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce: (1) the alleged May 2025 offer communication; (2) the exact shift, department, and role allegedly offered; (3) the name and title of the person who allegedly made the offer; (4) the date, time, and method of the alleged offer; (5) any written or recorded statement showing I declined because of University of Arizona graduate school commitments; (6) the waitlist record showing my position immediately before the alleged offer; (7) the waitlist record showing my removal and the reason code or explanation for removal; (8) the full SharePoint version history for the waitlist from January 2025 through May 2025; (9) the July 2024 ticket Allan allegedly submitted; (10) any ticket connected to the alleged May 2025 opportunity; (11) any SOW, policy, or procedure requiring removal after declining a shift; and (12) documentation explaining why I was removed in February 2025 if the alleged decline occurred in May 2025.
         </p>
 
         <InlineExhibits
@@ -1059,125 +758,46 @@ export function FormalLetterBody() {
           P. Response to Respondent's "July 2025 Waitlist Status" Assertion
         </h3>
         <p className="mt-3">
-          Respondent's "July 2025 Waitlist Status" section is incomplete and misleading.
-          Respondent states that, in July 2025, Charging Party informed Allan Glover that
-          her circumstances had changed and that she "now" needed to move to a day
-          schedule. That framing is not accurate.
+          Respondent's "July 2025 Waitlist Status" section is incomplete and misleading. Respondent states that, in July 2025, I informed Allan Glover that my circumstances had changed and that I "now" needed to move to a day schedule. That framing is not accurate.
         </p>
         <p className="mt-3">
-          July 2025 was not the beginning of Charging Party's schedule request. Her
-          original request was for mid-shift, and she understood that she was already
-          supposed to be on the waitlist for mid-shift. In June 2025, after remaining
-          stuck on PM/closing and after Respondent failed to resolve the mid-shift issue,
-          she asked to also be considered for AM shifts in addition to the mid-shift
-          request. She did not abandon the mid-shift request. She expanded the request
-          because Respondent had still not moved her and she needed any earlier schedule
-          that would allow her to better manage her family and childcare obligations.
+          July 2025 was not the beginning of my schedule request. My original request was for mid-shift, and I understood that I was already supposed to be on the waitlist for mid-shift. In June 2025, after remaining stuck on PM/closing and after Respondent failed to resolve the mid-shift issue, I asked to also be considered for AM shifts in addition to the mid-shift request. I did not abandon the mid-shift request. I expanded the request because Respondent had still not moved me and I needed any earlier schedule that would allow me to better manage my family and childcare obligations.
         </p>
         <p className="mt-3">
-          Respondent's statement that a "new request" was submitted on July 10, 2025
-          ignores what had already happened. Charging Party had requested mid-shift in
-          2024, discovered in April 2024 that she had not been added to the mid-shift
-          waitlist, raised that issue in her May 29, 2024 formal complaint, and later
-          had records showing she was on a waitlist with a June 26, 2024 request date.
-          Respondent's own records also showed her as PM/Temporary through February 2025.
-          Then, after Jen Roy edited the waitlist multiple times on February 25, 2025,
-          Charging Party's name was removed from the waitlist while other employees
-          remained listed and continued to qualify.
+          Respondent's statement that a "new request" was submitted on July 10, 2025 ignores what had already happened. I had requested mid-shift in 2024, discovered in April 2024 that I had not been added to the MID-shift waitlist, raised that issue in my May 29, 2024 formal complaint, and later had records showing I was on a waitlist with a June 26, 2024 request date. Respondent's own records also showed me as PM/Temporary through February 2025. Then, after Jen Roy edited the waitlist multiple times on February 25, 2025, my name was removed from the waitlist while other employees remained listed and continued to qualify.
         </p>
         <p className="mt-3">
-          That February removal matters. By the time Charging Party asked Allan in July
-          2025 where she stood on the waitlist, she was asking about a process she
-          believed she had already been placed into, but the underlying record shows she
-          had been removed months earlier. Respondent cannot fairly characterize July
-          2025 as a clean "new request" without explaining why she had been removed in
-          February, why she was not on the controlling waitlist in July, and why the
-          earlier request date was not preserved.
+          That February removal matters. By the time I asked Allan in July 2025 where I stood on the waitlist, I was asking about a process I believed I had already been placed into, but the underlying record shows I had been removed months earlier. Respondent cannot fairly characterize July 2025 as a clean "new request" without explaining why I had been removed in February, why I was not on the controlling waitlist in July, and why the earlier request date was not preserved.
         </p>
         <p className="mt-3">
-          In July 2025, Charging Party asked Allan for her specific numbered position on
-          the waitlist. That request triggered the Jen Roy screenshot issue. On July 14,
-          2025, Allan contacted Jen Roy and asked where Charging Party fell on the
-          waitlist. Within approximately one minute, Jen sent Allan a limited screenshot
-          showing a five-row "Shift Change Request" list that included "LVAR — Shawnna
-          Harbin — PM → AM." Allan thanked her within that same minute and later
-          forwarded the screenshot to Charging Party.
+          In July 2025, I asked Allan for my specific numbered position on the waitlist. That request triggered the Jen Roy screenshot issue. On July 14, 2025, Allan contacted Jen Roy and asked where I fell on the waitlist. Within approximately one minute, Jen sent Allan a limited screenshot showing a five-row "Shift Change Request" list that included "LVAR — Shawnna Harbin — PM → AM." Allan thanked her within that same minute and later forwarded the screenshot to me.
         </p>
         <p className="mt-3">
-          That screenshot was not the complete waitlist. It omitted the material fields
-          needed to verify her actual position and whether Respondent was applying the
-          process correctly, including Date Requested, Months as CAR TL,
-          Temporary/Permanent status, and Qualifies = Yes/No. Those fields were not
-          minor. They were the exact fields needed to determine whether the process was
-          chronological, whether she qualified, whether her earlier request date was
-          preserved, and whether her temporary/permanent status had been changed.
+          That screenshot was not the complete waitlist. It omitted the material fields needed to verify my actual position and whether Respondent was applying the process correctly, including Date Requested, Months as CAR TL, Temporary/Permanent status, and Qualifies = Yes/No. Those fields were not minor. They were the exact fields needed to determine whether the process was chronological, whether I qualified, whether my earlier request date was preserved, and whether my temporary/permanent status had been changed.
         </p>
         <p className="mt-3">
-          The timing of the exchange is also significant. Allan asked Jen where Charging
-          Party was on the waitlist, and Jen provided the limited screenshot within
-          approximately sixty seconds. The exchange then ended with Allan saying thank
-          you. That speed, combined with the omitted columns, raises a serious question
-          about whether the screenshot was a selective or prepared view rather than the
-          complete controlling source record.
+          The timing of the exchange is also significant. Allan asked Jen where I was on the waitlist, and Jen provided the limited screenshot within approximately sixty seconds. The exchange then ended with Allan saying thank you. That speed, combined with the omitted columns, raises a serious question about whether the screenshot was a selective or prepared view rather than the complete controlling source record.
         </p>
         <p className="mt-3">
-          The July 14 screenshot also did not match the actual SharePoint waitlist
-          record. The controlling "Current TL Shifts" SharePoint waitlist on or around
-          that time did not contain Charging Party's name. The July 3, 2025 saved
-          version, co-edited by Edina Markus and Jen Roy, showed other employees listed
-          and qualifying while Charging Party remained absent. She was not actually
-          re-added to the live waitlist until July 16, 2025, and the record then showed
-          a new July 17, 2025 request date.
+          The July 14 screenshot also did not match the actual SharePoint waitlist record. The controlling "Current TL Shifts" SharePoint waitlist on or around that time did not contain my name. The July 3, 2025 saved version, co-edited by Edina Markus and Jen Roy, showed other employees listed and qualifying while I remained absent. I was not actually re-added to the live waitlist until July 16, 2025, and the record then showed a new July 17, 2025 request date.
         </p>
         <p className="mt-3">
-          That July 17 request date is another material inconsistency. Charging Party's
-          mid-shift request existed since 2024. The January 2025 waitlist snapshot
-          reflected a June 26, 2024 request date. Yet after she asked Allan where she
-          stood and after Jen produced the July 14 screenshot, she was re-added with a
-          July 17, 2025 request date. That appears to reset her seniority and materially
-          harm her ability to receive the schedule movement she had been seeking.
+          That July 17 request date is another material inconsistency. My mid-shift request existed since 2024. The January 2025 waitlist snapshot reflected a June 26, 2024 request date. Yet after I asked Allan where I stood and after Jen produced the July 14 screenshot, I was re-added with a July 17, 2025 request date. That appears to reset my seniority and materially harm my ability to receive the schedule movement I had been seeking.
         </p>
         <p className="mt-3">
-          Respondent also changed or reflected her status as PM/Permanent without
-          explanation. Charging Party's PM assignment had been presented to her as
-          temporary, and Respondent's own records continued to show PM/Temporary status.
-          When she was later re-added, her status appeared as PM/Permanent without
-          notice, ticket, approval documentation, or explanation. That matters because
-          Respondent's own shift-change process distinguishes between temporary and
-          permanent movement.
+          Respondent also changed or reflected my status as PM/Permanent without explanation. My PM assignment had been presented to me as temporary, and Respondent's own records continued to show PM/Temporary status. When I was later re-added, my status appeared as PM/Permanent without notice, ticket, approval documentation, or explanation. That matters because Respondent's own shift-change process distinguishes between temporary and permanent movement.
         </p>
         <p className="mt-3">
-          Respondent's assertion that the process was "centralized and uniformly
-          applied" is further contradicted by the movement occurring around the same
-          period. While Charging Party was removed, omitted, re-added, and reset, other
-          employees remained on the list, continued qualifying, or moved across
-          schedules/departments. The February 2025 version history showed her row
-          removed while employees such as Cody Christensen, Hunter Samuel, and Courtney
-          Griffith remained and continued to qualify. Comparator evidence also shows
-          that employees such as Tyler Millisock were able to move shifts or departments
-          without the same waitlist barriers being applied to Charging Party.
+          Respondent's assertion that the process was "centralized and uniformly applied" is further contradicted by the movement occurring around the same period. While I was removed, omitted, re-added, and reset, other employees remained on the list, continued qualifying, or moved across schedules/departments. The February 2025 version history showed my row removed while employees such as Cody Christensen, Hunter Samuel, and Courtney Griffith remained and continued to qualify. Comparator evidence also shows that employees such as Tyler Millisock were able to move shifts or departments without the same waitlist barriers being applied to me.
         </p>
         <p className="mt-3">
-          Respondent's statement that managers "do not control" the process is also
-          disputed by Respondent's own later explanations. During the September 19, 2025
-          conversation with Allan, Allan stated there "wasn't a criteria" for Training
-          Bay movement and identified himself, Amber, Trevor, and Dan as part of the
-          decision-making group. When Charging Party raised that other employees had
-          moved while she remained stuck, Allan did not provide a clear waitlist-based
-          explanation. In the November 6, 2025 HR follow-up call, HR also discussed the
-          waitlist and comparator movement, including Tyler, and acknowledged the
-          explanation she had been given by Allan. Those later discussions show that
-          Respondent's "strict centralized process" narrative did not resolve the actual
-          movement decisions or the comparator inconsistencies.
+          Respondent's statement that managers "do not control" the process is also disputed by Respondent's own later explanations. During the September 19, 2025 conversation with Allan, Allan stated there "wasn't a criteria" for Training Bay movement and identified himself, Amber, Trevor, and Dan as part of the decision-making group. When I raised that other employees had moved while I remained stuck, Allan did not provide a clear waitlist-based explanation. In the November 6, 2025 HR follow-up call, HR also discussed the waitlist and comparator movement, including Tyler, and acknowledged the explanation she had been given by Allan. Those later discussions show that Respondent's "strict centralized process" narrative did not resolve the actual movement decisions or the comparator inconsistencies.
         </p>
         <p className="mt-3">
-          For these reasons, Respondent's July 2025 waitlist explanation should not be
-          accepted as evidence of transparency or uniform application. July 2025 was not
-          a new scheduling issue. It was the point at which Charging Party asked where
-          she stood on a waitlist she believed she was already on, after Respondent had
-          failed to properly process her mid-shift request, after she had been removed
-          in February, and after she had expanded her request in June to include AM in
-          addition to mid-shift.
+          For these reasons, Respondent's July 2025 waitlist explanation should not be accepted as evidence of transparency or uniform application. July 2025 was not a new scheduling issue. It was the point at which I asked where I stood on a waitlist I believed I was already on, after Respondent had failed to properly process my mid-shift request, after I had been removed in February, and after I had expanded my request in June to include AM in addition to mid-shift.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce: (1) the alleged July 10, 2025 SharePoint request; (2) the full metadata and audit history for that request; (3) the complete source file from which Jen Roy produced the July 14 screenshot; (4) all columns omitted from the July 14 screenshot, including Date Requested, Months as CAR TL, Temporary/Permanent status, and Qualifies = Yes/No; (5) the full SharePoint version history showing my January 2025 placement, February 2025 removal, July 3 absence, July 14 status, and July 16–17 re-addition; (6) documentation explaining why my request date changed from June 26, 2024 to July 17, 2025; (7) documentation explaining why my status changed from PM/Temporary to PM/Permanent; (8) all tickets Allan allegedly submitted on my behalf; (9) all communications between Allan Glover, Jen Roy, Edina Markus, HR, and scheduling administrators regarding my waitlist status; and (10) comparator movement records showing whether employees such as Tyler Millisock, Hunter Samuel, Cody Christensen, Courtney Griffith, and others moved through the same waitlist process, a separate manager request, a preexisting assignment, training obligation, or accommodation.
         </p>
 
         <InlineExhibits
