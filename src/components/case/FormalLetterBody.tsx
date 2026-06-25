@@ -971,6 +971,46 @@ export function FormalLetterBody() {
           Respondent should be required to produce: (1) all records regarding the DNA role, including the job posting, selected candidate qualifications, interview notes, scoring criteria, recruiter notes, decisionmaker names, and communications; (2) all notes, Teams messages, calendar invites, and follow-up communications regarding the August 2025 conversation with Allan; (3) all documents regarding Allan's "blockade" statement and any related communications; (4) the September 18, 2025 leadership meeting invite, attendee list, agenda, notes, schedule worksheets, and decision records; (5) all communications among Allan, Amber, Trevor, Dan, and any scheduling or HR personnel regarding Training Bay movement; (6) the criteria used to select Michelle, Steve, Marissa, Josh, or any other employee for Training Bay; (7) all documents showing whether those employees kept or changed schedules; (8) all records explaining why my movement was deemed not operationally feasible; (9) all comparator records for Tyler Millisock, Josh, Hunter, Michelle, Steve, Marissa, and any other similarly situated Team Leader who moved areas, schedules, or Training Bay assignments; (10) the alleged May 2025 offer communication and decline documentation; and (11) all tickets Allan allegedly submitted on my behalf.
         </p>
 
+        <div className="mt-4 rounded-md border-2 border-foreground/40 bg-foreground/5 p-4">
+          <div className="font-display text-sm font-semibold tracking-tight">
+            Key Transcript Excerpts — EX-059 (September 19, 2025, Allan Glover)
+          </div>
+          <dl className="mt-3 space-y-3 text-sm">
+            <div>
+              <dt className="font-semibold">Criteria:</dt>
+              <dd className="mt-1 pl-3">
+                <span className="italic">Me:</span> "What was the criteria on picking someone?"<br />
+                <span className="italic">Allan:</span> "There wasn't a criteria."
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold">Decisionmakers:</dt>
+              <dd className="mt-1 pl-3">
+                <span className="italic">Me:</span> "Who's all of us?"<br />
+                <span className="italic">Allan:</span> "Myself, Amber, Trevor, Dan."
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold">Mid-shift waitlist:</dt>
+              <dd className="mt-1 pl-3">
+                <span className="italic">Me:</span> "I was on the waitlist to go on mid shift, right?"<br />
+                <span className="italic">Allan:</span> "Yes."
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold">Alleged offer:</dt>
+              <dd className="mt-1 pl-3">
+                <span className="italic">Allan:</span> "Shawnna, I offered you—"<br />
+                <span className="italic">Me:</span> "You never offered me mid shift."<br />
+                <span className="italic">Allan:</span> "No—well—it was mornings."<br />
+                <span className="italic">Me:</span> "You did not offer me AM… When? What position? What group?"
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+
+
         <InlineExhibits
           heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
           items={[
@@ -1105,7 +1145,9 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Race-discrimination evidence (PS § II.A)"
           items={[
+            { id: "EX-059", relevance: "September 19, 2025 transcript — Allan names Tyler Millisock, Josh, and Hunter context; admits no formal criteria for Training Bay; identifies management decisionmakers (Allan, Amber, Trevor, Dan); supports comparator/differential-movement analysis." },
             { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Tyler Millisock (same start date, same level, outside protected class, moved from LVAR PM/closing to PRE-D/DBC) and additional comparators receiving movement Charging Party was denied." },
+
             { id: "EX-051", relevance: "2024 compensation statement — Solid downgrade after protected activity with 124.36% bonus payout, 96.49% IPF, 128.90% CPF." },
             { id: "EX-053", relevance: "2024 year-end review showing every sub-goal and Discover Behavior rated Solid or Strong despite overall Solid downgrade." },
             { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments — Cordi (White) hardship handled without documentation; Dide (Black) request triggered race-coded 'example.'" },
@@ -1143,7 +1185,9 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Retaliation evidence (PS § II.B)"
           items={[
+            { id: "EX-059", relevance: "September 19, 2025 transcript — after protected activity, Allan could not provide date, position, group, ticket, or written record for the alleged shift offer; admits no formal criteria for Training Bay; confronts Allan with prior 'blockade' statement, which he does not substantively explain." },
             { id: "EX-014", relevance: "May 29, 2024 protected internal complaint distributed to leadership and Employee Relations." },
+
             { id: "EX-016", relevance: "June 5, 2024 HR move away from Rosanna Blackson during the active investigation." },
             { id: "EX-017", relevance: "July 19, 2024 complaint to Anita re: Greg Carfagna blocking rec-for-term paperwork after protected activity." },
             { id: "EX-051", relevance: "2024 Solid downgrade after protected activity — excluded Charging Party from TL Plus / Department Manager pipeline." },
