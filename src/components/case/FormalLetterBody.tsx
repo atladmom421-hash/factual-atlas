@@ -597,11 +597,14 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Glover transition / knowledge evidence (PS § I.B.2)"
           items={[
+            { id: "EX-061", relevance: "May 31, 2024 HR intake call (Susan Marcinko) — verbatim transcript in which Harbin reports the March 28, 2024 racial slur by Rosanna Blackson ('you're my N word'), the January 2024 retaliation threat ('do you want me to bring up your adjustment compliance issue?'), the false job-abandonment processing, the waitlist failure confirmed by Ryan Tafoya, and total exclusion from projects; HR acknowledges the seriousness and commits to investigate and explore moving Harbin to another team." },
+            { id: "EX-062", relevance: "June 5, 2024 HR follow-up call (Susan Marcinko) — verbatim transcript confirming Susan had spoken with Greg Carfagna that morning and arranged for Harbin to report through Allan Glover in the interim and to move officially to Allan's organization effective July 1, 2024 so that Harbin would not have one-on-one interaction with Rosanna during the investigation; Greg Carfagna was directly involved in the move logistics." },
             { id: "EX-016", relevance: "June 5, 2024 HR follow-up showing Charging Party's reassignment to Allan Glover's organization was arranged by HR during the active investigation of the May 29, 2024 complaint." },
             { id: "EX-HR-CALL", relevance: "Susan Marcinko confirmation that she had spoken with Greg Carfagna about moving Charging Party to Mr. Glover's organization effective July 1, 2024 because of the protected complaint." },
             { id: "EX-042", relevance: "Allan Glover Teams thread reflecting his ongoing knowledge of the schedule/waitlist issue raised in the prior complaint." },
           ]}
         />
+
 
 
 
