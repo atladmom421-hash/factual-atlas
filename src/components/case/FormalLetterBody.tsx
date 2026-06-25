@@ -98,9 +98,17 @@ function InlineExhibits({
           return (
             <figure
               key={it.id}
-              className="break-inside-avoid rounded border border-border bg-card p-2 print:border-black/30"
+              className="break-inside-avoid rounded border-2 border-foreground/30 bg-card p-3 print:border-black/60"
               style={{ pageBreakInside: "avoid" }}
             >
+              <div className="mb-2 flex items-baseline justify-between gap-2 border-b-2 border-foreground/40 pb-1 print:border-black/70">
+                <span className="font-mono text-[15px] font-extrabold uppercase tracking-wider text-foreground">
+                  EXHIBIT {ex.exhibitNumber}
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.12em] text-foreground/60">
+                  {ex.date}
+                </span>
+              </div>
               {showImage ? (
                 <img
                   src={ex.filePath}
@@ -114,12 +122,9 @@ function InlineExhibits({
                 </div>
               )}
               <figcaption className="mt-2 text-[11px] leading-snug text-foreground/85">
-                <span className="font-mono font-semibold">
-                  Exhibit: {ex.exhibitNumber}
-                </span>{" "}
-                — {label}
+                <span className="font-semibold">{label}</span>
                 {it.relevance && (
-                  <div className="mt-0.5 text-foreground/75">
+                  <div className="mt-1 text-foreground/75">
                     <span className="font-semibold">Relevance:</span> {it.relevance}
                   </div>
                 )}

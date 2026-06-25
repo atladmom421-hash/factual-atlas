@@ -19,32 +19,43 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
       </p>
       <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 18 }}>
         {items.map(ex => (
-          <article key={ex.id} style={{ pageBreakInside: "avoid", border: "1px solid #ccc", padding: 12, background: "#fff" }}>
-            <div style={{ fontSize: 11, fontFamily: "monospace", color: "#000", marginBottom: 4 }}>
-              {ex.exhibitNumber} &middot; {ex.date} &middot; {ex.category}
+          <article key={ex.id} style={{ pageBreakInside: "avoid", border: "2px solid #000", padding: 0, background: "#fff" }}>
+            {/* Large prominent EXHIBIT banner */}
+            <div style={{ background: "#000", color: "#fff", padding: "10px 14px", display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 12 }}>
+              <div style={{ fontSize: 22, fontWeight: 900, letterSpacing: 2, fontFamily: "Arial, Helvetica, sans-serif", textTransform: "uppercase" }}>
+                EXHIBIT {ex.exhibitNumber}
+              </div>
+              <div style={{ fontSize: 11, fontFamily: "Arial, Helvetica, sans-serif", textTransform: "uppercase", letterSpacing: 1, opacity: 0.9 }}>
+                {ex.date}
+              </div>
             </div>
-            <div style={{ fontSize: 14, fontWeight: 600, color: "#000", marginBottom: 6 }}>{ex.fileName}</div>
-            {ex.summary && (
-              <p style={{ fontSize: 12, color: "#222", margin: "0 0 8px", lineHeight: 1.4 }}>{ex.summary}</p>
-            )}
-            {ex.fileKind === "image" && ex.filePath && (
-              <div>
-                <img src={ex.filePath} alt={ex.fileName} style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd" }} />
-                {ex.extraImagePaths?.map((p, i) => (
-                  <img key={p} src={p} alt={`${ex.fileName} — page ${i + 2}`} style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd", marginTop: 8 }} />
-                ))}
+            <div style={{ padding: 12 }}>
+              <div style={{ fontSize: 11, fontFamily: "monospace", color: "#333", marginBottom: 4 }}>
+                {ex.category}
               </div>
-            )}
-            {ex.fileKind !== "image" && ex.filePath && (
-              <div style={{ fontSize: 11, color: "#555", fontFamily: "monospace" }}>
-                File: {ex.filePath}
-              </div>
-            )}
-            {ex.fileKind === "transcript" && ex.transcriptText && (
-              <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: 0 }}>
-                {ex.transcriptText}
-              </pre>
-            )}
+              <div style={{ fontSize: 14, fontWeight: 700, color: "#000", marginBottom: 6 }}>{ex.fileName}</div>
+              {ex.summary && (
+                <p style={{ fontSize: 12, color: "#222", margin: "0 0 8px", lineHeight: 1.4 }}>{ex.summary}</p>
+              )}
+              {ex.fileKind === "image" && ex.filePath && (
+                <div>
+                  <img src={ex.filePath} alt={ex.fileName} style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd" }} />
+                  {ex.extraImagePaths?.map((p, i) => (
+                    <img key={p} src={p} alt={`${ex.fileName} — page ${i + 2}`} style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd", marginTop: 8 }} />
+                  ))}
+                </div>
+              )}
+              {ex.fileKind !== "image" && ex.fileKind !== "transcript" && ex.filePath && (
+                <div style={{ fontSize: 11, color: "#555", fontFamily: "monospace" }}>
+                  File: {ex.filePath}
+                </div>
+              )}
+              {ex.fileKind === "transcript" && ex.transcriptText && (
+                <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: 0 }}>
+                  {ex.transcriptText}
+                </pre>
+              )}
+            </div>
           </article>
         ))}
       </div>
