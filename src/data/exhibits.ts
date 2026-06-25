@@ -2149,7 +2149,50 @@ Me: Bye.`,
     filePath: "/exhibits/ex-093-imessage-allan-removed-himself.png",
     fileKind: "image",
   },
+  {
+    id: "EX-094",
+    exhibitNumber: "EX-094",
+    fileName: "Verint Monitor Employees — search 'julie cahoon' returns 'cannot monitor' (Oct 21, 2025 6:34 PM)",
+    date: "October 21, 2025 6:34 PM",
+    category: "System screenshot",
+    peopleIds: ["harbin"],
+    summary:
+      "Photo of Harbin's monitor showing the Verint LIVE Interactions web app, ADMINISTRATION › REAL TIME › Monitor Employees dashboard, logged in as shawnnaharbin1@discover.com. ORGANIZATIONS pane filtered by the search term 'julie cahoon'; the employee list shows the TEAM_AGLOVE1 roster (BOLLINGER, BOYTER, CAHOON BRINDY, CAHOON JULIE highlighted, COKES, DEHART, EVANS, FLADE, FLORES, FORRY, GONZALEZ, HASLETT, JENSEN). The dashboard panel for CAHOON, JULIE (Organization: TEAM_AGLOVE1) is open in 'Coaching' mode but a red banner reads: 'To monitor the employee, verify the employee is logged on and try again.'\n\nRELEVANCE: (1) Direct evidence that Harbin's Verint account has access to search for and attempt live monitoring of other employees, including Team Leaders' agents and named comparators on Allan Glover's team; (2) the system refused the live-monitor session only because Cahoon was not logged on at that moment — not because of any permission restriction on Harbin's account; (3) corroborates the Section III.C / III.D allegations that Verint live-monitoring and screen-recording access is broadly available to users beyond Harbin's chain of command, contradicting Respondent's characterization of monitoring as narrow or role-limited.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-094-verint-cahoon.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-095",
+    exhibitNumber: "EX-095",
+    fileName: "Verint Monitor Employees — NIELSEN, PAUL (Organization: 11:GM_AL.R1) returns 'cannot monitor'",
+    date: "October 21, 2025 (same session as EX-094)",
+    category: "System screenshot",
+    peopleIds: ["harbin"],
+    summary:
+      "Photo of Harbin's monitor showing the same Verint LIVE Interactions › Monitor Employees dashboard. The ORGANIZATIONS tree is expanded into DTG Corporate Services LLC › multiple sub-orgs (BANK, BANK_LAKE_PARK, BANK_PHOENIX, DEPT_BANK, TEAMS_DEPT, MVNO, DEPT_NEWARK, GMA, GMA_LAKE_PARK, DEPT_DEBIN, TEAM_CHE, LORRAINE, TEAM_F, GMA_NEW_M, DEPT_NJ, etc.). The opened employee panel reads 'NIELSEN, PAUL — Organization: 11:GM_AL.R1' in Coaching mode, with the same red banner: 'To monitor the employee, verify the employee is logged on and try again.'\n\nRELEVANCE: (1) Shows that Harbin's Verint account can navigate the full DTG/Discover org tree across business units (BANK, GMA, MVNO, multiple sites) and attempt to live-monitor an employee on an entirely different organization (Paul Nielsen, 11:GM_AL.R1); (2) reinforces EX-094 — the only barrier to live monitoring is whether the target is logged on, not an access control; (3) directly supports the claim that 'anyone with access can view my screen' because the same monitoring tool that Harbin can point at Cahoon and Nielsen can be pointed at Harbin by similarly-credentialed users across the organization.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-095-verint-nielsen.png",
+    fileKind: "image",
+  },
+  {
+    id: "EX-096",
+    exhibitNumber: "EX-096",
+    fileName: "Verint Interaction Review — HARBIN, SHAWNNA 'Logged in' with live SCREEN feed visible",
+    date: "October 21, 2025 6:34 PM",
+    category: "System screenshot",
+    peopleIds: ["harbin"],
+    summary:
+      "Photo captioned 'My PC showing on live monitor:' depicting the Verint LIVE Interactions › Monitor Employees › INTERACTION REVIEW pane for: 'INTERACTION | Logged in | HARBIN, SHAWNNA'. The SCREEN panel on the left renders a live thumbnail of Harbin's own desktop (browser windows and application UI are visible in the thumbnail). The EVALUATION / ASSESSMENT panel on the right shows an empty Form selector with the message 'You have not been assigned any forms — To evaluate an interaction, wait for an interaction to begin.' Window chrome shows the URL contains '…qm_RealTimeInteractionsWorkspace&navparent%5Bworkspaceld%5D=…'.\n\nRELEVANCE: (1) Direct, contemporaneous proof that Harbin herself appears in Verint as 'Logged in' and that her live screen feed is exposed through the Monitor Employees / Interaction Review surface — i.e., the same surface used to attempt monitoring of Cahoon (EX-094) and Nielsen (EX-095) was, at that same moment, displaying Harbin's screen to anyone with monitoring rights; (2) confirms the system was actively capturing/streaming Harbin's screen even though no evaluation form was assigned, undermining any claim that screen capture only occurs during scheduled QA evaluations; (3) together with EX-094 and EX-095, establishes that Verint live monitoring of Harbin was technically available to a broad set of users across organizations, supporting the Section III.C hostile-environment and Section III.D monitoring/surveillance allegations and the related discovery demands for Verint access logs, permission history, and viewer audit trails.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-096-verint-harbin-screen.png",
+    fileKind: "image",
+  },
 ];
+
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
 
