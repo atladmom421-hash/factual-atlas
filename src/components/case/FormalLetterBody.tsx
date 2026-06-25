@@ -1398,6 +1398,13 @@ export function FormalLetterBody() {
           Those facts contradict Respondent's statement that there is no indication I was treated differently. The screenshots show different visibility. HR admitted I had more visibility than I should have had. HR admitted they did not know what changed, who changed it, or why. Respondent should produce the Verint audit logs, permissions history, access records, product-owner communications, vendor communications, and BT escalation records.
         </p>
         <p className="mt-3">
+          Additional Verint evidence from October 21, 2025 confirms the breadth of the monitoring exposure. Contemporaneous photographs of my workstation show the Verint LIVE Interactions › Monitor Employees dashboard, logged in under my account, being used to search for and attempt live monitoring of employees on other Team Leaders' rosters and in other business units — including <Ex id="EX-094" /> (search 'julie cahoon,' TEAM_AGLOVE1 roster expanded, CAHOON, JULIE coaching panel opened) and <Ex id="EX-095" /> (NIELSEN, PAUL on Organization 11:GM_AL.R1, with the full DTG/Discover org tree — BANK, GMA, MVNO, multiple sites — navigable from my account). In both cases the system did not deny access; it only displayed the message "To monitor the employee, verify the employee is logged on and try again," meaning the only barrier was whether the target happened to be logged on at that moment, not any permission restriction on my account or the viewer's account.
+        </p>
+        <p className="mt-3">
+          In the same session, <Ex id="EX-096" /> shows the Verint Interaction Review pane for "HARBIN, SHAWNNA — Logged in," with a live thumbnail of my own desktop rendering in the SCREEN panel — even though the EVALUATION / ASSESSMENT panel confirms "You have not been assigned any forms." That directly rebuts the argument that Verint screen capture is limited to scheduled QA evaluations. The same surface that allowed me to point at Cahoon and Nielsen was, at that moment, exposing my live screen to anyone with monitoring rights across the organization. That is precisely the disparate-visibility and surveillance issue raised in my October 21 complaint and is consistent with HR's later admission that I had "more visibility than" I should have had.
+        </p>
+
+        <p className="mt-3">
           Third, the Verint issue overlaps with the Teams deletion evidence. On October 7, 2025, I sent HR investigator Edward Reyes a formal written timeline regarding my waitlist history, retaliation concerns, and Allan Glover's comments. On October 14, 2025, I notified Allan Glover and Amber in Teams that I had filed FMLA. That same Teams conversation also documented leadership-support concerns after Allan removed himself from my team chat.
         </p>
         <p className="mt-3">
@@ -1450,11 +1457,15 @@ export function FormalLetterBody() {
           heading="Ancillary-allegations evidence — Verint, Teams, leave, hardship"
           items={[
             { id: "EX-006", relevance: "Verint monitoring evidence — Harbin's profile visibility versus other Team Leaders." },
+            { id: "EX-094", relevance: "Verint Monitor Employees — Harbin's account searching/coaching CAHOON, JULIE on TEAM_AGLOVE1; system permits monitoring subject only to target being logged on." },
+            { id: "EX-095", relevance: "Verint Monitor Employees — Harbin's account reaching NIELSEN, PAUL on Organization 11:GM_AL.R1 across the full DTG org tree (BANK/GMA/MVNO)." },
+            { id: "EX-096", relevance: "Verint Interaction Review — HARBIN, SHAWNNA 'Logged in' with live SCREEN feed visible while no evaluation form is assigned, rebutting 'QA-only' explanation." },
             { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns documented to HR." },
             { id: "EX-007", relevance: "October 2025 FMLA misclassification as STD and resulting system-access deactivation." },
             { id: "EX-003", relevance: "Hardship-fund timeline — Cordi, Dide, and Harbin requests; same-day escalation to HR, ER, and director-level leadership." },
             { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments and same-day documentation." },
             { id: "EX-005", relevance: "August 2025 HBCU recruiting and 'blockade' statement context." },
+
           ]}
         />
 
