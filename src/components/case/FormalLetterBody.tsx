@@ -1326,8 +1326,19 @@ export function FormalLetterBody() {
           not provide the basic details of any alleged AM or mid-shift offer.
         </p>
 
+        <InlineExhibits
+          heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
+          items={[
+            { id: "EX-005", relevance: "August 2025 HBCU recruiting comments and 'blockade' conversation with Allan Glover during the discussion about blocked advancement and schedule restrictions." },
+            { id: "EX-042", relevance: "Allan Glover Teams thread — 'I've been requesting midshift for 2 years' / 'Demoting to a coach?' context surrounding the August–September discussions." },
+            { id: "EX-019", relevance: "September 19, 2025 HR ticket summary referencing Greg-retaliation context tied to the recorded Allan conversation." },
+            { id: "EX-010", relevance: "Comparator movement showing Tyler Millisock, Hunter, Josh and others received movement Charging Party was told was unavailable." },
+          ]}
+        />
+
         {/* Section II.R - Complaints, Recording, and Hardship Fund */}
         <h3 className="mt-8 font-display text-base tracking-tight">
+
           R. Response to Respondent's "Complaints, Recording, and Hardship Fund" Narrative
         </h3>
         <p className="mt-3">
