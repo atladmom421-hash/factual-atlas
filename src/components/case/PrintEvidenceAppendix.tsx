@@ -12,11 +12,12 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
   if (items.length === 0) return null;
 
   return (
-    <section className="print-only mt-10 border-t-2 border-black pt-6">
+    <section className="mt-10 border-t-2 border-black pt-6">
       <h2 style={{ fontSize: 22, fontWeight: 700, margin: "0 0 12px" }}>{title}</h2>
       <p style={{ fontSize: 11, color: "#444", margin: "0 0 18px" }}>
-        The following exhibits are referenced in this report. Image exhibits are reproduced below; PDF / document exhibits are listed with their file reference.
+        Evidentiary rebuttal. The full text of each transcript and the full screenshot of each document/chat record is reproduced below. No exhibit is referenced by file path alone — the raw content is included in this appendix.
       </p>
+
       <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 18 }}>
         {items.map(ex => (
           <article key={ex.id} style={{ pageBreakInside: "avoid", border: "2px solid #000", padding: 0, background: "#fff" }}>
@@ -34,7 +35,8 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
               {ex.summary && (
                 <p style={{ fontSize: 12, color: "#222", margin: "0 0 8px", lineHeight: 1.4 }}>{ex.summary}</p>
               )}
-              {ex.fileKind === "image" && ex.filePath && (
+              {/* Always reproduce raw image content when an image path exists */}
+              {ex.filePath && /\.(png|jpe?g|webp|gif)$/i.test(ex.filePath) && (
                 <div>
                   <img src={ex.filePath} alt={ex.fileName} style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd" }} />
                   {ex.extraImagePaths?.map((p, i) => (
@@ -42,16 +44,19 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
                   ))}
                 </div>
               )}
-              {ex.fileKind !== "image" && ex.fileKind !== "transcript" && ex.filePath && (
+              {/* Always reproduce raw transcript text when present */}
+              {ex.transcriptText && (
+                <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: "8px 0 0" }}>
+                  {ex.transcriptText}
+                </pre>
+              )}
+              {/* Fallback file reference only when neither image nor transcript is available */}
+              {ex.filePath && !/\.(png|jpe?g|webp|gif)$/i.test(ex.filePath) && !ex.transcriptText && (
                 <div style={{ fontSize: 11, color: "#555", fontFamily: "monospace" }}>
                   File: {ex.filePath}
                 </div>
               )}
-              {ex.fileKind === "transcript" && ex.transcriptText && (
-                <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: 0 }}>
-                  {ex.transcriptText}
-                </pre>
-              )}
+
             </div>
           </article>
         ))}
