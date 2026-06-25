@@ -596,6 +596,16 @@ export function FormalLetterBody() {
           is itself probative under standard comparator analysis.
         </p>
 
+        <InlineExhibits
+          heading="Comparator evidence"
+          items={[
+            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Millisock, Samuel, Case, Mascarenas, Lesure." },
+            { id: "EX-019", relevance: "September 2025 HR ticket screenshot tied to Karena Lesure reassignment context." },
+          ]}
+        />
+
+
+
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           E. The "May 2025 day-shift offer" assertion (PS p. 4, § I.B.5; p. 7, § II.B)
         </h3>
