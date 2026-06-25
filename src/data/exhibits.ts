@@ -1967,6 +1967,20 @@ Me: Bye.`,
     filePath: "/src/assets/exhibits/ex-080-waitlist-mar19.png",
     fileKind: "image",
   },
+  {
+    id: "EX-081",
+    exhibitNumber: "EX-081",
+    fileName: "Email to Edward Reyes (ER) — Allan Glover removed himself from team chat (Oct 14, 2025)",
+    date: "October 14, 2025",
+    category: "Contemporaneous email / ER complaint",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Email thread between Shawnna Harbin and Edward Reyes (Employee Relations). Reyes (Oct. 14, 2025 7:11:53 AM) confirms the ER meeting was rescheduled because corporate employees did not work the holiday and states he has \"no insights into your business unit/not part of the ER purview\" and will connect later in the week. Harbin's reply raises a concern that may be relevant to the ongoing investigation: \"Allan removed himself from my team chat. Given the timing and context of the current investigation, I'm concerned that this may be due to a leadership change or another retaliatory action.\" She notes that Department managers are always included in their team lead chats as part of standard communication and oversight — calling it \"an essential part of the department's operational structure\" — and that \"it's highly unusual for a DM to\" remove themselves. She reports that Allan publicly removing himself caused confusion across the team and dept, made her feel unsupported and without clear leadership presence, and \"feels like I am being isolated during this process.\" She states she reached out to Amber and Allan for an update or any changes and is documenting the concern because she believes it is materially relevant to the investigation. She also states: \"I initiated a claim for medical leave through Hartford today due to the stress and impact these events + this entire ordeal has been taking on me.\" Relevance: (1) contemporaneous written notice to ER of suspected retaliation by Allan Glover; (2) documents the October 2025 chat-removal event as a materially adverse, isolating action during an active investigation; (3) corroborates Hartford/FMLA initiation and damages (Section IV.A); (4) shows ER (Reyes) disclaiming purview over the business unit, supporting the production demand for ER intake and routing records.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/src/assets/exhibits/ex-081-reyes-email-oct14-2025.png",
+    fileKind: "image",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
