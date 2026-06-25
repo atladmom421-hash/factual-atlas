@@ -1713,6 +1713,14 @@ export function FormalLetterBody() {
             pretext, which is the pattern reflected in Respondent's own HR statements compared to
             its Position Statement.
           </li>
+          <li>
+            <strong>No heightened-harm requirement.</strong> <em>Muldrow v. City of St. Louis</em>,
+            601 U.S. 346 (2024) — Title VII does not require a heightened "significant harm"
+            showing; harm to an identifiable term or condition of employment is sufficient.
+            Schedule restrictions, blocked advancement opportunities, rating consequences, changed
+            working conditions, and loss of access to development opportunities are legally
+            meaningful even without termination or demotion.
+          </li>
         </ul>
 
         {/* Section VI */}
