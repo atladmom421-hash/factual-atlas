@@ -12,11 +12,12 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
   if (items.length === 0) return null;
 
   return (
-    <section className="print-only mt-10 border-t-2 border-black pt-6">
+    <section className="mt-10 border-t-2 border-black pt-6">
       <h2 style={{ fontSize: 22, fontWeight: 700, margin: "0 0 12px" }}>{title}</h2>
       <p style={{ fontSize: 11, color: "#444", margin: "0 0 18px" }}>
-        The following exhibits are referenced in this report. Image exhibits are reproduced below; PDF / document exhibits are listed with their file reference.
+        Evidentiary rebuttal. The full text of each transcript and the full screenshot of each document/chat record is reproduced below. No exhibit is referenced by file path alone — the raw content is included in this appendix.
       </p>
+
       <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 18 }}>
         {items.map(ex => (
           <article key={ex.id} style={{ pageBreakInside: "avoid", border: "2px solid #000", padding: 0, background: "#fff" }}>
