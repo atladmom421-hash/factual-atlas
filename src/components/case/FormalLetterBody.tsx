@@ -1025,6 +1025,33 @@ export function FormalLetterBody() {
           The timing is also important. Allan's calendar reflects that he met with Susan Marchinko immediately before this conversation. Respondent should therefore produce the calendar invite, meeting records, notes, chats, emails, and any follow-up communications related to that HR meeting. Allan's statements after that meeting should be evaluated in the context of HR knowledge, management coordination, Training Bay selection, comparator movement, and the alleged shift offer Respondent now relies on.
         </p>
 
+        <p className="mt-3 rounded-md border-l-4 border-foreground/60 bg-foreground/5 px-3 py-2 font-medium">
+          The key issue is not tone. The key issue is that Allan identified no criteria, named management decisionmakers, acknowledged my mid-shift waitlist request, and could not identify the date, role, group, ticket, or communication for the alleged offer. The audio should be reviewed with the transcript because Allan's hesitation and shifting explanation are relevant to credibility.
+        </p>
+
+        <h4 className="mt-5 font-display text-sm font-semibold tracking-tight">
+          Allan Glover's Reaction to Process Questions
+        </h4>
+        <p>
+          Allan Glover's responses should be evaluated in context. In both the July 10, 2025 hardship-fund discussion and the September 19, 2025 Training Bay / shift movement conversation, Allan responded to my clarification questions by asking, in substance, "What are you trying to get to?" Those questions were not inappropriate. I was asking for clarification regarding race-related hardship-fund comments, Training Bay selection criteria, decisionmakers, comparator movement, and the alleged shift offer Respondent now relies on.
+        </p>
+        <p className="mt-3">
+          This pattern is relevant because Respondent's Position Statement portrays the processes as neutral, uniform, and well-documented. However, when I asked the manager directly involved to explain the criteria, decisionmakers, and alleged offer, he did not provide clear documentation or a consistent explanation. Instead, he treated basic process questions as suspicious or confrontational. That supports further investigation into whether Respondent's stated reasons are complete, accurate, and supported by contemporaneous records.
+        </p>
+
+        <h4 className="mt-5 font-display text-sm font-semibold tracking-tight">
+          Additional Record Integrity Issue — Team Ratios / Formula Change
+        </h4>
+        <p>
+          Respondent's Position Statement does not meaningfully address the version-history evidence showing that the Team Ratios 2024 file was modified on September 24, 2024 and that the LVAR mid-shift staffing formula was altered. This is relevant because Respondent relies on scheduling, staffing, and waitlist explanations to justify why I remained fixed on PM/closing while other leaders moved to AM, midshift, Training Bay, PRE-D/DBC, and other earlier-shift placements.
+        </p>
+        <p className="mt-3">
+          The formula-change evidence should be evaluated together with the broader waitlist record: I was confirmed not on the mid-shift list on April 26, 2024; my May 29, 2024 complaint included the schedule/waitlist issue; ER later assured me I would be added; the October 14, 2024 TL Shift &amp; Waitlist document showed me as PM/Temporary waiting for AM rather than reflecting my original mid-shift request; I remained PM/Temporary through February 2025; I was removed by Jen Roy in February 2025; and I was later re-added in July 2025 with a new request date and PM/Permanent status.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce the original Team Ratios 2024 file, complete version history, formula history, edit history, author/editor metadata, SharePoint audit logs, and any communications explaining why the LVAR mid-shift staffing formula was changed. Respondent should also explain whether that formula change affected mid-shift availability, waitlist eligibility, staffing ratios, or the stated business reasons for denying my shift movement.
+        </p>
+
         <InlineExhibits
           heading="August–September 2025 evidence — HBCU/blockade & Sept 19 transcript"
           items={[
