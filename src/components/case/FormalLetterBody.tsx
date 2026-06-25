@@ -744,6 +744,13 @@ export function FormalLetterBody() {
           For these reasons, Respondent's May 2025 shift-opportunity assertion should not be accepted without production of the underlying records.
         </p>
         <p className="mt-3">
+          Respondent's schedule materials also appear to misstate my actual schedule. To the extent Respondent's exhibit or screenshot suggests that I worked an 11:30 a.m.–8:00 p.m. schedule, that is incorrect. The preserved schedule records show that I remained on the PM/closing schedule ending at 10:00 p.m. The 11:30 a.m.–8:00 p.m. schedule was associated with comparators such as Tyler Millisock, not me. This matters because Respondent's scheduling defense depends on accurate schedule history. If Respondent's own exhibit incorrectly attributes an earlier 11:30 a.m.–8:00 p.m. schedule to me, that further undermines its claim that the scheduling process was accurately documented, neutral, and uniformly applied.
+        </p>
+        <p className="mt-3">
+          If Respondent later changes its explanation and claims the alleged shift offer occurred in February 2025 rather than May 2025, Respondent should be required to explain why its Position Statement identified May 2025 and produce the contemporaneous February offer, decline, ticket, and removal records. A later change in the alleged date would be a shifting explanation, not a correction supported by the current record.
+        </p>
+
+        <p className="mt-3">
           Respondent should be required to produce: (1) the alleged May 2025 offer communication; (2) the exact shift, department, and role allegedly offered; (3) the name and title of the person who allegedly made the offer; (4) the date, time, and method of the alleged offer; (5) any written or recorded statement showing I declined because of University of Arizona graduate school commitments; (6) the waitlist record showing my position immediately before the alleged offer; (7) the waitlist record showing my removal and the reason code or explanation for removal; (8) the full SharePoint version history for the waitlist from January 2025 through May 2025; (9) the July 2024 ticket Allan allegedly submitted; (10) any ticket connected to the alleged May 2025 opportunity; (11) any SOW, policy, or procedure requiring removal after declining a shift; and (12) documentation explaining why I was removed in February 2025 if the alleged decline occurred in May 2025.
         </p>
 
@@ -753,8 +760,11 @@ export function FormalLetterBody() {
             { id: "EX-046", relevance: "January 22, 2025 saved waitlist — Harbin listed with June 26, 2024 request date." },
             { id: "EX-045", relevance: "February 25, 2025 Jen Roy edit removing Harbin while junior employees remained and continued to qualify." },
             { id: "EX-048", relevance: "Mid-shift waitlist version-history narrative documenting placement, removal, absence, and re-add." },
+            { id: "EX-022", relevance: "Respondent's schedule materials appear to suggest Harbin worked 11:30 a.m.–8:00 p.m.; preserved schedule records show Harbin remained on PM/closing ending 10:00 p.m., while Tyler Millisock and other comparators held the 11:30 a.m.–8:00 p.m. schedule." },
           ]}
         />
+
+
 
 
 
