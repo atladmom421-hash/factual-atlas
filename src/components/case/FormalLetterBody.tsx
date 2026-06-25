@@ -365,114 +365,54 @@ export function FormalLetterBody() {
         </h3>
 
         <p className="mt-3">
-          Charging Party disputes Respondent's characterization of her scheduling history, her
-          original request, and the reason she was later placed into the AM/day-shift waitlist
-          process. Respondent represents that when Mr. Glover assumed responsibility for
-          Charging Party's team he became aware that she "believed" she had previously requested
-          a "day-shift schedule," but that "there was no record of any such request in the
-          centralized scheduling system." That framing is incomplete and misleading in three
-          respects.
+          I dispute Respondent's characterization of my scheduling history, my original request, and the reason I was placed into the later scheduling process. Respondent states that when Allan Glover assumed responsibility for my team, he became aware that I "believed" I had previously requested a "day-shift schedule," but that there was no record of the request in the centralized scheduling system. That framing is incomplete and misleading.
         </p>
-
         <p className="mt-3">
-          <strong>First, the original request was mid-shift, not day shift.</strong> Charging
-          Party's documented request was to return to her mid-shift schedule. The absence of a
-          record in a system Respondent solely controls does not establish that no request was
-          made; it supports Charging Party's position that Respondent failed to properly
-          document or process her mid-shift request. Recasting that request as a "day-shift"
-          request — and then placing Charging Party on an AM/day-shift waitlist — does not
-          neutralize the original mid-shift issue, it confirms it.
+          My issue was not merely that I "believed" I had requested a day shift. My original request was to return to my mid-shift schedule. The fact that Respondent claims there was no record in the centralized system does not prove that I failed to request the schedule. It supports my position that Respondent failed to properly document or process my request.
         </p>
-
         <p className="mt-3">
-          <strong>Second, the waitlist failure was already part of the May 2024 protected
-          activity.</strong> In her May 29, 2024 written complaint, Charging Party specifically
-          raised that she had repeatedly requested to move to a different role, department, or
-          schedule, that she had been assured she would be placed on a waitlist for a new
-          schedule, and that "unfortunately this never happened." See <Ex id="EX-001" />. The
-          May 31, 2024 HR intake call with Susan Marcinko confirms the same: Charging Party
-          explained that Ms. Blackson had told her she was placed on the waitlist, but that
-          when she contacted Ryan Tafoya, a Department Manager, he confirmed she was not on
-          the mid-shift list. See <Ex id="EX-002" />. Charging Party has preserved the
-          April 26, 2024 exchange in which Mr. Tafoya confirmed she was not currently on the
-          MID-shift list. See <Ex id="EX-008" />. HR's June 5, 2024 follow-up then arranged
-          Charging Party's reassignment to Mr. Glover's organization effective July 1, 2024 —
-          confirming HR was actively addressing the waitlist/schedule complaint, not routing
-          her through a routine neutral process. See <Ex id="EX-002" />.
+          This waitlist failure was already part of my May 2024 protected activity. In my May 29, 2024 written complaint, I specifically raised that I had repeatedly requested to move to a different role, department, or schedule, and that I had been assured I would be placed on a waitlist for a new schedule, but that this did not happen. This was not a new issue that first arose after Allan became my manager. It was part of the protected complaint that triggered HR involvement.
         </p>
-
         <p className="mt-3">
-          <strong>Third, the September 19, 2025 conversation with Mr. Glover confirms the
-          issue was mid-shift.</strong> Charging Party directly challenged Mr. Glover's
-          characterization that he had "offered" her a shift; the contemporaneous record
-          reflects the issue was mid-shift, not "day shift." See <Ex id="EX-005" />.
+          The May 31, 2024 HR intake call also confirms this. During that call, Susan Marcinko asked me about the waitlist and schedule-change issue. I explained that Rosanna had told me I was placed on the waitlist, but when I contacted Ryan Tafoya, a Department Manager, to check my status, he confirmed I was not on the mid-shift waitlist. I also have a screenshot of that April 26, 2024 exchange with Ryan, where I asked him to check whether I was on the waitlist for mid-shift and he responded that I was not currently on the MID shift list.
         </p>
-
         <p className="mt-3">
-          Respondent has not produced (a) the ticket Mr. Glover allegedly submitted on
-          Charging Party's behalf in July 2024, (b) any document showing whether that request
-          was entered as mid-shift, AM/day shift, or another category, (c) the custodial chain
-          through which it was processed (reportedly Edina Markus), or (d) the audit history
-          showing additions, deletions, or status changes to Charging Party's entry. If
-          Respondent's position is that there was no record of the prior request, Respondent
-          should explain why no record exists after Charging Party requested the schedule,
-          after Mr. Tafoya confirmed she was not on the MID list, after she raised it in her
-          May 29, 2024 complaint, and after HR discussed it with her on May 31, 2024.
+          This is important because Respondent's Position Statement repeatedly reframes the issue as a "day-shift" request. My original and documented request was mid-shift. HR was aware of that issue, it was included in my complaint, and HR later told me the issue would be addressed through the move to Allan's organization. The later placement on an AM/day-shift waitlist did not accurately reflect my original mid-shift request.
         </p>
-
         <p className="mt-3">
-          Respondent also omits that the PM assignment was originally presented as
-          <em> temporary</em>. After Charging Party's protected activity, Respondent later
-          treated or described that PM assignment as permanent, yet Respondent's own records
-          continued to reflect temporary status through at least February 2025. When Charging
-          Party was re-added to the waitlist on July 10/17, 2025, her status appeared as
-          PM / Permanent with a new July 17, 2025 request date — without notice, ticket,
-          approval, or documentation. That inconsistency matters because Respondent's own
-          process treats temporary and permanent shift movement differently. See{" "}
-          <Ex id="EX-008" />, <Ex id="EX-041" />, <Ex id="EX-042" />, <Ex id="EX-043" />,{" "}
-          <Ex id="EX-048" />.
+          Respondent's statement that Allan placed me on the "day-shift waitlist" also fails to explain why I was not placed on the correct mid-shift waitlist after HR was already on notice that my mid-shift request had not been properly processed. If Respondent's position is that there was no record of my prior request, Respondent should explain why there was no record after I had requested the schedule, after Ryan confirmed I was not on the MID list, after I raised it in my May 29 complaint, and after HR discussed it with me on May 31.
         </p>
-
         <p className="mt-3">
-          Charging Party further disputes Respondent's statement that management "took steps
-          to bring [her] closer to [her] desired schedule" by moving her to a four-day,
-          ten-hour schedule beginning at 9:00 a.m. That framing presents a management-created
-          remedy. The record is otherwise. After Charging Party was not moved to the
-          mid-shift schedule she had requested, she asked Mr. Glover whether she could work a
-          four-day, ten-hour schedule with one weekday off so she could have at least one day
-          with her son. She was initially told no and told the only path was full team
-          agreement. Charging Party then had to canvass her team and secure their consent
-          herself; her understanding is that Mr. Carfagna was surprised she was able to
-          accomplish it. The four-day, ten-hour schedule was therefore a compromise Charging
-          Party organized after Respondent failed to place her on the mid-shift waitlist and
-          failed to move her to the schedule she had actually requested. It required longer
-          ten-hour days, kept her in an unfavorable closing posture, and should not be
-          presented as evidence of favorable treatment or resolution of the schedule issue.
+          Respondent also omits that my PM assignment was originally presented to me as temporary. After my protected activity, Respondent later treated or described that PM assignment as permanent. However, Respondent's own records continued to reflect temporary status through at least February 2025. When I was later re-added to the waitlist in July 2025, my status appeared as PM / Permanent with a new July 17, 2025 request date, without clear notice, explanation, ticket, approval, or documentation. That inconsistency matters because Respondent's own process treats temporary and permanent shift movement differently.
         </p>
-
         <p className="mt-3">
-          Respondent also states that Charging Party was positioned approximately "fifth or
-          sixth" on a lengthy waitlist. Charging Party requests the complete underlying
-          records supporting that representation, including ticket number, request date,
-          requested shift type, current shift, temporary/permanent status, waitlist ranking,
-          and full version history. The preserved record reflects material inconsistencies:
-          Charging Party was not on the MID-shift list when she should have been; Respondent
-          later placed her under an AM/day-shift category rather than her original mid-shift
-          request; her status appeared as Temporary; her waitlist row was later removed; and
-          she remained absent from the controlling waitlist while other employees continued
-          to qualify and move. See <Ex id="EX-008" />, <Ex id="EX-041" />, <Ex id="EX-042" />,{" "}
-          <Ex id="EX-043" />, <Ex id="EX-048" />.
+          I also dispute Respondent's statement that management "took steps to bring me closer to my desired schedule" by moving me to a four-day, ten-hour schedule beginning at 9:00 a.m. That statement makes it sound as though management proactively gave me a favorable schedule adjustment. That is not what happened.
         </p>
-
         <p className="mt-3">
-          For these reasons, Respondent's statement does not accurately describe the
-          scheduling issue. The evidence shows that Charging Party requested mid-shift, that
-          her failure to be added to the mid-shift waitlist was part of her May 2024
-          protected complaint, that HR was on actual notice, that Respondent later placed her
-          under the wrong schedule category, and that the four-day, ten-hour schedule was a
-          self-organized compromise — not a remedy — while Charging Party continued to be
-          denied the schedule movement she had requested.
+          After I was not moved to the mid-shift schedule I had requested, I asked Allan whether I could work a four-day, ten-hour schedule and have one weekday off so I could at least have one day with my son. I was still closing, and the schedule did not give me the mid-shift or traditional day schedule I had requested. I was initially told no, and I was told the only way it could happen was if everyone on my team agreed to move to that schedule. I then had to go to my team and ask them to agree. My team ultimately signed on to the schedule. My understanding is that Greg was surprised I was able to accomplish that.
         </p>
+        <p className="mt-3">
+          Therefore, the four-day, ten-hour schedule was not a management-created remedy to bring me closer to my desired schedule. It was a compromise I had to organize myself after Respondent failed to properly place me on the mid-shift waitlist and after Respondent failed to move me to the schedule I had requested. It required me to work longer ten-hour days, and it still left me stuck in an unfavorable closing-shift situation. Respondent should not present this as evidence that it treated me favorably or resolved the schedule issue.
+        </p>
+        <p className="mt-3">
+          Respondent also states that I was positioned approximately fifth or sixth on a lengthy waitlist. I request that Respondent produce the complete underlying records supporting that claim, including the ticket number, request date, requested shift type, current shift, temporary/permanent status, waitlist ranking, and all version history. The records I have preserved show major inconsistencies: I was not on the MID shift list when I should have been; Respondent later placed me under an AM/day-shift category rather than my original mid-shift request; my status appeared as Temporary; my waitlist row was later removed; and I remained absent from the controlling waitlist while other employees continued to qualify.
+        </p>
+        <p className="mt-3">
+          For these reasons, Respondent's statement does not accurately describe the scheduling issue. The evidence shows that I requested mid-shift, that my failure to be added to the mid-shift waitlist was part of my May 2024 protected complaint, that HR was aware of the issue, that Respondent later placed me under the wrong schedule category, and that the four-day, ten-hour schedule was not a true remedy but a compromise I had to pursue myself while still being denied the schedule movement I had requested.
+        </p>
+        <p className="mt-3"><strong>Requested records for this issue:</strong></p>
+        <ul className="mt-2 list-disc space-y-1 pl-6">
+          <li>The complete ticket Allan Glover allegedly submitted on my behalf in July 2024.</li>
+          <li>Any document showing whether that request was entered as mid-shift, AM/day shift, or another schedule category.</li>
+          <li>All records showing why my original mid-shift request was not recorded as mid-shift.</li>
+          <li>All communications between Rosanna Blackson, Ryan Tafoya, Susan Marcinko, Greg Carfagna, Allan Glover, Jen Roy, Edina Markus, and HR regarding my mid-shift request.</li>
+          <li>The complete waitlist entry showing my request date, requested shift, current shift, temporary/permanent status, months as TL, and qualifies status.</li>
+          <li>All SharePoint version history and audit logs for the Current TL Shifts / waitlist file from April 2024 through July 2025.</li>
+          <li>Any documentation explaining why my status changed from Temporary to Permanent.</li>
+          <li>Any documentation explaining why my request date was later reflected as July 17, 2025 despite my mid-shift request and complaint predating that date.</li>
+          <li>Any documentation regarding the four-day, ten-hour schedule, including who requested it, whether I was initially told no, whether team approval was required, and whether I had to obtain agreement from my team before it was implemented.</li>
+          <li>Any records showing that the four-day schedule was considered a substitute for, or resolution of, my mid-shift request.</li>
+        </ul>
 
         <InlineExhibits
           heading="Waitlist evidence — mid-shift request and version history"
