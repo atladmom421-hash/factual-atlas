@@ -871,147 +871,73 @@ export function FormalLetterBody() {
           R. Response to Respondent's "Complaints, Recording, and Hardship Fund" Narrative
         </h3>
         <p className="mt-3">
-          Respondent's "Complaints, Recording, and Hardship Fund" section omits material
-          facts and relies on broad statements that are contradicted by the records.
+          Respondent's "Complaints, Recording, and Hardship Fund" section omits material facts and relies on broad statements that are contradicted by the records.
         </p>
         <p className="mt-3">
-          First, Respondent states that Charging Party's September 2025 Ethical Concerns
-          complaint was processed through standard procedures and that Discover concluded
-          she had been offered a schedule change but declined it. Charging Party disputes
-          that conclusion. She did not receive or decline a May 2025 shift offer. She was
-          not offered AM, mid-shift, or any other shift opportunity in May 2025.
-          Respondent has not produced the alleged offer, the alleged decline, the ticket,
-          the shift details, the communication, or the person who allegedly recorded her
-          response. That conclusion also ignores the waitlist records: Charging Party's
-          original request was for mid-shift, she was not properly placed on the MID-shift
-          waitlist, she was removed from the waitlist in February 2025, and later records
-          reflected inconsistent request dates and status changes. Respondent cannot rely
-          on a "standard procedure" conclusion without producing the actual tickets,
-          audit trail, waitlist version history, offer documentation, or alleged decline
-          documentation.
+          First, Respondent states that my September 2025 Ethical Concerns complaint was processed through standard procedures and that Discover concluded I had been offered a schedule change but declined it. I dispute that conclusion. I did not receive or decline a May 2025 shift offer. I was not offered AM, mid-shift, or any other shift opportunity in May 2025. Respondent has not produced the alleged offer, the alleged decline, the ticket, the shift details, the communication, or the person who allegedly recorded my response.
         </p>
         <p className="mt-3">
-          Second, Respondent states that system recording is a standard operational tool
-          that applies broadly to Team Leaders and was not directed at Charging Party.
-          That does not address the records. Charging Party's Verint evidence shows her
-          PC/profile appearing on live monitor while other Team Leaders in her same
-          department were logged in and active, but their profiles did not show live
-          monitoring active. Respondent is not simply being asked whether Verint exists;
-          Respondent is being asked why Charging Party's profile was visible when other
-          similarly situated Team Leaders were not. After she reported the issue, other
-          profiles later began appearing activated or visible — a sequence that supports
-          that her profile appeared differently first, and broader visibility appeared
-          only after she complained. HR later confirmed this was not simply Charging
-          Party's misunderstanding. In the HR follow-up conversation, HR stated there
-          was a technical problem and that she had "more visibility than" she should
-          have had; that the issue had been turned over to product owners, the vendor,
-          and the BT team; that they did not know what happened; that they did not know
-          who did it; and that they were trying to backtrack permissions. Those facts
-          contradict Respondent's statement that there is no indication Charging Party
-          was treated differently.
+          That conclusion also ignores the waitlist records. My original request was for mid-shift. I was not properly placed on the MID-shift waitlist. I was removed from the waitlist in February 2025. Later records reflected inconsistent request dates and status changes. Respondent cannot rely on a "standard procedure" conclusion without producing the actual tickets, audit trail, waitlist version history, offer documentation, or alleged decline documentation.
         </p>
         <p className="mt-3">
-          Third, the Verint issue overlaps with the Teams deletion evidence. On October
-          7, 2025, Charging Party sent HR investigator Edward Reyes a formal written
-          timeline regarding her waitlist history, retaliation concerns, and Allan
-          Glover's comments. On October 14, 2025, she notified Allan Glover and Amber in
-          Teams that she had filed FMLA; that same Teams conversation also documented
-          leadership-support concerns after Allan removed himself from her team chat. On
-          October 21, 2025, she emailed HR and complained that her screen was being
-          recorded or monitored through Verint. On October 23, 2025, the Allan/Amber
-          Teams chat was blank on her work computer, with only a message stating that
-          older messages had been deleted due to the organization's retention policy.
-          However, other Teams chats from the same period remained visible, including
-          chats dated October 10, October 13, October 15, October 16, October 17, and
-          October 21. The October 13 Alese Amarel chat remained visible and included
-          messages discussing Allan leaving the chat and FMLA/LOA-related issues. By
-          October 24, 2025, the same Allan/Amber chat was also cleared from her phone.
-          The relevant Allan/Amber chat disappeared after protected activity, FMLA
-          notice, the Verint complaint, and an active HR investigation, while other
-          same-period chats remained visible.
+          Second, Respondent states that system recording is a standard operational tool that applies broadly to Team Leaders and was not directed at me. That does not address the records. My Verint evidence shows my PC/profile appearing on live monitor while other Team Leaders in my same department were logged in and active, but their profiles did not show live monitoring active. That is the issue. Respondent is not simply being asked whether Verint exists. Respondent is being asked why my profile was visible when other similarly situated Team Leaders were not.
         </p>
         <p className="mt-3">
-          Fourth, Respondent states that Discover requires documentation for all
-          hardship fund requests. That is not true based on Charging Party's direct
-          personal knowledge. Shortly before the July 10, 2025 incident, Charging Party
-          personally assisted Brandi Cordi, a White employee on her team, with a
-          hardship-fund request because Brandi was facing eviction. Brandi was not
-          required to submit supporting documentation; she was required to identify
-          what she needed assistance for and provide a list or explanation of the
-          requested need. Allan Glover was aware of and assisted with that request, and
-          no concern was raised. Shortly afterward, Charging Party asked Allan about
-          helping Araksan Dide, a Black employee who was homeless and needed housing
-          support. Allan responded differently. Instead of assisting with the request
-          in the same manner, Allan told her to hold off and gave an example involving
-          Black employees, stating in substance that if one Black employee told another
-          Black employee and that person tried to access the hardship fund, it could be
-          a serious problem. That is direct comparator evidence: a White employee's
-          hardship request was handled without supporting documentation and without a
-          warning, while a Black employee's potential hardship request triggered
-          hesitation and a race-related warning.
+          After I reported the issue, other profiles later began appearing activated or visible. That sequence matters because it supports that my profile appeared differently first, and broader visibility appeared only after I complained.
         </p>
         <p className="mt-3">
-          Fifth, Respondent states that Allan Glover's involvement was limited to
-          gathering information and forwarding it through the appropriate chain of
-          review. The records do not support minimizing his involvement that way. On
-          November 13, 2025, Charging Party submitted her hardship assistance request
-          and completed the required attestation the same day. That same morning, a
-          meeting titled "SH Hardship" appeared on Allan Glover's calendar involving
-          Susan Marchinko, Allan Glover, and Greg Carfagna. Later that same day,
-          Cameron Hadley from Employee Relations emailed Charging Party to schedule a
-          discussion regarding her hardship request. That timeline shows the hardship
-          request was immediately escalated to HR, operations leadership,
-          director-level leadership, and Employee Relations the same day it was
-          submitted. On November 17, 2025, Charging Party spoke with Cameron Hadley
-          from Employee Relations. During that conversation, he stated that her request
-          could not be submitted for approval consideration without additional
-          documentation. Charging Party questioned why that documentation was being
-          required of her because she had direct knowledge of other hardship-fund
-          requests being handled without the same requirement. After that conversation,
-          she submitted the requested documentation the same day or shortly thereafter.
-          The record shows the request was submitted and escalated on November 13,
-          leadership and HR were aware of it that same day, Employee Relations became
-          involved immediately, documentation was demanded on November 17, and the
-          funds were not received until after significant housing harm had already
-          occurred.
+          HR later confirmed this was not simply my misunderstanding. In the HR follow-up conversation, HR stated there was a technical problem and that I had "more visibility than" I should have had. HR also stated the issue had been turned over to product owners, the vendor, and the BT team; that they did not know what happened; that they did not know who did it; and that they were trying to backtrack permissions.
         </p>
         <p className="mt-3">
-          Sixth, Respondent states that Allan denies making any race-related
-          hardship-fund statement. That denial does not match the contemporaneous
-          record. Immediately after the July 10 meeting, Charging Party texted a
-          coworker because she was shocked by Allan's example. She then messaged Allan
-          in Teams and stated that she was caught off guard and confused by the example
-          he used. Allan did not deny using an example. He responded that he was "just
-          providing an example of what could happen." When Charging Party asked, "What
-          exactly are you saying?" Allan called her directly and asked, "What exactly
-          are you trying to get to?" Charging Party also disclosed the incident to
-          coworkers the same day. Those facts support that the race-related hardship
-          conversation occurred.
+          Those facts contradict Respondent's statement that there is no indication I was treated differently. The screenshots show different visibility. HR admitted I had more visibility than I should have had. HR admitted they did not know what changed, who changed it, or why. Respondent should produce the Verint audit logs, permissions history, access records, product-owner communications, vendor communications, and BT escalation records.
         </p>
         <p className="mt-3">
-          Seventh, Respondent states that Allan denies saying Discover attended an HBCU
-          recruiting event without intending to hire anyone, and that Allan had no role
-          in recruiting. That does not resolve the factual dispute. Allan discussed the
-          HBCU recruiting event during the same August 2025 conversation where Charging
-          Party raised her lack of opportunities, lack of projects, blocked
-          advancement, schedule restrictions, and family impact. Allan also made the
-          "blockade" statement during that conversation, telling her in substance that
-          there was a blockade and that he did not think she could get past it. Allan's
-          lack of formal recruiting authority does not determine whether the statement
-          was made. The issue is whether he made the statement, why he made it in a
-          conversation about blocked opportunity, and whether the company's HBCU
-          recruiting activity resulted in actual hires.
+          Third, the Verint issue overlaps with the Teams deletion evidence. On October 7, 2025, I sent HR investigator Edward Reyes a formal written timeline regarding my waitlist history, retaliation concerns, and Allan Glover's comments. On October 14, 2025, I notified Allan Glover and Amber in Teams that I had filed FMLA. That same Teams conversation also documented leadership-support concerns after Allan removed himself from my team chat.
         </p>
         <p className="mt-3">
-          Respondent's response relies on broad denials: "standard procedure,"
-          "standard operational tool," "documentation required for all," "limited
-          involvement," "Allan denies," and "no role." The documents show specific
-          contrary facts: no documented May 2025 offer, unequal Verint visibility, HR
-          admission of excess visibility, missing Teams messages while other chats
-          remained visible, unequal hardship-fund documentation treatment, same-day
-          leadership and HR involvement in Charging Party's hardship request, same-day
-          documentation of Allan's race-related hardship example, and a documented
-          HBCU/blockade conversation.
+          On October 21, 2025, I emailed HR and complained that my screen was being recorded or monitored through Verint. On October 23, 2025, the Allan/Amber Teams chat was blank on my work computer. The only visible message stated that older messages had been deleted due to the organization's retention policy. However, other Teams chats from the same period remained visible, including chats dated October 10, October 13, October 15, October 16, October 17, and October 21. The October 13 Alese Amarel chat remained visible and included messages discussing Allan leaving the chat and FMLA/LOA-related issues. By October 24, 2025, the same Allan/Amber chat was also cleared from my phone.
+        </p>
+        <p className="mt-3">
+          Those facts support a preservation issue. The relevant Allan/Amber chat disappeared after protected activity, FMLA notice, the Verint complaint, and an active HR investigation, while other same-period chats remained visible. Respondent should produce Teams retention logs, deletion logs, audit history, and any legal-hold or preservation records.
+        </p>
+        <p className="mt-3">
+          Fourth, Respondent states that Discover requires documentation for all hardship fund requests. That is not true based on my direct personal knowledge. Shortly before the July 10, 2025 incident, I personally assisted Brandi Cordi, a White employee on my team, with a hardship-fund request because she was facing eviction. Brandi was not required to submit supporting documentation. She was required to identify what she needed assistance for and provide a list or explanation of the requested need. Allan Glover was aware of and assisted with that request. No concern was raised.
+        </p>
+        <p className="mt-3">
+          Shortly afterward, I asked Allan about helping Araksan Dide, a Black employee who was homeless and needed housing support. Allan responded differently. Instead of assisting with the request in the same manner, Allan told me to hold off and gave an example involving Black employees, stating in substance that if one Black employee told another Black employee and that person tried to access the hardship fund, it could be a serious problem.
+        </p>
+        <p className="mt-3">
+          That is direct comparator evidence. A White employee's hardship request was handled without supporting documentation and without a warning. A Black employee's potential hardship request triggered hesitation and a race-related warning. Respondent's statement that documentation was required for all hardship requests is contradicted by my direct involvement in Brandi's request.
+        </p>
+        <p className="mt-3">
+          Fifth, Respondent states that Allan Glover's involvement was limited to gathering information and forwarding it through the appropriate chain of review. The records do not support minimizing his involvement that way. On November 13, 2025, I submitted my hardship assistance request and completed the required attestation the same day. That same morning, a meeting titled "SH Hardship" appeared on Allan Glover's calendar involving Susan Marchinko, Allan Glover, and Greg Carfagna. Later that same day, Cameron Hadley from Employee Relations emailed me to schedule a discussion regarding my hardship request.
+        </p>
+        <p className="mt-3">
+          That timeline shows the hardship request was immediately escalated to HR, operations leadership, director-level leadership, and Employee Relations the same day it was submitted. Respondent cannot fairly characterize Allan's involvement as minor or disconnected when the hardship request appeared on his calendar as "SH Hardship" with HR and director-level leadership the same day I submitted it.
+        </p>
+        <p className="mt-3">
+          On November 17, 2025, I spoke with Cameron Hadley from Employee Relations. During that conversation, he stated that my request could not be submitted for approval consideration without additional documentation. I questioned why that documentation was being required of me because I had direct knowledge of other hardship-fund requests being handled without the same requirement. After that conversation, I submitted the requested documentation the same day or shortly thereafter.
+        </p>
+        <p className="mt-3">
+          These facts matter because Respondent now claims any payment issue was only about timeliness and completeness of documentation. The record shows something different: the request was submitted and escalated on November 13, leadership and HR were aware of it that same day, Employee Relations became involved immediately, documentation was demanded on November 17, and the funds were not received until after significant housing harm had already occurred.
+        </p>
+        <p className="mt-3">
+          Sixth, Respondent states that Allan denies making any race-related hardship-fund statement. That denial does not match the contemporaneous record. Immediately after the July 10 meeting, I texted a coworker because I was shocked by Allan's example. I then messaged Allan in Teams and stated that I was caught off guard and confused by the example he used. Allan did not deny using an example. He responded that he was "just providing an example of what could happen." When I asked, "What exactly are you saying?" Allan called me directly and asked, "What exactly are you trying to get to?" I also disclosed the incident to coworkers the same day.
+        </p>
+        <p className="mt-3">
+          Those facts support that the race-related hardship conversation occurred. Respondent should produce the Teams thread, call records, witness statements, hardship records for Brandi Cordi, hardship records for Araksan Dide, and all communications regarding hardship-fund access.
+        </p>
+        <p className="mt-3">
+          Seventh, Respondent states that Allan denies saying Discover attended an HBCU recruiting event without intending to hire anyone, and that Allan had no role in recruiting. That does not resolve the factual dispute. Allan discussed the HBCU recruiting event during the same August 2025 conversation where I raised my lack of opportunities, lack of projects, blocked advancement, schedule restrictions, and family impact. Allan also made the "blockade" statement during that conversation, telling me in substance that there was a blockade and that he did not think I could get past it.
+        </p>
+        <p className="mt-3">
+          Allan's lack of formal recruiting authority does not determine whether the statement was made. The issue is whether he made the statement, why he made it in a conversation about blocked opportunity, and whether the company's HBCU recruiting activity resulted in actual hires. Respondent should produce the HBCU event records, attendees, candidate lists, interview outcomes, rejection reasons, and hiring outcomes.
+        </p>
+        <p className="mt-3">
+          Respondent's response relies on broad denials: "standard procedure," "standard operational tool," "documentation required for all," "limited involvement," "Allan denies," and "no role." The documents show specific contrary facts: no documented May 2025 offer, unequal Verint visibility, HR admission of excess visibility, missing Teams messages while other chats remained visible, unequal hardship-fund documentation treatment, same-day leadership and HR involvement in my hardship request, same-day documentation of Allan's race-related hardship example, and a documented HBCU/blockade conversation.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce: (1) the complete Ethical Concerns file for my September 2025 schedule/waitlist complaint; (2) all records supporting the alleged May 2025 shift offer and alleged decline; (3) all waitlist tickets and audit history relied on in that investigation; (4) Verint screenshots, live-monitoring records, access logs, screen-recording logs, permission-change history, product-owner communications, BT escalation records, and vendor communications; (5) records showing which Team Leaders were visible or active in Verint before and after my complaint; (6) Teams retention logs, deletion logs, audit history, and preservation/legal-hold records for the Allan/Amber chat; (7) hardship records for Brandi Cordi, Araksan Dide, and my hardship request; (8) documentation showing what each hardship applicant was required to submit; (9) the November 13, 2025 "SH Hardship" calendar invite, attendee list, notes, and communications; (10) the November 17, 2025 Cameron Hadley conversation recording/transcript and related notes; (11) the July 10, 2025 Teams thread with Allan regarding the hardship-fund discussion; (12) call records and witness statements regarding the July 10 follow-up call; (13) communications involving Allan Glover, Susan Marchinko, Greg Carfagna, Cameron Hadley, Lindsay Beck, and Employee Relations regarding hardship assistance; (14) HBCU recruiting-event records, including attendance, candidate submissions, interview outcomes, rejection reasons, and hiring outcomes; and (15) all communications or notes regarding Allan's August 2025 "blockade" and HBCU-related conversation.
         </p>
 
         <InlineExhibits
