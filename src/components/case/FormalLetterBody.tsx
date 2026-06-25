@@ -2217,7 +2217,7 @@ export function FormalLetterBody() {
         <p className="mt-3">
           For the reasons set forth above, Charging Party respectfully requests that the Arizona
           Civil Rights Division and the EEOC decline to issue a no-cause determination, direct
-          Respondent to produce the records identified in Section IV, and proceed with a full
+          Respondent to produce the records identified in Section V, and proceed with a full
           investigation on the merits.
         </p>
 
