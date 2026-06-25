@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { PrintPdfButton } from "@/components/case/PrintPdfButton";
 import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
+import { exhibitById } from "@/data";
+
 
 
 // Exhibits cited in this letter — bundled into the print appendix.
@@ -41,6 +43,78 @@ function Ex({ id }: { id: string }) {
     >
       {id}
     </Link>
+  );
+}
+
+/**
+ * InlineExhibits — renders a compact, captioned strip of exhibit screenshots
+ * directly inside the response body so the PDF is self-contained. Each item
+ * supports a short relevance line per the requested label format.
+ *
+ * Pass either a list of exhibit IDs (image exhibits will render their primary
+ * filePath) or a list of explicit {id, relevance} pairs.
+ */
+type InlineExhibitItem = { id: string; relevance?: string; label?: string };
+
+function InlineExhibits({
+  items,
+  heading = "Evidence cited above",
+}: {
+  items: InlineExhibitItem[];
+  heading?: string;
+}) {
+  const resolved = items
+    .map((it) => ({ it, ex: exhibitById(it.id) }))
+    .filter((r): r is { it: InlineExhibitItem; ex: NonNullable<ReturnType<typeof exhibitById>> } => Boolean(r.ex));
+
+  if (resolved.length === 0) return null;
+
+  return (
+    <aside
+      className="my-6 break-inside-avoid rounded-md border border-border bg-secondary/30 p-4 print:my-4 print:border print:border-black/40 print:bg-white"
+      aria-label={heading}
+    >
+      <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-foreground/70">
+        {heading}
+      </div>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {resolved.map(({ it, ex }) => {
+          const label = it.label ?? ex.fileName;
+          const showImage = ex.fileKind === "image" && ex.filePath;
+          return (
+            <figure
+              key={it.id}
+              className="break-inside-avoid rounded border border-border bg-card p-2 print:border-black/30"
+              style={{ pageBreakInside: "avoid" }}
+            >
+              {showImage ? (
+                <img
+                  src={ex.filePath}
+                  alt={label}
+                  loading="eager"
+                  className="block max-h-[360px] w-full rounded border border-border object-contain print:max-h-none"
+                />
+              ) : (
+                <div className="rounded border border-dashed border-border bg-secondary/40 p-3 text-[11px] text-foreground/70">
+                  {ex.fileKind.toUpperCase()} on file · {ex.filePath || "see appendix"}
+                </div>
+              )}
+              <figcaption className="mt-2 text-[11px] leading-snug text-foreground/85">
+                <span className="font-mono font-semibold">
+                  Exhibit: {ex.exhibitNumber}
+                </span>{" "}
+                — {label}
+                {it.relevance && (
+                  <div className="mt-0.5 text-foreground/75">
+                    <span className="font-semibold">Relevance:</span> {it.relevance}
+                  </div>
+                )}
+              </figcaption>
+            </figure>
+          );
+        })}
+      </div>
+    </aside>
   );
 }
 
@@ -174,8 +248,8 @@ export function FormalLetterBody() {
           Respondent's reference to "monthly scorecards that roll into annual performance
           ratings" likewise undercuts its own narrative. The monthly scorecards, IPF
           calculations, and bonus payout for 2024 reflect improved operational metrics, no
-          goal rated below Solid, an IPF of approximately 120%, and a bonus payout of
-          124.36%. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
+          goal rated below Solid, an Individual Performance Factor of 96.49%, a Company
+          Performance Factor of 128.90%, and a bonus payout of 124.36% of target. See <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />,{" "}
           <Ex id="EX-052" />, <Ex id="EX-053" />. The overall rating of "Solid" attached to
           Exhibit B of the Position Statement is therefore not a neutral summation of the
           scorecards Respondent cites; it is a downward departure from them. That
@@ -222,6 +296,18 @@ export function FormalLetterBody() {
           counsel and asks only that the Division ensure such routing does not delay or
           obstruct the production of records the Position Statement places at issue.
         </p>
+
+        <InlineExhibits
+          heading="Performance evidence — 2024 review cycle"
+          items={[
+            { id: "EX-050", relevance: "2023 compensation statement reflecting Strong rating before protected activity." },
+            { id: "EX-051", relevance: "2024 compensation statement reflecting Solid downgrade with 124.36% of-target bonus payout, 96.49% Individual Performance Factor, and 128.90% Company Performance Factor." },
+            { id: "EX-052", relevance: "2023 year-end review (Strong) for comparison with 2024." },
+            { id: "EX-053", relevance: "2024 year-end review reflecting overall Solid rating despite Solid/Strong sub-ratings." },
+          ]}
+        />
+
+
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           B. Response to Respondent's Characterization of Charging Party's Prior EEOC Charge
@@ -448,6 +534,19 @@ export function FormalLetterBody() {
           denied the schedule movement she had requested.
         </p>
 
+        <InlineExhibits
+          heading="Waitlist evidence — mid-shift request and version history"
+          items={[
+            { id: "EX-043", relevance: "April 26, 2024 Ryan Tafoya confirmation that Harbin was not on the MID-shift list." },
+            { id: "EX-046", relevance: "January 22, 2025 saved waitlist showing Harbin on the list with June 26, 2024 request date and PM/Temporary status." },
+            { id: "EX-045", relevance: "February 25, 2025 waitlist after Jen Roy's edits — Harbin's row removed while junior employees remained." },
+            { id: "EX-042", relevance: "Allan Glover acknowledging Harbin had been on the waitlist for approximately two years." },
+          ]}
+        />
+
+
+
+
 
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           D. The "neutral, centralized waitlist" assertion (PS pp. 4–5, §§ I.B.6–7; p. 6, §II.A)
@@ -497,6 +596,16 @@ export function FormalLetterBody() {
           is itself probative under standard comparator analysis.
         </p>
 
+        <InlineExhibits
+          heading="Comparator evidence"
+          items={[
+            { id: "EX-010", relevance: "Comparator Movement & Flexibility Map — Millisock, Samuel, Case, Mascarenas, Lesure." },
+            { id: "EX-019", relevance: "September 2025 HR ticket screenshot tied to Karena Lesure reassignment context." },
+          ]}
+        />
+
+
+
         <h3 className="mt-6 font-display text-[15px] tracking-tight">
           E. The "May 2025 day-shift offer" assertion (PS p. 4, § I.B.5; p. 7, § II.B)
         </h3>
@@ -538,8 +647,9 @@ export function FormalLetterBody() {
         <ul className="mt-2 list-disc space-y-1 pl-6">
           <li>
             <strong>The 2024 overall-rating downgrade to "Solid."</strong> Every sub-rating in
-            the same document was Solid or Strong; the bonus payout rose to 124.36%, IPF rose to
-            120%, and the operational metrics improved year over year. The 2024 overall rating is
+            the same document was Solid or Strong; the bonus payout was 124.36% of target,
+            Individual Performance Factor was 96.49%, Company Performance Factor was 128.90%,
+            and the operational metrics improved year over year. The 2024 overall rating is
             the actionable evaluation, and the Position Statement omits it entirely. See{" "}
             <Ex id="EX-049" />, <Ex id="EX-050" />, <Ex id="EX-051" />, <Ex id="EX-052" />,{" "}
             <Ex id="EX-053" />.
@@ -898,6 +1008,17 @@ export function FormalLetterBody() {
           without production of the underlying records identified in Section V.
         </p>
 
+        <InlineExhibits
+          heading="May 2025 / waitlist removal evidence"
+          items={[
+            { id: "EX-046", relevance: "January 22, 2025 saved waitlist — Harbin listed with June 26, 2024 request date." },
+            { id: "EX-045", relevance: "February 25, 2025 Jen Roy edit removing Harbin while junior employees remained and continued to qualify." },
+            { id: "EX-048", relevance: "Mid-shift waitlist version-history narrative documenting placement, removal, absence, and re-add." },
+          ]}
+        />
+
+
+
         {/* Section II.P - July 2025 Waitlist Status */}
         <h3 className="mt-8 font-display text-base tracking-tight">
           P. Response to Respondent's "July 2025 Waitlist Status" Assertion
@@ -1023,6 +1144,17 @@ export function FormalLetterBody() {
           in February, and after she had expanded her request in June to include AM in
           addition to mid-shift.
         </p>
+
+        <InlineExhibits
+          heading="July 2025 waitlist evidence"
+          items={[
+            { id: "EX-041", relevance: "Jen Roy's July 14, 2025 limited five-row screenshot sent to Allan Glover — omits Date Requested, Months as CAR TL, Temporary/Permanent status, and Qualifies." },
+            { id: "EX-044", relevance: "July 3, 2025 controlling 'Current TL Shifts' SharePoint waitlist — Harbin absent while other employees listed and qualifying." },
+            { id: "EX-040", relevance: "Shift-Change SOW revisions showing the documented process for ticket-based waitlist movement." },
+          ]}
+        />
+
+
 
         {/* Section II.Q - August–September 2025 Events */}
         <h3 className="mt-8 font-display text-base tracking-tight">
@@ -1312,10 +1444,24 @@ export function FormalLetterBody() {
           HBCU/blockade conversation.
         </p>
 
-        {/* Section II Discussion - Response to Respondent's Legal Argument */}
-        <h3 className="mt-8 font-display text-base tracking-tight">
-          II. A Discussion — Response to Respondent's Legal Argument
-        </h3>
+        <InlineExhibits
+          heading="Ancillary-allegations evidence — Verint, Teams, leave, hardship"
+          items={[
+            { id: "EX-006", relevance: "Verint monitoring evidence — Harbin's profile visibility versus other Team Leaders." },
+            { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns documented to HR." },
+            { id: "EX-007", relevance: "October 2025 FMLA misclassification as STD and resulting system-access deactivation." },
+            { id: "EX-003", relevance: "Hardship-fund timeline — Cordi, Dide, and Harbin requests; same-day escalation to HR, ER, and director-level leadership." },
+            { id: "EX-004", relevance: "July 10, 2025 race-related hardship-fund comments and same-day documentation." },
+            { id: "EX-005", relevance: "August 2025 HBCU recruiting and 'blockade' statement context." },
+          ]}
+        />
+
+
+
+        {/* Section II.A–II.D — Response to Respondent's Discussion (Legal Argument) */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">
+          III. Response to Respondent's Section II — Discussion (Legal Argument)
+        </h2>
         <p className="mt-3">
           Respondent's legal discussion does not resolve the Charge. It attempts to characterize the evidence as ordinary workplace disagreement, but the record shows materially disputed facts involving schedule access, waitlist manipulation, comparator movement, performance-rating impact, advancement barriers, project exclusion, race-related comments, and inconsistent application of workplace processes.
         </p>
@@ -1408,9 +1554,9 @@ export function FormalLetterBody() {
         <p className="mt-3">These allegations are not disconnected from protected activity. They occurred after my May 2024 EEOC charge, after my May 29, 2024 formal internal complaint, after repeated schedule/waitlist complaints, after my September 2025 Ethical Concerns complaint, after my October 2025 FMLA notice, and after my written HR timeline. The timing and documentation matter.</p>
         <p className="mt-3">Respondent's "ancillary allegations" section should therefore be rejected. The records show specific facts: the Allan/Amber Teams chat disappeared while other same-period chats remained visible; my Verint profile showed visibility other Team Leaders did not show; HR admitted I had more visibility than I should have had; my leave was mishandled or misclassified after FMLA notice; my system access was deactivated; a White employee's hardship request was handled without supporting documentation; a Black employee's potential hardship request triggered a race-related warning; and my own hardship request was escalated to HR, Employee Relations, operations leadership, and director-level leadership the day it was submitted.</p>
 
-        {/* Section III - Conclusion — Charging Party's Response */}
+        {/* Section IV — Response to Respondent's Section III — Conclusion */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          III. Conclusion — Charging Party's Response
+          IV. Response to Respondent's Section III — Conclusion
         </h2>
         <p className="mt-3">Respondent's request for dismissal should be rejected. Respondent's conclusion is not supported by the record. It depends on disputed facts, missing documents, incomplete explanations, and broad denials that are contradicted by Respondent's own records.</p>
         <p className="mt-3">This case is not about routine workplace disagreement. The record shows protected activity followed by schedule obstruction, waitlist removal, inconsistent request dates, comparator movement, a post-complaint rating downgrade, exclusion from advancement opportunities, project exclusion, unusual Verint visibility, deleted Teams messages, leave-processing problems, hardship-fund inconsistency, and race-related comments involving hardship assistance and HBCU recruiting.</p>
@@ -1426,8 +1572,8 @@ export function FormalLetterBody() {
 
 
 
-        {/* Section IV */}
-        <h2 className="mt-10 font-display text-lg tracking-tight">IV. Legal Standards</h2>
+        {/* Section V */}
+        <h2 className="mt-10 font-display text-lg tracking-tight">V. Legal Standards</h2>
         <p className="mt-3">
           Respondent's Position Statement applies the wrong legal standards in several respects:
         </p>
@@ -1456,9 +1602,9 @@ export function FormalLetterBody() {
           </li>
         </ul>
 
-        {/* Section IV */}
+        {/* Section VI */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          V. Documents the Division Should Request
+          VI. Documents the Division Should Request
         </h2>
         <p className="mt-3">
           To test the assertions on which the Position Statement relies, Charging Party
@@ -1987,7 +2133,111 @@ export function FormalLetterBody() {
           Enclosures: Evidence Appendix (cited exhibits, attached). cc: U.S. Equal Employment
           Opportunity Commission (EEOC No. 35A-2026-00320).
         </div>
+
+        {/* Evidence Crosswalk — supplemental table; does not alter body text */}
+        <section className="mt-12 break-inside-avoid">
+          <h2 className="font-display text-lg tracking-tight">
+            Evidence Crosswalk by Respondent Position Statement Section
+          </h2>
+          <p className="mt-2 text-[12px] text-foreground/70">
+            Cross-reference of Respondent's Position Statement sections to Charging Party's
+            response sections and the supporting exhibits embedded above and in the appendix.
+          </p>
+          <div className="mt-3 overflow-x-auto">
+            <table className="w-full border-collapse text-[11px]">
+              <thead>
+                <tr className="bg-secondary/40 text-left">
+                  <th className="border border-border px-2 py-1">Respondent Section</th>
+                  <th className="border border-border px-2 py-1">Charging Party Response</th>
+                  <th className="border border-border px-2 py-1">Exhibits Included</th>
+                  <th className="border border-border px-2 py-1">What the Evidence Shows</th>
+                </tr>
+              </thead>
+              <tbody className="align-top">
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B (Employment Narrative)</td>
+                  <td className="border border-border px-2 py-1">II.A</td>
+                  <td className="border border-border px-2 py-1">EX-050, EX-051, EX-052, EX-053</td>
+                  <td className="border border-border px-2 py-1">2024 Solid downgrade despite IPF 96.49%, CPF 128.90%, 124.36% bonus payout, no goal below Solid.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.1 (Prior EEOC Charge)</td>
+                  <td className="border border-border px-2 py-1">II.B</td>
+                  <td className="border border-border px-2 py-1">EX-HR-CALL, EX-002, EX-008, EX-041, EX-042</td>
+                  <td className="border border-border px-2 py-1">May 2024 protected activity, HR-arranged reassignment, waitlist non-placement.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.2 (Glover Role / Knowledge)</td>
+                  <td className="border border-border px-2 py-1">II.H</td>
+                  <td className="border border-border px-2 py-1">EX-HR-CALL, EX-002</td>
+                  <td className="border border-border px-2 py-1">Reassignment context; Glover's admitted awareness of prior charge.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.3 (No prior request)</td>
+                  <td className="border border-border px-2 py-1">II.C</td>
+                  <td className="border border-border px-2 py-1">EX-008, EX-043, EX-001, EX-002</td>
+                  <td className="border border-border px-2 py-1">Mid-shift request raised in May 29, 2024 complaint; Tafoya April 26, 2024 confirmation.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.5 (May 2025 Day-Shift Offer)</td>
+                  <td className="border border-border px-2 py-1">II.E / II.O</td>
+                  <td className="border border-border px-2 py-1">EX-045, EX-046, EX-048</td>
+                  <td className="border border-border px-2 py-1">February 2025 removal predates alleged May 2025 decline; no ticket or offer produced.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.6–7 (Neutral Waitlist)</td>
+                  <td className="border border-border px-2 py-1">II.D</td>
+                  <td className="border border-border px-2 py-1">EX-010, EX-019, EX-HR-CALL</td>
+                  <td className="border border-border px-2 py-1">Comparator movement "because of leadership, not the waitlist"; Lesure reassignment by specific request.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.7 (July 2025 Waitlist Status)</td>
+                  <td className="border border-border px-2 py-1">II.P</td>
+                  <td className="border border-border px-2 py-1">EX-041, EX-044, EX-040</td>
+                  <td className="border border-border px-2 py-1">Limited five-row Jen Roy screenshot; July 3 SharePoint waitlist absence; SOW process.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">I.B.8 (Hardship / HBCU)</td>
+                  <td className="border border-border px-2 py-1">II.J / II.K</td>
+                  <td className="border border-border px-2 py-1">EX-003, EX-004, EX-005</td>
+                  <td className="border border-border px-2 py-1">Cordi/Dide disparate documentation; race-related hardship comment; HBCU/blockade.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.A (Race Discrimination)</td>
+                  <td className="border border-border px-2 py-1">III.A</td>
+                  <td className="border border-border px-2 py-1">EX-010, EX-051, EX-053, EX-055</td>
+                  <td className="border border-border px-2 py-1">Tyler Millisock comparator; 2024 downgrade; ~50 internal applications.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.B (Retaliation)</td>
+                  <td className="border border-border px-2 py-1">III.B</td>
+                  <td className="border border-border px-2 py-1">EX-001, EX-002, EX-006, EX-007, EX-045</td>
+                  <td className="border border-border px-2 py-1">Post-protected-activity adverse events: waitlist removal, rating, Verint, FMLA, Teams.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.C (Performance / Advancement)</td>
+                  <td className="border border-border px-2 py-1">II.N / III.A</td>
+                  <td className="border border-border px-2 py-1">EX-049, EX-051, EX-053, EX-055, EX-057</td>
+                  <td className="border border-border px-2 py-1">Strong→Solid→Strong; TL Plus / Department Manager pipeline exclusion.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">II.D (Ancillary Allegations)</td>
+                  <td className="border border-border px-2 py-1">III.D</td>
+                  <td className="border border-border px-2 py-1">EX-002, EX-006, EX-007, EX-003, EX-004</td>
+                  <td className="border border-border px-2 py-1">Verint visibility; Allan/Amber chat deletion; FMLA mishandling; hardship escalation.</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-2 py-1">III (Conclusion)</td>
+                  <td className="border border-border px-2 py-1">IV</td>
+                  <td className="border border-border px-2 py-1">All cited exhibits</td>
+                  <td className="border border-border px-2 py-1">Cumulative pattern of disputed facts, missing records, and documented harm.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </article>
+
 
       {/* Print-only appendix — embeds cited exhibit images into the PDF */}
       <PrintEvidenceAppendix
