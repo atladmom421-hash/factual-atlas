@@ -1308,6 +1308,34 @@ Allan: No.`,
     filePath: "",
     fileKind: "note",
   },
+  {
+    id: "EX-061",
+    exhibitNumber: "EX-061",
+    fileName: "May 31, 2024 — HR Intake Call with Susan Marcinko (transcript)",
+    date: "May 31, 2024",
+    category: "Transcript",
+    peopleIds: ["harbin", "susan"],
+    summary:
+      "Verbatim transcript of the May 31, 2024 HR intake call with Susan Marcinko following Charging Party's internal complaint and EEOC charge. Harbin reported race discrimination, retaliation, disability/medical leave issues, false 'job abandonment' processing, hostile work environment, project exclusion, and schedule/waitlist concerns. Key admissions and content: (1) Harbin reported that on March 28, 2024 Rosanna Blackson used the N-word in an impromptu phone call after Harbin asked about Allan Glover coming to LVAR ('you're my N word'), with a witness (Harbin's mother) overhearing; (2) Harbin reported a prior incident in which Rosanna referred to an Asian agent as 'Chang'; (3) Harbin described being threatened by Rosanna in January 2024 with a 'compliance adjustment' issue after stating she would report discrimination to HR ('do you want me to bring up your adjustment compliance issue?' / 'I wouldn't be here at Discover anymore'); (4) Harbin reported that after her February 21–March 25, 2024 medical absence, her systems were disabled and a job abandonment was falsely processed before the PALs/Hartford documentation window closed; (5) Harbin reported that HR rep Anita Spence told her Rosanna had 'experienced the same level of stress and emotional trauma'; (6) Harbin reported she was placed on the schedule waitlist on April 1, 2024 but Department Manager Ryan Tafoya confirmed she had never been added; (7) Harbin reported total exclusion from special projects since the January complaint while every other peer received projects (work-availability board shows everyone red/orange, Harbin green); (8) Harbin confirmed she had filed an EEOC charge and was represented by counsel. Susan Marcinko stated she would investigate, would interview Tammy and Anita, and would 'inquire about moving you to another team' during the investigation. Relevance: contemporaneous HR-recorded confirmation of the protected activity, the racial slur, the retaliation threat, the false job-abandonment processing, the waitlist manipulation, the project exclusion, and HR's acknowledgment of the seriousness of the matter — directly rebuts Respondent's framing of these events as routine or unsupported.",
+    linkedEventIds: [],
+    reliability: "confirmed-transcript",
+    filePath: "",
+    fileKind: "transcript",
+  },
+  {
+    id: "EX-062",
+    exhibitNumber: "EX-062",
+    fileName: "June 5, 2024 — HR Follow-Up Call with Susan Marcinko re: Interim Move (transcript)",
+    date: "June 5, 2024",
+    category: "Transcript",
+    peopleIds: ["harbin", "susan", "allan", "greg"],
+    summary:
+      "Verbatim transcript of the June 5, 2024 HR follow-up call with Susan Marcinko. Susan confirmed she had spoken with Greg Carfagna earlier that day and arranged an interim reporting arrangement so Harbin would not have to have one-on-one interactions with Rosanna Blackson during the investigation. Key statements on the record: (1) Greg confirmed Harbin could be officially moved to Allan Glover's organization effective July 1, 2024, per the department's monthly move cadence; (2) In the interim (June), Harbin would route one-on-one manager direction to Allan rather than Rosanna; (3) Harbin would still be expected to attend planned team meetings shared with Rosanna's broader group but could log off if a morning touch-base became one-on-one with Rosanna; (4) Harbin's team would move with her to Allan's org as 'least disruptive,' per Greg; (5) Susan stated she would maintain confidentiality and did not see a reason to brief Allan on the underlying complaint; (6) Susan confirmed the investigation was ongoing and that she had 'interviews planned.' Relevance: (a) confirms HR's contemporaneous acknowledgment that interim separation from Rosanna was warranted — itself an HR-level recognition that the May 29, 2024 complaint and racial-slur allegation were serious; (b) establishes that Greg Carfagna was directly involved in the move logistics in June 2024, contradicting any later Respondent suggestion that Greg was uninvolved in Harbin's placement decisions; (c) documents that Harbin was favorably moved into Allan Glover's organization in July 2024, which is the same organization in which the later retaliation events (Training Bay selection, schedule blocks, the 'blockade' comments) occurred; (d) supports the protected-activity / knowledge-by-decisionmakers element of the retaliation and hostile work environment claims.",
+    linkedEventIds: [],
+    reliability: "confirmed-transcript",
+    filePath: "",
+    fileKind: "transcript",
+  },
 ];
 
 export const exhibitById = (id: string) => exhibits.find(e => e.id === id);
