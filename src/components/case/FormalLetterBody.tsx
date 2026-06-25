@@ -1567,6 +1567,23 @@ export function FormalLetterBody() {
         <p className="mt-3">Respondent also argues that there is no "but for" causation. But-for causation does not require protected activity to be the only cause. The question is whether the challenged actions would have occurred in the same way absent the protected activity. Here, the record supports that they would not have. Before and during protected activity, I was raising race discrimination, retaliation, schedule equity, and HR concerns. After that activity, my schedule remained blocked, my waitlist records changed, my performance rating dropped, development access was affected, project access diminished, monitoring concerns arose, protected Teams messages disappeared, and hardship assistance was handled differently.</p>
         <p className="mt-3">For these reasons, Respondent has not rebutted retaliation. Its argument depends on disputed facts and unsupported conclusions. At minimum, the evidence creates material factual disputes requiring further investigation and production of the underlying records.</p>
 
+        <InlineExhibits
+          heading="Retaliation evidence (PS § II.B)"
+          items={[
+            { id: "EX-014", relevance: "May 29, 2024 protected internal complaint distributed to leadership and Employee Relations." },
+            { id: "EX-016", relevance: "June 5, 2024 HR move away from Rosanna Blackson during the active investigation." },
+            { id: "EX-017", relevance: "July 19, 2024 complaint to Anita re: Greg Carfagna blocking rec-for-term paperwork after protected activity." },
+            { id: "EX-051", relevance: "2024 Solid downgrade after protected activity — excluded Charging Party from TL Plus / Department Manager pipeline." },
+            { id: "EX-045", relevance: "February 25, 2025 Jen Roy waitlist edit removing Harbin while juniors remained and continued to qualify." },
+            { id: "EX-041", relevance: "July 14, 2025 limited five-row screenshot omitting Date Requested, Months as CAR TL, Temporary/Permanent, and Qualifies." },
+            { id: "EX-006", relevance: "Verint monitoring evidence and HR admission that Harbin had 'more visibility than' she should have had." },
+            { id: "EX-002", relevance: "October 2025 Teams deletion / preservation concerns documented to HR." },
+            { id: "EX-007", relevance: "October 2025 FMLA misclassification, wrong paperwork, and resulting system-access deactivation." },
+            { id: "EX-003", relevance: "November 13, 2025 hardship request escalated same day to HR, Employee Relations, Allan Glover, Susan Marcinko, and Greg Carfagna." },
+          ]}
+        />
+
+
         <h4 className="mt-6 font-display text-[15px] tracking-tight">
           C. Respondent Has Not Rebutted the Hostile Work Environment Claim
         </h4>
