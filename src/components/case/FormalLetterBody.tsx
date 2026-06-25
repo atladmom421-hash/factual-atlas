@@ -1609,10 +1609,14 @@ export function FormalLetterBody() {
         <InlineExhibits
           heading="Ancillary-allegations evidence (PS § II.D)"
           items={[
+            { id: "EX-091", relevance: "Oct 23, 2025 Teams screenshot — Allan/Amber chat showing only the retention-deletion notice; left-rail shows other chats from same period still listed with intact previews." },
+            { id: "EX-092", relevance: "Oct 23, 2025 Teams screenshot (same session, same client, same account) — Alese Amarel chat retains intact 10/13/2025 message history, disproving any uniform retention-deletion explanation." },
+            { id: "EX-093", relevance: "Oct 14, 2025 iMessage to Allan and Amber — Harbin questioning chat removal; Amber Laye confirms Allan removed himself; same-day FMLA notice on a separate, non-work-controlled device." },
             { id: "EX-006", relevance: "Verint visibility evidence — Harbin's profile live-monitored while same-department Team Leaders were not." },
             { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns — Allan/Amber chat missing while same-period chats remained visible." },
+            { id: "EX-081", relevance: "Email to Edward Reyes (HR) re: Allan Glover removing himself from team chat during active investigation." },
             { id: "EX-007", relevance: "FMLA preliminary designation / leave correction / access deactivation evidence." },
-            { id: "EX-ALLAN-OCT24", relevance: "October 24, 2025 call with Allan Glover confirming the leave communication he received stated 'short term' and that systems could be disabled again." },
+            { id: "EX-ALLAN-OCT24", relevance: "October 24, 2025 call with Allan Glover confirming the leave communication stated 'short term' and that systems could be disabled again." },
             { id: "EX-003", relevance: "Hardship-assistance timeline — November 13 'SH Hardship' meeting (Marcinko / Glover / Carfagna) and Employee Relations escalation." },
           ]}
         />
