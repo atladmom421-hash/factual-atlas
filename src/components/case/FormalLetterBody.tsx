@@ -122,9 +122,8 @@ function InlineExhibits({
                 </div>
               )}
               <figcaption className="mt-2 text-[11px] leading-snug text-foreground/85">
-                <span className="font-semibold">{label}</span>
                 {it.relevance && (
-                  <div className="mt-1 text-foreground/75">
+                  <div className="text-foreground/75">
                     <span className="font-semibold">Relevance:</span> {it.relevance}
                   </div>
                 )}
