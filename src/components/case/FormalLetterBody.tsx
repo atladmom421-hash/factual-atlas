@@ -1395,7 +1395,41 @@ export function FormalLetterBody() {
             moved through the same waitlist process, a separate manager request, a
             preexisting assignment, a training obligation, or an accommodation.
           </li>
+          <li>
+            All records regarding the DNA role Charging Party applied for in August
+            2025, including the job posting, selected candidate qualifications,
+            interview notes, scoring criteria, recruiter notes, decisionmaker names,
+            and all related communications.
+          </li>
+          <li>
+            All notes, Teams messages, calendar invites, and follow-up communications
+            regarding the August 2025 conversation between Charging Party and Allan
+            Glover, and all documents regarding Allan's "blockade" statement and any
+            related communications.
+          </li>
+          <li>
+            The September 18, 2025 leadership meeting invite, attendee list, agenda,
+            notes, schedule/coverage worksheets, decision criteria, and decision
+            records, and all communications among Allan Glover, Amber, Trevor, Dan,
+            and any scheduling or HR personnel regarding Training Bay movement and
+            the determination that Charging Party's movement was "not operationally
+            feasible."
+          </li>
+          <li>
+            The criteria used to select Michelle, Steve, Marissa, Josh, or any other
+            employee for Training Bay, and all documents showing whether those
+            employees kept or changed schedules in connection with the Training Bay
+            assignment.
+          </li>
+          <li>
+            Comparator records for Tyler Millisock, Josh, Hunter, Michelle, Steve,
+            Marissa, and any other similarly situated Team Leader who moved areas,
+            schedules, or Training Bay assignments, including the process by which
+            each moved (waitlist, manager request, training assignment, preexisting
+            assignment, accommodation, or otherwise).
+          </li>
         </ol>
+
 
 
 
