@@ -1293,6 +1293,37 @@ export function FormalLetterBody() {
           ]}
         />
 
+        <h4 className="mt-6 font-display text-sm font-semibold tracking-tight">
+          Temp/Perm Designations — Inconsistent Application Across Team Leaders
+        </h4>
+        <p>
+          The Temp/Perm designations on the waitlist create another inconsistency Respondent has not explained. The waitlist records show other Team Leaders — including Cody Christensen (requested AM, current shift AM, marked "T") and Hunter Samuel (requested MID, current shift MID, marked "T") — listed with temporary shift designations while actually working the very shifts reflected in the waitlist records. The waitlist document itself states: "DM must open ticket with CFS to request TL shift change/placement on waitlist" (EX-068), which means Temp/Perm entries should be supported by produced tickets.
+        </p>
+        <p className="mt-3">
+          Respondent has treated my PM assignment, and later my PM/Permanent designation, as if it were a neutral or settled scheduling outcome. But other employees appear to have remained in temporary or flexible shift placements during the same period, while my PM/Temporary status was later converted to PM/Permanent without clear notice, approval documentation, or a produced ticket. Respondent should be required to explain what "temporary" and "permanent" meant in practice, who decided when a temporary shift became permanent, what ticket or approval was required, and why my conversion to PM/Permanent occurred without the records the waitlist document itself says are required.
+        </p>
+        <p className="mt-3">
+          Respondent should produce the CFS tickets, approval records, audit history, and communications for Cody Christensen, Hunter Samuel, and any other Team Leader whose shift was marked temporary while they were working AM or MID placements, as well as the CFS ticket or approval record documenting the conversion of my PM/Temporary status to PM/Permanent.
+        </p>
+        <p className="mt-3 font-medium">
+          Respondent cannot rely on Temp/Perm designations as neutral records while refusing to explain why other leaders were allowed to remain in temporary AM/MID placements and my PM/Temporary assignment was later converted to PM/Permanent without clear notice, approval documentation, or a produced ticket.
+        </p>
+
+        <h4 className="mt-6 font-display text-sm font-semibold tracking-tight">
+          Nameer Khan — Mid-Shift Waitlist Integrity Issue
+        </h4>
+        <p>
+          The mid-shift waitlist records also raise a specific concern regarding Nameer Khan. The version-history evidence reflects Nameer Khan listed for MID ahead of me. However, I have corroborating evidence that Nameer stated he never requested to be placed on the mid-shift waitlist and was never offered mid-shift.
+        </p>
+        <p className="mt-3">
+          This is significant because Respondent could rely on Nameer's placement to claim that I was not next in line for mid-shift. If Nameer did not actually request mid-shift and was not offered mid-shift, then his placement on the list functioned as a paper barrier rather than a genuine, neutral waitlist position. That supports the broader concern that the waitlist did not operate as a neutral, accurate, or uniformly applied system, and that inaccurate or non-actioned entries on the list should be tested through source records.
+        </p>
+        <p className="mt-3">
+          Respondent should be required to produce the CFS ticket, request record, approval history, communications, and audit trail showing when and why Nameer Khan was placed on the mid-shift waitlist, whether he requested that placement, whether he was ever offered mid-shift, and whether his listing was used to justify denying or delaying my mid-shift request.
+        </p>
+
+
+
 
         {/* Section II.R - Complaints, Recording, and Hardship Fund */}
         <h3 className="mt-8 font-display text-base tracking-tight">
