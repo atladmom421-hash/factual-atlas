@@ -1409,9 +1409,9 @@ export function FormalLetterBody() {
         <p className="mt-3">These allegations are not disconnected from protected activity. They occurred after my May 2024 EEOC charge, after my May 29, 2024 formal internal complaint, after repeated schedule/waitlist complaints, after my September 2025 Ethical Concerns complaint, after my October 2025 FMLA notice, and after my written HR timeline. The timing and documentation matter.</p>
         <p className="mt-3">Respondent's "ancillary allegations" section should therefore be rejected. The records show specific facts: the Allan/Amber Teams chat disappeared while other same-period chats remained visible; my Verint profile showed visibility other Team Leaders did not show; HR admitted I had more visibility than I should have had; my leave was mishandled or misclassified after FMLA notice; my system access was deactivated; a White employee's hardship request was handled without supporting documentation; a Black employee's potential hardship request triggered a race-related warning; and my own hardship request was escalated to HR, Employee Relations, operations leadership, and director-level leadership the day it was submitted.</p>
 
-        {/* Section III - Conclusion — Charging Party's Response */}
+        {/* Section IV — Response to Respondent's Section III — Conclusion */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
-          III. Conclusion — Charging Party's Response
+          IV. Response to Respondent's Section III — Conclusion
         </h2>
         <p className="mt-3">Respondent's request for dismissal should be rejected. Respondent's conclusion is not supported by the record. It depends on disputed facts, missing documents, incomplete explanations, and broad denials that are contradicted by Respondent's own records.</p>
         <p className="mt-3">This case is not about routine workplace disagreement. The record shows protected activity followed by schedule obstruction, waitlist removal, inconsistent request dates, comparator movement, a post-complaint rating downgrade, exclusion from advancement opportunities, project exclusion, unusual Verint visibility, deleted Teams messages, leave-processing problems, hardship-fund inconsistency, and race-related comments involving hardship assistance and HBCU recruiting.</p>
