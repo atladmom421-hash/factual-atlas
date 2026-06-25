@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { PrintPdfButton } from "@/components/case/PrintPdfButton";
 import { PrintEvidenceAppendix } from "@/components/case/PrintEvidenceAppendix";
+import { exhibitById } from "@/data";
+
 
 
 // Exhibits cited in this letter — bundled into the print appendix.
