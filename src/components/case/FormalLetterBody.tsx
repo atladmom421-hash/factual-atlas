@@ -2123,6 +2123,79 @@ export function FormalLetterBody() {
             "blockade" and HBCU-related statements, including any contemporaneous
             notes, follow-up messages, and references in HR investigation files.
           </li>
+          <li>
+            All records relating to Charging Party's May 2024 EEOC charge and May
+            29, 2024 internal complaint, including intake documents, routing,
+            investigator notes, and disposition.
+          </li>
+          <li>
+            All communications showing who knew about Charging Party's protected
+            activity and when, including distribution lists, forwards, and HR
+            briefings.
+          </li>
+          <li>
+            All schedule-change tickets submitted on Charging Party's behalf, with
+            author, submission date, routing history, and disposition.
+          </li>
+          <li>
+            All records supporting the alleged May 2025 day-shift offer and alleged
+            decline, including the offer communication, the recorded decline, and
+            the identity of the person who recorded the response.
+          </li>
+          <li>
+            The complete waitlist SharePoint file and full version history from
+            2023 through the present.
+          </li>
+          <li>
+            All documents explaining Charging Party's February 2025 waitlist
+            removal and July 2025 re-addition, including approval records,
+            notifications, tickets, and audit history.
+          </li>
+          <li>
+            Performance calibration records for 2023, 2024, and 2025, and the TL
+            Plus / Department Manager eligibility records, including rating
+            thresholds, calibration participants, and the list of employees
+            selected for the cohort.
+          </li>
+          <li>
+            All records regarding Greg Carfagna's July 2024 block of Charging
+            Party's rec-for-term process, including the additional coaching
+            documentation requested, the documentation requirements applied to
+            peer Team Leaders, and all approver communications.
+          </li>
+          <li>
+            All internal application records for Charging Party's nearly 50
+            applications from February 2023 through April 2025, including
+            postings, selected-candidate records, interview notes, scoring
+            rubrics, recruiter notes, and decisionmaker communications.
+          </li>
+          <li>
+            Project-assignment and project-credit records involving Charging
+            Party, including Compliance Check, Cyndy Smith's group, and
+            call-flow/process tools.
+          </li>
+          <li>
+            Verint access logs, screen-recording logs, permission-change history,
+            product-owner communications, vendor communications, and BT escalation
+            records relating to Charging Party and to similarly situated Team
+            Leaders before and after her October 2025 complaint.
+          </li>
+          <li>
+            Microsoft Teams retention logs, deletion logs, audit history, and
+            preservation or legal-hold records for the Allan Glover / Amber chat
+            and Charging Party's account from October 1, 2025 forward.
+          </li>
+          <li>
+            Leave-processing records relating to the October 2025 FMLA/STD
+            misclassification and access deactivation, including system
+            timestamps, status changes, approvers, and notifications.
+          </li>
+          <li>
+            Hardship-fund records, including the November 13, 2025 "SH Hardship"
+            calendar invite and notes, the Cameron Hadley communications, and the
+            hardship records for Brandi Cordi, Araksan Dide, and Charging Party's
+            own request.
+          </li>
         </ol>
 
 
