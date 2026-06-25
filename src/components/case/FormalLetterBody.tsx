@@ -1218,6 +1218,41 @@ export function FormalLetterBody() {
             Documentation explaining why Charging Party was removed from the waitlist in
             February 2025 if the alleged decline did not occur until May 2025.
           </li>
+          <li>
+            The alleged July 10, 2025 SharePoint request, including the full metadata
+            and audit history for that request (author, submission date/time, device,
+            and all subsequent edits).
+          </li>
+          <li>
+            The complete source file from which Jen Roy produced the July 14, 2025
+            screenshot sent to Allan Glover, and all columns omitted from that
+            screenshot, including Date Requested, Months as CAR TL, Temporary/Permanent
+            status, and Qualifies = Yes/No.
+          </li>
+          <li>
+            The full SharePoint version history for the Current TL Shifts / waitlist
+            file showing Charging Party's January 2025 placement, February 2025
+            removal, July 3, 2025 absence, July 14, 2025 status, and July 16–17, 2025
+            re-addition.
+          </li>
+          <li>
+            Documentation explaining why Charging Party's waitlist request date changed
+            from June 26, 2024 to July 17, 2025, and why her status changed from
+            PM/Temporary to PM/Permanent, including all approvals, tickets, and
+            notifications.
+          </li>
+          <li>
+            All tickets Allan Glover allegedly submitted on Charging Party's behalf, and
+            all communications between Allan Glover, Jen Roy, Edina Markus, Human
+            Resources, and scheduling administrators regarding Charging Party's
+            waitlist status from January 2025 through the present.
+          </li>
+          <li>
+            Comparator movement records showing whether employees such as Tyler
+            Millisock, Hunter Samuel, Cody Christensen, Courtney Griffith, and others
+            moved through the same waitlist process, a separate manager request, a
+            preexisting assignment, a training obligation, or an accommodation.
+          </li>
         </ol>
 
 
