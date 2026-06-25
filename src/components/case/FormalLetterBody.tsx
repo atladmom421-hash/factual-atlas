@@ -1638,6 +1638,18 @@ export function FormalLetterBody() {
         <p className="mt-3">These allegations are not disconnected from protected activity. They occurred after my May 2024 EEOC charge, after my May 29, 2024 formal internal complaint, after repeated schedule/waitlist complaints, after my September 2025 Ethical Concerns complaint, after my October 2025 FMLA notice, and after my written HR timeline. The timing and documentation matter.</p>
         <p className="mt-3">Respondent's "ancillary allegations" section should therefore be rejected. The records show specific facts: the Allan/Amber Teams chat disappeared while other same-period chats remained visible; my Verint profile showed visibility other Team Leaders did not show; HR admitted I had more visibility than I should have had; my leave was mishandled or misclassified after FMLA notice; my system access was deactivated; a White employee's hardship request was handled without supporting documentation; a Black employee's potential hardship request triggered a race-related warning; and my own hardship request was escalated to HR, Employee Relations, operations leadership, and director-level leadership the day it was submitted.</p>
 
+        <InlineExhibits
+          heading="Ancillary-allegations evidence (PS § II.D)"
+          items={[
+            { id: "EX-006", relevance: "Verint visibility evidence — Harbin's profile live-monitored while same-department Team Leaders were not." },
+            { id: "EX-002", relevance: "October 2025 record-deletion / preservation concerns — Allan/Amber chat missing while same-period chats remained visible." },
+            { id: "EX-007", relevance: "FMLA preliminary designation / leave correction / access deactivation evidence." },
+            { id: "EX-ALLAN-OCT24", relevance: "October 24, 2025 call with Allan Glover confirming the leave communication he received stated 'short term' and that systems could be disabled again." },
+            { id: "EX-003", relevance: "Hardship-assistance timeline — November 13 'SH Hardship' meeting (Marcinko / Glover / Carfagna) and Employee Relations escalation." },
+          ]}
+        />
+
+
         {/* Section IV — Response to Respondent's Section III — Conclusion */}
         <h2 className="mt-10 font-display text-lg tracking-tight">
           IV. Response to Respondent's Section III — Conclusion
