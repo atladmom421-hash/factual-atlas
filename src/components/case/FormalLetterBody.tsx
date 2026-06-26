@@ -745,7 +745,7 @@ export function FormalLetterBody() {
           Respondent also cannot isolate Mr. Glover from the broader company knowledge. Retaliation does not require the final manager to have been the original actor in the discrimination complaint. The relevant question is whether Respondent, through its managers, HR, and leadership, had knowledge of my protected activity and then subjected me to materially adverse treatment. Here, HR, Greg Carfagna, and other leadership had actual notice. Allan then became the manager through whom many of the later disputed decisions and explanations were communicated.
         </p>
         <p className="mt-3">
-          For these reasons, I dispute Respondent's suggestion that Allan Glover's later actions are insulated from the prior protected activity merely because he was not named in the original charge. The evidence shows that he became involved because of the protected complaint, served as the management contact during the investigation period, and later participated in or communicated decisions that are central to my retaliation and discrimination claims.
+          For these reasons, I dispute Respondent's suggestion that Allan Glover's later actions are insulated from the prior protected activity merely because he was not named in the original charge. The evidence shows that he became involved because of the protected complaint, served as the management contact during the investigation period, and later participated in or communicated decisions that are central to my retaliation and discrimination claims. Under <em>Raad v. Fairbanks N. Star Borough Sch. Dist.</em>, 323 F.3d 1185 (9th Cir. 2003), a decisionmaker's awareness of the existence of protected activity is sufficient to establish the knowledge element of retaliation causation; awareness of every factual particular is not required. Respondent concedes Mr. Glover became aware of the prior EEOC charge, and the adverse actions described above all post-date that admitted awareness.
         </p>
         <p className="mt-3"><strong>Requested records related to this issue:</strong></p>
         <ul className="mt-2 list-disc space-y-1 pl-6">
@@ -1875,7 +1875,7 @@ export function FormalLetterBody() {
             548 U.S. 53 (2006), governs — not termination alone.
           </li>
           <li>
-            <strong>Causation knowledge.</strong> <em>Raad</em>, 323 F.3d 1185 (9th Cir. 2003) —
+            <strong>Causation knowledge.</strong> <em>Raad v. Fairbanks N. Star Borough Sch. Dist.</em>, 323 F.3d 1185, 1196–97 (9th Cir. 2003) —
             awareness of the existence of protected activity is sufficient.
           </li>
           <li>
