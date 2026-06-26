@@ -2201,7 +2201,7 @@ Me: Bye.`,
     summary:
       "Signed EEOC / Ohio Civil Rights Commission Charge of Discrimination filed by Ms. Shawnna Harbin against Discover Financial Services. Boxes checked: RACE, RETALIATION, DISABILITY, OTHER (hostile work environment), CONTINUING ACTION. Particulars allege: (1) 1/16/24 complaint to supervisor Rosanna Blackson about coworker Brendan Fondrieft attempting to terminate Renee Ferguson because of her African-American race; (2) Blackson attempted to blackmail Harbin — offering to overlook alleged compliance issues if Harbin agreed not to report to HR — and Harbin refused; (3) same-day complaint to Tammy McNerney in HR about race discrimination and blackmail; (4) HR informed Blackson of the complaints and took no corrective action; (5) 2/21/24 disability disclosure and 2/22/24–3/25/24 medical leave; (6) Blackson falsely told HR Harbin lacked leave permission and began a 'job abandonment' termination while Harbin was on disability leave (later reversed); (7) 3/28/24 Teams meeting in which Blackson called Harbin the n-word, with Harbin's mother present as witness. Establishes the May 7, 2024 protected activity that anchors the retaliation timeline.",
     linkedEventIds: [],
-    reliability: "confirmed-filing",
+    reliability: "confirmed-screenshot",
     filePath: "/exhibits/ex-097-eeoc-charge-may7-2024.jpeg",
     fileKind: "image",
   },
