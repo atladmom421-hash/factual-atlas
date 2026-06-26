@@ -171,6 +171,70 @@ export function FormalLetterBody() {
           documents identified at the end of this letter.
         </p>
 
+        {/* Summary of Key Contradictions */}
+        <section className="mt-10 break-inside-avoid rounded-md border border-neutral-300 bg-neutral-50 p-5">
+          <h2 className="font-display text-lg tracking-tight">Summary of Key Contradictions</h2>
+          <p className="mt-3 text-[13px] italic">
+            For the Division's convenience, the central contradictions between Respondent's Position
+            Statement and the documented record are summarized below. Each is developed in full,
+            with exhibits, in the sections that follow.
+          </p>
+          <ol className="mt-4 list-decimal space-y-3 pl-6 text-[13px]">
+            <li>
+              <span className="font-semibold">The February 2025 removal disproves the May 2025 "decline."</span>{" "}
+              Respondent says it removed me from the waitlist after I declined a day-shift offer in
+              May 2025. The preserved records show I was already removed in February 2025 — months
+              before the alleged offer. A May 2025 decline cannot explain a February 2025 removal.
+              (See Section II.O.)
+            </li>
+            <li>
+              <span className="font-semibold">Respondent's own HR admitted the process was not neutral.</span>{" "}
+              Respondent says managers cannot bypass the waitlist. On the November 6, 2025 call, its
+              own HR representative said comparator movement happened "because of leadership, not
+              the waitlist." (See Section II.D; EX-HR-CALL.)
+            </li>
+            <li>
+              <span className="font-semibold">No documentation of the May 2025 offer exists.</span>{" "}
+              Respondent cannot produce the offeror, the shift, the date, the ticket, or my
+              recorded decline. When Mr. Glover claimed in real time on September 19, 2025 that he
+              had offered me a shift, he could not identify when, what role, or what department.
+              (See Sections II.E, II.O, II.Q.)
+            </li>
+            <li>
+              <span className="font-semibold">Named comparators moved while I stayed fixed.</span>{" "}
+              Tyler Millisock — same April 3, 2023 start date, same level, outside my protected
+              class — moved from PM/closing to an earlier schedule and stated he was not on the
+              waitlist. Respondent's Position Statement does not address him or any other
+              comparator by name. (See Sections II.D, II.F; EX-010, EX-022.)
+            </li>
+            <li>
+              <span className="font-semibold">The 2024 rating was downgraded after protected activity.</span>{" "}
+              My overall rating dropped from Strong (2023) to Solid (2024) — the first review cycle
+              after my EEOC charge — despite improved metrics, no goal below Solid, and a 124.36%
+              bonus payout. It returned to Strong in 2025. The Solid rating excluded me from the
+              TL Plus / Department Manager training pipeline. (See Sections II.A, II.N.)
+            </li>
+            <li>
+              <span className="font-semibold">Race entered a benefits discussion.</span>{" "}
+              A White employee (Brandi Cordi) received hardship-fund help without documentation
+              scrutiny; when a Black employee (Araksan Dide) needed help, Mr. Glover gave a
+              race-coded warning. I documented my confusion in writing the same day. (See Sections
+              II.J, II.R; EX-004.)
+            </li>
+            <li>
+              <span className="font-semibold">Records tied to my protected activity disappeared.</span>{" "}
+              The Allan/Amber Teams chat containing my FMLA notice vanished from both my computer
+              and phone, while other chats from the same days remained visible. HR also admitted I
+              had "more visibility than" I should have had in Verint and could not explain why.
+              (See Sections II.L, II.M, III.D.)
+            </li>
+          </ol>
+          <p className="mt-4 text-[13px]">
+            In short, Respondent's defense depends on the claim that its processes were neutral,
+            uniform, and documented. The records — including Respondent's own — show otherwise.
+          </p>
+        </section>
+
         {/* Section I */}
         <h2 className="mt-10 font-display text-lg tracking-tight">I. Preliminary Statement</h2>
         <p className="mt-3">
