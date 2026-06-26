@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Loader2, Printer } from "lucide-react";
 
-const IMAGE_PRELOAD_TIMEOUT_MS = 12000;
+const IMAGE_PRELOAD_TIMEOUT_MS = 45000;
 
 async function preloadPrintableImages() {
   const imageUrls = Array.from(document.querySelectorAll<HTMLImageElement>("img"))
@@ -15,7 +15,11 @@ async function preloadPrintableImages() {
     const image = new Image();
     const timeout = window.setTimeout(resolve, IMAGE_PRELOAD_TIMEOUT_MS);
 
-    image.onload = () => { window.clearTimeout(timeout); resolve(); };
+    image.onload = async () => {
+      window.clearTimeout(timeout);
+      try { await image.decode(); } catch { /* onload already confirms the asset is available */ }
+      resolve();
+    };
     image.onerror = () => { window.clearTimeout(timeout); resolve(); };
     image.decoding = "sync";
     image.src = src;
