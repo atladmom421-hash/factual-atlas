@@ -1,5 +1,12 @@
 import { exhibitById } from "@/data";
 
+/** Resolve a possibly-relative filePath to an absolute URL so the browser
+ *  print pipeline never tries to fetch it against an unexpected base. */
+function resolveSrc(path: string): string {
+  if (typeof window === "undefined") return path;
+  try { return new URL(path, window.location.origin).href; } catch { return path; }
+}
+
 /** Print-only appendix that shows evidence photos & metadata for the given exhibit IDs.
  *  Hidden on screen; revealed by @media print rules in styles.css. */
 export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" }: { exhibitIds: string[]; title?: string }) {
@@ -10,6 +17,7 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
     .filter((x): x is NonNullable<ReturnType<typeof exhibitById>> => Boolean(x));
 
   if (items.length === 0) return null;
+
 
   return (
     <section className="mt-10 border-t-2 border-black pt-6">
