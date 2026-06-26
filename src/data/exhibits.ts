@@ -2247,6 +2247,48 @@ Me: Bye.`,
     filePath: "/exhibits/ex-100-hr-complaint-ticket-sept19.png",
     fileKind: "image",
   },
+  {
+    id: "EX-101",
+    exhibitNumber: "EX-101",
+    fileName: "Teams Chat — Hunter Samuel re: HVAR Mid/PM Shift (Sept 12 & 22, 2025)",
+    date: "September 12, 2025 / September 22, 2025",
+    category: "Teams chat",
+    peopleIds: ["harbin"],
+    summary:
+      "Photo of Teams 1:1 chat with Hunter Samuel. 9/12/2025 2:30 PM, Hunter: 'Awesome!! Well you just let me know if you need to ever pick my brain at all. I am here for support! I appreciate you 😊'. 9/12/2025 2:32 PM, Harbin: 'Thank you so much! I appreciate all of your feedback! That kind of insight is invaluable' (with embedded 'I APPRECIATE YOU' DJ Khaled GIF). 9/22/2025 4:53 PM, Harbin: 'Hey Hunter! This is a random question lol but you were a mid or PM in HVAR right? or was it MVAR?' 9/22/2025 9:03 AM (next morning), Hunter Samuel: 'I was mid in MVAR and HVAR.' RELEVANCE: Hunter Samuel confirms he held a MID shift in both MVAR and HVAR. Hunter is a comparator currently shown on Harbin's LVAR roster (see EX-022 schedule screenshots IMG_7175, IMG_7179, IMG_7186 — Hunter Samuel listed under Allan Glover's TL group). Documents that mid-shift placements were given to a comparable male TL while Harbin's mid-shift request was obstructed for over two years.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-101-hunter-samuel-hvar-shift-chat.jpg",
+    fileKind: "image",
+  },
+  {
+    id: "EX-102",
+    exhibitNumber: "EX-102",
+    fileName: "Teams Chat — Allan Glover re: 'Simone' Attendance Example / Allan's Deflection (July 10, 2025)",
+    date: "July 10, 2025",
+    category: "Teams chat",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Photo of Teams 1:1 chat with Allan Glover, 7/10/2025 6:55 PM – 7:04 PM. Harbin (6:55 PM): 'Hey Allan! I wanted to follow up on our discussion earlier today regarding Simone and supporting employees within policy. I just… to clarify I was just doing my due diligence in a neutral way. And I clearly understand the attendance policy and that we have to operate within that. I don't want you to think that I was requesting anything outside of that. To be honest, I was a little caught off guard and confused about the example that you used. I just wanna make sure I didn't misunderstand what you were saying lol if you can provide some clarification I would greatly appreciate it.' Allan Glover (7:02 PM): 'I weas just providing an example of what could happen.' Allan Glover (7:04 PM): 'I'm confused about the example. What exactly are you saying?' RELEVANCE: (1) Directly illustrates the Allan Glover 'what are you trying to get to?' deflection pattern documented in Section II — Harbin asks for clarification of Allan's own hypothetical, Allan turns the question back on her instead of clarifying his statement; (2) the underlying conversation concerned 'supporting employees within policy' and an attendance hypothetical raised by Allan against a Black female agent ('Simone'), supporting the inference of discriminatory enforcement of attendance / performance policies under Allan's supervision; (3) confirms Allan's pattern of issuing oblique 'examples' that operate as veiled warnings while preserving deniability.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-102-allan-glover-simone-attendance-clarification.jpg",
+    fileKind: "image",
+  },
+  {
+    id: "EX-103",
+    exhibitNumber: "EX-103",
+    fileName: "Teams Chat — Allan Glover 'Hey Boss Lady' / $5K Bravo Recognition (Aug 26, 2025)",
+    date: "August 26, 2025",
+    category: "Teams chat",
+    peopleIds: ["harbin", "allan"],
+    summary:
+      "Photo of Teams 1:1 chat with Allan Glover, 8/26/2025. Harbin (11:13 AM): 'Good Morning!!' (11:15 AM): 'Allan could you spare some bravo? My company card expired 🥲'. Allan Glover (11:16 AM): 'I got you / Hey Boss Lady / How much you need? / Good morning!!! / I really enjoyed our conversation yesterday.' Harbin (12:19 PM): 'Sorry for the late response! 5 k-ish lol' (😂 and 🤝 reactions). Allan Glover (12:19 PM): 'No worries, thanks!' Harbin (12:19 PM): 'I really did! I appreciate you so much! You have no idea!' (❤️ reaction). Allan Glover (12:23 PM): 'Bravo in about 10 minutes.' RELEVANCE: (1) Contemporaneous, friendly tone confirms ongoing working relationship and that Harbin actively used the Bravo recognition program to recognize her team — relevant to the hardship-fund disparate-treatment section (recognition resources were available to other TLs and to Harbin's team via Allan, but the formal hardship fund was treated differently when Harbin requested support for herself); (2) shows Harbin was performing at a level where she was distributing $5,000 in Bravo recognition to her team in August 2025, contradicting any Respondent narrative that the 2024 'Solid' rating reflected genuine performance concerns; (3) timestamps Allan's same-day responsiveness to routine requests, contrasted with his year-plus obstruction of the mid-shift waitlist request.",
+    linkedEventIds: [],
+    reliability: "confirmed-screenshot",
+    filePath: "/exhibits/ex-103-allan-glover-bravo-boss-lady-chat.jpg",
+    fileKind: "image",
+  },
 ];
 
 
