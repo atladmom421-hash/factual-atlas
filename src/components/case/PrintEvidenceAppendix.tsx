@@ -1,5 +1,12 @@
 import { exhibitById } from "@/data";
 
+/** Resolve a possibly-relative filePath to an absolute URL so the browser
+ *  print pipeline never tries to fetch it against an unexpected base. */
+function resolveSrc(path: string): string {
+  if (typeof window === "undefined") return path;
+  try { return new URL(path, window.location.origin).href; } catch { return path; }
+}
+
 /** Print-only appendix that shows evidence photos & metadata for the given exhibit IDs.
  *  Hidden on screen; revealed by @media print rules in styles.css. */
 export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" }: { exhibitIds: string[]; title?: string }) {
@@ -10,6 +17,7 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
     .filter((x): x is NonNullable<ReturnType<typeof exhibitById>> => Boolean(x));
 
   if (items.length === 0) return null;
+
 
   return (
     <section className="mt-10 border-t-2 border-black pt-6">
@@ -38,12 +46,13 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
               {/* Always reproduce raw image content when an image path exists */}
               {ex.filePath && /\.(png|jpe?g|webp|gif)$/i.test(ex.filePath) && (
                 <div>
-                  <img src={ex.filePath} alt={ex.fileName} loading="eager" decoding="sync" style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd" }} />
+                  <img src={resolveSrc(ex.filePath)} alt={ex.fileName} loading="eager" decoding="sync" style={{ display: "block", width: "100%", maxWidth: "100%", height: "auto", border: "1px solid #ddd", breakInside: "avoid", pageBreakInside: "avoid" }} />
                   {ex.extraImagePaths?.map((p, i) => (
-                    <img key={p} src={p} alt={`${ex.fileName} — page ${i + 2}`} loading="eager" decoding="sync" style={{ maxWidth: "100%", height: "auto", border: "1px solid #ddd", marginTop: 8 }} />
+                    <img key={p} src={resolveSrc(p)} alt={`${ex.fileName} — page ${i + 2}`} loading="eager" decoding="sync" style={{ display: "block", width: "100%", maxWidth: "100%", height: "auto", border: "1px solid #ddd", marginTop: 8, breakInside: "avoid", pageBreakInside: "avoid" }} />
                   ))}
                 </div>
               )}
+
               {/* Always reproduce raw transcript text when present */}
               {ex.transcriptText && (
                 <pre style={{ fontSize: 11, color: "#000", whiteSpace: "pre-wrap", fontFamily: "ui-sans-serif, system-ui", margin: "8px 0 0" }}>
