@@ -46,9 +46,9 @@ export function PrintEvidenceAppendix({ exhibitIds, title = "Evidence Appendix" 
               {/* Always reproduce raw image content when an image path exists */}
               {ex.filePath && /\.(png|jpe?g|webp|gif)$/i.test(ex.filePath) && (
                 <div>
-                  <img src={resolveSrc(ex.filePath)} alt={ex.fileName} loading="eager" decoding="sync" crossOrigin="anonymous" style={{ display: "block", width: "100%", maxWidth: "100%", height: "auto", border: "1px solid #ddd", breakInside: "avoid", pageBreakInside: "avoid" }} />
+                  <img src={resolveSrc(ex.filePath)} alt={ex.fileName} loading="eager" decoding="sync" style={{ display: "block", width: "100%", maxWidth: "100%", height: "auto", border: "1px solid #ddd", breakInside: "avoid", pageBreakInside: "avoid" }} />
                   {ex.extraImagePaths?.map((p, i) => (
-                    <img key={p} src={resolveSrc(p)} alt={`${ex.fileName} — page ${i + 2}`} loading="eager" decoding="sync" crossOrigin="anonymous" style={{ display: "block", width: "100%", maxWidth: "100%", height: "auto", border: "1px solid #ddd", marginTop: 8, breakInside: "avoid", pageBreakInside: "avoid" }} />
+                    <img key={p} src={resolveSrc(p)} alt={`${ex.fileName} — page ${i + 2}`} loading="eager" decoding="sync" style={{ display: "block", width: "100%", maxWidth: "100%", height: "auto", border: "1px solid #ddd", marginTop: 8, breakInside: "avoid", pageBreakInside: "avoid" }} />
                   ))}
                 </div>
               )}
