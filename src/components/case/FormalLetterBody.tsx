@@ -219,7 +219,7 @@ export function FormalLetterBody() {
               A White employee (Brandi Cordi) received hardship-fund help without documentation
               scrutiny; when a Black employee (Araksan Dide) needed help, Mr. Glover gave a
               race-coded warning. I documented my confusion in writing the same day. (See Sections
-              II.J, II.R; EX-004.)
+              II.J, II.K; EX-004.)
             </li>
             <li>
               <span className="font-semibold">Records tied to my protected activity disappeared.</span>{" "}
