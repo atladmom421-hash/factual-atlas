@@ -41,7 +41,7 @@ function renderedPagesFor(path?: string): string[] {
   });
 }
 
-function isImagePath(path?: string): boolean {
+function isImagePath(path?: string): path is string {
   return Boolean(path && /\.(png|jpe?g|webp|gif)$/i.test(path));
 }
 
