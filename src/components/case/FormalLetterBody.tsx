@@ -128,7 +128,7 @@ export function FormalLetterBody() {
 
         {/* Date & addressee block */}
         <div className="mt-8 space-y-1 text-[13px]">
-          <div>June 24, 2026</div>
+          <div>June 25, 2026</div>
           <div className="pt-4">VIA EMAIL: LAUREN.BARRERA@AZAG.GOV</div>
           <div className="pt-4">Lauren Barrera</div>
           <div>Compliance Officer</div>
@@ -1922,7 +1922,11 @@ export function FormalLetterBody() {
             July 16–17, 2025 re-addition); the complete source file from which Jen Roy produced
             the July 14, 2025 screenshot sent to Allan Glover and all columns omitted from that
             screenshot (Date Requested, Months as CAR TL, Temporary/Permanent, Qualifies =
-            Yes/No); and the Team Ratios 2024 file change history (September 24, 2024 modification).
+            Yes/No); and the complete Team Ratios 2024 file change history, including the
+            September 24, 2024 modification activity, October 2024 version activity, Excel "Show
+            Changes" detail, cell-level formula history, SharePoint/Microsoft 365 audit logs,
+            author/editor metadata, and any communications explaining changes to MID staffing, TL
+            ratio, agent shift split, LVAR, PreD, TBay, and related formula or ratio fields.
           </li>
           <li>
             <strong>May 2025 alleged shift offer and alleged decline records.</strong> All
