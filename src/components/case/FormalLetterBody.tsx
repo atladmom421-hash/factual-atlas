@@ -1856,7 +1856,21 @@ export function FormalLetterBody() {
 
         {/* Section V */}
         <h2 className="mt-10 font-display text-lg tracking-tight">V. Legal Standards</h2>
-        <p className="mt-3">
+
+        <div className="mt-3 break-inside-avoid rounded-md border border-neutral-300 bg-neutral-50 p-4 text-[13px]">
+          <p className="font-semibold">Standard of Review — Investigative Stage</p>
+          <p className="mt-2">
+            At the investigative stage, the question is not whether the Charging Party has proved
+            her claims at trial. The question is whether the evidence in the record supports a
+            reasonable-cause inference of discrimination or retaliation. Unrebutted, record-supported
+            contradictions in Respondent's account — and the absence of employer records that
+            Respondent's own processes require — weigh in favor of a cause determination. The
+            Division is not required to resolve credibility against the Charging Party where the
+            employer has not produced the documents that would test its explanations.
+          </p>
+        </div>
+
+        <p className="mt-4">
           Respondent's Position Statement applies the wrong legal standards in several respects:
         </p>
         <ul className="mt-2 list-disc space-y-2 pl-6">
