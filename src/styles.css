@@ -222,6 +222,27 @@
     break-inside: avoid;
   }
   section, article, table, tr, .avoid-break { page-break-inside: avoid; }
+  .evidence-appendix-item,
+  .evidence-appendix-item section,
+  .evidence-appendix-item article,
+  .evidence-appendix-item div,
+  .rendered-document-pages,
+  .schedule-source-appendix {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+  .rendered-document-page {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: auto !important;
+  }
+  .rendered-document-page img {
+    max-height: 8.75in !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+  }
   h1, h2, h3 { page-break-after: avoid; }
 
 
